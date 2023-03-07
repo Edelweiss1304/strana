@@ -1,7 +1,7 @@
 name: Run tests every 5 minutes
 on:
   schedule:
-    - cron: '15 7 * * *'
+    - cron: '40 7 * * *'
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -15,5 +15,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install selenium pytest
+        sudo apt-get update
+        sudo apt-get install chromium-browser
     - name: Run tests
-      run: pytest tests
+      run: pytest --driver Chrome tests
