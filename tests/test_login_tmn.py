@@ -6,5 +6,4 @@ import time
 def test_authorization_tmn(driver):
     mpt = MainPageTmn(driver)
     mpt.open_main_tmn()
-    mpt.authorization()
-    time.sleep(5)
+    mpt.click_apart_btn()
