@@ -14,7 +14,7 @@ class MainPageTmn(Base):
     # Locators
 
     """Кнопка авторизации в ЛК"""
-    login_lk_button = "//button[@class='btn-reset btn_FPa8J accountBtn_du0F7']"
+    login_lk_button = "/html[1]/body[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/button[1]"
 
     apart_btn = "//span[@class='headerLink__currentValue'][contains(text(),'Квартиры')]"
 
