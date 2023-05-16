@@ -9,10 +9,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up Chrome
       run: |
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        echo "password" | sudo -S dpkg -i google-chrome-stable_current_amd64.deb
-        sudo apt-get -f install
-
+        wget https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb
+        dpkg -x google-chrome-unstable_current_amd64.deb chrome
+        export PATH=$PATH:$PWD/chrome/opt/google/chrome-unstable
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -23,6 +22,7 @@ jobs:
         pip install pytest pytest-selenium
     - name: Run tests
       run: pytest
+
 
 
 
