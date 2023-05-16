@@ -6,7 +6,7 @@ from utilities.Conftest import driver
 def test_msk_header_projects(driver):
     head = Header(driver)
     Base.open_page(driver, Base.url_msk)
-    driver.save_screenshot('screen/failure_screenshot.png')
+    driver.save_screenshot('/home/strana_test/screen/failure_screenshot.png')
     head.check_projects()
 
 def test_msk_header_apart(driver):
