@@ -1,6 +1,8 @@
+import allure
+
 from pages.authorization import Authorization
-from utilities.Conftest import driver
 from base.base_class import Base
+from utilities.Conftest import driver
 
 
 def test_authorization_agent_tmn(driver):

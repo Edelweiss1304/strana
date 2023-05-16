@@ -1,6 +1,6 @@
 from pages.header_links import Header
-from utilities.Conftest import driver
 from base.base_class import Base
+from utilities.Conftest import driver
 
 #MSK
 def test_msk_header_projects(driver):
@@ -183,7 +183,7 @@ def test_nsk_header_about(driver):
     Base.open_page(driver, Base.url_nsk)
     head.check_about()
 
-def test_nsk_header_spb(driver):
+def test_nsk_header_vacancies(driver):
     head = Header(driver)
     Base.open_page(driver, Base.url_nsk)
     head.check_vacancies()
