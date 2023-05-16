@@ -13,10 +13,11 @@ jobs:
         python-version: '3.11'
     - name: Install dependencies
       run: |
-        sudo -E apt-get update
-        sudo -E apt-get install -y google-chrome-stable chromium-browser
-        sudo -E python -m pip install --upgrade pip
-        sudo -E pip install pytest pytest-selenium
+        apt-get update
+        apt-get install -y google-chrome-stable chromium-browser
+        python -m pip install --upgrade pip
+        pip install pytest pytest-selenium
     - name: Run tests
       run: pytest
+
 
