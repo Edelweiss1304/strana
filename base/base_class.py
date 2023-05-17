@@ -1,6 +1,7 @@
 import requests
 from utilities.Conftest import driver
 
+
 class Base:
     def __init__(self, driver):
         self.driver = driver

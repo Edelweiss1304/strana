@@ -1,6 +1,7 @@
 import pytest
+import datetime
 from selenium import webdriver
-from selenium.webdriver import DesiredCapabilities
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 @pytest.fixture(scope="function")
@@ -15,3 +16,11 @@ def driver():
     driver.set_window_size(1920, 1080)
     yield driver
     driver.quit()
+
+
+@pytest.hookimpl(tryfirst=True)
+def pytest_runtest_makereport(item, call):
+    if call.excinfo is not None:  # if the test has failed
+        # Save a screenshot with the test name and date-time
+        timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+        item.instance.driver.save_screenshot(f"{item.nodeid}_{timestamp}.png")
