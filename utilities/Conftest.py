@@ -5,7 +5,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 @pytest.fixture(scope="function")
-def driver():
+def driver(request):
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
     options.add_argument('--ignore-certificate-errors')
@@ -17,10 +17,11 @@ def driver():
     yield driver
     driver.quit()
 
+    def fin():
+        if request.node.rep_call.failed:
+            driver.get_screenshot_as_file(
+                'screens/{}_{}.png'.format(driver.current_url.replace('/', '_'), datetime.now().isoformat()))
+        driver.quit()
 
-@pytest.hookimpl(tryfirst=True)
-def pytest_runtest_makereport(item, call):
-    if call.excinfo is not None:  # if the test has failed
-        # Save a screenshot with the test name and date-time
-        timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-        item.instance.driver.save_screenshot(f"{item.nodeid}_{timestamp}.png")
+    request.addfinalizer(fin)
+    return driver

@@ -20,6 +20,12 @@ jobs:
         pip install pytest pytest-selenium
     - name: Run tests
       run: pytest
+    - name: Upload Screenshots
+      if: failure()
+      uses: actions/upload-artifact@v2
+      with:
+          name: screenshots
+          path: screens/
 
 
 
