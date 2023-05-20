@@ -7,9 +7,6 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Chrome
-      run: |
-        google-chrome-stable --version
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -19,13 +16,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest pytest-selenium
     - name: Run tests
-      run: pytest
-    - name: Upload Screenshots
-      if: failure()
-      uses: actions/upload-artifact@v2
-      with:
-          name: screenshots
-          path: screens/
+      run: pytest tests
 
 
 
