@@ -11,12 +11,14 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.11'
-        extra-deps: google-chrome-stable chromium-browser
+    - name: Install system dependencies
+      run: sudo apt-get install google-chrome-stable chromium-browser
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install pytest pytest-selenium
     - name: Run tests
       run: pytest tests/test_header_links.py::test_msk_header_projects
+
 
 
