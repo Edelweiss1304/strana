@@ -6,18 +6,12 @@ class Base:
     def __init__(self, driver):
         self.driver = driver
 
+    # Открытие url
     @classmethod
     def open_page(cls, driver, url):
         driver.get(url)
 
-    @classmethod
-    def check_url_end(cls, driver, end):
-        current_url = driver.current_url
-        if current_url.endswith(end):
-            return True
-        else:
-            return False
-
+    # Проверка, что статус страницы 200
     @classmethod
     def check_page_status(cls, driver):
         url = driver.current_url
