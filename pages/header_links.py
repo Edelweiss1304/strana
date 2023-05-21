@@ -17,11 +17,11 @@ class Header(Base):
     menu = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
 
     purchase_methods_check = "//h1[contains(text(),'Способы покупки')]"
-    projects_check = "//h1[contains(text(),'Проекты')]"
+    projects_check = "//h2[contains(text(),'Проекты')]"
     apart_check = "//div[@class='s-select__label' and text()='Подобрать квартиру']"
     action_check = "(//span[contains(text(),'Акции')])[3]"
     about_check = "//h1[contains(text(),'О компании')]"
-    vacancy_check = "//h1[contains(text(),'Работа в Стране Девелопмент')]"
+    vacancy_check = "//h2[contains(text(),'Работа в Стране Девелопмент')]"
 
     # Getters
     def get_projects(self):
