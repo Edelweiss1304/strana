@@ -16,7 +16,7 @@ class Header(Base):
     vacancies = "//span[@class='s-shift-text__value'][contains(text(),'Вакансии')]"
     menu = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
 
-    purchase_methods_check = "//h1[contains(text(),'Способы покупки')]"
+    purchase_methods_check = "//h1[contains(text(),'Материнский')]"
     projects_check = "//h2[contains(text(),'Проекты')]"
     apart_check = "//div[@class='s-select__label' and text()='Подобрать квартиру']"
     action_check = "(//span[contains(text(),'Акции')])[3]"
@@ -123,7 +123,7 @@ class Header(Base):
     def check_purchase_methods(self):
         self.click_purchase_methods()
         assert Base.check_page_status(self.driver) == True
-        assert self.get_purchase_methods_check() == "Способы покупки"
+        assert self.get_purchase_methods_check() == "Материнский капитал"
 
     def check_vacancies(self):
         self.click_vacancies()
