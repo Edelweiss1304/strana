@@ -41,9 +41,9 @@ def driver(request):
 
         if failed:
             try:
-                if not os.path.exists("/home/strana_test/screens"):
-                    os.makedirs("/home/strana_test/screens")
-                driver.save_screenshot(f"/home/strana_test/screens/FAILURE_{request.node.name}_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.png")
+                if not os.path.exists("C:/home/strana_test/screens"):
+                    os.makedirs("C:/home/strana_test/screens")
+                driver.save_screenshot(f"C:/home/strana_test/screens/FAILURE_{request.node.name}_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.png")
             except Exception as e:
                 print(f"Failed to create screenshot: {e}")
         driver.quit()

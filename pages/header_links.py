@@ -66,7 +66,7 @@ class Header(Base):
 
     def get_about_check(self):
         return WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, self.about_check))).text
+            EC.visibility_of_element_located((By.XPATH, self.about_check))).text
 
     def get_vacancy_check(self):
         return WebDriverWait(self.driver, 10).until(
