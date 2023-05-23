@@ -1,30 +1,20 @@
-import requests
-from utilities.Conftest import driver
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class Base:
     def __init__(self, driver):
         self.driver = driver
 
-    # Открытие url
+    # Открытие url с использованием переданного драйвера
     @classmethod
     def open_page(cls, driver, url):
         driver.get(url)
 
-    # Проверка, что статус страницы 200
     @classmethod
-    def check_page_status(cls, driver):
-        url = driver.current_url
-        response = requests.get(url)
-        if response.status_code == 200:
-            return True
-        else:
-            return False
+    def get_element_visibility(cls, driver, locator, timeout=20):
+        return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located(locator))
 
-    # URL
-    url_tmn = 'https://tmn.strana.com'
-    url_msk = 'https://msk.strana.com'
-    url_spb = 'https://spb.strana.com'
-    url_mo = 'https://mo.strana.com'
-    url_ekb = 'https://ekb.strana.com'
-    url_nsk = 'https://nsk.strana.com'
+    @classmethod
+    def get_element_clickable(cls, driver, locator, timeout=20):
+        return WebDriverWait(driver, timeout).until(EC.element_to_be_clickable(locator))

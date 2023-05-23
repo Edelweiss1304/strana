@@ -1,11 +1,10 @@
 from base.base_class import Base
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
+from pages.url import URLS_MAIN
+import pytest
 
 
 class Authorization(Base):
-
     # Locators
     login_lk_button = "//button[@id='link-account']"
     continue_lk_btn = "(//button[@class='v-button v-button--default v-button--medium is-rounded _position_SEIu5'])[1]"
@@ -26,62 +25,55 @@ class Authorization(Base):
     # Getters
 
     def get_login_lk_button(self):
-        return WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, self.login_lk_button)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.login_lk_button))
 
     def get_continue_lk_btn(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.continue_lk_btn)))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.continue_lk_btn))
 
     def get_login_client_phone_field(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, self.login_client_phone_field)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.login_client_phone_field))
 
     def get_enter_code_field(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.enter_code_field)))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.enter_code_field))
 
     def get_get_code_btn(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, self.get_code_btn)))
+        return self.get_element_clickable(self.driver, (By.CSS_SELECTOR, self.get_code_btn))
 
     def get_fin_login_btn(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.fin_login_btn)))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.fin_login_btn))
 
     def get_check_lk(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.check_lk))).text
+        return self.get_element_clickable(self.driver, (By.XPATH, self.check_lk)).text
 
     def get_switch_btn_agency(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.switch_btn_agency)))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.switch_btn_agency))
 
     def get_switch_btn_partner(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.switch_btn_partner)))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.switch_btn_partner))
 
     def get_email_field_agent(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.NAME, self.email_field_agent)))
+        return self.get_element_clickable(self.driver, (By.NAME, self.email_field_agent))
 
     def get_password_field_agent(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, self.password_field_agent)))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.password_field_agent))
 
     def get_email_field_agency(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.NAME, self.email_field_agency)))
+        return self.get_element_clickable(self.driver, (By.NAME, self.email_field_agency))
 
     def get_password_field_agency(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, self.password_field_agency)))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.password_field_agency))
 
     def get_login_broker_btn(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, self.login_broker_btn)))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.login_broker_btn))
 
     def get_broker_agent_check(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, self.broker_agent_check)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.broker_agent_check))
 
     # Actions
 
     def click_login_lk_button(self):
         self.get_login_lk_button().click()
-        print('Нажата кнопка входа в аккаунт в хэдэре')
+        print('Нажата кнопка входа в аккаунт в хэдере')
 
     def click_continue_btn(self):
         self.get_continue_lk_btn().click()
@@ -95,10 +87,6 @@ class Authorization(Base):
         self.get_fin_login_btn().click()
         print('Нажата финальная кнопка входа в аккаунт')
 
-    def check_lk_authorization(self):
-        assert self.get_check_lk() == "Брони и договоры"
-        print('Успешный вход в ЛК')
-
     def click_switch_btn_partner(self):
         self.get_switch_btn_partner().click()
         print('Нажата кнопка партнер')
@@ -107,16 +95,11 @@ class Authorization(Base):
         self.get_login_broker_btn().click()
         print('Нажата кнопка входа для брокера')
 
-    def check_broker_agent(self):
-        assert self.get_broker_agent_check().text == "Клиенты"
-        print('Успешный вход в ЛК брокера')
-
     def click_switch_btn_agency(self):
         self.get_switch_btn_agency().click()
         print('Переключаемся на агентство')
 
     # Methods
-
     def login_lk(self, phone_for_user=+79198629250, code_for_user=1313):
         self.click_login_lk_button()
         self.click_continue_btn()

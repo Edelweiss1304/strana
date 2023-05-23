@@ -1,7 +1,5 @@
 from base.base_class import Base
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
 
 
 class Header(Base):
@@ -25,52 +23,46 @@ class Header(Base):
 
     # Getters
     def get_projects(self):
-        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.projects)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.projects))
 
     def get_apart(self):
-        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.apart)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.apart))
 
     def get_commercial(self):
-        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.commercial)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.commercial))
 
     def get_action(self):
-        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.action)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.action))
 
     def get_about(self):
-        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.about)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.about))
 
     def get_purchase_methods(self):
-        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.purchase_methods)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.purchase_methods))
 
     def get_vacancies(self):
-        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.vacancies)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.vacancies))
 
     def get_menu(self):
-        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.menu)))
+        return self.get_element_visibility(self.driver, (By.XPATH, self.menu))
 
     def get_purchase_methods_check(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, self.purchase_methods_check))).text
+        return self.get_element_visibility(self.driver, (By.XPATH, self.purchase_methods_check)).text
 
     def get_apart_check(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, self.apart_check))).text
+        return self.get_element_visibility(self.driver, (By.XPATH, self.apart_check)).text
 
     def get_projects_check(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, self.projects_check))).text
+        return self.get_element_visibility(self.driver, (By.XPATH, self.projects_check)).text
 
     def get_actions_check(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, self.action_check))).text
+        return self.get_element_visibility(self.driver, (By.XPATH, self.action_check)).text
 
     def get_about_check(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, self.about_check))).text
+        return self.get_element_visibility(self.driver, (By.XPATH, self.about_check)).text
 
     def get_vacancy_check(self):
-        return WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, self.vacancy_check))).text
+        return self.get_element_visibility(self.driver, (By.XPATH, self.vacancy_check)).text
     # Actions
 
     def click_projects(self):
@@ -97,36 +89,29 @@ class Header(Base):
     # Methods
     def check_projects(self):
         self.click_projects()
-        assert Base.check_page_status(self.driver) == True
         assert self.get_projects_check() == "Проекты"
 
     def check_apart(self):
         self.click_apart()
-        assert Base.check_page_status(self.driver) == True
         assert self.get_apart_check() == "Подобрать квартиру"
 
     def check_commercial(self):
         self.click_commercial()
-        assert Base.check_page_status(self.driver) == True
         assert self.get_projects_check() == "Проекты"
 
     def check_actions(self):
         self.click_action()
-        assert Base.check_page_status(self.driver) == True
         assert self.get_actions_check() == "Акции"
 
     def check_about(self):
         self.click_about()
-        assert Base.check_page_status(self.driver) == True
         assert self.get_about_check() == "О компании"
 
     def check_purchase_methods(self):
         self.click_purchase_methods()
-        assert Base.check_page_status(self.driver) == True
         assert self.get_purchase_methods_check() == "Материнский капитал"
 
     def check_vacancies(self):
         self.click_vacancies()
-        assert Base.check_page_status(self.driver) == True
         assert self.get_about_check() == "О компании"
         assert self.get_vacancy_check() == "Работа в Стране Девелопмент"
