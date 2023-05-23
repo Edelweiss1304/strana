@@ -25,44 +25,44 @@ class Header(Base):
 
     # Getters
     def get_projects(self):
-        return WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, self.projects)))
+        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.projects)))
 
     def get_apart(self):
-        return WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, self.apart)))
+        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.apart)))
 
     def get_commercial(self):
-        return WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, self.commercial)))
+        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.commercial)))
 
     def get_action(self):
-        return WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, self.action)))
+        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.action)))
 
     def get_about(self):
-        return WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, self.about)))
+        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.about)))
 
     def get_purchase_methods(self):
-        return WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, self.purchase_methods)))
+        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.purchase_methods)))
 
     def get_vacancies(self):
-        return WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, self.vacancies)))
+        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.vacancies)))
 
     def get_menu(self):
-        return WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, self.menu)))
+        return WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.menu)))
 
     def get_purchase_methods_check(self):
         return WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, self.purchase_methods_check))).text
+            EC.visibility_of_element_located((By.XPATH, self.purchase_methods_check))).text
 
     def get_apart_check(self):
         return WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, self.apart_check))).text
+            EC.visibility_of_element_located((By.XPATH, self.apart_check))).text
 
     def get_projects_check(self):
         return WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, self.projects_check))).text
+            EC.visibility_of_element_located((By.XPATH, self.projects_check))).text
 
     def get_actions_check(self):
         return WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, self.action_check))).text
+            EC.visibility_of_element_located((By.XPATH, self.action_check))).text
 
     def get_about_check(self):
         return WebDriverWait(self.driver, 10).until(
@@ -70,7 +70,7 @@ class Header(Base):
 
     def get_vacancy_check(self):
         return WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, self.vacancy_check))).text
+            EC.visibility_of_element_located((By.XPATH, self.vacancy_check))).text
     # Actions
 
     def click_projects(self):
