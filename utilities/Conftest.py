@@ -11,7 +11,7 @@ def driver():
     options.add_argument('--ignore-certificate-errors')
     options.add_argument("--headless")
     caps = DesiredCapabilities().CHROME
-    #caps["pageLoadStrategy"] = "eager"
+    caps["pageLoadStrategy"] = "eager"
     driver = webdriver.Chrome(desired_capabilities=caps, options=options)
     driver.set_window_size(1920, 1080)
     yield driver
