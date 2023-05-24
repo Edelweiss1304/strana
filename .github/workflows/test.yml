@@ -1,9 +1,6 @@
-name: Run tests
+name: Тестовый запуск
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - '*'
 
 jobs:
   test:
@@ -20,6 +17,7 @@ jobs:
           pip install pytest pytest-selenium
       - name: Run tests
         run: pytest tests/test_header_links.py::test_msk_header_vacancies
+
 
 
 
