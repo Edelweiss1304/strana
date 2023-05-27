@@ -23,18 +23,12 @@ jobs:
           echo "${{ github.workspace }}/allure/allure-2.13.8/bin" >> $GITHUB_PATH
       - name: Run tests with Allure
         run: pytest --alluredir=/home/strana_test/actions-runner/_work/strana/strana/allure-results tests/test_header_links.py::test_msk_header_projects
-      - name: Generate Allure report
-        run: allure generate /home/strana_test/actions-runner/_work/strana/strana/allure-results --clean -o /home/strana_test/actions-runner/_work/strana/strana/allure-report
       - name: Archive Allure report
-        uses: actions/upload-artifact@v2
-        with:
-          name: allure-report
-          path: /home/strana_test/actions-runner/_work/strana/strana/allure-report/
-      - name: Upload Allure results
         uses: actions/upload-artifact@v2
         with:
           name: allure-results
           path: /home/strana_test/actions-runner/_work/strana/strana/allure-results/
+
 
 
 
