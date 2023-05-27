@@ -18,7 +18,7 @@ jobs:
       - name: Install Allure Commandline
         run: |
           curl -o allure-2.13.8.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz
-          sudo tar -zxvf allure-2.13.8.tgz -C /opt/
+          tar -zxvf allure-2.13.8.tgz -C /opt/
           echo "/opt/allure-2.13.8/bin" >> $GITHUB_PATH
       - name: Run tests with Allure
         run: pytest --alluredir=allure-results tests/test_header_links.py::test_msk_header_projects
@@ -29,6 +29,7 @@ jobs:
         with:
           name: allure-report
           path: allure-report/
+
 
 
 
