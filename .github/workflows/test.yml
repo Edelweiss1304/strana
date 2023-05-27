@@ -24,19 +24,13 @@ jobs:
       - name: Run tests with Allure
         run: pytest --alluredir=/home/strana_test/actions-runner/_work/strana/strana/allure-results tests/test_header_links.py::test_msk_header_projects
       - name: Generate Allure report
-        run: |
-          cd /home/strana_test/actions-runner/_work/strana/strana/allure-results
-          allure generate --clean -o /home/strana_test/actions-runner/_work/strana/strana/allure-report
+        run: allure generate /home/strana_test/actions-runner/_work/strana/strana/allure-results -o /home/strana_test/actions-runner/_work/strana/strana/allure-results/allure-report
       - name: Archive Allure report
         uses: actions/upload-artifact@v2
         with:
           name: allure-report
-          path: /home/strana_test/actions-runner/_work/strana/strana/allure-report/
-      - name: Upload Allure results
-        uses: actions/upload-artifact@v2
-        with:
-          name: allure-results
-          path: /home/strana_test/actions-runner/_work/strana/strana/allure-results/
+          path: /home/strana_test/actions-runner/_work/strana/strana/allure-results/allure-report
+
 
 
 
