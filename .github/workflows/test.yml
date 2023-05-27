@@ -19,6 +19,8 @@ jobs:
         run: pytest --alluredir=allure-results tests/test_header_links.py::test_msk_header_projects
         continue-on-error: true
       - name: Generate Allure report
+        env:
+          PATH: ${{ github.workspace }}/allure/allure-2.13.8/bin:$PATH
         run: allure generate allure-results --clean -o allure-report
       - name: Archive Allure report
         uses: actions/upload-artifact@v2
