@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x560f78588133 <unknown>\n#1 0x560f782bc966 <unknown>\n#2 0x560f782f90dc <unknown>\n#3 0x560f782f9211 <unknown>\n#4 0x560f783336c4 <unknown>\n#5 0x560f78318bfd <unknown>\n#6 0x560f783311c7 <unknown>\n#7 0x560f783189a3 <unknown>\n#8 0x560f782ed46a <unknown>\n#9 0x560f782ee55e <unknown>\n#10 0x560f78547cae <unknown>\n#11 0x560f7854b8fe <unknown>\n#12 0x560f78554f20 <unknown>\n#13 0x560f7854c923 <unknown>\n#14 0x560f7851fc0e <unknown>\n#15 0x560f7856fb08 <unknown>\n#16 0x560f7856fc97 <unknown>\n#17 0x560f78580113 <unknown>\n#18 0x7f7d4c764609 start_thread",
+      "children" : [ {
+        "name" : "test_msk_header_projects",
+        "uid" : "b109231862126a8e",
+        "parentUid" : "1bc638668e6a122dc36698e91fbf96bc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685267413415,
+          "stop" : 1685267435470,
+          "duration" : 22055
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1bc638668e6a122dc36698e91fbf96bc"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
