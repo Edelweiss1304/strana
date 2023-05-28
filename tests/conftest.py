@@ -21,8 +21,8 @@ def driver():
 
 
 @pytest.fixture(scope="function", autouse=True)
-def allure_attach_screenshot(request):
-    def save_screenshot(driver, name):
+def allure_attach_screenshot(request, driver):  # добавить driver как аргумент
+    def save_screenshot(name):
         # Создаем абсолютный путь к файлу
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         safe_name = name.replace(":", "_").replace("/", "_")  # заменяем недопустимые символы на подчеркивание
@@ -43,9 +43,13 @@ def allure_attach_screenshot(request):
     yield
 
 
+@pytest.hookimpl(tryfirst=True)
 def pytest_exception_interact(node, call, report):
     if report.failed:
-        driver = node.funcargs["driver"]
-        screenshot_name = f"{node.nodeid}_{int(time.time())}"
-        node.save_screenshot(driver, screenshot_name)
+        if hasattr(node, 'getfixturevalue'):
+            driver = node.getfixturevalue("driver")
+            screenshot_name = f"{node.nodeid}_{int(time.time())}.png"
+            driver.save_screenshot(screenshot_name)
+            allure.attach.file(screenshot_name, name="Screenshot", attachment_type=allure.attachment_type.PNG)
+
 
