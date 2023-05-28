@@ -4,22 +4,685 @@
   "children" : [ {
     "name" : "stranatest",
     "children" : [ {
-      "name" : "29820-MainThread",
+      "name" : "31098-MainThread",
       "children" : [ {
-        "name" : "test_msk_header_projects",
-        "uid" : "b109231862126a8e",
-        "parentUid" : "0e115e7ed24fb89250d1d0fe17110faf",
-        "status" : "broken",
+        "name" : "test_authorization_client[https://spb.strana.com]",
+        "uid" : "5f819d60d12f362a",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
         "time" : {
-          "start" : 1685267413415,
-          "stop" : 1685267435470,
-          "duration" : 22055
+          "start" : 1685269654641,
+          "stop" : 1685269660018,
+          "duration" : 5377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      }, {
+        "name" : "test_mo_header_vacancies",
+        "uid" : "5ddfacdcd7166c4d",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269455434,
+          "stop" : 1685269458073,
+          "duration" : 2639
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_tmn_header_vacancies",
+        "uid" : "a15cb460ab805762",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269560066,
+          "stop" : 1685269563947,
+          "duration" : 3881
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_mo_header_about",
+        "uid" : "7259f6b3d8466387",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269451211,
+          "stop" : 1685269454616,
+          "duration" : 3405
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_agent_tmn[https://nsk.strana.com]",
+        "uid" : "7037d4b1ea67ae8b",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269602116,
+          "stop" : 1685269606751,
+          "duration" : 4635
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "test_authorization_agent_tmn[https://msk.strana.com]",
+        "uid" : "c42516532cfad8a2",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269579439,
+          "stop" : 1685269584753,
+          "duration" : 5314
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "test_tmn_header_actions",
+        "uid" : "d02be7e9ca25a3b9",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269547395,
+          "stop" : 1685269550407,
+          "duration" : 3012
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_agency_tmn[https://spb.strana.com]",
+        "uid" : "5be0fa174ee87b3d",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269619599,
+          "stop" : 1685269624511,
+          "duration" : 4912
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      }, {
+        "name" : "test_spb_header_about",
+        "uid" : "3fee8712094fe939",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269479487,
+          "stop" : 1685269483137,
+          "duration" : 3650
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_client[https://msk.strana.com]",
+        "uid" : "923f7aad9ad6f4f7",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269648848,
+          "stop" : 1685269653797,
+          "duration" : 4949
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "test_msk_header_projects",
+        "uid" : "f0215e0289a61e09",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269409360,
+          "stop" : 1685269412722,
+          "duration" : 3362
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_msk_header_about",
+        "uid" : "f95437dde49c0de7",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269426476,
+          "stop" : 1685269431247,
+          "duration" : 4771
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_agency_tmn[https://tmn.strana.com]",
+        "uid" : "4a6bfdf8e7d7b961",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269607587,
+          "stop" : 1685269612984,
+          "duration" : 5397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "test_ekb_header_vacancies",
+        "uid" : "64535c67dddae2cd",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269519714,
+          "stop" : 1685269522782,
+          "duration" : 3068
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_ekb_header_actions",
+        "uid" : "2607a4e6aea9eb66",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269507985,
+          "stop" : 1685269510944,
+          "duration" : 2959
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_agent_tmn[https://tmn.strana.com]",
+        "uid" : "120354a87d76bd7a",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269573336,
+          "stop" : 1685269578600,
+          "duration" : 5264
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "test_spb_header_vacancies",
+        "uid" : "15132889137bdbe9",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269487890,
+          "stop" : 1685269491244,
+          "duration" : 3354
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_client[https://ekb.strana.com]",
+        "uid" : "5b6ae81a41a43c54",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269666114,
+          "stop" : 1685269670843,
+          "duration" : 4729
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "test_ekb_header_projects",
+        "uid" : "704a54f341f3a0c2",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269492063,
+          "stop" : 1685269495046,
+          "duration" : 2983
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_client[https://nsk.strana.com]",
+        "uid" : "a70afcfccfac4fc4",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269671671,
+          "stop" : 1685269676458,
+          "duration" : 4787
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "test_spb_header_projects",
+        "uid" : "1e88568533458862",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269458890,
+          "stop" : 1685269462239,
+          "duration" : 3349
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_ekb_header_commercial",
+        "uid" : "f6b9860dfcff5865",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269501721,
+          "stop" : 1685269507167,
+          "duration" : 5446
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_tmn_header_purchase_methods",
+        "uid" : "260dd7124c25d037",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269556314,
+          "stop" : 1685269559233,
+          "duration" : 2919
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_tmn_header_about",
+        "uid" : "a722c53fed9fa63c",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269551232,
+          "stop" : 1685269555487,
+          "duration" : 4255
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_ekb_header_apart",
+        "uid" : "fa3b294bd020a33f",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269495869,
+          "stop" : 1685269500902,
+          "duration" : 5033
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_spb_header_actions",
+        "uid" : "6c9d91d674c055d3",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269472040,
+          "stop" : 1685269478661,
+          "duration" : 6621
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_agency_tmn[https://mo.strana.com]",
+        "uid" : "42c2bcba1613dbd9",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269625335,
+          "stop" : 1685269630612,
+          "duration" : 5277
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "test_msk_header_apart",
+        "uid" : "f94fa3812d7070d4",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269413544,
+          "stop" : 1685269417372,
+          "duration" : 3828
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_mo_header_actions",
+        "uid" : "932542e13fa4e1cc",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269446987,
+          "stop" : 1685269450383,
+          "duration" : 3396
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_tmn_header_apart",
+        "uid" : "d3f03c254360f29b",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269528114,
+          "stop" : 1685269542330,
+          "duration" : 14216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_msk_header_actions",
+        "uid" : "b70787f0bc45d84b",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269422260,
+          "stop" : 1685269425649,
+          "duration" : 3389
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_msk_header_purchase_methods",
+        "uid" : "8317deac4362a0d3",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269433088,
+          "stop" : 1685269436014,
+          "duration" : 2926
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_client[https://mo.strana.com]",
+        "uid" : "f34f084fc78cd407",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269660848,
+          "stop" : 1685269665279,
+          "duration" : 4431
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "test_mo_header_commercial",
+        "uid" : "d6ef803a534eb4c9",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269442323,
+          "stop" : 1685269446172,
+          "duration" : 3849
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_ekb_header_about",
+        "uid" : "f010024e90cbcac2",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269511775,
+          "stop" : 1685269515515,
+          "duration" : 3740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_spb_header_commercial",
+        "uid" : "6259fc10b982c0f9",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269467735,
+          "stop" : 1685269471216,
+          "duration" : 3481
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_client[https://tmn.strana.com]",
+        "uid" : "7e4c9b66ce3d1ed6",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269642990,
+          "stop" : 1685269648023,
+          "duration" : 5033
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "test_authorization_agent_tmn[https://mo.strana.com]",
+        "uid" : "95054afedca6704e",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269591488,
+          "stop" : 1685269595793,
+          "duration" : 4305
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "test_spb_header_apart",
+        "uid" : "db37dfe67919cfd5",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269463066,
+          "stop" : 1685269466905,
+          "duration" : 3839
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_agency_tmn[https://msk.strana.com]",
+        "uid" : "b1385a3e81695a78",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269613812,
+          "stop" : 1685269618754,
+          "duration" : 4942
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "test_spb_header_purchase_methods",
+        "uid" : "48b15954c01027d1",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269483978,
+          "stop" : 1685269487064,
+          "duration" : 3086
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_nsk_header_vacancies",
+        "uid" : "6c54ef5e0144dc29",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269569211,
+          "stop" : 1685269572509,
+          "duration" : 3298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_ekb_header_purchase_methods",
+        "uid" : "bcc3489accdfcfc8",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269516343,
+          "stop" : 1685269518888,
+          "duration" : 2545
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_agent_tmn[https://spb.strana.com]",
+        "uid" : "212665f5bdad0fb7",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269585593,
+          "stop" : 1685269590652,
+          "duration" : 5059
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      }, {
+        "name" : "test_authorization_agency_tmn[https://nsk.strana.com]",
+        "uid" : "4375ee4ef54ccdf0",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269637531,
+          "stop" : 1685269642161,
+          "duration" : 4630
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "test_authorization_agency_tmn[https://ekb.strana.com]",
+        "uid" : "f80b0f8e2f62685e",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269631443,
+          "stop" : 1685269636674,
+          "duration" : 5231
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "test_nsk_header_about",
+        "uid" : "36d40ad4b3682ef7",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269564779,
+          "stop" : 1685269568366,
+          "duration" : 3587
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_msk_header_commercial",
+        "uid" : "f067ba3f95632ada",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269418189,
+          "stop" : 1685269421429,
+          "duration" : 3240
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_agent_tmn[https://ekb.strana.com]",
+        "uid" : "1accbecbdcb08360",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269596630,
+          "stop" : 1685269601288,
+          "duration" : 4658
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "test_tmn_header_commercial",
+        "uid" : "4817163b957ad15a",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269543186,
+          "stop" : 1685269546562,
+          "duration" : 3376
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_tmn_header_projects",
+        "uid" : "3a8d392bc6ae080",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269523608,
+          "stop" : 1685269527284,
+          "duration" : 3676
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_msk_header_vacancies",
+        "uid" : "accfef31ebc17e19",
+        "parentUid" : "aec634dc1a4267d69a6596c7015610bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685269436832,
+          "stop" : 1685269441499,
+          "duration" : 4667
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "0e115e7ed24fb89250d1d0fe17110faf"
+      "uid" : "aec634dc1a4267d69a6596c7015610bb"
     } ],
     "uid" : "d94305a8e7a5c81fe8d1f7d857edfdef"
   } ]
