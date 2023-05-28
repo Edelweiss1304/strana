@@ -65,67 +65,71 @@ class Header(Base):
 
     def get_vacancy_check(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.vacancy_check)).text
+
     # Actions
-    with allure.step("Кликаем на кнопку проекты"):
-        def click_projects(self):
-            self.get_projects().click()
+    def click_projects(self):
+        self.get_projects().click()
 
-    with allure.step("Кликаем на кнопку квартиры"):
-        def click_apart(self):
-            self.get_apart().click()
+    print("Кликаем на кнопку проекты")
 
-    with allure.step("Кликаем на кнопку коммерция"):
-        def click_commercial(self):
-            self.get_commercial().click()
+    def click_apart(self):
+        self.get_apart().click()
+        print("Кликаем на кнопку квартиры")
 
-    with allure.step("Кликаем на кнопку акции"):
-        def click_action(self):
-            self.get_action().click()
+    def click_commercial(self):
+        self.get_commercial().click()
+        print("Кликаем на кнопку коммерция")
 
-    with allure.step("Кликаем на кнопку о нас"):
-        def click_about(self):
-            self.get_about().click()
+    def click_action(self):
+        self.get_action().click()
+        print("Кликаем на кнопку акции")
 
-    with allure.step("Кликаем на кнопку проекты"):
-        def click_purchase_methods(self):
-            self.get_purchase_methods().click()
+    def click_about(self):
+        self.get_about().click()
+        print("Кликаем на кнопку о нас")
 
-    with allure.step("Кликаем на кнопку вакансии"):
-        def click_vacancies(self):
-            self.get_vacancies().click()
+    def click_purchase_methods(self):
+        self.get_purchase_methods().click()
+        print("Кликаем на кнопку проекты")
 
-    # Methods
-    with allure.step("Проверяем заголовок"):
-        def check_projects(self):
-            self.click_projects()
-            assert self.get_projects_check() == "Проекты"
+    def click_vacancies(self):
+        self.get_vacancies().click()
+        print("Кликаем на кнопку вакансии")
 
-    with allure.step("Проверяем заголовок"):
-        def check_apart(self):
-            self.click_apart()
-            assert self.get_apart_check() == "Подобрать квартиру"
+        # Methods
 
-    with allure.step("Проверяем заголовок"):
-        def check_commercial(self):
-            self.click_commercial()
-            assert self.get_projects_check() == "Проекты"
+    def check_projects(self):
+        self.click_projects()
+        assert self.get_projects_check() == "Проекты"
+        print("Проверяем заголовок")
 
-    with allure.step("Проверяем заголовок"):
-        def check_actions(self):
-            self.click_action()
-            assert self.get_actions_check() == "Акции"
-    with allure.step("Проверяем заголовок"):
-        def check_about(self):
-            self.click_about()
-            assert self.get_about_check() == "О компании"
+    def check_apart(self):
+        self.click_apart()
+        assert self.get_apart_check() == "Подобрать квартиру"
+        print("Проверяем заголовок")
 
-    with allure.step("Проверяем заголовок"):
-        def check_purchase_methods(self):
-            self.click_purchase_methods()
-            assert self.get_purchase_methods_check() == "Материнский капитал"
+    def check_commercial(self):
+        self.click_commercial()
+        assert self.get_projects_check() == "Проекты"
+        print("Проверяем заголовок")
 
-    with allure.step("Проверяем заголовок"):
-        def check_vacancies(self):
-            self.click_vacancies()
-            assert self.get_about_check() == "О компании"
-            assert self.get_vacancy_check() == "Работа в Стране Девелопмент"
+    def check_actions(self):
+        self.click_action()
+        assert self.get_actions_check() == "Акции"
+        print("Проверяем заголовок")
+
+    def check_about(self):
+        self.click_about()
+        assert self.get_about_check() == "О компании"
+        print("Проверяем заголовок")
+
+    def check_purchase_methods(self):
+        self.click_purchase_methods()
+        assert self.get_purchase_methods_check() == "Материнский капитал"
+        print("Проверяем заголовок")
+
+    def check_vacancies(self):
+        self.click_vacancies()
+        assert self.get_about_check() == "О компании"
+        assert self.get_vacancy_check() == "Работа в Стране Девелопмент"
+        print("Проверяем заголовок")
