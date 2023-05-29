@@ -2,25 +2,25 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Product defects",
+    "name" : "Test defects",
     "children" : [ {
-      "name" : "AssertionError",
+      "name" : "NameError: name 'driver' is not defined",
       "children" : [ {
         "name" : "Проверка Сердце Сибири тмн",
-        "uid" : "d63af0d35414e9fd",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
+        "uid" : "6cb8ff731c7fbaec",
+        "parentUid" : "bd2d49163f853b6fdbb44ba8e98870b8",
+        "status" : "broken",
         "time" : {
-          "start" : 1685393769385,
-          "stop" : 1685393776701,
-          "duration" : 7316
+          "start" : 1685394114933,
+          "stop" : 1685394117388,
+          "duration" : 2455
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+      "uid" : "bd2d49163f853b6fdbb44ba8e98870b8"
     } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
 }
