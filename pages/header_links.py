@@ -263,9 +263,9 @@ class Header(Base):
 
     def check_sersib_from_header(self):
         self.move_to_projects()
-        driver.save_screenshot('screenshot1.png')
+        self.driver.save_screenshot('screenshot1.png')
         self.click_project_5_from_header()
-        driver.save_screenshot('screensho2.png')
+        self.driver.save_screenshot('screensho2.png')
         print(self.get_project_comfort_tittle())
         assert self.get_project_comfort_tittle() == "Сердце Сибири"
         print("Проверяем заголовок")
