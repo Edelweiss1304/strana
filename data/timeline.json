@@ -1,5 +1,26 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "stranatest",
+    "children" : [ {
+      "name" : "161488-MainThread",
+      "children" : [ {
+        "name" : "Проверка Сердце Сибири тмн",
+        "uid" : "e56a0dec9b69485c",
+        "parentUid" : "4d68e8291f68dc813a751157ebc279ac",
+        "status" : "failed",
+        "time" : {
+          "start" : 1685393290980,
+          "stop" : 1685393295717,
+          "duration" : 4737
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4d68e8291f68dc813a751157ebc279ac"
+    } ],
+    "uid" : "d94305a8e7a5c81fe8d1f7d857edfdef"
+  } ]
 }
