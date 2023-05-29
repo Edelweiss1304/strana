@@ -1,69 +1,24 @@
 {
-  "uid" : "dc52629383c95da0",
+  "uid" : "d63af0d35414e9fd",
   "name" : "Проверка Сердце Сибири тмн",
   "fullName" : "tests.test_header#test_tmn_header_sersib",
   "historyId" : "4d16b1c39a36e5906d994c60ba8f035f",
   "time" : {
-    "start" : 1685393584363,
-    "stop" : 1685393592947,
-    "duration" : 8584
+    "start" : 1685393769385,
+    "stop" : 1685393776701,
+    "duration" : 7316
   },
   "status" : "failed",
   "statusMessage" : "AssertionError",
-  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"802db322ae5db56dd9de713662a8e78d\")>\n\n    @allure.title(\"Проверка Сердце Сибири тмн\")\n    def test_tmn_header_sersib(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_sersib_from_header()\n\ntests/test_header.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7fe35edbad10>\n\n    def check_sersib_from_header(self):\n        self.move_to_projects()\n        self.click_project_5_from_header()\n        print(self.get_project_comfort_tittle())\n>       assert self.get_project_comfort_tittle() == \"Сердце Сибири\"\nE       AssertionError\n\npages/header_links.py:268: AssertionError",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"641972d428b5ba83313c0d2875b403d6\")>\n\n    @allure.title(\"Проверка Сердце Сибири тмн\")\n    def test_tmn_header_sersib(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_sersib_from_header()\n\ntests/test_header.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7f320fcb2ed0>\n\n    def check_sersib_from_header(self):\n        self.move_to_projects()\n        self.click_project_5_from_header()\n        print(self.get_project_comfort_tittle())\n>       assert self.get_project_comfort_tittle() == \"Сердце Сибири\"\nE       AssertionError\n\npages/header_links.py:268: AssertionError",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "_skip_sensitive",
-    "time" : {
-      "start" : 1685393581786,
-      "stop" : 1685393581786,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "allure_attach_screenshot",
-    "time" : {
-      "start" : 1685393584362,
-      "stop" : 1685393584362,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
     "name" : "driver",
     "time" : {
-      "start" : 1685393581786,
-      "stop" : 1685393584362,
-      "duration" : 2576
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "sensitive_url",
-    "time" : {
-      "start" : 1685393581785,
-      "stop" : 1685393581785,
-      "duration" : 0
+      "start" : 1685393768555,
+      "stop" : 1685393769384,
+      "duration" : 829
     },
     "status" : "passed",
     "steps" : [ ],
@@ -76,8 +31,8 @@
   }, {
     "name" : "_verify_url",
     "time" : {
-      "start" : 1685393581785,
-      "stop" : 1685393581785,
+      "start" : 1685393768555,
+      "stop" : 1685393768555,
       "duration" : 0
     },
     "status" : "passed",
@@ -91,8 +46,53 @@
   }, {
     "name" : "base_url",
     "time" : {
-      "start" : 1685393581785,
-      "stop" : 1685393581785,
+      "start" : 1685393768554,
+      "stop" : 1685393768554,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1685393768555,
+      "stop" : 1685393768555,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "allure_attach_screenshot",
+    "time" : {
+      "start" : 1685393769384,
+      "stop" : 1685393769385,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1685393768555,
+      "stop" : 1685393768555,
       "duration" : 0
     },
     "status" : "passed",
@@ -107,12 +107,12 @@
   "testStage" : {
     "status" : "failed",
     "statusMessage" : "AssertionError",
-    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"802db322ae5db56dd9de713662a8e78d\")>\n\n    @allure.title(\"Проверка Сердце Сибири тмн\")\n    def test_tmn_header_sersib(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_sersib_from_header()\n\ntests/test_header.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7fe35edbad10>\n\n    def check_sersib_from_header(self):\n        self.move_to_projects()\n        self.click_project_5_from_header()\n        print(self.get_project_comfort_tittle())\n>       assert self.get_project_comfort_tittle() == \"Сердце Сибири\"\nE       AssertionError\n\npages/header_links.py:268: AssertionError",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"641972d428b5ba83313c0d2875b403d6\")>\n\n    @allure.title(\"Проверка Сердце Сибири тмн\")\n    def test_tmn_header_sersib(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_sersib_from_header()\n\ntests/test_header.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7f320fcb2ed0>\n\n    def check_sersib_from_header(self):\n        self.move_to_projects()\n        self.click_project_5_from_header()\n        print(self.get_project_comfort_tittle())\n>       assert self.get_project_comfort_tittle() == \"Сердце Сибири\"\nE       AssertionError\n\npages/header_links.py:268: AssertionError",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "1fead393705143ff",
+      "uid" : "8e8bf5bbd6877164",
       "name" : "stdout",
-      "source" : "1fead393705143ff.txt",
+      "source" : "8e8bf5bbd6877164.txt",
       "type" : "text/plain",
       "size" : 85
     } ],
@@ -123,11 +123,11 @@
     "hasContent" : true
   },
   "afterStages" : [ {
-    "name" : "allure_attach_screenshot::0",
+    "name" : "driver::0",
     "time" : {
-      "start" : 1685393592997,
-      "stop" : 1685393592998,
-      "duration" : 1
+      "start" : 1685393776740,
+      "stop" : 1685393776801,
+      "duration" : 61
     },
     "status" : "passed",
     "steps" : [ ],
@@ -138,11 +138,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "driver::0",
+    "name" : "allure_attach_screenshot::0",
     "time" : {
-      "start" : 1685393592998,
-      "stop" : 1685393593060,
-      "duration" : 62
+      "start" : 1685393776740,
+      "stop" : 1685393776740,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -164,7 +164,7 @@
     "value" : "stranatest"
   }, {
     "name" : "thread",
-    "value" : "1541-MainThread"
+    "value" : "2126-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -192,6 +192,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "dc52629383c95da0.json",
+  "source" : "d63af0d35414e9fd.json",
   "parameterValues" : [ ]
 }
