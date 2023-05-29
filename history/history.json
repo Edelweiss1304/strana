@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "269f85f38f8df14e",
+      "uid" : "9dc1f93f4f780e98",
       "status" : "passed",
       "time" : {
-        "start" : 1685387540873,
-        "stop" : 1685387545501,
-        "duration" : 4628
+        "start" : 1685389318191,
+        "stop" : 1685389322866,
+        "duration" : 4675
       }
     } ]
   },
@@ -28,13 +28,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "82f3a5bad1459b2b",
+      "uid" : "41fd7fa670f82bd9",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1108, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55a48f695133 <unknown>\n#1 0x55a48f3c9966 <unknown>\n#2 0x55a48f40c3f2 <unknown>\n#3 0x55a48f40a5ac <unknown>\n#4 0x55a48f4083be <unknown>\n#5 0x55a48f407696 <unknown>\n#6 0x55a48f3fc3ea <unknown>\n#7 0x55a48f425bd2 <unknown>\n#8 0x55a48f3fbd13 <unknown>\n#9 0x55a48f425d9e <unknown>\n#10 0x55a48f43e1c7 <unknown>\n#11 0x55a48f4259a3 <unknown>\n#12 0x55a48f3fa46a <unknown>\n#13 0x55a48f3fb55e <unknown>\n#14 0x55a48f654cae <unknown>\n#15 0x55a48f6588fe <unknown>\n#16 0x55a48f661f20 <unknown>\n#17 0x55a48f659923 <unknown>\n#18 0x55a48f62cc0e <unknown>\n#19 0x55a48f67cb08 <unknown>\n#20 0x55a48f67cc97 <unknown>\n#21 0x55a48f68d113 <unknown>\n#22 0x7f6d4ea99609 start_thread",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1108, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55d586281133 <unknown>\n#1 0x55d585fb5966 <unknown>\n#2 0x55d585ff83f2 <unknown>\n#3 0x55d585ff65ac <unknown>\n#4 0x55d585ff43be <unknown>\n#5 0x55d585ff3696 <unknown>\n#6 0x55d585fe83ea <unknown>\n#7 0x55d586011bd2 <unknown>\n#8 0x55d585fe7d13 <unknown>\n#9 0x55d586011d9e <unknown>\n#10 0x55d58602a1c7 <unknown>\n#11 0x55d5860119a3 <unknown>\n#12 0x55d585fe646a <unknown>\n#13 0x55d585fe755e <unknown>\n#14 0x55d586240cae <unknown>\n#15 0x55d5862448fe <unknown>\n#16 0x55d58624df20 <unknown>\n#17 0x55d586245923 <unknown>\n#18 0x55d586218c0e <unknown>\n#19 0x55d586268b08 <unknown>\n#20 0x55d586268c97 <unknown>\n#21 0x55d586279113 <unknown>\n#22 0x7f0dee616609 start_thread",
       "time" : {
-        "start" : 1685387234473,
-        "stop" : 1685387237686,
-        "duration" : 3213
+        "start" : 1685389017607,
+        "stop" : 1685389020812,
+        "duration" : 3205
       }
     } ]
   },
@@ -48,70 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d824ec269728c613",
+      "uid" : "dbfed45be6d250de",
       "status" : "passed",
       "time" : {
-        "start" : 1685387357354,
-        "stop" : 1685387360084,
-        "duration" : 2730
-      }
-    } ]
-  },
-  "360d36573b0b98c94af83fbe8f77a9b1" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "52b938908263f54b",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1101, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x561cfa100133 <unknown>\n#1 0x561cf9e34966 <unknown>\n#2 0x561cf9e773f2 <unknown>\n#3 0x561cf9e755ac <unknown>\n#4 0x561cf9e733be <unknown>\n#5 0x561cf9e72696 <unknown>\n#6 0x561cf9e673ea <unknown>\n#7 0x561cf9e90bd2 <unknown>\n#8 0x561cf9e66d13 <unknown>\n#9 0x561cf9e90d9e <unknown>\n#10 0x561cf9ea91c7 <unknown>\n#11 0x561cf9e909a3 <unknown>\n#12 0x561cf9e6546a <unknown>\n#13 0x561cf9e6655e <unknown>\n#14 0x561cfa0bfcae <unknown>\n#15 0x561cfa0c38fe <unknown>\n#16 0x561cfa0ccf20 <unknown>\n#17 0x561cfa0c4923 <unknown>\n#18 0x561cfa097c0e <unknown>\n#19 0x561cfa0e7b08 <unknown>\n#20 0x561cfa0e7c97 <unknown>\n#21 0x561cfa0f8113 <unknown>\n#22 0x7fef01807609 start_thread",
-      "time" : {
-        "start" : 1685387253404,
-        "stop" : 1685387256916,
-        "duration" : 3512
-      }
-    } ]
-  },
-  "3d7ff9febb547ca10cce716c5edc9678" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "d339fa92201cfb8e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1685387385290,
-        "stop" : 1685387388952,
-        "duration" : 3662
-      }
-    } ]
-  },
-  "fe13d5948e1927b899552c5a326eb1c7" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "78d1d560fcf7dc18",
-      "status" : "passed",
-      "time" : {
-        "start" : 1685387414484,
-        "stop" : 1685387418934,
-        "duration" : 4450
+        "start" : 1685389136237,
+        "stop" : 1685389139531,
+        "duration" : 3294
       }
     } ]
   },
@@ -125,12 +67,70 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e25006a665ceae1d",
+      "uid" : "b9bfe1353471a0e5",
       "status" : "passed",
       "time" : {
-        "start" : 1685387401879,
-        "stop" : 1685387405127,
-        "duration" : 3248
+        "start" : 1685389182980,
+        "stop" : 1685389186184,
+        "duration" : 3204
+      }
+    } ]
+  },
+  "3d7ff9febb547ca10cce716c5edc9678" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "12527e984cf68a3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1685389165929,
+        "stop" : 1685389169763,
+        "duration" : 3834
+      }
+    } ]
+  },
+  "fe13d5948e1927b899552c5a326eb1c7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "30eab0d0ccef2a6d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1685389195500,
+        "stop" : 1685389199502,
+        "duration" : 4002
+      }
+    } ]
+  },
+  "360d36573b0b98c94af83fbe8f77a9b1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1e9f8bfd236aa2a9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1101, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x561f62908133 <unknown>\n#1 0x561f6263c966 <unknown>\n#2 0x561f6267f3f2 <unknown>\n#3 0x561f6267d5ac <unknown>\n#4 0x561f6267b3be <unknown>\n#5 0x561f6267a696 <unknown>\n#6 0x561f6266f3ea <unknown>\n#7 0x561f62698bd2 <unknown>\n#8 0x561f6266ed13 <unknown>\n#9 0x561f62698d9e <unknown>\n#10 0x561f626b11c7 <unknown>\n#11 0x561f626989a3 <unknown>\n#12 0x561f6266d46a <unknown>\n#13 0x561f6266e55e <unknown>\n#14 0x561f628c7cae <unknown>\n#15 0x561f628cb8fe <unknown>\n#16 0x561f628d4f20 <unknown>\n#17 0x561f628cc923 <unknown>\n#18 0x561f6289fc0e <unknown>\n#19 0x561f628efb08 <unknown>\n#20 0x561f628efc97 <unknown>\n#21 0x561f62900113 <unknown>\n#22 0x7f2abe68d609 start_thread",
+      "time" : {
+        "start" : 1685389035140,
+        "stop" : 1685389038645,
+        "duration" : 3505
       }
     } ]
   },
@@ -144,12 +144,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5c6ffa2b41eb4a2d",
+      "uid" : "6dc17f5e03a19bbc",
       "status" : "passed",
       "time" : {
-        "start" : 1685387306694,
-        "stop" : 1685387310235,
-        "duration" : 3541
+        "start" : 1685389083804,
+        "stop" : 1685389087256,
+        "duration" : 3452
       }
     } ]
   },
@@ -163,13 +163,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8ff10d4d927f62a2",
+      "uid" : "23748c933ce22dea",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55dce8f40133 <unknown>\n#1 0x55dce8c74966 <unknown>\n#2 0x55dce8cb73f2 <unknown>\n#3 0x55dce8cb55ac <unknown>\n#4 0x55dce8cb33be <unknown>\n#5 0x55dce8cb2696 <unknown>\n#6 0x55dce8ca73ea <unknown>\n#7 0x55dce8cd0bd2 <unknown>\n#8 0x55dce8ca6d13 <unknown>\n#9 0x55dce8cd0d9e <unknown>\n#10 0x55dce8ce91c7 <unknown>\n#11 0x55dce8cd09a3 <unknown>\n#12 0x55dce8ca546a <unknown>\n#13 0x55dce8ca655e <unknown>\n#14 0x55dce8effcae <unknown>\n#15 0x55dce8f038fe <unknown>\n#16 0x55dce8f0cf20 <unknown>\n#17 0x55dce8f04923 <unknown>\n#18 0x55dce8ed7c0e <unknown>\n#19 0x55dce8f27b08 <unknown>\n#20 0x55dce8f27c97 <unknown>\n#21 0x55dce8f38113 <unknown>\n#22 0x7fc8210aa609 start_thread",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55c1955f0133 <unknown>\n#1 0x55c195324966 <unknown>\n#2 0x55c1953673f2 <unknown>\n#3 0x55c1953655ac <unknown>\n#4 0x55c1953633be <unknown>\n#5 0x55c195362696 <unknown>\n#6 0x55c1953573ea <unknown>\n#7 0x55c195380bd2 <unknown>\n#8 0x55c195356d13 <unknown>\n#9 0x55c195380d9e <unknown>\n#10 0x55c1953991c7 <unknown>\n#11 0x55c1953809a3 <unknown>\n#12 0x55c19535546a <unknown>\n#13 0x55c19535655e <unknown>\n#14 0x55c1955afcae <unknown>\n#15 0x55c1955b38fe <unknown>\n#16 0x55c1955bcf20 <unknown>\n#17 0x55c1955b4923 <unknown>\n#18 0x55c195587c0e <unknown>\n#19 0x55c1955d7b08 <unknown>\n#20 0x55c1955d7c97 <unknown>\n#21 0x55c1955e8113 <unknown>\n#22 0x7f368453f609 start_thread",
       "time" : {
-        "start" : 1685387230180,
-        "stop" : 1685387233511,
-        "duration" : 3331
+        "start" : 1685389013634,
+        "stop" : 1685389016653,
+        "duration" : 3019
       }
     } ]
   },
@@ -183,12 +183,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9dc5d9da4eb1675e",
+      "uid" : "42f669d02bd5e5f",
       "status" : "passed",
       "time" : {
-        "start" : 1685387434458,
-        "stop" : 1685387438485,
-        "duration" : 4027
+        "start" : 1685389213108,
+        "stop" : 1685389216261,
+        "duration" : 3153
       }
     } ]
   },
@@ -202,12 +202,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c728ab026027c2cd",
+      "uid" : "64b83436f471742b",
       "status" : "passed",
       "time" : {
-        "start" : 1685387423741,
-        "stop" : 1685387427473,
-        "duration" : 3732
+        "start" : 1685389204333,
+        "stop" : 1685389207981,
+        "duration" : 3648
       }
     } ]
   },
@@ -221,13 +221,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8dbda651310541ce",
+      "uid" : "973d7eb336f5199",
       "status" : "failed",
       "statusDetails" : "AssertionError",
       "time" : {
-        "start" : 1685387268062,
-        "stop" : 1685387277305,
-        "duration" : 9243
+        "start" : 1685389049605,
+        "stop" : 1685389056336,
+        "duration" : 6731
       }
     } ]
   },
@@ -241,12 +241,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "188eafa2ab21d759",
+      "uid" : "5fbf2da0d79a5b6d",
       "status" : "passed",
       "time" : {
-        "start" : 1685387428359,
-        "stop" : 1685387433565,
-        "duration" : 5206
+        "start" : 1685389208870,
+        "stop" : 1685389212228,
+        "duration" : 3358
       }
     } ]
   },
@@ -260,12 +260,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3cccc395002e7558",
+      "uid" : "bd32c41465647130",
       "status" : "passed",
       "time" : {
-        "start" : 1685387476230,
-        "stop" : 1685387481731,
-        "duration" : 5501
+        "start" : 1685389253261,
+        "stop" : 1685389258512,
+        "duration" : 5251
       }
     } ]
   },
@@ -279,12 +279,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "16c4945502922100",
+      "uid" : "558c164cfda00340",
       "status" : "passed",
       "time" : {
-        "start" : 1685387311126,
-        "stop" : 1685387313599,
-        "duration" : 2473
+        "start" : 1685389088139,
+        "stop" : 1685389090746,
+        "duration" : 2607
       }
     } ]
   },
@@ -298,12 +298,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "33cab2fba222f260",
+      "uid" : "1fd0044a52ad2f87",
       "status" : "passed",
       "time" : {
-        "start" : 1685387500546,
-        "stop" : 1685387505566,
-        "duration" : 5020
+        "start" : 1685389277445,
+        "stop" : 1685389282499,
+        "duration" : 5054
       }
     } ]
   },
@@ -317,12 +317,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fa55ea33120b3add",
+      "uid" : "b111e311c0c587bf",
       "status" : "passed",
       "time" : {
-        "start" : 1685387488547,
-        "stop" : 1685387493988,
-        "duration" : 5441
+        "start" : 1685389265577,
+        "stop" : 1685389270923,
+        "duration" : 5346
       }
     } ]
   },
@@ -336,13 +336,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "82138fcd9bf4363e",
+      "uid" : "70edea28a1cd054d",
       "status" : "failed",
       "statusDetails" : "AssertionError",
       "time" : {
-        "start" : 1685387262294,
-        "stop" : 1685387267163,
-        "duration" : 4869
+        "start" : 1685389044064,
+        "stop" : 1685389048718,
+        "duration" : 4654
       }
     } ]
   },
@@ -356,12 +356,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f06ed6a818bf7dac",
+      "uid" : "6be3b0602a122a7d",
       "status" : "passed",
       "time" : {
-        "start" : 1685387327021,
-        "stop" : 1685387330080,
-        "duration" : 3059
+        "start" : 1685389105119,
+        "stop" : 1685389108220,
+        "duration" : 3101
       }
     } ]
   },
@@ -375,12 +375,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8f99c1a17fd94ad6",
+      "uid" : "fd9e3f59314e2743",
       "status" : "passed",
       "time" : {
-        "start" : 1685387464180,
-        "stop" : 1685387469473,
-        "duration" : 5293
+        "start" : 1685389241424,
+        "stop" : 1685389246624,
+        "duration" : 5200
       }
     } ]
   },
@@ -394,12 +394,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "256fda3e8568151b",
+      "uid" : "343ef50975a9af85",
       "status" : "passed",
       "time" : {
-        "start" : 1685387330957,
-        "stop" : 1685387334034,
-        "duration" : 3077
+        "start" : 1685389109100,
+        "stop" : 1685389112311,
+        "duration" : 3211
       }
     } ]
   },
@@ -413,13 +413,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9266e6f46df0e80f",
+      "uid" : "f29c6d38c2059602",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1383, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55fc461ed133 <unknown>\n#1 0x55fc45f21966 <unknown>\n#2 0x55fc45f643f2 <unknown>\n#3 0x55fc45f625ac <unknown>\n#4 0x55fc45f603be <unknown>\n#5 0x55fc45f5f696 <unknown>\n#6 0x55fc45f543ea <unknown>\n#7 0x55fc45f7dbd2 <unknown>\n#8 0x55fc45f53d13 <unknown>\n#9 0x55fc45f7dd9e <unknown>\n#10 0x55fc45f961c7 <unknown>\n#11 0x55fc45f7d9a3 <unknown>\n#12 0x55fc45f5246a <unknown>\n#13 0x55fc45f5355e <unknown>\n#14 0x55fc461accae <unknown>\n#15 0x55fc461b08fe <unknown>\n#16 0x55fc461b9f20 <unknown>\n#17 0x55fc461b1923 <unknown>\n#18 0x55fc46184c0e <unknown>\n#19 0x55fc461d4b08 <unknown>\n#20 0x55fc461d4c97 <unknown>\n#21 0x55fc461e5113 <unknown>\n#22 0x7fbd7ee4e609 start_thread",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1383, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55c4d373f133 <unknown>\n#1 0x55c4d3473966 <unknown>\n#2 0x55c4d34b63f2 <unknown>\n#3 0x55c4d34b45ac <unknown>\n#4 0x55c4d34b23be <unknown>\n#5 0x55c4d34b1696 <unknown>\n#6 0x55c4d34a63ea <unknown>\n#7 0x55c4d34cfbd2 <unknown>\n#8 0x55c4d34a5d13 <unknown>\n#9 0x55c4d34cfd9e <unknown>\n#10 0x55c4d34e81c7 <unknown>\n#11 0x55c4d34cf9a3 <unknown>\n#12 0x55c4d34a446a <unknown>\n#13 0x55c4d34a555e <unknown>\n#14 0x55c4d36fecae <unknown>\n#15 0x55c4d37028fe <unknown>\n#16 0x55c4d370bf20 <unknown>\n#17 0x55c4d3703923 <unknown>\n#18 0x55c4d36d6c0e <unknown>\n#19 0x55c4d3726b08 <unknown>\n#20 0x55c4d3726c97 <unknown>\n#21 0x55c4d3737113 <unknown>\n#22 0x7f7e3dfbf609 start_thread",
       "time" : {
-        "start" : 1685387257845,
-        "stop" : 1685387261382,
-        "duration" : 3537
+        "start" : 1685389039581,
+        "stop" : 1685389043162,
+        "duration" : 3581
       }
     } ]
   },
@@ -433,12 +433,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6700c16000d5dcf7",
+      "uid" : "54bf1865e760df2d",
       "status" : "passed",
       "time" : {
-        "start" : 1685387445411,
-        "stop" : 1685387450137,
-        "duration" : 4726
+        "start" : 1685389223553,
+        "stop" : 1685389228675,
+        "duration" : 5122
       }
     } ]
   },
@@ -452,12 +452,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "79684144f68aba45",
+      "uid" : "a82356685fe366e9",
       "status" : "passed",
       "time" : {
-        "start" : 1685387506449,
-        "stop" : 1685387511385,
-        "duration" : 4936
+        "start" : 1685389283380,
+        "stop" : 1685389288209,
+        "duration" : 4829
       }
     } ]
   },
@@ -471,12 +471,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "89412997aca06b29",
+      "uid" : "4828db4c0e97f61f",
       "status" : "passed",
       "time" : {
-        "start" : 1685387534961,
-        "stop" : 1685387539984,
-        "duration" : 5023
+        "start" : 1685389312533,
+        "stop" : 1685389317305,
+        "duration" : 4772
       }
     } ]
   },
@@ -490,12 +490,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c61c1fb0fcb5c60e",
+      "uid" : "d64a4923544e3a15",
       "status" : "passed",
       "time" : {
-        "start" : 1685387360961,
-        "stop" : 1685387364855,
-        "duration" : 3894
+        "start" : 1685389140408,
+        "stop" : 1685389144099,
+        "duration" : 3691
       }
     } ]
   },
@@ -509,12 +509,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bd8cb9632583e5f5",
+      "uid" : "58193fb64322b2c2",
       "status" : "passed",
       "time" : {
-        "start" : 1685387339067,
-        "stop" : 1685387343068,
-        "duration" : 4001
+        "start" : 1685389117312,
+        "stop" : 1685389121102,
+        "duration" : 3790
       }
     } ]
   },
@@ -528,31 +528,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "32533678650873fa",
+      "uid" : "6afceae1c6deea56",
       "status" : "passed",
       "time" : {
-        "start" : 1685387439367,
-        "stop" : 1685387444521,
-        "duration" : 5154
-      }
-    } ]
-  },
-  "23e3e512f0c4e65cb1d5ef15ad580080" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a4982b206e5f0c12",
-      "status" : "passed",
-      "time" : {
-        "start" : 1685387314477,
-        "stop" : 1685387317772,
-        "duration" : 3295
+        "start" : 1685389217147,
+        "stop" : 1685389222676,
+        "duration" : 5529
       }
     } ]
   },
@@ -566,12 +547,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9672dccdaa4f3f1d",
+      "uid" : "41a27c6f043da96b",
       "status" : "passed",
       "time" : {
-        "start" : 1685387397837,
-        "stop" : 1685387400989,
-        "duration" : 3152
+        "start" : 1685389178532,
+        "stop" : 1685389182105,
+        "duration" : 3573
+      }
+    } ]
+  },
+  "23e3e512f0c4e65cb1d5ef15ad580080" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "73ee58ea5bb2531f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1685389091625,
+        "stop" : 1685389095967,
+        "duration" : 4342
       }
     } ]
   },
@@ -585,12 +585,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "68ea85122f1c0257",
+      "uid" : "dd582b6b7f89ef99",
       "status" : "passed",
       "time" : {
-        "start" : 1685387451026,
-        "stop" : 1685387457391,
-        "duration" : 6365
+        "start" : 1685389229555,
+        "stop" : 1685389234988,
+        "duration" : 5433
       }
     } ]
   },
@@ -604,31 +604,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c8c4c2769ea60948",
+      "uid" : "812478f6d69a7092",
       "status" : "passed",
       "time" : {
-        "start" : 1685387518448,
-        "stop" : 1685387523096,
-        "duration" : 4648
-      }
-    } ]
-  },
-  "5bcbdd6305ce8bbcd001c0d85883ea6a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "b5b3df0ea2f04827",
-      "status" : "passed",
-      "time" : {
-        "start" : 1685387482615,
-        "stop" : 1685387487667,
-        "duration" : 5052
+        "start" : 1685389295604,
+        "stop" : 1685389300287,
+        "duration" : 4683
       }
     } ]
   },
@@ -642,12 +623,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dafce5c6e673ec29",
+      "uid" : "8dbe130494a279a1",
       "status" : "passed",
       "time" : {
-        "start" : 1685387369932,
-        "stop" : 1685387375297,
-        "duration" : 5365
+        "start" : 1685389149013,
+        "stop" : 1685389154432,
+        "duration" : 5419
+      }
+    } ]
+  },
+  "5bcbdd6305ce8bbcd001c0d85883ea6a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f80d99aa93e7ddcd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1685389259394,
+        "stop" : 1685389264692,
+        "duration" : 5298
       }
     } ]
   },
@@ -661,13 +661,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f8c518bebf4ae757",
+      "uid" : "a4326bd05dbdbd93",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1108, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55608e6a4133 <unknown>\n#1 0x55608e3d8966 <unknown>\n#2 0x55608e41b3f2 <unknown>\n#3 0x55608e4195ac <unknown>\n#4 0x55608e4173be <unknown>\n#5 0x55608e416696 <unknown>\n#6 0x55608e40b3ea <unknown>\n#7 0x55608e434bd2 <unknown>\n#8 0x55608e40ad13 <unknown>\n#9 0x55608e434d9e <unknown>\n#10 0x55608e44d1c7 <unknown>\n#11 0x55608e4349a3 <unknown>\n#12 0x55608e40946a <unknown>\n#13 0x55608e40a55e <unknown>\n#14 0x55608e663cae <unknown>\n#15 0x55608e6678fe <unknown>\n#16 0x55608e670f20 <unknown>\n#17 0x55608e668923 <unknown>\n#18 0x55608e63bc0e <unknown>\n#19 0x55608e68bb08 <unknown>\n#20 0x55608e68bc97 <unknown>\n#21 0x55608e69c113 <unknown>\n#22 0x7f7cfa6fe609 start_thread",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1108, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55d9b5ece133 <unknown>\n#1 0x55d9b5c02966 <unknown>\n#2 0x55d9b5c453f2 <unknown>\n#3 0x55d9b5c435ac <unknown>\n#4 0x55d9b5c413be <unknown>\n#5 0x55d9b5c40696 <unknown>\n#6 0x55d9b5c353ea <unknown>\n#7 0x55d9b5c5ebd2 <unknown>\n#8 0x55d9b5c34d13 <unknown>\n#9 0x55d9b5c5ed9e <unknown>\n#10 0x55d9b5c771c7 <unknown>\n#11 0x55d9b5c5e9a3 <unknown>\n#12 0x55d9b5c3346a <unknown>\n#13 0x55d9b5c3455e <unknown>\n#14 0x55d9b5e8dcae <unknown>\n#15 0x55d9b5e918fe <unknown>\n#16 0x55d9b5e9af20 <unknown>\n#17 0x55d9b5e92923 <unknown>\n#18 0x55d9b5e65c0e <unknown>\n#19 0x55d9b5eb5b08 <unknown>\n#20 0x55d9b5eb5c97 <unknown>\n#21 0x55d9b5ec6113 <unknown>\n#22 0x7f79fbd14609 start_thread",
       "time" : {
-        "start" : 1685387243143,
-        "stop" : 1685387246688,
-        "duration" : 3545
+        "start" : 1685389026156,
+        "stop" : 1685389029623,
+        "duration" : 3467
       }
     } ]
   },
@@ -681,13 +681,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f90eb42ba62e610e",
+      "uid" : "69664736251b05ad",
       "status" : "failed",
       "statusDetails" : "AssertionError",
       "time" : {
-        "start" : 1685387278192,
-        "stop" : 1685387282793,
-        "duration" : 4601
+        "start" : 1685389057217,
+        "stop" : 1685389061785,
+        "duration" : 4568
       }
     } ]
   },
@@ -701,12 +701,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e6a8f015f9a65846",
+      "uid" : "4b86ab4960f0614b",
       "status" : "passed",
       "time" : {
-        "start" : 1685387410585,
-        "stop" : 1685387413605,
-        "duration" : 3020
+        "start" : 1685389191515,
+        "stop" : 1685389194620,
+        "duration" : 3105
       }
     } ]
   },
@@ -720,12 +720,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9a631c688fa2e1e0",
+      "uid" : "c448ad53f8e58961",
       "status" : "passed",
       "time" : {
-        "start" : 1685387348478,
-        "stop" : 1685387351830,
-        "duration" : 3352
+        "start" : 1685389126313,
+        "stop" : 1685389130802,
+        "duration" : 4489
       }
     } ]
   },
@@ -739,12 +739,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eb5ad60980e6a9",
+      "uid" : "877cf69803c75aac",
       "status" : "passed",
       "time" : {
-        "start" : 1685387352710,
-        "stop" : 1685387356470,
-        "duration" : 3760
+        "start" : 1685389131682,
+        "stop" : 1685389135350,
+        "duration" : 3668
       }
     } ]
   },
@@ -758,12 +758,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "80e76ece4eb983d4",
+      "uid" : "701bcd4fa4630875",
       "status" : "passed",
       "time" : {
-        "start" : 1685387512277,
-        "stop" : 1685387517554,
-        "duration" : 5277
+        "start" : 1685389289115,
+        "stop" : 1685389294716,
+        "duration" : 5601
       }
     } ]
   },
@@ -777,12 +777,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1fca8a9927ccf74f",
+      "uid" : "2a71e9e877b5bd5c",
       "status" : "passed",
       "time" : {
-        "start" : 1685387393618,
-        "stop" : 1685387396961,
-        "duration" : 3343
+        "start" : 1685389174375,
+        "stop" : 1685389177645,
+        "duration" : 3270
       }
     } ]
   },
@@ -796,12 +796,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "363a9477bb6d822f",
+      "uid" : "ed0c2c438fe7f9",
       "status" : "passed",
       "time" : {
-        "start" : 1685387381090,
-        "stop" : 1685387384407,
-        "duration" : 3317
+        "start" : 1685389161895,
+        "stop" : 1685389165048,
+        "duration" : 3153
       }
     } ]
   },
@@ -815,12 +815,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "411f1e0ebc810877",
+      "uid" : "b1f465b557e7436d",
       "status" : "passed",
       "time" : {
-        "start" : 1685387470353,
-        "stop" : 1685387475346,
-        "duration" : 4993
+        "start" : 1685389247514,
+        "stop" : 1685389252380,
+        "duration" : 4866
       }
     } ]
   },
@@ -834,12 +834,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dc3aefb2fc6d7a94",
+      "uid" : "77fdea7c97024727",
       "status" : "passed",
       "time" : {
-        "start" : 1685387419820,
-        "stop" : 1685387422853,
-        "duration" : 3033
+        "start" : 1685389200387,
+        "stop" : 1685389203455,
+        "duration" : 3068
       }
     } ]
   },
@@ -853,12 +853,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cc4f71f0a5418064",
+      "uid" : "62051a30768ac6ae",
       "status" : "passed",
       "time" : {
-        "start" : 1685387343945,
-        "stop" : 1685387347592,
-        "duration" : 3647
+        "start" : 1685389121981,
+        "stop" : 1685389125424,
+        "duration" : 3443
       }
     } ]
   },
@@ -872,12 +872,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4c035b41730a5544",
+      "uid" : "c1307a4c47aff5b3",
       "status" : "passed",
       "time" : {
-        "start" : 1685387529749,
-        "stop" : 1685387534079,
-        "duration" : 4330
+        "start" : 1685389307125,
+        "stop" : 1685389311654,
+        "duration" : 4529
       }
     } ]
   },
@@ -891,12 +891,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f3f0299cb2657950",
+      "uid" : "d64fd41a98f9df27",
       "status" : "passed",
       "time" : {
-        "start" : 1685387292324,
-        "stop" : 1685387295155,
-        "duration" : 2831
+        "start" : 1685389071039,
+        "stop" : 1685389073733,
+        "duration" : 2694
       }
     } ]
   },
@@ -910,13 +910,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7d3586d1e5df9a9e",
+      "uid" : "17d13274db31c330",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55a9d645b133 <unknown>\n#1 0x55a9d618f966 <unknown>\n#2 0x55a9d61d23f2 <unknown>\n#3 0x55a9d61d05ac <unknown>\n#4 0x55a9d61ce3be <unknown>\n#5 0x55a9d61cd696 <unknown>\n#6 0x55a9d61c23ea <unknown>\n#7 0x55a9d61ebbd2 <unknown>\n#8 0x55a9d61c1d13 <unknown>\n#9 0x55a9d61ebd9e <unknown>\n#10 0x55a9d62041c7 <unknown>\n#11 0x55a9d61eb9a3 <unknown>\n#12 0x55a9d61c046a <unknown>\n#13 0x55a9d61c155e <unknown>\n#14 0x55a9d641acae <unknown>\n#15 0x55a9d641e8fe <unknown>\n#16 0x55a9d6427f20 <unknown>\n#17 0x55a9d641f923 <unknown>\n#18 0x55a9d63f2c0e <unknown>\n#19 0x55a9d6442b08 <unknown>\n#20 0x55a9d6442c97 <unknown>\n#21 0x55a9d6453113 <unknown>\n#22 0x7fe381998609 start_thread",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x5580bd131133 <unknown>\n#1 0x5580bce65966 <unknown>\n#2 0x5580bcea83f2 <unknown>\n#3 0x5580bcea65ac <unknown>\n#4 0x5580bcea43be <unknown>\n#5 0x5580bcea3696 <unknown>\n#6 0x5580bce983ea <unknown>\n#7 0x5580bcec1bd2 <unknown>\n#8 0x5580bce97d13 <unknown>\n#9 0x5580bcec1d9e <unknown>\n#10 0x5580bceda1c7 <unknown>\n#11 0x5580bcec19a3 <unknown>\n#12 0x5580bce9646a <unknown>\n#13 0x5580bce9755e <unknown>\n#14 0x5580bd0f0cae <unknown>\n#15 0x5580bd0f48fe <unknown>\n#16 0x5580bd0fdf20 <unknown>\n#17 0x5580bd0f5923 <unknown>\n#18 0x5580bd0c8c0e <unknown>\n#19 0x5580bd118b08 <unknown>\n#20 0x5580bd118c97 <unknown>\n#21 0x5580bd129113 <unknown>\n#22 0x7f960d4a9609 start_thread",
       "time" : {
-        "start" : 1685387247615,
-        "stop" : 1685387252484,
-        "duration" : 4869
+        "start" : 1685389030538,
+        "stop" : 1685389034223,
+        "duration" : 3685
       }
     } ]
   },
@@ -930,12 +930,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a074f22677655cde",
+      "uid" : "d348c8dc2f54303e",
       "status" : "passed",
       "time" : {
-        "start" : 1685387406003,
-        "stop" : 1685387409703,
-        "duration" : 3700
+        "start" : 1685389187060,
+        "stop" : 1685389190642,
+        "duration" : 3582
       }
     } ]
   },
@@ -949,13 +949,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4d52cdf2906fca18",
+      "uid" : "ffcb33749cc223e7",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x5587c5805133 <unknown>\n#1 0x5587c5539966 <unknown>\n#2 0x5587c557c3f2 <unknown>\n#3 0x5587c557a5ac <unknown>\n#4 0x5587c55783be <unknown>\n#5 0x5587c5577696 <unknown>\n#6 0x5587c556c3ea <unknown>\n#7 0x5587c5595bd2 <unknown>\n#8 0x5587c556bd13 <unknown>\n#9 0x5587c5595d9e <unknown>\n#10 0x5587c55ae1c7 <unknown>\n#11 0x5587c55959a3 <unknown>\n#12 0x5587c556a46a <unknown>\n#13 0x5587c556b55e <unknown>\n#14 0x5587c57c4cae <unknown>\n#15 0x5587c57c88fe <unknown>\n#16 0x5587c57d1f20 <unknown>\n#17 0x5587c57c9923 <unknown>\n#18 0x5587c579cc0e <unknown>\n#19 0x5587c57ecb08 <unknown>\n#20 0x5587c57ecc97 <unknown>\n#21 0x5587c57fd113 <unknown>\n#22 0x7fef5c7e4609 start_thread",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x5560c04dd133 <unknown>\n#1 0x5560c0211966 <unknown>\n#2 0x5560c02543f2 <unknown>\n#3 0x5560c02525ac <unknown>\n#4 0x5560c02503be <unknown>\n#5 0x5560c024f696 <unknown>\n#6 0x5560c02443ea <unknown>\n#7 0x5560c026dbd2 <unknown>\n#8 0x5560c0243d13 <unknown>\n#9 0x5560c026dd9e <unknown>\n#10 0x5560c02861c7 <unknown>\n#11 0x5560c026d9a3 <unknown>\n#12 0x5560c024246a <unknown>\n#13 0x5560c024355e <unknown>\n#14 0x5560c049ccae <unknown>\n#15 0x5560c04a08fe <unknown>\n#16 0x5560c04a9f20 <unknown>\n#17 0x5560c04a1923 <unknown>\n#18 0x5560c0474c0e <unknown>\n#19 0x5560c04c4b08 <unknown>\n#20 0x5560c04c4c97 <unknown>\n#21 0x5560c04d5113 <unknown>\n#22 0x7fd5ffbcc609 start_thread",
       "time" : {
-        "start" : 1685387238599,
-        "stop" : 1685387242222,
-        "duration" : 3623
+        "start" : 1685389021732,
+        "stop" : 1685389025250,
+        "duration" : 3518
       }
     } ]
   },
@@ -969,12 +969,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d11fccfc517a664f",
+      "uid" : "8f34db9203e1fe0c",
       "status" : "passed",
       "time" : {
-        "start" : 1685387523975,
-        "stop" : 1685387528855,
-        "duration" : 4880
+        "start" : 1685389301174,
+        "stop" : 1685389306238,
+        "duration" : 5064
       }
     } ]
   },
@@ -988,13 +988,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "29e1622ad66b78b3",
+      "uid" : "706014377d286e7c",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x557b186b9133 <unknown>\n#1 0x557b183ed966 <unknown>\n#2 0x557b184303f2 <unknown>\n#3 0x557b1842e5ac <unknown>\n#4 0x557b1842c3be <unknown>\n#5 0x557b1842b696 <unknown>\n#6 0x557b184203ea <unknown>\n#7 0x557b18449bd2 <unknown>\n#8 0x557b1841fd13 <unknown>\n#9 0x557b18449d9e <unknown>\n#10 0x557b184621c7 <unknown>\n#11 0x557b184499a3 <unknown>\n#12 0x557b1841e46a <unknown>\n#13 0x557b1841f55e <unknown>\n#14 0x557b18678cae <unknown>\n#15 0x557b1867c8fe <unknown>\n#16 0x557b18685f20 <unknown>\n#17 0x557b1867d923 <unknown>\n#18 0x557b18650c0e <unknown>\n#19 0x557b186a0b08 <unknown>\n#20 0x557b186a0c97 <unknown>\n#21 0x557b186b1113 <unknown>\n#22 0x7ff575121609 start_thread",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=113.0.5672.126)\nStacktrace:\n#0 0x55ce4cd0f133 <unknown>\n#1 0x55ce4ca43966 <unknown>\n#2 0x55ce4ca863f2 <unknown>\n#3 0x55ce4ca845ac <unknown>\n#4 0x55ce4ca823be <unknown>\n#5 0x55ce4ca81696 <unknown>\n#6 0x55ce4ca763ea <unknown>\n#7 0x55ce4ca9fbd2 <unknown>\n#8 0x55ce4ca75d13 <unknown>\n#9 0x55ce4ca9fd9e <unknown>\n#10 0x55ce4cab81c7 <unknown>\n#11 0x55ce4ca9f9a3 <unknown>\n#12 0x55ce4ca7446a <unknown>\n#13 0x55ce4ca7555e <unknown>\n#14 0x55ce4cccecae <unknown>\n#15 0x55ce4ccd28fe <unknown>\n#16 0x55ce4ccdbf20 <unknown>\n#17 0x55ce4ccd3923 <unknown>\n#18 0x55ce4cca6c0e <unknown>\n#19 0x55ce4ccf6b08 <unknown>\n#20 0x55ce4ccf6c97 <unknown>\n#21 0x55ce4cd07113 <unknown>\n#22 0x7f436ce12609 start_thread",
       "time" : {
-        "start" : 1685387283687,
-        "stop" : 1685387287089,
-        "duration" : 3402
+        "start" : 1685389062669,
+        "stop" : 1685389066010,
+        "duration" : 3341
       }
     } ]
   },
@@ -1008,12 +1008,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7797dccdd9f3bd2",
+      "uid" : "4d839713178f864",
       "status" : "passed",
       "time" : {
-        "start" : 1685387458275,
-        "stop" : 1685387463300,
-        "duration" : 5025
+        "start" : 1685389235873,
+        "stop" : 1685389240537,
+        "duration" : 4664
       }
     } ]
   },
@@ -1027,31 +1027,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2912cf3d1f37f28",
+      "uid" : "d061ac6f627bc141",
       "status" : "passed",
       "time" : {
-        "start" : 1685387318659,
-        "stop" : 1685387322775,
-        "duration" : 4116
-      }
-    } ]
-  },
-  "955c42a055cc723f557f66ee49ae2b29" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "d61c05f188d60d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1685387296054,
-        "stop" : 1685387302285,
-        "duration" : 6231
+        "start" : 1685389096849,
+        "stop" : 1685389100971,
+        "duration" : 4122
       }
     } ]
   },
@@ -1065,12 +1046,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "21a4d385988467dd",
+      "uid" : "3ff5030da70b6c52",
       "status" : "passed",
       "time" : {
-        "start" : 1685387365746,
-        "stop" : 1685387369047,
-        "duration" : 3301
+        "start" : 1685389144981,
+        "stop" : 1685389148139,
+        "duration" : 3158
+      }
+    } ]
+  },
+  "955c42a055cc723f557f66ee49ae2b29" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bc0322b03e7cc872",
+      "status" : "passed",
+      "time" : {
+        "start" : 1685389074604,
+        "stop" : 1685389079617,
+        "duration" : 5013
       }
     } ]
   },
@@ -1084,12 +1084,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "185f2cbccb8ac3c5",
+      "uid" : "9787fa914a11dbe0",
       "status" : "passed",
       "time" : {
-        "start" : 1685387323659,
-        "stop" : 1685387326135,
-        "duration" : 2476
+        "start" : 1685389101850,
+        "stop" : 1685389104234,
+        "duration" : 2384
       }
     } ]
   },
@@ -1103,12 +1103,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "56599dae18cefed2",
+      "uid" : "b3af13302542653b",
       "status" : "passed",
       "time" : {
-        "start" : 1685387376179,
-        "stop" : 1685387380206,
-        "duration" : 4027
+        "start" : 1685389155309,
+        "stop" : 1685389161009,
+        "duration" : 5700
       }
     } ]
   },
@@ -1122,12 +1122,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bf12173a35f7db2b",
+      "uid" : "1f337e960e3971ce",
       "status" : "passed",
       "time" : {
-        "start" : 1685387303171,
-        "stop" : 1685387305814,
-        "duration" : 2643
+        "start" : 1685389080495,
+        "stop" : 1685389082931,
+        "duration" : 2436
       }
     } ]
   },
@@ -1141,12 +1141,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "538b4b4ec84d3437",
+      "uid" : "1951ef1398accedd",
       "status" : "passed",
       "time" : {
-        "start" : 1685387389839,
-        "stop" : 1685387392734,
-        "duration" : 2895
+        "start" : 1685389170655,
+        "stop" : 1685389173492,
+        "duration" : 2837
       }
     } ]
   },
@@ -1160,12 +1160,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "55f8bb57aaeb63de",
+      "uid" : "2f3d42c4755aef5f",
       "status" : "passed",
       "time" : {
-        "start" : 1685387334920,
-        "stop" : 1685387338178,
-        "duration" : 3258
+        "start" : 1685389113190,
+        "stop" : 1685389116426,
+        "duration" : 3236
       }
     } ]
   },
@@ -1179,12 +1179,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "af0cca631f870ed8",
+      "uid" : "7e4df1eaf23557fe",
       "status" : "passed",
       "time" : {
-        "start" : 1685387494870,
-        "stop" : 1685387499661,
-        "duration" : 4791
+        "start" : 1685389271811,
+        "stop" : 1685389276555,
+        "duration" : 4744
       }
     } ]
   },
@@ -1198,12 +1198,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4c541c55cf8cc2bc",
+      "uid" : "a47ec521db1aca09",
       "status" : "passed",
       "time" : {
-        "start" : 1685387288017,
-        "stop" : 1685387291451,
-        "duration" : 3434
+        "start" : 1685389066925,
+        "stop" : 1685389070151,
+        "duration" : 3226
       }
     } ]
   }
