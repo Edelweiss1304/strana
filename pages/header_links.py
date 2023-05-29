@@ -1,11 +1,17 @@
+import time
+
 from base.base_class import Base
 from selenium.webdriver.common.by import By
-import allure
-import pytest
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 class Header(Base):
-    # Locators
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.driver = driver
+        self.actions = ActionChains(driver)
+
+    # Локаторы для кнопок в хэдере
 
     projects = "//span[@class='s-shift-text__value'][contains(text(),'Проекты')]"
     apart = "//span[@class='s-shift-text__value'][contains(text(),'Квартиры')]"
@@ -16,12 +22,26 @@ class Header(Base):
     vacancies = "//span[@class='s-shift-text__value'][contains(text(),'Вакансии')]"
     menu = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
 
+    # Заголовки для проверок из страниц хэдера
+
     purchase_methods_check = "//h1[contains(text(),'Материнский')]"
     projects_check = "//h2[contains(text(),'Проекты')]"
     apart_check = "//div[@class='s-select__label' and text()='Подобрать квартиру']"
     action_check = "(//span[contains(text(),'Акции')])[3]"
     about_check = "//h1[contains(text(),'О компании')]"
     vacancy_check = "//h2[contains(text(),'Работа в Стране Девелопмент')]"
+
+    # Локаторы для проектов в хэдере
+
+    project_business_tittle = "//div[@class='uppercase title_KrDfI']"
+    project_comfort_tittle = ".title_S5gJM"
+    project_dnv_check = "(//div[@class='listLabel_Q6E55'][contains(text(),'Санкт-Петербург')])[1]"
+    project_1 = "(//div[@class='s-link__wrapper'])[9]"
+    project_2 = "(//div[@class='s-link__wrapper'])[10]"
+    project_3 = "(//div[@class='s-link__wrapper'])[11]"
+    project_4 = "(//div[@class='s-link__wrapper'])[12]"
+    project_5 = "(//div[@class='s-link__wrapper'])[13]"
+    project_6 = "(//div[@class='s-link__wrapper'])[14]"
 
     # Getters
     def get_projects(self):
@@ -66,11 +86,43 @@ class Header(Base):
     def get_vacancy_check(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.vacancy_check)).text
 
+    # Проверка проектов в ХЭДЕРЕ Getters
+
+    def get_project_business_tittle(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.project_business_tittle)).text
+
+    def get_project_comfort_tittle(self):
+        return self.get_element_visibility(self.driver, (By.CSS_SELECTOR, self.project_comfort_tittle)).text
+
+    def get_project_dnv_check(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.project_dnv_check)).text
+
+    def get_project_1_header(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.project_1))
+
+    def get_project_2_header(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.project_2))
+
+    def get_project_3_header(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.project_3))
+
+    def get_project_4_header(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.project_4))
+
+    def get_project_5_header(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.project_5))
+
+    def get_project_6_header(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.project_6))
+
     # Actions
     def click_projects(self):
         self.get_projects().click()
+        print("Кликаем на кнопку проекты")
 
-    print("Кликаем на кнопку проекты")
+    def move_to_projects(self):
+        self.actions.move_to_element(self.get_projects()).perform()
+        print("Наводимся на проекты")
 
     def click_apart(self):
         self.get_apart().click()
@@ -95,6 +147,32 @@ class Header(Base):
     def click_vacancies(self):
         self.get_vacancies().click()
         print("Кликаем на кнопку вакансии")
+
+    # Проверка проектов в ХЭДЕРЕ Actions
+
+    def click_project_1_from_header(self):
+        self.get_project_1_header().click()
+        print("Кликаем на 1 проект")
+
+    def click_project_2_from_header(self):
+        self.get_project_2_header().click()
+        print("Кликаем на 2 проект")
+
+    def click_project_3_from_header(self):
+        self.get_project_3_header().click()
+        print("Кликаем на 3 проект")
+
+    def click_project_4_from_header(self):
+        self.get_project_4_header().click()
+        print("Кликаем на 4 проект")
+
+    def click_project_5_from_header(self):
+        self.get_project_5_header().click()
+        print("Кликаем на 5 проект")
+
+    def click_project_6_from_header(self):
+        self.get_project_6_header().click()
+        print("Кликаем на 6 проект")
 
         # Methods
 
@@ -132,4 +210,72 @@ class Header(Base):
         self.click_vacancies()
         assert self.get_about_check() == "О компании"
         assert self.get_vacancy_check() == "Работа в Стране Девелопмент"
+        print("Проверяем заголовок")
+
+        # Проверка проектов в ХЭДЕРЕ Methods
+    def check_wow_from_header(self):
+        self.move_to_projects()
+        self.click_project_1_from_header()
+        assert self.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
+        print("Проверяем заголовок")
+
+    def check_ozerniy_from_header(self):
+        self.move_to_projects()
+        self.click_project_2_from_header()
+        assert self.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
+        print("Проверяем заголовок")
+
+    def check_dnv_from_header(self):
+        self.move_to_projects()
+        self.click_project_1_from_header()
+        assert self.get_project_dnv_check() == "Санкт-Петербург"
+        print("Проверяем что попали на нужную страницу")
+
+    def check_princip_from_header(self):
+        self.move_to_projects()
+        self.click_project_2_from_header()
+        assert self.get_project_comfort_tittle() == "ПРИНЦИП"
+        print("Проверяем заголовок")
+
+    def check_zvezdniy_from_header(self):
+        self.move_to_projects()
+        self.click_project_1_from_header()
+        assert self.get_project_comfort_tittle() == "Звездный"
+        print("Проверяем заголовок")
+
+    def check_union_from_header(self):
+        self.move_to_projects()
+        self.click_project_2_from_header()
+        assert self.get_project_comfort_tittle() == "Юнион"
+        print("Проверяем заголовок")
+
+    def check_avtorskiy_from_header(self):
+        self.move_to_projects()
+        self.click_project_3_from_header()
+        assert self.get_project_comfort_tittle() == "Авторский"
+        print("Проверяем заголовок")
+
+    def check_kolumb_from_header(self):
+        self.move_to_projects()
+        self.click_project_4_from_header()
+        assert self.get_project_comfort_tittle() == "Колумб"
+        print("Проверяем заголовок")
+
+    def check_sersib_from_header(self):
+        self.move_to_projects()
+        self.click_project_5_from_header()
+        print(self.get_project_comfort_tittle())
+        assert self.get_project_comfort_tittle() == "Сердце Сибири"
+        print("Проверяем заголовок")
+
+    def check_domashniy_from_header(self):
+        self.move_to_projects()
+        self.click_project_6_from_header()
+        assert self.get_project_comfort_tittle() == "Домашний"
+        print("Проверяем заголовок")
+
+    def check_sibsad_from_header(self):
+        self.move_to_projects()
+        self.click_project_1_from_header()
+        assert self.get_project_comfort_tittle() == "Сибирский сад"
         print("Проверяем заголовок")
