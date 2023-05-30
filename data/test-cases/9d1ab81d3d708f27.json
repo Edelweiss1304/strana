@@ -1,36 +1,21 @@
 {
-  "uid" : "9fff8ddb479e2a06",
+  "uid" : "9d1ab81d3d708f27",
   "name" : "Проверка Сердце Сибири тмн",
   "fullName" : "tests.test_header#test_tmn_header_sersib",
   "historyId" : "4d16b1c39a36e5906d994c60ba8f035f",
   "time" : {
-    "start" : 1685478125112,
-    "stop" : 1685478130200,
-    "duration" : 5088
+    "start" : 1685481431373,
+    "stop" : 1685481438918,
+    "duration" : 7545
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "_skip_sensitive",
+    "name" : "_verify_url",
     "time" : {
-      "start" : 1685478124268,
-      "stop" : 1685478124268,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "allure_attach_screenshot",
-    "time" : {
-      "start" : 1685478125111,
-      "stop" : 1685478125111,
+      "start" : 1685481430523,
+      "stop" : 1685481430523,
       "duration" : 0
     },
     "status" : "passed",
@@ -44,9 +29,9 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1685478124268,
-      "stop" : 1685478125111,
-      "duration" : 843
+      "start" : 1685481430524,
+      "stop" : 1685481431373,
+      "duration" : 849
     },
     "status" : "passed",
     "steps" : [ ],
@@ -59,8 +44,8 @@
   }, {
     "name" : "sensitive_url",
     "time" : {
-      "start" : 1685478124268,
-      "stop" : 1685478124268,
+      "start" : 1685481430524,
+      "stop" : 1685481430524,
       "duration" : 0
     },
     "status" : "passed",
@@ -72,10 +57,10 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "_verify_url",
+    "name" : "_skip_sensitive",
     "time" : {
-      "start" : 1685478124268,
-      "stop" : 1685478124268,
+      "start" : 1685481430524,
+      "stop" : 1685481430524,
       "duration" : 0
     },
     "status" : "passed",
@@ -89,8 +74,23 @@
   }, {
     "name" : "base_url",
     "time" : {
-      "start" : 1685478124268,
-      "stop" : 1685478124268,
+      "start" : 1685481430523,
+      "stop" : 1685481430523,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "allure_attach_screenshot",
+    "time" : {
+      "start" : 1685481431373,
+      "stop" : 1685481431373,
       "duration" : 0
     },
     "status" : "passed",
@@ -106,9 +106,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "95c3bcf95f7454ec",
+      "uid" : "5b1ab558a149baba",
       "name" : "stdout",
-      "source" : "95c3bcf95f7454ec.txt",
+      "source" : "5b1ab558a149baba.txt",
       "type" : "text/plain",
       "size" : 123
     } ],
@@ -119,11 +119,11 @@
     "hasContent" : true
   },
   "afterStages" : [ {
-    "name" : "allure_attach_screenshot::0",
+    "name" : "driver::0",
     "time" : {
-      "start" : 1685478130201,
-      "stop" : 1685478130201,
-      "duration" : 0
+      "start" : 1685481438919,
+      "stop" : 1685481438980,
+      "duration" : 61
     },
     "status" : "passed",
     "steps" : [ ],
@@ -134,11 +134,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "driver::0",
+    "name" : "allure_attach_screenshot::0",
     "time" : {
-      "start" : 1685478130201,
-      "stop" : 1685478130261,
-      "duration" : 60
+      "start" : 1685481438918,
+      "stop" : 1685481438919,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -160,7 +160,7 @@
     "value" : "stranatest"
   }, {
     "name" : "thread",
-    "value" : "59259-MainThread"
+    "value" : "61583-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -184,6 +184,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9fff8ddb479e2a06.json",
+  "source" : "9d1ab81d3d708f27.json",
   "parameterValues" : [ ]
 }
