@@ -267,7 +267,7 @@ class Header(Base):
         self.click_project_5_from_header()
         self.driver.save_screenshot('screensho2.png')
         print(self.get_project_comfort_tittle())
-        assert self.get_project_comfort_tittle() == "Сердце Сибири"
+        assert self.get_project_comfort_tittle() == "Юнион"
         print("Проверяем заголовок")
 
     def check_domashniy_from_header(self):
