@@ -1,38 +1,23 @@
 {
-  "uid" : "7cd095f452533a8f",
-  "name" : "Проверка Сердце Сибири тмн",
-  "fullName" : "tests.test_header#test_tmn_header_sersib",
-  "historyId" : "4d16b1c39a36e5906d994c60ba8f035f",
+  "uid" : "99d0266bc89b90cd",
+  "name" : "Проверка Колумб тмн",
+  "fullName" : "tests.test_header#test_tmn_header_kolumb",
+  "historyId" : "588bd1ba71f3515fe3fb80c4d6ef3e6c",
   "time" : {
-    "start" : 1685538111212,
-    "stop" : 1685538116295,
-    "duration" : 5083
+    "start" : 1685539051773,
+    "stop" : 1685539057166,
+    "duration" : 5393
   },
   "status" : "failed",
   "statusMessage" : "AssertionError",
-  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"1f0d9d782c8cc896cee1860f72c0361b\")>\n\n    @allure.title(\"Проверка Сердце Сибири тмн\")\n    def test_tmn_header_sersib(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_sersib_from_header()\n\ntests/test_header.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7f57f6246ed0>\n\n    def check_sersib_from_header(self):\n        self.move_to_projects()\n        self.driver.save_screenshot('screenshot1.png')\n        self.click_project_5_from_header()\n        self.driver.save_screenshot('screensho2.png')\n        print(self.get_project_comfort_tittle())\n>       assert self.get_project_comfort_tittle() == \"Сердце Сибири\"\nE       AssertionError\n\npages/header_links.py:270: AssertionError",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7c7e1243077489e7f7cb401991a78238\")>\n\n    @allure.title(\"Проверка Колумб тмн\")\n    def test_tmn_header_kolumb(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_kolumb_from_header()\n\ntests/test_header.py:60: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7f229a096d50>\n\n    def check_kolumb_from_header(self):\n        self.move_to_projects()\n        self.click_project_4_from_header()\n>       assert self.get_project_comfort_tittle() == \"Колумб\"\nE       AssertionError\n\npages/header_links.py:261: AssertionError",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "_skip_sensitive",
     "time" : {
-      "start" : 1685538110467,
-      "stop" : 1685538110467,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "allure_attach_screenshot",
-    "time" : {
-      "start" : 1685538111212,
-      "stop" : 1685538111212,
+      "start" : 1685539051056,
+      "stop" : 1685539051056,
       "duration" : 0
     },
     "status" : "passed",
@@ -46,8 +31,23 @@
   }, {
     "name" : "sensitive_url",
     "time" : {
-      "start" : 1685538110467,
-      "stop" : 1685538110467,
+      "start" : 1685539019813,
+      "stop" : 1685539019813,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "allure_attach_screenshot",
+    "time" : {
+      "start" : 1685539051772,
+      "stop" : 1685539051772,
       "duration" : 0
     },
     "status" : "passed",
@@ -61,23 +61,8 @@
   }, {
     "name" : "base_url",
     "time" : {
-      "start" : 1685538110467,
-      "stop" : 1685538110467,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "_verify_url",
-    "time" : {
-      "start" : 1685538110467,
-      "stop" : 1685538110467,
+      "start" : 1685539019812,
+      "stop" : 1685539019812,
       "duration" : 0
     },
     "status" : "passed",
@@ -91,9 +76,24 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1685538110467,
-      "stop" : 1685538111212,
-      "duration" : 745
+      "start" : 1685539051056,
+      "stop" : 1685539051772,
+      "duration" : 716
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1685539019813,
+      "stop" : 1685539019813,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -107,14 +107,14 @@
   "testStage" : {
     "status" : "failed",
     "statusMessage" : "AssertionError",
-    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"1f0d9d782c8cc896cee1860f72c0361b\")>\n\n    @allure.title(\"Проверка Сердце Сибири тмн\")\n    def test_tmn_header_sersib(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_sersib_from_header()\n\ntests/test_header.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7f57f6246ed0>\n\n    def check_sersib_from_header(self):\n        self.move_to_projects()\n        self.driver.save_screenshot('screenshot1.png')\n        self.click_project_5_from_header()\n        self.driver.save_screenshot('screensho2.png')\n        print(self.get_project_comfort_tittle())\n>       assert self.get_project_comfort_tittle() == \"Сердце Сибири\"\nE       AssertionError\n\npages/header_links.py:270: AssertionError",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7c7e1243077489e7f7cb401991a78238\")>\n\n    @allure.title(\"Проверка Колумб тмн\")\n    def test_tmn_header_kolumb(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_kolumb_from_header()\n\ntests/test_header.py:60: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7f229a096d50>\n\n    def check_kolumb_from_header(self):\n        self.move_to_projects()\n        self.click_project_4_from_header()\n>       assert self.get_project_comfort_tittle() == \"Колумб\"\nE       AssertionError\n\npages/header_links.py:261: AssertionError",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "845b8cdb2012e531",
+      "uid" : "a3d9eb0e18412144",
       "name" : "stdout",
-      "source" : "845b8cdb2012e531.txt",
+      "source" : "a3d9eb0e18412144.txt",
       "type" : "text/plain",
-      "size" : 85
+      "size" : 74
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -125,9 +125,9 @@
   "afterStages" : [ {
     "name" : "allure_attach_screenshot::0",
     "time" : {
-      "start" : 1685538116342,
-      "stop" : 1685538116343,
-      "duration" : 1
+      "start" : 1685539057172,
+      "stop" : 1685539057172,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -140,9 +140,9 @@
   }, {
     "name" : "driver::0",
     "time" : {
-      "start" : 1685538116343,
-      "stop" : 1685538116403,
-      "duration" : 60
+      "start" : 1685539057172,
+      "stop" : 1685539057250,
+      "duration" : 78
     },
     "status" : "passed",
     "steps" : [ ],
@@ -164,7 +164,7 @@
     "value" : "stranatest"
   }, {
     "name" : "thread",
-    "value" : "55793-MainThread"
+    "value" : "56663-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -192,6 +192,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "7cd095f452533a8f.json",
+  "source" : "99d0266bc89b90cd.json",
   "parameterValues" : [ ]
 }

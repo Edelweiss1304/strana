@@ -2,18 +2,184 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55b136df24e3 <unknown>\n#1 0x55b136b21c76 <unknown>\n#2 0x55b136b639d4 <unknown>\n#3 0x55b136b61cbd <unknown>\n#4 0x55b136b5fd2e <unknown>\n#5 0x55b136b5f10f <unknown>\n#6 0x55b136b541da <unknown>\n#7 0x55b136b7d012 <unknown>\n#8 0x55b136b53b03 <unknown>\n#9 0x55b136b7d1de <unknown>\n#10 0x55b136b9530e <unknown>\n#11 0x55b136b7cde3 <unknown>\n#12 0x55b136b522dd <unknown>\n#13 0x55b136b5334e <unknown>\n#14 0x55b136db23e4 <unknown>\n#15 0x55b136db63d7 <unknown>\n#16 0x55b136dc0b20 <unknown>\n#17 0x55b136db7023 <unknown>\n#18 0x55b136d851aa <unknown>\n#19 0x55b136ddb6b8 <unknown>\n#20 0x55b136ddb847 <unknown>\n#21 0x55b136deb243 <unknown>\n#22 0x7f918c685609 start_thread",
+      "children" : [ {
+        "name" : "Проверка WOW мск",
+        "uid" : "c85e9580e209c8c4",
+        "parentUid" : "7ee23cb55fc0451bca799d716167b482",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685539020568,
+          "stop" : 1685539023810,
+          "duration" : 3242
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7ee23cb55fc0451bca799d716167b482"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1108, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x558047b214e3 <unknown>\n#1 0x558047850c76 <unknown>\n#2 0x5580478929d4 <unknown>\n#3 0x558047890cbd <unknown>\n#4 0x55804788ed2e <unknown>\n#5 0x55804788e10f <unknown>\n#6 0x5580478831da <unknown>\n#7 0x5580478ac012 <unknown>\n#8 0x558047882b03 <unknown>\n#9 0x5580478ac1de <unknown>\n#10 0x5580478c430e <unknown>\n#11 0x5580478abde3 <unknown>\n#12 0x5580478812dd <unknown>\n#13 0x55804788234e <unknown>\n#14 0x558047ae13e4 <unknown>\n#15 0x558047ae53d7 <unknown>\n#16 0x558047aefb20 <unknown>\n#17 0x558047ae6023 <unknown>\n#18 0x558047ab41aa <unknown>\n#19 0x558047b0a6b8 <unknown>\n#20 0x558047b0a847 <unknown>\n#21 0x558047b1a243 <unknown>\n#22 0x7f723e02a609 start_thread",
+      "children" : [ {
+        "name" : "Проверка Озёрный мск",
+        "uid" : "e018afe746b8c7c4",
+        "parentUid" : "749619a8d300b086eb36897c4e714091",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685539024694,
+          "stop" : 1685539028044,
+          "duration" : 3350
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "749619a8d300b086eb36897c4e714091"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x556df8f664e3 <unknown>\n#1 0x556df8c95c76 <unknown>\n#2 0x556df8cd79d4 <unknown>\n#3 0x556df8cd5cbd <unknown>\n#4 0x556df8cd3d2e <unknown>\n#5 0x556df8cd310f <unknown>\n#6 0x556df8cc81da <unknown>\n#7 0x556df8cf1012 <unknown>\n#8 0x556df8cc7b03 <unknown>\n#9 0x556df8cf11de <unknown>\n#10 0x556df8d0930e <unknown>\n#11 0x556df8cf0de3 <unknown>\n#12 0x556df8cc62dd <unknown>\n#13 0x556df8cc734e <unknown>\n#14 0x556df8f263e4 <unknown>\n#15 0x556df8f2a3d7 <unknown>\n#16 0x556df8f34b20 <unknown>\n#17 0x556df8f2b023 <unknown>\n#18 0x556df8ef91aa <unknown>\n#19 0x556df8f4f6b8 <unknown>\n#20 0x556df8f4f847 <unknown>\n#21 0x556df8f5f243 <unknown>\n#22 0x7f07cd4f7609 start_thread",
+      "children" : [ {
+        "name" : "Проверка ДнВ спб",
+        "uid" : "1be13483dcbe969d",
+        "parentUid" : "8b6c7b2502d1a94267767721f079e8f2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685539028857,
+          "stop" : 1685539033232,
+          "duration" : 4375
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8b6c7b2502d1a94267767721f079e8f2"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1108, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x5591138f44e3 <unknown>\n#1 0x559113623c76 <unknown>\n#2 0x5591136659d4 <unknown>\n#3 0x559113663cbd <unknown>\n#4 0x559113661d2e <unknown>\n#5 0x55911366110f <unknown>\n#6 0x5591136561da <unknown>\n#7 0x55911367f012 <unknown>\n#8 0x559113655b03 <unknown>\n#9 0x55911367f1de <unknown>\n#10 0x55911369730e <unknown>\n#11 0x55911367ede3 <unknown>\n#12 0x5591136542dd <unknown>\n#13 0x55911365534e <unknown>\n#14 0x5591138b43e4 <unknown>\n#15 0x5591138b83d7 <unknown>\n#16 0x5591138c2b20 <unknown>\n#17 0x5591138b9023 <unknown>\n#18 0x5591138871aa <unknown>\n#19 0x5591138dd6b8 <unknown>\n#20 0x5591138dd847 <unknown>\n#21 0x5591138ed243 <unknown>\n#22 0x7f23b6f21609 start_thread",
+      "children" : [ {
+        "name" : "Проверка Принцип спб",
+        "uid" : "2f3ff28a2d99a352",
+        "parentUid" : "221f3c99258116e8ea3c82180e401b79",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685539034054,
+          "stop" : 1685539037782,
+          "duration" : 3728
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "221f3c99258116e8ea3c82180e401b79"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x558739a934e3 <unknown>\n#1 0x5587397c2c76 <unknown>\n#2 0x5587398049d4 <unknown>\n#3 0x558739802cbd <unknown>\n#4 0x558739800d2e <unknown>\n#5 0x55873980010f <unknown>\n#6 0x5587397f51da <unknown>\n#7 0x55873981e012 <unknown>\n#8 0x5587397f4b03 <unknown>\n#9 0x55873981e1de <unknown>\n#10 0x55873983630e <unknown>\n#11 0x55873981dde3 <unknown>\n#12 0x5587397f32dd <unknown>\n#13 0x5587397f434e <unknown>\n#14 0x558739a533e4 <unknown>\n#15 0x558739a573d7 <unknown>\n#16 0x558739a61b20 <unknown>\n#17 0x558739a58023 <unknown>\n#18 0x558739a261aa <unknown>\n#19 0x558739a7c6b8 <unknown>\n#20 0x558739a7c847 <unknown>\n#21 0x558739a8c243 <unknown>\n#22 0x7f6bb1c76609 start_thread",
+      "children" : [ {
+        "name" : "Проверка Звездный тмн",
+        "uid" : "fc1c8ac1b8d3c41f",
+        "parentUid" : "522d600ebbd549b3431622b8cd03e133",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685539038570,
+          "stop" : 1685539042371,
+          "duration" : 3801
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "522d600ebbd549b3431622b8cd03e133"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1101, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x5621de3554e3 <unknown>\n#1 0x5621de084c76 <unknown>\n#2 0x5621de0c69d4 <unknown>\n#3 0x5621de0c4cbd <unknown>\n#4 0x5621de0c2d2e <unknown>\n#5 0x5621de0c210f <unknown>\n#6 0x5621de0b71da <unknown>\n#7 0x5621de0e0012 <unknown>\n#8 0x5621de0b6b03 <unknown>\n#9 0x5621de0e01de <unknown>\n#10 0x5621de0f830e <unknown>\n#11 0x5621de0dfde3 <unknown>\n#12 0x5621de0b52dd <unknown>\n#13 0x5621de0b634e <unknown>\n#14 0x5621de3153e4 <unknown>\n#15 0x5621de3193d7 <unknown>\n#16 0x5621de323b20 <unknown>\n#17 0x5621de31a023 <unknown>\n#18 0x5621de2e81aa <unknown>\n#19 0x5621de33e6b8 <unknown>\n#20 0x5621de33e847 <unknown>\n#21 0x5621de34e243 <unknown>\n#22 0x7fa5790e5609 start_thread",
+      "children" : [ {
+        "name" : "Проверка Юнион тмн",
+        "uid" : "f309ad0e930c5dca",
+        "parentUid" : "ed0ae5f480c12ad6ad9ba6f3d60ebb2b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685539043203,
+          "stop" : 1685539046620,
+          "duration" : 3417
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ed0ae5f480c12ad6ad9ba6f3d60ebb2b"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (1383, 932). Other element would receive the click: <svg data-v-1f86c663=\"\" data-v-d9372757=\"\" class=\"s-icon s-bottom-navigation-item__icon\" style=\"font-size: 2.4rem;\">...</svg>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55f1efa894e3 <unknown>\n#1 0x55f1ef7b8c76 <unknown>\n#2 0x55f1ef7fa9d4 <unknown>\n#3 0x55f1ef7f8cbd <unknown>\n#4 0x55f1ef7f6d2e <unknown>\n#5 0x55f1ef7f610f <unknown>\n#6 0x55f1ef7eb1da <unknown>\n#7 0x55f1ef814012 <unknown>\n#8 0x55f1ef7eab03 <unknown>\n#9 0x55f1ef8141de <unknown>\n#10 0x55f1ef82c30e <unknown>\n#11 0x55f1ef813de3 <unknown>\n#12 0x55f1ef7e92dd <unknown>\n#13 0x55f1ef7ea34e <unknown>\n#14 0x55f1efa493e4 <unknown>\n#15 0x55f1efa4d3d7 <unknown>\n#16 0x55f1efa57b20 <unknown>\n#17 0x55f1efa4e023 <unknown>\n#18 0x55f1efa1c1aa <unknown>\n#19 0x55f1efa726b8 <unknown>\n#20 0x55f1efa72847 <unknown>\n#21 0x55f1efa82243 <unknown>\n#22 0x7fbe6b5c6609 start_thread",
+      "children" : [ {
+        "name" : "Проверка Авторский тмн",
+        "uid" : "fd681c1debb8a7f8",
+        "parentUid" : "a417b45dd3ae8cf1ac2aabd21a6762e8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685539047453,
+          "stop" : 1685539050960,
+          "duration" : 3507
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a417b45dd3ae8cf1ac2aabd21a6762e8"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-93e6bebd=\"\" class=\"s-link__wrapper\"></div> is not clickable at point (818, 932). Other element would receive the click: <use data-v-1f86c663=\"\" xlink:href=\"#shopping-bag\"></use>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x5615a05ed4e3 <unknown>\n#1 0x5615a031cc76 <unknown>\n#2 0x5615a035e9d4 <unknown>\n#3 0x5615a035ccbd <unknown>\n#4 0x5615a035ad2e <unknown>\n#5 0x5615a035a10f <unknown>\n#6 0x5615a034f1da <unknown>\n#7 0x5615a0378012 <unknown>\n#8 0x5615a034eb03 <unknown>\n#9 0x5615a03781de <unknown>\n#10 0x5615a039030e <unknown>\n#11 0x5615a0377de3 <unknown>\n#12 0x5615a034d2dd <unknown>\n#13 0x5615a034e34e <unknown>\n#14 0x5615a05ad3e4 <unknown>\n#15 0x5615a05b13d7 <unknown>\n#16 0x5615a05bbb20 <unknown>\n#17 0x5615a05b2023 <unknown>\n#18 0x5615a05801aa <unknown>\n#19 0x5615a05d66b8 <unknown>\n#20 0x5615a05d6847 <unknown>\n#21 0x5615a05e6243 <unknown>\n#22 0x7f2892aeb609 start_thread",
+      "children" : [ {
+        "name" : "Проверка Сибирский сад ект",
+        "uid" : "a0ad9e13a9c71ad8",
+        "parentUid" : "55ec0f5f1fada0e1525a5e516b9dfc82",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685539074531,
+          "stop" : 1685539078012,
+          "duration" : 3481
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "55ec0f5f1fada0e1525a5e516b9dfc82"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
     "name" : "Product defects",
     "children" : [ {
       "name" : "AssertionError",
       "children" : [ {
-        "name" : "Проверка Сердце Сибири тмн",
-        "uid" : "7cd095f452533a8f",
+        "name" : "Проверка Колумб тмн",
+        "uid" : "99d0266bc89b90cd",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1685538111212,
-          "stop" : 1685538116295,
-          "duration" : 5083
+          "start" : 1685539051773,
+          "stop" : 1685539057166,
+          "duration" : 5393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка Сердце Сибири тмн",
+        "uid" : "5f4be7a0b6f30f59",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1685539058017,
+          "stop" : 1685539064907,
+          "duration" : 6890
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка Домашний тмн",
+        "uid" : "2c5b0f2a0aa9624c",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1685539065716,
+          "stop" : 1685539073735,
+          "duration" : 8019
         },
         "flaky" : false,
         "newFailed" : false,
