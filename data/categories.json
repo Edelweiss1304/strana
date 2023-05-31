@@ -4,73 +4,107 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x562abdb204e3 <unknown>\n#1 0x562abd84fc76 <unknown>\n#2 0x562abd85453c <unknown>\n#3 0x562abd85597e <unknown>\n#4 0x562abd855a4c <unknown>\n#5 0x562abd891876 <unknown>\n#6 0x562abd88fcbd <unknown>\n#7 0x562abd88dd2e <unknown>\n#8 0x562abd88d10f <unknown>\n#9 0x562abd8821da <unknown>\n#10 0x562abd8ab012 <unknown>\n#11 0x562abd881b03 <unknown>\n#12 0x562abd8ab1de <unknown>\n#13 0x562abd8c330e <unknown>\n#14 0x562abd8aade3 <unknown>\n#15 0x562abd8802dd <unknown>\n#16 0x562abd88134e <unknown>\n#17 0x562abdae03e4 <unknown>\n#18 0x562abdae43d7 <unknown>\n#19 0x562abdaeeb20 <unknown>\n#20 0x562abdae5023 <unknown>\n#21 0x562abdab31aa <unknown>\n#22 0x562abdb096b8 <unknown>\n#23 0x562abdb09847 <unknown>\n#24 0x562abdb19243 <unknown>\n#25 0x7f4280726609 start_thread",
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status\nfrom no such window\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55557c4fe4e3 <unknown>\n#1 0x55557c22db00 <unknown>\n#2 0x55557c2177de <unknown>\n#3 0x55557c215bac <unknown>\n#4 0x55557c216162 <unknown>\n#5 0x55557c2246c1 <unknown>\n#6 0x55557c225222 <unknown>\n#7 0x55557c237bcb <unknown>\n#8 0x55557c23c3ab <unknown>\n#9 0x55557c216703 <unknown>\n#10 0x55557c237810 <unknown>\n#11 0x55557c2a121c <unknown>\n#12 0x55557c288de3 <unknown>\n#13 0x55557c25e2dd <unknown>\n#14 0x55557c25f34e <unknown>\n#15 0x55557c4be3e4 <unknown>\n#16 0x55557c4c23d7 <unknown>\n#17 0x55557c4ccb20 <unknown>\n#18 0x55557c4c3023 <unknown>\n#19 0x55557c4911aa <unknown>\n#20 0x55557c4e76b8 <unknown>\n#21 0x55557c4e7847 <unknown>\n#22 0x55557c4f7243 <unknown>\n#23 0x7f93047be609 start_thread",
+      "children" : [ {
+        "name" : "Проверка авторизации в ЛК брокера как агентство",
+        "uid" : "2e40d10e8a622ec4",
+        "parentUid" : "fdf9fc962e4a2202bfc4ecd17c298640",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685577113510,
+          "stop" : 1685577113520,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      } ],
+      "uid" : "fdf9fc962e4a2202bfc4ecd17c298640"
+    }, {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x5579760414e3 <unknown>\n#1 0x557975d70c76 <unknown>\n#2 0x557975d7553c <unknown>\n#3 0x557975d7697e <unknown>\n#4 0x557975d76a4c <unknown>\n#5 0x557975db2876 <unknown>\n#6 0x557975db0cbd <unknown>\n#7 0x557975daed2e <unknown>\n#8 0x557975dae10f <unknown>\n#9 0x557975da31da <unknown>\n#10 0x557975dcc012 <unknown>\n#11 0x557975da2b03 <unknown>\n#12 0x557975dcc1de <unknown>\n#13 0x557975de430e <unknown>\n#14 0x557975dcbde3 <unknown>\n#15 0x557975da12dd <unknown>\n#16 0x557975da234e <unknown>\n#17 0x5579760013e4 <unknown>\n#18 0x5579760053d7 <unknown>\n#19 0x55797600fb20 <unknown>\n#20 0x557976006023 <unknown>\n#21 0x557975fd41aa <unknown>\n#22 0x55797602a6b8 <unknown>\n#23 0x55797602a847 <unknown>\n#24 0x55797603a243 <unknown>\n#25 0x7f4745140609 start_thread",
       "children" : [ {
         "name" : "Переход из проектов в Озерный",
-        "uid" : "b8531ee83bc3830f",
-        "parentUid" : "24d76b5916ce22d45953f67a0e64073b",
+        "uid" : "7a70396db5b344ab",
+        "parentUid" : "ae069ae66858918e4e81e4d5229f60d1",
         "status" : "broken",
         "time" : {
-          "start" : 1685576048266,
-          "stop" : 1685576051576,
-          "duration" : 3310
+          "start" : 1685577154952,
+          "stop" : 1685577157828,
+          "duration" : 2876
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "24d76b5916ce22d45953f67a0e64073b"
+      "uid" : "ae069ae66858918e4e81e4d5229f60d1"
     }, {
-      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/projects/avtorskii/\" class=\"project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7\">...</a> is not clickable at point (237, 958). Other element would receive the click: <button data-v-d9372757=\"\" data-v-b13fd77e=\"\" class=\"s-bottom-navigation-item s-bottom-navigation-item--theme-primary-business s-bottom-navigation-item--design-business\">...</button>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x564c0fd3e4e3 <unknown>\n#1 0x564c0fa6dc76 <unknown>\n#2 0x564c0faaf9d4 <unknown>\n#3 0x564c0faadcbd <unknown>\n#4 0x564c0faabd2e <unknown>\n#5 0x564c0faab10f <unknown>\n#6 0x564c0faa01da <unknown>\n#7 0x564c0fac9012 <unknown>\n#8 0x564c0fa9fb03 <unknown>\n#9 0x564c0fac91de <unknown>\n#10 0x564c0fae130e <unknown>\n#11 0x564c0fac8de3 <unknown>\n#12 0x564c0fa9e2dd <unknown>\n#13 0x564c0fa9f34e <unknown>\n#14 0x564c0fcfe3e4 <unknown>\n#15 0x564c0fd023d7 <unknown>\n#16 0x564c0fd0cb20 <unknown>\n#17 0x564c0fd03023 <unknown>\n#18 0x564c0fcd11aa <unknown>\n#19 0x564c0fd276b8 <unknown>\n#20 0x564c0fd27847 <unknown>\n#21 0x564c0fd37243 <unknown>\n#22 0x7f4e8f29d609 start_thread",
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created\nfrom no such execution context: uniqueContextId not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x5586af77e4e3 <unknown>\n#1 0x5586af4adc76 <unknown>\n#2 0x5586af4978c3 <unknown>\n#3 0x5586af495bac <unknown>\n#4 0x5586af496162 <unknown>\n#5 0x5586af4b1af1 <unknown>\n#6 0x5586af4b397e <unknown>\n#7 0x5586af4b3a4c <unknown>\n#8 0x5586af512f77 <unknown>\n#9 0x5586af51147f <unknown>\n#10 0x5586af508de3 <unknown>\n#11 0x5586af4de2dd <unknown>\n#12 0x5586af4df34e <unknown>\n#13 0x5586af73e3e4 <unknown>\n#14 0x5586af7423d7 <unknown>\n#15 0x5586af74cb20 <unknown>\n#16 0x5586af743023 <unknown>\n#17 0x5586af7111aa <unknown>\n#18 0x5586af7676b8 <unknown>\n#19 0x5586af767847 <unknown>\n#20 0x5586af777243 <unknown>\n#21 0x7f38fcd82609 start_thread",
       "children" : [ {
-        "name" : "Переход из проектов в Авторский",
-        "uid" : "c6a2e39c85fa1597",
-        "parentUid" : "029543116abae3b1a155108c8d9fc975",
+        "name" : "Переход из проектов в Звездный",
+        "uid" : "e74b9787d34830e1",
+        "parentUid" : "327060862a814966127264895e546461",
         "status" : "broken",
         "time" : {
-          "start" : 1685576087081,
-          "stop" : 1685576091827,
-          "duration" : 4746
+          "start" : 1685577176072,
+          "stop" : 1685577176072,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "029543116abae3b1a155108c8d9fc975"
+      "uid" : "327060862a814966127264895e546461"
     }, {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x56223ef8d4e3 <unknown>\n#1 0x56223ecbcc76 <unknown>\n#2 0x56223ecc153c <unknown>\n#3 0x56223ecc297e <unknown>\n#4 0x56223ecc2a4c <unknown>\n#5 0x56223ecfe876 <unknown>\n#6 0x56223ecfccbd <unknown>\n#7 0x56223ecfad2e <unknown>\n#8 0x56223ecfa10f <unknown>\n#9 0x56223ecef1da <unknown>\n#10 0x56223ed18012 <unknown>\n#11 0x56223eceeb03 <unknown>\n#12 0x56223ed181de <unknown>\n#13 0x56223ed3030e <unknown>\n#14 0x56223ed17de3 <unknown>\n#15 0x56223eced2dd <unknown>\n#16 0x56223ecee34e <unknown>\n#17 0x56223ef4d3e4 <unknown>\n#18 0x56223ef513d7 <unknown>\n#19 0x56223ef5bb20 <unknown>\n#20 0x56223ef52023 <unknown>\n#21 0x56223ef201aa <unknown>\n#22 0x56223ef766b8 <unknown>\n#23 0x56223ef76847 <unknown>\n#24 0x56223ef86243 <unknown>\n#25 0x7f4fb96d5609 start_thread",
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/projects/columb/\" class=\"project-card ProjectCard_zxjuT _elysium_bWqag _dark_blue_CRQPA\">...</a> is not clickable at point (713, 958). Other element would receive the click: <div data-v-b13fd77e=\"\" class=\"s-bottom-navigation__nav-items\">...</div>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x557cd92644e3 <unknown>\n#1 0x557cd8f93c76 <unknown>\n#2 0x557cd8fd59d4 <unknown>\n#3 0x557cd8fd3cbd <unknown>\n#4 0x557cd8fd1d2e <unknown>\n#5 0x557cd8fd110f <unknown>\n#6 0x557cd8fc61da <unknown>\n#7 0x557cd8fef012 <unknown>\n#8 0x557cd8fc5b03 <unknown>\n#9 0x557cd8fef1de <unknown>\n#10 0x557cd900730e <unknown>\n#11 0x557cd8feede3 <unknown>\n#12 0x557cd8fc42dd <unknown>\n#13 0x557cd8fc534e <unknown>\n#14 0x557cd92243e4 <unknown>\n#15 0x557cd92283d7 <unknown>\n#16 0x557cd9232b20 <unknown>\n#17 0x557cd9229023 <unknown>\n#18 0x557cd91f71aa <unknown>\n#19 0x557cd924d6b8 <unknown>\n#20 0x557cd924d847 <unknown>\n#21 0x557cd925d243 <unknown>\n#22 0x7f5a38ce6609 start_thread",
       "children" : [ {
         "name" : "Переход из проектов в Колумб",
-        "uid" : "dcd8135da5fd40c8",
-        "parentUid" : "4553f886f66cf6fc70c5d618894864d4",
+        "uid" : "59ea4d7924634e47",
+        "parentUid" : "eba7a5d1059181ab82b88764d4f00cb2",
         "status" : "broken",
         "time" : {
-          "start" : 1685576092607,
-          "stop" : 1685576096019,
-          "duration" : 3412
+          "start" : 1685577192172,
+          "stop" : 1685577197001,
+          "duration" : 4829
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "4553f886f66cf6fc70c5d618894864d4"
+      "uid" : "eba7a5d1059181ab82b88764d4f00cb2"
     }, {
-      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/projects/domashnyi/\" class=\"project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7\">...</a> is not clickable at point (1667, 958). Other element would receive the click: <button data-v-d9372757=\"\" data-v-b13fd77e=\"\" class=\"s-bottom-navigation-item s-bottom-navigation-item--theme-primary-business s-bottom-navigation-item--design-business\">...</button>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55d7911204e3 <unknown>\n#1 0x55d790e4fc76 <unknown>\n#2 0x55d790e919d4 <unknown>\n#3 0x55d790e8fcbd <unknown>\n#4 0x55d790e8dd2e <unknown>\n#5 0x55d790e8d10f <unknown>\n#6 0x55d790e821da <unknown>\n#7 0x55d790eab012 <unknown>\n#8 0x55d790e81b03 <unknown>\n#9 0x55d790eab1de <unknown>\n#10 0x55d790ec330e <unknown>\n#11 0x55d790eaade3 <unknown>\n#12 0x55d790e802dd <unknown>\n#13 0x55d790e8134e <unknown>\n#14 0x55d7910e03e4 <unknown>\n#15 0x55d7910e43d7 <unknown>\n#16 0x55d7910eeb20 <unknown>\n#17 0x55d7910e5023 <unknown>\n#18 0x55d7910b31aa <unknown>\n#19 0x55d7911096b8 <unknown>\n#20 0x55d791109847 <unknown>\n#21 0x55d791119243 <unknown>\n#22 0x7fa48be31609 start_thread",
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x5579524da4e3 <unknown>\n#1 0x557952209c76 <unknown>\n#2 0x55795220e53c <unknown>\n#3 0x55795220f97e <unknown>\n#4 0x55795220fa4c <unknown>\n#5 0x55795224b876 <unknown>\n#6 0x557952249cbd <unknown>\n#7 0x557952247d2e <unknown>\n#8 0x55795224710f <unknown>\n#9 0x55795223c1da <unknown>\n#10 0x557952265012 <unknown>\n#11 0x55795223bb03 <unknown>\n#12 0x5579522651de <unknown>\n#13 0x55795227d30e <unknown>\n#14 0x557952264de3 <unknown>\n#15 0x55795223a2dd <unknown>\n#16 0x55795223b34e <unknown>\n#17 0x55795249a3e4 <unknown>\n#18 0x55795249e3d7 <unknown>\n#19 0x5579524a8b20 <unknown>\n#20 0x55795249f023 <unknown>\n#21 0x55795246d1aa <unknown>\n#22 0x5579524c36b8 <unknown>\n#23 0x5579524c3847 <unknown>\n#24 0x5579524d3243 <unknown>\n#25 0x7f60d32e4609 start_thread",
+      "children" : [ {
+        "name" : "Переход из проектов в Сердце Сибири",
+        "uid" : "36a6bb38942ec564",
+        "parentUid" : "e50118f5be7ef01054c6a233ea7b3f7a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1685577197804,
+          "stop" : 1685577201108,
+          "duration" : 3304
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e50118f5be7ef01054c6a233ea7b3f7a"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/projects/domashnyi/\" class=\"project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7\">...</a> is not clickable at point (1667, 958). Other element would receive the click: <button data-v-d9372757=\"\" data-v-b13fd77e=\"\" class=\"s-bottom-navigation-item s-bottom-navigation-item--theme-primary-business s-bottom-navigation-item--design-business\">...</button>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55a83b9024e3 <unknown>\n#1 0x55a83b631c76 <unknown>\n#2 0x55a83b6739d4 <unknown>\n#3 0x55a83b671cbd <unknown>\n#4 0x55a83b66fd2e <unknown>\n#5 0x55a83b66f10f <unknown>\n#6 0x55a83b6641da <unknown>\n#7 0x55a83b68d012 <unknown>\n#8 0x55a83b663b03 <unknown>\n#9 0x55a83b68d1de <unknown>\n#10 0x55a83b6a530e <unknown>\n#11 0x55a83b68cde3 <unknown>\n#12 0x55a83b6622dd <unknown>\n#13 0x55a83b66334e <unknown>\n#14 0x55a83b8c23e4 <unknown>\n#15 0x55a83b8c63d7 <unknown>\n#16 0x55a83b8d0b20 <unknown>\n#17 0x55a83b8c7023 <unknown>\n#18 0x55a83b8951aa <unknown>\n#19 0x55a83b8eb6b8 <unknown>\n#20 0x55a83b8eb847 <unknown>\n#21 0x55a83b8fb243 <unknown>\n#22 0x7f7f64952609 start_thread",
       "children" : [ {
         "name" : "Переход из проектов в Домашний",
-        "uid" : "8a79c97990c8e835",
-        "parentUid" : "4f7f54e987ba51342a25dbb5fe8786a3",
+        "uid" : "a43a20f2f27ad690",
+        "parentUid" : "809a4fe45fb66cd4e477b79929899e3e",
         "status" : "broken",
         "time" : {
-          "start" : 1685576105718,
-          "stop" : 1685576110549,
-          "duration" : 4831
+          "start" : 1685577201907,
+          "stop" : 1685577206803,
+          "duration" : 4896
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "4f7f54e987ba51342a25dbb5fe8786a3"
+      "uid" : "809a4fe45fb66cd4e477b79929899e3e"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
