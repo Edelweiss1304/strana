@@ -1,51 +1,21 @@
 {
-  "uid" : "9d1ab81d3d708f27",
+  "uid" : "b3990426bdf035da",
   "name" : "Проверка Сердце Сибири тмн",
   "fullName" : "tests.test_header#test_tmn_header_sersib",
   "historyId" : "4d16b1c39a36e5906d994c60ba8f035f",
   "time" : {
-    "start" : 1685481431373,
-    "stop" : 1685481438918,
-    "duration" : 7545
+    "start" : 1685511823592,
+    "stop" : 1685511831188,
+    "duration" : 7596
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "_verify_url",
-    "time" : {
-      "start" : 1685481430523,
-      "stop" : 1685481430523,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "driver",
-    "time" : {
-      "start" : 1685481430524,
-      "stop" : 1685481431373,
-      "duration" : 849
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
     "name" : "sensitive_url",
     "time" : {
-      "start" : 1685481430524,
-      "stop" : 1685481430524,
+      "start" : 1685511822722,
+      "stop" : 1685511822722,
       "duration" : 0
     },
     "status" : "passed",
@@ -59,8 +29,8 @@
   }, {
     "name" : "_skip_sensitive",
     "time" : {
-      "start" : 1685481430524,
-      "stop" : 1685481430524,
+      "start" : 1685511822722,
+      "stop" : 1685511822722,
       "duration" : 0
     },
     "status" : "passed",
@@ -74,9 +44,24 @@
   }, {
     "name" : "base_url",
     "time" : {
-      "start" : 1685481430523,
-      "stop" : 1685481430523,
+      "start" : 1685511822722,
+      "stop" : 1685511822722,
       "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1685511822722,
+      "stop" : 1685511823591,
+      "duration" : 869
     },
     "status" : "passed",
     "steps" : [ ],
@@ -89,8 +74,23 @@
   }, {
     "name" : "allure_attach_screenshot",
     "time" : {
-      "start" : 1685481431373,
-      "stop" : 1685481431373,
+      "start" : 1685511823591,
+      "stop" : 1685511823591,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1685511822722,
+      "stop" : 1685511822722,
       "duration" : 0
     },
     "status" : "passed",
@@ -106,9 +106,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "5b1ab558a149baba",
+      "uid" : "2b8bd2f6b0f6d6c5",
       "name" : "stdout",
-      "source" : "5b1ab558a149baba.txt",
+      "source" : "2b8bd2f6b0f6d6c5.txt",
       "type" : "text/plain",
       "size" : 123
     } ],
@@ -121,9 +121,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1685481438919,
-      "stop" : 1685481438980,
-      "duration" : 61
+      "start" : 1685511831189,
+      "stop" : 1685511831253,
+      "duration" : 64
     },
     "status" : "passed",
     "steps" : [ ],
@@ -136,9 +136,9 @@
   }, {
     "name" : "allure_attach_screenshot::0",
     "time" : {
-      "start" : 1685481438918,
-      "stop" : 1685481438919,
-      "duration" : 1
+      "start" : 1685511831189,
+      "stop" : 1685511831189,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -160,7 +160,7 @@
     "value" : "stranatest"
   }, {
     "name" : "thread",
-    "value" : "61583-MainThread"
+    "value" : "74997-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -184,6 +184,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9d1ab81d3d708f27.json",
+  "source" : "b3990426bdf035da.json",
   "parameterValues" : [ ]
 }
