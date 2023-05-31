@@ -41,6 +41,11 @@ jobs:
         with:
           personal_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./allure-report/
+      - name: Find Chromedriver path
+        run: |
+          CHROMEDRIVER_PATH=$(which chromedriver)
+          echo "Chromedriver path: $CHROMEDRIVER_PATH"
+
 
 
 
