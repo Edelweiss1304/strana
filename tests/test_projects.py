@@ -8,9 +8,9 @@ import allure
 @allure.title("Переход из проектов в WOW")
 def test_projects_wow(driver):
     head = Header(driver)
-    pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_msk'])
     head.click_projects()
+    pp = ProjectsPage(driver)
     pp.click_wow()
     assert head.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
 
