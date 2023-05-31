@@ -11,6 +11,7 @@ def test_projects_wow(driver):
     Base.open_page(driver, URLS_MAIN['url_msk'])
     head.click_projects()
     pp = ProjectsPage(driver)
+    driver.refresh()
     pp.click_wow()
     assert head.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
 
