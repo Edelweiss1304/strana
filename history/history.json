@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "75c097a883a13765",
+      "uid" : "6fc17e71f956afbe",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55571d4764e3 <unknown>\n#1 0x55571d1a5c76 <unknown>\n#2 0x55571d1aa53c <unknown>\n#3 0x55571d1ab97e <unknown>\n#4 0x55571d1aba4c <unknown>\n#5 0x55571d1e7876 <unknown>\n#6 0x55571d1e5cbd <unknown>\n#7 0x55571d1e3d2e <unknown>\n#8 0x55571d1e310f <unknown>\n#9 0x55571d1d81da <unknown>\n#10 0x55571d201012 <unknown>\n#11 0x55571d1d7b03 <unknown>\n#12 0x55571d2011de <unknown>\n#13 0x55571d21930e <unknown>\n#14 0x55571d200de3 <unknown>\n#15 0x55571d1d62dd <unknown>\n#16 0x55571d1d734e <unknown>\n#17 0x55571d4363e4 <unknown>\n#18 0x55571d43a3d7 <unknown>\n#19 0x55571d444b20 <unknown>\n#20 0x55571d43b023 <unknown>\n#21 0x55571d4091aa <unknown>\n#22 0x55571d45f6b8 <unknown>\n#23 0x55571d45f847 <unknown>\n#24 0x55571d46f243 <unknown>\n#25 0x7fb52ad33609 start_thread",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <h3 class=\"subtitle1 title_XTEkt\">...</h3> is not clickable at point (714, 947). Other element would receive the click: <div data-v-b13fd77e=\"\" class=\"s-bottom-navigation__nav-items\">...</div>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x5629a193b4e3 <unknown>\n#1 0x5629a166ac76 <unknown>\n#2 0x5629a16ac9d4 <unknown>\n#3 0x5629a16aacbd <unknown>\n#4 0x5629a16a8d2e <unknown>\n#5 0x5629a16a810f <unknown>\n#6 0x5629a169d1da <unknown>\n#7 0x5629a16c6012 <unknown>\n#8 0x5629a169cb03 <unknown>\n#9 0x5629a16c61de <unknown>\n#10 0x5629a16de30e <unknown>\n#11 0x5629a16c5de3 <unknown>\n#12 0x5629a169b2dd <unknown>\n#13 0x5629a169c34e <unknown>\n#14 0x5629a18fb3e4 <unknown>\n#15 0x5629a18ff3d7 <unknown>\n#16 0x5629a1909b20 <unknown>\n#17 0x5629a1900023 <unknown>\n#18 0x5629a18ce1aa <unknown>\n#19 0x5629a19246b8 <unknown>\n#20 0x5629a1924847 <unknown>\n#21 0x5629a1934243 <unknown>\n#22 0x7f0a9a574609 start_thread",
       "time" : {
-        "start" : 1685574056299,
-        "stop" : 1685574059821,
-        "duration" : 3522
+        "start" : 1685574514930,
+        "stop" : 1685574519497,
+        "duration" : 4567
       }
     } ]
   }
