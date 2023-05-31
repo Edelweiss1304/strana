@@ -24,37 +24,37 @@ class ProjectsPage(Base):
 
     # Геттеры
     def get_wow(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.wow))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.wow))
 
     def get_ozerniy(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.ozerniy))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.ozerniy))
 
     def get_dnv(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.dnv))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.dnv))
 
     def get_princip(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.princip))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.princip))
 
     def get_sibsad(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.sibsad))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.sibsad))
 
     def get_zvezdniy(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.zvezdniy))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.zvezdniy))
 
     def get_union(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.union))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.union))
 
     def get_avtorskiy(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.avtorskiy))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.avtorskiy))
 
     def get_kolumb(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.kolumb))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.kolumb))
 
     def get_sersib(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.sersib))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.sersib))
 
     def get_domashniy(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.domashniy))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.domashniy))
 
     # Actions
 
