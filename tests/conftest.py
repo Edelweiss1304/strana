@@ -11,7 +11,7 @@ def driver():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
     options.add_argument('--ignore-certificate-errors')
-    options.add_argument("--headless=new")
+    options.add_argument('--headless=new')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     caps = DesiredCapabilities().CHROME
