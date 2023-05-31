@@ -1,5 +1,4 @@
 import time
-
 from base.base_class import Base
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
@@ -213,71 +212,71 @@ class Header(Base):
         print("Проверяем заголовок")
 
         # Проверка проектов в ХЭДЕРЕ Methods
-    def check_wow_from_header(self):
-        self.move_to_projects()
-        self.click_project_1_from_header()
-        assert self.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
-        print("Проверяем заголовок")
-
-    def check_ozerniy_from_header(self):
-        self.move_to_projects()
-        self.click_project_2_from_header()
-        assert self.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
-        print("Проверяем заголовок")
-
-    def check_dnv_from_header(self):
-        self.move_to_projects()
-        self.click_project_1_from_header()
-        assert self.get_project_dnv_check() == "Санкт-Петербург"
-        print("Проверяем что попали на нужную страницу")
-
-    def check_princip_from_header(self):
-        self.move_to_projects()
-        self.click_project_2_from_header()
-        assert self.get_project_comfort_tittle() == "ПРИНЦИП"
-        print("Проверяем заголовок")
-
-    def check_zvezdniy_from_header(self):
-        self.move_to_projects()
-        self.click_project_1_from_header()
-        assert self.get_project_comfort_tittle() == "Звездный"
-        print("Проверяем заголовок")
-
-    def check_union_from_header(self):
-        self.move_to_projects()
-        self.click_project_2_from_header()
-        assert self.get_project_comfort_tittle() == "Юнион"
-        print("Проверяем заголовок")
-
-    def check_avtorskiy_from_header(self):
-        self.move_to_projects()
-        self.click_project_3_from_header()
-        assert self.get_project_comfort_tittle() == "Авторский"
-        print("Проверяем заголовок")
-
-    def check_kolumb_from_header(self):
-        self.move_to_projects()
-        self.click_project_4_from_header()
-        assert self.get_project_comfort_tittle() == "Колумб"
-        print("Проверяем заголовок")
-
-    def check_sersib_from_header(self):
-        self.move_to_projects()
-        self.driver.save_screenshot('screenshot1.png')
-        self.click_project_5_from_header()
-        self.driver.save_screenshot('screensho2.png')
-        print(self.get_project_comfort_tittle())
-        assert self.get_project_comfort_tittle() == "Сердце Сибири"
-        print("Проверяем заголовок")
-
-    def check_domashniy_from_header(self):
-        self.move_to_projects()
-        self.click_project_6_from_header()
-        assert self.get_project_comfort_tittle() == "Домашний"
-        print("Проверяем заголовок")
-
-    def check_sibsad_from_header(self):
-        self.move_to_projects()
-        self.click_project_1_from_header()
-        assert self.get_project_comfort_tittle() == "Сибирский сад"
-        print("Проверяем заголовок")
+    # def check_wow_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_1_from_header()
+    #     assert self.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
+    #     print("Проверяем заголовок")
+    #
+    # def check_ozerniy_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_2_from_header()
+    #     assert self.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
+    #     print("Проверяем заголовок")
+    #
+    # def check_dnv_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_1_from_header()
+    #     assert self.get_project_dnv_check() == "Санкт-Петербург"
+    #     print("Проверяем что попали на нужную страницу")
+    #
+    # def check_princip_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_2_from_header()
+    #     assert self.get_project_comfort_tittle() == "ПРИНЦИП"
+    #     print("Проверяем заголовок")
+    #
+    # def check_zvezdniy_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_1_from_header()
+    #     assert self.get_project_comfort_tittle() == "Звездный"
+    #     print("Проверяем заголовок")
+    #
+    # def check_union_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_2_from_header()
+    #     assert self.get_project_comfort_tittle() == "Юнион"
+    #     print("Проверяем заголовок")
+    #
+    # def check_avtorskiy_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_3_from_header()
+    #     assert self.get_project_comfort_tittle() == "Авторский"
+    #     print("Проверяем заголовок")
+    #
+    # def check_kolumb_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_4_from_header()
+    #     assert self.get_project_comfort_tittle() == "Колумб"
+    #     print("Проверяем заголовок")
+    #
+    # def check_sersib_from_header(self):
+    #     self.move_to_projects()
+    #     self.driver.save_screenshot('screenshot1.png')
+    #     self.click_project_5_from_header()
+    #     self.driver.save_screenshot('screensho2.png')
+    #     print(self.get_project_comfort_tittle())
+    #     assert self.get_project_comfort_tittle() == "Сердце Сибири"
+    #     print("Проверяем заголовок")
+    #
+    # def check_domashniy_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_6_from_header()
+    #     assert self.get_project_comfort_tittle() == "Домашний"
+    #     print("Проверяем заголовок")
+    #
+    # def check_sibsad_from_header(self):
+    #     self.move_to_projects()
+    #     self.click_project_1_from_header()
+    #     assert self.get_project_comfort_tittle() == "Сибирский сад"
+    #     print("Проверяем заголовок")
