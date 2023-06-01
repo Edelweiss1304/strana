@@ -4,209 +4,39 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created\nfrom no such execution context: loader has changed while resolving nodes\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55f4c92f94e3 <unknown>\n#1 0x55f4c9028c76 <unknown>\n#2 0x55f4c902c4bb <unknown>\n#3 0x55f4c902e97e <unknown>\n#4 0x55f4c902ea4c <unknown>\n#5 0x55f4c908df77 <unknown>\n#6 0x55f4c908c47f <unknown>\n#7 0x55f4c9083de3 <unknown>\n#8 0x55f4c90592dd <unknown>\n#9 0x55f4c905a34e <unknown>\n#10 0x55f4c92b93e4 <unknown>\n#11 0x55f4c92bd3d7 <unknown>\n#12 0x55f4c92c7b20 <unknown>\n#13 0x55f4c92be023 <unknown>\n#14 0x55f4c928c1aa <unknown>\n#15 0x55f4c92e26b8 <unknown>\n#16 0x55f4c92e2847 <unknown>\n#17 0x55f4c92f2243 <unknown>\n#18 0x7effaf8c8609 start_thread",
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created\nfrom no such execution context: loader has changed while resolving nodes\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55be2f9ce4e3 <unknown>\n#1 0x55be2f6fdc76 <unknown>\n#2 0x55be2f7014bb <unknown>\n#3 0x55be2f70397e <unknown>\n#4 0x55be2f703a4c <unknown>\n#5 0x55be2f762f77 <unknown>\n#6 0x55be2f76147f <unknown>\n#7 0x55be2f758de3 <unknown>\n#8 0x55be2f72e2dd <unknown>\n#9 0x55be2f72f34e <unknown>\n#10 0x55be2f98e3e4 <unknown>\n#11 0x55be2f9923d7 <unknown>\n#12 0x55be2f99cb20 <unknown>\n#13 0x55be2f993023 <unknown>\n#14 0x55be2f9611aa <unknown>\n#15 0x55be2f9b76b8 <unknown>\n#16 0x55be2f9b7847 <unknown>\n#17 0x55be2f9c7243 <unknown>\n#18 0x7f999cf88609 start_thread",
       "children" : [ {
-        "name" : "Проверка авторизации в ЛК брокера как агентство",
-        "uid" : "878da10af249ef69",
-        "parentUid" : "b912f74b7584f211da606cc51a451865",
+        "name" : "Проверка авторизации в ЛК брокера как агент",
+        "uid" : "9c9ec35035fdd1e6",
+        "parentUid" : "2118e8435a0aacd35dda8e2b8c436320",
         "status" : "broken",
         "time" : {
-          "start" : 1685583036006,
-          "stop" : 1685583036006,
+          "start" : 1685584680876,
+          "stop" : 1685584680876,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
+        "parameters" : [ "'https://tmn.strana.com'" ]
       } ],
-      "uid" : "b912f74b7584f211da606cc51a451865"
+      "uid" : "2118e8435a0aacd35dda8e2b8c436320"
     }, {
-      "name" : "TypeError: test_projects_wow() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в WOW",
-        "uid" : "1ffb63c8f36f2e62",
-        "parentUid" : "d37081952e6b7225c1960e05a500e987",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583080911,
-          "stop" : 1685583080911,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "d37081952e6b7225c1960e05a500e987"
-    }, {
-      "name" : "TypeError: test_projects_ozerniy() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в Озерный",
-        "uid" : "b3b1806a97f749ab",
-        "parentUid" : "adf7326e22e8124f5a115f263ed851bd",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583081709,
-          "stop" : 1685583081710,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "adf7326e22e8124f5a115f263ed851bd"
-    }, {
-      "name" : "TypeError: test_projects_dnv() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в Днв",
-        "uid" : "f6a403cdac902c73",
-        "parentUid" : "a7cacb086b3f00d52b5960c6f8866362",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583082517,
-          "stop" : 1685583082518,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a7cacb086b3f00d52b5960c6f8866362"
-    }, {
-      "name" : "TypeError: test_projects_princip() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в Принцип",
-        "uid" : "156854468532e803",
-        "parentUid" : "ece2a37aeabbd9cde49350c364f302ac",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583083300,
-          "stop" : 1685583083300,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "ece2a37aeabbd9cde49350c364f302ac"
-    }, {
-      "name" : "TypeError: test_projects_sibsad() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в Сибирский сад",
-        "uid" : "81be68588fc8b7c2",
-        "parentUid" : "74264c8b647f5351cba1e7b0c40566aa",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583084059,
-          "stop" : 1685583084059,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "74264c8b647f5351cba1e7b0c40566aa"
-    }, {
-      "name" : "TypeError: test_projects_zvezdniy() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в Звездный",
-        "uid" : "24c4ac69b49fd03f",
-        "parentUid" : "34953b631e75879278433006493002be",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583085411,
-          "stop" : 1685583085411,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "34953b631e75879278433006493002be"
-    }, {
-      "name" : "TypeError: test_projects_union() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в Юнион",
-        "uid" : "887324a48bb27fb7",
-        "parentUid" : "8e36a9dacc03b74704d8470a81f7e8d7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583086186,
-          "stop" : 1685583086187,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "8e36a9dacc03b74704d8470a81f7e8d7"
-    }, {
-      "name" : "TypeError: test_projects_avtorskiy() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в Авторский",
-        "uid" : "f4e4b6702ed16dd2",
-        "parentUid" : "aa3ae93c24f027e7a95e00e212a5edea",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583086982,
-          "stop" : 1685583086982,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "aa3ae93c24f027e7a95e00e212a5edea"
-    }, {
-      "name" : "TypeError: test_projects_kolumb() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в Колумб",
-        "uid" : "b72b8fbf6a846f89",
-        "parentUid" : "3f4a4213e33e31ce04c8f3600e4bf66f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583087760,
-          "stop" : 1685583087760,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "3f4a4213e33e31ce04c8f3600e4bf66f"
-    }, {
-      "name" : "TypeError: test_projects_sersib() missing 1 required positional argument: 'driver'",
+      "name" : "RuntimeError: No active exception to reraise",
       "children" : [ {
         "name" : "Переход из проектов в Сердце Сибири",
-        "uid" : "bdc9fcf39bb34dbc",
-        "parentUid" : "a11c870dda25a3b0ebe1e752b52a949f",
+        "uid" : "47598ea7148ae66a",
+        "parentUid" : "60611e8a5f240c48505e5899bfe0decc",
         "status" : "broken",
         "time" : {
-          "start" : 1685583088534,
-          "stop" : 1685583088535,
-          "duration" : 1
+          "start" : 1685584859450,
+          "stop" : 1685584877094,
+          "duration" : 17644
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "a11c870dda25a3b0ebe1e752b52a949f"
-    }, {
-      "name" : "TypeError: test_projects_domashniy() missing 1 required positional argument: 'driver'",
-      "children" : [ {
-        "name" : "Переход из проектов в Домашний",
-        "uid" : "7332a2a587148607",
-        "parentUid" : "53a77412f4ed4d64166d26753a8bc1eb",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685583089334,
-          "stop" : 1685583089335,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "53a77412f4ed4d64166d26753a8bc1eb"
+      "uid" : "60611e8a5f240c48505e5899bfe0decc"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
