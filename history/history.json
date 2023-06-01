@@ -9,31 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8694afd8a7b13c18",
+      "uid" : "a49587371bd234f9",
       "status" : "passed",
       "time" : {
-        "start" : 1685581059348,
-        "stop" : 1685581064364,
-        "duration" : 5016
-      }
-    } ]
-  },
-  "75ebb3fced7f6ff850ca876cc401b932" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c447496afc148c5a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1685581065144,
-        "stop" : 1685581070223,
-        "duration" : 5079
+        "start" : 1685581909294,
+        "stop" : 1685581914246,
+        "duration" : 4952
       }
     } ]
   },
@@ -47,12 +28,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6a8b7ca1c9fe30ef",
+      "uid" : "82d2ca394b01b08e",
       "status" : "passed",
       "time" : {
-        "start" : 1685580858592,
-        "stop" : 1685580862138,
-        "duration" : 3546
+        "start" : 1685581709821,
+        "stop" : 1685581712895,
+        "duration" : 3074
+      }
+    } ]
+  },
+  "75ebb3fced7f6ff850ca876cc401b932" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e4b3290aa6341164",
+      "status" : "passed",
+      "time" : {
+        "start" : 1685581915042,
+        "stop" : 1685581920696,
+        "duration" : 5654
       }
     } ]
   },
@@ -66,12 +66,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3fc575dadd33ed8e",
+      "uid" : "1eee1c5bc7888440",
       "status" : "passed",
       "time" : {
-        "start" : 1685580887928,
-        "stop" : 1685580891621,
-        "duration" : 3693
+        "start" : 1685581739024,
+        "stop" : 1685581742838,
+        "duration" : 3814
       }
     } ]
   },
@@ -85,12 +85,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e616af9424e8eaca",
+      "uid" : "3105cfdc9fdd08c",
       "status" : "passed",
       "time" : {
-        "start" : 1685580929349,
-        "stop" : 1685580933952,
-        "duration" : 4603
+        "start" : 1685581779936,
+        "stop" : 1685581783898,
+        "duration" : 3962
       }
     } ]
   },
@@ -104,12 +104,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "442ace98766a158f",
+      "uid" : "8bc043b25387120e",
       "status" : "passed",
       "time" : {
-        "start" : 1685580905276,
-        "stop" : 1685580919240,
-        "duration" : 13964
+        "start" : 1685581756751,
+        "stop" : 1685581770873,
+        "duration" : 14122
       }
     } ]
   },
@@ -123,12 +123,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2cf5d2908235cb30",
+      "uid" : "ed47f0b615bed254",
       "status" : "passed",
       "time" : {
-        "start" : 1685580807246,
-        "stop" : 1685580811769,
-        "duration" : 4523
+        "start" : 1685581658284,
+        "stop" : 1685581661968,
+        "duration" : 3684
       }
     } ]
   },
@@ -142,13 +142,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c0dd983f0f49446b",
+      "uid" : "7a075d740cbce8db",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55eb2b0404e3 <unknown>\n#1 0x55eb2ad6fc76 <unknown>\n#2 0x55eb2ad7453c <unknown>\n#3 0x55eb2ad76480 <unknown>\n#4 0x55eb2ade3f32 <unknown>\n#5 0x55eb2adcb012 <unknown>\n#6 0x55eb2ade330e <unknown>\n#7 0x55eb2adcade3 <unknown>\n#8 0x55eb2ada02dd <unknown>\n#9 0x55eb2ada134e <unknown>\n#10 0x55eb2b0003e4 <unknown>\n#11 0x55eb2b0043d7 <unknown>\n#12 0x55eb2b00eb20 <unknown>\n#13 0x55eb2b005023 <unknown>\n#14 0x55eb2afd31aa <unknown>\n#15 0x55eb2b0296b8 <unknown>\n#16 0x55eb2b029847 <unknown>\n#17 0x55eb2b039243 <unknown>\n#18 0x7f8ea9ce7609 start_thread",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x5588696a14e3 <unknown>\n#1 0x5588693d0c76 <unknown>\n#2 0x5588693d553c <unknown>\n#3 0x5588693d7480 <unknown>\n#4 0x558869444f32 <unknown>\n#5 0x55886942c012 <unknown>\n#6 0x55886944430e <unknown>\n#7 0x55886942bde3 <unknown>\n#8 0x5588694012dd <unknown>\n#9 0x55886940234e <unknown>\n#10 0x5588696613e4 <unknown>\n#11 0x5588696653d7 <unknown>\n#12 0x55886966fb20 <unknown>\n#13 0x558869666023 <unknown>\n#14 0x5588696341aa <unknown>\n#15 0x55886968a6b8 <unknown>\n#16 0x55886968a847 <unknown>\n#17 0x55886969a243 <unknown>\n#18 0x7f46cb967609 start_thread",
       "time" : {
-        "start" : 1685581124098,
-        "stop" : 1685581128281,
-        "duration" : 4183
+        "start" : 1685581963967,
+        "stop" : 1685581967842,
+        "duration" : 3875
       }
     } ]
   },
@@ -162,12 +162,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "20927fd7bfe83245",
+      "uid" : "7c42532fed59b8df",
       "status" : "passed",
       "time" : {
-        "start" : 1685580949200,
-        "stop" : 1685580952359,
-        "duration" : 3159
+        "start" : 1685581799113,
+        "stop" : 1685581802470,
+        "duration" : 3357
       }
     } ]
   },
@@ -181,12 +181,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6c022755f30e57b3",
+      "uid" : "fa17fbb0858a7bb7",
       "status" : "passed",
       "time" : {
-        "start" : 1685580938589,
-        "stop" : 1685580942542,
-        "duration" : 3953
+        "start" : 1685581788564,
+        "stop" : 1685581792571,
+        "duration" : 4007
       }
     } ]
   },
@@ -200,12 +200,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "72a5b5a8b9f60118",
+      "uid" : "9af1226b3e075932",
       "status" : "passed",
       "time" : {
-        "start" : 1685580943333,
-        "stop" : 1685580948406,
-        "duration" : 5073
+        "start" : 1685581793372,
+        "stop" : 1685581798311,
+        "duration" : 4939
       }
     } ]
   },
@@ -219,12 +219,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "17052ee81f981528",
+      "uid" : "f54ca6f1531753b8",
       "status" : "passed",
       "time" : {
-        "start" : 1685580992944,
-        "stop" : 1685580998854,
-        "duration" : 5910
+        "start" : 1685581841472,
+        "stop" : 1685581847160,
+        "duration" : 5688
       }
     } ]
   },
@@ -238,12 +238,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "24f563f7dff43c0d",
+      "uid" : "9d0e89b79fb61849",
       "status" : "passed",
       "time" : {
-        "start" : 1685580812559,
-        "stop" : 1685580815305,
-        "duration" : 2746
+        "start" : 1685581662778,
+        "stop" : 1685581665433,
+        "duration" : 2655
       }
     } ]
   },
@@ -257,12 +257,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "508fcb806660f0d6",
+      "uid" : "2df2be066618f837",
       "status" : "passed",
       "time" : {
-        "start" : 1685581018406,
-        "stop" : 1685581023870,
-        "duration" : 5464
+        "start" : 1685581867013,
+        "stop" : 1685581872529,
+        "duration" : 5516
       }
     } ]
   },
@@ -276,12 +276,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b2c575c2cfd4a2b9",
+      "uid" : "1ed4de107c9af710",
       "status" : "passed",
       "time" : {
-        "start" : 1685581005863,
-        "stop" : 1685581011708,
-        "duration" : 5845
+        "start" : 1685581854560,
+        "stop" : 1685581860412,
+        "duration" : 5852
       }
     } ]
   },
@@ -295,12 +295,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3278f75c9a013db1",
+      "uid" : "dc94d370b8bb4a3d",
       "status" : "passed",
       "time" : {
-        "start" : 1685580828552,
-        "stop" : 1685580831687,
-        "duration" : 3135
+        "start" : 1685581678570,
+        "stop" : 1685581681880,
+        "duration" : 3310
       }
     } ]
   },
@@ -314,12 +314,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7ef571dd6137d2cf",
+      "uid" : "7347ebbca7dfc3ee",
       "status" : "passed",
       "time" : {
-        "start" : 1685580980449,
-        "stop" : 1685580986163,
-        "duration" : 5714
+        "start" : 1685581829910,
+        "stop" : 1685581835215,
+        "duration" : 5305
       }
     } ]
   },
@@ -333,31 +333,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b181533d45b5e560",
+      "uid" : "efa10e534f66b8e9",
       "status" : "passed",
       "time" : {
-        "start" : 1685580832484,
-        "stop" : 1685580835406,
-        "duration" : 2922
+        "start" : 1685581682658,
+        "stop" : 1685581685565,
+        "duration" : 2907
       }
     } ]
   },
   "0151cc0ffd41329e144ab077886056bb" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "22899630ccfcd34d",
-      "status" : "passed",
+      "uid" : "14180735c4343576",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55c74b0ff4e3 <unknown>\n#1 0x55c74ae2ec76 <unknown>\n#2 0x55c74ae3353c <unknown>\n#3 0x55c74ae35480 <unknown>\n#4 0x55c74aea2f32 <unknown>\n#5 0x55c74ae8a012 <unknown>\n#6 0x55c74aea230e <unknown>\n#7 0x55c74ae89de3 <unknown>\n#8 0x55c74ae5f2dd <unknown>\n#9 0x55c74ae6034e <unknown>\n#10 0x55c74b0bf3e4 <unknown>\n#11 0x55c74b0c33d7 <unknown>\n#12 0x55c74b0cdb20 <unknown>\n#13 0x55c74b0c4023 <unknown>\n#14 0x55c74b0921aa <unknown>\n#15 0x55c74b0e86b8 <unknown>\n#16 0x55c74b0e8847 <unknown>\n#17 0x55c74b0f8243 <unknown>\n#18 0x7f0cef2fb609 start_thread",
       "time" : {
-        "start" : 1685581129200,
-        "stop" : 1685581135704,
-        "duration" : 6504
+        "start" : 1685581968646,
+        "stop" : 1685581972639,
+        "duration" : 3993
       }
     } ]
   },
@@ -371,12 +372,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bf7a8921900ad0b7",
+      "uid" : "f41a82588421b636",
       "status" : "passed",
       "time" : {
-        "start" : 1685580960891,
-        "stop" : 1685580967559,
-        "duration" : 6668
+        "start" : 1685581810479,
+        "stop" : 1685581815955,
+        "duration" : 5476
       }
     } ]
   },
@@ -390,12 +391,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b41b4535d580f261",
+      "uid" : "6d692ff2d00a222c",
       "status" : "passed",
       "time" : {
-        "start" : 1685581024670,
-        "stop" : 1685581029640,
-        "duration" : 4970
+        "start" : 1685581873328,
+        "stop" : 1685581878511,
+        "duration" : 5183
       }
     } ]
   },
@@ -409,12 +410,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9e58edc75952e71f",
+      "uid" : "4c201c5ea12b37c2",
       "status" : "passed",
       "time" : {
-        "start" : 1685581053595,
-        "stop" : 1685581058564,
-        "duration" : 4969
+        "start" : 1685581902927,
+        "stop" : 1685581908528,
+        "duration" : 5601
       }
     } ]
   },
@@ -428,12 +429,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9d14ed0f4b8becdc",
+      "uid" : "49314c1eeb3f44f7",
       "status" : "passed",
       "time" : {
-        "start" : 1685580862939,
-        "stop" : 1685580866356,
-        "duration" : 3417
+        "start" : 1685581713717,
+        "stop" : 1685581717315,
+        "duration" : 3598
       }
     } ]
   },
@@ -447,12 +448,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7c792d3189a1636e",
+      "uid" : "91d4596ed21c2399",
       "status" : "passed",
       "time" : {
-        "start" : 1685580840322,
-        "stop" : 1685580844509,
-        "duration" : 4187
+        "start" : 1685581691318,
+        "stop" : 1685581695679,
+        "duration" : 4361
       }
     } ]
   },
@@ -466,31 +467,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "df1d85ddb2bc4f74",
+      "uid" : "f81307b3d3be2547",
       "status" : "passed",
       "time" : {
-        "start" : 1685581084855,
-        "stop" : 1685581091812,
-        "duration" : 6957
-      }
-    } ]
-  },
-  "e0e8e430d205d3917fff9bbe283578ba" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "2369c34738b20143",
-      "status" : "passed",
-      "time" : {
-        "start" : 1685581136508,
-        "stop" : 1685581143001,
-        "duration" : 6493
+        "start" : 1685581934860,
+        "stop" : 1685581940876,
+        "duration" : 6016
       }
     } ]
   },
@@ -504,12 +486,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "38ce9734ef31b78d",
+      "uid" : "5f7db5b43c143005",
       "status" : "passed",
       "time" : {
-        "start" : 1685580953159,
-        "stop" : 1685580960008,
-        "duration" : 6849
+        "start" : 1685581803301,
+        "stop" : 1685581809675,
+        "duration" : 6374
+      }
+    } ]
+  },
+  "e0e8e430d205d3917fff9bbe283578ba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "96e6875f5b5e7020",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55a6dff4d4e3 <unknown>\n#1 0x55a6dfc7cc76 <unknown>\n#2 0x55a6dfc8153c <unknown>\n#3 0x55a6dfc83480 <unknown>\n#4 0x55a6dfcf0f32 <unknown>\n#5 0x55a6dfcd8012 <unknown>\n#6 0x55a6dfcf030e <unknown>\n#7 0x55a6dfcd7de3 <unknown>\n#8 0x55a6dfcad2dd <unknown>\n#9 0x55a6dfcae34e <unknown>\n#10 0x55a6dff0d3e4 <unknown>\n#11 0x55a6dff113d7 <unknown>\n#12 0x55a6dff1bb20 <unknown>\n#13 0x55a6dff12023 <unknown>\n#14 0x55a6dfee01aa <unknown>\n#15 0x55a6dff366b8 <unknown>\n#16 0x55a6dff36847 <unknown>\n#17 0x55a6dff46243 <unknown>\n#18 0x7f9fc0687609 start_thread",
+      "time" : {
+        "start" : 1685581973523,
+        "stop" : 1685581977502,
+        "duration" : 3979
       }
     } ]
   },
@@ -523,31 +525,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "98c0ae6e69c584e",
+      "uid" : "6d013d1146132527",
       "status" : "passed",
       "time" : {
-        "start" : 1685581071017,
-        "stop" : 1685581076213,
-        "duration" : 5196
-      }
-    } ]
-  },
-  "fe2d3d8fa169279c46970e0c8c63a68c" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ee0a65bfb7a9829a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1685580900151,
-        "stop" : 1685580904492,
-        "duration" : 4341
+        "start" : 1685581921511,
+        "stop" : 1685581927788,
+        "duration" : 6277
       }
     } ]
   },
@@ -561,12 +544,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a3c3ddab7f5056d2",
+      "uid" : "58aa1809d4b38f52",
       "status" : "passed",
       "time" : {
-        "start" : 1685580816105,
-        "stop" : 1685580819474,
-        "duration" : 3369
+        "start" : 1685581667238,
+        "stop" : 1685581670749,
+        "duration" : 3511
+      }
+    } ]
+  },
+  "fe2d3d8fa169279c46970e0c8c63a68c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "91ca334dda82e30b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1685581751528,
+        "stop" : 1685581755962,
+        "duration" : 4434
       }
     } ]
   },
@@ -580,12 +582,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5c5789a209e50a28",
+      "uid" : "377a35e4649f7506",
       "status" : "passed",
       "time" : {
-        "start" : 1685580968351,
-        "stop" : 1685580973833,
-        "duration" : 5482
+        "start" : 1685581816766,
+        "stop" : 1685581823083,
+        "duration" : 6317
       }
     } ]
   },
@@ -599,31 +601,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cd26ddbda744b85a",
+      "uid" : "9c9a4391f18ca0f3",
       "status" : "passed",
       "time" : {
-        "start" : 1685581036703,
-        "stop" : 1685581041507,
-        "duration" : 4804
-      }
-    } ]
-  },
-  "7cbf56b808974e6fe0f84a0df44e2162" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "1690645d640695ea",
-      "status" : "passed",
-      "time" : {
-        "start" : 1685580871468,
-        "stop" : 1685580876986,
-        "duration" : 5518
+        "start" : 1685581885537,
+        "stop" : 1685581890425,
+        "duration" : 4888
       }
     } ]
   },
@@ -637,16 +620,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6b19717b1da0ed80",
+      "uid" : "1e1a6087a455c2b8",
       "status" : "passed",
       "time" : {
-        "start" : 1685580999649,
-        "stop" : 1685581005066,
-        "duration" : 5417
+        "start" : 1685581847974,
+        "stop" : 1685581853800,
+        "duration" : 5826
       }
     } ]
   },
-  "bbda6b6a3bd5b9c8ac38f2ac3b6abea4" : {
+  "7cbf56b808974e6fe0f84a0df44e2162" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -656,12 +639,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "624dd55e9c1224bd",
+      "uid" : "4f504c5301669504",
       "status" : "passed",
       "time" : {
-        "start" : 1685581107591,
-        "stop" : 1685581114921,
-        "duration" : 7330
+        "start" : 1685581723369,
+        "stop" : 1685581727010,
+        "duration" : 3641
+      }
+    } ]
+  },
+  "bbda6b6a3bd5b9c8ac38f2ac3b6abea4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b6c2c7b58b9ccccf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55b4450364e3 <unknown>\n#1 0x55b444d65c76 <unknown>\n#2 0x55b444d6a53c <unknown>\n#3 0x55b444d6c480 <unknown>\n#4 0x55b444dd9f32 <unknown>\n#5 0x55b444dc1012 <unknown>\n#6 0x55b444dd930e <unknown>\n#7 0x55b444dc0de3 <unknown>\n#8 0x55b444d962dd <unknown>\n#9 0x55b444d9734e <unknown>\n#10 0x55b444ff63e4 <unknown>\n#11 0x55b444ffa3d7 <unknown>\n#12 0x55b445004b20 <unknown>\n#13 0x55b444ffb023 <unknown>\n#14 0x55b444fc91aa <unknown>\n#15 0x55b44501f6b8 <unknown>\n#16 0x55b44501f847 <unknown>\n#17 0x55b44502f243 <unknown>\n#18 0x7f7b2b572609 start_thread",
+      "time" : {
+        "start" : 1685581954207,
+        "stop" : 1685581958203,
+        "duration" : 3996
       }
     } ]
   },
@@ -675,12 +678,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6495e240a1dd0668",
+      "uid" : "1929ea1b580e5aa5",
       "status" : "passed",
       "time" : {
-        "start" : 1685580924634,
-        "stop" : 1685580928552,
-        "duration" : 3918
+        "start" : 1685581776003,
+        "stop" : 1685581779138,
+        "duration" : 3135
       }
     } ]
   },
@@ -694,12 +697,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1015cb90fccc1957",
+      "uid" : "a02d69c6900ac522",
       "status" : "passed",
       "time" : {
-        "start" : 1685580849883,
-        "stop" : 1685580853086,
-        "duration" : 3203
+        "start" : 1685581701030,
+        "stop" : 1685581704200,
+        "duration" : 3170
       }
     } ]
   },
@@ -713,12 +716,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "73e4ac467a20e16a",
+      "uid" : "e9bd0e5ada2f84e5",
       "status" : "passed",
       "time" : {
-        "start" : 1685580853884,
-        "stop" : 1685580857807,
-        "duration" : 3923
+        "start" : 1685581705012,
+        "stop" : 1685581709029,
+        "duration" : 4017
       }
     } ]
   },
@@ -732,12 +735,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "74ca920e71c16ed8",
+      "uid" : "e1485e32a99c9f45",
       "status" : "passed",
       "time" : {
-        "start" : 1685581030450,
-        "stop" : 1685581035863,
-        "duration" : 5413
+        "start" : 1685581879337,
+        "stop" : 1685581884734,
+        "duration" : 5397
       }
     } ]
   },
@@ -751,12 +754,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9e1528d70671ec4a",
+      "uid" : "18925ac11bcd630b",
       "status" : "passed",
       "time" : {
-        "start" : 1685580895973,
-        "stop" : 1685580899381,
-        "duration" : 3408
+        "start" : 1685581747373,
+        "stop" : 1685581750736,
+        "duration" : 3363
       }
     } ]
   },
@@ -770,12 +773,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2a063d465b14aaf6",
+      "uid" : "93b066efcb995002",
       "status" : "passed",
       "time" : {
-        "start" : 1685580883201,
-        "stop" : 1685580887146,
-        "duration" : 3945
+        "start" : 1685581735047,
+        "stop" : 1685581738269,
+        "duration" : 3222
       }
     } ]
   },
@@ -789,12 +792,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f0823f9db5554484",
+      "uid" : "244f00276bebf8b0",
       "status" : "passed",
       "time" : {
-        "start" : 1685580986952,
-        "stop" : 1685580992149,
-        "duration" : 5197
+        "start" : 1685581836022,
+        "stop" : 1685581840663,
+        "duration" : 4641
       }
     } ]
   },
@@ -808,12 +811,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ac2b61d744f88978",
+      "uid" : "d42a8ca92eaaf4bb",
       "status" : "passed",
       "time" : {
-        "start" : 1685580934716,
-        "stop" : 1685580937795,
-        "duration" : 3079
+        "start" : 1685581784694,
+        "stop" : 1685581787770,
+        "duration" : 3076
       }
     } ]
   },
@@ -827,12 +830,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "138a2cad348bb473",
+      "uid" : "6da0012e678017de",
       "status" : "passed",
       "time" : {
-        "start" : 1685580845269,
-        "stop" : 1685580849079,
-        "duration" : 3810
+        "start" : 1685581696453,
+        "stop" : 1685581700233,
+        "duration" : 3780
       }
     } ]
   },
@@ -846,12 +849,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ed4766049dceded8",
+      "uid" : "f7e6e787f18decd2",
       "status" : "passed",
       "time" : {
-        "start" : 1685581048304,
-        "stop" : 1685581052807,
-        "duration" : 4503
+        "start" : 1685581897359,
+        "stop" : 1685581902139,
+        "duration" : 4780
       }
     } ]
   },
@@ -865,12 +868,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b78775de255abb72",
+      "uid" : "61e6592feca37134",
       "status" : "passed",
       "time" : {
-        "start" : 1685580791909,
-        "stop" : 1685580796600,
-        "duration" : 4691
+        "start" : 1685581641629,
+        "stop" : 1685581644890,
+        "duration" : 3261
       }
     } ]
   },
@@ -884,12 +887,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eaea7463b977ee6b",
+      "uid" : "72c3c2bf66520173",
       "status" : "passed",
       "time" : {
-        "start" : 1685580920029,
-        "stop" : 1685580923839,
-        "duration" : 3810
+        "start" : 1685581771653,
+        "stop" : 1685581775201,
+        "duration" : 3548
       }
     } ]
   },
@@ -903,12 +906,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dbdd2b90898c2f3a",
+      "uid" : "6b101613f89587b7",
       "status" : "passed",
       "time" : {
-        "start" : 1685581042300,
-        "stop" : 1685581047516,
-        "duration" : 5216
+        "start" : 1685581891230,
+        "stop" : 1685581896600,
+        "duration" : 5370
       }
     } ]
   },
@@ -922,12 +925,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cc9da5dd9408d5f",
+      "uid" : "149fea687f713b21",
       "status" : "passed",
       "time" : {
-        "start" : 1685580974632,
-        "stop" : 1685580979702,
-        "duration" : 5070
+        "start" : 1685581823867,
+        "stop" : 1685581829094,
+        "duration" : 5227
       }
     } ]
   },
@@ -941,12 +944,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3608fc9af369d1a5",
+      "uid" : "75d521b603b0f6e4",
       "status" : "passed",
       "time" : {
-        "start" : 1685580820264,
-        "stop" : 1685580824448,
-        "duration" : 4184
+        "start" : 1685581671520,
+        "stop" : 1685581674456,
+        "duration" : 2936
       }
     } ]
   },
@@ -960,12 +963,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "261badd069c0da21",
+      "uid" : "61bb9d43ef0752dc",
       "status" : "passed",
       "time" : {
-        "start" : 1685580867160,
-        "stop" : 1685580870670,
-        "duration" : 3510
+        "start" : 1685581718113,
+        "stop" : 1685581722575,
+        "duration" : 4462
       }
     } ]
   },
@@ -979,12 +982,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "116c6f9abed05916",
+      "uid" : "c88718f7a0b89955",
       "status" : "passed",
       "time" : {
-        "start" : 1685580797402,
-        "stop" : 1685580802723,
-        "duration" : 5321
+        "start" : 1685581645690,
+        "stop" : 1685581653495,
+        "duration" : 7805
       }
     } ]
   },
@@ -998,31 +1001,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d5e2b9ad4b2ccb0e",
+      "uid" : "b2bdb850abf69273",
       "status" : "passed",
       "time" : {
-        "start" : 1685580825220,
-        "stop" : 1685580827761,
-        "duration" : 2541
+        "start" : 1685581675219,
+        "stop" : 1685581677759,
+        "duration" : 2540
       }
     } ]
   },
   "f2c987306186209cc4cf79e0cd3ca8fd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4a8c72a79b75fd91",
-      "status" : "passed",
+      "uid" : "f958b2716053180c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55e5454f64e3 <unknown>\n#1 0x55e545225c76 <unknown>\n#2 0x55e54522a53c <unknown>\n#3 0x55e54522c480 <unknown>\n#4 0x55e545299f32 <unknown>\n#5 0x55e545281012 <unknown>\n#6 0x55e54529930e <unknown>\n#7 0x55e545280de3 <unknown>\n#8 0x55e5452562dd <unknown>\n#9 0x55e54525734e <unknown>\n#10 0x55e5454b63e4 <unknown>\n#11 0x55e5454ba3d7 <unknown>\n#12 0x55e5454c4b20 <unknown>\n#13 0x55e5454bb023 <unknown>\n#14 0x55e5454891aa <unknown>\n#15 0x55e5454df6b8 <unknown>\n#16 0x55e5454df847 <unknown>\n#17 0x55e5454ef243 <unknown>\n#18 0x7efd69a28609 start_thread",
       "time" : {
-        "start" : 1685581099522,
-        "stop" : 1685581106818,
-        "duration" : 7296
+        "start" : 1685581949450,
+        "stop" : 1685581953328,
+        "duration" : 3878
       }
     } ]
   },
@@ -1036,12 +1040,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "32fa35c1c4b8e4f8",
+      "uid" : "7d563a8969f4fe4c",
       "status" : "passed",
       "time" : {
-        "start" : 1685581077042,
-        "stop" : 1685581084065,
-        "duration" : 7023
+        "start" : 1685581928601,
+        "stop" : 1685581934059,
+        "duration" : 5458
       }
     } ]
   },
@@ -1055,12 +1059,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "65d83bee283a1c2d",
+      "uid" : "3f66e7e0c294d704",
       "status" : "passed",
       "time" : {
-        "start" : 1685580877776,
-        "stop" : 1685580882427,
-        "duration" : 4651
+        "start" : 1685581727790,
+        "stop" : 1685581734256,
+        "duration" : 6466
       }
     } ]
   },
@@ -1074,12 +1078,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "993542b2dec0213",
+      "uid" : "1220b571b860e06d",
       "status" : "passed",
       "time" : {
-        "start" : 1685581092644,
-        "stop" : 1685581098762,
-        "duration" : 6118
+        "start" : 1685581941685,
+        "stop" : 1685581948654,
+        "duration" : 6969
       }
     } ]
   },
@@ -1093,12 +1097,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "22942891880e6441",
+      "uid" : "ee347cc7bccaaf08",
       "status" : "passed",
       "time" : {
-        "start" : 1685580803516,
-        "stop" : 1685580806452,
-        "duration" : 2936
+        "start" : 1685581654257,
+        "stop" : 1685581657482,
+        "duration" : 3225
       }
     } ]
   },
@@ -1112,12 +1116,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "aa9475a148a5eff7",
+      "uid" : "d87f1697481a5dfd",
       "status" : "passed",
       "time" : {
-        "start" : 1685580892410,
-        "stop" : 1685580895223,
-        "duration" : 2813
+        "start" : 1685581743633,
+        "stop" : 1685581746581,
+        "duration" : 2948
       }
     } ]
   },
@@ -1131,12 +1135,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a8bf505cf19926fa",
+      "uid" : "24a4678c1ec45e28",
       "status" : "passed",
       "time" : {
-        "start" : 1685580836181,
-        "stop" : 1685580839529,
-        "duration" : 3348
+        "start" : 1685581686355,
+        "stop" : 1685581690512,
+        "duration" : 4157
       }
     } ]
   },
@@ -1150,12 +1154,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bace173096e7d5f7",
+      "uid" : "53e8905e71cfc665",
       "status" : "passed",
       "time" : {
-        "start" : 1685581012498,
-        "stop" : 1685581017613,
-        "duration" : 5115
+        "start" : 1685581861189,
+        "stop" : 1685581866235,
+        "duration" : 5046
       }
     } ]
   },
@@ -1169,31 +1173,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c7908a9ecba13537",
+      "uid" : "e838e0fb32c5dfcb",
       "status" : "passed",
       "time" : {
-        "start" : 1685580787743,
-        "stop" : 1685580791105,
-        "duration" : 3362
+        "start" : 1685581637446,
+        "stop" : 1685581640868,
+        "duration" : 3422
       }
     } ]
   },
   "6953e35152186bed5c72f10d59764e59" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "69fbd77e84e30623",
-      "status" : "passed",
+      "uid" : "48edeb15c87aa101",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55fc942e24e3 <unknown>\n#1 0x55fc94011c76 <unknown>\n#2 0x55fc9401653c <unknown>\n#3 0x55fc94018480 <unknown>\n#4 0x55fc94085f32 <unknown>\n#5 0x55fc9406d012 <unknown>\n#6 0x55fc9408530e <unknown>\n#7 0x55fc9406cde3 <unknown>\n#8 0x55fc940422dd <unknown>\n#9 0x55fc9404334e <unknown>\n#10 0x55fc942a23e4 <unknown>\n#11 0x55fc942a63d7 <unknown>\n#12 0x55fc942b0b20 <unknown>\n#13 0x55fc942a7023 <unknown>\n#14 0x55fc942751aa <unknown>\n#15 0x55fc942cb6b8 <unknown>\n#16 0x55fc942cb847 <unknown>\n#17 0x55fc942db243 <unknown>\n#18 0x7fa110f18609 start_thread",
       "time" : {
-        "start" : 1685581115715,
-        "stop" : 1685581123296,
-        "duration" : 7581
+        "start" : 1685581959064,
+        "stop" : 1685581963093,
+        "duration" : 4029
       }
     } ]
   }
