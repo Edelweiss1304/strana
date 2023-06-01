@@ -64,17 +64,18 @@ def pytest_exception_interact(node, call, report):
 
 @pytest.fixture(scope="function", autouse=True)
 def find_element_retry(driver):
-    def find_element_with_retry(driver, locator):
+    def find_element_with_retry(driver_instance, locator):
         max_attempts = 3
         attempts = 0
         while attempts < max_attempts:
             try:
-                element = driver.find_element(*locator)
+                element = driver_instance.find_element(*locator)
                 return element
             except StaleElementReferenceException:
                 attempts += 1
         raise StaleElementReferenceException(f"Failed to find element {locator} after {max_attempts} attempts")
 
     yield find_element_with_retry
+
 
 
