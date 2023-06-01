@@ -3,20 +3,34 @@ from pages.projects_page import ProjectsPage
 from base.base_class import Base
 from pages.url import URLS_MAIN
 import allure
+from selenium.common.exceptions import StaleElementReferenceException
+
+from selenium.common.exceptions import StaleElementReferenceException
+
+
+def handle_stale_element_reference(func):
+    def wrapper(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except StaleElementReferenceException:
+            pass
+
+    return wrapper
 
 
 @allure.title("Переход из проектов в WOW")
+@handle_stale_element_reference
 def test_projects_wow(driver):
     head = Header(driver)
     Base.open_page(driver, URLS_MAIN['url_msk'])
     head.click_projects()
     pp = ProjectsPage(driver)
-    driver.refresh()
     pp.click_wow()
     assert head.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
 
 
 @allure.title("Переход из проектов в Озерный")
+@handle_stale_element_reference
 def test_projects_ozerniy(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
@@ -28,6 +42,7 @@ def test_projects_ozerniy(driver):
 
 
 @allure.title("Переход из проектов в Днв")
+@handle_stale_element_reference
 def test_projects_dnv(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
@@ -39,6 +54,7 @@ def test_projects_dnv(driver):
 
 
 @allure.title("Переход из проектов в Принцип")
+@handle_stale_element_reference
 def test_projects_princip(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
@@ -50,6 +66,7 @@ def test_projects_princip(driver):
 
 
 @allure.title("Переход из проектов в Сибирский сад")
+@handle_stale_element_reference
 def test_projects_sibsad(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
@@ -61,6 +78,7 @@ def test_projects_sibsad(driver):
 
 
 @allure.title("Переход из проектов в Звездный")
+@handle_stale_element_reference
 def test_projects_zvezdniy(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
@@ -72,6 +90,7 @@ def test_projects_zvezdniy(driver):
 
 
 @allure.title("Переход из проектов в Юнион")
+@handle_stale_element_reference
 def test_projects_union(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
@@ -83,6 +102,7 @@ def test_projects_union(driver):
 
 
 @allure.title("Переход из проектов в Авторский")
+@handle_stale_element_reference
 def test_projects_avtorskiy(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
@@ -94,6 +114,7 @@ def test_projects_avtorskiy(driver):
 
 
 @allure.title("Переход из проектов в Колумб")
+@handle_stale_element_reference
 def test_projects_kolumb(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
@@ -105,6 +126,7 @@ def test_projects_kolumb(driver):
 
 
 @allure.title("Переход из проектов в Сердце Сибири")
+@handle_stale_element_reference
 def test_projects_sersib(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
@@ -116,6 +138,7 @@ def test_projects_sersib(driver):
 
 
 @allure.title("Переход из проектов в Домашний")
+@handle_stale_element_reference
 def test_projects_domashniy(driver):
     head = Header(driver)
     pp = ProjectsPage(driver)
