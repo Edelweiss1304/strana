@@ -4,56 +4,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x563c9965c4e3 <unknown>\n#1 0x563c9938bc76 <unknown>\n#2 0x563c9939053c <unknown>\n#3 0x563c99392480 <unknown>\n#4 0x563c993fff32 <unknown>\n#5 0x563c993e7012 <unknown>\n#6 0x563c993ff30e <unknown>\n#7 0x563c993e6de3 <unknown>\n#8 0x563c993bc2dd <unknown>\n#9 0x563c993bd34e <unknown>\n#10 0x563c9961c3e4 <unknown>\n#11 0x563c996203d7 <unknown>\n#12 0x563c9962ab20 <unknown>\n#13 0x563c99621023 <unknown>\n#14 0x563c995ef1aa <unknown>\n#15 0x563c996456b8 <unknown>\n#16 0x563c99645847 <unknown>\n#17 0x563c99655243 <unknown>\n#18 0x7fa74f680609 start_thread",
-      "children" : [ {
-        "name" : "Переход из проектов в Авторский",
-        "uid" : "346ca7912297b129",
-        "parentUid" : "127ba2c5089a728ff09d5006e600f1af",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685578493997,
-          "stop" : 1685578499107,
-          "duration" : 5110
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "127ba2c5089a728ff09d5006e600f1af"
-    }, {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x5606c07b74e3 <unknown>\n#1 0x5606c04e6c76 <unknown>\n#2 0x5606c04eb53c <unknown>\n#3 0x5606c04ed480 <unknown>\n#4 0x5606c055af32 <unknown>\n#5 0x5606c0542012 <unknown>\n#6 0x5606c055a30e <unknown>\n#7 0x5606c0541de3 <unknown>\n#8 0x5606c05172dd <unknown>\n#9 0x5606c051834e <unknown>\n#10 0x5606c07773e4 <unknown>\n#11 0x5606c077b3d7 <unknown>\n#12 0x5606c0785b20 <unknown>\n#13 0x5606c077c023 <unknown>\n#14 0x5606c074a1aa <unknown>\n#15 0x5606c07a06b8 <unknown>\n#16 0x5606c07a0847 <unknown>\n#17 0x5606c07b0243 <unknown>\n#18 0x7f7feb0b3609 start_thread",
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x55eb2b0404e3 <unknown>\n#1 0x55eb2ad6fc76 <unknown>\n#2 0x55eb2ad7453c <unknown>\n#3 0x55eb2ad76480 <unknown>\n#4 0x55eb2ade3f32 <unknown>\n#5 0x55eb2adcb012 <unknown>\n#6 0x55eb2ade330e <unknown>\n#7 0x55eb2adcade3 <unknown>\n#8 0x55eb2ada02dd <unknown>\n#9 0x55eb2ada134e <unknown>\n#10 0x55eb2b0003e4 <unknown>\n#11 0x55eb2b0043d7 <unknown>\n#12 0x55eb2b00eb20 <unknown>\n#13 0x55eb2b005023 <unknown>\n#14 0x55eb2afd31aa <unknown>\n#15 0x55eb2b0296b8 <unknown>\n#16 0x55eb2b029847 <unknown>\n#17 0x55eb2b039243 <unknown>\n#18 0x7f8ea9ce7609 start_thread",
       "children" : [ {
         "name" : "Переход из проектов в Колумб",
-        "uid" : "83815e1e11315e2e",
-        "parentUid" : "cef03f5a9655dcb00150e2e4ba621dbf",
+        "uid" : "c0dd983f0f49446b",
+        "parentUid" : "f54be0816e32787a7dbd1409fa7e4485",
         "status" : "broken",
         "time" : {
-          "start" : 1685578500002,
-          "stop" : 1685578504159,
-          "duration" : 4157
+          "start" : 1685581124098,
+          "stop" : 1685581128281,
+          "duration" : 4183
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "cef03f5a9655dcb00150e2e4ba621dbf"
-    }, {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x560ed116c4e3 <unknown>\n#1 0x560ed0e9bc76 <unknown>\n#2 0x560ed0ea053c <unknown>\n#3 0x560ed0ea2480 <unknown>\n#4 0x560ed0f0ff32 <unknown>\n#5 0x560ed0ef7012 <unknown>\n#6 0x560ed0f0f30e <unknown>\n#7 0x560ed0ef6de3 <unknown>\n#8 0x560ed0ecc2dd <unknown>\n#9 0x560ed0ecd34e <unknown>\n#10 0x560ed112c3e4 <unknown>\n#11 0x560ed11303d7 <unknown>\n#12 0x560ed113ab20 <unknown>\n#13 0x560ed1131023 <unknown>\n#14 0x560ed10ff1aa <unknown>\n#15 0x560ed11556b8 <unknown>\n#16 0x560ed1155847 <unknown>\n#17 0x560ed1165243 <unknown>\n#18 0x7fd73e6c2609 start_thread",
-      "children" : [ {
-        "name" : "Переход из проектов в Сердце Сибири",
-        "uid" : "bfd79a0134fb2a0c",
-        "parentUid" : "7c69c38559422e2b0737f88d50398202",
-        "status" : "broken",
-        "time" : {
-          "start" : 1685578505033,
-          "stop" : 1685578509111,
-          "duration" : 4078
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "7c69c38559422e2b0737f88d50398202"
+      "uid" : "f54be0816e32787a7dbd1409fa7e4485"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
