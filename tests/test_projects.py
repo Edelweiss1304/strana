@@ -5,145 +5,178 @@ from pages.url import URLS_MAIN
 import allure
 from selenium.common.exceptions import StaleElementReferenceException
 
-from selenium.common.exceptions import StaleElementReferenceException
 
-
-def handle_stale_element_reference(func):
+def rerun_on_StaleElementReferenceException(func):
     def wrapper(*args, **kwargs):
-        try:
-            return func(*args, **kwargs)
-        except StaleElementReferenceException:
-            pass
+        for _ in range(5):  # Максимальное число попыток
+            try:
+                return func(*args, **kwargs)  # Пытаемся выполнить тест
+            except StaleElementReferenceException:  # Если возникает StaleElementReferenceException, перезапускаем тест
+                continue
+        raise  # Если после всех попыток тест все еще не прошел, выбрасываем исключение
 
     return wrapper
 
 
 @allure.title("Переход из проектов в WOW")
-@handle_stale_element_reference
 def test_projects_wow(driver):
-    head = Header(driver)
-    Base.open_page(driver, URLS_MAIN['url_msk'])
-    head.click_projects()
-    pp = ProjectsPage(driver)
-    pp.click_wow()
-    assert head.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        Base.open_page(driver, URLS_MAIN['url_msk'])
+        head.click_projects()
+        pp = ProjectsPage(driver)
+        pp.click_wow()
+        assert head.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Озерный")
-@handle_stale_element_reference
 def test_projects_ozerniy(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_msk'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_ozerniy()
-    assert head.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_msk'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_ozerniy()
+        assert head.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Днв")
-@handle_stale_element_reference
 def test_projects_dnv(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_spb'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_dnv()
-    assert head.get_project_dnv_check() == "Санкт-Петербург"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_spb'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_dnv()
+        assert head.get_project_dnv_check() == "Санкт-Петербург"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Принцип")
-@handle_stale_element_reference
 def test_projects_princip(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_spb'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_princip()
-    assert head.get_project_comfort_tittle() == "ПРИНЦИП"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_spb'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_princip()
+        assert head.get_project_comfort_tittle() == "ПРИНЦИП"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Сибирский сад")
-@handle_stale_element_reference
 def test_projects_sibsad(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_ekb'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_sibsad()
-    assert head.get_project_comfort_tittle() == "Сибирский сад"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_ekb'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_sibsad()
+        assert head.get_project_comfort_tittle() == "Сибирский сад"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Звездный")
-@handle_stale_element_reference
 def test_projects_zvezdniy(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_tmn'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_zvezdniy()
-    assert head.get_project_comfort_tittle() == "Звездный"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_tmn'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_zvezdniy()
+        assert head.get_project_comfort_tittle() == "Звездный"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Юнион")
-@handle_stale_element_reference
 def test_projects_union(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_tmn'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_union()
-    assert head.get_project_comfort_tittle() == "Юнион"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_tmn'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_union()
+        assert head.get_project_comfort_tittle() == "Юнион"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Авторский")
-@handle_stale_element_reference
 def test_projects_avtorskiy(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_tmn'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_avtorskiy()
-    assert head.get_project_comfort_tittle() == "Авторский"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_tmn'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_avtorskiy()
+        assert head.get_project_comfort_tittle() == "Авторский"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Колумб")
-@handle_stale_element_reference
 def test_projects_kolumb(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_tmn'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_kolumb()
-    assert head.get_project_comfort_tittle() == "Колумб"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_tmn'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_kolumb()
+        assert head.get_project_comfort_tittle() == "Колумб"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Сердце Сибири")
-@handle_stale_element_reference
 def test_projects_sersib(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_tmn'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_sersib()
-    assert head.get_project_comfort_tittle() == "Сердце Сибири"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_tmn'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_sersib()
+        assert head.get_project_comfort_tittle() == "Сердце Сибири"
+
+    run_test()
 
 
 @allure.title("Переход из проектов в Домашний")
-@handle_stale_element_reference
 def test_projects_domashniy(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_tmn'])
-    head.click_projects()
-    driver.refresh()
-    pp.click_domashniy()
-    assert head.get_project_comfort_tittle() == "Домашний"
+    @rerun_on_StaleElementReferenceException
+    def run_test():
+        head = Header(driver)
+        pp = ProjectsPage(driver)
+        Base.open_page(driver, URLS_MAIN['url_tmn'])
+        head.click_projects()
+        driver.refresh()
+        pp.click_domashniy()
+        assert head.get_project_comfort_tittle() == "Домашний"
+
+    run_test()
