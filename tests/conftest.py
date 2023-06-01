@@ -4,6 +4,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import allure
 import time
 import os
+from selenium.common.exceptions import StaleElementReferenceException
 
 
 @pytest.fixture(scope="function")
@@ -29,7 +30,7 @@ def driver():
 
 
 @pytest.fixture(scope="function", autouse=True)
-def allure_attach_screenshot(request, driver):  # добавить driver как аргумент
+def allure_attach_screenshot(request, driver):
     def save_screenshot(name):
         # Создаем абсолютный путь к файлу
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -59,5 +60,21 @@ def pytest_exception_interact(node, call, report):
             screenshot_name = f"{node.nodeid}_{int(time.time())}.png"
             driver.save_screenshot(screenshot_name)
             allure.attach.file(screenshot_name, name="Screenshot", attachment_type=allure.attachment_type.PNG)
+
+
+@pytest.fixture(scope="function", autouse=True)
+def find_element_retry(driver):
+    def find_element_with_retry(driver, locator):
+        max_attempts = 3
+        attempts = 0
+        while attempts < max_attempts:
+            try:
+                element = driver.find_element(*locator)
+                return element
+            except StaleElementReferenceException:
+                attempts += 1
+        raise StaleElementReferenceException(f"Failed to find element {locator} after {max_attempts} attempts")
+
+    yield find_element_with_retry
 
 
