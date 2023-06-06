@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/projects/domashnyi/\" class=\"project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7\">...</a> is not clickable at point (1667, 958). Other element would receive the click: <button data-v-d9372757=\"\" data-v-b13fd77e=\"\" class=\"s-bottom-navigation-item s-bottom-navigation-item--theme-primary-business s-bottom-navigation-item--design-business\">...</button>\n  (Session info: chrome=114.0.5735.90)\nStacktrace:\n#0 0x564fde2274e3 <unknown>\n#1 0x564fddf56c76 <unknown>\n#2 0x564fddf989d4 <unknown>\n#3 0x564fddf96cbd <unknown>\n#4 0x564fddf94d2e <unknown>\n#5 0x564fddf9410f <unknown>\n#6 0x564fddf891da <unknown>\n#7 0x564fddfb2012 <unknown>\n#8 0x564fddf88b03 <unknown>\n#9 0x564fddfb21de <unknown>\n#10 0x564fddfca30e <unknown>\n#11 0x564fddfb1de3 <unknown>\n#12 0x564fddf872dd <unknown>\n#13 0x564fddf8834e <unknown>\n#14 0x564fde1e73e4 <unknown>\n#15 0x564fde1eb3d7 <unknown>\n#16 0x564fde1f5b20 <unknown>\n#17 0x564fde1ec023 <unknown>\n#18 0x564fde1ba1aa <unknown>\n#19 0x564fde2106b8 <unknown>\n#20 0x564fde210847 <unknown>\n#21 0x564fde220243 <unknown>\n#22 0x7fda62357609 start_thread",
+      "children" : [ {
+        "name" : "Переход из проектов в Домашний",
+        "uid" : "adbdc35ce21d7e0c",
+        "parentUid" : "32ee42efd696ef9b8df61bed0e6eac04",
+        "status" : "broken",
+        "time" : {
+          "start" : 1686042020273,
+          "stop" : 1686042030486,
+          "duration" : 10213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "32ee42efd696ef9b8df61bed0e6eac04"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }
