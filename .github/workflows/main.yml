@@ -45,16 +45,6 @@ jobs:
           publish_dir: ./allure-report/
       - name: Remove GitHub Pages directories
         run: rm -rf /home/strana_test/actions_github_pages_*
-      - name: Check Google Chrome Version
-        run: google-chrome --version
-
-      - name: Check ChromeDriver Version
-        run: |
-          from selenium import webdriver
-          driver = webdriver.Chrome()
-          print(driver.capabilities['chrome']['chromedriverVersion'])
-          driver.quit()
-        shell: python
 
 
 
