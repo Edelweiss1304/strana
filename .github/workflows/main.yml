@@ -44,7 +44,7 @@ jobs:
           personal_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./allure-report/
       - name: Remove GitHub Pages directories
-        run: rm -rf ./actions_github_pages_*
+        run: rm -rf /home/strana_test/actions_github_pages_*
 
 
 
