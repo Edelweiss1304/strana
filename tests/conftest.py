@@ -25,7 +25,7 @@ def driver():
     caps = DesiredCapabilities().CHROME
     caps["pageLoadStrategy"] = "eager"
     driver = webdriver.Chrome(desired_capabilities=caps, options=options)
-    if "headless=new" in driver.capabilities['chrome']['args']:
+    if "headless=new" in options.arguments:
         print("Аргумент headless=new успешно передан в опции Chrome WebDriver")
     else:
         print("Аргумент headless=new не найден в опциях Chrome WebDriver")
