@@ -24,7 +24,7 @@ def driver():
     options.add_argument("--disable-javascript")
     caps = DesiredCapabilities().CHROME
     caps["pageLoadStrategy"] = "eager"
-    driver = webdriver.Chrome(desired_capabilities=caps, options=options, executable_path='/home/strana_test/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver')
+    driver = webdriver.Chrome(desired_capabilities=caps, options=options)
     if "--headless=new" in options.arguments:
         print("Аргумент headless=new успешно передан в опции Chrome WebDriver")
     else:
