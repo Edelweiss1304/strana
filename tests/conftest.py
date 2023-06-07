@@ -21,11 +21,10 @@ def driver():
     options.add_argument('--disable-gpu')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('--no-sandbox')
-    options.add_argument('--ignore-certificate-errors')
     caps = DesiredCapabilities().CHROME
     caps["pageLoadStrategy"] = "eager"
     driver = webdriver.Chrome(desired_capabilities=caps, options=options)
-    if "headless=new" in options.arguments:
+    if "--headless=new" in options.arguments:
         print("Аргумент headless=new успешно передан в опции Chrome WebDriver")
     else:
         print("Аргумент headless=new не найден в опциях Chrome WebDriver")
