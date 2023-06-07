@@ -217,7 +217,7 @@ class Header(Base):
         self.move_to_projects()
         self.driver.save_screenshot("screenshot.png")
         self.click_project_1_from_header()
-        self.driver.save_screenshot("screenshot.png")
+        self.driver.save_screenshot("screenshot1.png")
         assert self.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
         print("Проверяем заголовок")
 
