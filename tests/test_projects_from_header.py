@@ -8,8 +8,6 @@ import selenium
 @allure.title("Проверка WOW мск")
 def test_msk_header_wow(driver):
     head = Header(driver)
-    print(selenium.__file__)
-    print(selenium.__version__)
     Base.open_page(driver, URLS_MAIN['url_msk'])
     head.check_wow_from_header()
 
