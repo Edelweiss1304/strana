@@ -22,7 +22,7 @@ jobs:
           tar -zxvf allure-2.13.8.tgz -C allure
           echo "${{ github.workspace }}/allure/allure-2.13.8/bin" >> $GITHUB_PATH
       - name: Run tests with Allure
-        run: python tests/test_script.py
+        run: pytest --alluredir=allure-results tests/test_projects_from_header.py::test_msk_header_wow
         continue-on-error: true
 
 
