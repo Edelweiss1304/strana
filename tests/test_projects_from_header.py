@@ -2,7 +2,6 @@ from pages.header_links import Header
 from base.base_class import Base
 from pages.url import URLS_MAIN
 import allure
-import selenium
 
 
 @allure.title("Проверка WOW мск")
