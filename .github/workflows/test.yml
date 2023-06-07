@@ -15,6 +15,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Upgrade selenium
+        run: |
+          pip install --upgrade selenium
       - name: Install Allure Commandline
         run: |
           curl -o allure-2.13.8.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz
