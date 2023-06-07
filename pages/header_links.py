@@ -215,7 +215,9 @@ class Header(Base):
 
     def check_wow_from_header(self):
         self.move_to_projects()
+        self.driver.save_screenshot("screenshot.png")
         self.click_project_1_from_header()
+        self.driver.save_screenshot("screenshot.png")
         assert self.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
         print("Проверяем заголовок")
 
