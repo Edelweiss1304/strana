@@ -21,7 +21,8 @@ def driver():
     options.add_argument('--disable-gpu')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('--no-sandbox')
-    options.add_argument("--disable-javascript")
+    options.add_argument('--virtual-time-budget=5000')
+    options.add_argument('--disable-popup-blocking')
     caps = DesiredCapabilities().CHROME
     caps["pageLoadStrategy"] = "eager"
     driver = webdriver.Chrome(desired_capabilities=caps, options=options)
