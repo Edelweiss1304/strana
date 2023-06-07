@@ -24,12 +24,8 @@ def driver():
     options.add_argument('--virtual-time-budget=5000')
     options.add_argument('--disable-popup-blocking')
     caps = DesiredCapabilities().CHROME
-    caps["pageLoadStrategy"] = "eager"
+    caps["pageLoadStrategy"] = "normal"
     driver = webdriver.Chrome(desired_capabilities=caps, options=options)
-    if "--headless=new" in options.arguments:
-        print("Аргумент headless=new успешно передан в опции Chrome WebDriver")
-    else:
-        print("Аргумент headless=new не найден в опциях Chrome WebDriver")
     yield driver
     driver.quit()
 
