@@ -12,7 +12,7 @@ def driver():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
     options.add_argument('--ignore-certificate-errors')
-    options.add_argument('--headless=new')
+    options.add_argument('--headless')
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--disable-extensions")
     options.add_argument("--proxy-server='direct://'")
@@ -26,6 +26,10 @@ def driver():
     caps = DesiredCapabilities().CHROME
     caps["pageLoadStrategy"] = "normal"
     driver = webdriver.Chrome(desired_capabilities=caps, options=options)
+    if "--headless=new" in options.arguments:
+        print("Аргумент headless=new успешно передан в опции Chrome WebDriver")
+    else:
+        print("Аргумент headless=new не найден в опциях Chrome WebDriver")
     yield driver
     driver.quit()
 
