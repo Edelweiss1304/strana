@@ -4,33 +4,33 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x561f8b7454e3 <unknown>\n#1 0x561f8b474c76 <unknown>\n#2 0x561f8b4b0c96 <unknown>\n#3 0x561f8b4b0dc1 <unknown>\n#4 0x561f8b4ea7f4 <unknown>\n#5 0x561f8b4d003d <unknown>\n#6 0x561f8b4e830e <unknown>\n#7 0x561f8b4cfde3 <unknown>\n#8 0x561f8b4a52dd <unknown>\n#9 0x561f8b4a634e <unknown>\n#10 0x561f8b7053e4 <unknown>\n#11 0x561f8b7093d7 <unknown>\n#12 0x561f8b713b20 <unknown>\n#13 0x561f8b70a023 <unknown>\n#14 0x561f8b6d81aa <unknown>\n#15 0x561f8b72e6b8 <unknown>\n#16 0x561f8b72e847 <unknown>\n#17 0x561f8b73e243 <unknown>\n#18 0x7fcde97bc609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x557e0b1ba4e3 <unknown>\n#1 0x557e0aee9c76 <unknown>\n#2 0x557e0af25c96 <unknown>\n#3 0x557e0af25dc1 <unknown>\n#4 0x557e0af5f7f4 <unknown>\n#5 0x557e0af4503d <unknown>\n#6 0x557e0af5d30e <unknown>\n#7 0x557e0af44de3 <unknown>\n#8 0x557e0af1a2dd <unknown>\n#9 0x557e0af1b34e <unknown>\n#10 0x557e0b17a3e4 <unknown>\n#11 0x557e0b17e3d7 <unknown>\n#12 0x557e0b188b20 <unknown>\n#13 0x557e0b17f023 <unknown>\n#14 0x557e0b14d1aa <unknown>\n#15 0x557e0b1a36b8 <unknown>\n#16 0x557e0b1a3847 <unknown>\n#17 0x557e0b1b3243 <unknown>\n#18 0x7f9412fa8609 start_thread",
       "children" : [ {
-        "name" : "Проверка кнопки коммерция екб",
-        "uid" : "cbe7958c4b9c59d1",
-        "parentUid" : "ed4e9f3656992c24d0cc63fb60a5b6bf",
+        "name" : "Проверка кнопки коммерции мо",
+        "uid" : "14a83658f65e8b8e",
+        "parentUid" : "cb9562eb39b65ca392d8ecc6cae158d4",
         "status" : "broken",
         "time" : {
-          "start" : 1686144743744,
-          "stop" : 1686144764687,
-          "duration" : 20943
+          "start" : 1686194119371,
+          "stop" : 1686194140606,
+          "duration" : 21235
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ed4e9f3656992c24d0cc63fb60a5b6bf"
+      "uid" : "cb9562eb39b65ca392d8ecc6cae158d4"
     }, {
       "name" : "RuntimeError: No active exception to reraise",
       "children" : [ {
         "name" : "Переход из проектов в Колумб",
-        "uid" : "9641d3fece07b503",
+        "uid" : "de7fc888ddf28b46",
         "parentUid" : "60611e8a5f240c48505e5899bfe0decc",
         "status" : "broken",
         "time" : {
-          "start" : 1686145067992,
-          "stop" : 1686145090777,
-          "duration" : 22785
+          "start" : 1686194529314,
+          "stop" : 1686194551549,
+          "duration" : 22235
         },
         "flaky" : false,
         "newFailed" : false,
