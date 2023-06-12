@@ -1,0 +1,184 @@
+{
+  "uid" : "889f8444cedbe1f6",
+  "name" : "Переход из проектов в WOW",
+  "fullName" : "tests.test_projects#test_projects_wow",
+  "historyId" : "75ebb3fced7f6ff850ca876cc401b932",
+  "time" : {
+    "start" : 1686540110715,
+    "stop" : 1686540110715,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.SeleniumManagerException: Message: Selenium Manager failed for: /home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json.\nerror sending request for url (https://chromedriver.storage.googleapis.com/LATEST_RELEASE_114): error trying to connect: dns error: failed to lookup address information: Try again",
+  "statusTrace" : "@pytest.fixture(scope=\"function\")\n    def driver():\n        options = webdriver.ChromeOptions()\n        options.add_experimental_option(\"detach\", True)\n        options.add_argument('--ignore-certificate-errors')\n        options.add_argument('--headless')\n        options.add_argument(\"--window-size=1920,1080\")\n        options.add_argument(\"--disable-extensions\")\n        options.add_argument(\"--proxy-server='direct://'\")\n        options.add_argument(\"--proxy-bypass-list=*\")\n        options.add_argument(\"--start-maximized\")\n        options.add_argument('--disable-gpu')\n        options.add_argument('--disable-dev-shm-usage')\n        options.add_argument('--no-sandbox')\n        caps = DesiredCapabilities().CHROME\n        caps[\"pageLoadStrategy\"] = \"eager\"\n>       driver = webdriver.Chrome(desired_capabilities=caps, options=options)\n\ntests/conftest.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py:82: in __init__\n    service.path = DriverFinder.get_path(service, options)\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py:43: in get_path\n    raise err\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py:40: in get_path\n    path = shutil.which(service.path) or SeleniumManager().driver_location(options)\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/selenium_manager.py:91: in driver_location\n    result = self.run(args)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nargs = ['/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/linux/selenium-manager', '--browser', 'chrome', '--output', 'json']\n\n    @staticmethod\n    def run(args: List[str]) -> str:\n        \"\"\"\n        Executes the Selenium Manager Binary.\n        :Args:\n         - args: the components of the command being executed.\n        :Returns: The log string containing the driver location.\n        \"\"\"\n        command = \" \".join(args)\n        logger.debug(f\"Executing process: {command}\")\n        completed_proc = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)\n        stdout = completed_proc.stdout.decode(\"utf-8\").rstrip(\"\\n\")\n        stderr = completed_proc.stderr.decode(\"utf-8\").rstrip(\"\\n\")\n        output = json.loads(stdout)\n        result = output[\"result\"][\"message\"]\n        if completed_proc.returncode:\n>           raise SeleniumManagerException(f\"Selenium Manager failed for: {command}.\\n{result}{stderr}\")\nE           selenium.common.exceptions.SeleniumManagerException: Message: Selenium Manager failed for: /home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json.\nE           error sending request for url (https://chromedriver.storage.googleapis.com/LATEST_RELEASE_114): error trying to connect: dns error: failed to lookup address information: Try again\n\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/selenium_manager.py:112: SeleniumManagerException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1686539808708,
+      "stop" : 1686539808708,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1686540110715,
+      "stop" : 1686540115750,
+      "duration" : 5035
+    },
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.SeleniumManagerException: Message: Selenium Manager failed for: /home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json.\nerror sending request for url (https://chromedriver.storage.googleapis.com/LATEST_RELEASE_114): error trying to connect: dns error: failed to lookup address information: Try again\n\n",
+    "statusTrace" : "  File \"/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/pluggy/_callers.py\", line 39, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/_pytest/fixtures.py\", line 1130, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/_pytest/fixtures.py\", line 902, in call_fixture_func\n    fixture_result = next(generator)\n                     ^^^^^^^^^^^^^^^\n  File \"/home/strana_test/actions-runner/_work/strana/strana/tests/conftest.py\", line 26, in driver\n    driver = webdriver.Chrome(desired_capabilities=caps, options=options)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py\", line 82, in __init__\n    service.path = DriverFinder.get_path(service, options)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py\", line 43, in get_path\n    raise err\n  File \"/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py\", line 40, in get_path\n    path = shutil.which(service.path) or SeleniumManager().driver_location(options)\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/selenium_manager.py\", line 91, in driver_location\n    result = self.run(args)\n             ^^^^^^^^^^^^^^\n  File \"/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/selenium_manager.py\", line 112, in run\n    raise SeleniumManagerException(f\"Selenium Manager failed for: {command}.\\n{result}{stderr}\")\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1686539808708,
+      "stop" : 1686539808708,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "find_element_retry",
+    "time" : {
+      "start" : 1686540119502,
+      "stop" : 1686540119502,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1686540110715,
+      "stop" : 1686540110715,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1686539808707,
+      "stop" : 1686539808708,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.SeleniumManagerException: Message: Selenium Manager failed for: /home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json.\nerror sending request for url (https://chromedriver.storage.googleapis.com/LATEST_RELEASE_114): error trying to connect: dns error: failed to lookup address information: Try again",
+    "statusTrace" : "@pytest.fixture(scope=\"function\")\n    def driver():\n        options = webdriver.ChromeOptions()\n        options.add_experimental_option(\"detach\", True)\n        options.add_argument('--ignore-certificate-errors')\n        options.add_argument('--headless')\n        options.add_argument(\"--window-size=1920,1080\")\n        options.add_argument(\"--disable-extensions\")\n        options.add_argument(\"--proxy-server='direct://'\")\n        options.add_argument(\"--proxy-bypass-list=*\")\n        options.add_argument(\"--start-maximized\")\n        options.add_argument('--disable-gpu')\n        options.add_argument('--disable-dev-shm-usage')\n        options.add_argument('--no-sandbox')\n        caps = DesiredCapabilities().CHROME\n        caps[\"pageLoadStrategy\"] = \"eager\"\n>       driver = webdriver.Chrome(desired_capabilities=caps, options=options)\n\ntests/conftest.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py:82: in __init__\n    service.path = DriverFinder.get_path(service, options)\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py:43: in get_path\n    raise err\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py:40: in get_path\n    path = shutil.which(service.path) or SeleniumManager().driver_location(options)\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/selenium_manager.py:91: in driver_location\n    result = self.run(args)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nargs = ['/home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/linux/selenium-manager', '--browser', 'chrome', '--output', 'json']\n\n    @staticmethod\n    def run(args: List[str]) -> str:\n        \"\"\"\n        Executes the Selenium Manager Binary.\n        :Args:\n         - args: the components of the command being executed.\n        :Returns: The log string containing the driver location.\n        \"\"\"\n        command = \" \".join(args)\n        logger.debug(f\"Executing process: {command}\")\n        completed_proc = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)\n        stdout = completed_proc.stdout.decode(\"utf-8\").rstrip(\"\\n\")\n        stderr = completed_proc.stderr.decode(\"utf-8\").rstrip(\"\\n\")\n        output = json.loads(stdout)\n        result = output[\"result\"][\"message\"]\n        if completed_proc.returncode:\n>           raise SeleniumManagerException(f\"Selenium Manager failed for: {command}.\\n{result}{stderr}\")\nE           selenium.common.exceptions.SeleniumManagerException: Message: Selenium Manager failed for: /home/strana_test/actions-runner/_work/_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json.\nE           error sending request for url (https://chromedriver.storage.googleapis.com/LATEST_RELEASE_114): error trying to connect: dns error: failed to lookup address information: Try again\n\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/common/selenium_manager.py:112: SeleniumManagerException",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dcf9e244b05080e0",
+      "name" : "log",
+      "source" : "dcf9e244b05080e0.txt",
+      "type" : "text/plain",
+      "size" : 498
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "find_element_retry::0",
+    "time" : {
+      "start" : 1686540125660,
+      "stop" : 1686540125660,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "746456-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "889f8444cedbe1f6.json",
+  "parameterValues" : [ ]
+}
