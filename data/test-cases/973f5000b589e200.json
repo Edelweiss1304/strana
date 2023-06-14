@@ -1,0 +1,227 @@
+{
+  "uid" : "973f5000b589e200",
+  "name" : "Переход из проектов в Домашний",
+  "fullName" : "tests.test_projects#test_projects_domashniy",
+  "historyId" : "e0e8e430d205d3917fff9bbe283578ba",
+  "time" : {
+    "start" : 1686770940189,
+    "stop" : 1686770963012,
+    "duration" : 22823
+  },
+  "status" : "broken",
+  "statusMessage" : "RuntimeError: No active exception to reraise",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a6bab11663dca9fef34f35c78374e85e\")>\n\n    @allure.title(\"Переход из проектов в Домашний\")\n    def test_projects_domashniy(driver):\n        @rerun_on_StaleElementReferenceException\n        def run_test():\n            head = Header(driver)\n            pp = ProjectsPage(driver)\n            Base.open_page(driver, URLS_MAIN['url_tmn'])\n            head.click_projects()\n            driver.refresh()\n            pp.click_domashniy()\n            assert head.get_project_comfort_tittle() == \"Домашний\"\n    \n>       run_test()\n\ntests/test_projects.py:182: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nargs = (), kwargs = {}, _ = 4\n\n    def wrapper(*args, **kwargs):\n        for _ in range(5):  # Максимальное число попыток\n            try:\n                return func(*args, **kwargs)  # Пытаемся выполнить тест\n            except StaleElementReferenceException:  # Если возникает StaleElementReferenceException, перезапускаем тест\n                continue\n>       raise  # Если после всех попыток тест все еще не прошел, выбрасываем исключение\nE       RuntimeError: No active exception to reraise\n\ntests/test_projects.py:16: RuntimeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1686770501089,
+      "stop" : 1686770501089,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1686770939435,
+      "stop" : 1686770939435,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "allure_attach_screenshot",
+    "time" : {
+      "start" : 1686770940188,
+      "stop" : 1686770940188,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "find_element_retry",
+    "time" : {
+      "start" : 1686770940188,
+      "stop" : 1686770940188,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1686770501089,
+      "stop" : 1686770501089,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1686770501089,
+      "stop" : 1686770501089,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1686770939435,
+      "stop" : 1686770940188,
+      "duration" : 753
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "RuntimeError: No active exception to reraise",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a6bab11663dca9fef34f35c78374e85e\")>\n\n    @allure.title(\"Переход из проектов в Домашний\")\n    def test_projects_domashniy(driver):\n        @rerun_on_StaleElementReferenceException\n        def run_test():\n            head = Header(driver)\n            pp = ProjectsPage(driver)\n            Base.open_page(driver, URLS_MAIN['url_tmn'])\n            head.click_projects()\n            driver.refresh()\n            pp.click_domashniy()\n            assert head.get_project_comfort_tittle() == \"Домашний\"\n    \n>       run_test()\n\ntests/test_projects.py:182: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nargs = (), kwargs = {}, _ = 4\n\n    def wrapper(*args, **kwargs):\n        for _ in range(5):  # Максимальное число попыток\n            try:\n                return func(*args, **kwargs)  # Пытаемся выполнить тест\n            except StaleElementReferenceException:  # Если возникает StaleElementReferenceException, перезапускаем тест\n                continue\n>       raise  # Если после всех попыток тест все еще не прошел, выбрасываем исключение\nE       RuntimeError: No active exception to reraise\n\ntests/test_projects.py:16: RuntimeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ffbacda5d0b70de7",
+      "name" : "stdout",
+      "source" : "ffbacda5d0b70de7.txt",
+      "type" : "text/plain",
+      "size" : 240
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "allure_attach_screenshot::0",
+    "time" : {
+      "start" : 1686770963108,
+      "stop" : 1686770963108,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "find_element_retry::0",
+    "time" : {
+      "start" : 1686770963108,
+      "stop" : 1686770963108,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1686770963109,
+      "stop" : 1686770963170,
+      "duration" : 61
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "881694-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "973f5000b589e200.json",
+  "parameterValues" : [ ]
+}
