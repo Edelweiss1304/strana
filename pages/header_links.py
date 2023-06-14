@@ -273,13 +273,13 @@ class Header(Base):
 
     def check_zvezdniy_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_13_from_header()
+        self.click_s_link_wrapper_9_from_header()
         assert self.get_project_comfort_tittle() == "Звездный"
         print("Проверяем заголовок")
 
     def check_union_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_14_from_header()
+        self.click_s_link_wrapper_10_from_header()
         assert self.get_project_comfort_tittle() == "Юнион"
         print("Проверяем заголовок")
 
