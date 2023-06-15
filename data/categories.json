@@ -4,56 +4,39 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "RuntimeError: No active exception to reraise",
-      "children" : [ {
-        "name" : "Переход из проектов в Домашний",
-        "uid" : "973f5000b589e200",
-        "parentUid" : "60611e8a5f240c48505e5899bfe0decc",
-        "status" : "broken",
-        "time" : {
-          "start" : 1686770940189,
-          "stop" : 1686770963012,
-          "duration" : 22823
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "60611e8a5f240c48505e5899bfe0decc"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x558df44044e3 <unknown>\n#1 0x558df4133c76 <unknown>\n#2 0x558df416fc96 <unknown>\n#3 0x558df416fdc1 <unknown>\n#4 0x558df41a97f4 <unknown>\n#5 0x558df418f03d <unknown>\n#6 0x558df41a730e <unknown>\n#7 0x558df418ede3 <unknown>\n#8 0x558df41642dd <unknown>\n#9 0x558df416534e <unknown>\n#10 0x558df43c43e4 <unknown>\n#11 0x558df43c83d7 <unknown>\n#12 0x558df43d2b20 <unknown>\n#13 0x558df43c9023 <unknown>\n#14 0x558df43971aa <unknown>\n#15 0x558df43ed6b8 <unknown>\n#16 0x558df43ed847 <unknown>\n#17 0x558df43fd243 <unknown>\n#18 0x7f538477c609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x559ea3a9e4e3 <unknown>\n#1 0x559ea37cdc76 <unknown>\n#2 0x559ea3809c96 <unknown>\n#3 0x559ea3809dc1 <unknown>\n#4 0x559ea38437f4 <unknown>\n#5 0x559ea382903d <unknown>\n#6 0x559ea384130e <unknown>\n#7 0x559ea3828de3 <unknown>\n#8 0x559ea37fe2dd <unknown>\n#9 0x559ea37ff34e <unknown>\n#10 0x559ea3a5e3e4 <unknown>\n#11 0x559ea3a623d7 <unknown>\n#12 0x559ea3a6cb20 <unknown>\n#13 0x559ea3a63023 <unknown>\n#14 0x559ea3a311aa <unknown>\n#15 0x559ea3a876b8 <unknown>\n#16 0x559ea3a87847 <unknown>\n#17 0x559ea3a97243 <unknown>\n#18 0x7f7c72300609 start_thread",
       "children" : [ {
         "name" : "Проверка ДнВ спб",
-        "uid" : "2f448736e31236ef",
-        "parentUid" : "afe0ad82f2a7ef1cd04c1642c171e401",
+        "uid" : "6b21b91b879a7a12",
+        "parentUid" : "9b440e0e0ccf3cf54afa513aedd74a19",
         "status" : "broken",
         "time" : {
-          "start" : 1686770974910,
-          "stop" : 1686770997963,
-          "duration" : 23053
+          "start" : 1686799189674,
+          "stop" : 1686799212710,
+          "duration" : 23036
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "afe0ad82f2a7ef1cd04c1642c171e401"
+      "uid" : "9b440e0e0ccf3cf54afa513aedd74a19"
     }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55ebd2c224e3 <unknown>\n#1 0x55ebd2951c76 <unknown>\n#2 0x55ebd298dc96 <unknown>\n#3 0x55ebd298ddc1 <unknown>\n#4 0x55ebd29c77f4 <unknown>\n#5 0x55ebd29ad03d <unknown>\n#6 0x55ebd29c530e <unknown>\n#7 0x55ebd29acde3 <unknown>\n#8 0x55ebd29822dd <unknown>\n#9 0x55ebd298334e <unknown>\n#10 0x55ebd2be23e4 <unknown>\n#11 0x55ebd2be63d7 <unknown>\n#12 0x55ebd2bf0b20 <unknown>\n#13 0x55ebd2be7023 <unknown>\n#14 0x55ebd2bb51aa <unknown>\n#15 0x55ebd2c0b6b8 <unknown>\n#16 0x55ebd2c0b847 <unknown>\n#17 0x55ebd2c1b243 <unknown>\n#18 0x7f3619a9b609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55be7bef14e3 <unknown>\n#1 0x55be7bc20c76 <unknown>\n#2 0x55be7bc5cc96 <unknown>\n#3 0x55be7bc5cdc1 <unknown>\n#4 0x55be7bc967f4 <unknown>\n#5 0x55be7bc7c03d <unknown>\n#6 0x55be7bc9430e <unknown>\n#7 0x55be7bc7bde3 <unknown>\n#8 0x55be7bc512dd <unknown>\n#9 0x55be7bc5234e <unknown>\n#10 0x55be7beb13e4 <unknown>\n#11 0x55be7beb53d7 <unknown>\n#12 0x55be7bebfb20 <unknown>\n#13 0x55be7beb6023 <unknown>\n#14 0x55be7be841aa <unknown>\n#15 0x55be7beda6b8 <unknown>\n#16 0x55be7beda847 <unknown>\n#17 0x55be7beea243 <unknown>\n#18 0x7f865faec609 start_thread",
       "children" : [ {
         "name" : "Проверка Принцип спб",
-        "uid" : "9658b2baa4dd2a29",
-        "parentUid" : "ea1aa69403445793d12bc32ad41b44f3",
+        "uid" : "3448c7724c66cbd7",
+        "parentUid" : "887ef953bb6f2b7b7605f5fb51806c9d",
         "status" : "broken",
         "time" : {
-          "start" : 1686770998913,
-          "stop" : 1686771022008,
-          "duration" : 23095
+          "start" : 1686799213578,
+          "stop" : 1686799236982,
+          "duration" : 23404
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ea1aa69403445793d12bc32ad41b44f3"
+      "uid" : "887ef953bb6f2b7b7605f5fb51806c9d"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
