@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from flaky import flaky
+import allure
 
 
 @pytest.fixture(scope="function")
@@ -30,4 +31,13 @@ def pytest_collection_modifyitems(config, items):
         item.add_marker(pytest.mark.flaky(max_runs=3, min_passes=1))
 
 
-
+@pytest.hookimpl(tryfirst=True)
+def pytest_exception_interact(node, call, report):
+    if call.when == "call" and report.failed:
+        driver = node.funcargs["driver"]
+        screenshot_path = f"screenshot_{report.nodeid.replace('/', '_')}.png"
+        driver.save_screenshot(screenshot_path)
+        allure.attach(driver.get_screenshot_as_png(), name=screenshot_path,
+                      attachment_type=allure.attachment_type.PNG)
+        # Выводим путь к скриншоту в консоль для наглядности
+        print(f"Скриншот сохранен: {screenshot_path}")
