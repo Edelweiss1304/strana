@@ -273,13 +273,13 @@ class Header(Base):
 
     def check_dnv_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_11_from_header()
+        self.click_s_link_wrapper_9_from_header()
         assert self.get_project_dnv_check() == "Санкт-Петербург"
         print("Проверяем что попали на нужную страницу")
 
     def check_princip_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_12_from_header()
+        self.click_s_link_wrapper_10_from_header()
         assert self.get_project_comfort_tittle() == "ПРИНЦИП"
         print("Проверяем заголовок")
 
