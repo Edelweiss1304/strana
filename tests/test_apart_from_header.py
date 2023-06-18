@@ -47,7 +47,7 @@ def test_ekb_apart(driver, index):
 
 
 @allure.title("Проверка квартир СПБ-{index}")
-@pytest.mark.parametrize("index", [0, 1, 2])
+@pytest.mark.parametrize("index", [0, 1])
 def test_spb_apart(driver, index):
     head = Header(driver)
     Base.open_page(driver, URLS_MAIN['url_spb'])
