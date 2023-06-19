@@ -21,7 +21,7 @@ def test_msk_apart(driver, index):
 
 @allure.title("Проверка квартир ТМН-{index}")
 @pytest.mark.parametrize("index", range(5))
-def test_msk_apart(driver, index):
+def test_tmn_apart(driver, index):
     head = Header(driver)
     Base.open_page(driver, URLS_MAIN['url_tmn'])
     head.move_to_apart()
