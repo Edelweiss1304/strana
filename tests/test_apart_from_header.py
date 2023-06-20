@@ -41,7 +41,7 @@ def test_ekb_apart(driver, index):
     head.move_to_apart()
     link_index = 9 + index
     getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
-    assert head.get_city_in_apart() == "Екатеринбург"
+    assert head.get_city_in_apart() == "в Екатеринбурге"
     time.sleep(1)
     assert getattr(head, f"get_apart_{index}")().value_of_css_property("color") == head.text_color
 
