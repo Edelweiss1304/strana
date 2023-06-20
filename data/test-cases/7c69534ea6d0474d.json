@@ -1,0 +1,197 @@
+{
+  "uid" : "7c69534ea6d0474d",
+  "name" : "Проверка квартир ЕКБ-3",
+  "fullName" : "tests.test_apart_from_header#test_ekb_apart",
+  "historyId" : "63c48f2f46fa7a312e9364984ccb0b97",
+  "time" : {
+    "start" : 1687230846855,
+    "stop" : 1687230851015,
+    "duration" : 4160
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'в Екатеринбурге' == 'Екатеринбург'\n  - Екатеринбург\n  + в Екатеринбурге\n  ? ++            +",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"611983c2da0021be872df20b32df83fd\")>\nindex = 3\n\n    @allure.title(\"Проверка квартир ЕКБ-{index}\")\n    @pytest.mark.parametrize(\"index\", range(5))\n    def test_ekb_apart(driver, index):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_ekb'])\n        head.move_to_apart()\n        link_index = 9 + index\n        getattr(head, f\"click_s_link_wrapper_{link_index}_from_header\")()\n>       assert head.get_city_in_apart() == \"Екатеринбург\"\nE       AssertionError: assert 'в Екатеринбурге' == 'Екатеринбург'\nE         - Екатеринбург\nE         + в Екатеринбурге\nE         ? ++            +\n\ntests/test_apart_from_header.py:44: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1687230682229,
+      "stop" : 1687230682229,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1687230682229,
+      "stop" : 1687230682229,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1687230846144,
+      "stop" : 1687230846144,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1687230846144,
+      "stop" : 1687230846854,
+      "duration" : 710
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1687230682229,
+      "stop" : 1687230682229,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'в Екатеринбурге' == 'Екатеринбург'\n  - Екатеринбург\n  + в Екатеринбурге\n  ? ++            +",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"611983c2da0021be872df20b32df83fd\")>\nindex = 3\n\n    @allure.title(\"Проверка квартир ЕКБ-{index}\")\n    @pytest.mark.parametrize(\"index\", range(5))\n    def test_ekb_apart(driver, index):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_ekb'])\n        head.move_to_apart()\n        link_index = 9 + index\n        getattr(head, f\"click_s_link_wrapper_{link_index}_from_header\")()\n>       assert head.get_city_in_apart() == \"Екатеринбург\"\nE       AssertionError: assert 'в Екатеринбурге' == 'Екатеринбург'\nE         - Екатеринбург\nE         + в Екатеринбурге\nE         ? ++            +\n\ntests/test_apart_from_header.py:44: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b3a3df1f1bfd980c",
+      "name" : "screenshot_tests_test_apart_from_header.py::test_ekb_apart[3].png",
+      "source" : "b3a3df1f1bfd980c.png",
+      "type" : "image/png",
+      "size" : 188131
+    }, {
+      "uid" : "a73f2eb9def62908",
+      "name" : "stdout",
+      "source" : "a73f2eb9def62908.txt",
+      "type" : "text/plain",
+      "size" : 270
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1687230851640,
+      "stop" : 1687230851696,
+      "duration" : 56
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=3, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_apart_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "1179218-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_apart_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "index",
+    "value" : "3"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "dd28fe70e89cbb4c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'в Екатеринбурге' == 'Екатеринбург'\n  - Екатеринбург\n  + в Екатеринбурге\n  ? ++            +",
+      "time" : {
+        "start" : 1687230841084,
+        "stop" : 1687230845494,
+        "duration" : 4410
+      }
+    }, {
+      "uid" : "ebd15c35ba0347e6",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'в Екатеринбурге' == 'Екатеринбург'\n  - Екатеринбург\n  + в Екатеринбурге\n  ? ++            +",
+      "time" : {
+        "start" : 1687230834014,
+        "stop" : 1687230839657,
+        "duration" : 5643
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "flaky(max_runs=3, min_passes=1)" ]
+  },
+  "source" : "7c69534ea6d0474d.json",
+  "parameterValues" : [ "3" ]
+}
