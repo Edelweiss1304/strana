@@ -36,7 +36,7 @@ class Header(Base):
     # Локаторы для подменю в хэдере
 
     project_business_tittle = "//div[@class='uppercase title_KrDfI']"
-    project_comfort_tittle = ".title_S5gJM"
+    project_comfort_tittle = ".project-hero__title"
     project_dnv_check = "(//div[@class='listLabel_Q6E55'][contains(text(),'Санкт-Петербург')])[1]"
     city_in_apart = "div[class='s-select s-select--string s-select--secondary s-select--large'] div[" \
                     "class='s-select__rendered']"

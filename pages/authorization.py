@@ -2,12 +2,13 @@ from base.base_class import Base
 from selenium.webdriver.common.by import By
 from pages.url import URLS_MAIN
 import pytest
+import time
 
 
 class Authorization(Base):
     # Locators
-    login_lk_button = "//button[@id='link-account']"
-    continue_lk_btn = "(//button[@class='v-button v-button--default v-button--medium is-rounded _position_SEIu5'])[1]"
+    login_lk_button = "(//button[@id='link-account'])[1]"
+    continue_lk_btn = "(//button[@class='s-button s-button--default s-button--primary s-button--design-common s-button--rounded _position_SEIu5'])[1]"
     login_client_phone_field = "//input[@type='tel']"
     get_code_btn = "button[value='false'][type='submit']"
     enter_code_field = "//input[@required='required']"
@@ -25,7 +26,7 @@ class Authorization(Base):
     # Getters
 
     def get_login_lk_button(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.login_lk_button))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.login_lk_button))
 
     def get_continue_lk_btn(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.continue_lk_btn))
@@ -101,6 +102,7 @@ class Authorization(Base):
 
     # Methods
     def login_lk(self, phone_for_user=+79198629250, code_for_user=1313):
+        time.sleep(1)
         self.click_login_lk_button()
         self.click_continue_btn()
         self.get_login_client_phone_field().send_keys(phone_for_user)
@@ -117,6 +119,7 @@ class Authorization(Base):
         self.click_login_broker_btn()
 
     def login_lk_broker_agency(self, email='dmitrievaleks777@rambler.ru', password='1234567890'):
+        time.sleep(1)
         self.click_login_lk_button()
         self.click_switch_btn_partner()
         self.click_continue_btn()
