@@ -2,19 +2,20 @@
   "fe707a265b090d2b8e892d81414876fe" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1318cd27e6c8ceba",
-      "status" : "passed",
+      "uid" : "13260ef095065d49",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5587a61d44e3 <unknown>\n#1 0x5587a5f03c76 <unknown>\n#2 0x5587a5f3fc96 <unknown>\n#3 0x5587a5f3fdc1 <unknown>\n#4 0x5587a5f797f4 <unknown>\n#5 0x5587a5f5f03d <unknown>\n#6 0x5587a5f7730e <unknown>\n#7 0x5587a5f5ede3 <unknown>\n#8 0x5587a5f342dd <unknown>\n#9 0x5587a5f3534e <unknown>\n#10 0x5587a61943e4 <unknown>\n#11 0x5587a61983d7 <unknown>\n#12 0x5587a61a2b20 <unknown>\n#13 0x5587a6199023 <unknown>\n#14 0x5587a61671aa <unknown>\n#15 0x5587a61bd6b8 <unknown>\n#16 0x5587a61bd847 <unknown>\n#17 0x5587a61cd243 <unknown>\n#18 0x7fe0ec416609 start_thread",
       "time" : {
-        "start" : 1687403940660,
-        "stop" : 1687403946670,
-        "duration" : 6010
+        "start" : 1687492524768,
+        "stop" : 1687492547778,
+        "duration" : 23010
       }
     } ]
   },
@@ -28,50 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "aefd6c9a18a212b2",
+      "uid" : "90679b2e188140ca",
       "status" : "passed",
       "time" : {
-        "start" : 1687404038403,
-        "stop" : 1687404042945,
-        "duration" : 4542
-      }
-    } ]
-  },
-  "75ebb3fced7f6ff850ca876cc401b932" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "e632d1fd2cb5516",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403947417,
-        "stop" : 1687403952332,
-        "duration" : 4915
-      }
-    } ]
-  },
-  "4b665a17db64a2609982460501554cfd" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c6bc61aa84109e5b",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403597707,
-        "stop" : 1687403606213,
-        "duration" : 8506
+        "start" : 1687493128480,
+        "stop" : 1687493135417,
+        "duration" : 6937
       }
     } ]
   },
@@ -85,12 +48,50 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f30721acaf34dd0",
+      "uid" : "73e08deac8b26297",
       "status" : "passed",
       "time" : {
-        "start" : 1687403704815,
-        "stop" : 1687403708586,
-        "duration" : 3771
+        "start" : 1687491138846,
+        "stop" : 1687491142968,
+        "duration" : 4122
+      }
+    } ]
+  },
+  "4b665a17db64a2609982460501554cfd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c8c050d1f816a7c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1687490975248,
+        "stop" : 1687490981386,
+        "duration" : 6138
+      }
+    } ]
+  },
+  "75ebb3fced7f6ff850ca876cc401b932" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "99485e4fdcc66ce4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1687492549644,
+        "stop" : 1687492556437,
+        "duration" : 6793
       }
     } ]
   },
@@ -104,50 +105,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d41296546522de36",
+      "uid" : "331b551f305bd076",
       "status" : "passed",
       "time" : {
-        "start" : 1687403771489,
-        "stop" : 1687403776611,
-        "duration" : 5122
-      }
-    } ]
-  },
-  "3d7ff9febb547ca10cce716c5edc9678" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "7d816c708bf557d7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403734199,
-        "stop" : 1687403739236,
-        "duration" : 5037
-      }
-    } ]
-  },
-  "9d5536eda8063e64c7437bcc7d92954c" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "f5882b74eee7f0a1",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687404055430,
-        "stop" : 1687404063288,
-        "duration" : 7858
+        "start" : 1687491223068,
+        "stop" : 1687491229366,
+        "duration" : 6298
       }
     } ]
   },
@@ -161,12 +124,51 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7307cfa6c2c98dfb",
+      "uid" : "cbdcec6ac24f2b57",
       "status" : "passed",
       "time" : {
-        "start" : 1687403755002,
-        "stop" : 1687403759552,
-        "duration" : 4550
+        "start" : 1687491205843,
+        "stop" : 1687491210844,
+        "duration" : 5001
+      }
+    } ]
+  },
+  "9d5536eda8063e64c7437bcc7d92954c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "12585ac749b2aa5e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5635e18de4e3 <unknown>\n#1 0x5635e160dc76 <unknown>\n#2 0x5635e1649c96 <unknown>\n#3 0x5635e1649dc1 <unknown>\n#4 0x5635e16837f4 <unknown>\n#5 0x5635e166903d <unknown>\n#6 0x5635e168130e <unknown>\n#7 0x5635e1668de3 <unknown>\n#8 0x5635e163e2dd <unknown>\n#9 0x5635e163f34e <unknown>\n#10 0x5635e189e3e4 <unknown>\n#11 0x5635e18a23d7 <unknown>\n#12 0x5635e18acb20 <unknown>\n#13 0x5635e18a3023 <unknown>\n#14 0x5635e18711aa <unknown>\n#15 0x5635e18c76b8 <unknown>\n#16 0x5635e18c7847 <unknown>\n#17 0x5635e18d7243 <unknown>\n#18 0x7fa67d730609 start_thread",
+      "time" : {
+        "start" : 1687493257767,
+        "stop" : 1687493282978,
+        "duration" : 25211
+      }
+    } ]
+  },
+  "3d7ff9febb547ca10cce716c5edc9678" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fd09a01ddd96e1d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1687491176061,
+        "stop" : 1687491181840,
+        "duration" : 5779
       }
     } ]
   },
@@ -180,12 +182,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2201649c75f57c17",
+      "uid" : "acee0001c219c932",
       "status" : "passed",
       "time" : {
-        "start" : 1687403464599,
-        "stop" : 1687403470600,
-        "duration" : 6001
+        "start" : 1687490793550,
+        "stop" : 1687490799934,
+        "duration" : 6384
       }
     } ]
   },
@@ -199,31 +201,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7e523af9f4848d88",
+      "uid" : "eb9bca1c6155ac1b",
       "status" : "passed",
       "time" : {
-        "start" : 1687403635384,
-        "stop" : 1687403640189,
-        "duration" : 4805
-      }
-    } ]
-  },
-  "7d7e10d005ac647079d630058d9b4780" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "dec8a499d525222a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403557567,
-        "stop" : 1687403565483,
-        "duration" : 7916
+        "start" : 1687491015082,
+        "stop" : 1687491020444,
+        "duration" : 5362
       }
     } ]
   },
@@ -237,12 +220,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b5be12c750295a87",
+      "uid" : "fe538de56ad512f0",
       "status" : "passed",
       "time" : {
-        "start" : 1687404033172,
-        "stop" : 1687404037624,
-        "duration" : 4452
+        "start" : 1687493121123,
+        "stop" : 1687493127714,
+        "duration" : 6591
+      }
+    } ]
+  },
+  "7d7e10d005ac647079d630058d9b4780" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "40e2f8a6d831d98d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1687490919542,
+        "stop" : 1687490927804,
+        "duration" : 8262
       }
     } ]
   },
@@ -256,31 +258,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6883336b2c708dd7",
+      "uid" : "d269c736b0a3a09e",
       "status" : "passed",
       "time" : {
-        "start" : 1687403566266,
-        "stop" : 1687403573579,
-        "duration" : 7313
+        "start" : 1687490928539,
+        "stop" : 1687490936765,
+        "duration" : 8226
       }
     } ]
   },
   "6aa567c9d418072d0701653e9c0e6cf3" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5bac4f945f3a3bd2",
-      "status" : "passed",
+      "uid" : "793e507b67ca567f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5637c54444e3 <unknown>\n#1 0x5637c5173c76 <unknown>\n#2 0x5637c51afc96 <unknown>\n#3 0x5637c51afdc1 <unknown>\n#4 0x5637c51e97f4 <unknown>\n#5 0x5637c51cf03d <unknown>\n#6 0x5637c51e730e <unknown>\n#7 0x5637c51cede3 <unknown>\n#8 0x5637c51a42dd <unknown>\n#9 0x5637c51a534e <unknown>\n#10 0x5637c54043e4 <unknown>\n#11 0x5637c54083d7 <unknown>\n#12 0x5637c5412b20 <unknown>\n#13 0x5637c5409023 <unknown>\n#14 0x5637c53d71aa <unknown>\n#15 0x5637c542d6b8 <unknown>\n#16 0x5637c542d847 <unknown>\n#17 0x5637c543d243 <unknown>\n#18 0x7f44d9ca8609 start_thread",
       "time" : {
-        "start" : 1687404005023,
-        "stop" : 1687404012220,
-        "duration" : 7197
+        "start" : 1687492942123,
+        "stop" : 1687492967340,
+        "duration" : 25217
       }
     } ]
   },
@@ -294,12 +297,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b56c83130d4b440e",
+      "uid" : "24446df4eb924597",
       "status" : "passed",
       "time" : {
-        "start" : 1687403797395,
-        "stop" : 1687403803366,
-        "duration" : 5971
+        "start" : 1687491251180,
+        "stop" : 1687491259147,
+        "duration" : 7967
       }
     } ]
   },
@@ -313,12 +316,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "26ba3eba68acc91a",
+      "uid" : "a9e27ea67a281e90",
       "status" : "passed",
       "time" : {
-        "start" : 1687403790039,
-        "stop" : 1687403796627,
-        "duration" : 6588
+        "start" : 1687491244550,
+        "stop" : 1687491250350,
+        "duration" : 5800
       }
     } ]
   },
@@ -332,31 +335,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ddc4f5e16c0bc5f4",
+      "uid" : "5e207ceaa5e2aab3",
       "status" : "passed",
       "time" : {
-        "start" : 1687403783927,
-        "stop" : 1687403789266,
-        "duration" : 5339
+        "start" : 1687491238357,
+        "stop" : 1687491243715,
+        "duration" : 5358
       }
     } ]
   },
   "14e04730dce4c1ad94d608d939f7d63f" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b4ea86977f60edac",
-      "status" : "passed",
+      "uid" : "f86e252fefe2dbc6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5589fdc404e3 <unknown>\n#1 0x5589fd96fc76 <unknown>\n#2 0x5589fd9abc96 <unknown>\n#3 0x5589fd9abdc1 <unknown>\n#4 0x5589fd9e57f4 <unknown>\n#5 0x5589fd9cb03d <unknown>\n#6 0x5589fd9e330e <unknown>\n#7 0x5589fd9cade3 <unknown>\n#8 0x5589fd9a02dd <unknown>\n#9 0x5589fd9a134e <unknown>\n#10 0x5589fdc003e4 <unknown>\n#11 0x5589fdc043d7 <unknown>\n#12 0x5589fdc0eb20 <unknown>\n#13 0x5589fdc05023 <unknown>\n#14 0x5589fdbd31aa <unknown>\n#15 0x5589fdc296b8 <unknown>\n#16 0x5589fdc29847 <unknown>\n#17 0x5589fdc39243 <unknown>\n#18 0x7f4c76fc1609 start_thread",
       "time" : {
-        "start" : 1687403857382,
-        "stop" : 1687403864607,
-        "duration" : 7225
+        "start" : 1687491722406,
+        "stop" : 1687491746905,
+        "duration" : 24499
       }
     } ]
   },
@@ -370,12 +374,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f26ca7846c7a343f",
+      "uid" : "22b9c54284110326",
       "status" : "passed",
       "time" : {
-        "start" : 1687403640936,
-        "stop" : 1687403646080,
-        "duration" : 5144
+        "start" : 1687491021217,
+        "stop" : 1687491026728,
+        "duration" : 5511
+      }
+    } ]
+  },
+  "d39f1bdb9499185b64f6e101e4a80574" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f8d6525d974130fb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x557660f994e3 <unknown>\n#1 0x557660cc8c76 <unknown>\n#2 0x557660d04c96 <unknown>\n#3 0x557660d04dc1 <unknown>\n#4 0x557660d3e7f4 <unknown>\n#5 0x557660d2403d <unknown>\n#6 0x557660d3c30e <unknown>\n#7 0x557660d23de3 <unknown>\n#8 0x557660cf92dd <unknown>\n#9 0x557660cfa34e <unknown>\n#10 0x557660f593e4 <unknown>\n#11 0x557660f5d3d7 <unknown>\n#12 0x557660f67b20 <unknown>\n#13 0x557660f5e023 <unknown>\n#14 0x557660f2c1aa <unknown>\n#15 0x557660f826b8 <unknown>\n#16 0x557660f82847 <unknown>\n#17 0x557660f92243 <unknown>\n#18 0x7f8d1c54d609 start_thread",
+      "time" : {
+        "start" : 1687492034116,
+        "stop" : 1687492058340,
+        "duration" : 24224
       }
     } ]
   },
@@ -389,50 +413,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3e0844ba34ff87fd",
+      "uid" : "e3259740013ea07d",
       "status" : "passed",
       "time" : {
-        "start" : 1687403492172,
-        "stop" : 1687403502568,
-        "duration" : 10396
-      }
-    } ]
-  },
-  "d39f1bdb9499185b64f6e101e4a80574" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "d04a3185c5e39720",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403888861,
-        "stop" : 1687403896000,
-        "duration" : 7139
+        "start" : 1687490834594,
+        "stop" : 1687490849785,
+        "duration" : 15191
       }
     } ]
   },
   "f77d4081a0a1bae913d808bec6dbefa1" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c65a3165680f7805",
-      "status" : "passed",
+      "uid" : "8563e9f6d9eee39a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x556aefec24e3 <unknown>\n#1 0x556aefbf1c76 <unknown>\n#2 0x556aefc2dc96 <unknown>\n#3 0x556aefc2ddc1 <unknown>\n#4 0x556aefc677f4 <unknown>\n#5 0x556aefc4d03d <unknown>\n#6 0x556aefc6530e <unknown>\n#7 0x556aefc4cde3 <unknown>\n#8 0x556aefc222dd <unknown>\n#9 0x556aefc2334e <unknown>\n#10 0x556aefe823e4 <unknown>\n#11 0x556aefe863d7 <unknown>\n#12 0x556aefe90b20 <unknown>\n#13 0x556aefe87023 <unknown>\n#14 0x556aefe551aa <unknown>\n#15 0x556aefeab6b8 <unknown>\n#16 0x556aefeab847 <unknown>\n#17 0x556aefebb243 <unknown>\n#18 0x7fccea98d609 start_thread",
       "time" : {
-        "start" : 1687403872701,
-        "stop" : 1687403880561,
-        "duration" : 7860
+        "start" : 1687491876086,
+        "stop" : 1687491900841,
+        "duration" : 24755
       }
     } ]
   },
@@ -446,12 +452,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8f1c7d4ee935dbd4",
+      "uid" : "1bfacda05bf79f1a",
       "status" : "passed",
       "time" : {
-        "start" : 1687404043762,
-        "stop" : 1687404048250,
-        "duration" : 4488
+        "start" : 1687493136206,
+        "stop" : 1687493143570,
+        "duration" : 7364
       }
     } ]
   },
@@ -465,31 +471,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c358daed476137b9",
+      "uid" : "5e066e6bbe7809b9",
       "status" : "passed",
       "time" : {
-        "start" : 1687403662702,
-        "stop" : 1687403667089,
-        "duration" : 4387
+        "start" : 1687491066470,
+        "stop" : 1687491070600,
+        "duration" : 4130
       }
     } ]
   },
   "bcabe4c85e396ca84591b826f194f970" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b7de5f395a10f642",
-      "status" : "passed",
+      "uid" : "e7e3eb4cf6d0bca0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55f976a484e3 <unknown>\n#1 0x55f976777c76 <unknown>\n#2 0x55f9767b3c96 <unknown>\n#3 0x55f9767b3dc1 <unknown>\n#4 0x55f9767ed7f4 <unknown>\n#5 0x55f9767d303d <unknown>\n#6 0x55f9767eb30e <unknown>\n#7 0x55f9767d2de3 <unknown>\n#8 0x55f9767a82dd <unknown>\n#9 0x55f9767a934e <unknown>\n#10 0x55f976a083e4 <unknown>\n#11 0x55f976a0c3d7 <unknown>\n#12 0x55f976a16b20 <unknown>\n#13 0x55f976a0d023 <unknown>\n#14 0x55f9769db1aa <unknown>\n#15 0x55f976a316b8 <unknown>\n#16 0x55f976a31847 <unknown>\n#17 0x55f976a41243 <unknown>\n#18 0x7f19e179d609 start_thread",
       "time" : {
-        "start" : 1687403839243,
-        "stop" : 1687403847686,
-        "duration" : 8443
+        "start" : 1687491563977,
+        "stop" : 1687491588270,
+        "duration" : 24293
       }
     } ]
   },
@@ -503,202 +510,192 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9030f96b66dc1a63",
+      "uid" : "d10a1380e74a03a4",
       "status" : "passed",
       "time" : {
-        "start" : 1687403667866,
-        "stop" : 1687403673986,
-        "duration" : 6120
-      }
-    } ]
-  },
-  "249a1f517cfc9d4099b9813548667fec" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "26d341fcc9527cf",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687404072258,
-        "stop" : 1687404080410,
-        "duration" : 8152
-      }
-    } ]
-  },
-  "bb654e31f0de9788c0d3ddaf6825b490" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "72fdbd338040ed91",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687404064076,
-        "stop" : 1687404071473,
-        "duration" : 7397
+        "start" : 1687491071378,
+        "stop" : 1687491076391,
+        "duration" : 5013
       }
     } ]
   },
   "0151cc0ffd41329e144ab077886056bb" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1ab5d364bc68435a",
-      "status" : "passed",
+      "uid" : "675ec56be9504696",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x562197f1c4e3 <unknown>\n#1 0x562197c4bc76 <unknown>\n#2 0x562197c87c96 <unknown>\n#3 0x562197c87dc1 <unknown>\n#4 0x562197cc17f4 <unknown>\n#5 0x562197ca703d <unknown>\n#6 0x562197cbf30e <unknown>\n#7 0x562197ca6de3 <unknown>\n#8 0x562197c7c2dd <unknown>\n#9 0x562197c7d34e <unknown>\n#10 0x562197edc3e4 <unknown>\n#11 0x562197ee03d7 <unknown>\n#12 0x562197eeab20 <unknown>\n#13 0x562197ee1023 <unknown>\n#14 0x562197eaf1aa <unknown>\n#15 0x562197f056b8 <unknown>\n#16 0x562197f05847 <unknown>\n#17 0x562197f15243 <unknown>\n#18 0x7f79a1f61609 start_thread",
       "time" : {
-        "start" : 1687404013015,
-        "stop" : 1687404022317,
-        "duration" : 9302
+        "start" : 1687493026091,
+        "stop" : 1687493053980,
+        "duration" : 27889
       }
     } ]
   },
-  "88fcc080a4ec9d65ece0613855885c1e" : {
+  "bb654e31f0de9788c0d3ddaf6825b490" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e383e2533d423d6",
-      "status" : "passed",
+      "uid" : "8b2f406903e8f983",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55d5895154e3 <unknown>\n#1 0x55d589244c76 <unknown>\n#2 0x55d589280c96 <unknown>\n#3 0x55d589280dc1 <unknown>\n#4 0x55d5892ba7f4 <unknown>\n#5 0x55d5892a003d <unknown>\n#6 0x55d5892b830e <unknown>\n#7 0x55d58929fde3 <unknown>\n#8 0x55d5892752dd <unknown>\n#9 0x55d58927634e <unknown>\n#10 0x55d5894d53e4 <unknown>\n#11 0x55d5894d93d7 <unknown>\n#12 0x55d5894e3b20 <unknown>\n#13 0x55d5894da023 <unknown>\n#14 0x55d5894a81aa <unknown>\n#15 0x55d5894fe6b8 <unknown>\n#16 0x55d5894fe847 <unknown>\n#17 0x55d58950e243 <unknown>\n#18 0x7f53891b5609 start_thread",
       "time" : {
-        "start" : 1687404104913,
-        "stop" : 1687404110841,
-        "duration" : 5928
+        "start" : 1687493341553,
+        "stop" : 1687493366682,
+        "duration" : 25129
+      }
+    } ]
+  },
+  "249a1f517cfc9d4099b9813548667fec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3422d031b34d934d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x556b441e64e3 <unknown>\n#1 0x556b43f15c76 <unknown>\n#2 0x556b43f51c96 <unknown>\n#3 0x556b43f51dc1 <unknown>\n#4 0x556b43f8b7f4 <unknown>\n#5 0x556b43f7103d <unknown>\n#6 0x556b43f8930e <unknown>\n#7 0x556b43f70de3 <unknown>\n#8 0x556b43f462dd <unknown>\n#9 0x556b43f4734e <unknown>\n#10 0x556b441a63e4 <unknown>\n#11 0x556b441aa3d7 <unknown>\n#12 0x556b441b4b20 <unknown>\n#13 0x556b441ab023 <unknown>\n#14 0x556b441791aa <unknown>\n#15 0x556b441cf6b8 <unknown>\n#16 0x556b441cf847 <unknown>\n#17 0x556b441df243 <unknown>\n#18 0x7f926a00d609 start_thread",
+      "time" : {
+        "start" : 1687493424110,
+        "stop" : 1687493448737,
+        "duration" : 24627
       }
     } ]
   },
   "058f87e7a76fb7e8f10aff3275f674ef" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2f5ebd7c96d3e001",
-      "status" : "passed",
+      "uid" : "2e9918034f20cd9e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55e814d484e3 <unknown>\n#1 0x55e814a77c76 <unknown>\n#2 0x55e814ab3c96 <unknown>\n#3 0x55e814ab3dc1 <unknown>\n#4 0x55e814aed7f4 <unknown>\n#5 0x55e814ad303d <unknown>\n#6 0x55e814aeb30e <unknown>\n#7 0x55e814ad2de3 <unknown>\n#8 0x55e814aa82dd <unknown>\n#9 0x55e814aa934e <unknown>\n#10 0x55e814d083e4 <unknown>\n#11 0x55e814d0c3d7 <unknown>\n#12 0x55e814d16b20 <unknown>\n#13 0x55e814d0d023 <unknown>\n#14 0x55e814cdb1aa <unknown>\n#15 0x55e814d316b8 <unknown>\n#16 0x55e814d31847 <unknown>\n#17 0x55e814d41243 <unknown>\n#18 0x7fe4af078609 start_thread",
       "time" : {
-        "start" : 1687404081210,
-        "stop" : 1687404087475,
-        "duration" : 6265
+        "start" : 1687493507778,
+        "stop" : 1687493532727,
+        "duration" : 24949
+      }
+    } ]
+  },
+  "88fcc080a4ec9d65ece0613855885c1e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8e0a1f3c20d4a5df",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x56387ca5e4e3 <unknown>\n#1 0x56387c78dc76 <unknown>\n#2 0x56387c7c9c96 <unknown>\n#3 0x56387c7c9dc1 <unknown>\n#4 0x56387c8037f4 <unknown>\n#5 0x56387c7e903d <unknown>\n#6 0x56387c80130e <unknown>\n#7 0x56387c7e8de3 <unknown>\n#8 0x56387c7be2dd <unknown>\n#9 0x56387c7bf34e <unknown>\n#10 0x56387ca1e3e4 <unknown>\n#11 0x56387ca223d7 <unknown>\n#12 0x56387ca2cb20 <unknown>\n#13 0x56387ca23023 <unknown>\n#14 0x56387c9f11aa <unknown>\n#15 0x56387ca476b8 <unknown>\n#16 0x56387ca47847 <unknown>\n#17 0x56387ca57243 <unknown>\n#18 0x7fc58a2ba609 start_thread",
+      "time" : {
+        "start" : 1687493753373,
+        "stop" : 1687493774433,
+        "duration" : 21060
       }
     } ]
   },
   "0474d0b6dfa8b17d114e2481f90dd811" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1846283e6d0bb338",
-      "status" : "passed",
+      "uid" : "c295b87b846eedf1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55fff81a14e3 <unknown>\n#1 0x55fff7ed0c76 <unknown>\n#2 0x55fff7f0cc96 <unknown>\n#3 0x55fff7f0cdc1 <unknown>\n#4 0x55fff7f467f4 <unknown>\n#5 0x55fff7f2c03d <unknown>\n#6 0x55fff7f4430e <unknown>\n#7 0x55fff7f2bde3 <unknown>\n#8 0x55fff7f012dd <unknown>\n#9 0x55fff7f0234e <unknown>\n#10 0x55fff81613e4 <unknown>\n#11 0x55fff81653d7 <unknown>\n#12 0x55fff816fb20 <unknown>\n#13 0x55fff8166023 <unknown>\n#14 0x55fff81341aa <unknown>\n#15 0x55fff818a6b8 <unknown>\n#16 0x55fff818a847 <unknown>\n#17 0x55fff819a243 <unknown>\n#18 0x7f3065cd6609 start_thread",
       "time" : {
-        "start" : 1687403812545,
-        "stop" : 1687403821609,
-        "duration" : 9064
-      }
-    } ]
-  },
-  "8938a35bb860cfe133faa36f8b52c31e" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "1849d4f1d1f3e527",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403896776,
-        "stop" : 1687403904863,
-        "duration" : 8087
+        "start" : 1687491350611,
+        "stop" : 1687491374269,
+        "duration" : 23658
       }
     } ]
   },
   "320036be05654493bce10fab891743dd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "61bda305cc67f97d",
-      "status" : "passed",
+      "uid" : "adbcfe57d92b9465",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55fd351354e3 <unknown>\n#1 0x55fd34e64c76 <unknown>\n#2 0x55fd34ea0c96 <unknown>\n#3 0x55fd34ea0dc1 <unknown>\n#4 0x55fd34eda7f4 <unknown>\n#5 0x55fd34ec003d <unknown>\n#6 0x55fd34ed830e <unknown>\n#7 0x55fd34ebfde3 <unknown>\n#8 0x55fd34e952dd <unknown>\n#9 0x55fd34e9634e <unknown>\n#10 0x55fd350f53e4 <unknown>\n#11 0x55fd350f93d7 <unknown>\n#12 0x55fd35103b20 <unknown>\n#13 0x55fd350fa023 <unknown>\n#14 0x55fd350c81aa <unknown>\n#15 0x55fd3511e6b8 <unknown>\n#16 0x55fd3511e847 <unknown>\n#17 0x55fd3512e243 <unknown>\n#18 0x7fd85c88d609 start_thread",
       "time" : {
-        "start" : 1687404096410,
-        "stop" : 1687404104140,
-        "duration" : 7730
+        "start" : 1687493673017,
+        "stop" : 1687493696941,
+        "duration" : 23924
+      }
+    } ]
+  },
+  "8938a35bb860cfe133faa36f8b52c31e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "744a57176d56242",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5572243594e3 <unknown>\n#1 0x557224088c76 <unknown>\n#2 0x5572240c4c96 <unknown>\n#3 0x5572240c4dc1 <unknown>\n#4 0x5572240fe7f4 <unknown>\n#5 0x5572240e403d <unknown>\n#6 0x5572240fc30e <unknown>\n#7 0x5572240e3de3 <unknown>\n#8 0x5572240b92dd <unknown>\n#9 0x5572240ba34e <unknown>\n#10 0x5572243193e4 <unknown>\n#11 0x55722431d3d7 <unknown>\n#12 0x557224327b20 <unknown>\n#13 0x55722431e023 <unknown>\n#14 0x5572242ec1aa <unknown>\n#15 0x5572243426b8 <unknown>\n#16 0x557224342847 <unknown>\n#17 0x557224352243 <unknown>\n#18 0x7f0ae4896609 start_thread",
+      "time" : {
+        "start" : 1687492111756,
+        "stop" : 1687492135477,
+        "duration" : 23721
       }
     } ]
   },
   "91a7099d4565d7392700f89080493cfe" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8c81bd66d55145d",
-      "status" : "passed",
+      "uid" : "2bcca02294b34da8",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5603340294e3 <unknown>\n#1 0x560333d58c76 <unknown>\n#2 0x560333d94c96 <unknown>\n#3 0x560333d94dc1 <unknown>\n#4 0x560333dce7f4 <unknown>\n#5 0x560333db403d <unknown>\n#6 0x560333dcc30e <unknown>\n#7 0x560333db3de3 <unknown>\n#8 0x560333d892dd <unknown>\n#9 0x560333d8a34e <unknown>\n#10 0x560333fe93e4 <unknown>\n#11 0x560333fed3d7 <unknown>\n#12 0x560333ff7b20 <unknown>\n#13 0x560333fee023 <unknown>\n#14 0x560333fbc1aa <unknown>\n#15 0x5603340126b8 <unknown>\n#16 0x560334012847 <unknown>\n#17 0x560334022243 <unknown>\n#18 0x7fabc63c1609 start_thread",
       "time" : {
-        "start" : 1687403933764,
-        "stop" : 1687403939911,
-        "duration" : 6147
-      }
-    } ]
-  },
-  "a5a0c2e351eff6b93a0188524ddd0d61" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a70c844d901e52ba",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403471358,
-        "stop" : 1687403477566,
-        "duration" : 6208
+        "start" : 1687492470387,
+        "stop" : 1687492493713,
+        "duration" : 23326
       }
     } ]
   },
@@ -712,12 +709,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ee817a7ae9b1af1e",
+      "uid" : "89aec837d6466047",
       "status" : "passed",
       "time" : {
-        "start" : 1687403709352,
-        "stop" : 1687403713942,
-        "duration" : 4590
+        "start" : 1687491143719,
+        "stop" : 1687491149027,
+        "duration" : 5308
+      }
+    } ]
+  },
+  "a5a0c2e351eff6b93a0188524ddd0d61" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c3a8ad2cc5efa5e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1687490800705,
+        "stop" : 1687490807575,
+        "duration" : 6870
       }
     } ]
   },
@@ -731,69 +747,72 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2aaf2ab0d78b182e",
+      "uid" : "4d453d48f1498285",
       "status" : "passed",
       "time" : {
-        "start" : 1687403681489,
-        "stop" : 1687403686546,
-        "duration" : 5057
+        "start" : 1687491109798,
+        "stop" : 1687491115243,
+        "duration" : 5445
       }
     } ]
   },
   "b89179d8359e3e0313d86f7b7dc7dd1f" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c1197b7756d935e0",
-      "status" : "passed",
+      "uid" : "cc38512e47a81a58",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55d0489804e3 <unknown>\n#1 0x55d0486afc76 <unknown>\n#2 0x55d0486ebc96 <unknown>\n#3 0x55d0486ebdc1 <unknown>\n#4 0x55d0487257f4 <unknown>\n#5 0x55d04870b03d <unknown>\n#6 0x55d04872330e <unknown>\n#7 0x55d04870ade3 <unknown>\n#8 0x55d0486e02dd <unknown>\n#9 0x55d0486e134e <unknown>\n#10 0x55d0489403e4 <unknown>\n#11 0x55d0489443d7 <unknown>\n#12 0x55d04894eb20 <unknown>\n#13 0x55d048945023 <unknown>\n#14 0x55d0489131aa <unknown>\n#15 0x55d0489696b8 <unknown>\n#16 0x55d048969847 <unknown>\n#17 0x55d048979243 <unknown>\n#18 0x7f4c6b1c6609 start_thread",
       "time" : {
-        "start" : 1687403964267,
-        "stop" : 1687403970768,
-        "duration" : 6501
-      }
-    } ]
-  },
-  "e0e8e430d205d3917fff9bbe283578ba" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "e4c0048098f896ce",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687404023094,
-        "stop" : 1687404032381,
-        "duration" : 9287
+        "start" : 1687492614744,
+        "stop" : 1687492639445,
+        "duration" : 24701
       }
     } ]
   },
   "13a9215529167ac116b8a414d58876c4" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9bcc0d0f129272d3",
-      "status" : "passed",
+      "uid" : "d73c1fa1edaece93",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x563ab98824e3 <unknown>\n#1 0x563ab95b1c76 <unknown>\n#2 0x563ab95edc96 <unknown>\n#3 0x563ab95eddc1 <unknown>\n#4 0x563ab96277f4 <unknown>\n#5 0x563ab960d03d <unknown>\n#6 0x563ab962530e <unknown>\n#7 0x563ab960cde3 <unknown>\n#8 0x563ab95e22dd <unknown>\n#9 0x563ab95e334e <unknown>\n#10 0x563ab98423e4 <unknown>\n#11 0x563ab98463d7 <unknown>\n#12 0x563ab9850b20 <unknown>\n#13 0x563ab9847023 <unknown>\n#14 0x563ab98151aa <unknown>\n#15 0x563ab986b6b8 <unknown>\n#16 0x563ab986b847 <unknown>\n#17 0x563ab987b243 <unknown>\n#18 0x7f7c3a207609 start_thread",
       "time" : {
-        "start" : 1687403804174,
-        "stop" : 1687403811764,
-        "duration" : 7590
+        "start" : 1687491291799,
+        "stop" : 1687491317575,
+        "duration" : 25776
+      }
+    } ]
+  },
+  "e0e8e430d205d3917fff9bbe283578ba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e1e5784ea72c808b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x56248a3e94e3 <unknown>\n#1 0x56248a118c76 <unknown>\n#2 0x56248a11d53c <unknown>\n#3 0x56248a11e97e <unknown>\n#4 0x56248a11ea4c <unknown>\n#5 0x56248a1563c2 <unknown>\n#6 0x56248a14b021 <unknown>\n#7 0x56248a174012 <unknown>\n#8 0x56248a14ab03 <unknown>\n#9 0x56248a1741de <unknown>\n#10 0x56248a18c30e <unknown>\n#11 0x56248a173de3 <unknown>\n#12 0x56248a1492dd <unknown>\n#13 0x56248a14a34e <unknown>\n#14 0x56248a3a93e4 <unknown>\n#15 0x56248a3ad3d7 <unknown>\n#16 0x56248a3b7b20 <unknown>\n#17 0x56248a3ae023 <unknown>\n#18 0x56248a37c1aa <unknown>\n#19 0x56248a3d26b8 <unknown>\n#20 0x56248a3d2847 <unknown>\n#21 0x56248a3e2243 <unknown>\n#22 0x7ff1699b1609 start_thread",
+      "time" : {
+        "start" : 1687493114126,
+        "stop" : 1687493118210,
+        "duration" : 4084
       }
     } ]
   },
@@ -807,31 +826,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bc8686835b4d3fa7",
+      "uid" : "ce6e6725e7eb3f20",
       "status" : "passed",
       "time" : {
-        "start" : 1687403953158,
-        "stop" : 1687403956715,
-        "duration" : 3557
-      }
-    } ]
-  },
-  "23e3e512f0c4e65cb1d5ef15ad580080" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "82e68f1c2f146cc0",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403646862,
-        "stop" : 1687403650896,
-        "duration" : 4034
+        "start" : 1687492563122,
+        "stop" : 1687492572045,
+        "duration" : 8923
       }
     } ]
   },
@@ -845,12 +845,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2498bdaf77da2683",
+      "uid" : "1f1518629f8af62f",
       "status" : "passed",
       "time" : {
-        "start" : 1687403749409,
-        "stop" : 1687403754238,
-        "duration" : 4829
+        "start" : 1687491200125,
+        "stop" : 1687491205065,
+        "duration" : 4940
+      }
+    } ]
+  },
+  "23e3e512f0c4e65cb1d5ef15ad580080" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2f7c06cb0b78725b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1687491027477,
+        "stop" : 1687491031946,
+        "duration" : 4469
       }
     } ]
   },
@@ -864,31 +883,72 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "efa50421ec052fe",
+      "uid" : "9eb15dd3de7a30f6",
       "status" : "passed",
       "time" : {
-        "start" : 1687403550356,
-        "stop" : 1687403556760,
-        "duration" : 6404
+        "start" : 1687490911348,
+        "stop" : 1687490918777,
+        "duration" : 7429
       }
     } ]
   },
   "f88ee6f1b9f7a3d2b73195797f545b0a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "60b941eab9b0eab0",
-      "status" : "passed",
+      "uid" : "ae6cd3af5d53178c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55bd24e924e3 <unknown>\n#1 0x55bd24bc1c76 <unknown>\n#2 0x55bd24bfdc96 <unknown>\n#3 0x55bd24bfddc1 <unknown>\n#4 0x55bd24c377f4 <unknown>\n#5 0x55bd24c1d03d <unknown>\n#6 0x55bd24c3530e <unknown>\n#7 0x55bd24c1cde3 <unknown>\n#8 0x55bd24bf22dd <unknown>\n#9 0x55bd24bf334e <unknown>\n#10 0x55bd24e523e4 <unknown>\n#11 0x55bd24e563d7 <unknown>\n#12 0x55bd24e60b20 <unknown>\n#13 0x55bd24e57023 <unknown>\n#14 0x55bd24e251aa <unknown>\n#15 0x55bd24e7b6b8 <unknown>\n#16 0x55bd24e7b847 <unknown>\n#17 0x55bd24e8b243 <unknown>\n#18 0x7f512d35d609 start_thread",
       "time" : {
-        "start" : 1687403822381,
-        "stop" : 1687403830851,
-        "duration" : 8470
+        "start" : 1687491428558,
+        "stop" : 1687491453771,
+        "duration" : 25213
+      }
+    } ]
+  },
+  "8c79baa047daa7767ca069b0f5efadf4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d88971993b342ac8",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x563e44bd74e3 <unknown>\n#1 0x563e44906c76 <unknown>\n#2 0x563e44942c96 <unknown>\n#3 0x563e44942dc1 <unknown>\n#4 0x563e4497c7f4 <unknown>\n#5 0x563e4496203d <unknown>\n#6 0x563e4497a30e <unknown>\n#7 0x563e44961de3 <unknown>\n#8 0x563e449372dd <unknown>\n#9 0x563e4493834e <unknown>\n#10 0x563e44b973e4 <unknown>\n#11 0x563e44b9b3d7 <unknown>\n#12 0x563e44ba5b20 <unknown>\n#13 0x563e44b9c023 <unknown>\n#14 0x563e44b6a1aa <unknown>\n#15 0x563e44bc06b8 <unknown>\n#16 0x563e44bc0847 <unknown>\n#17 0x563e44bd0243 <unknown>\n#18 0x7f871bddd609 start_thread",
+      "time" : {
+        "start" : 1687492264713,
+        "stop" : 1687492288300,
+        "duration" : 23587
+      }
+    } ]
+  },
+  "5bcbdd6305ce8bbcd001c0d85883ea6a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "93dad0e25d13ebe8",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5602fe16a4e3 <unknown>\n#1 0x5602fde99c76 <unknown>\n#2 0x5602fded5c96 <unknown>\n#3 0x5602fded5dc1 <unknown>\n#4 0x5602fdf0f7f4 <unknown>\n#5 0x5602fdef503d <unknown>\n#6 0x5602fdf0d30e <unknown>\n#7 0x5602fdef4de3 <unknown>\n#8 0x5602fdeca2dd <unknown>\n#9 0x5602fdecb34e <unknown>\n#10 0x5602fe12a3e4 <unknown>\n#11 0x5602fe12e3d7 <unknown>\n#12 0x5602fe138b20 <unknown>\n#13 0x5602fe12f023 <unknown>\n#14 0x5602fe0fd1aa <unknown>\n#15 0x5602fe1536b8 <unknown>\n#16 0x5602fe153847 <unknown>\n#17 0x5602fe163243 <unknown>\n#18 0x7f02912e3609 start_thread",
+      "time" : {
+        "start" : 1687491799755,
+        "stop" : 1687491824218,
+        "duration" : 24463
       }
     } ]
   },
@@ -902,50 +962,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "58b740daf6f8a871",
+      "uid" : "a3c20500425ae0ba",
       "status" : "passed",
       "time" : {
-        "start" : 1687403720343,
-        "stop" : 1687403724197,
-        "duration" : 3854
-      }
-    } ]
-  },
-  "5bcbdd6305ce8bbcd001c0d85883ea6a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "253cdbe5c00fcad1",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403865352,
-        "stop" : 1687403871918,
-        "duration" : 6566
-      }
-    } ]
-  },
-  "8c79baa047daa7767ca069b0f5efadf4" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "526e0d3c4e60dfc7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403913142,
-        "stop" : 1687403919104,
-        "duration" : 5962
+        "start" : 1687491155119,
+        "stop" : 1687491164270,
+        "duration" : 9151
       }
     } ]
   },
@@ -959,31 +981,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f1a0a5fa6784b1f4",
+      "uid" : "e5204f58c68bdedc",
       "status" : "passed",
       "time" : {
-        "start" : 1687403503329,
-        "stop" : 1687403510625,
-        "duration" : 7296
+        "start" : 1687490850574,
+        "stop" : 1687490859321,
+        "duration" : 8747
       }
     } ]
   },
   "bbda6b6a3bd5b9c8ac38f2ac3b6abea4" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "41ccdc75b20d0602",
-      "status" : "passed",
+      "uid" : "1e7b8970078291e1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x555a34c2b4e3 <unknown>\n#1 0x555a3495ac76 <unknown>\n#2 0x555a34996c96 <unknown>\n#3 0x555a34996dc1 <unknown>\n#4 0x555a349d07f4 <unknown>\n#5 0x555a349b603d <unknown>\n#6 0x555a349ce30e <unknown>\n#7 0x555a349b5de3 <unknown>\n#8 0x555a3498b2dd <unknown>\n#9 0x555a3498c34e <unknown>\n#10 0x555a34beb3e4 <unknown>\n#11 0x555a34bef3d7 <unknown>\n#12 0x555a34bf9b20 <unknown>\n#13 0x555a34bf0023 <unknown>\n#14 0x555a34bbe1aa <unknown>\n#15 0x555a34c146b8 <unknown>\n#16 0x555a34c14847 <unknown>\n#17 0x555a34c24243 <unknown>\n#18 0x7f799ecbf609 start_thread",
       "time" : {
-        "start" : 1687403986642,
-        "stop" : 1687403994316,
-        "duration" : 7674
+        "start" : 1687492793861,
+        "stop" : 1687492820705,
+        "duration" : 26844
       }
     } ]
   },
@@ -997,12 +1020,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7fce9bd5ecce4266",
+      "uid" : "874af8bb6ae8a8ba",
       "status" : "passed",
       "time" : {
-        "start" : 1687403542228,
-        "stop" : 1687403549575,
-        "duration" : 7347
+        "start" : 1687490903695,
+        "stop" : 1687490910579,
+        "duration" : 6884
       }
     } ]
   },
@@ -1016,11 +1039,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "132100d900074930",
+      "uid" : "851791e8859e1014",
       "status" : "passed",
       "time" : {
-        "start" : 1687403574374,
-        "stop" : 1687403581050,
+        "start" : 1687490942492,
+        "stop" : 1687490949168,
         "duration" : 6676
       }
     } ]
@@ -1035,12 +1058,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "51047a46431f1a47",
+      "uid" : "915c0392b53e725e",
       "status" : "passed",
       "time" : {
-        "start" : 1687403457863,
-        "stop" : 1687403463815,
-        "duration" : 5952
+        "start" : 1687490785714,
+        "stop" : 1687490792725,
+        "duration" : 7011
       }
     } ]
   },
@@ -1054,12 +1077,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b800eb8c2513a5de",
+      "uid" : "12bf8747a08d6cae",
       "status" : "passed",
       "time" : {
-        "start" : 1687403766168,
-        "stop" : 1687403770712,
-        "duration" : 4544
+        "start" : 1687491217436,
+        "stop" : 1687491222305,
+        "duration" : 4869
       }
     } ]
   },
@@ -1073,12 +1096,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "656f84ec1f2ab2d7",
+      "uid" : "30a6403dca8672a9",
       "status" : "passed",
       "time" : {
-        "start" : 1687403581848,
-        "stop" : 1687403588161,
-        "duration" : 6313
+        "start" : 1687490960111,
+        "stop" : 1687490967042,
+        "duration" : 6931
       }
     } ]
   },
@@ -1092,12 +1115,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a2db5074a44208ff",
+      "uid" : "ce2e0fcdfc94a109",
       "status" : "passed",
       "time" : {
-        "start" : 1687403693476,
-        "stop" : 1687403697683,
-        "duration" : 4207
+        "start" : 1687491127070,
+        "stop" : 1687491131504,
+        "duration" : 4434
       }
     } ]
   },
@@ -1111,31 +1134,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "81468c4225c389e5",
+      "uid" : "cf264a3c7c8e67bb",
       "status" : "passed",
       "time" : {
-        "start" : 1687403698462,
-        "stop" : 1687403704043,
-        "duration" : 5581
+        "start" : 1687491132260,
+        "stop" : 1687491138076,
+        "duration" : 5816
       }
     } ]
   },
   "76501fb52de129a16c44aa7360f0135b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fd73663b56a1d862",
-      "status" : "passed",
+      "uid" : "18e517f1128640db",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55da403104e3 <unknown>\n#1 0x55da4003fc76 <unknown>\n#2 0x55da4007bc96 <unknown>\n#3 0x55da4007bdc1 <unknown>\n#4 0x55da400b57f4 <unknown>\n#5 0x55da4009b03d <unknown>\n#6 0x55da400b330e <unknown>\n#7 0x55da4009ade3 <unknown>\n#8 0x55da400702dd <unknown>\n#9 0x55da4007134e <unknown>\n#10 0x55da402d03e4 <unknown>\n#11 0x55da402d43d7 <unknown>\n#12 0x55da402deb20 <unknown>\n#13 0x55da402d5023 <unknown>\n#14 0x55da402a31aa <unknown>\n#15 0x55da402f96b8 <unknown>\n#16 0x55da402f9847 <unknown>\n#17 0x55da40309243 <unknown>\n#18 0x7f54d9d90609 start_thread",
       "time" : {
-        "start" : 1687403905641,
-        "stop" : 1687403912371,
-        "duration" : 6730
+        "start" : 1687492188830,
+        "stop" : 1687492212700,
+        "duration" : 23870
       }
     } ]
   },
@@ -1149,12 +1173,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b639e947fb04d85f",
+      "uid" : "4fb5f572fac69999",
       "status" : "passed",
       "time" : {
-        "start" : 1687403744065,
-        "stop" : 1687403748621,
-        "duration" : 4556
+        "start" : 1687491187661,
+        "stop" : 1687491192949,
+        "duration" : 5288
       }
     } ]
   },
@@ -1168,12 +1192,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "759b76a1344537e7",
+      "uid" : "12da6ea1012467fd",
       "status" : "passed",
       "time" : {
-        "start" : 1687403729755,
-        "stop" : 1687403733431,
-        "duration" : 3676
+        "start" : 1687491171060,
+        "stop" : 1687491175301,
+        "duration" : 4241
       }
     } ]
   },
@@ -1187,31 +1211,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "769a6ccc10468bdc",
+      "uid" : "a651a57fc684c71e",
       "status" : "passed",
       "time" : {
-        "start" : 1687403511380,
-        "stop" : 1687403518752,
-        "duration" : 7372
+        "start" : 1687490860080,
+        "stop" : 1687490880102,
+        "duration" : 20022
       }
     } ]
   },
   "4e2ab6226c852329b3711672498f3999" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "75227891b5504f9",
-      "status" : "passed",
+      "uid" : "5cfa868346ee88f2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55edfd6564e3 <unknown>\n#1 0x55edfd385c76 <unknown>\n#2 0x55edfd3c1c96 <unknown>\n#3 0x55edfd3c1dc1 <unknown>\n#4 0x55edfd3fb7f4 <unknown>\n#5 0x55edfd3e103d <unknown>\n#6 0x55edfd3f930e <unknown>\n#7 0x55edfd3e0de3 <unknown>\n#8 0x55edfd3b62dd <unknown>\n#9 0x55edfd3b734e <unknown>\n#10 0x55edfd6163e4 <unknown>\n#11 0x55edfd61a3d7 <unknown>\n#12 0x55edfd624b20 <unknown>\n#13 0x55edfd61b023 <unknown>\n#14 0x55edfd5e91aa <unknown>\n#15 0x55edfd63f6b8 <unknown>\n#16 0x55edfd63f847 <unknown>\n#17 0x55edfd64f243 <unknown>\n#18 0x7f57c1be8609 start_thread",
       "time" : {
-        "start" : 1687403848456,
-        "stop" : 1687403856599,
-        "duration" : 8143
+        "start" : 1687491642208,
+        "stop" : 1687491666307,
+        "duration" : 24099
       }
     } ]
   },
@@ -1225,12 +1250,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ae507ea7bfeb81f3",
+      "uid" : "71b75ac5e76def2e",
       "status" : "passed",
       "time" : {
-        "start" : 1687403777396,
-        "stop" : 1687403783144,
-        "duration" : 5748
+        "start" : 1687491230205,
+        "stop" : 1687491237556,
+        "duration" : 7351
       }
     } ]
   },
@@ -1244,12 +1269,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "49f8f3bbcf803418",
+      "uid" : "cd9d5fb1a5269a12",
       "status" : "passed",
       "time" : {
-        "start" : 1687403485553,
-        "stop" : 1687403491407,
-        "duration" : 5854
+        "start" : 1687490827081,
+        "stop" : 1687490833823,
+        "duration" : 6742
       }
     } ]
   },
@@ -1263,50 +1288,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "553a9cdcfd6968d",
+      "uid" : "ff6cd4f1b2b412b8",
       "status" : "passed",
       "time" : {
-        "start" : 1687403687333,
-        "stop" : 1687403692492,
-        "duration" : 5159
+        "start" : 1687491115994,
+        "stop" : 1687491121307,
+        "duration" : 5313
       }
     } ]
   },
   "09c9c3529fb90e4a6c798f640556e978" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e26a94bd3645600f",
-      "status" : "passed",
+      "uid" : "33905f77960f75d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x5609016c94e3 <unknown>\n#1 0x5609013f8c76 <unknown>\n#2 0x5609013fd53c <unknown>\n#3 0x5609013fe97e <unknown>\n#4 0x5609013fea4c <unknown>\n#5 0x5609014363c2 <unknown>\n#6 0x5609014359c4 <unknown>\n#7 0x56090142b1da <unknown>\n#8 0x560901454012 <unknown>\n#9 0x56090142ab03 <unknown>\n#10 0x5609014541de <unknown>\n#11 0x56090146c30e <unknown>\n#12 0x560901453de3 <unknown>\n#13 0x5609014292dd <unknown>\n#14 0x56090142a34e <unknown>\n#15 0x5609016893e4 <unknown>\n#16 0x56090168d3d7 <unknown>\n#17 0x560901697b20 <unknown>\n#18 0x56090168e023 <unknown>\n#19 0x56090165c1aa <unknown>\n#20 0x5609016b26b8 <unknown>\n#21 0x5609016b2847 <unknown>\n#22 0x5609016c2243 <unknown>\n#23 0x7f7ae7b7f609 start_thread",
       "time" : {
-        "start" : 1687403927155,
-        "stop" : 1687403932953,
-        "duration" : 5798
-      }
-    } ]
-  },
-  "238d758d9267741d291d4c6b11f43a8d" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "34735319b5b5823c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403618993,
-        "stop" : 1687403624121,
-        "duration" : 5128
+        "start" : 1687492416728,
+        "stop" : 1687492418239,
+        "duration" : 1511
       }
     } ]
   },
@@ -1320,12 +1327,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dc1752a5444b03f7",
+      "uid" : "aa738082043b138c",
       "status" : "passed",
       "time" : {
-        "start" : 1687403519532,
-        "stop" : 1687403531923,
-        "duration" : 12391
+        "start" : 1687490880884,
+        "stop" : 1687490893947,
+        "duration" : 13063
+      }
+    } ]
+  },
+  "238d758d9267741d291d4c6b11f43a8d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "70d7fd10eaa806b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1687490998164,
+        "stop" : 1687491002531,
+        "duration" : 4367
       }
     } ]
   },
@@ -1339,69 +1365,72 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "32b02ee67635a9e2",
+      "uid" : "330b917a5f59651c",
       "status" : "passed",
       "time" : {
-        "start" : 1687403760348,
-        "stop" : 1687403765399,
-        "duration" : 5051
+        "start" : 1687491211602,
+        "stop" : 1687491216673,
+        "duration" : 5071
       }
     } ]
   },
   "5de1483d772cbcb74255145cb351e957" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "61df36af66f7f0e8",
-      "status" : "passed",
+      "uid" : "9f988c7f534c29e1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55f0e48774e3 <unknown>\n#1 0x55f0e45a6c76 <unknown>\n#2 0x55f0e45e2c96 <unknown>\n#3 0x55f0e45e2dc1 <unknown>\n#4 0x55f0e461c7f4 <unknown>\n#5 0x55f0e460203d <unknown>\n#6 0x55f0e461a30e <unknown>\n#7 0x55f0e4601de3 <unknown>\n#8 0x55f0e45d72dd <unknown>\n#9 0x55f0e45d834e <unknown>\n#10 0x55f0e48373e4 <unknown>\n#11 0x55f0e483b3d7 <unknown>\n#12 0x55f0e4845b20 <unknown>\n#13 0x55f0e483c023 <unknown>\n#14 0x55f0e480a1aa <unknown>\n#15 0x55f0e48606b8 <unknown>\n#16 0x55f0e4860847 <unknown>\n#17 0x55f0e4870243 <unknown>\n#18 0x7f32add79609 start_thread",
       "time" : {
-        "start" : 1687403919858,
-        "stop" : 1687403926372,
-        "duration" : 6514
+        "start" : 1687492341603,
+        "stop" : 1687492365086,
+        "duration" : 23483
       }
     } ]
   },
   "6958284cf6a64c7818d657c4e77d2efc" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ab02041122b84d6d",
-      "status" : "passed",
+      "uid" : "c4a1ef59d4a6f0cc",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x557ccf5544e3 <unknown>\n#1 0x557ccf283c76 <unknown>\n#2 0x557ccf2bfc96 <unknown>\n#3 0x557ccf2bfdc1 <unknown>\n#4 0x557ccf2f97f4 <unknown>\n#5 0x557ccf2df03d <unknown>\n#6 0x557ccf2f730e <unknown>\n#7 0x557ccf2dede3 <unknown>\n#8 0x557ccf2b42dd <unknown>\n#9 0x557ccf2b534e <unknown>\n#10 0x557ccf5143e4 <unknown>\n#11 0x557ccf5183d7 <unknown>\n#12 0x557ccf522b20 <unknown>\n#13 0x557ccf519023 <unknown>\n#14 0x557ccf4e71aa <unknown>\n#15 0x557ccf53d6b8 <unknown>\n#16 0x557ccf53d847 <unknown>\n#17 0x557ccf54d243 <unknown>\n#18 0x7f4b4e1ab609 start_thread",
       "time" : {
-        "start" : 1687404088263,
-        "stop" : 1687404095623,
-        "duration" : 7360
+        "start" : 1687493590144,
+        "stop" : 1687493614426,
+        "duration" : 24282
       }
     } ]
   },
   "46a603d2867a619d50f06d48c8f79b16" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ce58e11a23520f98",
-      "status" : "passed",
+      "uid" : "827dde301fa77c57",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x558551cd04e3 <unknown>\n#1 0x5585519ffc76 <unknown>\n#2 0x558551a3bc96 <unknown>\n#3 0x558551a3bdc1 <unknown>\n#4 0x558551a757f4 <unknown>\n#5 0x558551a5b03d <unknown>\n#6 0x558551a7330e <unknown>\n#7 0x558551a5ade3 <unknown>\n#8 0x558551a302dd <unknown>\n#9 0x558551a3134e <unknown>\n#10 0x558551c903e4 <unknown>\n#11 0x558551c943d7 <unknown>\n#12 0x558551c9eb20 <unknown>\n#13 0x558551c95023 <unknown>\n#14 0x558551c631aa <unknown>\n#15 0x558551cb96b8 <unknown>\n#16 0x558551cb9847 <unknown>\n#17 0x558551cc9243 <unknown>\n#18 0x7efc185ba609 start_thread",
       "time" : {
-        "start" : 1687403831632,
-        "stop" : 1687403838455,
-        "duration" : 6823
+        "start" : 1687491485865,
+        "stop" : 1687491510064,
+        "duration" : 24199
       }
     } ]
   },
@@ -1415,31 +1444,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2ebf74a68899cf36",
+      "uid" : "32904f8e7ad19447",
       "status" : "passed",
       "time" : {
-        "start" : 1687403651659,
-        "stop" : 1687403655964,
-        "duration" : 4305
-      }
-    } ]
-  },
-  "8116b96faf0e2f00810753c3140813ae" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "3937ca8b756d047",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403606971,
-        "stop" : 1687403611928,
-        "duration" : 4957
+        "start" : 1687491032691,
+        "stop" : 1687491037096,
+        "duration" : 4405
       }
     } ]
   },
@@ -1453,16 +1463,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "234afc5a13217033",
+      "uid" : "3d8dfd3942222d92",
       "status" : "passed",
       "time" : {
-        "start" : 1687403588931,
-        "stop" : 1687403596942,
-        "duration" : 8011
+        "start" : 1687490967822,
+        "stop" : 1687490974484,
+        "duration" : 6662
       }
     } ]
   },
-  "955c42a055cc723f557f66ee49ae2b29" : {
+  "8116b96faf0e2f00810753c3140813ae" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -1472,12 +1482,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ea651f93b408930b",
+      "uid" : "74e31f291dfc5961",
       "status" : "passed",
       "time" : {
-        "start" : 1687403624876,
-        "stop" : 1687403629843,
-        "duration" : 4967
+        "start" : 1687490986948,
+        "stop" : 1687490992223,
+        "duration" : 5275
       }
     } ]
   },
@@ -1491,12 +1501,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d8aed7599033ce82",
+      "uid" : "6563dd020530c972",
       "status" : "passed",
       "time" : {
-        "start" : 1687403714727,
-        "stop" : 1687403719566,
-        "duration" : 4839
+        "start" : 1687491149782,
+        "stop" : 1687491154378,
+        "duration" : 4596
+      }
+    } ]
+  },
+  "955c42a055cc723f557f66ee49ae2b29" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "52f0b61f40a6cb19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1687491003296,
+        "stop" : 1687491009188,
+        "duration" : 5892
       }
     } ]
   },
@@ -1510,12 +1539,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "589b8abc7fbf3c17",
+      "uid" : "5967115d4de40495",
       "status" : "passed",
       "time" : {
-        "start" : 1687403532709,
-        "stop" : 1687403541480,
-        "duration" : 8771
+        "start" : 1687490894712,
+        "stop" : 1687490902930,
+        "duration" : 8218
       }
     } ]
   },
@@ -1529,12 +1558,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3e5cbf76b76248d5",
+      "uid" : "e13335ef97722b5f",
       "status" : "passed",
       "time" : {
-        "start" : 1687403656712,
-        "stop" : 1687403661930,
-        "duration" : 5218
+        "start" : 1687491062149,
+        "stop" : 1687491065725,
+        "duration" : 3576
       }
     } ]
   },
@@ -1548,50 +1577,52 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "62b225656f438684",
+      "uid" : "3fb37fbe06964d08",
       "status" : "passed",
       "time" : {
-        "start" : 1687403478337,
-        "stop" : 1687403484815,
-        "duration" : 6478
+        "start" : 1687490812711,
+        "stop" : 1687490822039,
+        "duration" : 9328
       }
     } ]
   },
   "f2c987306186209cc4cf79e0cd3ca8fd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c9f8fc31547138dd",
-      "status" : "passed",
+      "uid" : "21dba33252f0c1c7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55837506f4e3 <unknown>\n#1 0x558374d9ec76 <unknown>\n#2 0x558374ddac96 <unknown>\n#3 0x558374ddadc1 <unknown>\n#4 0x558374e147f4 <unknown>\n#5 0x558374dfa03d <unknown>\n#6 0x558374e1230e <unknown>\n#7 0x558374df9de3 <unknown>\n#8 0x558374dcf2dd <unknown>\n#9 0x558374dd034e <unknown>\n#10 0x55837502f3e4 <unknown>\n#11 0x5583750333d7 <unknown>\n#12 0x55837503db20 <unknown>\n#13 0x558375034023 <unknown>\n#14 0x5583750021aa <unknown>\n#15 0x5583750586b8 <unknown>\n#16 0x558375058847 <unknown>\n#17 0x558375068243 <unknown>\n#18 0x7f21c5165609 start_thread",
       "time" : {
-        "start" : 1687403978252,
-        "stop" : 1687403986341,
-        "duration" : 8089
+        "start" : 1687492732353,
+        "stop" : 1687492756961,
+        "duration" : 24608
       }
     } ]
   },
   "e21812ad212366f5a06c56f9661a9b51" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "961fa5eba35cff4f",
-      "status" : "passed",
+      "uid" : "46e4797d90360d2e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"No node with given id found\"}\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55dab6be84e3 <unknown>\n#1 0x55dab6917c76 <unknown>\n#2 0x55dab6901900 <unknown>\n#3 0x55dab68ffbac <unknown>\n#4 0x55dab6900162 <unknown>\n#5 0x55dab69000b4 <unknown>\n#6 0x55dab6924b86 <unknown>\n#7 0x55dab691c6f3 <unknown>\n#8 0x55dab691b1d6 <unknown>\n#9 0x55dab691d97e <unknown>\n#10 0x55dab691da4c <unknown>\n#11 0x55dab6958f96 <unknown>\n#12 0x55dab6958607 <unknown>\n#13 0x55dab6993a1f <unknown>\n#14 0x55dab6973012 <unknown>\n#15 0x55dab698b30e <unknown>\n#16 0x55dab6972de3 <unknown>\n#17 0x55dab69482dd <unknown>\n#18 0x55dab694934e <unknown>\n#19 0x55dab6ba83e4 <unknown>\n#20 0x55dab6bac3d7 <unknown>\n#21 0x55dab6bb6b20 <unknown>\n#22 0x55dab6bad023 <unknown>\n#23 0x55dab6b7b1aa <unknown>\n#24 0x55dab6bd16b8 <unknown>\n#25 0x55dab6bd1847 <unknown>\n#26 0x55dab6be1243 <unknown>\n#27 0x7f6e0bb14609 start_thread",
       "time" : {
-        "start" : 1687404049049,
-        "stop" : 1687404054678,
-        "duration" : 5629
+        "start" : 1687493196215,
+        "stop" : 1687493198780,
+        "duration" : 2565
       }
     } ]
   },
@@ -1605,31 +1636,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6b9fd18025058dd",
+      "uid" : "eca53dbcc3866b2b",
       "status" : "passed",
       "time" : {
-        "start" : 1687403958476,
-        "stop" : 1687403963487,
-        "duration" : 5011
-      }
-    } ]
-  },
-  "e7e643675be09560e133da026ed2ebe0" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c61ab7b8c914e114",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403971613,
-        "stop" : 1687403977447,
-        "duration" : 5834
+        "start" : 1687492572824,
+        "stop" : 1687492579127,
+        "duration" : 6303
       }
     } ]
   },
@@ -1643,12 +1655,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "553d0a9ece75ea28",
+      "uid" : "b684f578df286eb2",
       "status" : "passed",
       "time" : {
-        "start" : 1687403724974,
-        "stop" : 1687403728946,
-        "duration" : 3972
+        "start" : 1687491165037,
+        "stop" : 1687491170280,
+        "duration" : 5243
+      }
+    } ]
+  },
+  "e7e643675be09560e133da026ed2ebe0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c5f57331431945d1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55d58570c4e3 <unknown>\n#1 0x55d58543bc76 <unknown>\n#2 0x55d58544053c <unknown>\n#3 0x55d58544197e <unknown>\n#4 0x55d585441a4c <unknown>\n#5 0x55d5854796b5 <unknown>\n#6 0x55d585478de5 <unknown>\n#7 0x55d58546e1da <unknown>\n#8 0x55d585497012 <unknown>\n#9 0x55d58546db03 <unknown>\n#10 0x55d5854971de <unknown>\n#11 0x55d5854af30e <unknown>\n#12 0x55d585496de3 <unknown>\n#13 0x55d58546c2dd <unknown>\n#14 0x55d58546d34e <unknown>\n#15 0x55d5856cc3e4 <unknown>\n#16 0x55d5856d03d7 <unknown>\n#17 0x55d5856dab20 <unknown>\n#18 0x55d5856d1023 <unknown>\n#19 0x55d58569f1aa <unknown>\n#20 0x55d5856f56b8 <unknown>\n#21 0x55d5856f5847 <unknown>\n#22 0x55d585705243 <unknown>\n#23 0x7fd3cd4b3609 start_thread",
+      "time" : {
+        "start" : 1687492694646,
+        "stop" : 1687492696561,
+        "duration" : 1915
       }
     } ]
   },
@@ -1662,12 +1694,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dec53c180b51eae9",
+      "uid" : "17c7479f85a218ab",
       "status" : "passed",
       "time" : {
-        "start" : 1687403630617,
-        "stop" : 1687403634575,
-        "duration" : 3958
+        "start" : 1687491009947,
+        "stop" : 1687491014328,
+        "duration" : 4381
       }
     } ]
   },
@@ -1681,12 +1713,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1b0829cbaf5aa328",
+      "uid" : "61fa1498046ddc2b",
       "status" : "passed",
       "time" : {
-        "start" : 1687403739987,
-        "stop" : 1687403743312,
-        "duration" : 3325
+        "start" : 1687491182609,
+        "stop" : 1687491186895,
+        "duration" : 4286
       }
     } ]
   },
@@ -1700,50 +1732,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "467304618c1a3a6a",
+      "uid" : "3f0a9e5670c7691b",
       "status" : "passed",
       "time" : {
-        "start" : 1687403674778,
-        "stop" : 1687403680696,
-        "duration" : 5918
+        "start" : 1687491077154,
+        "stop" : 1687491082082,
+        "duration" : 4928
       }
     } ]
   },
   "81dbe19f0de623f8b7d052b4eb96730d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e9b2f33b10b23c63",
-      "status" : "passed",
+      "uid" : "db29d4a7244f125e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x557a027d24e3 <unknown>\n#1 0x557a02501c76 <unknown>\n#2 0x557a0253dc96 <unknown>\n#3 0x557a0253ddc1 <unknown>\n#4 0x557a025777f4 <unknown>\n#5 0x557a0255d03d <unknown>\n#6 0x557a0257530e <unknown>\n#7 0x557a0255cde3 <unknown>\n#8 0x557a025322dd <unknown>\n#9 0x557a0253334e <unknown>\n#10 0x557a027923e4 <unknown>\n#11 0x557a027963d7 <unknown>\n#12 0x557a027a0b20 <unknown>\n#13 0x557a02797023 <unknown>\n#14 0x557a027651aa <unknown>\n#15 0x557a027bb6b8 <unknown>\n#16 0x557a027bb847 <unknown>\n#17 0x557a027cb243 <unknown>\n#18 0x7f3cf5214609 start_thread",
       "time" : {
-        "start" : 1687403881322,
-        "stop" : 1687403888083,
-        "duration" : 6761
-      }
-    } ]
-  },
-  "6953e35152186bed5c72f10d59764e59" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "22dad9c85e85db0f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1687403995084,
-        "stop" : 1687404004241,
-        "duration" : 9157
+        "start" : 1687491955180,
+        "stop" : 1687491979335,
+        "duration" : 24155
       }
     } ]
   },
@@ -1757,12 +1771,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d74f87356cab4c16",
+      "uid" : "5992ff8acfcda0b",
       "status" : "passed",
       "time" : {
-        "start" : 1687403612687,
-        "stop" : 1687403618170,
-        "duration" : 5483
+        "start" : 1687490992995,
+        "stop" : 1687490997413,
+        "duration" : 4418
+      }
+    } ]
+  },
+  "6953e35152186bed5c72f10d59764e59" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "298af95c66040fa0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x5619c5b604e3 <unknown>\n#1 0x5619c588fc76 <unknown>\n#2 0x5619c589453c <unknown>\n#3 0x5619c589597e <unknown>\n#4 0x5619c5895a4c <unknown>\n#5 0x5619c58cf867 <unknown>\n#6 0x5619c58cdd2e <unknown>\n#7 0x5619c58cd10f <unknown>\n#8 0x5619c58c21da <unknown>\n#9 0x5619c58eb012 <unknown>\n#10 0x5619c58c1b03 <unknown>\n#11 0x5619c58eb1de <unknown>\n#12 0x5619c590330e <unknown>\n#13 0x5619c58eade3 <unknown>\n#14 0x5619c58c02dd <unknown>\n#15 0x5619c58c134e <unknown>\n#16 0x5619c5b203e4 <unknown>\n#17 0x5619c5b243d7 <unknown>\n#18 0x5619c5b2eb20 <unknown>\n#19 0x5619c5b25023 <unknown>\n#20 0x5619c5af31aa <unknown>\n#21 0x5619c5b496b8 <unknown>\n#22 0x5619c5b49847 <unknown>\n#23 0x5619c5b59243 <unknown>\n#24 0x7fa9fb69f609 start_thread",
+      "time" : {
+        "start" : 1687492878593,
+        "stop" : 1687492883381,
+        "duration" : 4788
       }
     } ]
   }
