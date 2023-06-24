@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55fae4ac94e3 <unknown>\n#1 0x55fae47f8c76 <unknown>\n#2 0x55fae47fd53c <unknown>\n#3 0x55fae47fe97e <unknown>\n#4 0x55fae47fea4c <unknown>\n#5 0x55fae482f922 <unknown>\n#6 0x55fae4854012 <unknown>\n#7 0x55fae482ab03 <unknown>\n#8 0x55fae48541de <unknown>\n#9 0x55fae486c30e <unknown>\n#10 0x55fae4853de3 <unknown>\n#11 0x55fae48292dd <unknown>\n#12 0x55fae482a34e <unknown>\n#13 0x55fae4a893e4 <unknown>\n#14 0x55fae4a8d3d7 <unknown>\n#15 0x55fae4a97b20 <unknown>\n#16 0x55fae4a8e023 <unknown>\n#17 0x55fae4a5c1aa <unknown>\n#18 0x55fae4ab26b8 <unknown>\n#19 0x55fae4ab2847 <unknown>\n#20 0x55fae4ac2243 <unknown>\n#21 0x7f49ddd41609 start_thread",
+      "children" : [ {
+        "name" : "Переход из проектов в Сибирский сад",
+        "uid" : "5ef8dbfbbc3d87a0",
+        "parentUid" : "e2bd03aea2e4a5c24a783e8a5b1debac",
+        "status" : "broken",
+        "time" : {
+          "start" : 1687577555102,
+          "stop" : 1687577563985,
+          "duration" : 8883
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e2bd03aea2e4a5c24a783e8a5b1debac"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }
