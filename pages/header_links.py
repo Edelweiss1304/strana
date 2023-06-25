@@ -43,7 +43,7 @@ class Header(Base):
     s_link_wrapper_9 = "(//div[@class='s-link__wrapper'])[9]"  # Первый элемент в основном меню
     s_link_wrapper_10 = "(//div[@class='s-link__wrapper'])[10]"  # Второй элемент в основном меню
     s_link_wrapper_11 = "(//div[@class='s-link__wrapper'])[11]"  # Третий элемент в основном меню
-    s_link_wrapper_12 = "(//div[@class='s-link__wrapper'])[12]"  # Четвертый элемент в основном меню + паркинг в спб (почему-то)
+    s_link_wrapper_12 = "(//div[@class='s-link__wrapper'])[12]"  # Четвертый элемент в основном меню + паркинг в спб
     s_link_wrapper_13 = "(//div[@class='s-link__wrapper'])[13]"  # Пятый элемент в основном меню
     s_link_wrapper_14 = "(//div[@class='s-link__wrapper'])[14]"  # Шестой элемент в основном меню
     s_link_parking = "//a[@href='/parking']"  # Паркинг
@@ -55,6 +55,9 @@ class Header(Base):
     apart_3 = "//span[normalize-space()='3']"
     apart_4 = "//span[normalize-space()='4+']"
     parking_tittle = "(//h1[@class='title_gewxY h3 text-base-500'][contains(text(),'Паркинг')])[1]"
+
+    menu_button = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
+    news_tittle = "//h1[contains(text(),'Страны')]"
 
     # Getters
     def get_projects(self):
@@ -151,6 +154,12 @@ class Header(Base):
 
     def get_prking_tittle(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.parking_tittle)).text
+
+    def get_menu_button(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.menu_button))
+
+    def get_news_tittle(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.news_tittle)).text
 
     # Actions
     def click_projects(self):

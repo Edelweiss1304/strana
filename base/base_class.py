@@ -18,3 +18,9 @@ class Base:
     @classmethod
     def get_element_clickable(cls, driver, locator, timeout=20):
         return WebDriverWait(driver, timeout).until(EC.element_to_be_clickable(locator))
+
+    @classmethod
+    def get_s_link_wrapper_locator(cls, index):
+        base_locator = "(//div[@class='s-link__wrapper'])"
+        return f"{base_locator}[{index}]"
+    
