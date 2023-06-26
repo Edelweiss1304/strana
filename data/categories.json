@@ -4,22 +4,39 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55aafe9514e3 <unknown>\n#1 0x55aafe680c76 <unknown>\n#2 0x55aafe68553c <unknown>\n#3 0x55aafe68697e <unknown>\n#4 0x55aafe686a4c <unknown>\n#5 0x55aafe6b7922 <unknown>\n#6 0x55aafe6dc012 <unknown>\n#7 0x55aafe6b2b03 <unknown>\n#8 0x55aafe6dc1de <unknown>\n#9 0x55aafe6f430e <unknown>\n#10 0x55aafe6dbde3 <unknown>\n#11 0x55aafe6b12dd <unknown>\n#12 0x55aafe6b234e <unknown>\n#13 0x55aafe9113e4 <unknown>\n#14 0x55aafe9153d7 <unknown>\n#15 0x55aafe91fb20 <unknown>\n#16 0x55aafe916023 <unknown>\n#17 0x55aafe8e41aa <unknown>\n#18 0x55aafe93a6b8 <unknown>\n#19 0x55aafe93a847 <unknown>\n#20 0x55aafe94a243 <unknown>\n#21 0x7f53cd92e609 start_thread",
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55604f8324e3 <unknown>\n#1 0x55604f561c76 <unknown>\n#2 0x55604f56653c <unknown>\n#3 0x55604f56797e <unknown>\n#4 0x55604f567a4c <unknown>\n#5 0x55604f59f3c2 <unknown>\n#6 0x55604f594021 <unknown>\n#7 0x55604f5bd012 <unknown>\n#8 0x55604f593b03 <unknown>\n#9 0x55604f5bd1de <unknown>\n#10 0x55604f5d530e <unknown>\n#11 0x55604f5bcde3 <unknown>\n#12 0x55604f5922dd <unknown>\n#13 0x55604f59334e <unknown>\n#14 0x55604f7f23e4 <unknown>\n#15 0x55604f7f63d7 <unknown>\n#16 0x55604f800b20 <unknown>\n#17 0x55604f7f7023 <unknown>\n#18 0x55604f7c51aa <unknown>\n#19 0x55604f81b6b8 <unknown>\n#20 0x55604f81b847 <unknown>\n#21 0x55604f82b243 <unknown>\n#22 0x7f4310675609 start_thread",
       "children" : [ {
         "name" : "Переход из проектов в Сердце Сибири",
-        "uid" : "e36c3cb19e857b75",
-        "parentUid" : "1f6287ca48e1dd9454a65aba8f2d9832",
+        "uid" : "eb87bfe8923a30b6",
+        "parentUid" : "4f6c23d8a97577937791abdd20757016",
         "status" : "broken",
         "time" : {
-          "start" : 1687724561677,
-          "stop" : 1687724571600,
-          "duration" : 9923
+          "start" : 1687751085317,
+          "stop" : 1687751089894,
+          "duration" : 4577
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "1f6287ca48e1dd9454a65aba8f2d9832"
+      "uid" : "4f6c23d8a97577937791abdd20757016"
+    }, {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x556dfcd214e3 <unknown>\n#1 0x556dfca50c76 <unknown>\n#2 0x556dfca5553c <unknown>\n#3 0x556dfca5697e <unknown>\n#4 0x556dfca56a4c <unknown>\n#5 0x556dfca87922 <unknown>\n#6 0x556dfcaac012 <unknown>\n#7 0x556dfca82b03 <unknown>\n#8 0x556dfcaac1de <unknown>\n#9 0x556dfcac430e <unknown>\n#10 0x556dfcaabde3 <unknown>\n#11 0x556dfca812dd <unknown>\n#12 0x556dfca8234e <unknown>\n#13 0x556dfcce13e4 <unknown>\n#14 0x556dfcce53d7 <unknown>\n#15 0x556dfccefb20 <unknown>\n#16 0x556dfcce6023 <unknown>\n#17 0x556dfccb41aa <unknown>\n#18 0x556dfcd0a6b8 <unknown>\n#19 0x556dfcd0a847 <unknown>\n#20 0x556dfcd1a243 <unknown>\n#21 0x7f8269003609 start_thread",
+      "children" : [ {
+        "name" : "Переход из проектов в Домашний",
+        "uid" : "1c13882e487f23f7",
+        "parentUid" : "88f6803508421dbe4fdb68249e1aa8cd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1687751105111,
+          "stop" : 1687751115251,
+          "duration" : 10140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "88f6803508421dbe4fdb68249e1aa8cd"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

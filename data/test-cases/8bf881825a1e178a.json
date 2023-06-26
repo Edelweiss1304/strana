@@ -1,0 +1,171 @@
+{
+  "uid" : "8bf881825a1e178a",
+  "name" : "Проверка кнопки квартиры тмн",
+  "fullName" : "tests.test_header_links#test_tmn_header_apart",
+  "historyId" : "d3be2a92ff2a743f034e86ec8c83a0cb",
+  "time" : {
+    "start" : 1687750523482,
+    "stop" : 1687750529038,
+    "duration" : 5556
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1687750108823,
+      "stop" : 1687750108823,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1687750108823,
+      "stop" : 1687750108823,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1687750522753,
+      "stop" : 1687750522753,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1687750522753,
+      "stop" : 1687750523482,
+      "duration" : 729
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1687750108823,
+      "stop" : 1687750108823,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5c7dd17965da82",
+      "name" : "stdout",
+      "source" : "5c7dd17965da82.txt",
+      "type" : "text/plain",
+      "size" : 138
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1687750529039,
+      "stop" : 1687750530095,
+      "duration" : 1056
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=3, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_links"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "1504800-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_links"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2f1969268f39f37c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55f96af634e3 <unknown>\n#1 0x55f96ac92c76 <unknown>\n#2 0x55f96accec96 <unknown>\n#3 0x55f96accedc1 <unknown>\n#4 0x55f96ad087f4 <unknown>\n#5 0x55f96acee03d <unknown>\n#6 0x55f96ad0630e <unknown>\n#7 0x55f96acedde3 <unknown>\n#8 0x55f96acc32dd <unknown>\n#9 0x55f96acc434e <unknown>\n#10 0x55f96af233e4 <unknown>\n#11 0x55f96af273d7 <unknown>\n#12 0x55f96af31b20 <unknown>\n#13 0x55f96af28023 <unknown>\n#14 0x55f96aef61aa <unknown>\n#15 0x55f96af4c6b8 <unknown>\n#16 0x55f96af4c847 <unknown>\n#17 0x55f96af5c243 <unknown>\n#18 0x7f5a51ed1609 start_thread",
+      "time" : {
+        "start" : 1687750497188,
+        "stop" : 1687750520984,
+        "duration" : 23796
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=3, min_passes=1)" ]
+  },
+  "source" : "8bf881825a1e178a.json",
+  "parameterValues" : [ ]
+}
