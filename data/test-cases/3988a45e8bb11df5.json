@@ -1,0 +1,164 @@
+{
+  "uid" : "3988a45e8bb11df5",
+  "name" : "Проверка кнопки методы покупки спб",
+  "fullName" : "tests.test_header_links#test_spb_header_purchase_methods",
+  "historyId" : "e75d45649dcb44faac8746067dcf438b",
+  "time" : {
+    "start" : 1687784104187,
+    "stop" : 1687784211478,
+    "duration" : 107291
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55d41d1214e3 <unknown>\n#1 0x55d41ce50c76 <unknown>\n#2 0x55d41ce8cc96 <unknown>\n#3 0x55d41ce8cdc1 <unknown>\n#4 0x55d41cec67f4 <unknown>\n#5 0x55d41ceac03d <unknown>\n#6 0x55d41cec430e <unknown>\n#7 0x55d41ceabde3 <unknown>\n#8 0x55d41ce812dd <unknown>\n#9 0x55d41ce8234e <unknown>\n#10 0x55d41d0e13e4 <unknown>\n#11 0x55d41d0e53d7 <unknown>\n#12 0x55d41d0efb20 <unknown>\n#13 0x55d41d0e6023 <unknown>\n#14 0x55d41d0b41aa <unknown>\n#15 0x55d41d10a6b8 <unknown>\n#16 0x55d41d10a847 <unknown>\n#17 0x55d41d11a243 <unknown>\n#18 0x7efdc8b33609 start_thread",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a809cc6521d66ff910f813b1770a82b3\")>\n\n    @allure.title(\"Проверка кнопки методы покупки спб\")\n    def test_spb_header_purchase_methods(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_spb'])\n>       head.check_purchase_methods()\n\ntests/test_header_links.py:117: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/header_links.py:259: in check_purchase_methods\n    self.click_purchase_methods()\npages/header_links.py:190: in click_purchase_methods\n    self.get_purchase_methods().click()\npages/header_links.py:79: in get_purchase_methods\n    return self.get_element_visibility(self.driver, (By.XPATH, self.purchase_methods))\nbase/base_class.py:26: in get_element_visibility\n    raise e\nbase/base_class.py:21: in get_element_visibility\n    return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"a809cc6521d66ff910f813b1770a82b3\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7fad9c4edee0>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       #0 0x55d41d1214e3 <unknown>\nE       #1 0x55d41ce50c76 <unknown>\nE       #2 0x55d41ce8cc96 <unknown>\nE       #3 0x55d41ce8cdc1 <unknown>\nE       #4 0x55d41cec67f4 <unknown>\nE       #5 0x55d41ceac03d <unknown>\nE       #6 0x55d41cec430e <unknown>\nE       #7 0x55d41ceabde3 <unknown>\nE       #8 0x55d41ce812dd <unknown>\nE       #9 0x55d41ce8234e <unknown>\nE       #10 0x55d41d0e13e4 <unknown>\nE       #11 0x55d41d0e53d7 <unknown>\nE       #12 0x55d41d0efb20 <unknown>\nE       #13 0x55d41d0e6023 <unknown>\nE       #14 0x55d41d0b41aa <unknown>\nE       #15 0x55d41d10a6b8 <unknown>\nE       #16 0x55d41d10a847 <unknown>\nE       #17 0x55d41d11a243 <unknown>\nE       #18 0x7efdc8b33609 start_thread\n\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1687783425397,
+      "stop" : 1687783425397,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1687784103977,
+      "stop" : 1687784103977,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1687783425397,
+      "stop" : 1687783425397,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1687783425397,
+      "stop" : 1687783425397,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1687784103977,
+      "stop" : 1687784104186,
+      "duration" : 209
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55d41d1214e3 <unknown>\n#1 0x55d41ce50c76 <unknown>\n#2 0x55d41ce8cc96 <unknown>\n#3 0x55d41ce8cdc1 <unknown>\n#4 0x55d41cec67f4 <unknown>\n#5 0x55d41ceac03d <unknown>\n#6 0x55d41cec430e <unknown>\n#7 0x55d41ceabde3 <unknown>\n#8 0x55d41ce812dd <unknown>\n#9 0x55d41ce8234e <unknown>\n#10 0x55d41d0e13e4 <unknown>\n#11 0x55d41d0e53d7 <unknown>\n#12 0x55d41d0efb20 <unknown>\n#13 0x55d41d0e6023 <unknown>\n#14 0x55d41d0b41aa <unknown>\n#15 0x55d41d10a6b8 <unknown>\n#16 0x55d41d10a847 <unknown>\n#17 0x55d41d11a243 <unknown>\n#18 0x7efdc8b33609 start_thread",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a809cc6521d66ff910f813b1770a82b3\")>\n\n    @allure.title(\"Проверка кнопки методы покупки спб\")\n    def test_spb_header_purchase_methods(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_spb'])\n>       head.check_purchase_methods()\n\ntests/test_header_links.py:117: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/header_links.py:259: in check_purchase_methods\n    self.click_purchase_methods()\npages/header_links.py:190: in click_purchase_methods\n    self.get_purchase_methods().click()\npages/header_links.py:79: in get_purchase_methods\n    return self.get_element_visibility(self.driver, (By.XPATH, self.purchase_methods))\nbase/base_class.py:26: in get_element_visibility\n    raise e\nbase/base_class.py:21: in get_element_visibility\n    return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"a809cc6521d66ff910f813b1770a82b3\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7fad9c4edee0>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       #0 0x55d41d1214e3 <unknown>\nE       #1 0x55d41ce50c76 <unknown>\nE       #2 0x55d41ce8cc96 <unknown>\nE       #3 0x55d41ce8cdc1 <unknown>\nE       #4 0x55d41cec67f4 <unknown>\nE       #5 0x55d41ceac03d <unknown>\nE       #6 0x55d41cec430e <unknown>\nE       #7 0x55d41ceabde3 <unknown>\nE       #8 0x55d41ce812dd <unknown>\nE       #9 0x55d41ce8234e <unknown>\nE       #10 0x55d41d0e13e4 <unknown>\nE       #11 0x55d41d0e53d7 <unknown>\nE       #12 0x55d41d0efb20 <unknown>\nE       #13 0x55d41d0e6023 <unknown>\nE       #14 0x55d41d0b41aa <unknown>\nE       #15 0x55d41d10a6b8 <unknown>\nE       #16 0x55d41d10a847 <unknown>\nE       #17 0x55d41d11a243 <unknown>\nE       #18 0x7efdc8b33609 start_thread\n\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9ef8fdb859f8bfbd",
+      "name" : "screenshot_tests_test_header_links.py::test_spb_header_purchase_methods.png",
+      "source" : "9ef8fdb859f8bfbd.png",
+      "type" : "image/png",
+      "size" : 123904
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1687784211944,
+      "stop" : 1687784212005,
+      "duration" : 61
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_links"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "1566006-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_links"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "3988a45e8bb11df5.json",
+  "parameterValues" : [ ]
+}
