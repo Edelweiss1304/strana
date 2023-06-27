@@ -1,0 +1,174 @@
+{
+  "uid" : "476510cca84e07a4",
+  "name" : "Проверка кнопки Квартиры в меню",
+  "fullName" : "tests.test_header_menu#test_aparts_from_header_menu",
+  "historyId" : "e56c8d94b63ec87495803d9e6c278627",
+  "time" : {
+    "start" : 1687837170454,
+    "stop" : 1687837177276,
+    "duration" : 6822
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1687836312638,
+      "stop" : 1687836312639,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1687836312639,
+      "stop" : 1687836312639,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1687837169731,
+      "stop" : 1687837169731,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1687836312639,
+      "stop" : 1687836312639,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1687837169731,
+      "stop" : 1687837170453,
+      "duration" : 722
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "440883eec5315f4",
+      "name" : "stdout",
+      "source" : "440883eec5315f4.txt",
+      "type" : "text/plain",
+      "size" : 38
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1687837177276,
+      "stop" : 1687837177333,
+      "duration" : 57
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_menu"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "1604623-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "url",
+    "value" : "'https://spb.strana.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "575175b05fb8bc64",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5639207244e3 <unknown>\n#1 0x563920453c76 <unknown>\n#2 0x56392048fc96 <unknown>\n#3 0x56392048fdc1 <unknown>\n#4 0x5639204c97f4 <unknown>\n#5 0x5639204af03d <unknown>\n#6 0x5639204c730e <unknown>\n#7 0x5639204aede3 <unknown>\n#8 0x5639204842dd <unknown>\n#9 0x56392048534e <unknown>\n#10 0x5639206e43e4 <unknown>\n#11 0x5639206e83d7 <unknown>\n#12 0x5639206f2b20 <unknown>\n#13 0x5639206e9023 <unknown>\n#14 0x5639206b71aa <unknown>\n#15 0x56392070d6b8 <unknown>\n#16 0x56392070d847 <unknown>\n#17 0x56392071d243 <unknown>\n#18 0x7fca23d89609 start_thread",
+      "time" : {
+        "start" : 1687837064276,
+        "stop" : 1687837169239,
+        "duration" : 104963
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "476510cca84e07a4.json",
+  "parameterValues" : [ "'https://spb.strana.com'" ]
+}
