@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55f476c2b4e3 <unknown>\n#1 0x55f47695ac76 <unknown>\n#2 0x55f47695f53c <unknown>\n#3 0x55f47696097e <unknown>\n#4 0x55f476960a4c <unknown>\n#5 0x55f4769983c2 <unknown>\n#6 0x55f47698d021 <unknown>\n#7 0x55f4769b6012 <unknown>\n#8 0x55f47698cb03 <unknown>\n#9 0x55f4769b61de <unknown>\n#10 0x55f4769ce30e <unknown>\n#11 0x55f4769b5de3 <unknown>\n#12 0x55f47698b2dd <unknown>\n#13 0x55f47698c34e <unknown>\n#14 0x55f476beb3e4 <unknown>\n#15 0x55f476bef3d7 <unknown>\n#16 0x55f476bf9b20 <unknown>\n#17 0x55f476bf0023 <unknown>\n#18 0x55f476bbe1aa <unknown>\n#19 0x55f476c146b8 <unknown>\n#20 0x55f476c14847 <unknown>\n#21 0x55f476c24243 <unknown>\n#22 0x7f50ea86c609 start_thread",
+      "children" : [ {
+        "name" : "Переход из проектов в Колумб",
+        "uid" : "8ab4461cfa34576",
+        "parentUid" : "173b242fc21e88bd331769c08c42c1c2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1687924204555,
+          "stop" : 1687924209539,
+          "duration" : 4984
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "173b242fc21e88bd331769c08c42c1c2"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }
