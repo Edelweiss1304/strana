@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.chrome.service import Service
 from flaky import flaky
 import allure
 
@@ -19,9 +19,9 @@ def driver():
     options.add_argument('--disable-gpu')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('--no-sandbox')
-    caps = DesiredCapabilities().CHROME
-    caps["pageLoadStrategy"] = "eager"
-    driver = webdriver.Chrome(desired_capabilities=caps, options=options)
+    options.set_capability("pageLoadStrategy", "eager")
+    service = Service()  # You need to set the path to your chromedriver
+    driver = webdriver.Chrome(service=service, options=options)
     yield driver
     driver.quit()
 
