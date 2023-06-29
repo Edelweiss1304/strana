@@ -12,15 +12,15 @@ class ProjectsPage(Base):
     # Локаторы
     wow = "//a[@href='/projects/business/wow/']"
     ozerniy = "//a[@href='/projects/business/stranaozernaya/']"
-    dnv = "(//a[@class='project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7'])[1]"
-    princip = "(//a[@class='project-card ProjectCard_zxjuT _vice_fQOtu _aquamarine_80wfM'])[1]"
-    sibsad = "(//a[@class='project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7'])[1]"
-    zvezdniy = "(//a[@class='project-card ProjectCard_zxjuT _moxxy_1ai6F _aquamarine_80wfM'])[1]"
-    union = "(//a[@class='project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7'])[1]"
-    avtorskiy = "(//a[@class='project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7'])[2]"
-    kolumb = "//a[@class='project-card ProjectCard_zxjuT _elysium_bWqag _dark_blue_CRQPA']"
-    sersib = "(//a[@class='project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7'])[3]"
-    domashniy = "(//a[@class='project-card ProjectCard_zxjuT _vice_fQOtu _light_blue_LHxX7'])[4]"
+    dnv = "//h3[contains(text(),'Дом на Васильевском')]"
+    princip = "//h3[contains(text(),'ПРИНЦИП')]"
+    sibsad = "//h3[contains(text(),'Сибирский сад')]"
+    zvezdniy = "//h3[contains(text(),'Звездный')]"
+    union = "//h3[contains(text(),'Юнион')]"
+    avtorskiy = "//h3[contains(text(),'Авторский')]"
+    kolumb = "//h3[contains(text(),'Колумб')]"
+    sersib = "//h3[contains(text(),'Сердце Сибири')]"
+    domashniy = "//h3[contains(text(),'Домашний')]"
 
     # Геттеры
     def get_wow(self):
