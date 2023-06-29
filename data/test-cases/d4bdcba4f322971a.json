@@ -1,0 +1,180 @@
+{
+  "uid" : "d4bdcba4f322971a",
+  "name" : "Переход из проектов в Домашний",
+  "fullName" : "tests.test_projects#test_projects_domashniy",
+  "historyId" : "e0e8e430d205d3917fff9bbe283578ba",
+  "time" : {
+    "start" : 1688012753632,
+    "stop" : 1688012761667,
+    "duration" : 8035
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1688008801955,
+      "stop" : 1688008801955,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1688008801955,
+      "stop" : 1688008801955,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1688012752931,
+      "stop" : 1688012752931,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1688008801955,
+      "stop" : 1688008801955,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1688012752931,
+      "stop" : 1688012753632,
+      "duration" : 701
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3afb197fa6ab06ca",
+      "name" : "stdout",
+      "source" : "3afb197fa6ab06ca.txt",
+      "type" : "text/plain",
+      "size" : 96
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1688012761667,
+      "stop" : 1688012761743,
+      "duration" : 76
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "1712086-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c48a94ffe78ef1bd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x5593b94af4e3 <unknown>\n#1 0x5593b91dec76 <unknown>\n#2 0x5593b91e353c <unknown>\n#3 0x5593b91e497e <unknown>\n#4 0x5593b91e4a4c <unknown>\n#5 0x5593b921c3c2 <unknown>\n#6 0x5593b9211021 <unknown>\n#7 0x5593b923a012 <unknown>\n#8 0x5593b9210b03 <unknown>\n#9 0x5593b923a1de <unknown>\n#10 0x5593b925230e <unknown>\n#11 0x5593b9239de3 <unknown>\n#12 0x5593b920f2dd <unknown>\n#13 0x5593b921034e <unknown>\n#14 0x5593b946f3e4 <unknown>\n#15 0x5593b94733d7 <unknown>\n#16 0x5593b947db20 <unknown>\n#17 0x5593b9474023 <unknown>\n#18 0x5593b94421aa <unknown>\n#19 0x5593b94986b8 <unknown>\n#20 0x5593b9498847 <unknown>\n#21 0x5593b94a8243 <unknown>\n#22 0x7f757d978609 start_thread",
+      "time" : {
+        "start" : 1688012748476,
+        "stop" : 1688012750762,
+        "duration" : 2286
+      }
+    }, {
+      "uid" : "27007c7aba2c3495",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55aaaa7614e3 <unknown>\n#1 0x55aaaa490c76 <unknown>\n#2 0x55aaaa49553c <unknown>\n#3 0x55aaaa49697e <unknown>\n#4 0x55aaaa496a4c <unknown>\n#5 0x55aaaa4c7922 <unknown>\n#6 0x55aaaa4ec012 <unknown>\n#7 0x55aaaa4c2b03 <unknown>\n#8 0x55aaaa4ec1de <unknown>\n#9 0x55aaaa50430e <unknown>\n#10 0x55aaaa4ebde3 <unknown>\n#11 0x55aaaa4c12dd <unknown>\n#12 0x55aaaa4c234e <unknown>\n#13 0x55aaaa7213e4 <unknown>\n#14 0x55aaaa7253d7 <unknown>\n#15 0x55aaaa72fb20 <unknown>\n#16 0x55aaaa726023 <unknown>\n#17 0x55aaaa6f41aa <unknown>\n#18 0x55aaaa74a6b8 <unknown>\n#19 0x55aaaa74a847 <unknown>\n#20 0x55aaaa75a243 <unknown>\n#21 0x7f82c12b6609 start_thread",
+      "time" : {
+        "start" : 1688012730447,
+        "stop" : 1688012739722,
+        "duration" : 9275
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "d4bdcba4f322971a.json",
+  "parameterValues" : [ ]
+}

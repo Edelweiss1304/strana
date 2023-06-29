@@ -4,22 +4,107 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55f476c2b4e3 <unknown>\n#1 0x55f47695ac76 <unknown>\n#2 0x55f47695f53c <unknown>\n#3 0x55f47696097e <unknown>\n#4 0x55f476960a4c <unknown>\n#5 0x55f4769983c2 <unknown>\n#6 0x55f47698d021 <unknown>\n#7 0x55f4769b6012 <unknown>\n#8 0x55f47698cb03 <unknown>\n#9 0x55f4769b61de <unknown>\n#10 0x55f4769ce30e <unknown>\n#11 0x55f4769b5de3 <unknown>\n#12 0x55f47698b2dd <unknown>\n#13 0x55f47698c34e <unknown>\n#14 0x55f476beb3e4 <unknown>\n#15 0x55f476bef3d7 <unknown>\n#16 0x55f476bf9b20 <unknown>\n#17 0x55f476bf0023 <unknown>\n#18 0x55f476bbe1aa <unknown>\n#19 0x55f476c146b8 <unknown>\n#20 0x55f476c14847 <unknown>\n#21 0x55f476c24243 <unknown>\n#22 0x7f50ea86c609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55cf2e0654e3 <unknown>\n#1 0x55cf2dd94c76 <unknown>\n#2 0x55cf2ddd0c96 <unknown>\n#3 0x55cf2ddd0dc1 <unknown>\n#4 0x55cf2de0a7f4 <unknown>\n#5 0x55cf2ddf003d <unknown>\n#6 0x55cf2de0830e <unknown>\n#7 0x55cf2ddefde3 <unknown>\n#8 0x55cf2ddc52dd <unknown>\n#9 0x55cf2ddc634e <unknown>\n#10 0x55cf2e0253e4 <unknown>\n#11 0x55cf2e0293d7 <unknown>\n#12 0x55cf2e033b20 <unknown>\n#13 0x55cf2e02a023 <unknown>\n#14 0x55cf2dff81aa <unknown>\n#15 0x55cf2e04e6b8 <unknown>\n#16 0x55cf2e04e847 <unknown>\n#17 0x55cf2e05e243 <unknown>\n#18 0x7fe08a33c609 start_thread",
       "children" : [ {
-        "name" : "Переход из проектов в Колумб",
-        "uid" : "8ab4461cfa34576",
-        "parentUid" : "173b242fc21e88bd331769c08c42c1c2",
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "c792fa1ecf9fdf52",
+        "parentUid" : "bdbcd9bfd173b87ea842fdb26fb06d84",
         "status" : "broken",
         "time" : {
-          "start" : 1687924204555,
-          "stop" : 1687924209539,
-          "duration" : 4984
+          "start" : 1688009736822,
+          "stop" : 1688009843419,
+          "duration" : 106597
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ ]
+        "parameters" : [ "'https://tmn.strana.com'" ]
       } ],
-      "uid" : "173b242fc21e88bd331769c08c42c1c2"
+      "uid" : "bdbcd9bfd173b87ea842fdb26fb06d84"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55fb19a2e4e3 <unknown>\n#1 0x55fb1975dc76 <unknown>\n#2 0x55fb19799c96 <unknown>\n#3 0x55fb19799dc1 <unknown>\n#4 0x55fb197d37f4 <unknown>\n#5 0x55fb197b903d <unknown>\n#6 0x55fb197d130e <unknown>\n#7 0x55fb197b8de3 <unknown>\n#8 0x55fb1978e2dd <unknown>\n#9 0x55fb1978f34e <unknown>\n#10 0x55fb199ee3e4 <unknown>\n#11 0x55fb199f23d7 <unknown>\n#12 0x55fb199fcb20 <unknown>\n#13 0x55fb199f3023 <unknown>\n#14 0x55fb199c11aa <unknown>\n#15 0x55fb19a176b8 <unknown>\n#16 0x55fb19a17847 <unknown>\n#17 0x55fb19a27243 <unknown>\n#18 0x7f43e4506609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "ad6a47597460be8",
+        "parentUid" : "ab445bf6a6f2d0525e065a9a438ba990",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688010166297,
+          "stop" : 1688010271923,
+          "duration" : 105626
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      } ],
+      "uid" : "ab445bf6a6f2d0525e065a9a438ba990"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x56536a4b84e3 <unknown>\n#1 0x56536a1e7c76 <unknown>\n#2 0x56536a223c96 <unknown>\n#3 0x56536a223dc1 <unknown>\n#4 0x56536a25d7f4 <unknown>\n#5 0x56536a24303d <unknown>\n#6 0x56536a25b30e <unknown>\n#7 0x56536a242de3 <unknown>\n#8 0x56536a2182dd <unknown>\n#9 0x56536a21934e <unknown>\n#10 0x56536a4783e4 <unknown>\n#11 0x56536a47c3d7 <unknown>\n#12 0x56536a486b20 <unknown>\n#13 0x56536a47d023 <unknown>\n#14 0x56536a44b1aa <unknown>\n#15 0x56536a4a16b8 <unknown>\n#16 0x56536a4a1847 <unknown>\n#17 0x56536a4b1243 <unknown>\n#18 0x7fee9e230609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "31ce75c4c4a6bc7b",
+        "parentUid" : "fc5e062b7cc519743fb6bfc7fc4d4186",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688010596600,
+          "stop" : 1688010702409,
+          "duration" : 105809
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      } ],
+      "uid" : "fc5e062b7cc519743fb6bfc7fc4d4186"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x561683eb64e3 <unknown>\n#1 0x561683be5c76 <unknown>\n#2 0x561683c21c96 <unknown>\n#3 0x561683c21dc1 <unknown>\n#4 0x561683c5b7f4 <unknown>\n#5 0x561683c4103d <unknown>\n#6 0x561683c5930e <unknown>\n#7 0x561683c40de3 <unknown>\n#8 0x561683c162dd <unknown>\n#9 0x561683c1734e <unknown>\n#10 0x561683e763e4 <unknown>\n#11 0x561683e7a3d7 <unknown>\n#12 0x561683e84b20 <unknown>\n#13 0x561683e7b023 <unknown>\n#14 0x561683e491aa <unknown>\n#15 0x561683e9f6b8 <unknown>\n#16 0x561683e9f847 <unknown>\n#17 0x561683eaf243 <unknown>\n#18 0x7fe9b0cf9609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "864cf4ab27dcaf55",
+        "parentUid" : "ba1fc860b631afe584635a4b44675ccd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688011023578,
+          "stop" : 1688011128746,
+          "duration" : 105168
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      } ],
+      "uid" : "ba1fc860b631afe584635a4b44675ccd"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55c3e0cfd4e3 <unknown>\n#1 0x55c3e0a2cc76 <unknown>\n#2 0x55c3e0a68c96 <unknown>\n#3 0x55c3e0a68dc1 <unknown>\n#4 0x55c3e0aa27f4 <unknown>\n#5 0x55c3e0a8803d <unknown>\n#6 0x55c3e0aa030e <unknown>\n#7 0x55c3e0a87de3 <unknown>\n#8 0x55c3e0a5d2dd <unknown>\n#9 0x55c3e0a5e34e <unknown>\n#10 0x55c3e0cbd3e4 <unknown>\n#11 0x55c3e0cc13d7 <unknown>\n#12 0x55c3e0ccbb20 <unknown>\n#13 0x55c3e0cc2023 <unknown>\n#14 0x55c3e0c901aa <unknown>\n#15 0x55c3e0ce66b8 <unknown>\n#16 0x55c3e0ce6847 <unknown>\n#17 0x55c3e0cf6243 <unknown>\n#18 0x7f90cbd98609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "58a67c72e8f751a4",
+        "parentUid" : "751eb3554493e8096390352b93c72d53",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688011452234,
+          "stop" : 1688011557892,
+          "duration" : 105658
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      } ],
+      "uid" : "751eb3554493e8096390352b93c72d53"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x56370abb14e3 <unknown>\n#1 0x56370a8e0c76 <unknown>\n#2 0x56370a91cc96 <unknown>\n#3 0x56370a91cdc1 <unknown>\n#4 0x56370a9567f4 <unknown>\n#5 0x56370a93c03d <unknown>\n#6 0x56370a95430e <unknown>\n#7 0x56370a93bde3 <unknown>\n#8 0x56370a9112dd <unknown>\n#9 0x56370a91234e <unknown>\n#10 0x56370ab713e4 <unknown>\n#11 0x56370ab753d7 <unknown>\n#12 0x56370ab7fb20 <unknown>\n#13 0x56370ab76023 <unknown>\n#14 0x56370ab441aa <unknown>\n#15 0x56370ab9a6b8 <unknown>\n#16 0x56370ab9a847 <unknown>\n#17 0x56370abaa243 <unknown>\n#18 0x7fe12b8fc609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "490672c39711e2d0",
+        "parentUid" : "492f4f1f9eee891e02cd7f6ab41583cf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688011879117,
+          "stop" : 1688011983924,
+          "duration" : 104807
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      } ],
+      "uid" : "492f4f1f9eee891e02cd7f6ab41583cf"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

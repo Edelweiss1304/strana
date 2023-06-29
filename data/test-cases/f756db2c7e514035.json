@@ -1,0 +1,171 @@
+{
+  "uid" : "f756db2c7e514035",
+  "name" : "Проверка Сердце Сибири тмн",
+  "fullName" : "tests.test_projects_from_header#test_tmn_header_sersib",
+  "historyId" : "6958284cf6a64c7818d657c4e77d2efc",
+  "time" : {
+    "start" : 1688012835338,
+    "stop" : 1688012847594,
+    "duration" : 12256
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1688008801955,
+      "stop" : 1688008801955,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1688012834639,
+      "stop" : 1688012834639,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1688008801955,
+      "stop" : 1688008801955,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1688008801955,
+      "stop" : 1688008801955,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1688012834639,
+      "stop" : 1688012835338,
+      "duration" : 699
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5a2c02f8bb1bcccd",
+      "name" : "stdout",
+      "source" : "5a2c02f8bb1bcccd.txt",
+      "type" : "text/plain",
+      "size" : 152
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1688012847594,
+      "stop" : 1688012847661,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "1712086-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3644dad18b0cbdeb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"No node with given id found\"}\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x555bd03f84e3 <unknown>\n#1 0x555bd0127c76 <unknown>\n#2 0x555bd0111900 <unknown>\n#3 0x555bd010fbac <unknown>\n#4 0x555bd0110162 <unknown>\n#5 0x555bd01100b4 <unknown>\n#6 0x555bd0134b86 <unknown>\n#7 0x555bd012c6f3 <unknown>\n#8 0x555bd012b1d6 <unknown>\n#9 0x555bd012d97e <unknown>\n#10 0x555bd012da4c <unknown>\n#11 0x555bd0168f96 <unknown>\n#12 0x555bd0168607 <unknown>\n#13 0x555bd01a3a1f <unknown>\n#14 0x555bd0183012 <unknown>\n#15 0x555bd019b30e <unknown>\n#16 0x555bd0182de3 <unknown>\n#17 0x555bd01582dd <unknown>\n#18 0x555bd015934e <unknown>\n#19 0x555bd03b83e4 <unknown>\n#20 0x555bd03bc3d7 <unknown>\n#21 0x555bd03c6b20 <unknown>\n#22 0x555bd03bd023 <unknown>\n#23 0x555bd038b1aa <unknown>\n#24 0x555bd03e16b8 <unknown>\n#25 0x555bd03e1847 <unknown>\n#26 0x555bd03f1243 <unknown>\n#27 0x7f05c235c609 start_thread",
+      "time" : {
+        "start" : 1688012830142,
+        "stop" : 1688012832527,
+        "duration" : 2385
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "f756db2c7e514035.json",
+  "parameterValues" : [ ]
+}
