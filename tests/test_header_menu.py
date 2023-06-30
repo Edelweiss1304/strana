@@ -171,20 +171,20 @@ def test_tg_from_header_menu(driver, url):
 
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 @allure.title("Проверка кнопки Новости в меню")
-def test_commercial_from_header_menu(driver, url):
+def test_news_from_header_menu(driver, url):
     head = Header(driver)
     Base.open_page(driver, url)
     time.sleep(2)
     head.actions.move_to_element(head.get_menu_button()).perform()
 
     if url == 'https://mo.strana.com':
-        locator = Base.get_s_link_wrapper_locator(14)
+        locator = Base.get_s_link_wrapper_locator(23)
 
     elif url == 'https://nsk.strana.com':
-        locator = Base.get_s_link_wrapper_locator(11)
+        locator = Base.get_s_link_wrapper_locator(20)
 
     else:
-        locator = Base.get_s_link_wrapper_locator(16)
+        locator = Base.get_s_link_wrapper_locator(25)
 
     Base.get_element_visibility(driver, (By.XPATH, locator)).click()
     assert head.get_news_tittle() == "Новости Страны"
@@ -200,13 +200,13 @@ def test_commercial_from_header_menu(driver, url):
     head.actions.move_to_element(head.get_menu_button()).perform()
 
     if url == 'https://mo.strana.com':
-        locator = Base.get_s_link_wrapper_locator(15)
+        locator = Base.get_s_link_wrapper_locator(14)
 
     elif url == 'https://nsk.strana.com':
-        locator = Base.get_s_link_wrapper_locator(12)
+        locator = Base.get_s_link_wrapper_locator(11)
 
     else:
-        locator = Base.get_s_link_wrapper_locator(17)
+        locator = Base.get_s_link_wrapper_locator(16)
 
     Base.get_element_visibility(driver, (By.XPATH, locator)).click()
     assert head.get_about_check() == "О компании"
