@@ -178,13 +178,13 @@ def test_news_from_header_menu(driver, url):
     head.actions.move_to_element(head.get_menu_button()).perform()
 
     if url == 'https://mo.strana.com':
-        locator = Base.get_s_link_wrapper_locator(23)
+        locator = Base.get_s_link_wrapper_locator(19)
 
     elif url == 'https://nsk.strana.com':
-        locator = Base.get_s_link_wrapper_locator(20)
+        locator = Base.get_s_link_wrapper_locator(16)
 
     else:
-        locator = Base.get_s_link_wrapper_locator(25)
+        locator = Base.get_s_link_wrapper_locator(21)
 
     Base.get_element_visibility(driver, (By.XPATH, locator)).click()
     assert head.get_news_tittle() == "Новости Страны"
