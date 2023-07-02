@@ -28,7 +28,7 @@ jobs:
         run: |
           python -c "import selenium; print(selenium.__version__)"
       - name: Run tests with Allure
-        run: pytest --alluredir=allure-results tests/test_projects.py
+        run: pytest --alluredir=allure-results tests/test_header_menu.py
         continue-on-error: true
 
 
