@@ -4,124 +4,39 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x558ed064d4e3 <unknown>\n#1 0x558ed037cc76 <unknown>\n#2 0x558ed03b8c96 <unknown>\n#3 0x558ed03b8dc1 <unknown>\n#4 0x558ed03f27f4 <unknown>\n#5 0x558ed03d803d <unknown>\n#6 0x558ed03f030e <unknown>\n#7 0x558ed03d7de3 <unknown>\n#8 0x558ed03ad2dd <unknown>\n#9 0x558ed03ae34e <unknown>\n#10 0x558ed060d3e4 <unknown>\n#11 0x558ed06113d7 <unknown>\n#12 0x558ed061bb20 <unknown>\n#13 0x558ed0612023 <unknown>\n#14 0x558ed05e01aa <unknown>\n#15 0x558ed06366b8 <unknown>\n#16 0x558ed0636847 <unknown>\n#17 0x558ed0646243 <unknown>\n#18 0x7f751c132609 start_thread",
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x563042fe64e3 <unknown>\n#1 0x563042d15c76 <unknown>\n#2 0x563042d1a53c <unknown>\n#3 0x563042d1b97e <unknown>\n#4 0x563042d1ba4c <unknown>\n#5 0x563042d56f96 <unknown>\n#6 0x563042d56607 <unknown>\n#7 0x563042d91a1f <unknown>\n#8 0x563042d71012 <unknown>\n#9 0x563042d8930e <unknown>\n#10 0x563042d70de3 <unknown>\n#11 0x563042d462dd <unknown>\n#12 0x563042d4734e <unknown>\n#13 0x563042fa63e4 <unknown>\n#14 0x563042faa3d7 <unknown>\n#15 0x563042fb4b20 <unknown>\n#16 0x563042fab023 <unknown>\n#17 0x563042f791aa <unknown>\n#18 0x563042fcf6b8 <unknown>\n#19 0x563042fcf847 <unknown>\n#20 0x563042fdf243 <unknown>\n#21 0x7f57e8ab7609 start_thread",
       "children" : [ {
-        "name" : "Проверка кнопки Новости в меню",
-        "uid" : "97529bad7ca5cf0f",
-        "parentUid" : "128728de12cdfe4b0be0c1dda74fb1b2",
+        "name" : "Проверка квартир СПБ-1",
+        "uid" : "d81618b047a0f797",
+        "parentUid" : "0f6d84858b2750d856e4ce2c5f65b9fa",
         "status" : "broken",
         "time" : {
-          "start" : 1688292954734,
-          "stop" : 1688293061081,
-          "duration" : 106347
+          "start" : 1688354672036,
+          "stop" : 1688354674684,
+          "duration" : 2648
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
+        "parameters" : [ "1" ]
       } ],
-      "uid" : "128728de12cdfe4b0be0c1dda74fb1b2"
+      "uid" : "0f6d84858b2750d856e4ce2c5f65b9fa"
     }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55ce7f39a4e3 <unknown>\n#1 0x55ce7f0c9c76 <unknown>\n#2 0x55ce7f105c96 <unknown>\n#3 0x55ce7f105dc1 <unknown>\n#4 0x55ce7f13f7f4 <unknown>\n#5 0x55ce7f12503d <unknown>\n#6 0x55ce7f13d30e <unknown>\n#7 0x55ce7f124de3 <unknown>\n#8 0x55ce7f0fa2dd <unknown>\n#9 0x55ce7f0fb34e <unknown>\n#10 0x55ce7f35a3e4 <unknown>\n#11 0x55ce7f35e3d7 <unknown>\n#12 0x55ce7f368b20 <unknown>\n#13 0x55ce7f35f023 <unknown>\n#14 0x55ce7f32d1aa <unknown>\n#15 0x55ce7f3836b8 <unknown>\n#16 0x55ce7f383847 <unknown>\n#17 0x55ce7f393243 <unknown>\n#18 0x7f6405fc2609 start_thread",
-      "children" : [ {
-        "name" : "Проверка кнопки Новости в меню",
-        "uid" : "1015b342b9a16c7c",
-        "parentUid" : "90220b05643ac31106ddd0c93b5b80df",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688293380867,
-          "stop" : 1688293486312,
-          "duration" : 105445
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      } ],
-      "uid" : "90220b05643ac31106ddd0c93b5b80df"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x563503b2a4e3 <unknown>\n#1 0x563503859c76 <unknown>\n#2 0x563503895c96 <unknown>\n#3 0x563503895dc1 <unknown>\n#4 0x5635038cf7f4 <unknown>\n#5 0x5635038b503d <unknown>\n#6 0x5635038cd30e <unknown>\n#7 0x5635038b4de3 <unknown>\n#8 0x56350388a2dd <unknown>\n#9 0x56350388b34e <unknown>\n#10 0x563503aea3e4 <unknown>\n#11 0x563503aee3d7 <unknown>\n#12 0x563503af8b20 <unknown>\n#13 0x563503aef023 <unknown>\n#14 0x563503abd1aa <unknown>\n#15 0x563503b136b8 <unknown>\n#16 0x563503b13847 <unknown>\n#17 0x563503b23243 <unknown>\n#18 0x7f3555cfe609 start_thread",
-      "children" : [ {
-        "name" : "Проверка кнопки Новости в меню",
-        "uid" : "fd40181776e1d070",
-        "parentUid" : "ed45aadefb064bf50e5a76034f266452",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688293808440,
-          "stop" : 1688293913558,
-          "duration" : 105118
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      } ],
-      "uid" : "ed45aadefb064bf50e5a76034f266452"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5617c4c334e3 <unknown>\n#1 0x5617c4962c76 <unknown>\n#2 0x5617c499ec96 <unknown>\n#3 0x5617c499edc1 <unknown>\n#4 0x5617c49d87f4 <unknown>\n#5 0x5617c49be03d <unknown>\n#6 0x5617c49d630e <unknown>\n#7 0x5617c49bdde3 <unknown>\n#8 0x5617c49932dd <unknown>\n#9 0x5617c499434e <unknown>\n#10 0x5617c4bf33e4 <unknown>\n#11 0x5617c4bf73d7 <unknown>\n#12 0x5617c4c01b20 <unknown>\n#13 0x5617c4bf8023 <unknown>\n#14 0x5617c4bc61aa <unknown>\n#15 0x5617c4c1c6b8 <unknown>\n#16 0x5617c4c1c847 <unknown>\n#17 0x5617c4c2c243 <unknown>\n#18 0x7f714abbe609 start_thread",
-      "children" : [ {
-        "name" : "Проверка кнопки Новости в меню",
-        "uid" : "8efb2e556048fcd4",
-        "parentUid" : "f0e9e04f385fe5c634fefb9b1eefaa90",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688294232754,
-          "stop" : 1688294337682,
-          "duration" : 104928
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
-      } ],
-      "uid" : "f0e9e04f385fe5c634fefb9b1eefaa90"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55cc18f614e3 <unknown>\n#1 0x55cc18c90c76 <unknown>\n#2 0x55cc18cccc96 <unknown>\n#3 0x55cc18cccdc1 <unknown>\n#4 0x55cc18d067f4 <unknown>\n#5 0x55cc18cec03d <unknown>\n#6 0x55cc18d0430e <unknown>\n#7 0x55cc18cebde3 <unknown>\n#8 0x55cc18cc12dd <unknown>\n#9 0x55cc18cc234e <unknown>\n#10 0x55cc18f213e4 <unknown>\n#11 0x55cc18f253d7 <unknown>\n#12 0x55cc18f2fb20 <unknown>\n#13 0x55cc18f26023 <unknown>\n#14 0x55cc18ef41aa <unknown>\n#15 0x55cc18f4a6b8 <unknown>\n#16 0x55cc18f4a847 <unknown>\n#17 0x55cc18f5a243 <unknown>\n#18 0x7f28c5da5609 start_thread",
-      "children" : [ {
-        "name" : "Проверка кнопки Новости в меню",
-        "uid" : "f17635b55af28c22",
-        "parentUid" : "233127fec52495b3371e3a77f6d4e373",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688294660916,
-          "stop" : 1688294766341,
-          "duration" : 105425
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      } ],
-      "uid" : "233127fec52495b3371e3a77f6d4e373"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55ecdf3de4e3 <unknown>\n#1 0x55ecdf10dc76 <unknown>\n#2 0x55ecdf149c96 <unknown>\n#3 0x55ecdf149dc1 <unknown>\n#4 0x55ecdf1837f4 <unknown>\n#5 0x55ecdf16903d <unknown>\n#6 0x55ecdf18130e <unknown>\n#7 0x55ecdf168de3 <unknown>\n#8 0x55ecdf13e2dd <unknown>\n#9 0x55ecdf13f34e <unknown>\n#10 0x55ecdf39e3e4 <unknown>\n#11 0x55ecdf3a23d7 <unknown>\n#12 0x55ecdf3acb20 <unknown>\n#13 0x55ecdf3a3023 <unknown>\n#14 0x55ecdf3711aa <unknown>\n#15 0x55ecdf3c76b8 <unknown>\n#16 0x55ecdf3c7847 <unknown>\n#17 0x55ecdf3d7243 <unknown>\n#18 0x7f2650342609 start_thread",
-      "children" : [ {
-        "name" : "Проверка кнопки Новости в меню",
-        "uid" : "8bc827439f8b2a6c",
-        "parentUid" : "be7038a59d39ddcd6f4924212565fbfe",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688295086662,
-          "stop" : 1688295191964,
-          "duration" : 105302
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      } ],
-      "uid" : "be7038a59d39ddcd6f4924212565fbfe"
-    }, {
-      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <h3 class=\"subtitle1 title_XTEkt\">...</h3> is not clickable at point (713, 1021). Other element would receive the click: <div class=\"cookieAccept_E5BYe\">...</div>\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55e5a0f684e3 <unknown>\n#1 0x55e5a0c97c76 <unknown>\n#2 0x55e5a0cd99d4 <unknown>\n#3 0x55e5a0cd7cbd <unknown>\n#4 0x55e5a0cd5d2e <unknown>\n#5 0x55e5a0cd510f <unknown>\n#6 0x55e5a0cca1da <unknown>\n#7 0x55e5a0cf3012 <unknown>\n#8 0x55e5a0cc9b03 <unknown>\n#9 0x55e5a0cf31de <unknown>\n#10 0x55e5a0d0b30e <unknown>\n#11 0x55e5a0cf2de3 <unknown>\n#12 0x55e5a0cc82dd <unknown>\n#13 0x55e5a0cc934e <unknown>\n#14 0x55e5a0f283e4 <unknown>\n#15 0x55e5a0f2c3d7 <unknown>\n#16 0x55e5a0f36b20 <unknown>\n#17 0x55e5a0f2d023 <unknown>\n#18 0x55e5a0efb1aa <unknown>\n#19 0x55e5a0f516b8 <unknown>\n#20 0x55e5a0f51847 <unknown>\n#21 0x55e5a0f61243 <unknown>\n#22 0x7f41aa1d4609 start_thread",
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <h3 class=\"subtitle1 title_XTEkt\">...</h3> is not clickable at point (713, 985). Other element would receive the click: <div class=\"article_1vEMX\">...</div>\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x5642444184e3 <unknown>\n#1 0x564244147c76 <unknown>\n#2 0x5642441899d4 <unknown>\n#3 0x564244187cbd <unknown>\n#4 0x564244185d2e <unknown>\n#5 0x56424418510f <unknown>\n#6 0x56424417a1da <unknown>\n#7 0x5642441a3012 <unknown>\n#8 0x564244179b03 <unknown>\n#9 0x5642441a31de <unknown>\n#10 0x5642441bb30e <unknown>\n#11 0x5642441a2de3 <unknown>\n#12 0x5642441782dd <unknown>\n#13 0x56424417934e <unknown>\n#14 0x5642443d83e4 <unknown>\n#15 0x5642443dc3d7 <unknown>\n#16 0x5642443e6b20 <unknown>\n#17 0x5642443dd023 <unknown>\n#18 0x5642443ab1aa <unknown>\n#19 0x5642444016b8 <unknown>\n#20 0x564244401847 <unknown>\n#21 0x564244411243 <unknown>\n#22 0x7f4ffcb40609 start_thread",
       "children" : [ {
         "name" : "Переход из проектов в Сердце Сибири",
-        "uid" : "5bc5a468c827c047",
-        "parentUid" : "777e12454b370782de509e89052e287d",
+        "uid" : "dc3d2b936fae6b55",
+        "parentUid" : "338504b78fb97c19245d21abfb630557",
         "status" : "broken",
         "time" : {
-          "start" : 1688295333510,
-          "stop" : 1688295339251,
-          "duration" : 5741
+          "start" : 1688355597292,
+          "stop" : 1688355603543,
+          "duration" : 6251
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "777e12454b370782de509e89052e287d"
+      "uid" : "338504b78fb97c19245d21abfb630557"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

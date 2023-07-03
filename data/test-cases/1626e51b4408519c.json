@@ -1,0 +1,174 @@
+{
+  "uid" : "1626e51b4408519c",
+  "name" : "Проверка кнопки ВК в меню",
+  "fullName" : "tests.test_header_menu#test_vk_from_header_menu",
+  "historyId" : "292f3c0e1ac1c92949902bd2563fc3ae",
+  "time" : {
+    "start" : 1688355304301,
+    "stop" : 1688355311766,
+    "duration" : 7465
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1688355303586,
+      "stop" : 1688355303586,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1688354512175,
+      "stop" : 1688354512175,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1688355303586,
+      "stop" : 1688355304300,
+      "duration" : 714
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1688354512176,
+      "stop" : 1688354512176,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1688354512176,
+      "stop" : 1688354512176,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ff3211627d237cfb",
+      "name" : "stdout",
+      "source" : "ff3211627d237cfb.txt",
+      "type" : "text/plain",
+      "size" : 47
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1688355311766,
+      "stop" : 1688355311831,
+      "duration" : 65
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_menu"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "1984837-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "url",
+    "value" : "'https://spb.strana.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2a0e379d3204b906",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5638458624e3 <unknown>\n#1 0x563845591c76 <unknown>\n#2 0x5638455cdc96 <unknown>\n#3 0x5638455cddc1 <unknown>\n#4 0x5638456077f4 <unknown>\n#5 0x5638455ed03d <unknown>\n#6 0x56384560530e <unknown>\n#7 0x5638455ecde3 <unknown>\n#8 0x5638455c22dd <unknown>\n#9 0x5638455c334e <unknown>\n#10 0x5638458223e4 <unknown>\n#11 0x5638458263d7 <unknown>\n#12 0x563845830b20 <unknown>\n#13 0x563845827023 <unknown>\n#14 0x5638457f51aa <unknown>\n#15 0x56384584b6b8 <unknown>\n#16 0x56384584b847 <unknown>\n#17 0x56384585b243 <unknown>\n#18 0x7f1e2ec5d609 start_thread",
+      "time" : {
+        "start" : 1688355198574,
+        "stop" : 1688355303150,
+        "duration" : 104576
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "1626e51b4408519c.json",
+  "parameterValues" : [ "'https://spb.strana.com'" ]
+}
