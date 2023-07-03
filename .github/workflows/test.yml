@@ -15,9 +15,21 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Prepare config
+        run: |
+          cat <<EOT > connection_config.ini
+          [testit]
+          url = http://172.16.251.133
+          privateToken = ${{ secrets.TMS_PRIVATE_TOKEN }}
+          projectId = eefe44b2-3347-4e63-83e6-18614e869fe3
+          configurationId = 659d9644-c5dc-4542-8aef-3858f219f8b6
+          testRunId =
+          testRunName = Test
+          adapterMode = 2
+          EOT
       - name: Test run for testit
         run: |
-          pytest tests/test_login_lk.py --testit
+          pytest tests/test_projects_from_header.py --testit
 
 
 
