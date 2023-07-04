@@ -7,15 +7,12 @@ import time
 
 class Authorization(Base):
     # Locators
-    login_lk_button = "(//button[@id='link-account'])[1]"
-    continue_lk_btn = "(//button[@class='s-button s-button--default s-button--primary s-button--design-common s-button--rounded _position_SEIu5'])[1]"
-    login_client_phone_field = "//input[@type='tel']"
-    get_code_btn = "button[value='false'][type='submit']"
-    enter_code_field = "//input[@required='required']"
-    fin_login_btn = "(//button[@id='Pty6zL2WDf5KpaNB2Teja'])[1]"
+    login_lk_button = "//div[@class='the-header-base__controls']//a[2]"
+    login_client_phone_field = "//input[@id='input-33']"
+    get_code_btn = "//span[@class='v-btn__content']"
+    enter_code_field = "//input[@id='input-56']"
+    fin_login_btn = "//span[contains(text(),'Войти')]"
     check_lk = "//h1[contains(text(),'Брони и договоры')]"
-    switch_btn_partner = "(//div[@class='link_ARf12'])[1]"
-    switch_btn_agency = "//div[contains(text(), 'Агентство')]"
     email_field_agent = "email"
     password_field_agent = "//label[contains(text(), 'Пароль')]/following-sibling::input[@type='password']"
     email_field_agency = "email"
@@ -28,9 +25,6 @@ class Authorization(Base):
     def get_login_lk_button(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.login_lk_button))
 
-    def get_continue_lk_btn(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.continue_lk_btn))
-
     def get_login_client_phone_field(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.login_client_phone_field))
 
@@ -38,19 +32,13 @@ class Authorization(Base):
         return self.get_element_clickable(self.driver, (By.XPATH, self.enter_code_field))
 
     def get_get_code_btn(self):
-        return self.get_element_clickable(self.driver, (By.CSS_SELECTOR, self.get_code_btn))
+        return self.get_element_clickable(self.driver, (By.XPATH, self.get_code_btn))
 
     def get_fin_login_btn(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.fin_login_btn))
 
     def get_check_lk(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.check_lk)).text
-
-    def get_switch_btn_agency(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.switch_btn_agency))
-
-    def get_switch_btn_partner(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.switch_btn_partner))
 
     def get_email_field_agent(self):
         return self.get_element_clickable(self.driver, (By.NAME, self.email_field_agent))
@@ -76,10 +64,6 @@ class Authorization(Base):
         self.get_login_lk_button().click()
         print('Нажата кнопка входа в аккаунт в хэдере')
 
-    def click_continue_btn(self):
-        self.get_continue_lk_btn().click()
-        print('Нажата кнопка продолжить')
-
     def click_get_code_btn(self):
         self.get_get_code_btn().click()
         print('Нажата кнопка получить код')
@@ -88,23 +72,16 @@ class Authorization(Base):
         self.get_fin_login_btn().click()
         print('Нажата финальная кнопка входа в аккаунт')
 
-    def click_switch_btn_partner(self):
-        self.get_switch_btn_partner().click()
-        print('Нажата кнопка партнер')
-
     def click_login_broker_btn(self):
         self.get_login_broker_btn().click()
         print('Нажата кнопка входа для брокера')
-
-    def click_switch_btn_agency(self):
-        self.get_switch_btn_agency().click()
-        print('Переключаемся на агентство')
 
     # Methods
     def login_lk(self, phone_for_user=+79198629250, code_for_user=1313):
         time.sleep(1)
         self.click_login_lk_button()
-        self.click_continue_btn()
+        next_tab_index = (self.driver.window_handles.index(self.driver.current_window_handle) + 1) % len(self.driver.window_handles)
+        self.driver.switch_to.window(self.driver.window_handles[next_tab_index])
         self.get_login_client_phone_field().send_keys(phone_for_user)
         self.click_get_code_btn()
         self.get_enter_code_field().send_keys(code_for_user)
@@ -112,8 +89,6 @@ class Authorization(Base):
 
     def login_lk_broker_agent(self, email='smiledmitriev@yandex.com', password='123456789'):
         self.click_login_lk_button()
-        self.click_switch_btn_partner()
-        self.click_continue_btn()
         self.get_email_field_agent().send_keys(email)
         self.get_password_field_agent().send_keys(password)
         self.click_login_broker_btn()
@@ -121,9 +96,6 @@ class Authorization(Base):
     def login_lk_broker_agency(self, email='dmitrievaleks777@rambler.ru', password='1234567890'):
         time.sleep(1)
         self.click_login_lk_button()
-        self.click_switch_btn_partner()
-        self.click_continue_btn()
-        self.click_switch_btn_agency()
         self.get_email_field_agency().send_keys(email)
         self.get_password_field_agency().send_keys(password)
         self.click_login_broker_btn()

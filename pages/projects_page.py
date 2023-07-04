@@ -22,6 +22,8 @@ class ProjectsPage(Base):
     sersib = "//h3[contains(text(),'Сердце Сибири')]"
     domashniy = "//h3[contains(text(),'Домашний')]"
 
+    accept_cookie = "//span[contains(text(),'Принять')]"
+
     # Геттеры
     def get_wow(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.wow))
@@ -55,6 +57,9 @@ class ProjectsPage(Base):
 
     def get_domashniy(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.domashniy))
+
+    def get_accept_cookie(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.accept_cookie))
 
     # Actions
 
@@ -90,3 +95,6 @@ class ProjectsPage(Base):
 
     def click_domashniy(self):
         self.get_domashniy().click()
+
+    def click_accept_cookie(self):
+        self.get_accept_cookie().click()

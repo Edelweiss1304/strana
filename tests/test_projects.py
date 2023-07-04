@@ -12,7 +12,7 @@ def test_projects_wow(driver):
     Base.open_page(driver, URLS_MAIN['url_msk'])
     head.click_projects()
     pp = ProjectsPage(driver)
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_wow()
     assert head.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
 
@@ -23,7 +23,7 @@ def test_projects_ozerniy(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_msk'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_ozerniy()
     assert head.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
 
@@ -34,7 +34,7 @@ def test_projects_dnv(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_spb'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_dnv()
     assert head.get_project_dnv_check() == "Санкт-Петербург"
 
@@ -45,7 +45,7 @@ def test_projects_princip(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_spb'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_princip()
     assert head.get_project_comfort_tittle() == "ПРИНЦИП"
 
@@ -56,7 +56,7 @@ def test_projects_sibsad(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_ekb'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_sibsad()
     assert head.get_project_comfort_tittle() == "Сибирский сад"
 
@@ -67,7 +67,7 @@ def test_projects_zvezdniy(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_tmn'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_zvezdniy()
     assert head.get_project_comfort_tittle() == "Звездный"
 
@@ -78,7 +78,7 @@ def test_projects_union(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_tmn'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_union()
     assert head.get_project_comfort_tittle() == "Юнион"
 
@@ -89,7 +89,7 @@ def test_projects_avtorskiy(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_tmn'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_avtorskiy()
     assert head.get_project_comfort_tittle() == "Авторский"
 
@@ -100,7 +100,7 @@ def test_projects_kolumb(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_tmn'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_kolumb()
     assert head.get_project_comfort_tittle() == "Колумб"
 
@@ -111,7 +111,7 @@ def test_projects_sersib(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_tmn'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_sersib()
     assert head.get_project_comfort_tittle() == "Сердце Сибири"
 
@@ -122,6 +122,6 @@ def test_projects_domashniy(driver):
     pp = ProjectsPage(driver)
     Base.open_page(driver, URLS_MAIN['url_tmn'])
     head.click_projects()
-    time.sleep(1)
+    pp.click_accept_cookie()
     pp.click_domashniy()
     assert head.get_project_comfort_tittle() == "Домашний"
