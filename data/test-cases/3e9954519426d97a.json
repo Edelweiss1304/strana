@@ -1,0 +1,171 @@
+{
+  "uid" : "3e9954519426d97a",
+  "name" : "Проверка кнопки о нас мск",
+  "fullName" : "tests.test_header_links#test_msk_header_about",
+  "historyId" : "d2aae399232947b466d2d835d36a7795",
+  "time" : {
+    "start" : 1688528007376,
+    "stop" : 1688528013177,
+    "duration" : 5801
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1688527477886,
+      "stop" : 1688527477886,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1688528006632,
+      "stop" : 1688528006632,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1688527477886,
+      "stop" : 1688527477886,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1688527477886,
+      "stop" : 1688527477886,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1688528006632,
+      "stop" : 1688528007376,
+      "duration" : 744
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4b0c5515f904f948",
+      "name" : "stdout",
+      "source" : "4b0c5515f904f948.txt",
+      "type" : "text/plain",
+      "size" : 81
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1688528013177,
+      "stop" : 1688528013241,
+      "duration" : 64
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_links"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2099840-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_links"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6a980514dcb5bf29",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"No node with given id found\"}\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55cb767514e3 <unknown>\n#1 0x55cb76480c76 <unknown>\n#2 0x55cb7646a900 <unknown>\n#3 0x55cb76468bac <unknown>\n#4 0x55cb76469162 <unknown>\n#5 0x55cb764690b4 <unknown>\n#6 0x55cb7648db86 <unknown>\n#7 0x55cb764856f3 <unknown>\n#8 0x55cb764841d6 <unknown>\n#9 0x55cb7648697e <unknown>\n#10 0x55cb76486a4c <unknown>\n#11 0x55cb764be3c2 <unknown>\n#12 0x55cb764b3021 <unknown>\n#13 0x55cb764dc012 <unknown>\n#14 0x55cb764b2b03 <unknown>\n#15 0x55cb764dc1de <unknown>\n#16 0x55cb764f430e <unknown>\n#17 0x55cb764dbde3 <unknown>\n#18 0x55cb764b12dd <unknown>\n#19 0x55cb764b234e <unknown>\n#20 0x55cb767113e4 <unknown>\n#21 0x55cb767153d7 <unknown>\n#22 0x55cb7671fb20 <unknown>\n#23 0x55cb76716023 <unknown>\n#24 0x55cb766e41aa <unknown>\n#25 0x55cb7673a6b8 <unknown>\n#26 0x55cb7673a847 <unknown>\n#27 0x55cb7674a243 <unknown>\n#28 0x7fd207085609 start_thread",
+      "time" : {
+        "start" : 1688528002471,
+        "stop" : 1688528004684,
+        "duration" : 2213
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "3e9954519426d97a.json",
+  "parameterValues" : [ ]
+}
