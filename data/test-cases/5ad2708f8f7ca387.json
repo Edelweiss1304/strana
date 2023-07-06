@@ -1,0 +1,171 @@
+{
+  "uid" : "5ad2708f8f7ca387",
+  "name" : "Проверка ДнВ спб",
+  "fullName" : "tests.test_projects_from_header#test_spb_header_dnv",
+  "historyId" : "0fabdd38d5a1e3246b6b0ce45cff5714",
+  "time" : {
+    "start" : 1688625132263,
+    "stop" : 1688625138634,
+    "duration" : 6371
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1688625131534,
+      "stop" : 1688625132263,
+      "duration" : 729
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1688621015587,
+      "stop" : 1688621015587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1688621015587,
+      "stop" : 1688621015587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1688621015587,
+      "stop" : 1688621015587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1688625131534,
+      "stop" : 1688625131534,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "50f61741db1e5d43",
+      "name" : "stdout",
+      "source" : "50f61741db1e5d43.txt",
+      "type" : "text/plain",
+      "size" : 248
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1688625138634,
+      "stop" : 1688625138707,
+      "duration" : 73
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2176764-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6315b88c04d244de",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55b529cc64e3 <unknown>\n#1 0x55b5299f5c76 <unknown>\n#2 0x55b529a31c96 <unknown>\n#3 0x55b529a31dc1 <unknown>\n#4 0x55b529a6b7f4 <unknown>\n#5 0x55b529a5103d <unknown>\n#6 0x55b529a6930e <unknown>\n#7 0x55b529a50de3 <unknown>\n#8 0x55b529a262dd <unknown>\n#9 0x55b529a2734e <unknown>\n#10 0x55b529c863e4 <unknown>\n#11 0x55b529c8a3d7 <unknown>\n#12 0x55b529c94b20 <unknown>\n#13 0x55b529c8b023 <unknown>\n#14 0x55b529c591aa <unknown>\n#15 0x55b529caf6b8 <unknown>\n#16 0x55b529caf847 <unknown>\n#17 0x55b529cbf243 <unknown>\n#18 0x7f720d953609 start_thread",
+      "time" : {
+        "start" : 1688625025953,
+        "stop" : 1688625131044,
+        "duration" : 105091
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "5ad2708f8f7ca387.json",
+  "parameterValues" : [ ]
+}

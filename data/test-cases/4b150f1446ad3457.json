@@ -1,0 +1,167 @@
+{
+  "uid" : "4b150f1446ad3457",
+  "name" : "Проверка кнопки ВК в меню",
+  "fullName" : "tests.test_header_menu#test_vk_from_header_menu",
+  "historyId" : "b6acede5641d5cc4f9a8e289b96f8908",
+  "time" : {
+    "start" : 1688623902877,
+    "stop" : 1688624006480,
+    "duration" : 103603
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"0836af25da02b8c7b77a3cb56d76c3b3\")>\nurl = 'https://msk.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки ВК в меню\")\n    def test_vk_from_header_menu(driver, url):\n        head = Header(driver)\n        Base.open_page(driver, url)\n        time.sleep(2)\n        head.actions.move_to_element(head.get_menu_button()).perform()\n    \n        if url == 'https://mo.strana.com':\n            locator = Base.get_s_link_wrapper_locator(10)\n    \n        elif url == 'https://nsk.strana.com':\n            locator = Base.get_s_link_wrapper_locator(7)\n    \n        else:\n            locator = Base.get_s_link_wrapper_locator(12)\n    \n>       driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n\ntests/test_header_menu.py:93: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/base_class.py:26: in get_element_visibility\n    raise e\nbase/base_class.py:21: in get_element_visibility\n    return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"0836af25da02b8c7b77a3cb56d76c3b3\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f728f791f80>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1688621015587,
+      "stop" : 1688621015587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1688621015587,
+      "stop" : 1688621015587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1688621015587,
+      "stop" : 1688621015587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1688623902110,
+      "stop" : 1688623902877,
+      "duration" : 767
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1688623902110,
+      "stop" : 1688623902110,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"0836af25da02b8c7b77a3cb56d76c3b3\")>\nurl = 'https://msk.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки ВК в меню\")\n    def test_vk_from_header_menu(driver, url):\n        head = Header(driver)\n        Base.open_page(driver, url)\n        time.sleep(2)\n        head.actions.move_to_element(head.get_menu_button()).perform()\n    \n        if url == 'https://mo.strana.com':\n            locator = Base.get_s_link_wrapper_locator(10)\n    \n        elif url == 'https://nsk.strana.com':\n            locator = Base.get_s_link_wrapper_locator(7)\n    \n        else:\n            locator = Base.get_s_link_wrapper_locator(12)\n    \n>       driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n\ntests/test_header_menu.py:93: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/base_class.py:26: in get_element_visibility\n    raise e\nbase/base_class.py:21: in get_element_visibility\n    return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"0836af25da02b8c7b77a3cb56d76c3b3\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f728f791f80>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b01af67248b8479e",
+      "name" : "screenshot_tests_test_header_menu.py::test_vk_from_header_menu[https:__msk.strana.com].png",
+      "source" : "b01af67248b8479e.png",
+      "type" : "image/png",
+      "size" : 638419
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1688624007391,
+      "stop" : 1688624007448,
+      "duration" : 57
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_menu"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2176764-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "url",
+    "value" : "'https://msk.strana.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "4b150f1446ad3457.json",
+  "parameterValues" : [ "'https://msk.strana.com'" ]
+}

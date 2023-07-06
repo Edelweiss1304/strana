@@ -1,0 +1,171 @@
+{
+  "uid" : "fcb3389c925a403f",
+  "name" : "Проверка WOW мск",
+  "fullName" : "tests.test_projects_from_header#test_msk_header_wow",
+  "historyId" : "7733329eb766cd1284322da45e6886ea",
+  "time" : {
+    "start" : 1688624909181,
+    "stop" : 1688624915282,
+    "duration" : 6101
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1688621015587,
+      "stop" : 1688621015587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1688621015587,
+      "stop" : 1688621015587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1688624908444,
+      "stop" : 1688624909180,
+      "duration" : 736
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1688624908444,
+      "stop" : 1688624908444,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1688621015587,
+      "stop" : 1688621015587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b9042b1cdd621ade",
+      "name" : "stdout",
+      "source" : "b9042b1cdd621ade.txt",
+      "type" : "text/plain",
+      "size" : 125
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1688624915282,
+      "stop" : 1688624915342,
+      "duration" : 60
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2176764-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a6e48290347f43bf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55e710d964e3 <unknown>\n#1 0x55e710ac5c76 <unknown>\n#2 0x55e710aca53c <unknown>\n#3 0x55e710acb97e <unknown>\n#4 0x55e710acba4c <unknown>\n#5 0x55e710b06f96 <unknown>\n#6 0x55e710b06607 <unknown>\n#7 0x55e710b41a1f <unknown>\n#8 0x55e710b21012 <unknown>\n#9 0x55e710b3930e <unknown>\n#10 0x55e710b20de3 <unknown>\n#11 0x55e710af62dd <unknown>\n#12 0x55e710af734e <unknown>\n#13 0x55e710d563e4 <unknown>\n#14 0x55e710d5a3d7 <unknown>\n#15 0x55e710d64b20 <unknown>\n#16 0x55e710d5b023 <unknown>\n#17 0x55e710d291aa <unknown>\n#18 0x55e710d7f6b8 <unknown>\n#19 0x55e710d7f847 <unknown>\n#20 0x55e710d8f243 <unknown>\n#21 0x7f090f24c609 start_thread",
+      "time" : {
+        "start" : 1688624904361,
+        "stop" : 1688624906476,
+        "duration" : 2115
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "fcb3389c925a403f.json",
+  "parameterValues" : [ ]
+}
