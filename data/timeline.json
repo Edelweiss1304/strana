@@ -4,2206 +4,1998 @@
   "children" : [ {
     "name" : "stranatest",
     "children" : [ {
-      "name" : "2176764-MainThread",
+      "name" : "2230356-MainThread",
       "children" : [ {
-        "name" : "Проверка кнопки способы покупки мск",
-        "uid" : "2853cfc83dc57492",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621995692,
-          "stop" : 1688622002652,
-          "duration" : 6960
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки методы покупки тмн",
-        "uid" : "e51a150f9bd1ab2d",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622997323,
-          "stop" : 1688623004070,
-          "duration" : 6747
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка квартир ТМН-4",
-        "uid" : "880f59bd304906e0",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621423294,
-          "stop" : 1688621432551,
-          "duration" : 9257
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "4" ]
-      }, {
-        "name" : "Проверка паркинга",
-        "uid" : "30e8ae9fde484fd4",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688621626026,
-          "stop" : 1688621628235,
-          "duration" : 2209
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "2cb56b0057c607b9",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688624601116,
-          "stop" : 1688624705445,
-          "duration" : 104329
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки вакансии мо",
-        "uid" : "100e30c74be8a8e8",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622240739,
-          "stop" : 1688622245941,
-          "duration" : 5202
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка квартир МСК-3",
-        "uid" : "14c1bb074ae87507",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621247204,
-          "stop" : 1688621255306,
-          "duration" : 8102
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "3" ]
-      }, {
-        "name" : "Проверка кнопки ВК в меню",
-        "uid" : "86549ceb639668bf",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1688624008175,
-          "stop" : 1688624032164,
-          "duration" : 23989
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки OK в меню",
-        "uid" : "97aa0530fae384a9",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624065274,
-          "stop" : 1688624070575,
-          "duration" : 5301
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка авторизации в ЛК клиента",
-        "uid" : "5a8f113b71c6006d",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624758875,
-          "stop" : 1688624765793,
-          "duration" : 6918
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки вакансии тмн",
-        "uid" : "d905e9de258bc78e",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623126022,
-          "stop" : 1688623130758,
-          "duration" : 4736
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "b1188e8f35d8f868",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624722912,
-          "stop" : 1688624732845,
-          "duration" : 9933
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Telegram в меню",
-        "uid" : "c015eb870bb75213",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624302044,
-          "stop" : 1688624306736,
-          "duration" : 4692
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
         "name" : "Проверка кнопки квартиры спб",
-        "uid" : "1db10a83e21057f7",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "2f99caedfc174d30",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688622252710,
-          "stop" : 1688622258142,
-          "duration" : 5432
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки Telegram в меню",
-        "uid" : "8f3e85974803de82",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624307559,
-          "stop" : 1688624312365,
-          "duration" : 4806
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Переход из проектов в Днв",
-        "uid" : "2e0d337e2a97b9f1",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624815869,
-          "stop" : 1688624824531,
-          "duration" : 8662
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки о нас тмн",
-        "uid" : "54d04c801f95fd21",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622989925,
-          "stop" : 1688622996549,
-          "duration" : 6624
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка квартир МСК-3",
-        "uid" : "59400ed675a187a2",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688621142927,
-          "stop" : 1688621245373,
-          "duration" : 102446
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "3" ]
-      }, {
-        "name" : "Проверка кнопки коммерции спб",
-        "uid" : "c1a82eae827be939",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622258929,
-          "stop" : 1688622266574,
-          "duration" : 7645
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка квартир ЕКБ-2",
-        "uid" : "bc425f9a4f33021",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621452962,
-          "stop" : 1688621459907,
-          "duration" : 6945
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "2" ]
-      }, {
-        "name" : "Проверка кнопки о нас екб",
-        "uid" : "a970010eaee387a3",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622740629,
-          "stop" : 1688622746629,
-          "duration" : 6000
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через хедер",
-        "uid" : "77c993817dad2eba",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688624485013,
-          "stop" : 1688624590580,
-          "duration" : 105567
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      }, {
-        "name" : "Проверка квартир ТМН-2",
-        "uid" : "88a4973b75a5da00",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621292642,
-          "stop" : 1688621301108,
-          "duration" : 8466
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "2" ]
-      }, {
-        "name" : "Проверка кнопки проекты мск",
-        "uid" : "a29a136e0f00ff0c",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621754380,
-          "stop" : 1688621759379,
-          "duration" : 4999
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки акции мо",
-        "uid" : "ce2657ec783e760f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688622124621,
-          "stop" : 1688622229648,
-          "duration" : 105027
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки OK в меню",
-        "uid" : "a7d6873e5e0c428d",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624071377,
-          "stop" : 1688624076214,
-          "duration" : 4837
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка квартир ТМН-4",
-        "uid" : "201ee24b8072d0da",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688621317545,
-          "stop" : 1688621421391,
-          "duration" : 103846
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "4" ]
-      }, {
-        "name" : "Проверка кнопки Компания в меню",
-        "uid" : "fb6a458db3db4fc8",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623885071,
-          "stop" : 1688623890963,
-          "duration" : 5892
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Квартиры в меню",
-        "uid" : "6ae1122ffa99c6e",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623490501,
-          "stop" : 1688623496437,
-          "duration" : 5936
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Telegram в меню",
-        "uid" : "71667c405eb4dc5a",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1688624295589,
-          "stop" : 1688624299408,
-          "duration" : 3819
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Проекты в меню",
-        "uid" : "199617bf6c8a5c6f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623364330,
-          "stop" : 1688623370226,
-          "duration" : 5896
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Переход из проектов в Звездный",
-        "uid" : "444940aaae236e4a",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624845037,
-          "stop" : 1688624853531,
-          "duration" : 8494
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки Квартиры в меню",
-        "uid" : "6326c6a602648935",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623524437,
-          "stop" : 1688623529581,
-          "duration" : 5144
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки о нас мо",
-        "uid" : "3e2e09588cfa5167",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622230885,
-          "stop" : 1688622235334,
-          "duration" : 4449
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка Озёрный мск",
-        "uid" : "2774bd2c9fa45ec",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688624921181,
-          "stop" : 1688625024070,
-          "duration" : 102889
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "8423798f79d2ea4d",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624741283,
-          "stop" : 1688624750053,
-          "duration" : 8770
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Проверка WOW мск",
-        "uid" : "fcb3389c925a403f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624909181,
-          "stop" : 1688624915282,
-          "duration" : 6101
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки коммерции мо",
-        "uid" : "94b490ec63537227",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622009477,
-          "stop" : 1688622014842,
-          "duration" : 5365
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки Компания в меню",
-        "uid" : "a4203e855c7b996b",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623653853,
-          "stop" : 1688623661427,
-          "duration" : 7574
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки проекты спб",
-        "uid" : "dd32f4449f4bec82",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622246740,
-          "stop" : 1688622251862,
-          "duration" : 5122
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "a605c61873563a6a",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624714945,
-          "stop" : 1688624722088,
-          "duration" : 7143
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка авторизации в ЛК клиента",
-        "uid" : "7ea6b63a9490c3af",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624773580,
-          "stop" : 1688624780523,
-          "duration" : 6943
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки вакансии спб",
-        "uid" : "ad339c14f8e59b17",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622494464,
-          "stop" : 1688622499656,
-          "duration" : 5192
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка WOW мск",
-        "uid" : "a6e48290347f43bf",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688624904361,
-          "stop" : 1688624906476,
-          "duration" : 2115
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки ВК в меню",
-        "uid" : "4b150f1446ad3457",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688623902877,
-          "stop" : 1688624006480,
-          "duration" : 103603
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Telegram в меню",
-        "uid" : "dbe10b0666f53540",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624313187,
-          "stop" : 1688624316859,
-          "duration" : 3672
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Компания в меню",
-        "uid" : "304c90d2a63a5fde",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688623546391,
-          "stop" : 1688623652248,
-          "duration" : 105857
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Квартиры в меню",
-        "uid" : "12433b9f9a7c333b",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623505459,
-          "stop" : 1688623510521,
-          "duration" : 5062
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки OK в меню",
-        "uid" : "da2ead1546feb7f9",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624077049,
-          "stop" : 1688624082402,
-          "duration" : 5353
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка Колумб тмн",
-        "uid" : "c8ff8f7f6606d08c",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688625379477,
-          "stop" : 1688625504949,
-          "duration" : 125472
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка квартир СПБ-1",
-        "uid" : "108dfbd9429d2037",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621617743,
-          "stop" : 1688621625246,
-          "duration" : 7503
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "1" ]
-      }, {
-        "name" : "Проверка кнопки YT в меню",
-        "uid" : "8f3215a84dafd1d8",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1688624232733,
-          "stop" : 1688624238167,
-          "duration" : 5434
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки акции тмн",
-        "uid" : "75bbf68d807f729a",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688622775878,
-          "stop" : 1688622881089,
-          "duration" : 105211
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки о нас спб",
-        "uid" : "206cd044acb3c6ea",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622481804,
-          "stop" : 1688622488112,
-          "duration" : 6308
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки Проекты в меню",
-        "uid" : "b134109abc02e01e",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688623239045,
-          "stop" : 1688623344502,
-          "duration" : 105457
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через хедер",
-        "uid" : "a2721bea68274b1c",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624360206,
-          "stop" : 1688624369225,
-          "duration" : 9019
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки акции тмн",
-        "uid" : "eca9913261e4e3ae",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688622882624,
-          "stop" : 1688622988484,
-          "duration" : 105860
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки ВК в меню",
-        "uid" : "5ed3bb1dda9dd8b3",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624057962,
-          "stop" : 1688624064437,
-          "duration" : 6475
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      }, {
-        "name" : "Проверка квартир МСК-0",
-        "uid" : "f6ea2fae9b9d9ab0",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621016350,
-          "stop" : 1688621024073,
-          "duration" : 7723
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "0" ]
-      }, {
-        "name" : "Проверка кнопки квартиры мск",
-        "uid" : "d24ce97a7fdcbe02",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621760144,
-          "stop" : 1688621765692,
-          "duration" : 5548
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки Проекты в меню",
-        "uid" : "5f3efbd91e04c46a",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688623131559,
-          "stop" : 1688623237804,
-          "duration" : 106245
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка квартир ЕКБ-4",
-        "uid" : "71103a57f1abdc3b",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688621495222,
-          "stop" : 1688621598584,
-          "duration" : 103362
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "4" ]
-      }, {
-        "name" : "Проверка кнопки акции спб",
-        "uid" : "bfb999e337105dfe",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688622374798,
-          "stop" : 1688622480455,
-          "duration" : 105657
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка авторизации в ЛК клиента",
-        "uid" : "b1215b8267914011",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624787145,
-          "stop" : 1688624791850,
-          "duration" : 4705
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Проекты в меню",
-        "uid" : "25191469944e48e4",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623351958,
-          "stop" : 1688623357981,
-          "duration" : 6023
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки о нас тмн",
-        "uid" : "93075b8290a08b15",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623011566,
-          "stop" : 1688623017648,
-          "duration" : 6082
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки OK в меню",
-        "uid" : "9c38ce16a9c6e380",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1688624088335,
-          "stop" : 1688624120171,
-          "duration" : 31836
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Проверка квартир ТМН-0",
-        "uid" : "2e829491a8444749",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1688621273438,
-          "stop" : 1688621280721,
-          "duration" : 7283
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "0" ]
-      }, {
-        "name" : "Проверка Звездный тмн",
-        "uid" : "a76db17542f929e2",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688625148075,
-          "stop" : 1688625253917,
-          "duration" : 105842
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки ВК в меню",
-        "uid" : "44a93df6b5aac001",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624042161,
-          "stop" : 1688624048471,
-          "duration" : 6310
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
-      }, {
-        "name" : "Переход из проектов в WOW",
-        "uid" : "86a202a252f446d8",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624799196,
-          "stop" : 1688624806776,
-          "duration" : 7580
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка ДнВ спб",
-        "uid" : "6315b88c04d244de",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688625025953,
-          "stop" : 1688625131044,
-          "duration" : 105091
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "db71d5722746d80f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624750890,
-          "stop" : 1688624758085,
-          "duration" : 7195
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Telegram в меню",
-        "uid" : "261256362dbe400f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624324001,
-          "stop" : 1688624328654,
-          "duration" : 4653
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      }, {
-        "name" : "Переход из проектов в Авторский",
-        "uid" : "abd31b1e4486754",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624866064,
-          "stop" : 1688624875165,
-          "duration" : 9101
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки акции мск",
-        "uid" : "27a58c8eb3596812",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688621881105,
-          "stop" : 1688621986904,
-          "duration" : 105799
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка Сибирский сад ект",
-        "uid" : "572abf879a6cf88f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688625535419,
-          "stop" : 1688625543648,
-          "duration" : 8229
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через хедер",
-        "uid" : "10a5cba346c329aa",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624329518,
-          "stop" : 1688624340213,
-          "duration" : 10695
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки ВК в меню",
-        "uid" : "a78bdaafc199aefe",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623891759,
-          "stop" : 1688623902035,
-          "duration" : 10276
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка Озёрный мск",
-        "uid" : "f7732754bef9859f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688624916107,
-          "stop" : 1688624918927,
-          "duration" : 2820
+          "start" : 1688700888282,
+          "stop" : 1688700894413,
+          "duration" : 6131
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка Принцип спб",
-        "uid" : "e3a09b412e41d531",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "b4e7578bc17f2db3",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688625139449,
-          "stop" : 1688625147263,
-          "duration" : 7814
+          "start" : 1688702761409,
+          "stop" : 1688702769042,
+          "duration" : 7633
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Переход из проектов в Принцип",
-        "uid" : "178e13b8f15d3546",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка Сердце Сибири тмн",
+        "uid" : "f2b9f5e585054e4d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688624825355,
-          "stop" : 1688624833119,
-          "duration" : 7764
+          "start" : 1688702803996,
+          "stop" : 1688702817235,
+          "duration" : 13239
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка авторизации в ЛК брокера через хедер",
-        "uid" : "82c71c7aa994356d",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка паркинга",
+        "uid" : "5b9792ebdd17fd65",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688624476441,
-          "stop" : 1688624484216,
-          "duration" : 7775
+          "start" : 1688700375272,
+          "stop" : 1688700382127,
+          "duration" : 6855
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
+        "parameters" : [ "'https://spb.strana.com'" ]
       }, {
-        "name" : "Проверка кнопки OK в меню",
-        "uid" : "a41e103e9a737b40",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688624121793,
-          "stop" : 1688624225411,
-          "duration" : 103618
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через хедер",
-        "uid" : "e558f83ec3e11127",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688624370058,
-          "stop" : 1688624474509,
-          "duration" : 104451
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Проверка авторизации в ЛК клиента",
-        "uid" : "72ea1a03a2ef595",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки YT в меню",
+        "uid" : "7cc8b1af77c08c7a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688624792719,
-          "stop" : 1688624798383,
-          "duration" : 5664
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      }, {
-        "name" : "Проверка квартир ТМН-1",
-        "uid" : "fb4b7af267560def",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621281952,
-          "stop" : 1688621291851,
-          "duration" : 9899
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "1" ]
-      }, {
-        "name" : "Проверка кнопки OK в меню",
-        "uid" : "8b0063d3a4e3621a",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624083247,
-          "stop" : 1688624087532,
-          "duration" : 4285
+          "start" : 1688701807610,
+          "stop" : 1688701813694,
+          "duration" : 6084
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'https://mo.strana.com'" ]
       }, {
-        "name" : "Проверка кнопки проекты екб",
-        "uid" : "d939702c9502d4f3",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки проекты мск",
+        "uid" : "5bc5f863ecdea359",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688622500463,
-          "stop" : 1688622507319,
-          "duration" : 6856
+          "start" : 1688700382937,
+          "stop" : 1688700387662,
+          "duration" : 4725
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка квартир ЕКБ-0",
-        "uid" : "d57d1e1a0c4ee1f3",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Переход из проектов в Колумб",
+        "uid" : "d5092ffdd016550d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688621433339,
-          "stop" : 1688621441730,
-          "duration" : 8391
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "0" ]
-      }, {
-        "name" : "Проверка кнопки Квартиры в меню",
-        "uid" : "e654b40f63485ba4",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623483843,
-          "stop" : 1688623489724,
-          "duration" : 5881
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка авторизации в ЛК клиента",
-        "uid" : "b7a1039786e87bed",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624766630,
-          "stop" : 1688624772771,
-          "duration" : 6141
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка квартир ТМН-3",
-        "uid" : "d74808533115a5d0",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621301932,
-          "stop" : 1688621316733,
-          "duration" : 14801
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "3" ]
-      }, {
-        "name" : "Проверка кнопки Квартиры в меню",
-        "uid" : "6080877e9f81565e",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688623378226,
-          "stop" : 1688623482063,
-          "duration" : 103837
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Компания в меню",
-        "uid" : "adee36a0ec0b3a3",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688623669241,
-          "stop" : 1688623776879,
-          "duration" : 107638
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Проверка Домашний тмн",
-        "uid" : "c32d12431b96c0cf",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688625525170,
-          "stop" : 1688625534597,
-          "duration" : 9427
+          "start" : 1688702705551,
+          "stop" : 1688702714486,
+          "duration" : 8935
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка кнопки квартиры тмн",
-        "uid" : "2533808d7810ea7",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки OK в меню",
+        "uid" : "1b12d252c544935",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688622762011,
-          "stop" : 1688622767664,
-          "duration" : 5653
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки YT в меню",
-        "uid" : "3afb86e6a9572839",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624280500,
-          "stop" : 1688624286777,
-          "duration" : 6277
+          "start" : 1688701781034,
+          "stop" : 1688701785434,
+          "duration" : 4400
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'https://nsk.strana.com'" ]
       }, {
-        "name" : "Проверка квартир ЕКБ-3",
-        "uid" : "6b309c48daf0810f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки о нас мо",
+        "uid" : "53d81e6a5ab03a9b",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "broken",
         "time" : {
-          "start" : 1688621460709,
-          "stop" : 1688621463418,
-          "duration" : 2709
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "3" ]
-      }, {
-        "name" : "Переход из проектов в Озерный",
-        "uid" : "f10605eafc96c5ee",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624807569,
-          "stop" : 1688624815032,
-          "duration" : 7463
+          "start" : 1688700859533,
+          "stop" : 1688700860948,
+          "duration" : 1415
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка кнопки YT в меню",
-        "uid" : "33efdd6a5e12bd62",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1688624247435,
-          "stop" : 1688624251306,
-          "duration" : 3871
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка Колумб тмн",
-        "uid" : "67c7e2e82ea00943",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка WOW мск",
+        "uid" : "181ddec048fb7220",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688625507941,
-          "stop" : 1688625516646,
-          "duration" : 8705
+          "start" : 1688702739410,
+          "stop" : 1688702746339,
+          "duration" : 6929
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка Юнион тмн",
-        "uid" : "dfd67aeb088ad01f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки Квартиры в меню",
+        "uid" : "3088dd983ecd1f60",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688625362493,
-          "stop" : 1688625369897,
-          "duration" : 7404
+          "start" : 1688701649210,
+          "stop" : 1688701655062,
+          "duration" : 5852
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки вакансии тмн",
+        "uid" : "d3b4a91a789b0fa6",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701576808,
+          "stop" : 1688701582434,
+          "duration" : 5626
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка кнопки Проекты в меню",
-        "uid" : "944f2273d5055266",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка авторизации в ЛК клиента",
+        "uid" : "75265d84a967f88",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688702513032,
+          "stop" : 1688702619115,
+          "duration" : 106083
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Переход из проектов в Сердце Сибири",
+        "uid" : "33fd1c5789ac2160",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688623345786,
-          "stop" : 1688623351146,
+          "start" : 1688702715268,
+          "stop" : 1688702723518,
+          "duration" : 8250
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки вакансии спб",
+        "uid" : "6ab4a6f08843d6bf",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701137697,
+          "stop" : 1688701143057,
           "duration" : 5360
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Проекты в меню",
-        "uid" : "d88fd1a7eb5d551b",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623371041,
-          "stop" : 1688623377452,
-          "duration" : 6411
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Компания в меню",
-        "uid" : "2c7e9e2383369a8e",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688623778238,
-          "stop" : 1688623883814,
-          "duration" : 105576
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Переход из проектов в Юнион",
-        "uid" : "6e80a32ea592088d",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624854330,
-          "stop" : 1688624865249,
-          "duration" : 10919
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка квартир МСК-2",
-        "uid" : "6108cd3b21576ca9",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688621032392,
-          "stop" : 1688621135425,
-          "duration" : 103033
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "2" ]
-      }, {
-        "name" : "Проверка кнопки вакансии тмн",
-        "uid" : "23c58a4e483f4f31",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622758294,
-          "stop" : 1688622761216,
-          "duration" : 2922
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки YT в меню",
-        "uid" : "69a3c352628f6dd2",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624267589,
-          "stop" : 1688624272764,
-          "duration" : 5175
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки о нас мск",
-        "uid" : "467685d0c50d3103",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621988312,
-          "stop" : 1688621994897,
-          "duration" : 6585
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки методы покупки спб",
-        "uid" : "f8373d683dd00857",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622488926,
-          "stop" : 1688622493654,
-          "duration" : 4728
-        },
-        "flaky" : false,
-        "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка кнопки Компания в меню",
-        "uid" : "96052635ec2bd94d",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "933752b586a0054d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688623662279,
-          "stop" : 1688623668442,
-          "duration" : 6163
+          "start" : 1688701661448,
+          "stop" : 1688701668976,
+          "duration" : 7528
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
-      }, {
-        "name" : "Проверка паркинга",
-        "uid" : "f40394f05fcb0697",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688621736136,
-          "stop" : 1688621738981,
-          "duration" : 2845
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки коммерция екб",
-        "uid" : "6d8cd242b197b57",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622520741,
-          "stop" : 1688622525957,
-          "duration" : 5216
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки YT в меню",
-        "uid" : "9b10bad4d17d69d3",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624253624,
-          "stop" : 1688624259392,
-          "duration" : 5768
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки вакансии тмн",
-        "uid" : "b66e1a93c8244658",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688623018439,
-          "stop" : 1688623124249,
-          "duration" : 105810
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки ВК в меню",
-        "uid" : "db43a7b5eeb4dcc0",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624033657,
-          "stop" : 1688624041387,
-          "duration" : 7730
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Проекты в меню",
-        "uid" : "eb0299c52df0217f",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623358760,
-          "stop" : 1688623363553,
-          "duration" : 4793
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Квартиры в меню",
-        "uid" : "573fd9e66b67c362",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623511316,
-          "stop" : 1688623523657,
-          "duration" : 12341
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
+        "parameters" : [ "'https://tmn.strana.com'" ]
       }, {
         "name" : "Проверка авторизации в ЛК клиента",
-        "uid" : "2afb431e75a6963a",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
+        "uid" : "6698c90432e844e7",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
         "time" : {
-          "start" : 1688624781356,
-          "stop" : 1688624786826,
-          "duration" : 5470
+          "start" : 1688701963724,
+          "stop" : 1688702069656,
+          "duration" : 105932
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
+        "parameters" : [ "'https://tmn.strana.com'" ]
       }, {
-        "name" : "Проверка квартир МСК-4",
-        "uid" : "8f0408799a7fb707",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки вакансии тмн",
+        "uid" : "ca7d1ca7ee1e7d6d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688621256098,
-          "stop" : 1688621263710,
-          "duration" : 7612
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "4" ]
-      }, {
-        "name" : "Проверка квартир ТМН-0",
-        "uid" : "c76e52d1bf34e5ec",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1688621264517,
-          "stop" : 1688621272099,
-          "duration" : 7582
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "0" ]
-      }, {
-        "name" : "Переход из проектов в Сердце Сибири",
-        "uid" : "b119cccd7e2de631",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624885435,
-          "stop" : 1688624894085,
-          "duration" : 8650
+          "start" : 1688701558157,
+          "stop" : 1688701563654,
+          "duration" : 5497
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка паркинга",
-        "uid" : "623ee213b2fd3599",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
+        "name" : "Проверка кнопки OK в меню",
+        "uid" : "54c7c3656b61e97a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
         "time" : {
-          "start" : 1688621631268,
-          "stop" : 1688621734230,
-          "duration" : 102962
+          "start" : 1688701764077,
+          "stop" : 1688701769725,
+          "duration" : 5648
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки OK в меню",
+        "uid" : "b00ac8e0f803aed3",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701775506,
+          "stop" : 1688701780205,
+          "duration" : 4699
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'https://ekb.strana.com'" ]
       }, {
-        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "17651098e20aa637",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки о нас спб",
+        "uid" : "5d093e6aebad5efc",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688624733621,
-          "stop" : 1688624740467,
-          "duration" : 6846
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://mo.strana.com'" ]
-      }, {
-        "name" : "Проверка квартир ЕКБ-3",
-        "uid" : "f11613a350ec69fa",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1688621467077,
-          "stop" : 1688621493903,
-          "duration" : 26826
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "3" ]
-      }, {
-        "name" : "Проверка кнопки Компания в меню",
-        "uid" : "3586e127123328b6",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623530341,
-          "stop" : 1688623537489,
-          "duration" : 7148
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка Сердце Сибири тмн",
-        "uid" : "d1c6d92542a525b2",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688625517442,
-          "stop" : 1688625524302,
-          "duration" : 6860
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка квартир МСК-1",
-        "uid" : "3aa7865ffc75f603",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621024882,
-          "stop" : 1688621031599,
-          "duration" : 6717
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "1" ]
-      }, {
-        "name" : "Проверка кнопки YT в меню",
-        "uid" : "be210a04a8376b07",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1688624240325,
-          "stop" : 1688624244717,
-          "duration" : 4392
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки Компания в меню",
-        "uid" : "dbf715af556c5a62",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623538288,
-          "stop" : 1688623545593,
-          "duration" : 7305
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки OK в меню",
-        "uid" : "12bcc05ffd551ed3",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624227288,
-          "stop" : 1688624231950,
-          "duration" : 4662
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки проекты мск",
-        "uid" : "a2c8551bd7eebe8b",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688621749280,
-          "stop" : 1688621751926,
-          "duration" : 2646
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки акции спб",
-        "uid" : "51cc1d655a120135",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688622267471,
-          "stop" : 1688622373368,
-          "duration" : 105897
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка паркинга",
-        "uid" : "51a281e9a5cccb82",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621741743,
-          "stop" : 1688621748469,
-          "duration" : 6726
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки методы покупки екб",
-        "uid" : "b5b987b20182eae9",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688622747449,
-          "stop" : 1688622752033,
-          "duration" : 4584
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки YT в меню",
-        "uid" : "2e4b256f92d835d2",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624260218,
-          "stop" : 1688624266764,
-          "duration" : 6546
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка квартир ЕКБ-4",
-        "uid" : "3f42840ae37d6d30",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621600550,
-          "stop" : 1688621608155,
-          "duration" : 7605
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "4" ]
-      }, {
-        "name" : "Проверка Звездный тмн",
-        "uid" : "c9421b3cce08a959",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688625255127,
-          "stop" : 1688625361217,
-          "duration" : 106090
+          "start" : 1688701123884,
+          "stop" : 1688701130895,
+          "duration" : 7011
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка кнопки вакансии екб",
-        "uid" : "1da17741d1d3e219",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "e83ab49249f69f73",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688622752805,
-          "stop" : 1688622757504,
-          "duration" : 4699
+          "start" : 1688701397152,
+          "stop" : 1688701402442,
+          "duration" : 5290
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка кнопки квартиры екб",
-        "uid" : "e8e524b68255ed1c",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Переход из проектов в Днв",
+        "uid" : "968401968b02cda5",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688622508112,
-          "stop" : 1688622514596,
-          "duration" : 6484
+          "start" : 1688702650312,
+          "stop" : 1688702657707,
+          "duration" : 7395
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка кнопки акции екб",
-        "uid" : "521bd6f297677506",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка квартир ЕКБ-2",
+        "uid" : "879a34f196d16556",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700320916,
+          "stop" : 1688700328816,
+          "duration" : 7900
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "Проверка кнопки коммерции спб",
+        "uid" : "1f80222d26b25664",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "broken",
         "time" : {
-          "start" : 1688622526741,
-          "stop" : 1688622632100,
-          "duration" : 105359
+          "start" : 1688700895236,
+          "stop" : 1688700897746,
+          "duration" : 2510
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка кнопки коммерции мск",
-        "uid" : "d46ad3c900a1cf0e",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "d045ab27364028f7",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688621766490,
-          "stop" : 1688621773313,
-          "duration" : 6823
+          "start" : 1688701677119,
+          "stop" : 1688701684958,
+          "duration" : 7839
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ ]
+        "parameters" : [ "'https://spb.strana.com'" ]
       }, {
-        "name" : "Проверка Авторский тмн",
-        "uid" : "f09c07dcedb2d1b9",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки коммерция тмн",
+        "uid" : "a37392e3a0fd2c38",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688625370663,
-          "stop" : 1688625378679,
-          "duration" : 8016
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка квартир СПБ-0",
-        "uid" : "ef219739182a663c",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621608985,
-          "stop" : 1688621616948,
-          "duration" : 7963
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "0" ]
-      }, {
-        "name" : "Проверка кнопки YT в меню",
-        "uid" : "22c69319390d6940",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624273539,
-          "stop" : 1688624279701,
-          "duration" : 6162
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "1ef0eb45fa8d8283",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624707104,
-          "stop" : 1688624714146,
-          "duration" : 7042
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки вакансии мо",
-        "uid" : "57a24628c4ef76c8",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688622236129,
-          "stop" : 1688622238309,
-          "duration" : 2180
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки вакансии тмн",
-        "uid" : "3964f5e8227e5092",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688623004852,
-          "stop" : 1688623010793,
-          "duration" : 5941
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка квартир ЕКБ-1",
-        "uid" : "a00fef0a261be90d",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688621442538,
-          "stop" : 1688621452094,
-          "duration" : 9556
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "1" ]
-      }, {
-        "name" : "Переход из проектов в Колумб",
-        "uid" : "388709dee7a384d9",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624875965,
-          "stop" : 1688624884631,
-          "duration" : 8666
+          "start" : 1688701427151,
+          "stop" : 1688701432322,
+          "duration" : 5171
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка кнопки ВК в меню",
-        "uid" : "b0eefc71cede40ba",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "6c82c53d33fa121",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688624049267,
-          "stop" : 1688624057172,
-          "duration" : 7905
+          "start" : 1688701730689,
+          "stop" : 1688701736774,
+          "duration" : 6085
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
+        "parameters" : [ "'https://mo.strana.com'" ]
       }, {
-        "name" : "Проверка кнопки акции екб",
-        "uid" : "2536dab1a1f15ce8",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
+        "name" : "Переход из проектов в Звездный",
+        "uid" : "13c2ccbcff1897b3",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
         "time" : {
-          "start" : 1688622633583,
-          "stop" : 1688622739263,
-          "duration" : 105680
+          "start" : 1688702676238,
+          "stop" : 1688702684326,
+          "duration" : 8088
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка авторизации в ЛК брокера через хедер",
-        "uid" : "2f58390127a7a75d",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка авторизации в ЛК клиента",
+        "uid" : "cb52172670d0b727",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688624341054,
-          "stop" : 1688624349475,
-          "duration" : 8421
+          "start" : 1688702392373,
+          "stop" : 1688702398756,
+          "duration" : 6383
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://msk.strana.com'" ]
+        "parameters" : [ "'https://spb.strana.com'" ]
       }, {
-        "name" : "Переход из проектов в Домашний",
-        "uid" : "9d7fb74dcf35f936",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка кнопки Квартиры в меню",
+        "uid" : "4ec253dae4e3e31f",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688624894873,
-          "stop" : 1688624903554,
-          "duration" : 8681
+          "start" : 1688701636496,
+          "stop" : 1688701642817,
+          "duration" : 6321
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      }, {
+        "name" : "Проверка квартир ТМН-0",
+        "uid" : "7c05010a1ceeaa51",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700231263,
+          "stop" : 1688700242651,
+          "duration" : 11388
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "Проверка WOW мск",
+        "uid" : "77202006f825ccdd",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688702734400,
+          "stop" : 1688702736649,
+          "duration" : 2249
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки акции спб",
+        "uid" : "10587df76ce5e7fd",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688700908480,
+          "stop" : 1688701014962,
+          "duration" : 106482
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
+        "uid" : "3db06b35a566b5fd",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701940495,
+          "stop" : 1688701947015,
+          "duration" : 6520
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "Переход из проектов в Авторский",
+        "uid" : "813d337146e9a7a0",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702694822,
+          "stop" : 1688702704738,
+          "duration" : 9916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка квартир ТМН-4",
+        "uid" : "bc5a35d9f4496df6",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700285356,
+          "stop" : 1688700294840,
+          "duration" : 9484
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "Проверка кнопки акции тмн",
+        "uid" : "fe3227ba494c5a33",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688701540570,
+          "stop" : 1688701542761,
+          "duration" : 2191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки проекты екб",
+        "uid" : "d87221191121a851",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701143829,
+          "stop" : 1688701148650,
+          "duration" : 4821
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка кнопки Квартиры в меню",
-        "uid" : "2229113af4f10e16",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "cbd3abd5cf6b3017",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688623497251,
-          "stop" : 1688623504596,
-          "duration" : 7345
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка кнопки коммерция екб",
-        "uid" : "7353891fdcf57be6",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1688622515417,
-          "stop" : 1688622518138,
-          "duration" : 2721
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка кнопки Telegram в меню",
-        "uid" : "3d8bd55cf92dbaf1",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624317653,
-          "stop" : 1688624323151,
-          "duration" : 5498
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://ekb.strana.com'" ]
-      }, {
-        "name" : "Проверка авторизации в ЛК брокера через хедер",
-        "uid" : "cf61ef924d1d013c",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688624592308,
-          "stop" : 1688624600268,
-          "duration" : 7960
+          "start" : 1688701655855,
+          "stop" : 1688701660681,
+          "duration" : 4826
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'https://nsk.strana.com'" ]
       }, {
-        "name" : "Проверка кнопки Telegram в меню",
-        "uid" : "708faaf151f77f56",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "failed",
+        "name" : "Проверка квартир МСК-2",
+        "uid" : "7bf4356b3e4d0ba5",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
         "time" : {
-          "start" : 1688624287563,
-          "stop" : 1688624292374,
-          "duration" : 4811
+          "start" : 1688700205199,
+          "stop" : 1688700212800,
+          "duration" : 7601
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "Проверка кнопки ВК в меню",
+        "uid" : "d1563c31ef3d122f",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701722378,
+          "stop" : 1688701729863,
+          "duration" : 7485
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
       }, {
         "name" : "Проверка кнопки акции мск",
-        "uid" : "c1cd4e146a39f18",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "669beafa30831c91",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "broken",
         "time" : {
-          "start" : 1688621774113,
-          "stop" : 1688621879725,
-          "duration" : 105612
+          "start" : 1688700402917,
+          "stop" : 1688700508411,
+          "duration" : 105494
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка кнопки акции мо",
-        "uid" : "84c6c6d86f970503",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "3a4cbcc16e8ba1b9",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "broken",
         "time" : {
-          "start" : 1688622015663,
-          "stop" : 1688622122467,
-          "duration" : 106804
+          "start" : 1688700648437,
+          "stop" : 1688700752400,
+          "duration" : 103963
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки проекты спб",
+        "uid" : "5733ecfcade17322",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700874836,
+          "stop" : 1688700880374,
+          "duration" : 5538
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка Озёрный мск",
+        "uid" : "af305eb60ae310ac",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702747122,
+          "stop" : 1688702753163,
+          "duration" : 6041
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
+        "uid" : "a451e0743bb1bcfe",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701947824,
+          "stop" : 1688701955399,
+          "duration" : 7575
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "92397cda5821f76b",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701881090,
+          "stop" : 1688701890052,
+          "duration" : 8962
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      }, {
+        "name" : "Проверка квартир СПБ-0",
+        "uid" : "1e3f64cc7335451e",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700346980,
+          "stop" : 1688700354470,
+          "duration" : 7490
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "Проверка кнопки Проекты в меню",
+        "uid" : "5d2245d69bd4cb1a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701602808,
+          "stop" : 1688701607406,
+          "duration" : 4598
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "25fa8e5b6120359",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701685831,
+          "stop" : 1688701691483,
+          "duration" : 5652
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки коммерции мск",
+        "uid" : "537b40c97162d6a8",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700394168,
+          "stop" : 1688700402119,
+          "duration" : 7951
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки коммерции спб",
+        "uid" : "b39284fc33de126c",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700900437,
+          "stop" : 1688700907641,
+          "duration" : 7204
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки о нас екб",
+        "uid" : "655db4ed2b258414",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701383501,
+          "stop" : 1688701390281,
+          "duration" : 6780
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки YT в меню",
+        "uid" : "f2d4ae2c5d33ed7a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701821751,
+          "stop" : 1688701826791,
+          "duration" : 5040
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки ВК в меню",
+        "uid" : "76413e1378071c15",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701745035,
+          "stop" : 1688701751368,
+          "duration" : 6333
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Квартиры в меню",
+        "uid" : "81191bd331953e8b",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701628393,
+          "stop" : 1688701635716,
+          "duration" : 7323
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки YT в меню",
+        "uid" : "2e8db0dc099a3e87",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701799380,
+          "stop" : 1688701806823,
+          "duration" : 7443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки о нас мск",
+        "uid" : "de5f59e8d3ec5e4c",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688700616415,
+          "stop" : 1688700618458,
+          "duration" : 2043
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки Квартиры в меню",
+        "uid" : "b42558e11dd45cdb",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701643584,
+          "stop" : 1688701648281,
+          "duration" : 4697
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "Проверка ДнВ спб",
+        "uid" : "ee9ff95e8b64867d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702753944,
+          "stop" : 1688702760608,
+          "duration" : 6664
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка квартир СПБ-1",
+        "uid" : "d9637c7e4d2f272b",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700355260,
+          "stop" : 1688700362432,
+          "duration" : 7172
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "Проверка кнопки способы покупки мск",
+        "uid" : "1d0087f2d5846cad",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700628142,
+          "stop" : 1688700631536,
+          "duration" : 3394
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки OK в меню",
+        "uid" : "8e1c983d60136bb8",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701758224,
+          "stop" : 1688701763307,
+          "duration" : 5083
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки квартиры екб",
+        "uid" : "abaeac96fe671dc0",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701149459,
+          "stop" : 1688701162418,
+          "duration" : 12959
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки коммерции мо",
+        "uid" : "21265ee8cb7a9bdf",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700643105,
+          "stop" : 1688700647694,
+          "duration" : 4589
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка Юнион тмн",
+        "uid" : "4cfd820657ad9c25",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702778214,
+          "stop" : 1688702787423,
+          "duration" : 9209
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Переход из проектов в Сибирский сад",
-        "uid" : "8fc9ecf6e8b59993",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "513e5c23ad0e254f",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688624833932,
-          "stop" : 1688624844246,
-          "duration" : 10314
+          "start" : 1688702666834,
+          "stop" : 1688702675469,
+          "duration" : 8635
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка кнопки коммерция тмн",
-        "uid" : "6a054cf9f7d520eb",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка квартир ЕКБ-4",
+        "uid" : "2afe5cfc285f9bee",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688622769431,
-          "stop" : 1688622775091,
-          "duration" : 5660
+          "start" : 1688700338331,
+          "stop" : 1688700346193,
+          "duration" : 7862
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
+        "uid" : "19eb8c3c3301af32",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701915553,
+          "stop" : 1688701923629,
+          "duration" : 8076
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "864fa7ebe99dd38d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701699666,
+          "stop" : 1688701705682,
+          "duration" : 6016
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "Проверка паркинга",
+        "uid" : "e145036399aa84e4",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700368112,
+          "stop" : 1688700374489,
+          "duration" : 6377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Переход из проектов в WOW",
+        "uid" : "384f836ddc19b7f4",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702633315,
+          "stop" : 1688702641108,
+          "duration" : 7793
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Переход из проектов в Озерный",
+        "uid" : "318c16a38b644244",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702641922,
+          "stop" : 1688702649520,
+          "duration" : 7598
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка квартир МСК-1",
+        "uid" : "de2299d65796950e",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700197596,
+          "stop" : 1688700204421,
+          "duration" : 6825
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК клиента",
+        "uid" : "d704fc9d8856bfe0",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688702177948,
+          "stop" : 1688702284872,
+          "duration" : 106924
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "ee0e96740a2c4949",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701669777,
+          "stop" : 1688701676334,
+          "duration" : 6557
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки акции мск",
+        "uid" : "c92855ee1d2ee52d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688700509943,
+          "stop" : 1688700615094,
+          "duration" : 105151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки вакансии мо",
+        "uid" : "dde30ebf9e584d62",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700868179,
+          "stop" : 1688700874091,
+          "duration" : 5912
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка Колумб тмн",
+        "uid" : "ea0b0f885053bac9",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702795327,
+          "stop" : 1688702803206,
+          "duration" : 7879
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка квартир ТМН-2",
+        "uid" : "e31b5dbed3290aee",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700254898,
+          "stop" : 1688700270023,
+          "duration" : 15125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "Проверка кнопки вакансии мск",
+        "uid" : "8d1160fd598b8629",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700637296,
+          "stop" : 1688700642328,
+          "duration" : 5032
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка квартир МСК-0",
+        "uid" : "62deb68f0a8a36fd",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700188845,
+          "stop" : 1688700196799,
+          "duration" : 7954
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК клиента",
+        "uid" : "e786a875a170816e",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702505743,
+          "stop" : 1688702512216,
+          "duration" : 6473
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "Проверка квартир ЕКБ-2",
+        "uid" : "b7a1e1c2474c2f68",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688700315736,
+          "stop" : 1688700318398,
+          "duration" : 2662
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
+        "uid" : "524ef095e82137f0",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701956218,
+          "stop" : 1688701962893,
+          "duration" : 6675
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки квартиры мск",
+        "uid" : "9e8629a580c9b7a4",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700388465,
+          "stop" : 1688700393362,
+          "duration" : 4897
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка Звездный тмн",
+        "uid" : "7be0e41bd9911ff0",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702769833,
+          "stop" : 1688702777425,
+          "duration" : 7592
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки OK в меню",
+        "uid" : "b21da6c19cbff6e8",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701752137,
+          "stop" : 1688701757429,
+          "duration" : 5292
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "Переход из проектов в Юнион",
+        "uid" : "b987c702ffb3068",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702685122,
+          "stop" : 1688702694026,
+          "duration" : 8904
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка квартир ЕКБ-3",
+        "uid" : "f3795798cfd8f86e",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700329629,
+          "stop" : 1688700337516,
+          "duration" : 7887
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "Проверка кнопки квартиры тмн",
+        "uid" : "3181f3141577b162",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701409070,
+          "stop" : 1688701426366,
+          "duration" : 17296
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки о нас тмн",
+        "uid" : "ea0d271b800cc00f",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701564455,
+          "stop" : 1688701570827,
+          "duration" : 6372
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки Telegram в меню",
+        "uid" : "c64496be0d1fb4ee",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701832892,
+          "stop" : 1688701838815,
+          "duration" : 5923
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Проекты в меню",
+        "uid" : "3ed437d0baa95dfd",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701589693,
+          "stop" : 1688701594756,
+          "duration" : 5063
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "86a1238ed0944cbe",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701898716,
+          "stop" : 1688701907099,
+          "duration" : 8383
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Проекты в меню",
+        "uid" : "d06a96ab3315b238",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701614847,
+          "stop" : 1688701620967,
+          "duration" : 6120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки о нас мск",
+        "uid" : "88f093eeb0fbdd61",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700621115,
+          "stop" : 1688700627373,
+          "duration" : 6258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка паркинга",
+        "uid" : "3a84db4e50ae04a9",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688700363200,
+          "stop" : 1688700365305,
+          "duration" : 2105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки YT в меню",
+        "uid" : "a4248fef8a87c7f6",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701793090,
+          "stop" : 1688701799088,
+          "duration" : 5998
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка квартир МСК-4",
+        "uid" : "9f05cb31d4a91374",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700223153,
+          "stop" : 1688700230483,
+          "duration" : 7330
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "Проверка кнопки методы покупки спб",
+        "uid" : "1134bdab8cb4cf35",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701131769,
+          "stop" : 1688701136951,
+          "duration" : 5182
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки ВК в меню",
+        "uid" : "970afd481572660f",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701714688,
+          "stop" : 1688701721552,
+          "duration" : 6864
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки OK в меню",
+        "uid" : "280c713ab36b8af4",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701770531,
+          "stop" : 1688701774691,
+          "duration" : 4160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки акции екб",
+        "uid" : "5e0611f153c52cd2",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688701276668,
+          "stop" : 1688701381957,
+          "duration" : 105289
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки акции мо",
+        "uid" : "c82b1415642adf52",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688700753566,
+          "stop" : 1688700858357,
+          "duration" : 104791
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки Проекты в меню",
+        "uid" : "9002dd9b660f8515",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701583228,
+          "stop" : 1688701588930,
+          "duration" : 5702
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "Проверка Сибирский сад ект",
+        "uid" : "b2e9788dc7666d7e",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702827079,
+          "stop" : 1688702836093,
+          "duration" : 9014
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки Квартиры в меню",
+        "uid" : "e08b9d9b759bc932",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701621741,
+          "stop" : 1688701627633,
+          "duration" : 5892
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "Проверка Авторский тмн",
+        "uid" : "5931c86ead005c7b",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702788236,
+          "stop" : 1688702794537,
+          "duration" : 6301
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки Telegram в меню",
+        "uid" : "66aa089d96249e2",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701839593,
+          "stop" : 1688701844375,
+          "duration" : 4782
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки акции екб",
+        "uid" : "3cf117e1213359a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688701169899,
+          "stop" : 1688701275181,
+          "duration" : 105282
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "d4ac37ba8220eaa3",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701890889,
+          "stop" : 1688701897869,
+          "duration" : 6980
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки акции спб",
+        "uid" : "6d1de483543a257c",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688701016342,
+          "stop" : 1688701122578,
+          "duration" : 106236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки о нас мо",
+        "uid" : "b73fa2917bffb39d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688700863701,
+          "stop" : 1688700865781,
+          "duration" : 2080
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки ВК в меню",
+        "uid" : "761724babb1094ea",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701706489,
+          "stop" : 1688701713900,
+          "duration" : 7411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК клиента",
+        "uid" : "d19652b4bec80795",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688702399528,
+          "stop" : 1688702504523,
+          "duration" : 104995
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК клиента",
+        "uid" : "d380a066ab4a442d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702620290,
+          "stop" : 1688702626139,
+          "duration" : 5849
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК клиента",
+        "uid" : "39099a117e9e7803",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688702070780,
+          "stop" : 1688702176850,
+          "duration" : 106070
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки о нас тмн",
+        "uid" : "fea012f8313cd93a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701545369,
+          "stop" : 1688701551713,
+          "duration" : 6344
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка квартир ТМН-3",
+        "uid" : "171f7c7695c26a6b",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700270798,
+          "stop" : 1688700284597,
+          "duration" : 13799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "Переход из проектов в Домашний",
+        "uid" : "259c5f5ff9d197a1",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702724317,
+          "stop" : 1688702733626,
+          "duration" : 9309
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка квартир МСК-3",
+        "uid" : "9718debcaa64a19d",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700213593,
+          "stop" : 1688700221323,
+          "duration" : 7730
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "Проверка кнопки Проекты в меню",
+        "uid" : "171e795dce42071a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701595541,
+          "stop" : 1688701602037,
+          "duration" : 6496
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      }, {
+        "name" : "Переход из проектов в Принцип",
+        "uid" : "be5835229e4df23f",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702658513,
+          "stop" : 1688702666021,
+          "duration" : 7508
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки ВК в меню",
+        "uid" : "3a445447c29bfde3",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701737567,
+          "stop" : 1688701744166,
+          "duration" : 6599
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Telegram в меню",
+        "uid" : "fbf76389ff8cdadd",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701854965,
+          "stop" : 1688701860178,
+          "duration" : 5213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "Проверка квартир ЕКБ-1",
+        "uid" : "8c052d2ed6b83463",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700305990,
+          "stop" : 1688700314960,
+          "duration" : 8970
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "Проверка Домашний тмн",
+        "uid" : "71dbf530dcf03fb2",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702818004,
+          "stop" : 1688702826261,
+          "duration" : 8257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
+        "uid" : "9f6900d0b7ed96dc",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701924448,
+          "stop" : 1688701931634,
+          "duration" : 7186
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка квартир ЕКБ-0",
+        "uid" : "dda4b7101bedf70f",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700295624,
+          "stop" : 1688700305196,
+          "duration" : 9572
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "4de527f33a009979",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701872453,
+          "stop" : 1688701880270,
+          "duration" : 7817
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Telegram в меню",
+        "uid" : "d95d7a9042dafc21",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701845147,
+          "stop" : 1688701849074,
+          "duration" : 3927
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Проекты в меню",
+        "uid" : "2225c53a5e49316c",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701608186,
+          "stop" : 1688701614085,
+          "duration" : 5899
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки YT в меню",
+        "uid" : "3e0c4e9b98c78d2a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701814495,
+          "stop" : 1688701820971,
+          "duration" : 6476
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки коммерция екб",
+        "uid" : "fa2881178d921520",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701163203,
+          "stop" : 1688701169078,
+          "duration" : 5875
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки акции тмн",
+        "uid" : "237099f232145a1a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688701433119,
+          "stop" : 1688701539093,
+          "duration" : 105974
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка кнопки вакансии мск",
-        "uid" : "d768b9637a533130",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
+        "uid" : "e2e9283aa28af5f5",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
         "time" : {
-          "start" : 1688622003477,
-          "stop" : 1688622008711,
-          "duration" : 5234
+          "start" : 1688700632324,
+          "stop" : 1688700634491,
+          "duration" : 2167
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Проверка квартир МСК-2",
-        "uid" : "cc9600fb3c000ad",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "name" : "Проверка авторизации в ЛК клиента",
+        "uid" : "ab5a459831598a66",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "broken",
         "time" : {
-          "start" : 1688621137301,
-          "stop" : 1688621140459,
-          "duration" : 3158
+          "start" : 1688702286036,
+          "stop" : 1688702391244,
+          "duration" : 105208
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "2" ]
+        "parameters" : [ "'https://msk.strana.com'" ]
       }, {
         "name" : "Проверка авторизации в ЛК брокера через хедер",
-        "uid" : "d97b32c8507219f0",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
+        "uid" : "d8eae62755e8b27f",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
         "status" : "passed",
         "time" : {
-          "start" : 1688624350282,
-          "stop" : 1688624359392,
-          "duration" : 9110
+          "start" : 1688701860943,
+          "stop" : 1688701871699,
+          "duration" : 10756
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "45c334527938b7aa",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701692276,
+          "stop" : 1688701698868,
+          "duration" : 6592
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки методы покупки тмн",
+        "uid" : "81ca618e0bc084a6",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701552456,
+          "stop" : 1688701557402,
+          "duration" : 4946
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки квартиры спб",
+        "uid" : "e08dc5b906e7e1d2",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688700882822,
+          "stop" : 1688700885562,
+          "duration" : 2740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки Telegram в меню",
+        "uid" : "f793a820304bc7e1",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701827592,
+          "stop" : 1688701832047,
+          "duration" : 4455
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки YT в меню",
+        "uid" : "e77b9e0e91334bcf",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701786194,
+          "stop" : 1688701792340,
+          "duration" : 6146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки Telegram в меню",
+        "uid" : "97a07f033e80808c",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701849831,
+          "stop" : 1688701854154,
+          "duration" : 4323
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки методы покупки екб",
+        "uid" : "f073c4ee6cce22f2",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701391089,
+          "stop" : 1688701396339,
+          "duration" : 5250
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "5e4bb98ea0adea9",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701907885,
+          "stop" : 1688701914741,
+          "duration" : 6856
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "Проверка кнопки вакансии тмн",
+        "uid" : "d69b60301251b52f",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "broken",
+        "time" : {
+          "start" : 1688701571602,
+          "stop" : 1688701574563,
+          "duration" : 2961
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка кнопки вакансии тмн",
+        "uid" : "a7a1649794ae2c98",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701403222,
+          "stop" : 1688701408301,
+          "duration" : 5079
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка квартир ТМН-1",
+        "uid" : "c1982a2d3e16ae62",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688700243426,
+          "stop" : 1688700254029,
+          "duration" : 10603
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК клиента",
+        "uid" : "c7a39b0ad7797e4a",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688702626952,
+          "stop" : 1688702632501,
+          "duration" : 5549
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      }, {
+        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
+        "uid" : "a7affe21936ab816",
+        "parentUid" : "3325fc85bad864d84acf3cdeff32f831",
+        "status" : "passed",
+        "time" : {
+          "start" : 1688701932414,
+          "stop" : 1688701939701,
+          "duration" : 7287
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'https://spb.strana.com'" ]
-      }, {
-        "name" : "Проверка ДнВ спб",
-        "uid" : "5ad2708f8f7ca387",
-        "parentUid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1688625132263,
-          "stop" : 1688625138634,
-          "duration" : 6371
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
       } ],
-      "uid" : "d7fe68b1f0b2d4b65f70c5985a61ee7f"
+      "uid" : "3325fc85bad864d84acf3cdeff32f831"
     } ],
     "uid" : "d94305a8e7a5c81fe8d1f7d857edfdef"
   } ]
