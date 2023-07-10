@@ -3,10 +3,13 @@ from base.base_class import Base
 from pages.url import URLS_MAIN
 import allure
 import pytest
+import testit
 
 
 
 #MSK
+@testit.displayName('Проверка кнопки проекты мск')
+@testit.description('Проверка кнопки проекты мск')
 @allure.title("Проверка кнопки проекты мск")
 def test_msk_header_projects(driver):
     head = Header(driver)
