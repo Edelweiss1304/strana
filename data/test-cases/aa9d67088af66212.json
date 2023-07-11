@@ -1,0 +1,174 @@
+{
+  "uid" : "aa9d67088af66212",
+  "name" : "Проверка квартир ЕКБ-4",
+  "fullName" : "tests.test_apart_from_header#test_ekb_apart",
+  "historyId" : "8921b9822c1b8133417c284003ff85d1",
+  "time" : {
+    "start" : 1689045564853,
+    "stop" : 1689045572456,
+    "duration" : 7603
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1689045564109,
+      "stop" : 1689045564852,
+      "duration" : 743
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1689045418171,
+      "stop" : 1689045418171,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1689045418171,
+      "stop" : 1689045418171,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1689045564109,
+      "stop" : 1689045564109,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1689045418171,
+      "stop" : 1689045418171,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "14f5b34d9912956",
+      "name" : "stdout",
+      "source" : "14f5b34d9912956.txt",
+      "type" : "text/plain",
+      "size" : 131
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1689045572457,
+      "stop" : 1689045572520,
+      "duration" : 63
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_apart_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2451808-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_apart_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "index",
+    "value" : "4"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1f3780cfc9dfad72",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"s-link__wrapper\" data-v-cf493dac=\"\"></div> is not clickable at point (205, 322). Other element would receive the click: <li data-v-c17f5ba6=\"\" class=\"header-apartments-popup__immovable-type\">...</li>\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x555e5a4c94e3 <unknown>\n#1 0x555e5a1f8c76 <unknown>\n#2 0x555e5a23a9d4 <unknown>\n#3 0x555e5a238cbd <unknown>\n#4 0x555e5a236d2e <unknown>\n#5 0x555e5a23610f <unknown>\n#6 0x555e5a22b1da <unknown>\n#7 0x555e5a254012 <unknown>\n#8 0x555e5a22ab03 <unknown>\n#9 0x555e5a2541de <unknown>\n#10 0x555e5a26c30e <unknown>\n#11 0x555e5a253de3 <unknown>\n#12 0x555e5a2292dd <unknown>\n#13 0x555e5a22a34e <unknown>\n#14 0x555e5a4893e4 <unknown>\n#15 0x555e5a48d3d7 <unknown>\n#16 0x555e5a497b20 <unknown>\n#17 0x555e5a48e023 <unknown>\n#18 0x555e5a45c1aa <unknown>\n#19 0x555e5a4b26b8 <unknown>\n#20 0x555e5a4b2847 <unknown>\n#21 0x555e5a4c2243 <unknown>\n#22 0x7f2b737b4609 start_thread",
+      "time" : {
+        "start" : 1689045558453,
+        "stop" : 1689045563053,
+        "duration" : 4600
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "aa9d67088af66212.json",
+  "parameterValues" : [ "4" ]
+}
