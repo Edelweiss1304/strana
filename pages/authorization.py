@@ -15,7 +15,7 @@ class Authorization(Base):
     fin_login_btn = "//span[contains(text(),'Войти')]"
     check_lk = "//h1[contains(text(),'Брони и договоры')]"
 
-    first_login_broker_button = "//a[@class='v-btn v-btn--color-redline v-btn--has-bg v-btn--rounded v-btn--router v-btn--has-hover theme--light v-size--small button_EEpFj']"
+    first_login_broker_button = "/html[1]/body[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[2]/a[2]"
     email_field_agent = "email"
     password_field_agent = "//label[text()='Пароль']/following-sibling::input"
     login_broker_btn = "//button[@type='submit']"
