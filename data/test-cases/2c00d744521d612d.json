@@ -1,0 +1,174 @@
+{
+  "uid" : "2c00d744521d612d",
+  "name" : "Проверка авторизации в ЛК брокера через хедер",
+  "fullName" : "tests.test_login_broker#test_authorization_agent_from_header",
+  "historyId" : "e78d228f5daedd55164cfb57d9b3b9ae",
+  "time" : {
+    "start" : 1689306982544,
+    "stop" : 1689306991537,
+    "duration" : 8993
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1689306981817,
+      "stop" : 1689306982543,
+      "duration" : 726
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1689304991928,
+      "stop" : 1689304991928,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1689306981817,
+      "stop" : 1689306981817,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1689304991928,
+      "stop" : 1689304991928,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1689304991928,
+      "stop" : 1689304991928,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b5f5f1a86c7b2e89",
+      "name" : "stdout",
+      "source" : "b5f5f1a86c7b2e89.txt",
+      "type" : "text/plain",
+      "size" : 229
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1689306991538,
+      "stop" : 1689306991627,
+      "duration" : 89
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_broker"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2619244-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_login_broker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "url",
+    "value" : "'https://spb.strana.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "63b8ef7852b77bd1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55bad1b814e3 <unknown>\n#1 0x55bad18b0c76 <unknown>\n#2 0x55bad18ecc96 <unknown>\n#3 0x55bad18ecdc1 <unknown>\n#4 0x55bad19267f4 <unknown>\n#5 0x55bad190c03d <unknown>\n#6 0x55bad192430e <unknown>\n#7 0x55bad190bde3 <unknown>\n#8 0x55bad18e12dd <unknown>\n#9 0x55bad18e234e <unknown>\n#10 0x55bad1b413e4 <unknown>\n#11 0x55bad1b453d7 <unknown>\n#12 0x55bad1b4fb20 <unknown>\n#13 0x55bad1b46023 <unknown>\n#14 0x55bad1b141aa <unknown>\n#15 0x55bad1b6a6b8 <unknown>\n#16 0x55bad1b6a847 <unknown>\n#17 0x55bad1b7a243 <unknown>\n#18 0x7f28e9785609 start_thread",
+      "time" : {
+        "start" : 1689306874638,
+        "stop" : 1689306981210,
+        "duration" : 106572
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "2c00d744521d612d.json",
+  "parameterValues" : [ "'https://spb.strana.com'" ]
+}
