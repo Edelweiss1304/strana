@@ -1,0 +1,167 @@
+{
+  "uid" : "6421286c90e38431",
+  "name" : "Проверка кнопки Telegram в меню",
+  "fullName" : "tests.test_header_menu#test_tg_from_header_menu",
+  "historyId" : "7892d44f2852b53d955c132ff5b1e351",
+  "time" : {
+    "start" : 1689479890168,
+    "stop" : 1689479893522,
+    "duration" : 3354
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'https://nsk.strana.com/' == 'https://t.me...nadevelopment'\n  - https://t.me/stranadevelopment\n  + https://nsk.strana.com/",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"2110864733ce03a9b098f5754ff58cb7\")>\nurl = 'https://nsk.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки Telegram в меню\")\n    def test_tg_from_header_menu(driver, url):\n        head = Header(driver)\n        Base.open_page(driver, url)\n        time.sleep(2)\n        head.actions.move_to_element(head.get_menu_button()).perform()\n    \n        if url == 'https://mo.strana.com':\n            locator = Base.get_s_link_wrapper_locator(13)\n    \n        elif url == 'https://nsk.strana.com':\n            locator = Base.get_s_link_wrapper_locator(10)\n    \n        else:\n            locator = Base.get_s_link_wrapper_locator(15)\n    \n        driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n        next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)\n        driver.switch_to.window(driver.window_handles[next_tab_index])\n>       assert driver.current_url == \"https://t.me/stranadevelopment\"\nE       AssertionError: assert 'https://nsk.strana.com/' == 'https://t.me...nadevelopment'\nE         - https://t.me/stranadevelopment\nE         + https://nsk.strana.com/\n\ntests/test_header_menu.py:168: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1689478156614,
+      "stop" : 1689478156614,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1689479889401,
+      "stop" : 1689479889401,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1689478156614,
+      "stop" : 1689478156614,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1689479889401,
+      "stop" : 1689479890168,
+      "duration" : 767
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1689478156614,
+      "stop" : 1689478156614,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'https://nsk.strana.com/' == 'https://t.me...nadevelopment'\n  - https://t.me/stranadevelopment\n  + https://nsk.strana.com/",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"2110864733ce03a9b098f5754ff58cb7\")>\nurl = 'https://nsk.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки Telegram в меню\")\n    def test_tg_from_header_menu(driver, url):\n        head = Header(driver)\n        Base.open_page(driver, url)\n        time.sleep(2)\n        head.actions.move_to_element(head.get_menu_button()).perform()\n    \n        if url == 'https://mo.strana.com':\n            locator = Base.get_s_link_wrapper_locator(13)\n    \n        elif url == 'https://nsk.strana.com':\n            locator = Base.get_s_link_wrapper_locator(10)\n    \n        else:\n            locator = Base.get_s_link_wrapper_locator(15)\n    \n        driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n        next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)\n        driver.switch_to.window(driver.window_handles[next_tab_index])\n>       assert driver.current_url == \"https://t.me/stranadevelopment\"\nE       AssertionError: assert 'https://nsk.strana.com/' == 'https://t.me...nadevelopment'\nE         - https://t.me/stranadevelopment\nE         + https://nsk.strana.com/\n\ntests/test_header_menu.py:168: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d6180a70a1739ae0",
+      "name" : "screenshot_tests_test_header_menu.py::test_tg_from_header_menu[https:__nsk.strana.com].png",
+      "source" : "d6180a70a1739ae0.png",
+      "type" : "image/png",
+      "size" : 42251
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1689479894494,
+      "stop" : 1689479894550,
+      "duration" : 56
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_menu"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2727900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "url",
+    "value" : "'https://nsk.strana.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "6421286c90e38431.json",
+  "parameterValues" : [ "'https://nsk.strana.com'" ]
+}
