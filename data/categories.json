@@ -4,158 +4,141 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x5599be6df4e3 <unknown>\n#1 0x5599be40ec76 <unknown>\n#2 0x5599be41353c <unknown>\n#3 0x5599be41497e <unknown>\n#4 0x5599be414a4c <unknown>\n#5 0x5599be44c3c2 <unknown>\n#6 0x5599be441021 <unknown>\n#7 0x5599be46a012 <unknown>\n#8 0x5599be440b03 <unknown>\n#9 0x5599be46a1de <unknown>\n#10 0x5599be48230e <unknown>\n#11 0x5599be469de3 <unknown>\n#12 0x5599be43f2dd <unknown>\n#13 0x5599be44034e <unknown>\n#14 0x5599be69f3e4 <unknown>\n#15 0x5599be6a33d7 <unknown>\n#16 0x5599be6adb20 <unknown>\n#17 0x5599be6a4023 <unknown>\n#18 0x5599be6721aa <unknown>\n#19 0x5599be6c86b8 <unknown>\n#20 0x5599be6c8847 <unknown>\n#21 0x5599be6d8243 <unknown>\n#22 0x7f8d95330609 start_thread",
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x559ecee2f4e3 <unknown>\n#1 0x559eceb5ec76 <unknown>\n#2 0x559eceb6353c <unknown>\n#3 0x559eceb6497e <unknown>\n#4 0x559eceb64a4c <unknown>\n#5 0x559eceb9c6b5 <unknown>\n#6 0x559eceb9bde5 <unknown>\n#7 0x559eceb911da <unknown>\n#8 0x559ecebba012 <unknown>\n#9 0x559eceb90b03 <unknown>\n#10 0x559ecebba1de <unknown>\n#11 0x559ecebd230e <unknown>\n#12 0x559ecebb9de3 <unknown>\n#13 0x559eceb8f2dd <unknown>\n#14 0x559eceb9034e <unknown>\n#15 0x559ecedef3e4 <unknown>\n#16 0x559ecedf33d7 <unknown>\n#17 0x559ecedfdb20 <unknown>\n#18 0x559ecedf4023 <unknown>\n#19 0x559ecedc21aa <unknown>\n#20 0x559ecee186b8 <unknown>\n#21 0x559ecee18847 <unknown>\n#22 0x559ecee28243 <unknown>\n#23 0x7fed5313e609 start_thread",
       "children" : [ {
         "name" : "Проверка кнопки акции мск",
-        "uid" : "4b32403575980fc2",
-        "parentUid" : "cc33ef79956a3516ac19172a2279b2f5",
+        "uid" : "f26efe33c74310f7",
+        "parentUid" : "945c665333f517971799f4724cce1ae5",
         "status" : "broken",
         "time" : {
-          "start" : 1689478566385,
-          "stop" : 1689478569041,
-          "duration" : 2656
+          "start" : 1689564686619,
+          "stop" : 1689564689442,
+          "duration" : 2823
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "cc33ef79956a3516ac19172a2279b2f5"
+      "uid" : "945c665333f517971799f4724cce1ae5"
     }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55c9c100f4e3 <unknown>\n#1 0x55c9c0d3ec76 <unknown>\n#2 0x55c9c0d7ac96 <unknown>\n#3 0x55c9c0d7adc1 <unknown>\n#4 0x55c9c0db47f4 <unknown>\n#5 0x55c9c0d9a03d <unknown>\n#6 0x55c9c0db230e <unknown>\n#7 0x55c9c0d99de3 <unknown>\n#8 0x55c9c0d6f2dd <unknown>\n#9 0x55c9c0d7034e <unknown>\n#10 0x55c9c0fcf3e4 <unknown>\n#11 0x55c9c0fd33d7 <unknown>\n#12 0x55c9c0fddb20 <unknown>\n#13 0x55c9c0fd4023 <unknown>\n#14 0x55c9c0fa21aa <unknown>\n#15 0x55c9c0ff86b8 <unknown>\n#16 0x55c9c0ff8847 <unknown>\n#17 0x55c9c1008243 <unknown>\n#18 0x7fdd985e4609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55ada423a4e3 <unknown>\n#1 0x55ada3f69c76 <unknown>\n#2 0x55ada3fa5c96 <unknown>\n#3 0x55ada3fa5dc1 <unknown>\n#4 0x55ada3fdf7f4 <unknown>\n#5 0x55ada3fc503d <unknown>\n#6 0x55ada3fdd30e <unknown>\n#7 0x55ada3fc4de3 <unknown>\n#8 0x55ada3f9a2dd <unknown>\n#9 0x55ada3f9b34e <unknown>\n#10 0x55ada41fa3e4 <unknown>\n#11 0x55ada41fe3d7 <unknown>\n#12 0x55ada4208b20 <unknown>\n#13 0x55ada41ff023 <unknown>\n#14 0x55ada41cd1aa <unknown>\n#15 0x55ada42236b8 <unknown>\n#16 0x55ada4223847 <unknown>\n#17 0x55ada4233243 <unknown>\n#18 0x7f2ae9a12609 start_thread",
       "children" : [ {
         "name" : "Проверка кнопки акции мо",
-        "uid" : "273339e92417343d",
-        "parentUid" : "749bbbaf597ac17b788c45d463a66816",
+        "uid" : "51d1e82b5a8b3e3d",
+        "parentUid" : "43b5151171d5d342a4b990923b9001f3",
         "status" : "broken",
         "time" : {
-          "start" : 1689478700971,
-          "stop" : 1689478805536,
-          "duration" : 104565
+          "start" : 1689564825727,
+          "stop" : 1689564930474,
+          "duration" : 104747
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "749bbbaf597ac17b788c45d463a66816"
+      "uid" : "43b5151171d5d342a4b990923b9001f3"
     }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55d6914f54e3 <unknown>\n#1 0x55d691224c76 <unknown>\n#2 0x55d691260c96 <unknown>\n#3 0x55d691260dc1 <unknown>\n#4 0x55d69129a7f4 <unknown>\n#5 0x55d69128003d <unknown>\n#6 0x55d69129830e <unknown>\n#7 0x55d69127fde3 <unknown>\n#8 0x55d6912552dd <unknown>\n#9 0x55d69125634e <unknown>\n#10 0x55d6914b53e4 <unknown>\n#11 0x55d6914b93d7 <unknown>\n#12 0x55d6914c3b20 <unknown>\n#13 0x55d6914ba023 <unknown>\n#14 0x55d6914881aa <unknown>\n#15 0x55d6914de6b8 <unknown>\n#16 0x55d6914de847 <unknown>\n#17 0x55d6914ee243 <unknown>\n#18 0x7f2b84653609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x563151ddd4e3 <unknown>\n#1 0x563151b0cc76 <unknown>\n#2 0x563151b48c96 <unknown>\n#3 0x563151b48dc1 <unknown>\n#4 0x563151b827f4 <unknown>\n#5 0x563151b6803d <unknown>\n#6 0x563151b8030e <unknown>\n#7 0x563151b67de3 <unknown>\n#8 0x563151b3d2dd <unknown>\n#9 0x563151b3e34e <unknown>\n#10 0x563151d9d3e4 <unknown>\n#11 0x563151da13d7 <unknown>\n#12 0x563151dabb20 <unknown>\n#13 0x563151da2023 <unknown>\n#14 0x563151d701aa <unknown>\n#15 0x563151dc66b8 <unknown>\n#16 0x563151dc6847 <unknown>\n#17 0x563151dd6243 <unknown>\n#18 0x7f3e60b48609 start_thread",
       "children" : [ {
         "name" : "Проверка кнопки акции спб",
-        "uid" : "3bc3aed4c6a8d602",
-        "parentUid" : "82a0e6a80fa5788589300d6d4c32d73a",
+        "uid" : "745e07a5fa90ad4a",
+        "parentUid" : "271422fb8feea9a6256454ae3c90a0ea",
         "status" : "broken",
         "time" : {
-          "start" : 1689478945733,
-          "stop" : 1689479051405,
-          "duration" : 105672
+          "start" : 1689565074961,
+          "stop" : 1689565180709,
+          "duration" : 105748
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "82a0e6a80fa5788589300d6d4c32d73a"
+      "uid" : "271422fb8feea9a6256454ae3c90a0ea"
     }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x559a0502c4e3 <unknown>\n#1 0x559a04d5bc76 <unknown>\n#2 0x559a04d97c96 <unknown>\n#3 0x559a04d97dc1 <unknown>\n#4 0x559a04dd17f4 <unknown>\n#5 0x559a04db703d <unknown>\n#6 0x559a04dcf30e <unknown>\n#7 0x559a04db6de3 <unknown>\n#8 0x559a04d8c2dd <unknown>\n#9 0x559a04d8d34e <unknown>\n#10 0x559a04fec3e4 <unknown>\n#11 0x559a04ff03d7 <unknown>\n#12 0x559a04ffab20 <unknown>\n#13 0x559a04ff1023 <unknown>\n#14 0x559a04fbf1aa <unknown>\n#15 0x559a050156b8 <unknown>\n#16 0x559a05015847 <unknown>\n#17 0x559a05025243 <unknown>\n#18 0x7f51a6aef609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55e1e709c4e3 <unknown>\n#1 0x55e1e6dcbc76 <unknown>\n#2 0x55e1e6e07c96 <unknown>\n#3 0x55e1e6e07dc1 <unknown>\n#4 0x55e1e6e417f4 <unknown>\n#5 0x55e1e6e2703d <unknown>\n#6 0x55e1e6e3f30e <unknown>\n#7 0x55e1e6e26de3 <unknown>\n#8 0x55e1e6dfc2dd <unknown>\n#9 0x55e1e6dfd34e <unknown>\n#10 0x55e1e705c3e4 <unknown>\n#11 0x55e1e70603d7 <unknown>\n#12 0x55e1e706ab20 <unknown>\n#13 0x55e1e7061023 <unknown>\n#14 0x55e1e702f1aa <unknown>\n#15 0x55e1e70856b8 <unknown>\n#16 0x55e1e7085847 <unknown>\n#17 0x55e1e7095243 <unknown>\n#18 0x7fae76be6609 start_thread",
       "children" : [ {
         "name" : "Проверка кнопки акции екб",
-        "uid" : "fa9963549b33f770",
-        "parentUid" : "12a1306b59ac759002a4759f8d56d323",
+        "uid" : "34aac2d1b339b49c",
+        "parentUid" : "b614849e8907756feff7992ad0e9e0d9",
         "status" : "broken",
         "time" : {
-          "start" : 1689479200503,
-          "stop" : 1689479306060,
-          "duration" : 105557
+          "start" : 1689565329937,
+          "stop" : 1689565435896,
+          "duration" : 105959
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "12a1306b59ac759002a4759f8d56d323"
+      "uid" : "b614849e8907756feff7992ad0e9e0d9"
     }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5628daeaa4e3 <unknown>\n#1 0x5628dabd9c76 <unknown>\n#2 0x5628dac15c96 <unknown>\n#3 0x5628dac15dc1 <unknown>\n#4 0x5628dac4f7f4 <unknown>\n#5 0x5628dac3503d <unknown>\n#6 0x5628dac4d30e <unknown>\n#7 0x5628dac34de3 <unknown>\n#8 0x5628dac0a2dd <unknown>\n#9 0x5628dac0b34e <unknown>\n#10 0x5628dae6a3e4 <unknown>\n#11 0x5628dae6e3d7 <unknown>\n#12 0x5628dae78b20 <unknown>\n#13 0x5628dae6f023 <unknown>\n#14 0x5628dae3d1aa <unknown>\n#15 0x5628dae936b8 <unknown>\n#16 0x5628dae93847 <unknown>\n#17 0x5628daea3243 <unknown>\n#18 0x7f616efb7609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x559e032b14e3 <unknown>\n#1 0x559e02fe0c76 <unknown>\n#2 0x559e0301cc96 <unknown>\n#3 0x559e0301cdc1 <unknown>\n#4 0x559e030567f4 <unknown>\n#5 0x559e0303c03d <unknown>\n#6 0x559e0305430e <unknown>\n#7 0x559e0303bde3 <unknown>\n#8 0x559e030112dd <unknown>\n#9 0x559e0301234e <unknown>\n#10 0x559e032713e4 <unknown>\n#11 0x559e032753d7 <unknown>\n#12 0x559e0327fb20 <unknown>\n#13 0x559e03276023 <unknown>\n#14 0x559e032441aa <unknown>\n#15 0x559e0329a6b8 <unknown>\n#16 0x559e0329a847 <unknown>\n#17 0x559e032aa243 <unknown>\n#18 0x7f9152a91609 start_thread",
       "children" : [ {
         "name" : "Проверка кнопки акции тмн",
-        "uid" : "98257cae0817d0cb",
-        "parentUid" : "f49fea65705a1e4f40caafcb69d6e7c9",
+        "uid" : "81665e8bed03d95e",
+        "parentUid" : "f5bb39e3afd2099b6a9dadda9eaf4b84",
         "status" : "broken",
         "time" : {
-          "start" : 1689479357666,
-          "stop" : 1689479462949,
-          "duration" : 105283
+          "start" : 1689565581854,
+          "stop" : 1689565687350,
+          "duration" : 105496
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "f49fea65705a1e4f40caafcb69d6e7c9"
+      "uid" : "f5bb39e3afd2099b6a9dadda9eaf4b84"
     }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x56244edb14e3 <unknown>\n#1 0x56244eae0c76 <unknown>\n#2 0x56244eb1cc96 <unknown>\n#3 0x56244eb1cdc1 <unknown>\n#4 0x56244eb567f4 <unknown>\n#5 0x56244eb3c03d <unknown>\n#6 0x56244eb5430e <unknown>\n#7 0x56244eb3bde3 <unknown>\n#8 0x56244eb112dd <unknown>\n#9 0x56244eb1234e <unknown>\n#10 0x56244ed713e4 <unknown>\n#11 0x56244ed753d7 <unknown>\n#12 0x56244ed7fb20 <unknown>\n#13 0x56244ed76023 <unknown>\n#14 0x56244ed441aa <unknown>\n#15 0x56244ed9a6b8 <unknown>\n#16 0x56244ed9a847 <unknown>\n#17 0x56244edaa243 <unknown>\n#18 0x7fa09fff9609 start_thread",
-      "children" : [ {
-        "name" : "Проверка кнопки вакансии тмн",
-        "uid" : "f21447c769210659",
-        "parentUid" : "ef56d2abdda4fa30046e5ad1d7990528",
-        "status" : "broken",
-        "time" : {
-          "start" : 1689479494607,
-          "stop" : 1689479597139,
-          "duration" : 102532
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "ef56d2abdda4fa30046e5ad1d7990528"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x558b348a34e3 <unknown>\n#1 0x558b345d2c76 <unknown>\n#2 0x558b3460ec96 <unknown>\n#3 0x558b3460edc1 <unknown>\n#4 0x558b346487f4 <unknown>\n#5 0x558b3462e03d <unknown>\n#6 0x558b3464630e <unknown>\n#7 0x558b3462dde3 <unknown>\n#8 0x558b346032dd <unknown>\n#9 0x558b3460434e <unknown>\n#10 0x558b348633e4 <unknown>\n#11 0x558b348673d7 <unknown>\n#12 0x558b34871b20 <unknown>\n#13 0x558b34868023 <unknown>\n#14 0x558b348361aa <unknown>\n#15 0x558b3488c6b8 <unknown>\n#16 0x558b3488c847 <unknown>\n#17 0x558b3489c243 <unknown>\n#18 0x7f5ce82de609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5626ccb5b4e3 <unknown>\n#1 0x5626cc88ac76 <unknown>\n#2 0x5626cc8c6c96 <unknown>\n#3 0x5626cc8c6dc1 <unknown>\n#4 0x5626cc9007f4 <unknown>\n#5 0x5626cc8e603d <unknown>\n#6 0x5626cc8fe30e <unknown>\n#7 0x5626cc8e5de3 <unknown>\n#8 0x5626cc8bb2dd <unknown>\n#9 0x5626cc8bc34e <unknown>\n#10 0x5626ccb1b3e4 <unknown>\n#11 0x5626ccb1f3d7 <unknown>\n#12 0x5626ccb29b20 <unknown>\n#13 0x5626ccb20023 <unknown>\n#14 0x5626ccaee1aa <unknown>\n#15 0x5626ccb446b8 <unknown>\n#16 0x5626ccb44847 <unknown>\n#17 0x5626ccb54243 <unknown>\n#18 0x7f44c5bc9609 start_thread",
       "children" : [ {
         "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "222e8fd0b4b5f64e",
-        "parentUid" : "e0639d64551b41215f647909a5e16556",
+        "uid" : "757888ce2d477e7d",
+        "parentUid" : "9eea7e6af8d34b3671eda1ec6812c33f",
         "status" : "broken",
         "time" : {
-          "start" : 1689480059851,
-          "stop" : 1689480165807,
-          "duration" : 105956
+          "start" : 1689566274418,
+          "stop" : 1689566380204,
+          "duration" : 105786
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'https://tmn.strana.com'" ]
       } ],
-      "uid" : "e0639d64551b41215f647909a5e16556"
+      "uid" : "9eea7e6af8d34b3671eda1ec6812c33f"
     }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55a5efa5f4e3 <unknown>\n#1 0x55a5ef78ec76 <unknown>\n#2 0x55a5ef7cac96 <unknown>\n#3 0x55a5ef7cadc1 <unknown>\n#4 0x55a5ef8047f4 <unknown>\n#5 0x55a5ef7ea03d <unknown>\n#6 0x55a5ef80230e <unknown>\n#7 0x55a5ef7e9de3 <unknown>\n#8 0x55a5ef7bf2dd <unknown>\n#9 0x55a5ef7c034e <unknown>\n#10 0x55a5efa1f3e4 <unknown>\n#11 0x55a5efa233d7 <unknown>\n#12 0x55a5efa2db20 <unknown>\n#13 0x55a5efa24023 <unknown>\n#14 0x55a5ef9f21aa <unknown>\n#15 0x55a5efa486b8 <unknown>\n#16 0x55a5efa48847 <unknown>\n#17 0x55a5efa58243 <unknown>\n#18 0x7efc253d3609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x564f14f074e3 <unknown>\n#1 0x564f14c36c76 <unknown>\n#2 0x564f14c72c96 <unknown>\n#3 0x564f14c72dc1 <unknown>\n#4 0x564f14cac7f4 <unknown>\n#5 0x564f14c9203d <unknown>\n#6 0x564f14caa30e <unknown>\n#7 0x564f14c91de3 <unknown>\n#8 0x564f14c672dd <unknown>\n#9 0x564f14c6834e <unknown>\n#10 0x564f14ec73e4 <unknown>\n#11 0x564f14ecb3d7 <unknown>\n#12 0x564f14ed5b20 <unknown>\n#13 0x564f14ecc023 <unknown>\n#14 0x564f14e9a1aa <unknown>\n#15 0x564f14ef06b8 <unknown>\n#16 0x564f14ef0847 <unknown>\n#17 0x564f14f00243 <unknown>\n#18 0x7f4c41787609 start_thread",
       "children" : [ {
         "name" : "Переход из проектов в Принцип",
-        "uid" : "1b574ec180381757",
-        "parentUid" : "350004850e875b2366144ad8482e5723",
+        "uid" : "86dfa5e57573c56e",
+        "parentUid" : "a18763ad038785e13608f98ab44d18f7",
         "status" : "broken",
         "time" : {
-          "start" : 1689480377990,
-          "stop" : 1689480485394,
-          "duration" : 107404
+          "start" : 1689566594906,
+          "stop" : 1689566701438,
+          "duration" : 106532
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "350004850e875b2366144ad8482e5723"
+      "uid" : "a18763ad038785e13608f98ab44d18f7"
     }, {
-      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"s-link__wrapper\" data-v-cf493dac=\"\"></div> is not clickable at point (205, 322). Other element would receive the click: <ul data-v-359c62e3=\"\" class=\"header-projects-popup__projects popup-layout__block\">...</ul>\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x5642dc3ac4e3 <unknown>\n#1 0x5642dc0dbc76 <unknown>\n#2 0x5642dc11d9d4 <unknown>\n#3 0x5642dc11bcbd <unknown>\n#4 0x5642dc119d2e <unknown>\n#5 0x5642dc11910f <unknown>\n#6 0x5642dc10e1da <unknown>\n#7 0x5642dc137012 <unknown>\n#8 0x5642dc10db03 <unknown>\n#9 0x5642dc1371de <unknown>\n#10 0x5642dc14f30e <unknown>\n#11 0x5642dc136de3 <unknown>\n#12 0x5642dc10c2dd <unknown>\n#13 0x5642dc10d34e <unknown>\n#14 0x5642dc36c3e4 <unknown>\n#15 0x5642dc3703d7 <unknown>\n#16 0x5642dc37ab20 <unknown>\n#17 0x5642dc371023 <unknown>\n#18 0x5642dc33f1aa <unknown>\n#19 0x5642dc3956b8 <unknown>\n#20 0x5642dc395847 <unknown>\n#21 0x5642dc3a5243 <unknown>\n#22 0x7fa9123d8609 start_thread",
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55ac213384e3 <unknown>\n#1 0x55ac21067c76 <unknown>\n#2 0x55ac2106c53c <unknown>\n#3 0x55ac2106d97e <unknown>\n#4 0x55ac2106da4c <unknown>\n#5 0x55ac210a8f96 <unknown>\n#6 0x55ac210a8607 <unknown>\n#7 0x55ac210e3a1f <unknown>\n#8 0x55ac210c3012 <unknown>\n#9 0x55ac210db30e <unknown>\n#10 0x55ac210c2de3 <unknown>\n#11 0x55ac210982dd <unknown>\n#12 0x55ac2109934e <unknown>\n#13 0x55ac212f83e4 <unknown>\n#14 0x55ac212fc3d7 <unknown>\n#15 0x55ac21306b20 <unknown>\n#16 0x55ac212fd023 <unknown>\n#17 0x55ac212cb1aa <unknown>\n#18 0x55ac213216b8 <unknown>\n#19 0x55ac21321847 <unknown>\n#20 0x55ac21331243 <unknown>\n#21 0x7f2b65e73609 start_thread",
       "children" : [ {
         "name" : "Проверка Принцип спб",
-        "uid" : "1eadde14bf54c191",
-        "parentUid" : "77322396835e1af731f35a56f0c08c72",
+        "uid" : "ec632c8ed6bbee93",
+        "parentUid" : "149b488a1b93f8d160d9b7a9baeb4ba1",
         "status" : "broken",
         "time" : {
-          "start" : 1689480582517,
-          "stop" : 1689480588340,
-          "duration" : 5823
+          "start" : 1689566797221,
+          "stop" : 1689566799678,
+          "duration" : 2457
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "77322396835e1af731f35a56f0c08c72"
+      "uid" : "149b488a1b93f8d160d9b7a9baeb4ba1"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
