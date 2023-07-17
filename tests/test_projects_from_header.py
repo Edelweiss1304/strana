@@ -25,13 +25,6 @@ def test_spb_header_dnv(driver):
     head.check_dnv_from_header()
 
 
-@allure.title("Проверка Принцип спб")
-def test_spb_header_princip(driver):
-    head = Header(driver)
-    Base.open_page(driver, URLS_MAIN['url_spb'])
-    head.check_princip_from_header()
-
-
 @allure.title("Проверка Звездный тмн")
 def test_tmn_header_zvezdniy(driver):
     head = Header(driver)

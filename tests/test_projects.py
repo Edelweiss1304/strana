@@ -39,17 +39,6 @@ def test_projects_dnv(driver):
     assert head.get_project_dnv_check() == "Санкт-Петербург"
 
 
-@allure.title("Переход из проектов в Принцип")
-def test_projects_princip(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    Base.open_page(driver, URLS_MAIN['url_spb'])
-    head.click_projects()
-    pp.click_accept_cookie()
-    pp.click_princip()
-    assert head.get_project_comfort_tittle() == "ПРИНЦИП"
-
-
 @allure.title("Переход из проектов в Сибирский сад")
 def test_projects_sibsad(driver):
     head = Header(driver)

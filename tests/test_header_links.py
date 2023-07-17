@@ -14,8 +14,8 @@ def test_msk_header_projects(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
-        with testit.step("Нажимаем на проекты"):
-            head.check_projects()
+    with testit.step("Нажимаем на проекты"):
+        head.check_projects()
 
 
 @allure.title("Проверка кнопки квартиры мск")

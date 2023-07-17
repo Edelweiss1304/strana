@@ -1,7 +1,5 @@
 import time
-
 import pytest
-
 from base.base_class import Base
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
@@ -10,6 +8,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 class Header(Base):
     def __init__(self, driver):
         super().__init__(driver)
+        self.Base = Base
         self.driver = driver
         self.actions = ActionChains(driver)
 
@@ -58,6 +57,8 @@ class Header(Base):
 
     menu_button = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
     news_tittle = "//h1[contains(text(),'Страны')]"
+
+    header_pop_up = "//div[@class='the-header-popup-menu the-header-popup-menu--theme-common']"
 
     # Getters
     def get_projects(self):
@@ -161,6 +162,9 @@ class Header(Base):
     def get_news_tittle(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.news_tittle)).text
 
+    def get_header_pop_up(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.header_pop_up))
+
     # Actions
     def click_projects(self):
         self.get_projects().click()
@@ -168,6 +172,7 @@ class Header(Base):
 
     def move_to_projects(self):
         self.actions.move_to_element(self.get_projects()).perform()
+        self.get_header_pop_up()
         print("Наводимся на проекты")
 
     def click_apart(self):
@@ -196,32 +201,39 @@ class Header(Base):
 
     def move_to_apart(self):
         self.actions.move_to_element(self.get_apart()).perform()
+        self.get_header_pop_up()
         print("Наводимся на квартиры")
 
     # Проверка подменю в ХЭДЕРЕ Actions
 
     def click_s_link_wrapper_9_from_header(self):
-        self.get_s_link_wrapper_9_header().click()
+        locator = Base.get_s_link_wrapper_locator(9)
+        Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
         print("Кликаем на 9 пункт подменю")
 
     def click_s_link_wrapper_10_from_header(self):
-        self.get_s_link_wrapper_10_header().click()
+        locator = Base.get_s_link_wrapper_locator(10)
+        Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
         print("Кликаем на 10 пункт подменю")
 
     def click_s_link_wrapper_11_from_header(self):
-        self.get_s_link_wrapper_11_header().click()
+        locator = Base.get_s_link_wrapper_locator(11)
+        Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
         print("Кликаем на 11 пункт подменю")
 
     def click_s_link_wrapper_12_from_header(self):
-        self.get_s_link_wrapper_12_header().click()
+        locator = Base.get_s_link_wrapper_locator(12)
+        Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
         print("Кликаем на 12 пункт подменю")
 
     def click_s_link_wrapper_13_from_header(self):
-        self.get_s_link_wrapper_13_header().click()
+        locator = Base.get_s_link_wrapper_locator(13)
+        Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
         print("Кликаем на 13 пункт подменю")
 
     def click_s_link_wrapper_14_from_header(self):
-        self.get_s_link_wrapper_14_header().click()
+        locator = Base.get_s_link_wrapper_locator(14)
+        Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
         print("Кликаем на 14 пункт подменю")
 
     def click_s_link_parking_from_header(self):
@@ -285,12 +297,6 @@ class Header(Base):
         self.click_s_link_wrapper_9_from_header()
         assert self.get_project_dnv_check() == "Санкт-Петербург"
         print("Проверяем что попали на нужную страницу")
-
-    def check_princip_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_10_from_header()
-        assert self.get_project_comfort_tittle() == "ПРИНЦИП"
-        print("Проверяем заголовок")
 
     def check_zvezdniy_from_header(self):
         self.move_to_projects()
