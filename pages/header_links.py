@@ -3,6 +3,7 @@ import pytest
 from base.base_class import Base
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
+import testit
 
 
 class Header(Base):
@@ -243,39 +244,54 @@ class Header(Base):
         # Methods
 
     def check_projects(self):
-        self.click_projects()
-        assert self.get_projects_check() == "Проекты"
-        print("Проверяем заголовок")
+        with testit.step("Нажимаем на проекты"):
+            self.click_projects()
+        with testit.step("Проверяем заголовок страницы"):
+            assert self.get_projects_check() == "Проекты"
+            print("Проверяем заголовок")
 
     def check_apart(self):
-        self.click_apart()
-        assert self.get_apart_check() == "Подобрать квартиру"
+        with testit.step("Нажимаем на квартиры"):
+            self.click_apart()
+        with testit.step("Проверяем заголовок страницы"):
+            assert self.get_apart_check() == "Подобрать квартиру"
         print("Проверяем заголовок")
 
     def check_commercial(self):
-        self.click_commercial()
-        assert self.get_projects_check() == "Проекты"
+        with testit.step("Коммерцию"):
+            self.click_commercial()
+        with testit.step("Проверяем заголовок страницы"):
+            assert self.get_projects_check() == "Проекты"
         print("Проверяем заголовок")
 
     def check_actions(self):
-        self.click_action()
-        assert self.get_actions_check() == "Акции"
+        with testit.step("Нажимаем на Акции"):
+            self.click_action()
+        with testit.step("Проверяем заголовок страницы"):
+            assert self.get_actions_check() == "Акции"
         print("Проверяем заголовок")
 
     def check_about(self):
-        self.click_about()
-        assert self.get_about_check() == "О компании"
+        with testit.step("Нажимаем О нас"):
+            self.click_about()
+        with testit.step("Проверяем заголовок страницы"):
+            assert self.get_about_check() == "О компании"
         print("Проверяем заголовок")
 
     def check_purchase_methods(self):
-        self.click_purchase_methods()
-        assert self.get_purchase_methods_check() == "Материнский капитал"
+        with testit.step("Нажимаем методы покупки"):
+            self.click_purchase_methods()
+        with testit.step("Проверяем заголовок страницы"):
+            assert self.get_purchase_methods_check() == "Материнский капитал"
         print("Проверяем заголовок")
 
     def check_vacancies(self):
-        self.click_vacancies()
-        assert self.get_about_check() == "О компании"
-        assert self.get_vacancy_check() == "Работа в Стране Девелопмент"
+        with testit.step("Нажимаем методы покупки"):
+            self.click_vacancies()
+        with testit.step("Проверяем заголовок страницы"):
+            assert self.get_about_check() == "О компании"
+        with testit.step("Проверяем подзаголовок страницы"):
+            assert self.get_vacancy_check() == "Работа в Стране Девелопмент"
         print("Проверяем заголовок")
 
         # Проверка подменю в ХЭДЕРЕ Methods
