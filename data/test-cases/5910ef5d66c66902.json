@@ -1,0 +1,167 @@
+{
+  "uid" : "5910ef5d66c66902",
+  "name" : "Проверка кнопки YT в меню",
+  "fullName" : "tests.test_header_menu#test_yt_from_header_menu",
+  "historyId" : "0d7eb8af54bf53a2578fab4efe33c733",
+  "time" : {
+    "start" : 1689651395074,
+    "stop" : 1689651398701,
+    "duration" : 3627
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'https://mo.strana.com/' == 'https://www....5%D0%BD%D1%82'\n  - https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82\n  + https://mo.strana.com/",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d775350a45d31ffc94b8413814a62deb\")>\nurl = 'https://mo.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки YT в меню\")\n    def test_yt_from_header_menu(driver, url):\n        head = Header(driver)\n        Base.open_page(driver, url)\n        time.sleep(2)\n        head.actions.move_to_element(head.get_menu_button()).perform()\n    \n        if url == 'https://mo.strana.com':\n            locator = Base.get_s_link_wrapper_locator(12)\n    \n        elif url == 'https://nsk.strana.com':\n            locator = Base.get_s_link_wrapper_locator(9)\n    \n        else:\n            locator = Base.get_s_link_wrapper_locator(14)\n    \n        driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n        next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)\n        driver.switch_to.window(driver.window_handles[next_tab_index])\n>       assert driver.current_url == \"https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82\"\nE       AssertionError: assert 'https://mo.strana.com/' == 'https://www....5%D0%BD%D1%82'\nE         - https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82\nE         + https://mo.strana.com/\n\ntests/test_header_menu.py:144: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1689650450362,
+      "stop" : 1689650450363,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1689650450362,
+      "stop" : 1689650450362,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1689651394297,
+      "stop" : 1689651394297,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1689651394297,
+      "stop" : 1689651395073,
+      "duration" : 776
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1689650450363,
+      "stop" : 1689650450363,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'https://mo.strana.com/' == 'https://www....5%D0%BD%D1%82'\n  - https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82\n  + https://mo.strana.com/",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d775350a45d31ffc94b8413814a62deb\")>\nurl = 'https://mo.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки YT в меню\")\n    def test_yt_from_header_menu(driver, url):\n        head = Header(driver)\n        Base.open_page(driver, url)\n        time.sleep(2)\n        head.actions.move_to_element(head.get_menu_button()).perform()\n    \n        if url == 'https://mo.strana.com':\n            locator = Base.get_s_link_wrapper_locator(12)\n    \n        elif url == 'https://nsk.strana.com':\n            locator = Base.get_s_link_wrapper_locator(9)\n    \n        else:\n            locator = Base.get_s_link_wrapper_locator(14)\n    \n        driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n        next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)\n        driver.switch_to.window(driver.window_handles[next_tab_index])\n>       assert driver.current_url == \"https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82\"\nE       AssertionError: assert 'https://mo.strana.com/' == 'https://www....5%D0%BD%D1%82'\nE         - https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82\nE         + https://mo.strana.com/\n\ntests/test_header_menu.py:144: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c1276ab08e6aad30",
+      "name" : "screenshot_tests_test_header_menu.py::test_yt_from_header_menu[https:__mo.strana.com].png",
+      "source" : "c1276ab08e6aad30.png",
+      "type" : "image/png",
+      "size" : 45401
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1689651400064,
+      "stop" : 1689651400123,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_menu"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2836198-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "url",
+    "value" : "'https://mo.strana.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "5910ef5d66c66902.json",
+  "parameterValues" : [ "'https://mo.strana.com'" ]
+}

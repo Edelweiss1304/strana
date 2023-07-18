@@ -1,0 +1,167 @@
+{
+  "uid" : "38c264ee8b0f1a5f",
+  "name" : "Проверка авторизации в ЛК брокера через главную страницу",
+  "fullName" : "tests.test_login_broker#test_authorization_agent_from_main_page",
+  "historyId" : "b4ff5af9cb1cc185867d2e04b6fa1028",
+  "time" : {
+    "start" : 1689651758161,
+    "stop" : 1689651861795,
+    "duration" : 103634
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5593400c24e3 <unknown>\n#1 0x55933fdf1c76 <unknown>\n#2 0x55933fe2dc96 <unknown>\n#3 0x55933fe2ddc1 <unknown>\n#4 0x55933fe677f4 <unknown>\n#5 0x55933fe4d03d <unknown>\n#6 0x55933fe6530e <unknown>\n#7 0x55933fe4cde3 <unknown>\n#8 0x55933fe222dd <unknown>\n#9 0x55933fe2334e <unknown>\n#10 0x5593400823e4 <unknown>\n#11 0x5593400863d7 <unknown>\n#12 0x559340090b20 <unknown>\n#13 0x559340087023 <unknown>\n#14 0x5593400551aa <unknown>\n#15 0x5593400ab6b8 <unknown>\n#16 0x5593400ab847 <unknown>\n#17 0x5593400bb243 <unknown>\n#18 0x7fa82ec2a609 start_thread",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ba6888a48e1ecdfe4241cbd54558dbd7\")>\nurl = 'https://mo.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @pytest.mark.allure_feature(\"Проверка авторизации в ЛК брокера через главную страницу\")\n    @allure.title(\"Проверка авторизации в ЛК брокера через главную страницу\")\n    def test_authorization_agent_from_main_page(driver, url):\n        auth = Authorization(driver)\n        Base.open_page(driver, url)\n        time.sleep(1)\n>       auth.login_broker_from_main_page(url)\n\ntests/test_login_broker.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/authorization.py:124: in login_broker_from_main_page\n    Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()\nbase/base_class.py:26: in get_element_visibility\n    raise e\nbase/base_class.py:21: in get_element_visibility\n    return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"ba6888a48e1ecdfe4241cbd54558dbd7\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f3e1c151d00>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       #0 0x5593400c24e3 <unknown>\nE       #1 0x55933fdf1c76 <unknown>\nE       #2 0x55933fe2dc96 <unknown>\nE       #3 0x55933fe2ddc1 <unknown>\nE       #4 0x55933fe677f4 <unknown>\nE       #5 0x55933fe4d03d <unknown>\nE       #6 0x55933fe6530e <unknown>\nE       #7 0x55933fe4cde3 <unknown>\nE       #8 0x55933fe222dd <unknown>\nE       #9 0x55933fe2334e <unknown>\nE       #10 0x5593400823e4 <unknown>\nE       #11 0x5593400863d7 <unknown>\nE       #12 0x559340090b20 <unknown>\nE       #13 0x559340087023 <unknown>\nE       #14 0x5593400551aa <unknown>\nE       #15 0x5593400ab6b8 <unknown>\nE       #16 0x5593400ab847 <unknown>\nE       #17 0x5593400bb243 <unknown>\nE       #18 0x7fa82ec2a609 start_thread\n\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1689651757384,
+      "stop" : 1689651758160,
+      "duration" : 776
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1689651757384,
+      "stop" : 1689651757384,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1689650450362,
+      "stop" : 1689650450363,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1689650450362,
+      "stop" : 1689650450362,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1689650450363,
+      "stop" : 1689650450363,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5593400c24e3 <unknown>\n#1 0x55933fdf1c76 <unknown>\n#2 0x55933fe2dc96 <unknown>\n#3 0x55933fe2ddc1 <unknown>\n#4 0x55933fe677f4 <unknown>\n#5 0x55933fe4d03d <unknown>\n#6 0x55933fe6530e <unknown>\n#7 0x55933fe4cde3 <unknown>\n#8 0x55933fe222dd <unknown>\n#9 0x55933fe2334e <unknown>\n#10 0x5593400823e4 <unknown>\n#11 0x5593400863d7 <unknown>\n#12 0x559340090b20 <unknown>\n#13 0x559340087023 <unknown>\n#14 0x5593400551aa <unknown>\n#15 0x5593400ab6b8 <unknown>\n#16 0x5593400ab847 <unknown>\n#17 0x5593400bb243 <unknown>\n#18 0x7fa82ec2a609 start_thread",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ba6888a48e1ecdfe4241cbd54558dbd7\")>\nurl = 'https://mo.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @pytest.mark.allure_feature(\"Проверка авторизации в ЛК брокера через главную страницу\")\n    @allure.title(\"Проверка авторизации в ЛК брокера через главную страницу\")\n    def test_authorization_agent_from_main_page(driver, url):\n        auth = Authorization(driver)\n        Base.open_page(driver, url)\n        time.sleep(1)\n>       auth.login_broker_from_main_page(url)\n\ntests/test_login_broker.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/authorization.py:124: in login_broker_from_main_page\n    Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()\nbase/base_class.py:26: in get_element_visibility\n    raise e\nbase/base_class.py:21: in get_element_visibility\n    return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"ba6888a48e1ecdfe4241cbd54558dbd7\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f3e1c151d00>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       #0 0x5593400c24e3 <unknown>\nE       #1 0x55933fdf1c76 <unknown>\nE       #2 0x55933fe2dc96 <unknown>\nE       #3 0x55933fe2ddc1 <unknown>\nE       #4 0x55933fe677f4 <unknown>\nE       #5 0x55933fe4d03d <unknown>\nE       #6 0x55933fe6530e <unknown>\nE       #7 0x55933fe4cde3 <unknown>\nE       #8 0x55933fe222dd <unknown>\nE       #9 0x55933fe2334e <unknown>\nE       #10 0x5593400823e4 <unknown>\nE       #11 0x5593400863d7 <unknown>\nE       #12 0x559340090b20 <unknown>\nE       #13 0x559340087023 <unknown>\nE       #14 0x5593400551aa <unknown>\nE       #15 0x5593400ab6b8 <unknown>\nE       #16 0x5593400ab847 <unknown>\nE       #17 0x5593400bb243 <unknown>\nE       #18 0x7fa82ec2a609 start_thread\n\n../../_tool/Python/3.11.3/x64/lib/python3.11/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1b4a89d24d8ced8d",
+      "name" : "screenshot_tests_test_login_broker.py::test_authorization_agent_from_main_page[https:__mo.strana.com].png",
+      "source" : "1b4a89d24d8ced8d.png",
+      "type" : "image/png",
+      "size" : 304648
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1689651862989,
+      "stop" : 1689651863052,
+      "duration" : 63
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_broker"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2836198-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_login_broker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "url",
+    "value" : "'https://mo.strana.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "38c264ee8b0f1a5f.json",
+  "parameterValues" : [ "'https://mo.strana.com'" ]
+}
