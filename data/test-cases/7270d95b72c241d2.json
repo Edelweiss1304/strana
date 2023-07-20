@@ -1,0 +1,185 @@
+{
+  "uid" : "7270d95b72c241d2",
+  "name" : "Проверка Звездный тмн",
+  "fullName" : "tests.test_projects_from_header#test_tmn_header_zvezdniy",
+  "historyId" : "9d5536eda8063e64c7437bcc7d92954c",
+  "time" : {
+    "start" : 1689823962880,
+    "stop" : 1689823971267,
+    "duration" : 8387
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"f27f0fa374241fbd6e3440ae15cbb0cd\")>\n\n    @allure.title(\"Проверка Звездный тмн\")\n    def test_tmn_header_zvezdniy(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_zvezdniy_from_header()\n\ntests/test_projects_from_header.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7fbf665da950>\n\n    def check_zvezdniy_from_header(self):\n        self.move_to_projects()\n        self.click_s_link_wrapper_9_from_header()\n>       assert self.get_project_comfort_tittle() == \"Звездный\"\nE       AssertionError\n\npages/header_links.py:320: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1689822641270,
+      "stop" : 1689822641270,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1689823962153,
+      "stop" : 1689823962879,
+      "duration" : 726
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1689822641270,
+      "stop" : 1689822641270,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1689823962153,
+      "stop" : 1689823962153,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1689822641270,
+      "stop" : 1689822641270,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"f27f0fa374241fbd6e3440ae15cbb0cd\")>\n\n    @allure.title(\"Проверка Звездный тмн\")\n    def test_tmn_header_zvezdniy(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_zvezdniy_from_header()\n\ntests/test_projects_from_header.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7fbf665da950>\n\n    def check_zvezdniy_from_header(self):\n        self.move_to_projects()\n        self.click_s_link_wrapper_9_from_header()\n>       assert self.get_project_comfort_tittle() == \"Звездный\"\nE       AssertionError\n\npages/header_links.py:320: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6f29a7e491e3cf33",
+      "name" : "screenshot_tests_test_projects_from_header.py::test_tmn_header_zvezdniy.png",
+      "source" : "6f29a7e491e3cf33.png",
+      "type" : "image/png",
+      "size" : 2136136
+    }, {
+      "uid" : "2afee30221dd62ca",
+      "name" : "stdout",
+      "source" : "2afee30221dd62ca.txt",
+      "type" : "text/plain",
+      "size" : 174
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1689823976881,
+      "stop" : 1689823976952,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "2947146-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "48d683a952612cc4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1689823947463,
+        "stop" : 1689823955832,
+        "duration" : 8369
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "7270d95b72c241d2.json",
+  "parameterValues" : [ ]
+}

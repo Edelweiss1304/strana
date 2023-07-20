@@ -4,40 +4,83 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"No node with given id found\"}\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x55cf1147e4e3 <unknown>\n#1 0x55cf111adc76 <unknown>\n#2 0x55cf11197900 <unknown>\n#3 0x55cf11195bac <unknown>\n#4 0x55cf11196162 <unknown>\n#5 0x55cf111960b4 <unknown>\n#6 0x55cf111bab86 <unknown>\n#7 0x55cf111b26f3 <unknown>\n#8 0x55cf111b11d6 <unknown>\n#9 0x55cf111b397e <unknown>\n#10 0x55cf111b3a4c <unknown>\n#11 0x55cf111eef96 <unknown>\n#12 0x55cf111ee607 <unknown>\n#13 0x55cf11229a1f <unknown>\n#14 0x55cf11209012 <unknown>\n#15 0x55cf1122130e <unknown>\n#16 0x55cf11208de3 <unknown>\n#17 0x55cf111de2dd <unknown>\n#18 0x55cf111df34e <unknown>\n#19 0x55cf1143e3e4 <unknown>\n#20 0x55cf114423d7 <unknown>\n#21 0x55cf1144cb20 <unknown>\n#22 0x55cf11443023 <unknown>\n#23 0x55cf114111aa <unknown>\n#24 0x55cf114676b8 <unknown>\n#25 0x55cf11467847 <unknown>\n#26 0x55cf11477243 <unknown>\n#27 0x7f848f41c609 start_thread",
-      "children" : [ {
-        "name" : "Проверка квартир ЕКБ-0",
-        "uid" : "22c6d500d1224a75",
-        "parentUid" : "5e610e200de1340b38de92b1e7a4ccfb",
-        "status" : "broken",
-        "time" : {
-          "start" : 1689738783715,
-          "stop" : 1689738787167,
-          "duration" : 3452
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "0" ]
-      } ],
-      "uid" : "5e610e200de1340b38de92b1e7a4ccfb"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x56450a8a64e3 <unknown>\n#1 0x56450a5d5c76 <unknown>\n#2 0x56450a611c96 <unknown>\n#3 0x56450a611dc1 <unknown>\n#4 0x56450a64b7f4 <unknown>\n#5 0x56450a63103d <unknown>\n#6 0x56450a64930e <unknown>\n#7 0x56450a630de3 <unknown>\n#8 0x56450a6062dd <unknown>\n#9 0x56450a60734e <unknown>\n#10 0x56450a8663e4 <unknown>\n#11 0x56450a86a3d7 <unknown>\n#12 0x56450a874b20 <unknown>\n#13 0x56450a86b023 <unknown>\n#14 0x56450a8391aa <unknown>\n#15 0x56450a88f6b8 <unknown>\n#16 0x56450a88f847 <unknown>\n#17 0x56450a89f243 <unknown>\n#18 0x7fc160872609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5611e74e74e3 <unknown>\n#1 0x5611e7216c76 <unknown>\n#2 0x5611e7252c96 <unknown>\n#3 0x5611e7252dc1 <unknown>\n#4 0x5611e728c7f4 <unknown>\n#5 0x5611e727203d <unknown>\n#6 0x5611e728a30e <unknown>\n#7 0x5611e7271de3 <unknown>\n#8 0x5611e72472dd <unknown>\n#9 0x5611e724834e <unknown>\n#10 0x5611e74a73e4 <unknown>\n#11 0x5611e74ab3d7 <unknown>\n#12 0x5611e74b5b20 <unknown>\n#13 0x5611e74ac023 <unknown>\n#14 0x5611e747a1aa <unknown>\n#15 0x5611e74d06b8 <unknown>\n#16 0x5611e74d0847 <unknown>\n#17 0x5611e74e0243 <unknown>\n#18 0x7f690c98a609 start_thread",
       "children" : [ {
         "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "31e64ec94531e1fb",
-        "parentUid" : "65d015a41120727165b17f8c82fb6d8d",
+        "uid" : "450efe3efc0fe61a",
+        "parentUid" : "826c7e4a266360773f7c938ccbf87e50",
         "status" : "broken",
         "time" : {
-          "start" : 1689739642000,
-          "stop" : 1689739747910,
-          "duration" : 105910
+          "start" : 1689823660726,
+          "stop" : 1689823766505,
+          "duration" : 105779
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'https://tmn.strana.com'" ]
+        "parameters" : [ "'https://ekb.strana.com'" ]
       } ],
-      "uid" : "65d015a41120727165b17f8c82fb6d8d"
+      "uid" : "826c7e4a266360773f7c938ccbf87e50"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "Проверка Звездный тмн",
+        "uid" : "7270d95b72c241d2",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1689823962880,
+          "stop" : 1689823971267,
+          "duration" : 8387
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка Юнион тмн",
+        "uid" : "9f8dfbf45e91bb81",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1689823993228,
+          "stop" : 1689824001486,
+          "duration" : 8258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка Колумб тмн",
+        "uid" : "c8aefccf3a5fa276",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1689824032068,
+          "stop" : 1689824039210,
+          "duration" : 7142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка Сердце Сибири тмн",
+        "uid" : "cba46855d447cef9",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1689824061298,
+          "stop" : 1689824068392,
+          "duration" : 7094
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }
