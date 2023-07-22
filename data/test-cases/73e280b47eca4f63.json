@@ -1,0 +1,185 @@
+{
+  "uid" : "73e280b47eca4f63",
+  "name" : "Проверка Колумб тмн",
+  "fullName" : "tests.test_projects_from_header#test_tmn_header_kolumb",
+  "historyId" : "058f87e7a76fb7e8f10aff3275f674ef",
+  "time" : {
+    "start" : 1689997655002,
+    "stop" : 1689997662471,
+    "duration" : 7469
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"e0486c4c827e4eb47ea0c13b688ace29\")>\n\n    @allure.title(\"Проверка Колумб тмн\")\n    def test_tmn_header_kolumb(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_kolumb_from_header()\n\ntests/test_projects_from_header.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7ff5ffad1790>\n\n    def check_kolumb_from_header(self):\n        self.move_to_projects()\n        self.click_s_link_wrapper_12_from_header()\n>       assert self.get_project_comfort_tittle() == \"Колумб\"\nE       AssertionError\n\npages/header_links.py:338: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1689995430812,
+      "stop" : 1689995430812,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1689997654279,
+      "stop" : 1689997655002,
+      "duration" : 723
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1689997654279,
+      "stop" : 1689997654279,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1689995430812,
+      "stop" : 1689995430812,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1689995430812,
+      "stop" : 1689995430812,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"e0486c4c827e4eb47ea0c13b688ace29\")>\n\n    @allure.title(\"Проверка Колумб тмн\")\n    def test_tmn_header_kolumb(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_tmn'])\n>       head.check_kolumb_from_header()\n\ntests/test_projects_from_header.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7ff5ffad1790>\n\n    def check_kolumb_from_header(self):\n        self.move_to_projects()\n        self.click_s_link_wrapper_12_from_header()\n>       assert self.get_project_comfort_tittle() == \"Колумб\"\nE       AssertionError\n\npages/header_links.py:338: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6c64422aa67ef6b7",
+      "name" : "screenshot_tests_test_projects_from_header.py::test_tmn_header_kolumb.png",
+      "source" : "6c64422aa67ef6b7.png",
+      "type" : "image/png",
+      "size" : 2034787
+    }, {
+      "uid" : "55f4de8517c47662",
+      "name" : "stdout",
+      "source" : "55f4de8517c47662.txt",
+      "type" : "text/plain",
+      "size" : 176
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1689997668584,
+      "stop" : 1689997668654,
+      "duration" : 70
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "3055185-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "463f08faeb50f659",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1689997639689,
+        "stop" : 1689997648025,
+        "duration" : 8336
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "73e280b47eca4f63.json",
+  "parameterValues" : [ ]
+}
