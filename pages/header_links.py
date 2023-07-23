@@ -1,4 +1,3 @@
-import time
 import pytest
 from base.base_class import Base
 from selenium.webdriver.common.by import By
@@ -40,12 +39,6 @@ class Header(Base):
     project_dnv_check = "(//div[@class='listLabel_Q6E55'][contains(text(),'Санкт-Петербург')])[1]"
     city_in_apart = "div[class='s-select s-select--string s-select--secondary s-select--large'] div[" \
                     "class='s-select__rendered']"
-    s_link_wrapper_9 = "(//div[@class='s-link__wrapper'])[9]"  # Первый элемент в основном меню
-    s_link_wrapper_10 = "(//div[@class='s-link__wrapper'])[10]"  # Второй элемент в основном меню
-    s_link_wrapper_11 = "(//div[@class='s-link__wrapper'])[11]"  # Третий элемент в основном меню
-    s_link_wrapper_12 = "(//div[@class='s-link__wrapper'])[12]"  # Четвертый элемент в основном меню + паркинг в спб
-    s_link_wrapper_13 = "(//div[@class='s-link__wrapper'])[13]"  # Пятый элемент в основном меню
-    s_link_wrapper_14 = "(//div[@class='s-link__wrapper'])[14]"  # Шестой элемент в основном меню
     s_link_parking = "//a[@href='/parking']"  # Паркинг
 
     text_color = "rgba(146, 39, 143, 1)"
@@ -114,24 +107,6 @@ class Header(Base):
 
     def get_project_dnv_check(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.project_dnv_check)).text
-
-    def get_s_link_wrapper_9_header(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.s_link_wrapper_9))
-
-    def get_s_link_wrapper_10_header(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.s_link_wrapper_10))
-
-    def get_s_link_wrapper_11_header(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.s_link_wrapper_11))
-
-    def get_s_link_wrapper_12_header(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.s_link_wrapper_12))
-
-    def get_s_link_wrapper_13_header(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.s_link_wrapper_13))
-
-    def get_s_link_wrapper_14_header(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.s_link_wrapper_14))
 
     def get_city_in_apart(self):
         return self.get_element_visibility(self.driver, (By.CSS_SELECTOR, self.city_in_apart)).text
@@ -237,6 +212,11 @@ class Header(Base):
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
         print("Кликаем на 14 пункт подменю")
 
+    def click_s_link_wrapper_15_from_header(self):
+        locator = Base.get_s_link_wrapper_locator(15)
+        Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
+        print("Кликаем на 15 пункт подменю")
+
     def click_s_link_parking_from_header(self):
         self.get_s_link_parking().click()
         print("Кликаем на паркинг")
@@ -316,13 +296,13 @@ class Header(Base):
 
     def check_zvezdniy_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_9_from_header()
+        self.click_s_link_wrapper_10_from_header()
         assert self.get_project_comfort_tittle() == "Звездный"
         print("Проверяем заголовок")
 
     def check_union_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_10_from_header()
+        self.click_s_link_wrapper_9_from_header()
         assert self.get_project_comfort_tittle() == "Юнион"
         print("Проверяем заголовок")
 
@@ -334,14 +314,13 @@ class Header(Base):
 
     def check_kolumb_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_12_from_header()
+        self.click_s_link_wrapper_13_from_header()
         assert self.get_project_comfort_tittle() == "Колумб"
         print("Проверяем заголовок")
 
     def check_sersib_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_13_from_header()
-        print(self.get_project_comfort_tittle())
+        self.click_s_link_wrapper_15_from_header()
         assert self.get_project_comfort_tittle() == "Сердце Сибири"
         print("Проверяем заголовок")
 
@@ -349,6 +328,12 @@ class Header(Base):
         self.move_to_projects()
         self.click_s_link_wrapper_14_from_header()
         assert self.get_project_comfort_tittle() == "Домашний"
+        print("Проверяем заголовок")
+
+    def check_eb_from_header(self):
+        self.move_to_projects()
+        self.click_s_link_wrapper_12_from_header()
+        assert self.get_project_comfort_tittle() == "Европейский берег 2.0"
         print("Проверяем заголовок")
 
     def check_sibsad_from_header(self):

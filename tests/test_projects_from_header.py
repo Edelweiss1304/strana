@@ -67,6 +67,13 @@ def test_tmn_header_domashniy(driver):
     head.check_domashniy_from_header()
 
 
+@allure.title("Проверка ЕБ 2.0 тмн")
+def test_tmn_header_eb(driver):
+    head = Header(driver)
+    Base.open_page(driver, URLS_MAIN['url_tmn'])
+    head.check_eb_from_header()
+
+
 @allure.title("Проверка Сибирский сад ект")
 def test_tmn_header_sibsad(driver):
     head = Header(driver)

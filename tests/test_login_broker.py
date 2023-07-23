@@ -25,7 +25,6 @@ def test_authorization_agent_from_header(driver, url):
 def test_authorization_agent_from_main_page(driver, url):
     auth = Authorization(driver)
     Base.open_page(driver, url)
-    time.sleep(1)
     auth.login_broker_from_main_page(url)
     auth.login_lk_broker()
     assert auth.get_broker_agent_check().text == "Сделки"

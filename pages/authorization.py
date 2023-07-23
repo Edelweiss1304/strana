@@ -118,6 +118,15 @@ class Authorization(Base):
         elif url == 'https://nsk.strana.com':
             locator = Base.get_s_link_wrapper_locator(8)
 
+        elif url == 'https://spb.strana.com':
+            locator = Base.get_s_link_wrapper_locator(18)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(15)
+
+        elif url == 'https://ekb.strana.com':
+            locator = Base.get_s_link_wrapper_locator(18)
+
         else:
             locator = Base.get_s_link_wrapper_locator(17)
 
