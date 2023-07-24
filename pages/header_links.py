@@ -16,11 +16,11 @@ class Header(Base):
 
     projects = "//span[@class='s-shift-text__value'][contains(text(),'Проекты')]"
     apart = "//span[@class='s-shift-text__value'][contains(text(),'Квартиры')]"
-    commercial = "//span[@class='s-shift-text__value'][contains(text(),'Коммерция')]"
+    commercial = "//span[@class='s-shift-text__value'][contains(text(),'Помещения')]"
     action = "//span[@class='s-shift-text__value'][contains(text(),'Акции')]"
     about = "//span[@class='s-shift-text__value'][contains(text(),'О компании')]"
     purchase_methods = "//span[@class='s-shift-text__value'][contains(text(),'Способы покупки')]"
-    vacancies = "//span[@class='s-shift-text__value'][contains(text(),'Вакансии')]"
+    sale = "//span[@class='s-shift-text__value'][normalize-space()='SALE %']"
     menu = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
 
     # Заголовки для проверок из страниц хэдера
@@ -73,8 +73,8 @@ class Header(Base):
     def get_purchase_methods(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.purchase_methods))
 
-    def get_vacancies(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.vacancies))
+    def get_sale(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.sale))
 
     def get_menu(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.menu))
@@ -171,9 +171,9 @@ class Header(Base):
         self.get_purchase_methods().click()
         print("Кликаем на кнопку проекты")
 
-    def click_vacancies(self):
-        self.get_vacancies().click()
-        print("Кликаем на кнопку вакансии")
+    def click_sale(self):
+        self.get_sale().click()
+        print("Кликаем на кнопку sale")
 
     def move_to_apart(self):
         self.actions.move_to_element(self.get_apart()).perform()
@@ -265,13 +265,11 @@ class Header(Base):
             assert self.get_purchase_methods_check() == "Материнский капитал"
         print("Проверяем заголовок")
 
-    def check_vacancies(self):
-        with testit.step("Нажимаем методы покупки"):
-            self.click_vacancies()
+    def check_sale(self):
+        with testit.step("Нажимаем sale"):
+            self.click_sale()
         with testit.step("Проверяем заголовок страницы"):
-            assert self.get_about_check() == "О компании"
-        with testit.step("Проверяем подзаголовок страницы"):
-            assert self.get_vacancy_check() == "Работа в Стране Девелопмент"
+            assert self.get_apart_check() == "Подобрать квартиру"
         print("Проверяем заголовок")
 
         # Проверка подменю в ХЭДЕРЕ Methods

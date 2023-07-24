@@ -27,9 +27,9 @@ def test_msk_header_apart(driver):
         head.check_apart()
 
 
-@allure.title("Проверка кнопки коммерции мск")
-@testit.displayName("Проверка кнопки коммерции мск")
-@testit.description("Проверка кнопки коммерции мск")
+@allure.title("Проверка кнопки помещения мск")
+@testit.displayName("Проверка кнопки помещения мск")
+@testit.description("Проверка кнопки помещения мск")
 def test_msk_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -67,20 +67,20 @@ def test_msk_header_purchase_methods(driver):
         head.check_purchase_methods()
 
 
-@allure.title("Проверка кнопки вакансии мск")
-@testit.displayName("Проверка кнопки вакансии мск")
-@testit.description("Проверка кнопки вакансии мск")
+@allure.title("Проверка кнопки sale мск")
+@testit.displayName("Проверка кнопки sale мск")
+@testit.description("Проверка кнопки sale мск")
 def test_msk_header_vacancies(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
-        head.check_vacancies()
+        head.check_sale()
 
 
 # MO
-@allure.title("Проверка кнопки коммерции мо")
-@testit.displayName("Проверка кнопки коммерции мо")
-@testit.description("Проверка кнопки коммерции мо")
+@allure.title("Проверка кнопки помещения мо")
+@testit.displayName("Проверка кнопки помещения мо")
+@testit.description("Проверка кнопки помещения мо")
 def test_mo_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -112,16 +112,6 @@ def test_mo_header_about(driver):
         Base.open_page(driver, URLS_MAIN['url_mo'])
         head.check_about()
 
-
-@allure.title("Проверка кнопки вакансии мо")
-@testit.displayName("Проверка кнопки вакансии мо")
-@testit.description("Проверка кнопки вакансии мо")
-def test_mo_header_vacancies(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_mo'])
-        head.check_vacancies()
-
     # SPB
 
 
@@ -145,9 +135,9 @@ def test_spb_header_apart(driver):
         head.check_apart()
 
 
-@allure.title("Проверка кнопки коммерции спб")
-@testit.displayName("Проверка кнопки коммерции спб")
-@testit.description("Проверка кнопки коммерции спб")
+@allure.title("Проверка кнопки помещения спб")
+@testit.displayName("Проверка кнопки помещения спб")
+@testit.description("Проверка кнопки помещения спб")
 def test_spb_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -185,14 +175,14 @@ def test_spb_header_purchase_methods(driver):
         head.check_purchase_methods()
 
 
-@allure.title("Проверка кнопки вакансии спб")
-@testit.displayName("Проверка кнопки вакансии спб")
-@testit.description("Проверка кнопки вакансии спб")
+@allure.title("Проверка кнопки sale спб")
+@testit.displayName("Проверка кнопки sale спб")
+@testit.description("Проверка кнопки sale спб")
 def test_spb_header_vacancies(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
-        head.check_vacancies()
+        head.check_sale()
 
     # EKB
 
@@ -217,9 +207,9 @@ def test_ekb_header_apart(driver):
         head.check_apart()
 
 
-@allure.title("Проверка кнопки коммерция екб")
-@testit.displayName("Проверка кнопки коммерция екб")
-@testit.description("Проверка кнопки коммерция екб")
+@allure.title("Проверка кнопки помещения екб")
+@testit.displayName("Проверка кнопки помещения екб")
+@testit.description("Проверка кнопки помещения екб")
 def test_ekb_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -257,21 +247,21 @@ def test_ekb_header_purchase_methods(driver):
         head.check_purchase_methods()
 
 
-@allure.title("Проверка кнопки вакансии екб")
-@testit.displayName("Проверка кнопки вакансии екб")
-@testit.description("Проверка кнопки вакансии екб")
+@allure.title("Проверка кнопки sale екб")
+@testit.displayName("Проверка кнопки sale екб")
+@testit.description("Проверка кнопки sale екб")
 def test_ekb_header_vacancies(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
-        head.check_vacancies()
+        head.check_sale()
 
     # TMN
 
 
-@allure.title("Проверка кнопки вакансии тмн")
-@testit.displayName("Проверка кнопки вакансии тмн")
-@testit.description("Проверка кнопки вакансии тмн")
+@allure.title("Проверка кнопки sale тмн")
+@testit.displayName("Проверка кнопки sale тмн")
+@testit.description("Проверка кнопки sale тмн")
 def test_tmn_header_projects(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -289,9 +279,9 @@ def test_tmn_header_apart(driver):
         head.check_apart()
 
 
-@allure.title("Проверка кнопки коммерция тмн")
-@testit.displayName("Проверка кнопки коммерция тмн")
-@testit.description("Проверка кнопки коммерция тмн")
+@allure.title("Проверка кнопки помещения тмн")
+@testit.displayName("Проверка кнопки помещения тмн")
+@testit.description("Проверка кнопки помещения тмн")
 def test_tmn_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -329,33 +319,23 @@ def test_tmn_header_purchase_methods(driver):
         head.check_purchase_methods()
 
 
-@allure.title("Проверка кнопки вакансии тмн")
-@testit.displayName("Проверка кнопки вакансии тмн")
-@testit.description("Проверка кнопки вакансии тмн")
+@allure.title("Проверка кнопки sale тмн")
+@testit.displayName("Проверка кнопки sale тмн")
+@testit.description("Проверка кнопки sale тмн")
 def test_tmn_header_vacancies(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
-        head.check_vacancies()
+        head.check_sale()
 
     # NSK
 
 
 @allure.title("Проверка кнопки о нас тмн")
-@testit.displayName("Проверка кнопки о нас тмн")
-@testit.description("Проверка кнопки о нас тмн")
+@testit.displayName("Проверка кнопки о нас нск")
+@testit.description("Проверка кнопки о нас нск")
 def test_nsk_header_about(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_nsk'])
         head.check_about()
-
-
-@allure.title("Проверка кнопки вакансии тмн")
-@testit.displayName("Проверка кнопки вакансии тмн")
-@testit.description("Проверка кнопки вакансии тмн")
-def test_nsk_header_vacancies(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_nsk'])
-        head.check_vacancies()
