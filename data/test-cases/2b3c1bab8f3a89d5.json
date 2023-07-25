@@ -1,0 +1,167 @@
+{
+  "uid" : "2b3c1bab8f3a89d5",
+  "name" : "Проверка кнопки ВК в меню",
+  "fullName" : "tests.test_header_menu#test_vk_from_header_menu",
+  "historyId" : "8c85e1614b4e3112ad434688f3a44543",
+  "time" : {
+    "start" : 1690255242134,
+    "stop" : 1690255247840,
+    "duration" : 5706
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'https://ok.ru/stranacom' == 'https://vk.com/strana_com'\n  - https://vk.com/strana_com\n  ?         ^  ^^^       -\n  + https://ok.ru/stranacom\n  ?         ^  ^^",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"87a2f857fe6667660ee5c8ea0e3d9266\")>\nurl = 'https://ekb.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки ВК в меню\")\n    def test_vk_from_header_menu(driver, url):\n        head = Header(driver)\n        Base.open_page(driver, url)\n        time.sleep(2)\n        head.actions.move_to_element(head.get_menu_button()).perform()\n    \n        if url == 'https://mo.strana.com':\n            locator = Base.get_s_link_wrapper_locator(10)\n    \n        elif url == 'https://nsk.strana.com':\n            locator = Base.get_s_link_wrapper_locator(7)\n    \n        else:\n            locator = Base.get_s_link_wrapper_locator(12)\n    \n        driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n        next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)\n        driver.switch_to.window(driver.window_handles[next_tab_index])\n>       assert driver.current_url == \"https://vk.com/strana_com\"\nE       AssertionError: assert 'https://ok.ru/stranacom' == 'https://vk.com/strana_com'\nE         - https://vk.com/strana_com\nE         ?         ^  ^^^       -\nE         + https://ok.ru/stranacom\nE         ?         ^  ^^\n\ntests/test_header_menu.py:96: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1690255241360,
+      "stop" : 1690255242133,
+      "duration" : 773
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1690255241360,
+      "stop" : 1690255241360,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1690254658669,
+      "stop" : 1690254658669,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1690254658668,
+      "stop" : 1690254658668,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1690254658668,
+      "stop" : 1690254658668,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'https://ok.ru/stranacom' == 'https://vk.com/strana_com'\n  - https://vk.com/strana_com\n  ?         ^  ^^^       -\n  + https://ok.ru/stranacom\n  ?         ^  ^^",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"87a2f857fe6667660ee5c8ea0e3d9266\")>\nurl = 'https://ekb.strana.com'\n\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки ВК в меню\")\n    def test_vk_from_header_menu(driver, url):\n        head = Header(driver)\n        Base.open_page(driver, url)\n        time.sleep(2)\n        head.actions.move_to_element(head.get_menu_button()).perform()\n    \n        if url == 'https://mo.strana.com':\n            locator = Base.get_s_link_wrapper_locator(10)\n    \n        elif url == 'https://nsk.strana.com':\n            locator = Base.get_s_link_wrapper_locator(7)\n    \n        else:\n            locator = Base.get_s_link_wrapper_locator(12)\n    \n        driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n        next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)\n        driver.switch_to.window(driver.window_handles[next_tab_index])\n>       assert driver.current_url == \"https://vk.com/strana_com\"\nE       AssertionError: assert 'https://ok.ru/stranacom' == 'https://vk.com/strana_com'\nE         - https://vk.com/strana_com\nE         ?         ^  ^^^       -\nE         + https://ok.ru/stranacom\nE         ?         ^  ^^\n\ntests/test_header_menu.py:96: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "35b6f3a9bf171254",
+      "name" : "screenshot_tests_test_header_menu.py::test_vk_from_header_menu[https:__ekb.strana.com].png",
+      "source" : "35b6f3a9bf171254.png",
+      "type" : "image/png",
+      "size" : 637744
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1690255248878,
+      "stop" : 1690255249003,
+      "duration" : 125
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_menu"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "3231550-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "url",
+    "value" : "'https://ekb.strana.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "2b3c1bab8f3a89d5.json",
+  "parameterValues" : [ "'https://ekb.strana.com'" ]
+}

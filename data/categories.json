@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x56021eef44e3 <unknown>\n#1 0x56021ec23c76 <unknown>\n#2 0x56021ec5fc96 <unknown>\n#3 0x56021ec5fdc1 <unknown>\n#4 0x56021ec997f4 <unknown>\n#5 0x56021ec7f03d <unknown>\n#6 0x56021ec9730e <unknown>\n#7 0x56021ec7ede3 <unknown>\n#8 0x56021ec542dd <unknown>\n#9 0x56021ec5534e <unknown>\n#10 0x56021eeb43e4 <unknown>\n#11 0x56021eeb83d7 <unknown>\n#12 0x56021eec2b20 <unknown>\n#13 0x56021eeb9023 <unknown>\n#14 0x56021ee871aa <unknown>\n#15 0x56021eedd6b8 <unknown>\n#16 0x56021eedd847 <unknown>\n#17 0x56021eeed243 <unknown>\n#18 0x7f8da523e609 start_thread",
+      "children" : [ {
+        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
+        "uid" : "69e9994c0ec24c90",
+        "parentUid" : "f27f982194b5b13808cbb86acc88994d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690255563273,
+          "stop" : 1690255669036,
+          "duration" : 105763
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      } ],
+      "uid" : "f27f982194b5b13808cbb86acc88994d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }
