@@ -182,6 +182,11 @@ class Header(Base):
 
     # Проверка подменю в ХЭДЕРЕ Actions
 
+    def click_s_link_wrapper_8_from_header(self):
+        locator = Base.get_s_link_wrapper_locator(8)
+        Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
+        print("Кликаем на 9 пункт подменю")
+
     def click_s_link_wrapper_9_from_header(self):
         locator = Base.get_s_link_wrapper_locator(9)
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
@@ -276,13 +281,13 @@ class Header(Base):
 
     def check_wow_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_9_from_header()
+        self.click_s_link_wrapper_8_from_header()
         assert self.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
         print("Проверяем заголовок")
 
     def check_ozerniy_from_header(self):
         self.move_to_projects()
-        self.click_s_link_wrapper_10_from_header()
+        self.click_s_link_wrapper_9_from_header()
         assert self.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
         print("Проверяем заголовок")
 

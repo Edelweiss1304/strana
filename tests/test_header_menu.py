@@ -21,6 +21,9 @@ def test_projects_from_header_menu(driver, url):
     elif url == 'https://nsk.strana.com':
         locator = Base.get_s_link_wrapper_locator(4)
 
+    elif url == 'https://msk.strana.com':
+        locator = Base.get_s_link_wrapper_locator(8)
+
     else:
         locator = Base.get_s_link_wrapper_locator(9)
 
@@ -42,6 +45,9 @@ def test_aparts_from_header_menu(driver, url):
 
     elif url == 'https://nsk.strana.com':
         locator = Base.get_s_link_wrapper_locator(5)
+
+    elif url == 'https://msk.strana.com':
+        locator = Base.get_s_link_wrapper_locator(9)
 
     else:
         locator = Base.get_s_link_wrapper_locator(10)
@@ -65,6 +71,9 @@ def test_commercial_from_header_menu(driver, url):
     elif url == 'https://nsk.strana.com':
         locator = Base.get_s_link_wrapper_locator(6)
 
+    elif url == 'https://msk.strana.com':
+        locator = Base.get_s_link_wrapper_locator(10)
+
     else:
         locator = Base.get_s_link_wrapper_locator(11)
 
@@ -86,6 +95,9 @@ def test_vk_from_header_menu(driver, url):
 
     elif url == 'https://nsk.strana.com':
         locator = Base.get_s_link_wrapper_locator(7)
+
+    elif url == 'https://msk.strana.com':
+        locator = Base.get_s_link_wrapper_locator(11)
 
     else:
         locator = Base.get_s_link_wrapper_locator(12)
@@ -111,6 +123,9 @@ def test_ok_from_header_menu(driver, url):
     elif url == 'https://nsk.strana.com':
         locator = Base.get_s_link_wrapper_locator(8)
 
+    elif url == 'https://msk.strana.com':
+        locator = Base.get_s_link_wrapper_locator(12)
+
     else:
         locator = Base.get_s_link_wrapper_locator(13)
 
@@ -135,6 +150,9 @@ def test_yt_from_header_menu(driver, url):
     elif url == 'https://nsk.strana.com':
         locator = Base.get_s_link_wrapper_locator(9)
 
+    elif url == 'https://msk.strana.com':
+        locator = Base.get_s_link_wrapper_locator(13)
+
     else:
         locator = Base.get_s_link_wrapper_locator(14)
 
@@ -158,6 +176,9 @@ def test_tg_from_header_menu(driver, url):
 
     elif url == 'https://nsk.strana.com':
         locator = Base.get_s_link_wrapper_locator(10)
+
+    elif url == 'https://msk.strana.com':
+        locator = Base.get_s_link_wrapper_locator(14)
 
     else:
         locator = Base.get_s_link_wrapper_locator(15)
@@ -204,6 +225,9 @@ def test_commercial_from_header_menu(driver, url):
 
     elif url == 'https://nsk.strana.com':
         locator = Base.get_s_link_wrapper_locator(11)
+
+    elif url == 'https://msk.strana.com':
+        locator = Base.get_s_link_wrapper_locator(15)
 
     else:
         locator = Base.get_s_link_wrapper_locator(16)

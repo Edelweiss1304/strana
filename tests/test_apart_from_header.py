@@ -12,7 +12,7 @@ def test_msk_apart(driver, index):
     head = Header(driver)
     Base.open_page(driver, URLS_MAIN['url_msk'])
     head.move_to_apart()
-    link_index = 9 + index
+    link_index = 8 + index
     getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     assert head.get_city_in_apart() == "Москва"
     time.sleep(1)

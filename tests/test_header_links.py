@@ -67,14 +67,14 @@ def test_msk_header_purchase_methods(driver):
         head.check_purchase_methods()
 
 
-@allure.title("Проверка кнопки sale мск")
-@testit.displayName("Проверка кнопки sale мск")
-@testit.description("Проверка кнопки sale мск")
-def test_msk_header_vacancies(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_msk'])
-        head.check_sale()
+# @allure.title("Проверка кнопки sale мск")
+# @testit.displayName("Проверка кнопки sale мск")
+# @testit.description("Проверка кнопки sale мск")
+# def test_msk_header_vacancies(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_msk'])
+#         head.check_sale()
 
 
 # MO
