@@ -95,13 +95,16 @@ class Authorization(Base):
         head.actions.move_to_element(head.get_menu_button()).perform()
 
         if url == 'https://mo.strana.com':
-            locator = Base.get_s_link_wrapper_locator(22)
+            locator = Base.get_s_link_wrapper_locator(23)
 
         elif url == 'https://nsk.strana.com':
-            locator = Base.get_s_link_wrapper_locator(19)
+            locator = Base.get_s_link_wrapper_locator(25)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(24)
 
         else:
-            locator = Base.get_s_link_wrapper_locator(24)
+            locator = Base.get_s_link_wrapper_locator(25)
 
         Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
         self.click_first_login_broker_button()
@@ -113,22 +116,22 @@ class Authorization(Base):
 
     def login_broker_from_main_page(self, url):
         if url == 'https://mo.strana.com':
-            locator = Base.get_s_link_wrapper_locator(13)
+            locator = Base.get_s_link_wrapper_locator(12)
 
         elif url == 'https://nsk.strana.com':
-            locator = Base.get_s_link_wrapper_locator(9)
+            locator = Base.get_s_link_wrapper_locator(8)
 
         elif url == 'https://spb.strana.com':
-            locator = Base.get_s_link_wrapper_locator(19)
+            locator = Base.get_s_link_wrapper_locator(18)
 
         elif url == 'https://msk.strana.com':
             locator = Base.get_s_link_wrapper_locator(15)
 
         elif url == 'https://ekb.strana.com':
-            locator = Base.get_s_link_wrapper_locator(19)
+            locator = Base.get_s_link_wrapper_locator(18)
 
         else:
-            locator = Base.get_s_link_wrapper_locator(18)
+            locator = Base.get_s_link_wrapper_locator(17)
 
         Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
         self.click_first_login_broker_button()
