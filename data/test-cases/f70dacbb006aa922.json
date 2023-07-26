@@ -1,0 +1,171 @@
+{
+  "uid" : "f70dacbb006aa922",
+  "name" : "Переход из проектов в WOW",
+  "fullName" : "tests.test_projects#test_projects_wow",
+  "historyId" : "75ebb3fced7f6ff850ca876cc401b932",
+  "time" : {
+    "start" : 1690369881641,
+    "stop" : 1690369888370,
+    "duration" : 6729
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1690368944838,
+      "stop" : 1690368944838,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1690369880906,
+      "stop" : 1690369881641,
+      "duration" : 735
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1690368944837,
+      "stop" : 1690368944837,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1690369880906,
+      "stop" : 1690369880906,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1690368944837,
+      "stop" : 1690368944837,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a6cfb23ab03d4964",
+      "name" : "stdout",
+      "source" : "a6cfb23ab03d4964.txt",
+      "type" : "text/plain",
+      "size" : 48
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1690369888370,
+      "stop" : 1690369888433,
+      "duration" : 63
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "3343578-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fa3bbf53ccbc545a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"No node with given id found\"}\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x559be36964e3 <unknown>\n#1 0x559be33c5c76 <unknown>\n#2 0x559be33af900 <unknown>\n#3 0x559be33adbac <unknown>\n#4 0x559be33ae162 <unknown>\n#5 0x559be33ae0b4 <unknown>\n#6 0x559be33d2b86 <unknown>\n#7 0x559be33ca6f3 <unknown>\n#8 0x559be33c91d6 <unknown>\n#9 0x559be33cb97e <unknown>\n#10 0x559be33cba4c <unknown>\n#11 0x559be34033c2 <unknown>\n#12 0x559be33f8021 <unknown>\n#13 0x559be3421012 <unknown>\n#14 0x559be33f7b03 <unknown>\n#15 0x559be34211de <unknown>\n#16 0x559be343930e <unknown>\n#17 0x559be3420de3 <unknown>\n#18 0x559be33f62dd <unknown>\n#19 0x559be33f734e <unknown>\n#20 0x559be36563e4 <unknown>\n#21 0x559be365a3d7 <unknown>\n#22 0x559be3664b20 <unknown>\n#23 0x559be365b023 <unknown>\n#24 0x559be36291aa <unknown>\n#25 0x559be367f6b8 <unknown>\n#26 0x559be367f847 <unknown>\n#27 0x559be368f243 <unknown>\n#28 0x7f4fe3214609 start_thread",
+      "time" : {
+        "start" : 1690369876487,
+        "stop" : 1690369878833,
+        "duration" : 2346
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "f70dacbb006aa922.json",
+  "parameterValues" : [ ]
+}
