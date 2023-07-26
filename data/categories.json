@@ -2,24 +2,373 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x56021eef44e3 <unknown>\n#1 0x56021ec23c76 <unknown>\n#2 0x56021ec5fc96 <unknown>\n#3 0x56021ec5fdc1 <unknown>\n#4 0x56021ec997f4 <unknown>\n#5 0x56021ec7f03d <unknown>\n#6 0x56021ec9730e <unknown>\n#7 0x56021ec7ede3 <unknown>\n#8 0x56021ec542dd <unknown>\n#9 0x56021ec5534e <unknown>\n#10 0x56021eeb43e4 <unknown>\n#11 0x56021eeb83d7 <unknown>\n#12 0x56021eec2b20 <unknown>\n#13 0x56021eeb9023 <unknown>\n#14 0x56021ee871aa <unknown>\n#15 0x56021eedd6b8 <unknown>\n#16 0x56021eedd847 <unknown>\n#17 0x56021eeed243 <unknown>\n#18 0x7f8da523e609 start_thread",
+      "name" : "AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\n  - rgba(146, 39, 143, 1)\n  + rgba(1, 35, 69, 1)",
       "children" : [ {
-        "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "69e9994c0ec24c90",
-        "parentUid" : "f27f982194b5b13808cbb86acc88994d",
-        "status" : "broken",
+        "name" : "Проверка квартир МСК-0",
+        "uid" : "3dfcc9c8b3a65d99",
+        "parentUid" : "8aed2d11037e3859f047835dd77a4b06",
+        "status" : "failed",
         "time" : {
-          "start" : 1690255563273,
-          "stop" : 1690255669036,
-          "duration" : 105763
+          "start" : 1690341032186,
+          "stop" : 1690341039850,
+          "duration" : 7664
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "Проверка квартир МСК-1",
+        "uid" : "d2f33f50118705a6",
+        "parentUid" : "8aed2d11037e3859f047835dd77a4b06",
+        "status" : "failed",
+        "time" : {
+          "start" : 1690341048741,
+          "stop" : 1690341056928,
+          "duration" : 8187
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "Проверка квартир МСК-2",
+        "uid" : "ad3d194497e69a3e",
+        "parentUid" : "8aed2d11037e3859f047835dd77a4b06",
+        "status" : "failed",
+        "time" : {
+          "start" : 1690341067678,
+          "stop" : 1690341076230,
+          "duration" : 8552
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "Проверка квартир МСК-3",
+        "uid" : "fa74f4deb3cb628f",
+        "parentUid" : "8aed2d11037e3859f047835dd77a4b06",
+        "status" : "failed",
+        "time" : {
+          "start" : 1690341086465,
+          "stop" : 1690341093485,
+          "duration" : 7020
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "8aed2d11037e3859f047835dd77a4b06"
+    }, {
+      "name" : "AssertionError: assert 'https://ok.ru/stranacom' == 'https://vk.com/strana_com'\n  - https://vk.com/strana_com\n  ?         ^  ^^^       -\n  + https://ok.ru/stranacom\n  ?         ^  ^^",
+      "children" : [ {
+        "name" : "Проверка кнопки ВК в меню",
+        "uid" : "197bda021386fe5d",
+        "parentUid" : "e2c39b205700ce83ed4114796993126c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1690342750544,
+          "stop" : 1690342755777,
+          "duration" : 5233
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'https://msk.strana.com'" ]
       } ],
-      "uid" : "f27f982194b5b13808cbb86acc88994d"
+      "uid" : "e2c39b205700ce83ed4114796993126c"
+    }, {
+      "name" : "AssertionError: assert 'https://www....5%D0%BD%D1%82' == 'https://ok.ru/stranacom'\n  - https://ok.ru/stranacom\n  + https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82",
+      "children" : [ {
+        "name" : "Проверка кнопки OK в меню",
+        "uid" : "9d4728dbc886ce11",
+        "parentUid" : "c304f0379c09049d51b2594b2cbb091a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1690342808836,
+          "stop" : 1690342815221,
+          "duration" : 6385
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      } ],
+      "uid" : "c304f0379c09049d51b2594b2cbb091a"
+    }, {
+      "name" : "AssertionError: assert 'https://t.me...nadevelopment' == 'https://www....5%D0%BD%D1%82'\n  - https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82\n  + https://t.me/stranadevelopment",
+      "children" : [ {
+        "name" : "Проверка кнопки YT в меню",
+        "uid" : "fb0a645f9328ef67",
+        "parentUid" : "1484508887739d3de4b282e8905934b1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1690342863991,
+          "stop" : 1690342868768,
+          "duration" : 4777
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      } ],
+      "uid" : "1484508887739d3de4b282e8905934b1"
+    }, {
+      "name" : "AssertionError: assert 'https://msk.strana.com/' == 'https://t.me...nadevelopment'\n  - https://t.me/stranadevelopment\n  + https://msk.strana.com/",
+      "children" : [ {
+        "name" : "Проверка кнопки Telegram в меню",
+        "uid" : "a2cd248c3c64deaf",
+        "parentUid" : "cae6cd6e73921a905ecbbe2180f9a654",
+        "status" : "failed",
+        "time" : {
+          "start" : 1690342909219,
+          "stop" : 1690342913281,
+          "duration" : 4062
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      } ],
+      "uid" : "cae6cd6e73921a905ecbbe2180f9a654"
+    }, {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "Проверка WOW мск",
+        "uid" : "782c89f76ae4f4c4",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1690344198599,
+          "stop" : 1690344204784,
+          "duration" : 6185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x561f66efb4e3 <unknown>\n#1 0x561f66c2ac76 <unknown>\n#2 0x561f66c66c96 <unknown>\n#3 0x561f66c66dc1 <unknown>\n#4 0x561f66ca07f4 <unknown>\n#5 0x561f66c8603d <unknown>\n#6 0x561f66c9e30e <unknown>\n#7 0x561f66c85de3 <unknown>\n#8 0x561f66c5b2dd <unknown>\n#9 0x561f66c5c34e <unknown>\n#10 0x561f66ebb3e4 <unknown>\n#11 0x561f66ebf3d7 <unknown>\n#12 0x561f66ec9b20 <unknown>\n#13 0x561f66ec0023 <unknown>\n#14 0x561f66e8e1aa <unknown>\n#15 0x561f66ee46b8 <unknown>\n#16 0x561f66ee4847 <unknown>\n#17 0x561f66ef4243 <unknown>\n#18 0x7f9321c8b609 start_thread",
+      "children" : [ {
+        "name" : "Проверка квартир МСК-4",
+        "uid" : "e35977db132c4ae2",
+        "parentUid" : "7afcf488ece113698ba89af11c43c30c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690341202601,
+          "stop" : 1690341308317,
+          "duration" : 105716
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "7afcf488ece113698ba89af11c43c30c"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5647b392e4e3 <unknown>\n#1 0x5647b365dc76 <unknown>\n#2 0x5647b3699c96 <unknown>\n#3 0x5647b3699dc1 <unknown>\n#4 0x5647b36d37f4 <unknown>\n#5 0x5647b36b903d <unknown>\n#6 0x5647b36d130e <unknown>\n#7 0x5647b36b8de3 <unknown>\n#8 0x5647b368e2dd <unknown>\n#9 0x5647b368f34e <unknown>\n#10 0x5647b38ee3e4 <unknown>\n#11 0x5647b38f23d7 <unknown>\n#12 0x5647b38fcb20 <unknown>\n#13 0x5647b38f3023 <unknown>\n#14 0x5647b38c11aa <unknown>\n#15 0x5647b39176b8 <unknown>\n#16 0x5647b3917847 <unknown>\n#17 0x5647b3927243 <unknown>\n#18 0x7f01f1938609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки sale мск",
+        "uid" : "a3afbd4dc334f3b0",
+        "parentUid" : "1c92bc4edde9a6b2b6a5bd02a9655902",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690341593892,
+          "stop" : 1690341696507,
+          "duration" : 102615
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1c92bc4edde9a6b2b6a5bd02a9655902"
+    }, {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x5558b6f444e3 <unknown>\n#1 0x5558b6c73c76 <unknown>\n#2 0x5558b6c7853c <unknown>\n#3 0x5558b6c7997e <unknown>\n#4 0x5558b6c79a4c <unknown>\n#5 0x5558b6cb3867 <unknown>\n#6 0x5558b6cb1d2e <unknown>\n#7 0x5558b6cb110f <unknown>\n#8 0x5558b6ca61da <unknown>\n#9 0x5558b6ccf012 <unknown>\n#10 0x5558b6ca5b03 <unknown>\n#11 0x5558b6ccf1de <unknown>\n#12 0x5558b6ce730e <unknown>\n#13 0x5558b6ccede3 <unknown>\n#14 0x5558b6ca42dd <unknown>\n#15 0x5558b6ca534e <unknown>\n#16 0x5558b6f043e4 <unknown>\n#17 0x5558b6f083d7 <unknown>\n#18 0x5558b6f12b20 <unknown>\n#19 0x5558b6f09023 <unknown>\n#20 0x5558b6ed71aa <unknown>\n#21 0x5558b6f2d6b8 <unknown>\n#22 0x5558b6f2d847 <unknown>\n#23 0x5558b6f3d243 <unknown>\n#24 0x7f1a673bf609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки проекты екб",
+        "uid" : "5dff46a4f6c3f90b",
+        "parentUid" : "978a173f9da298caf3d8400576c4736e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690341775691,
+          "stop" : 1690341779030,
+          "duration" : 3339
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "978a173f9da298caf3d8400576c4736e"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x56436f2524e3 <unknown>\n#1 0x56436ef81c76 <unknown>\n#2 0x56436efbdc96 <unknown>\n#3 0x56436efbddc1 <unknown>\n#4 0x56436eff77f4 <unknown>\n#5 0x56436efdd03d <unknown>\n#6 0x56436eff530e <unknown>\n#7 0x56436efdcde3 <unknown>\n#8 0x56436efb22dd <unknown>\n#9 0x56436efb334e <unknown>\n#10 0x56436f2123e4 <unknown>\n#11 0x56436f2163d7 <unknown>\n#12 0x56436f220b20 <unknown>\n#13 0x56436f217023 <unknown>\n#14 0x56436f1e51aa <unknown>\n#15 0x56436f23b6b8 <unknown>\n#16 0x56436f23b847 <unknown>\n#17 0x56436f24b243 <unknown>\n#18 0x7f61527a5609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки методы покупки тмн",
+        "uid" : "f5fd41424d53836a",
+        "parentUid" : "5071aa550b69bece97b7b440f4c837a4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690341869160,
+          "stop" : 1690341971756,
+          "duration" : 102596
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5071aa550b69bece97b7b440f4c837a4"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55eeb88d84e3 <unknown>\n#1 0x55eeb8607c76 <unknown>\n#2 0x55eeb8643c96 <unknown>\n#3 0x55eeb8643dc1 <unknown>\n#4 0x55eeb867d7f4 <unknown>\n#5 0x55eeb866303d <unknown>\n#6 0x55eeb867b30e <unknown>\n#7 0x55eeb8662de3 <unknown>\n#8 0x55eeb86382dd <unknown>\n#9 0x55eeb863934e <unknown>\n#10 0x55eeb88983e4 <unknown>\n#11 0x55eeb889c3d7 <unknown>\n#12 0x55eeb88a6b20 <unknown>\n#13 0x55eeb889d023 <unknown>\n#14 0x55eeb886b1aa <unknown>\n#15 0x55eeb88c16b8 <unknown>\n#16 0x55eeb88c1847 <unknown>\n#17 0x55eeb88d1243 <unknown>\n#18 0x7fe63ec9f609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки Проекты в меню",
+        "uid" : "275d351c07bfb82f",
+        "parentUid" : "13b0cd9f7e0b9bfeb19b94d98559af52",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690342102232,
+          "stop" : 1690342208304,
+          "duration" : 106072
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      } ],
+      "uid" : "13b0cd9f7e0b9bfeb19b94d98559af52"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5590304cc4e3 <unknown>\n#1 0x5590301fbc76 <unknown>\n#2 0x559030237c96 <unknown>\n#3 0x559030237dc1 <unknown>\n#4 0x5590302717f4 <unknown>\n#5 0x55903025703d <unknown>\n#6 0x55903026f30e <unknown>\n#7 0x559030256de3 <unknown>\n#8 0x55903022c2dd <unknown>\n#9 0x55903022d34e <unknown>\n#10 0x55903048c3e4 <unknown>\n#11 0x5590304903d7 <unknown>\n#12 0x55903049ab20 <unknown>\n#13 0x559030491023 <unknown>\n#14 0x55903045f1aa <unknown>\n#15 0x5590304b56b8 <unknown>\n#16 0x5590304b5847 <unknown>\n#17 0x5590304c5243 <unknown>\n#18 0x7f2c26081609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки Квартиры в меню",
+        "uid" : "50d339bb34b9ab5c",
+        "parentUid" : "0fa0af1935c72e7f2abca303d17e015c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690342348581,
+          "stop" : 1690342454522,
+          "duration" : 105941
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      } ],
+      "uid" : "0fa0af1935c72e7f2abca303d17e015c"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x5594c3a594e3 <unknown>\n#1 0x5594c3788c76 <unknown>\n#2 0x5594c37c4c96 <unknown>\n#3 0x5594c37c4dc1 <unknown>\n#4 0x5594c37fe7f4 <unknown>\n#5 0x5594c37e403d <unknown>\n#6 0x5594c37fc30e <unknown>\n#7 0x5594c37e3de3 <unknown>\n#8 0x5594c37b92dd <unknown>\n#9 0x5594c37ba34e <unknown>\n#10 0x5594c3a193e4 <unknown>\n#11 0x5594c3a1d3d7 <unknown>\n#12 0x5594c3a27b20 <unknown>\n#13 0x5594c3a1e023 <unknown>\n#14 0x5594c39ec1aa <unknown>\n#15 0x5594c3a426b8 <unknown>\n#16 0x5594c3a42847 <unknown>\n#17 0x5594c3a52243 <unknown>\n#18 0x7f7b3dc8c609 start_thread",
+      "children" : [ {
+        "name" : "Проверка кнопки Компания в меню",
+        "uid" : "892b40f9acffa4a7",
+        "parentUid" : "c22b969d564f5bc2ab2db1f5bc591055",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690342597380,
+          "stop" : 1690342703349,
+          "duration" : 105969
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://msk.strana.com'" ]
+      } ],
+      "uid" : "c22b969d564f5bc2ab2db1f5bc591055"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x557bc5a874e3 <unknown>\n#1 0x557bc57b6c76 <unknown>\n#2 0x557bc57f2c96 <unknown>\n#3 0x557bc57f2dc1 <unknown>\n#4 0x557bc582c7f4 <unknown>\n#5 0x557bc581203d <unknown>\n#6 0x557bc582a30e <unknown>\n#7 0x557bc5811de3 <unknown>\n#8 0x557bc57e72dd <unknown>\n#9 0x557bc57e834e <unknown>\n#10 0x557bc5a473e4 <unknown>\n#11 0x557bc5a4b3d7 <unknown>\n#12 0x557bc5a55b20 <unknown>\n#13 0x557bc5a4c023 <unknown>\n#14 0x557bc5a1a1aa <unknown>\n#15 0x557bc5a706b8 <unknown>\n#16 0x557bc5a70847 <unknown>\n#17 0x557bc5a80243 <unknown>\n#18 0x7fbed6444609 start_thread",
+      "children" : [ {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "8518d93c05783c72",
+        "parentUid" : "9a50203210cad76147a3b9c01deedaec",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690343042684,
+          "stop" : 1690343148864,
+          "duration" : 106180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://tmn.strana.com'" ]
+      } ],
+      "uid" : "9a50203210cad76147a3b9c01deedaec"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x555fda3904e3 <unknown>\n#1 0x555fda0bfc76 <unknown>\n#2 0x555fda0fbc96 <unknown>\n#3 0x555fda0fbdc1 <unknown>\n#4 0x555fda1357f4 <unknown>\n#5 0x555fda11b03d <unknown>\n#6 0x555fda13330e <unknown>\n#7 0x555fda11ade3 <unknown>\n#8 0x555fda0f02dd <unknown>\n#9 0x555fda0f134e <unknown>\n#10 0x555fda3503e4 <unknown>\n#11 0x555fda3543d7 <unknown>\n#12 0x555fda35eb20 <unknown>\n#13 0x555fda355023 <unknown>\n#14 0x555fda3231aa <unknown>\n#15 0x555fda3796b8 <unknown>\n#16 0x555fda379847 <unknown>\n#17 0x555fda389243 <unknown>\n#18 0x7fa7efdd2609 start_thread",
+      "children" : [ {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "f960cc2ae701b0ab",
+        "parentUid" : "9bd51a0a10706749a8d1cbc6fd3bfd9a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690343266379,
+          "stop" : 1690343373094,
+          "duration" : 106715
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://spb.strana.com'" ]
+      } ],
+      "uid" : "9bd51a0a10706749a8d1cbc6fd3bfd9a"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x561553b044e3 <unknown>\n#1 0x561553833c76 <unknown>\n#2 0x56155386fc96 <unknown>\n#3 0x56155386fdc1 <unknown>\n#4 0x5615538a97f4 <unknown>\n#5 0x56155388f03d <unknown>\n#6 0x5615538a730e <unknown>\n#7 0x56155388ede3 <unknown>\n#8 0x5615538642dd <unknown>\n#9 0x56155386534e <unknown>\n#10 0x561553ac43e4 <unknown>\n#11 0x561553ac83d7 <unknown>\n#12 0x561553ad2b20 <unknown>\n#13 0x561553ac9023 <unknown>\n#14 0x561553a971aa <unknown>\n#15 0x561553aed6b8 <unknown>\n#16 0x561553aed847 <unknown>\n#17 0x561553afd243 <unknown>\n#18 0x7f43bc898609 start_thread",
+      "children" : [ {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "b23cfe8a1a711f14",
+        "parentUid" : "94c636ef5906cb8d1a5b596d9265c235",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690343480644,
+          "stop" : 1690343585452,
+          "duration" : 104808
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://mo.strana.com'" ]
+      } ],
+      "uid" : "94c636ef5906cb8d1a5b596d9265c235"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55babbb144e3 <unknown>\n#1 0x55babb843c76 <unknown>\n#2 0x55babb87fc96 <unknown>\n#3 0x55babb87fdc1 <unknown>\n#4 0x55babb8b97f4 <unknown>\n#5 0x55babb89f03d <unknown>\n#6 0x55babb8b730e <unknown>\n#7 0x55babb89ede3 <unknown>\n#8 0x55babb8742dd <unknown>\n#9 0x55babb87534e <unknown>\n#10 0x55babbad43e4 <unknown>\n#11 0x55babbad83d7 <unknown>\n#12 0x55babbae2b20 <unknown>\n#13 0x55babbad9023 <unknown>\n#14 0x55babbaa71aa <unknown>\n#15 0x55babbafd6b8 <unknown>\n#16 0x55babbafd847 <unknown>\n#17 0x55babbb0d243 <unknown>\n#18 0x7ff79e510609 start_thread",
+      "children" : [ {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "c2bb4f64d032fbb4",
+        "parentUid" : "599fc57a7bd0ddc4eaa73d8a7874ab68",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690343693953,
+          "stop" : 1690343800039,
+          "duration" : 106086
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://ekb.strana.com'" ]
+      } ],
+      "uid" : "599fc57a7bd0ddc4eaa73d8a7874ab68"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55ac0e0fa4e3 <unknown>\n#1 0x55ac0de29c76 <unknown>\n#2 0x55ac0de65c96 <unknown>\n#3 0x55ac0de65dc1 <unknown>\n#4 0x55ac0de9f7f4 <unknown>\n#5 0x55ac0de8503d <unknown>\n#6 0x55ac0de9d30e <unknown>\n#7 0x55ac0de84de3 <unknown>\n#8 0x55ac0de5a2dd <unknown>\n#9 0x55ac0de5b34e <unknown>\n#10 0x55ac0e0ba3e4 <unknown>\n#11 0x55ac0e0be3d7 <unknown>\n#12 0x55ac0e0c8b20 <unknown>\n#13 0x55ac0e0bf023 <unknown>\n#14 0x55ac0e08d1aa <unknown>\n#15 0x55ac0e0e36b8 <unknown>\n#16 0x55ac0e0e3847 <unknown>\n#17 0x55ac0e0f3243 <unknown>\n#18 0x7f5ab2e70609 start_thread",
+      "children" : [ {
+        "name" : "Проверка авторизации в ЛК брокера через хедер",
+        "uid" : "c33e26e4170d0a30",
+        "parentUid" : "69543e6a09c239e2e7097e19910864b4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690343907660,
+          "stop" : 1690344012928,
+          "duration" : 105268
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'https://nsk.strana.com'" ]
+      } ],
+      "uid" : "69543e6a09c239e2e7097e19910864b4"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"s-link__wrapper\" data-v-cf493dac=\"\"></div> is not clickable at point (179, 319). Other element would receive the click: <ul data-v-359c62e3=\"\" class=\"header-projects-popup__projects popup-layout__block\">...</ul>\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x5627d9e5c4e3 <unknown>\n#1 0x5627d9b8bc76 <unknown>\n#2 0x5627d9bcd9d4 <unknown>\n#3 0x5627d9bcbcbd <unknown>\n#4 0x5627d9bc9d2e <unknown>\n#5 0x5627d9bc910f <unknown>\n#6 0x5627d9bbe1da <unknown>\n#7 0x5627d9be7012 <unknown>\n#8 0x5627d9bbdb03 <unknown>\n#9 0x5627d9be71de <unknown>\n#10 0x5627d9bff30e <unknown>\n#11 0x5627d9be6de3 <unknown>\n#12 0x5627d9bbc2dd <unknown>\n#13 0x5627d9bbd34e <unknown>\n#14 0x5627d9e1c3e4 <unknown>\n#15 0x5627d9e203d7 <unknown>\n#16 0x5627d9e2ab20 <unknown>\n#17 0x5627d9e21023 <unknown>\n#18 0x5627d9def1aa <unknown>\n#19 0x5627d9e456b8 <unknown>\n#20 0x5627d9e45847 <unknown>\n#21 0x5627d9e55243 <unknown>\n#22 0x7fe081c50609 start_thread",
+      "children" : [ {
+        "name" : "Проверка Озёрный мск",
+        "uid" : "d68f03ed22078f40",
+        "parentUid" : "363263bf94b3c304f480bd3d31b29be0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690344223718,
+          "stop" : 1690344228960,
+          "duration" : 5242
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "363263bf94b3c304f480bd3d31b29be0"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

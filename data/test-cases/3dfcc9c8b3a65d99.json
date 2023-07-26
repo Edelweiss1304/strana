@@ -1,0 +1,188 @@
+{
+  "uid" : "3dfcc9c8b3a65d99",
+  "name" : "Проверка квартир МСК-0",
+  "fullName" : "tests.test_apart_from_header#test_msk_apart",
+  "historyId" : "021e4daf34756c722a2a7d9a75d06034",
+  "time" : {
+    "start" : 1690341032186,
+    "stop" : 1690341039850,
+    "duration" : 7664
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\n  - rgba(146, 39, 143, 1)\n  + rgba(1, 35, 69, 1)",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"77a9f50f5dec1d98f633e04bffad1c18\")>\nindex = 0\n\n    @allure.title(\"Проверка квартир МСК-{index}\")\n    @pytest.mark.parametrize(\"index\", range(5))\n    def test_msk_apart(driver, index):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_msk'])\n        head.move_to_apart()\n        link_index = 9 + index\n        getattr(head, f\"click_s_link_wrapper_{link_index}_from_header\")()\n        assert head.get_city_in_apart() == \"Москва\"\n        time.sleep(1)\n>       assert getattr(head, f\"get_apart_{index}\")().value_of_css_property(\"color\") == head.text_color\nE       AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\nE         - rgba(146, 39, 143, 1)\nE         + rgba(1, 35, 69, 1)\n\ntests/test_apart_from_header.py:19: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1690341022566,
+      "stop" : 1690341022566,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1690341022566,
+      "stop" : 1690341022566,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1690341022566,
+      "stop" : 1690341022566,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1690341031447,
+      "stop" : 1690341032186,
+      "duration" : 739
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1690341031447,
+      "stop" : 1690341031447,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\n  - rgba(146, 39, 143, 1)\n  + rgba(1, 35, 69, 1)",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"77a9f50f5dec1d98f633e04bffad1c18\")>\nindex = 0\n\n    @allure.title(\"Проверка квартир МСК-{index}\")\n    @pytest.mark.parametrize(\"index\", range(5))\n    def test_msk_apart(driver, index):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_msk'])\n        head.move_to_apart()\n        link_index = 9 + index\n        getattr(head, f\"click_s_link_wrapper_{link_index}_from_header\")()\n        assert head.get_city_in_apart() == \"Москва\"\n        time.sleep(1)\n>       assert getattr(head, f\"get_apart_{index}\")().value_of_css_property(\"color\") == head.text_color\nE       AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\nE         - rgba(146, 39, 143, 1)\nE         + rgba(1, 35, 69, 1)\n\ntests/test_apart_from_header.py:19: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a3583c0958875e44",
+      "name" : "screenshot_tests_test_apart_from_header.py::test_msk_apart[0].png",
+      "source" : "a3583c0958875e44.png",
+      "type" : "image/png",
+      "size" : 163537
+    }, {
+      "uid" : "4af6f4dcf791967b",
+      "name" : "stdout",
+      "source" : "4af6f4dcf791967b.txt",
+      "type" : "text/plain",
+      "size" : 178
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1690341040351,
+      "stop" : 1690341040411,
+      "duration" : 60
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_apart_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "3284575-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_apart_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "index",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8ee737f2e9ee0e82",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\n  - rgba(146, 39, 143, 1)\n  + rgba(1, 35, 69, 1)",
+      "time" : {
+        "start" : 1690341023305,
+        "stop" : 1690341030868,
+        "duration" : 7563
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "3dfcc9c8b3a65d99.json",
+  "parameterValues" : [ "0" ]
+}

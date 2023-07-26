@@ -1,0 +1,185 @@
+{
+  "uid" : "782c89f76ae4f4c4",
+  "name" : "Проверка WOW мск",
+  "fullName" : "tests.test_projects_from_header#test_msk_header_wow",
+  "historyId" : "7733329eb766cd1284322da45e6886ea",
+  "time" : {
+    "start" : 1690344198599,
+    "stop" : 1690344204784,
+    "duration" : 6185
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"0faeb42767648800dea2a288fc77d858\")>\n\n    @allure.title(\"Проверка WOW мск\")\n    def test_msk_header_wow(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_msk'])\n>       head.check_wow_from_header()\n\ntests/test_projects_from_header.py:11: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7f0a438abc10>\n\n    def check_wow_from_header(self):\n        self.move_to_projects()\n        self.click_s_link_wrapper_9_from_header()\n>       assert self.get_project_business_tittle() == \"КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ\"\nE       AssertionError\n\npages/header_links.py:280: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1690341022566,
+      "stop" : 1690341022566,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1690344197878,
+      "stop" : 1690344198598,
+      "duration" : 720
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1690341022566,
+      "stop" : 1690341022566,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1690344197878,
+      "stop" : 1690344197878,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1690341022566,
+      "stop" : 1690341022566,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"0faeb42767648800dea2a288fc77d858\")>\n\n    @allure.title(\"Проверка WOW мск\")\n    def test_msk_header_wow(driver):\n        head = Header(driver)\n        Base.open_page(driver, URLS_MAIN['url_msk'])\n>       head.check_wow_from_header()\n\ntests/test_projects_from_header.py:11: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.header_links.Header object at 0x7f0a438abc10>\n\n    def check_wow_from_header(self):\n        self.move_to_projects()\n        self.click_s_link_wrapper_9_from_header()\n>       assert self.get_project_business_tittle() == \"КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ\"\nE       AssertionError\n\npages/header_links.py:280: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2b8867daf0ae124d",
+      "name" : "screenshot_tests_test_projects_from_header.py::test_msk_header_wow.png",
+      "source" : "2b8867daf0ae124d.png",
+      "type" : "image/png",
+      "size" : 2074816
+    }, {
+      "uid" : "af4b1bb55397c7f2",
+      "name" : "stdout",
+      "source" : "af4b1bb55397c7f2.txt",
+      "type" : "text/plain",
+      "size" : 87
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1690344216693,
+      "stop" : 1690344216758,
+      "duration" : 65
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_projects_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "3284575-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_projects_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3c1dc4bebe3cfd62",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"No node with given id found\"}\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x56042b9b14e3 <unknown>\n#1 0x56042b6e0c76 <unknown>\n#2 0x56042b6ca900 <unknown>\n#3 0x56042b6c8bac <unknown>\n#4 0x56042b6c9162 <unknown>\n#5 0x56042b6c90b4 <unknown>\n#6 0x56042b6edb86 <unknown>\n#7 0x56042b6e56f3 <unknown>\n#8 0x56042b6e41d6 <unknown>\n#9 0x56042b6e697e <unknown>\n#10 0x56042b6e6a4c <unknown>\n#11 0x56042b721f96 <unknown>\n#12 0x56042b721607 <unknown>\n#13 0x56042b75ca1f <unknown>\n#14 0x56042b73c012 <unknown>\n#15 0x56042b75430e <unknown>\n#16 0x56042b73bde3 <unknown>\n#17 0x56042b7112dd <unknown>\n#18 0x56042b71234e <unknown>\n#19 0x56042b9713e4 <unknown>\n#20 0x56042b9753d7 <unknown>\n#21 0x56042b97fb20 <unknown>\n#22 0x56042b976023 <unknown>\n#23 0x56042b9441aa <unknown>\n#24 0x56042b99a6b8 <unknown>\n#25 0x56042b99a847 <unknown>\n#26 0x56042b9aa243 <unknown>\n#27 0x7fad9717d609 start_thread",
+      "time" : {
+        "start" : 1690344193518,
+        "stop" : 1690344196246,
+        "duration" : 2728
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "782c89f76ae4f4c4.json",
+  "parameterValues" : [ ]
+}
