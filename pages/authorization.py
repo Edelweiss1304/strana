@@ -98,7 +98,7 @@ class Authorization(Base):
             locator = Base.get_s_link_wrapper_locator(23)
 
         elif url == 'https://nsk.strana.com':
-            locator = Base.get_s_link_wrapper_locator(25)
+            locator = Base.get_s_link_wrapper_locator(20)
 
         elif url == 'https://msk.strana.com':
             locator = Base.get_s_link_wrapper_locator(24)
