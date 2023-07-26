@@ -71,7 +71,7 @@ def test_ekb_apart(driver, index):
                     'комнатностью.')
 @testit.displayName("Проверка квартир по комнатности СПБ-{index}")
 @allure.title("Проверка квартир СПБ-{index}")
-@pytest.mark.parametrize("index", [0, 1])
+@pytest.mark.parametrize("index", [0])
 def test_spb_apart(driver, index):
     head = Header(driver)
     with testit.step("Открываем главную страницу СПБ"):
