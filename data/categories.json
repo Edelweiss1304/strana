@@ -1,26 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"s-link__wrapper\" data-v-cf493dac=\"\"></div> is not clickable at point (1291, 216). Other element would receive the click: <span data-v-1ae17c1f=\"\" class=\"s-button__hover-shell\">...</span>\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x5564170274e3 <unknown>\n#1 0x556416d56c76 <unknown>\n#2 0x556416d989d4 <unknown>\n#3 0x556416d96cbd <unknown>\n#4 0x556416d94d2e <unknown>\n#5 0x556416d9410f <unknown>\n#6 0x556416d891da <unknown>\n#7 0x556416db2012 <unknown>\n#8 0x556416d88b03 <unknown>\n#9 0x556416db21de <unknown>\n#10 0x556416dca30e <unknown>\n#11 0x556416db1de3 <unknown>\n#12 0x556416d872dd <unknown>\n#13 0x556416d8834e <unknown>\n#14 0x556416fe73e4 <unknown>\n#15 0x556416feb3d7 <unknown>\n#16 0x556416ff5b20 <unknown>\n#17 0x556416fec023 <unknown>\n#18 0x556416fba1aa <unknown>\n#19 0x5564170106b8 <unknown>\n#20 0x556417010847 <unknown>\n#21 0x556417020243 <unknown>\n#22 0x7fbe887bc609 start_thread",
-      "children" : [ {
-        "name" : "Проверка авторизации в ЛК брокера через хедер",
-        "uid" : "43642fa349d8bc5a",
-        "parentUid" : "197c7403fb00ae01e8710c1676d58d04",
-        "status" : "broken",
-        "time" : {
-          "start" : 1690369782115,
-          "stop" : 1690369786272,
-          "duration" : 4157
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'https://nsk.strana.com'" ]
-      } ],
-      "uid" : "197c7403fb00ae01e8710c1676d58d04"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ]
 }
