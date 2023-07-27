@@ -4,6 +4,7 @@ from pages.url import URLS_MAIN
 import pytest
 import time
 from pages.header_links import Header
+import testit
 
 
 class Authorization(Base):
@@ -81,38 +82,49 @@ class Authorization(Base):
     # Methods
     def login_lk(self, phone_for_user=+79198629250, code_for_user=1313):
         time.sleep(1)
-        self.click_login_lk_button()
-        next_tab_index = (self.driver.window_handles.index(self.driver.current_window_handle) + 1) % len(self.driver.window_handles)
-        self.driver.switch_to.window(self.driver.window_handles[next_tab_index])
-        self.get_login_client_phone_field().send_keys(phone_for_user)
-        self.click_get_code_btn()
-        self.get_enter_code_field().send_keys(code_for_user)
-        self.click_fin_login_btn()
+        with testit.step("Нажимаем иконку входа"):
+            self.click_login_lk_button()
+            next_tab_index = (self.driver.window_handles.index(self.driver.current_window_handle) + 1) % len(self.driver.window_handles)
+        with testit.step("Переключаемся на соседнюю вкладку"):
+            self.driver.switch_to.window(self.driver.window_handles[next_tab_index])
+        with testit.step("Заполняем телефон"):
+            self.get_login_client_phone_field().send_keys(phone_for_user)
+        with testit.step("Кликаем Получить код"):
+            self.click_get_code_btn()
+        with testit.step("Вводим код"):
+            self.get_enter_code_field().send_keys(code_for_user)
+        with testit.step("Нажимаем Войти"):
+            self.click_fin_login_btn()
 
     def login_page_broker_from_header(self, url):
         head = Header(self.driver)
         time.sleep(1)
-        head.actions.move_to_element(head.get_menu_button()).perform()
+        with testit.step("Открываем главную страницу"):
+            head.actions.move_to_element(head.get_menu_button()).perform()
 
-        if url == 'https://mo.strana.com':
-            locator = Base.get_s_link_wrapper_locator(23)
+            if url == 'https://mo.strana.com':
+                locator = Base.get_s_link_wrapper_locator(23)
 
-        elif url == 'https://nsk.strana.com':
-            locator = Base.get_s_link_wrapper_locator(20)
+            elif url == 'https://nsk.strana.com':
+                locator = Base.get_s_link_wrapper_locator(20)
 
-        elif url == 'https://msk.strana.com':
-            locator = Base.get_s_link_wrapper_locator(24)
+            elif url == 'https://msk.strana.com':
+                locator = Base.get_s_link_wrapper_locator(24)
 
-        else:
-            locator = Base.get_s_link_wrapper_locator(25)
-
-        Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
-        self.click_first_login_broker_button()
+            else:
+                locator = Base.get_s_link_wrapper_locator(25)
+        with testit.step("Кликаем на Агентам и агентствам"):
+            Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
+        with testit.step("Нажимаем Войти/Зарегистрироваться"):
+            self.click_first_login_broker_button()
 
     def login_lk_broker(self, email='smiledmitriev@yandex.com', password='123456789'):
-        self.get_email_field_agent().send_keys(email)
-        self.get_password_field_agent().send_keys(password)
-        self.click_login_broker_btn()
+        with testit.step("Вводим почту"):
+            self.get_email_field_agent().send_keys(email)
+        with testit.step("Вводим пароль"):
+            self.get_password_field_agent().send_keys(password)
+        with testit.step("Нажимаем Войти"):
+            self.click_login_broker_btn()
 
     def login_broker_from_main_page(self, url):
         if url == 'https://mo.strana.com':
@@ -132,6 +144,7 @@ class Authorization(Base):
 
         else:
             locator = Base.get_s_link_wrapper_locator(17)
-
-        Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
-        self.click_first_login_broker_button()
+        with testit.step("Кликаем Агентам и агентствам на главном экране"):
+            Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
+        with testit.step("Нажимаем Войти"):
+            self.click_first_login_broker_button()

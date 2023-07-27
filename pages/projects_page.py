@@ -1,6 +1,7 @@
 from base.base_class import Base
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
+import testit
 
 
 class ProjectsPage(Base):
@@ -62,39 +63,50 @@ class ProjectsPage(Base):
         return self.get_element_clickable(self.driver, (By.XPATH, self.accept_cookie))
 
     # Actions
+    with testit.step("Кликаем на WOW"):
+        def click_wow(self):
+            self.get_wow().click()
 
-    def click_wow(self):
-        self.get_wow().click()
+    with testit.step("Кликаем на Озерный"):
+        def click_ozerniy(self):
+            self.get_ozerniy().click()
 
-    def click_ozerniy(self):
-        self.get_ozerniy().click()
+    with testit.step("Кликаем на ДнВ"):
+        def click_dnv(self):
+            self.get_dnv().click()
 
-    def click_dnv(self):
-        self.get_dnv().click()
+    with testit.step("Кликаем на Озерный"):
+        def click_princip(self):
+            self.get_princip().click()
 
-    def click_princip(self):
-        self.get_princip().click()
+    with testit.step("Кликаем на Сибирский Сад"):
+        def click_sibsad(self):
+            self.get_sibsad().click()
 
-    def click_sibsad(self):
-        self.get_sibsad().click()
+    with testit.step("Кликаем на Звездный"):
+        def click_zvezdniy(self):
+            self.get_zvezdniy().click()
 
-    def click_zvezdniy(self):
-        self.get_zvezdniy().click()
+    with testit.step("Кликаем на Юнион"):
+        def click_union(self):
+            self.get_union().click()
 
-    def click_union(self):
-        self.get_union().click()
+    with testit.step("Кликаем на Авторский"):
+        def click_avtorskiy(self):
+            self.get_avtorskiy().click()
 
-    def click_avtorskiy(self):
-        self.get_avtorskiy().click()
+    with testit.step("Кликаем на Колумб"):
+        def click_kolumb(self):
+            self.get_kolumb().click()
 
-    def click_kolumb(self):
-        self.get_kolumb().click()
+    with testit.step("Кликаем на Сердце Сибири"):
+        def click_sersib(self):
+            self.get_sersib().click()
 
-    def click_sersib(self):
-        self.get_sersib().click()
+    with testit.step("Кликаем на Домашний"):
+        def click_domashniy(self):
+            self.get_domashniy().click()
 
-    def click_domashniy(self):
-        self.get_domashniy().click()
-
-    def click_accept_cookie(self):
-        self.get_accept_cookie().click()
+    with testit.step("Принимаем куки"):
+        def click_accept_cookie(self):
+            self.get_accept_cookie().click()

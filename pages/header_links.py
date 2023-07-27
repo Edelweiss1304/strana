@@ -142,9 +142,10 @@ class Header(Base):
         return self.get_element_clickable(self.driver, (By.XPATH, self.header_pop_up))
 
     # Actions
-    def click_projects(self):
-        self.get_projects().click()
-        print("Кликаем на кнопку проекты")
+    with testit.step("Кликаем на проекты"):
+        def click_projects(self):
+            self.get_projects().click()
+            print("Кликаем на кнопку проекты")
 
     def move_to_projects(self):
         self.actions.move_to_element(self.get_projects()).perform()
@@ -280,67 +281,100 @@ class Header(Base):
         # Проверка подменю в ХЭДЕРЕ Methods
 
     def check_wow_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_8_from_header()
-        assert self.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на WOW"):
+            self.click_s_link_wrapper_8_from_header()
+        with testit.step("Проверяем, что попали на WOW"):
+            assert self.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
+            print("Проверяем заголовок")
 
     def check_ozerniy_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_9_from_header()
-        assert self.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на Озерный"):
+            self.click_s_link_wrapper_9_from_header()
+        with testit.step("Проверяем, что попали на Озерный"):
+            assert self.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
+            print("Проверяем заголовок")
 
     def check_dnv_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_9_from_header()
-        assert self.get_project_dnv_check() == "Санкт-Петербург"
-        print("Проверяем что попали на нужную страницу")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на ДнВ"):
+            self.click_s_link_wrapper_9_from_header()
+        with testit.step("Проверяем, что попали на ДнВ"):
+            assert self.get_project_dnv_check() == "Санкт-Петербург"
+            print("Проверяем что попали на нужную страницу")
 
     def check_zvezdniy_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_10_from_header()
-        assert self.get_project_comfort_tittle() == "Звездный"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на Звездный"):
+            self.click_s_link_wrapper_10_from_header()
+        with testit.step("Проверяем, что попали Звездный"):
+            assert self.get_project_comfort_tittle() == "Звездный"
+            print("Проверяем заголовок")
 
     def check_union_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_9_from_header()
-        assert self.get_project_comfort_tittle() == "Юнион"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на Юнион"):
+            self.click_s_link_wrapper_9_from_header()
+        with testit.step("Проверяем, что попали Юнион"):
+            assert self.get_project_comfort_tittle() == "Юнион"
+            print("Проверяем заголовок")
 
     def check_avtorskiy_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_11_from_header()
-        assert self.get_project_comfort_tittle() == "Авторский"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на Авторский"):
+            self.click_s_link_wrapper_11_from_header()
+        with testit.step("Проверяем, что попали на Авторский"):
+            assert self.get_project_comfort_tittle() == "Авторский"
+            print("Проверяем заголовок")
 
     def check_kolumb_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_13_from_header()
-        assert self.get_project_comfort_tittle() == "Колумб"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на Колумб"):
+            self.click_s_link_wrapper_13_from_header()
+        with testit.step("Проверяем, что попали в Колумб"):
+            assert self.get_project_comfort_tittle() == "Колумб"
+            print("Проверяем заголовок")
 
     def check_sersib_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_15_from_header()
-        assert self.get_project_comfort_tittle() == "Сердце Сибири"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на Сердце Сибири"):
+            self.click_s_link_wrapper_15_from_header()
+        with testit.step("Проверяем, что попали на Сердце Сибири"):
+            assert self.get_project_comfort_tittle() == "Сердце Сибири"
+            print("Проверяем заголовок")
 
     def check_domashniy_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_14_from_header()
-        assert self.get_project_comfort_tittle() == "Домашний"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на Домашний"):
+            self.click_s_link_wrapper_14_from_header()
+        with testit.step("Проверяем, что попали на Домашний"):
+            assert self.get_project_comfort_tittle() == "Домашний"
+            print("Проверяем заголовок")
 
     def check_eb_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_12_from_header()
-        assert self.get_project_comfort_tittle() == "Европейский берег 2.0"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на ЕБ"):
+            self.click_s_link_wrapper_12_from_header()
+        with testit.step("Првоеряем, что попали на ЕБ"):
+            assert self.get_project_comfort_tittle() == "Европейский берег 2.0"
+            print("Проверяем заголовок")
 
     def check_sibsad_from_header(self):
-        self.move_to_projects()
-        self.click_s_link_wrapper_9_from_header()
-        assert self.get_project_comfort_tittle() == "Сибирский сад"
-        print("Проверяем заголовок")
+        with testit.step("Наводимся на проекты"):
+            self.move_to_projects()
+        with testit.step("Кликаем на Сибирский Сад"):
+            self.click_s_link_wrapper_9_from_header()
+        with testit.step("Проверяем, что попали на Сибирский Сад"):
+            assert self.get_project_comfort_tittle() == "Сибирский сад"
+            print("Проверяем заголовок")
