@@ -1,0 +1,171 @@
+{
+  "uid" : "b56cbb57ec190680",
+  "name" : "Проверка кнопки акции мск",
+  "fullName" : "tests.test_header_links#test_msk_header_actions",
+  "historyId" : "e691582224b343935b44efa08ffa5e58",
+  "time" : {
+    "start" : 1690514019369,
+    "stop" : 1690514024762,
+    "duration" : 5393
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1690514018678,
+      "stop" : 1690514018678,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1690513811377,
+      "stop" : 1690513811377,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1690513811377,
+      "stop" : 1690513811377,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1690514018678,
+      "stop" : 1690514019369,
+      "duration" : 691
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1690513811377,
+      "stop" : 1690513811377,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a8c13cfdd7c594ba",
+      "name" : "stdout",
+      "source" : "a8c13cfdd7c594ba.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1690514024762,
+      "stop" : 1690514024821,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_links"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "3464395-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_links"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "425b37c3d07fbe78",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x557ca54014e3 <unknown>\n#1 0x557ca5130c76 <unknown>\n#2 0x557ca513553c <unknown>\n#3 0x557ca513697e <unknown>\n#4 0x557ca5136a4c <unknown>\n#5 0x557ca516e3c2 <unknown>\n#6 0x557ca5163021 <unknown>\n#7 0x557ca518c012 <unknown>\n#8 0x557ca5162b03 <unknown>\n#9 0x557ca518c1de <unknown>\n#10 0x557ca51a430e <unknown>\n#11 0x557ca518bde3 <unknown>\n#12 0x557ca51612dd <unknown>\n#13 0x557ca516234e <unknown>\n#14 0x557ca53c13e4 <unknown>\n#15 0x557ca53c53d7 <unknown>\n#16 0x557ca53cfb20 <unknown>\n#17 0x557ca53c6023 <unknown>\n#18 0x557ca53941aa <unknown>\n#19 0x557ca53ea6b8 <unknown>\n#20 0x557ca53ea847 <unknown>\n#21 0x557ca53fa243 <unknown>\n#22 0x7f784bc1d609 start_thread",
+      "time" : {
+        "start" : 1690514014624,
+        "stop" : 1690514016788,
+        "duration" : 2164
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "b56cbb57ec190680.json",
+  "parameterValues" : [ ]
+}
