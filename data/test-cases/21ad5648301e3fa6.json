@@ -1,0 +1,173 @@
+{
+  "uid" : "21ad5648301e3fa6",
+  "name" : "Проверка квартир ЕКБ-1",
+  "fullName" : "tests.test_apart_from_header#test_ekb_apart",
+  "historyId" : "fb0e16b43904ec9afbf44baf273564b2",
+  "time" : {
+    "start" : 1690600322272,
+    "stop" : 1690600331234,
+    "duration" : 8962
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\n  - rgba(146, 39, 143, 1)\n  + rgba(1, 35, 69, 1)",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8d25e9635d515bd05fc54a843fc8f80a\")>\nindex = 1\n\n    @testit.description('Проверяем, что при нажатии на х-комнатную квартиру в хэдере, мы попадаем на выборщик с нужной '\n                        'комнатностью.')\n    @testit.displayName(\"Проверка квартир по комнатности ЕКБ-{index}\")\n    @allure.title(\"Проверка квартир ЕКБ-{index}\")\n    @pytest.mark.parametrize(\"index\", range(5))\n    def test_ekb_apart(driver, index):\n        head = Header(driver)\n        with testit.step(\"Открываем главную страницу ЕКБ\"):\n            Base.open_page(driver, URLS_MAIN['url_ekb'])\n            head.move_to_apart()\n        with testit.step(\"Выбираем комнатность {index}\"):\n            link_index = 9 + index\n            getattr(head, f\"click_s_link_wrapper_{link_index}_from_header\")()\n        with testit.step(\"Смотрим, что находимся в выборщике нужного города\"):\n            assert head.get_city_in_apart() == \"в Екатеринбурге\"\n            time.sleep(1)\n        with testit.step(\"Смотрим, какая комнатность выбрана\"):\n>           assert getattr(head, f\"get_apart_{index}\")().value_of_css_property(\"color\") == head.text_color\nE           AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\nE             - rgba(146, 39, 143, 1)\nE             + rgba(1, 35, 69, 1)\n\ntests/test_apart_from_header.py:67: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1690600321536,
+      "stop" : 1690600321536,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1690600204155,
+      "stop" : 1690600204155,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1690600321536,
+      "stop" : 1690600322271,
+      "duration" : 735
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1690600204154,
+      "stop" : 1690600204154,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1690600204154,
+      "stop" : 1690600204154,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\n  - rgba(146, 39, 143, 1)\n  + rgba(1, 35, 69, 1)",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8d25e9635d515bd05fc54a843fc8f80a\")>\nindex = 1\n\n    @testit.description('Проверяем, что при нажатии на х-комнатную квартиру в хэдере, мы попадаем на выборщик с нужной '\n                        'комнатностью.')\n    @testit.displayName(\"Проверка квартир по комнатности ЕКБ-{index}\")\n    @allure.title(\"Проверка квартир ЕКБ-{index}\")\n    @pytest.mark.parametrize(\"index\", range(5))\n    def test_ekb_apart(driver, index):\n        head = Header(driver)\n        with testit.step(\"Открываем главную страницу ЕКБ\"):\n            Base.open_page(driver, URLS_MAIN['url_ekb'])\n            head.move_to_apart()\n        with testit.step(\"Выбираем комнатность {index}\"):\n            link_index = 9 + index\n            getattr(head, f\"click_s_link_wrapper_{link_index}_from_header\")()\n        with testit.step(\"Смотрим, что находимся в выборщике нужного города\"):\n            assert head.get_city_in_apart() == \"в Екатеринбурге\"\n            time.sleep(1)\n        with testit.step(\"Смотрим, какая комнатность выбрана\"):\n>           assert getattr(head, f\"get_apart_{index}\")().value_of_css_property(\"color\") == head.text_color\nE           AssertionError: assert 'rgba(1, 35, 69, 1)' == 'rgba(146, 39, 143, 1)'\nE             - rgba(146, 39, 143, 1)\nE             + rgba(1, 35, 69, 1)\n\ntests/test_apart_from_header.py:67: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "34d040803fc5f2a1",
+      "name" : "screenshot_tests_test_apart_from_header.py::test_ekb_apart[1].png",
+      "source" : "34d040803fc5f2a1.png",
+      "type" : "image/png",
+      "size" : 191907
+    }, {
+      "uid" : "86c84b328c115b41",
+      "name" : "stdout",
+      "source" : "86c84b328c115b41.txt",
+      "type" : "text/plain",
+      "size" : 90
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1690600331717,
+      "stop" : 1690600331783,
+      "duration" : 66
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_apart_from_header"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "3517247-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_apart_from_header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "index",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "21ad5648301e3fa6.json",
+  "parameterValues" : [ "1" ]
+}
