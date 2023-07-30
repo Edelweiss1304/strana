@@ -4,22 +4,39 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55ccaded44e3 <unknown>\n#1 0x55ccadc03c76 <unknown>\n#2 0x55ccadc3fc96 <unknown>\n#3 0x55ccadc3fdc1 <unknown>\n#4 0x55ccadc797f4 <unknown>\n#5 0x55ccadc5f03d <unknown>\n#6 0x55ccadc7730e <unknown>\n#7 0x55ccadc5ede3 <unknown>\n#8 0x55ccadc342dd <unknown>\n#9 0x55ccadc3534e <unknown>\n#10 0x55ccade943e4 <unknown>\n#11 0x55ccade983d7 <unknown>\n#12 0x55ccadea2b20 <unknown>\n#13 0x55ccade99023 <unknown>\n#14 0x55ccade671aa <unknown>\n#15 0x55ccadebd6b8 <unknown>\n#16 0x55ccadebd847 <unknown>\n#17 0x55ccadecd243 <unknown>\n#18 0x7f5babf10609 start_thread",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x55b30fe334e3 <unknown>\n#1 0x55b30fb62c76 <unknown>\n#2 0x55b30fb9ec96 <unknown>\n#3 0x55b30fb9edc1 <unknown>\n#4 0x55b30fbd87f4 <unknown>\n#5 0x55b30fbbe03d <unknown>\n#6 0x55b30fbd630e <unknown>\n#7 0x55b30fbbdde3 <unknown>\n#8 0x55b30fb932dd <unknown>\n#9 0x55b30fb9434e <unknown>\n#10 0x55b30fdf33e4 <unknown>\n#11 0x55b30fdf73d7 <unknown>\n#12 0x55b30fe01b20 <unknown>\n#13 0x55b30fdf8023 <unknown>\n#14 0x55b30fdc61aa <unknown>\n#15 0x55b30fe1c6b8 <unknown>\n#16 0x55b30fe1c847 <unknown>\n#17 0x55b30fe2c243 <unknown>\n#18 0x7f80ef9e6609 start_thread",
       "children" : [ {
         "name" : "Проверка авторизации в ЛК брокера через главную страницу",
-        "uid" : "2752554ec3af78ac",
-        "parentUid" : "95ade832029485d12a22dbddb028ec67",
+        "uid" : "42e17fb0aa7159c4",
+        "parentUid" : "3d0243bdef19bc8ae8e426602d33096d",
         "status" : "broken",
         "time" : {
-          "start" : 1690601072087,
-          "stop" : 1690601178304,
-          "duration" : 106217
+          "start" : 1690687507115,
+          "stop" : 1690687613372,
+          "duration" : 106257
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'https://ekb.strana.com'" ]
       } ],
-      "uid" : "95ade832029485d12a22dbddb028ec67"
+      "uid" : "3d0243bdef19bc8ae8e426602d33096d"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"s-link__wrapper\" data-v-cf493dac=\"\"></div> is not clickable at point (179, 319). Other element would receive the click: <ul data-v-359c62e3=\"\" class=\"header-projects-popup__projects popup-layout__block\">...</ul>\n  (Session info: headless chrome=114.0.5735.90)\nStacktrace:\n#0 0x559a0f5f54e3 <unknown>\n#1 0x559a0f324c76 <unknown>\n#2 0x559a0f3669d4 <unknown>\n#3 0x559a0f364cbd <unknown>\n#4 0x559a0f362d2e <unknown>\n#5 0x559a0f36210f <unknown>\n#6 0x559a0f3571da <unknown>\n#7 0x559a0f380012 <unknown>\n#8 0x559a0f356b03 <unknown>\n#9 0x559a0f3801de <unknown>\n#10 0x559a0f39830e <unknown>\n#11 0x559a0f37fde3 <unknown>\n#12 0x559a0f3552dd <unknown>\n#13 0x559a0f35634e <unknown>\n#14 0x559a0f5b53e4 <unknown>\n#15 0x559a0f5b93d7 <unknown>\n#16 0x559a0f5c3b20 <unknown>\n#17 0x559a0f5ba023 <unknown>\n#18 0x559a0f5881aa <unknown>\n#19 0x559a0f5de6b8 <unknown>\n#20 0x559a0f5de847 <unknown>\n#21 0x559a0f5ee243 <unknown>\n#22 0x7fc1c9aac609 start_thread",
+      "children" : [ {
+        "name" : "Проверка Сибирский сад ект",
+        "uid" : "c962c681688951dc",
+        "parentUid" : "a96b3298d35d98e41d639db64f97c72b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690687846588,
+          "stop" : 1690687852594,
+          "duration" : 6006
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a96b3298d35d98e41d639db64f97c72b"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
