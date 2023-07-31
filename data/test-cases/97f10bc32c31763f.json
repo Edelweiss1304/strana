@@ -1,0 +1,167 @@
+{
+  "uid" : "97f10bc32c31763f",
+  "name" : "Проверка кнопки OK в меню",
+  "fullName" : "tests.test_header_menu#test_ok_from_header_menu",
+  "historyId" : "58bba8ff6242b2bfdd21179add12439b",
+  "time" : {
+    "start" : 1690773632472,
+    "stop" : 1690773637952,
+    "duration" : 5480
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'https://www....5%D0%BD%D1%82' == 'https://ok.ru/stranacom'\n  - https://ok.ru/stranacom\n  + https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"f460bd72f5f26fc3f142b445cf1c57d5\")>\nurl = 'https://tmn.strana.com'\n\n    @testit.displayName(\"Проверка кнопки ОК в меню\")\n    @testit.description(\"Проверка кнопки ОК в дополнительном меню\")\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки OK в меню\")\n    def test_ok_from_header_menu(driver, url):\n        head = Header(driver)\n        with testit.step(\"Открываем главную страницу\"):\n            Base.open_page(driver, url)\n            time.sleep(2)\n        with testit.step(\"Наводимся на меню\"):\n            head.actions.move_to_element(head.get_menu_button()).perform()\n    \n            if url == 'https://mo.strana.com':\n                locator = Base.get_s_link_wrapper_locator(11)\n    \n            elif url == 'https://nsk.strana.com':\n                locator = Base.get_s_link_wrapper_locator(8)\n    \n            elif url == 'https://msk.strana.com':\n                locator = Base.get_s_link_wrapper_locator(12)\n    \n            else:\n                locator = Base.get_s_link_wrapper_locator(13)\n    \n        with testit.step(\"Кликаем на ОК\"):\n            driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n            next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)\n            driver.switch_to.window(driver.window_handles[next_tab_index])\n        with testit.step(\"Проверяем, что попали в Одноклассники Страна Девелопмент\"):\n>           assert driver.current_url == \"https://ok.ru/stranacom\"\nE           AssertionError: assert 'https://www....5%D0%BD%D1%82' == 'https://ok.ru/stranacom'\nE             - https://ok.ru/stranacom\nE             + https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82\n\ntests/test_header_menu.py:164: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1690773631727,
+      "stop" : 1690773631727,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1690773631727,
+      "stop" : 1690773632471,
+      "duration" : 744
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1690773052002,
+      "stop" : 1690773052002,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1690773052002,
+      "stop" : 1690773052002,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1690773052002,
+      "stop" : 1690773052002,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'https://www....5%D0%BD%D1%82' == 'https://ok.ru/stranacom'\n  - https://ok.ru/stranacom\n  + https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"f460bd72f5f26fc3f142b445cf1c57d5\")>\nurl = 'https://tmn.strana.com'\n\n    @testit.displayName(\"Проверка кнопки ОК в меню\")\n    @testit.description(\"Проверка кнопки ОК в дополнительном меню\")\n    @pytest.mark.parametrize(\"url\", URLS_MAIN.values())\n    @allure.title(\"Проверка кнопки OK в меню\")\n    def test_ok_from_header_menu(driver, url):\n        head = Header(driver)\n        with testit.step(\"Открываем главную страницу\"):\n            Base.open_page(driver, url)\n            time.sleep(2)\n        with testit.step(\"Наводимся на меню\"):\n            head.actions.move_to_element(head.get_menu_button()).perform()\n    \n            if url == 'https://mo.strana.com':\n                locator = Base.get_s_link_wrapper_locator(11)\n    \n            elif url == 'https://nsk.strana.com':\n                locator = Base.get_s_link_wrapper_locator(8)\n    \n            elif url == 'https://msk.strana.com':\n                locator = Base.get_s_link_wrapper_locator(12)\n    \n            else:\n                locator = Base.get_s_link_wrapper_locator(13)\n    \n        with testit.step(\"Кликаем на ОК\"):\n            driver.execute_script(\"arguments[0].click();\", Base.get_element_visibility(driver, (By.XPATH, locator)))\n            next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)\n            driver.switch_to.window(driver.window_handles[next_tab_index])\n        with testit.step(\"Проверяем, что попали в Одноклассники Страна Девелопмент\"):\n>           assert driver.current_url == \"https://ok.ru/stranacom\"\nE           AssertionError: assert 'https://www....5%D0%BD%D1%82' == 'https://ok.ru/stranacom'\nE             - https://ok.ru/stranacom\nE             + https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82\n\ntests/test_header_menu.py:164: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cbb70ff8adb23a04",
+      "name" : "screenshot_tests_test_header_menu.py::test_ok_from_header_menu[https:__tmn.strana.com].png",
+      "source" : "cbb70ff8adb23a04.png",
+      "type" : "image/png",
+      "size" : 665313
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1690773639914,
+      "stop" : 1690773639977,
+      "duration" : 63
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(max_runs=4, min_passes=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_header_menu"
+  }, {
+    "name" : "host",
+    "value" : "stranatest"
+  }, {
+    "name" : "thread",
+    "value" : "3633382-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_header_menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "url",
+    "value" : "'https://tmn.strana.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(max_runs=4, min_passes=1)" ]
+  },
+  "source" : "97f10bc32c31763f.json",
+  "parameterValues" : [ "'https://tmn.strana.com'" ]
+}
