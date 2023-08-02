@@ -1,4 +1,4 @@
-name: Тестовый запуск
+name: Высокий приоритет
 on:
   workflow_dispatch:
 
@@ -38,24 +38,8 @@ jobs:
         run: |
           STATUS="${{ job.status }}"
           if [ $STATUS == "success" ]; then
-            TEXT="Тестовый прогон пройден. Отчет рана в TestIt"
+            TEXT="Тесты с высоким приоритетом пройдены. Отчет рана в TestIt"
           else
             TEXT="Тестирование не пройдено"
           fi
           curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID}"'", "text": "'"${TEXT}"'"}'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

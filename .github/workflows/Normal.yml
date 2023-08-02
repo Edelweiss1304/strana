@@ -1,4 +1,4 @@
-name: Тестовый запуск
+name: Средний приоритет
 on:
   workflow_dispatch:
 
@@ -29,7 +29,7 @@ jobs:
           EOT
       - name: Test run for testit
         run: |
-          pytest tests/test_projects.py --testit
+          pytest tests/test_apart_from_header.py pytest tests/test_header_menu.py pytest tests/test_projects_from_header.py --testit
       - name: Notify on Telegram
         if: always()
         env:
@@ -38,24 +38,8 @@ jobs:
         run: |
           STATUS="${{ job.status }}"
           if [ $STATUS == "success" ]; then
-            TEXT="Тестовый прогон пройден. Отчет рана в TestIt"
+            TEXT="Тесты с средним приоритетом пройдены. Отчет рана в TestIt"
           else
             TEXT="Тестирование не пройдено"
           fi
           curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID}"'", "text": "'"${TEXT}"'"}'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
