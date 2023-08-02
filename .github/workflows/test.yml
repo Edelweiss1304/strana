@@ -29,7 +29,21 @@ jobs:
           EOT
       - name: Test run for testit
         run: |
-          pytest tests --testit
+          pytest tests/test_projects.py --testit
+      - name: Notify on Telegram
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          STATUS="${{ job.status }}"
+          URL="https://edelweiss1304.github.io/strana/"
+          if [ $STATUS == "success" ]; then
+            TEXT="Тестирование пройдено :-) . Отчет по ссылке: $URL"
+          else
+            TEXT="Тестирование не пройдено"
+          fi
+          curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID}"'", "text": "'"${TEXT}"'"}'
 
 
 
