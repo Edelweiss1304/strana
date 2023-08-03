@@ -29,7 +29,7 @@ jobs:
           EOT
       - name: Test run for testit
         run: |
-          pytest tests/test_projects.py --testit
+          pytest tests/test_header.py::test_commercial_from_header_menu --testit
       - name: Notify on Telegram
         if: always()
         env:
