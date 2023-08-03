@@ -257,7 +257,7 @@ def test_tg_from_header_menu(driver, url):
 @testit.description("Проверка кнопки Компания в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 @allure.title("Проверка кнопки Компания в меню")
-def test_commercial_from_header_menu(driver, url):
+def test_company_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
