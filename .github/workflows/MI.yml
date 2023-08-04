@@ -2,7 +2,7 @@ name: Самый высокий приоритет
 on:
   workflow_dispatch:
     schedule:
-      - cron: "10 12 * * *"
+      - cron: "40 12 * * *"
 
 jobs:
   test:
