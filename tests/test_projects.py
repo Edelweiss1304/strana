@@ -155,3 +155,18 @@ def test_projects_domashniy(driver):
         pp.click_domashniy()
     with testit.step("Проверяем, что попали на Домашний"):
         assert head.get_project_comfort_tittle() == "Домашний"
+
+
+@testit.displayName("Проверка ЕБ 2.0")
+@testit.description("Проверка перехода в ЕБ 2.0 через страницу проектов")
+@allure.title("Переход из проектов в ЕБ 2.0")
+def test_projects_eb(driver):
+    head = Header(driver)
+    pp = ProjectsPage(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, URLS_MAIN['url_tmn'])
+        head.click_projects()
+        pp.click_accept_cookie()
+        pp.click_eb()
+    with testit.step("Проверяем, что попали на ЕБ 2.0"):
+        assert head.get_project_comfort_tittle() == "Европейский берег 2.0"

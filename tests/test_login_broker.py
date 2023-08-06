@@ -22,7 +22,7 @@ def test_authorization_agent_from_header(driver, url):
         print('Успешный вход в ЛК брокера, как агент')
 
 
-@testit.displayName("Проверка авторизации в ЛК брокера через хедер")
+@testit.displayName("Проверка авторизации в ЛК брокера через главную")
 @testit.description("Проверка авторизации в ЛК брокера через кнопку Агентам и агентствам на главной странице")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 @allure.title("Проверка авторизации в ЛК брокера через главную страницу")

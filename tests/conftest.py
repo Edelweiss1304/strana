@@ -10,7 +10,7 @@ def driver():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
     options.add_argument('--ignore-certificate-errors')
-    options.add_argument('--headless')
+    #options.add_argument('--headless')
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--disable-extensions")
     options.add_argument("--proxy-server='direct://'")

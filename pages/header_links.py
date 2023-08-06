@@ -3,6 +3,7 @@ from base.base_class import Base
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 import testit
+from pages.flats import Flats
 
 
 class Header(Base):
@@ -244,7 +245,7 @@ class Header(Base):
         print("Проверяем заголовок")
 
     def check_commercial(self):
-        with testit.step("Коммерцию"):
+        with testit.step("Нажимаем на Коммерцию"):
             self.click_commercial()
         with testit.step("Проверяем заголовок страницы"):
             assert self.get_projects_check() == "Проекты"

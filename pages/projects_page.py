@@ -22,6 +22,7 @@ class ProjectsPage(Base):
     kolumb = "//h3[contains(text(),'Колумб')]"
     sersib = "//h3[contains(text(),'Сердце Сибири')]"
     domashniy = "//h3[contains(text(),'Домашний')]"
+    eb = "//h3[contains(text(),'Европейский берег 2.0')]"
 
     accept_cookie = "//span[contains(text(),'Принять')]"
 
@@ -58,6 +59,9 @@ class ProjectsPage(Base):
 
     def get_domashniy(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.domashniy))
+
+    def get_eb(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.eb))
 
     def get_accept_cookie(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.accept_cookie))
@@ -110,3 +114,7 @@ class ProjectsPage(Base):
     with testit.step("Принимаем куки"):
         def click_accept_cookie(self):
             self.get_accept_cookie().click()
+
+    with testit.step("Кликаем на ЕБ 2.0"):
+        def click_eb(self):
+            self.get_eb().click()

@@ -1,4 +1,5 @@
 from pages.header_links import Header
+from pages.flats import Flats
 from base.base_class import Base
 from pages.url import URLS_MAIN
 import allure
@@ -70,7 +71,7 @@ def test_msk_header_purchase_methods(driver):
 # @allure.title("Проверка кнопки sale мск")
 # @testit.displayName("Проверка кнопки sale мск")
 # @testit.description("Проверка кнопки sale мск")
-# def test_msk_header_vacancies(driver):
+# def test_msk_header_sale(driver):
 #     head = Header(driver)
 #     with testit.step("Открываем главную страницу"):
 #         Base.open_page(driver, URLS_MAIN['url_msk'])
@@ -98,10 +99,13 @@ def test_mo_header_actions(driver):
         head.check_actions()
 
 
-# def test_mo_header_purchase_methods(driver):   ###404 ошибка###
-# head = Header(driver)
-# Base.open_page(driver, Base.url_mo)
-# head.check_purchase_methods()
+@testit.displayName("Проверка кнопки методы покупки мо")
+@testit.description("Проверка кнопки методы покупки мо")
+def test_mo_header_purchase_methods(driver):
+    head = Header(driver)
+    Base.open_page(driver, URLS_MAIN['url_mo'])
+    head.check_purchase_methods()
+
 
 @allure.title("Проверка кнопки о нас мо")
 @testit.displayName("Проверка кнопки о нас мо")
@@ -178,8 +182,9 @@ def test_spb_header_purchase_methods(driver):
 @allure.title("Проверка кнопки sale спб")
 @testit.displayName("Проверка кнопки sale спб")
 @testit.description("Проверка кнопки sale спб")
-def test_spb_header_vacancies(driver):
+def test_spb_header_sale(driver):
     head = Header(driver)
+    fl = Flats(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
         head.check_sale()
@@ -250,7 +255,7 @@ def test_ekb_header_purchase_methods(driver):
 @allure.title("Проверка кнопки sale екб")
 @testit.displayName("Проверка кнопки sale екб")
 @testit.description("Проверка кнопки sale екб")
-def test_ekb_header_vacancies(driver):
+def test_ekb_header_sale(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
@@ -259,9 +264,9 @@ def test_ekb_header_vacancies(driver):
     # TMN
 
 
-@allure.title("Проверка кнопки sale тмн")
-@testit.displayName("Проверка кнопки sale тмн")
-@testit.description("Проверка кнопки sale тмн")
+@allure.title("Проверка кнопки проекты тмн")
+@testit.displayName("Проверка кнопки проекты тмн")
+@testit.description("Проверка кнопки проекты тмн")
 def test_tmn_header_projects(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -322,7 +327,7 @@ def test_tmn_header_purchase_methods(driver):
 @allure.title("Проверка кнопки sale тмн")
 @testit.displayName("Проверка кнопки sale тмн")
 @testit.description("Проверка кнопки sale тмн")
-def test_tmn_header_vacancies(driver):
+def test_tmn_header_sale(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])

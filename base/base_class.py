@@ -4,6 +4,8 @@ from selenium.common.exceptions import StaleElementReferenceException, TimeoutEx
 
 
 class Base:
+    url_mo = None
+
     def __init__(self, driver):
         self.driver = driver
 
