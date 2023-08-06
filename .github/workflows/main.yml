@@ -1,7 +1,6 @@
 name: Все тесты
 on:
-  schedule:
-    - cron: '0 15 * * *'
+  workflow_dispatch:
 jobs:
   test:
     runs-on: self-hosted
