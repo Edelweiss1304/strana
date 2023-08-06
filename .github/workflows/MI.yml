@@ -30,4 +30,4 @@ jobs:
           EOT
       - name: Test run for testit
         run: |
-          pytest tests/test_header_links.py pytest tests/test_login_broker.py --testit
+          pytest tests/test_header_links.py tests/test_login_broker.py --testit
