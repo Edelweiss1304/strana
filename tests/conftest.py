@@ -19,7 +19,7 @@ def driver():
     options.add_argument('--disable-gpu')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('--no-sandbox')
-    #options.set_capability("pageLoadStrategy", "eager")
+    options.set_capability("pageLoadStrategy", "eager")
     service = Service()  # You need to set the path to your chromedriver
     driver = webdriver.Chrome(service=service, options=options)
     yield driver
