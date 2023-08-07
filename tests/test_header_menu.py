@@ -232,26 +232,34 @@ def test_tg_from_header_menu(driver, url):
         print("Проверяем что попали на Ютуб")
 
 
+@testit.displayName("Проверка кнопки новости в меню")
+@testit.description("Проверка кнопки новости в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 @allure.title("Проверка кнопки Новости в меню")
 def test_news_from_header_menu(driver, url):
     head = Header(driver)
-    Base.open_page(driver, url)
-    time.sleep(2)
-    head.actions.move_to_element(head.get_menu_button()).perform()
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
 
-    if url == 'https://mo.strana.com':
-        locator = Base.get_s_link_wrapper_locator(19)
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(19)
 
-    elif url == 'https://nsk.strana.com':
-        locator = Base.get_s_link_wrapper_locator(16)
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(16)
 
-    else:
-        locator = Base.get_s_link_wrapper_locator(21)
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(20)
 
-    Base.get_element_visibility(driver, (By.XPATH, locator)).click()
-    assert head.get_news_tittle() == "Новости Страны"
-    print("Проверяем заголовок")
+        else:
+            locator = Base.get_s_link_wrapper_locator(21)
+    with testit.step("Кликаем на новости"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем заголовок"):
+        assert head.get_news_tittle() == "Новости"
+        print("Проверяем заголовок")
 
 
 @testit.displayName("Проверка кнопки Компания в меню")

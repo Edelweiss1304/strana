@@ -120,6 +120,7 @@ class Authorization(Base):
 
     def login_lk_broker(self, email='smiledmitriev@yandex.com', password='123456789'):
         with testit.step("Вводим почту"):
+            time.sleep(2)
             self.get_email_field_agent().send_keys(email)
         with testit.step("Вводим пароль"):
             self.get_password_field_agent().send_keys(password)
@@ -134,16 +135,13 @@ class Authorization(Base):
             locator = Base.get_s_link_wrapper_locator(8)
 
         elif url == 'https://spb.strana.com':
-            locator = Base.get_s_link_wrapper_locator(18)
+            locator = Base.get_s_link_wrapper_locator(17)
 
         elif url == 'https://msk.strana.com':
             locator = Base.get_s_link_wrapper_locator(15)
 
-        elif url == 'https://ekb.strana.com':
-            locator = Base.get_s_link_wrapper_locator(18)
-
         else:
-            locator = Base.get_s_link_wrapper_locator(17)
+            locator = Base.get_s_link_wrapper_locator(19)
         with testit.step("Кликаем Агентам и агентствам на главном экране"):
             Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
         with testit.step("Нажимаем Войти"):

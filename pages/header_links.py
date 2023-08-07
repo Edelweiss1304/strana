@@ -51,7 +51,7 @@ class Header(Base):
     parking_tittle = "(//h1[@class='title_gewxY h3 text-base-500'][contains(text(),'Паркинг')])[1]"
 
     menu_button = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
-    news_tittle = "//h1[contains(text(),'Страны')]"
+    news_tittle = "(//span[contains(text(),'Новости')])[1]"
 
     header_pop_up = "//div[@class='the-header-popup-menu the-header-popup-menu--theme-common']"
 
