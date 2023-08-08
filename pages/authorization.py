@@ -140,7 +140,7 @@ class Authorization(Base):
         elif url == 'https://msk.strana.com':
             locator = Base.get_s_link_wrapper_locator(15)
 
-        elif url == 'https://msk.strana.com':
+        elif url == 'https://ekb.strana.com':
             locator = Base.get_s_link_wrapper_locator(19)
 
         else:
