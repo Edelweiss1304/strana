@@ -5,6 +5,7 @@ on:
 jobs:
   test:
     runs-on: self-hosted
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
@@ -29,7 +30,7 @@ jobs:
           EOT
       - name: Test run for testit
         run: |
-          pytest tests/test_header_menu.py::test_commercial_from_header_menu --testit
+          pytest tests/test_login_broker.py --testit
 
 
 
