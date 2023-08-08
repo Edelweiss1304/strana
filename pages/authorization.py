@@ -141,7 +141,7 @@ class Authorization(Base):
             locator = Base.get_s_link_wrapper_locator(15)
 
         else:
-            locator = Base.get_s_link_wrapper_locator(19)
+            locator = Base.get_s_link_wrapper_locator(20)
         with testit.step("Кликаем Агентам и агентствам на главном экране"):
             Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
         with testit.step("Нажимаем Войти"):
