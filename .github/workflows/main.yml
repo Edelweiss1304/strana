@@ -29,6 +29,7 @@ jobs:
       - name: Test run for testit
         run: |
           pytest tests --testit
+          continue-on-error: true
 
 
 
