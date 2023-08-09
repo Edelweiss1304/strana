@@ -1,7 +1,7 @@
 name: Самый высокий приоритет
 on:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '11 11 * * *'
 jobs:
   test:
     runs-on: self-hosted
