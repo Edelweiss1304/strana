@@ -33,9 +33,6 @@ jobs:
         continue-on-error: true
       - name: Notify on Telegram
         if: always()
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           total_tests=$(pytest --collect-only | grep -c "collected tests")
           failed_tests=$(pytest --show-capture=no --exitfirst | grep -c "failed")
@@ -44,4 +41,8 @@ jobs:
           else
             TEXT="Тесты с самым высоким приоритетом пройдены. Отчет рана в TestIt. Всего тестов: $total_tests, Упавших тестов: $failed_tests"
           fi
-          curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID}"'", "text": "'"${TEXT}"'"}'
+          curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${{ secrets.TELEGRAM_CHAT_ID }}"'", "text": "'"${TEXT}"'"}'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
