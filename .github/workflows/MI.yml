@@ -39,7 +39,7 @@ jobs:
         run: |
           STATUS="${{ job.status }}"
           if [ $STATUS == "success" ]; then
-            TEXT="Тесты с средним приоритетом пройдены. Отчет рана в TestIt"
+            TEXT="Тесты с самым высоким приоритетом пройдены. Отчет рана в TestIt"
           else
             TEXT="Тестирование не пройдено"
           fi
