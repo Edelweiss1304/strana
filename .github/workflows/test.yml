@@ -31,14 +31,14 @@ jobs:
         id: run_tests
         run: |
           pytest_output=$(pytest tests/test_login_broker.py --testit | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
-          echo "::set-output name=pytest_output::$pytest_output"
+          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
       - name: Notify on Telegram
         if: always()
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          pytest_output="${{ steps.run_tests.outputs.pytest_output }}"
+          pytest_output="${{ env.pytest_output }}"
           
           TEXT="Результаты тестирования: ${pytest_output}"
 
