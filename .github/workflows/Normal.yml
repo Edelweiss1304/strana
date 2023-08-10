@@ -1,7 +1,7 @@
 name: Средний приоритет
 on:
   schedule:
-    - cron: '0 5 * * *'
+    - cron: '0 10 * * *'
 jobs:
   test:
     runs-on: self-hosted
@@ -30,17 +30,16 @@ jobs:
           EOT
       - name: Test run for testit
         run: |
-          pytest tests/test_apart_from_header.py tests/test_header_menu.py tests/test_projects_from_header.py --testit
+          pytest_output=$(pytest tests/test_apart_from_header.py tests/test_header_menu.py tests/test_projects_from_header.py --testit | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
+          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
       - name: Notify on Telegram
         if: always()
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          STATUS="${{ job.status }}"
-          if [ $STATUS == "success" ]; then
-            TEXT="Тесты с средним приоритетом пройдены. Отчет рана в TestIt"
-          else
-            TEXT="Тестирование не пройдено"
-          fi
+          pytest_output="${{ env.pytest_output }}"
+          
+          TEXT="Результаты тестирования с средним приоритетом: ${pytest_output}"
+
           curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID}"'", "text": "'"${TEXT}"'"}'
