@@ -30,7 +30,7 @@ jobs:
       - name: Test run for testit
         id: run_tests
         run: |
-          pytest_output=$(pytest tests/test_login_broker.py --testit | tail -n 1)
+          pytest_output=$(pytest tests/test_login_broker.py --testit | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
           echo "::set-output name=pytest_output::$pytest_output"
       - name: Notify on Telegram
         if: always()
