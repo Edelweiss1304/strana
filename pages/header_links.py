@@ -54,6 +54,17 @@ class Header(Base):
     news_tittle = "(//span[contains(text(),'Новости')])[1]"
 
     header_pop_up = "//div[@class='the-header-popup-menu the-header-popup-menu--theme-common']"
+    purchase_method_new = (
+        "//body/div[@id='__nuxt']/div[@id='__layout']/div[@id='app']/div[@class='mortgage-page page-top "
+        "main_cSkVO']/div[@class='mortgage-page__calculator-shell']/div[@class='s-mortgage-calculator "
+        "mortgage-page__calculator']/div[@class='s-mortgage-calculator__top']/div[@class='s-select "
+        "s-select--string s-select--secondary s-select--x-large']/div[1]")
+    documents = "//h1[contains(text(),'Документы')]"
+    bonus = "//span[contains(text(),'.Бонус')]"
+    investors = "//h1[contains(text(),'Инвесторам')]"
+    partners = "//h1[contains(text(),'Партнеры')]"
+    tenders = "//h3[contains(text(),'Заключить договор проще, чем ты думаешь')]"
+    contacts = "//h1[contains(text(),'Контакты')]"
 
     # Getters
     def get_projects(self):
@@ -141,6 +152,27 @@ class Header(Base):
 
     def get_header_pop_up(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.header_pop_up))
+
+    def get_purchase_method_new(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.purchase_method_new))
+
+    def get_h1_documents(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.documents)).text
+
+    def get_bonus(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.bonus)).text
+
+    def get_investors(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.investors)).text
+
+    def get_partners(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.partners)).text
+
+    def get_tenders(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.tenders)).text
+
+    def get_contacts(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.contacts)).text
 
     # Actions
     with testit.step("Кликаем на проекты"):

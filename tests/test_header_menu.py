@@ -1,4 +1,5 @@
 from pages.header_links import Header
+from pages.projects_page import ProjectsPage
 from base.base_class import Base
 from pages.url import URLS_MAIN
 import allure
@@ -290,4 +291,246 @@ def test_company_from_header_menu(driver, url):
         Base.get_element_visibility(driver, (By.XPATH, locator)).click()
     with testit.step("Проверяем, что попали на страницу О компании"):
         assert head.get_about_check() == "О компании"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Способы покупки в меню")
+@testit.description("Проверка кнопки Способы покупки в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_pm_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(15)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(12)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(16)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(17)
+
+    with testit.step("Кликаем на Способы покупки"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем, что попали на страницу Способы покупки"):
+        pp = ProjectsPage(driver)
+        pp.click_accept_cookie()
+        assert head.get_purchase_method_new().text == "Рассчитать ипотеку"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Документы в меню")
+@testit.description("Проверка кнопки Документы в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_docs_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(16)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(13)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(17)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(18)
+
+    with testit.step("Кликаем на Документы"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем, что попали на страницу Документы"):
+        assert head.get_h1_documents() == "Документы"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Вакансии в меню")
+@testit.description("Проверка кнопки Вакансии в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_vacancy_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(20)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(17)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(21)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(22)
+
+    with testit.step("Кликаем на Вакансии"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем, что попали на страницу Вакансии"):
+        assert head.get_vacancy_check() == "Работа в Стране Девелопмент"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Страна.Бонус в меню")
+@testit.description("Проверка кнопки Страна.Бонус в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_bonus_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(21)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(18)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(22)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(23)
+
+    with testit.step("Кликаем на Страна.Бонус"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем, что попали на страницу Страна.Бонус"):
+        assert head.get_bonus() == ".БОНУС"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Инвесторам в меню")
+@testit.description("Проверка кнопки Инвесторам в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_investors_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(22)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(19)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(23)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(24)
+
+    with testit.step("Кликаем на Инвесторам"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем, что попали на страницу Инвесторам"):
+        assert head.get_investors() == "Инвесторам"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Партнерам в меню")
+@testit.description("Проверка кнопки Партнерам в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_partners_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(24)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(21)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(25)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(26)
+
+    with testit.step("Кликаем на Партнерам"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем, что попали на страницу Партнерам"):
+        assert head.get_partners() == "Партнеры"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Тендеры в меню")
+@testit.description("Проверка кнопки Тендеры в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_tenders_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(25)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(22)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(26)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(27)
+
+    with testit.step("Кликаем на тендеры"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем, что попали на страницу Тендеры"):
+        assert head.get_tenders() == "Заключить договор проще, чем ты думаешь"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Контакты в меню")
+@testit.description("Проверка кнопки Контакты в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_contacts_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(26)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(23)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(27)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(28)
+
+    with testit.step("Кликаем на Контакты"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем, что попали на страницу Контакты"):
+        assert head.get_contacts() == "Контакты"
         print("Проверяем заголовок")
