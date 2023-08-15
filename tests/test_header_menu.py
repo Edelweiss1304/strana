@@ -12,7 +12,6 @@ import testit
 @testit.displayName("Проверка кнопки Проекты в меню")
 @testit.description("Проверка кнопки Проекты в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
-@allure.title("Проверка кнопки Проекты в меню")
 def test_projects_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -42,7 +41,6 @@ def test_projects_from_header_menu(driver, url):
 @testit.displayName("Проверка кнопки Квартиры в меню")
 @testit.description("Проверка кнопки Квартиры в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
-@allure.title("Проверка кнопки Квартиры в меню")
 def test_aparts_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -73,7 +71,6 @@ def test_aparts_from_header_menu(driver, url):
 @testit.displayName("Проверка кнопки Коммерция в меню")
 @testit.description("Проверка кнопки Коммерция в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
-@allure.title("Проверка кнопки Коммерция в меню")
 def test_commercial_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -103,7 +100,6 @@ def test_commercial_from_header_menu(driver, url):
 @testit.displayName("Проверка кнопки ВК в меню")
 @testit.description("Проверка кнопки ВК в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
-@allure.title("Проверка кнопки ВК в меню")
 def test_vk_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -136,7 +132,6 @@ def test_vk_from_header_menu(driver, url):
 @testit.displayName("Проверка кнопки ОК в меню")
 @testit.description("Проверка кнопки ОК в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
-@allure.title("Проверка кнопки OK в меню")
 def test_ok_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -169,7 +164,6 @@ def test_ok_from_header_menu(driver, url):
 @testit.displayName("Проверка кнопки YT в меню")
 @testit.description("Проверка кнопки YT в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
-@allure.title("Проверка кнопки YT в меню")
 def test_yt_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -203,7 +197,6 @@ def test_yt_from_header_menu(driver, url):
 @testit.displayName("Проверка кнопки Telegram в меню")
 @testit.description("Проверка кнопки Telegram в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
-@allure.title("Проверка кнопки Telegram в меню")
 def test_tg_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -236,7 +229,6 @@ def test_tg_from_header_menu(driver, url):
 @testit.displayName("Проверка кнопки новости в меню")
 @testit.description("Проверка кнопки новости в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
-@allure.title("Проверка кнопки Новости в меню")
 def test_news_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -266,7 +258,6 @@ def test_news_from_header_menu(driver, url):
 @testit.displayName("Проверка кнопки Компания в меню")
 @testit.description("Проверка кнопки Компания в дополнительном меню")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
-@allure.title("Проверка кнопки Компания в меню")
 def test_company_from_header_menu(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
