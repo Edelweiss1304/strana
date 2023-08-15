@@ -29,7 +29,7 @@ class Header(Base):
     purchase_methods_check = "//h1[contains(text(),'Материнский')]"
     projects_check = "//h2[contains(text(),'Проекты')]"
     apart_check = "//div[@class='s-select__label' and text()='Подобрать квартиру']"
-    action_check = "(//span[contains(text(),'Акции')])[3]"
+    action_check = "//h1//span[contains(text(),'Акции')]"
     about_check = "//h1[contains(text(),'О компании')]"
     vacancy_check = "//h2[contains(text(),'Работа в Стране Девелопмент')]"
 
@@ -65,6 +65,7 @@ class Header(Base):
     partners = "//h1[contains(text(),'Партнеры')]"
     tenders = "//h3[contains(text(),'Заключить договор проще, чем ты думаешь')]"
     contacts = "//h1[contains(text(),'Контакты')]"
+    progress = "//h1//span[contains(text(),'Ход строительства')]"
 
     # Getters
     def get_projects(self):
@@ -173,6 +174,9 @@ class Header(Base):
 
     def get_contacts(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.contacts)).text
+
+    def get_progress(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.progress)).text
 
     # Actions
     with testit.step("Кликаем на проекты"):

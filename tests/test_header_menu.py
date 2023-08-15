@@ -534,3 +534,62 @@ def test_contacts_from_header_menu(driver, url):
     with testit.step("Проверяем, что попали на страницу Контакты"):
         assert head.get_contacts() == "Контакты"
         print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Акции в меню")
+@testit.description("Проверка кнопки Акции в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+@allure.title("Проверка кнопки Новости в меню")
+def test_actions_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(18)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(15)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(19)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(20)
+    with testit.step("Кликаем на Акции"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем заголовок"):
+        assert head.get_actions_check() == "Акции"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки Ход строительства в меню")
+@testit.description("Проверка кнопки Ход строительства в дополнительном меню")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_progress_from_header_menu(driver, url):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        time.sleep(2)
+    with testit.step("Наводимся на меню"):
+        head.actions.move_to_element(head.get_menu_button()).perform()
+
+        if url == 'https://mo.strana.com':
+            locator = Base.get_s_link_wrapper_locator(20)
+
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(17)
+
+        elif url == 'https://msk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(21)
+
+        else:
+            locator = Base.get_s_link_wrapper_locator(22)
+    with testit.step("Кликаем на Ход строительства"):
+        Base.get_element_visibility(driver, (By.XPATH, locator)).click()
+    with testit.step("Проверяем заголовок"):
+        assert head.get_progress() == "Ход строительства"
+        print("Проверяем заголовок")
