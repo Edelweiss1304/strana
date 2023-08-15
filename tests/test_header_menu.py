@@ -368,16 +368,16 @@ def test_vacancy_from_header_menu(driver, url):
         head.actions.move_to_element(head.get_menu_button()).perform()
 
         if url == 'https://mo.strana.com':
-            locator = Base.get_s_link_wrapper_locator(20)
-
-        elif url == 'https://nsk.strana.com':
             locator = Base.get_s_link_wrapper_locator(17)
 
+        elif url == 'https://nsk.strana.com':
+            locator = Base.get_s_link_wrapper_locator(14)
+
         elif url == 'https://msk.strana.com':
-            locator = Base.get_s_link_wrapper_locator(21)
+            locator = Base.get_s_link_wrapper_locator(18)
 
         else:
-            locator = Base.get_s_link_wrapper_locator(22)
+            locator = Base.get_s_link_wrapper_locator(19)
 
     with testit.step("Кликаем на Вакансии"):
         Base.get_element_visibility(driver, (By.XPATH, locator)).click()
