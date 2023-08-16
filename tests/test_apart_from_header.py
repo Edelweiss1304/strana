@@ -97,7 +97,6 @@ def test_spb_apart(driver, index):
 @testit.description('Проверяем, что при нажатии на паркинг, мы попадаем на паркинг.')
 @testit.displayName("Проверка паркинга")
 @pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_spb']])
-@allure.title("Проверка паркинга")
 def test_parking_from_header(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):

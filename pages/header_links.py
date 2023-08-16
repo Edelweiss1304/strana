@@ -51,21 +51,6 @@ class Header(Base):
     parking_tittle = "(//h1[@class='title_gewxY h3 text-base-500'][contains(text(),'Паркинг')])[1]"
 
     menu_button = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
-    news_tittle = "(//span[contains(text(),'Новости')])[1]"
-
-    header_pop_up = "//div[@class='the-header-popup-menu the-header-popup-menu--theme-common']"
-    purchase_method_new = (
-        "//body/div[@id='__nuxt']/div[@id='__layout']/div[@id='app']/div[@class='mortgage-page page-top "
-        "main_cSkVO']/div[@class='mortgage-page__calculator-shell']/div[@class='s-mortgage-calculator "
-        "mortgage-page__calculator']/div[@class='s-mortgage-calculator__top']/div[@class='s-select "
-        "s-select--string s-select--secondary s-select--x-large']/div[1]")
-    documents = "//h1[contains(text(),'Документы')]"
-    bonus = "//span[contains(text(),'.Бонус')]"
-    investors = "//h1[contains(text(),'Инвесторам')]"
-    partners = "//h1[contains(text(),'Партнеры')]"
-    tenders = "//h3[contains(text(),'Заключить договор проще, чем ты думаешь')]"
-    contacts = "//h1[contains(text(),'Контакты')]"
-    progress = "//h1//span[contains(text(),'Ход строительства')]"
 
     # Getters
     def get_projects(self):
@@ -148,36 +133,6 @@ class Header(Base):
     def get_menu_button(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.menu_button))
 
-    def get_news_tittle(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.news_tittle)).text
-
-    def get_header_pop_up(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.header_pop_up))
-
-    def get_purchase_method_new(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.purchase_method_new))
-
-    def get_h1_documents(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.documents)).text
-
-    def get_bonus(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.bonus)).text
-
-    def get_investors(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.investors)).text
-
-    def get_partners(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.partners)).text
-
-    def get_tenders(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.tenders)).text
-
-    def get_contacts(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.contacts)).text
-
-    def get_progress(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.progress)).text
-
     # Actions
     with testit.step("Кликаем на проекты"):
         def click_projects(self):
@@ -186,7 +141,6 @@ class Header(Base):
 
     def move_to_projects(self):
         self.actions.move_to_element(self.get_projects()).perform()
-        self.get_header_pop_up()
         print("Наводимся на проекты")
 
     def click_apart(self):
@@ -215,7 +169,6 @@ class Header(Base):
 
     def move_to_apart(self):
         self.actions.move_to_element(self.get_apart()).perform()
-        self.get_header_pop_up()
         print("Наводимся на квартиры")
 
     # Проверка подменю в ХЭДЕРЕ Actions
