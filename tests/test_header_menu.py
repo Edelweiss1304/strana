@@ -185,7 +185,7 @@ def test_pm_from_header_menu(driver, url):
     with testit.step("Кликаем на Способы покупки"):
         br.get_purchase().click()
     with testit.step("Проверяем, что попали на страницу Способы покупки"):
-        assert br.get_purchase_tittle() == "Материнский"
+        assert br.get_purchase_tittle() == "Материнский капитал"
         print("Проверяем заголовок")
 
 
@@ -193,7 +193,6 @@ def test_pm_from_header_menu(driver, url):
 @testit.description("Проверка кнопки Документы в бургере")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 def test_docs_from_header_menu(driver, url):
-    head = Header(driver)
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
@@ -203,7 +202,7 @@ def test_docs_from_header_menu(driver, url):
     with testit.step("Кликаем на Документы"):
         br.get_documents().click()
     with testit.step("Проверяем, что попали на страницу Документы"):
-        assert head.get_h1_documents() == "Документы"
+        assert br.get_documents_tittle() == "Документы"
         print("Проверяем заголовок")
 
 
@@ -276,7 +275,7 @@ def test_partners_from_header_menu(driver, url):
     with testit.step("Кликаем на Партнерам"):
         br.get_partners().click()
     with testit.step("Проверяем, что попали на страницу Партнерам"):
-        assert head.get_partners() == "Партнеры"
+        assert br.get_partners_tittle() == "Партнеры"
         print("Проверяем заголовок")
 
 
@@ -293,7 +292,7 @@ def test_tenders_from_header_menu(driver, url):
     with testit.step("Кликаем на тендеры"):
         br.get_tenders().click()
     with testit.step("Проверяем, что попали на страницу Тендеры"):
-        assert br.get_tenders() == "Заключить договор проще, чем ты думаешь"
+        assert br.get_tenders_tittle() == "Заключить договор проще, чем ты думаешь"
         print("Проверяем заголовок")
 
 

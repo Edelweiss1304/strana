@@ -9,10 +9,10 @@ import testit
 
 class Authorization(Base):
     # Locators
-    login_lk_button = "//div[@class='the-header-base__controls']//a[2]"
-    login_client_phone_field = "//input[@id='input-33']"
+    login_lk_button = "//span[@class='the-header__icons-item']"
+    login_client_phone_field = "//input[@type ='tel']"
     get_code_btn = "//span[@class='v-btn__content']"
-    enter_code_field = "//input[@id='input-56']"
+    enter_code_field = "//input[@type ='number']"
     fin_login_btn = "//span[contains(text(),'Войти')]"
     check_lk = "//h1[contains(text(),'Брони и договоры')]"
 
@@ -139,6 +139,9 @@ class Authorization(Base):
 
         elif url == 'https://msk.strana.com':
             locator = Base.get_s_link_wrapper_locator(15)
+
+        elif url == 'https://ekb.strana.com':
+            locator = Base.get_s_link_wrapper_locator(20)
 
         else:
             locator = Base.get_s_link_wrapper_locator(19)
