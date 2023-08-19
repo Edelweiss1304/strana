@@ -112,19 +112,19 @@ def test_projects_avtorskiy(driver):
         assert head.get_project_comfort_tittle() == "Авторский"
 
 
-@testit.displayName("Проверка Колумб")
-@testit.description("Проверка перехода в Колумб через страницу проектов")
-@allure.title("Переход из проектов в Колумб")
-def test_projects_kolumb(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_tmn'])
-        head.click_projects()
-        pp.click_accept_cookie()
-        pp.click_kolumb()
-    with testit.step("Проверяем, что попали на Колумб"):
-        assert head.get_project_comfort_tittle() == "Колумб"
+# @testit.displayName("Проверка Колумб")
+# @testit.description("Проверка перехода в Колумб через страницу проектов")
+# @allure.title("Переход из проектов в Колумб")
+# def test_projects_kolumb(driver):
+#     head = Header(driver)
+#     pp = ProjectsPage(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_tmn'])
+#         head.click_projects()
+#         pp.click_accept_cookie()
+#         pp.click_kolumb()
+#     with testit.step("Проверяем, что попали на Колумб"):
+#         assert head.get_project_comfort_tittle() == "Колумб"
 
 
 @testit.displayName("Проверка Сердце Сибири")

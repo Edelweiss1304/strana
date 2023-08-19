@@ -1,9 +1,6 @@
 from pages.header_links import Header
-from pages.projects_page import ProjectsPage
 from base.base_class import Base
 from pages.url import URLS_MAIN
-import allure
-from selenium.webdriver.common.by import By
 import pytest
 import time
 import testit
@@ -119,8 +116,8 @@ def test_yt_from_header_menu(driver, url):
         print("Проверяем что попали на Ютуб")
 
 
-@testit.displayName("Проверка кнопки Telegram в меню {url}")
-@testit.description("Проверка кнопки Telegram в дополнительном меню")
+@testit.displayName("Проверка кнопки Telegram в бургере {url}")
+@testit.description("Проверка кнопки Telegram в бургере")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 def test_tg_from_header_menu(driver, url):
     br = Burger(driver)
@@ -138,8 +135,8 @@ def test_tg_from_header_menu(driver, url):
         print("Проверяем что попали в телеграм")
 
 
-@testit.displayName("Проверка кнопки новости в меню {url}")
-@testit.description("Проверка кнопки новости в дополнительном меню")
+@testit.displayName("Проверка кнопки новости в бургере {url}")
+@testit.description("Проверка кнопки новости в бургере")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 def test_news_from_header_menu(driver, url):
     br = Burger(driver)
