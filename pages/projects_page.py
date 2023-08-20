@@ -26,6 +26,17 @@ class ProjectsPage(Base):
 
     accept_cookie = "//span[contains(text(),'Принять')]"
 
+    # Локаторы для кнопок квартир
+    wow_flats_button = "//h3[text()='ЖК WOW']/following::button[contains(@class,'btn_WWmef')]"
+    ozernya_flats_button = "//h3[text()='Страна.Озерная']/following::button[contains(@class,'btn_WWmef')]"
+    sibsad_flats_button = "//h3[text()='Сибирский сад']/following::button[contains(@class,'btn_WWmef')]"
+    zvezdniy_flats_button = "//h3[text()='Звездный']/following::button[contains(@class,'btn_WWmef')]"
+    union_flats_button = "//h3[text()='Юнион']/following::button[contains(@class,'btn_WWmef')]"
+    avtorskiy_flats_button = "//h3[text()='Авторский']/following::button[contains(@class,'btn_WWmef')]"
+    sersib_flats_button = "//h3[text()='Сердце Сибири']/following::button[contains(@class,'btn_WWmef')]"
+    domashniy_flats_button = "//h3[text()='Домашний']/following::button[contains(@class,'btn_WWmef')]"
+    eb2_flats_button = "//h3[text()='Европейский берег 2.0']/following::button[contains(@class,'btn_WWmef')]"
+
     # Геттеры
     def get_wow(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.wow))
@@ -66,55 +77,31 @@ class ProjectsPage(Base):
     def get_accept_cookie(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.accept_cookie))
 
-    # Actions
-    with testit.step("Кликаем на WOW"):
-        def click_wow(self):
-            self.get_wow().click()
+    def get_wow_flats_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.wow_flats_button))
 
-    with testit.step("Кликаем на Озерный"):
-        def click_ozerniy(self):
-            self.get_ozerniy().click()
+    def get_ozernya_flats_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.ozernya_flats_button))
 
-    with testit.step("Кликаем на ДнВ"):
-        def click_dnv(self):
-            self.get_dnv().click()
+    def get_sibsad_flats_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.sibsad_flats_button))
 
-    with testit.step("Кликаем на Озерный"):
-        def click_princip(self):
-            self.get_princip().click()
+    def get_zvezdniy_flats_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.zvezdniy_flats_button))
 
-    with testit.step("Кликаем на Сибирский Сад"):
-        def click_sibsad(self):
-            self.get_sibsad().click()
+    def get_union_flats_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.union_flats_button))
 
-    with testit.step("Кликаем на Звездный"):
-        def click_zvezdniy(self):
-            self.get_zvezdniy().click()
+    def get_avtorskiy_flats_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.avtorskiy_flats_button))
 
-    with testit.step("Кликаем на Юнион"):
-        def click_union(self):
-            self.get_union().click()
+    def get_sersib_flats_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.sersib_flats_button))
 
-    with testit.step("Кликаем на Авторский"):
-        def click_avtorskiy(self):
-            self.get_avtorskiy().click()
+    def get_domashniy_flats_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.domashniy_flats_button))
 
-    with testit.step("Кликаем на Колумб"):
-        def click_kolumb(self):
-            self.get_kolumb().click()
+    def get_eb2_flats_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.eb2_flats_button))
 
-    with testit.step("Кликаем на Сердце Сибири"):
-        def click_sersib(self):
-            self.get_sersib().click()
 
-    with testit.step("Кликаем на Домашний"):
-        def click_domashniy(self):
-            self.get_domashniy().click()
-
-    with testit.step("Принимаем куки"):
-        def click_accept_cookie(self):
-            self.get_accept_cookie().click()
-
-    with testit.step("Кликаем на ЕБ 2.0"):
-        def click_eb(self):
-            self.get_eb().click()

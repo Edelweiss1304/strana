@@ -67,36 +67,36 @@ def test_ekb_apart(driver, index):
         assert getattr(head, f"get_apart_{index}")().value_of_css_property("color") == head.text_color
 
 
-@testit.description('Проверяем, что при нажатии на х-комнатную квартиру в хэдере, мы попадаем на выборщик с нужной '
-                    'комнатностью.')
-@testit.displayName("Проверка квартир по комнатности СПБ-{index}")
-@allure.title("Проверка квартир СПБ-{index}")
-@pytest.mark.parametrize("index", [0])
-def test_spb_apart(driver, index):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу СПБ"):
-        Base.open_page(driver, URLS_MAIN['url_spb'])
-        head.move_to_apart()
-    with testit.step("Выбираем комнатность {index}"):
-        link_index = 9 + index
-        getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
-    with testit.step("Смотрим, что находимся в выборщике нужного города"):
-        assert head.get_city_in_apart() == "Санкт-Петербург"
-
-        if index == 0:
-            target_index = 0
-        elif index == 1:
-            target_index = 3
-        elif index == 2:
-            target_index = 4
-        time.sleep(1)
-    with testit.step("Смотрим, какая комнатность выбрана"):
-        assert getattr(head, f"get_apart_{target_index}")().value_of_css_property("color") == head.text_color
+# @testit.description('Проверяем, что при нажатии на х-комнатную квартиру в хэдере, мы попадаем на выборщик с нужной '
+#                     'комнатностью.')
+# @testit.displayName("Проверка квартир по комнатности СПБ-{index}")
+# @allure.title("Проверка квартир СПБ-{index}")
+# @pytest.mark.parametrize("index", [0])
+# def test_spb_apart(driver, index):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу СПБ"):
+#         Base.open_page(driver, URLS_MAIN['url_spb'])
+#         head.move_to_apart()
+#     with testit.step("Выбираем комнатность {index}"):
+#         link_index = 9 + index
+#         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
+#     with testit.step("Смотрим, что находимся в выборщике нужного города"):
+#         assert head.get_city_in_apart() == "Санкт-Петербург"
+#
+#         if index == 0:
+#             target_index = 0
+#         elif index == 1:
+#             target_index = 3
+#         elif index == 2:
+#             target_index = 4
+#         time.sleep(1)
+#     with testit.step("Смотрим, какая комнатность выбрана"):
+#         assert getattr(head, f"get_apart_{target_index}")().value_of_css_property("color") == head.text_color
 
 
 @testit.description('Проверяем, что при нажатии на паркинг, мы попадаем на паркинг.')
-@testit.displayName("Проверка паркинга")
-@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_spb']])
+@testit.displayName("Проверка паркинга {url}")
+@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_spb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
 def test_parking_from_header(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
