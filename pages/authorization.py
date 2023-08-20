@@ -22,6 +22,8 @@ class Authorization(Base):
     login_broker_btn = "//button[@type='submit']"
     broker_agent_check = "//h1[contains(text(),'Сделки')]"
 
+    broker_header_button = "//a[contains(., 'Агентам и агентствам')]"
+
     # Getters
 
     def get_login_lk_button(self):
@@ -56,6 +58,9 @@ class Authorization(Base):
 
     def get_first_login_broker_button(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.first_login_broker_button))
+
+    def get_broker_header_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.broker_header_button))
 
     # Actions
 
@@ -101,20 +106,8 @@ class Authorization(Base):
         time.sleep(1)
         with testit.step("Открываем главную страницу"):
             head.actions.move_to_element(head.get_menu_button()).perform()
-
-            if url == 'https://mo.strana.com':
-                locator = Base.get_s_link_wrapper_locator(23)
-
-            elif url == 'https://nsk.strana.com':
-                locator = Base.get_s_link_wrapper_locator(20)
-
-            elif url == 'https://msk.strana.com':
-                locator = Base.get_s_link_wrapper_locator(24)
-
-            else:
-                locator = Base.get_s_link_wrapper_locator(25)
         with testit.step("Кликаем на Агентам и агентствам"):
-            Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
+            self.get_broker_header_button().click()
         with testit.step("Нажимаем Войти/Зарегистрироваться"):
             self.click_first_login_broker_button()
 

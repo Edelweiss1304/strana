@@ -10,13 +10,13 @@ import testit
 @testit.displayName("Проверка квартир по комнатности МСК-{index}")
 @testit.description('Проверяем, что при нажатии на х-комнатную квартиру в хэдере, мы попадаем на выборщик с нужной '
                     'комнатностью.')
-@allure.title("Проверка квартир по комнатности МСК-{index}")
 @pytest.mark.parametrize("index", range(5))
 def test_msk_apart(driver, index):
     head = Header(driver)
     with testit.step("Открываем главную страницу МСК"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
         head.move_to_apart()
+        time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
         link_index = 8 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
@@ -30,13 +30,13 @@ def test_msk_apart(driver, index):
 @testit.description('Проверяем, что при нажатии на х-комнатную квартиру в хэдере, мы попадаем на выборщик с нужной '
                     'комнатностью.')
 @testit.displayName("Проверка квартир по комнатности ТМН-{index}")
-@allure.title("Проверка квартир ТМН-{index}")
 @pytest.mark.parametrize("index", range(5))
 def test_tmn_apart(driver, index):
     head = Header(driver)
     with testit.step("Открываем главную страницу ТМН"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
         head.move_to_apart()
+        time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
         link_index = 9 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
@@ -50,13 +50,13 @@ def test_tmn_apart(driver, index):
 @testit.description('Проверяем, что при нажатии на х-комнатную квартиру в хэдере, мы попадаем на выборщик с нужной '
                     'комнатностью.')
 @testit.displayName("Проверка квартир по комнатности ЕКБ-{index}")
-@allure.title("Проверка квартир ЕКБ-{index}")
 @pytest.mark.parametrize("index", range(5))
 def test_ekb_apart(driver, index):
     head = Header(driver)
     with testit.step("Открываем главную страницу ЕКБ"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
         head.move_to_apart()
+        time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
         link_index = 9 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
