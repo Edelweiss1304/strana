@@ -29,7 +29,7 @@ jobs:
           EOT
       - name: Test run for testit
         run: |
-          pytest tests/test_projects.py::test_projects_eb --testit
+          pytest tests/test_projects.py::test_projects_wow --testit
 
 
 
