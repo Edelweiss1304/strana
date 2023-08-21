@@ -25,6 +25,8 @@ def test_projects_wow(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_wow()).perform()
+        head.actions.move_to_element(pp.get_wow_flats_button()).perform()
+        time.sleep(2)
         driver.execute_script("arguments[0].click();", pp.get_wow_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
