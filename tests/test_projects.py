@@ -230,8 +230,7 @@ def test_projects_eb(driver):
     with testit.step("Возвращаемся назад"):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
-        # head.actions.move_to_element(pp.get_eb()).perform()
-        driver.execute_script("arguments[0].scrollIntoView();", pp.get_eb())
+        head.actions.move_to_element(pp.get_eb()).perform()
         time.sleep(2)
         driver.execute_script("arguments[0].click();", pp.get_eb2_flats_button())
     with testit.step("проверяем, что попали на flats"):
