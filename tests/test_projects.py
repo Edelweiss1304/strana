@@ -1,3 +1,5 @@
+import time
+
 from pages.header_links import Header
 from pages.projects_page import ProjectsPage
 from base.base_class import Base
@@ -229,6 +231,7 @@ def test_projects_eb(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_eb()).perform()
+        time.sleep(2)
         driver.execute_script("arguments[0].click();", pp.get_eb2_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
