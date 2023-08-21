@@ -231,7 +231,7 @@ def test_projects_eb(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         # head.actions.move_to_element(pp.get_eb()).perform()
-        driver.execute_script("arguments[0].dispatchEvent(new Event('mouseover', { bubbles: true }));", pp.get_eb())
+        driver.execute_script("arguments[0].scrollIntoView();", pp.get_eb())
         time.sleep(2)
         driver.execute_script("arguments[0].click();", pp.get_eb2_flats_button())
     with testit.step("проверяем, что попали на flats"):
