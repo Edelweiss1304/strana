@@ -23,7 +23,7 @@ def test_projects_wow(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_wow()).perform()
-        pp.get_wow_flats_button().click()
+        driver.execute_script("arguments[0].click();", pp.get_wow_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
 
@@ -46,7 +46,7 @@ def test_projects_ozerniy(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_ozerniy()).perform()
-        pp.get_ozernya_flats_button().click()
+        driver.execute_script("arguments[0].click();", pp.get_ozernya_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
 
@@ -91,7 +91,7 @@ def test_projects_sibsad(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_sibsad()).perform()
-        pp.get_sibsad_flats_button().click()
+        driver.execute_script("arguments[0].click();", pp.get_sibsad_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
 
@@ -114,7 +114,7 @@ def test_projects_zvezdniy(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_zvezdniy()).perform()
-        pp.get_zvezdniy_flats_button().click()
+        driver.execute_script("arguments[0].click();", pp.get_zvezdniy_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
 
@@ -137,7 +137,7 @@ def test_projects_union(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_union()).perform()
-        pp.get_union_flats_button().click()
+        driver.execute_script("arguments[0].click();", pp.get_union_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
 
@@ -160,7 +160,7 @@ def test_projects_avtorskiy(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_avtorskiy()).perform()
-        pp.get_avtorskiy_flats_button().click()
+        driver.execute_script("arguments[0].click();", pp.get_avtorskiy_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
 
@@ -183,7 +183,7 @@ def test_projects_sersib(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_sersib()).perform()
-        pp.get_sersib_flats_button().click()
+        driver.execute_script("arguments[0].click();", pp.get_sersib_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
 
@@ -206,7 +206,7 @@ def test_projects_domashniy(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_domashniy()).perform()
-        pp.get_domashniy_flats_button().click()
+        driver.execute_script("arguments[0].click();", pp.get_domashniy_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
 
@@ -229,6 +229,6 @@ def test_projects_eb(driver):
         driver.back()
     with testit.step("Кликаем на кнопку квартиры"):
         head.actions.move_to_element(pp.get_eb()).perform()
-        pp.get_eb2_flats_button().click()
+        driver.execute_script("arguments[0].click();", pp.get_eb2_flats_button())
     with testit.step("проверяем, что попали на flats"):
         assert head.get_apart_check() == "Подобрать квартиру"
