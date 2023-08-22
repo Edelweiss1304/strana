@@ -313,3 +313,15 @@ def test_nsk_header_about(driver):
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_nsk'])
         head.check_about()
+
+
+@testit.displayName("Проверка кнопки Вакансии нск")
+@testit.description("Проверка кнопки Вкансии нск")
+def test_nsk_vacancy(driver):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, URLS_MAIN['url_nsk'])
+    with testit.step("Кликаем на вакансии"):
+        head.get_vacancy().click()
+    with testit.step("Проверяем, что попали на вакнсии"):
+        head.get_vacancy_check()

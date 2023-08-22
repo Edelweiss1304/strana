@@ -21,6 +21,7 @@ class Header(Base):
     purchase_methods = "//span[@class='s-shift-text__value'][contains(text(),'Способы покупки')]"
     sale = "//span[@class='s-shift-text__value'][normalize-space()='SALE %']"
     menu = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
+    vacancy = "//span[@class='s-shift-text__value'][contains(text(),'Вакансии')]"
 
     # Заголовки для проверок из страниц хэдера
 
@@ -30,6 +31,7 @@ class Header(Base):
     action_check = "//h1//span[contains(text(),'Акции')]"
     about_check = "//h1[contains(text(),'О компании')]"
     vacancy_check = "//h2[contains(text(),'Работа в Стране Девелопмент')]"
+    commercial_check = "//h1[contains(text(),'Коммерческая недвижимость')]"
 
     project_business_tittle = "//div[@class='uppercase title_KrDfI']"
     project_comfort_tittle = ".project-hero__title"
@@ -72,6 +74,9 @@ class Header(Base):
     def get_sale(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.sale))
 
+    def get_vacancy(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.vacancy))
+
     def get_menu(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.menu))
 
@@ -92,6 +97,9 @@ class Header(Base):
 
     def get_vacancy_check(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.vacancy_check)).text
+
+    def get_commercial_check(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.commercial_check)).text
 
     # Проверка подменю в ХЭДЕРЕ Getters
 
@@ -235,7 +243,7 @@ class Header(Base):
         with testit.step("Нажимаем на Коммерцию"):
             self.click_commercial()
         with testit.step("Проверяем заголовок страницы"):
-            assert self.get_projects_check() == "Проекты"
+            assert self.get_commercial_check() == "Коммерческая недвижимость"
         print("Проверяем заголовок")
 
     def check_actions(self):

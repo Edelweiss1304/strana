@@ -10,13 +10,13 @@ import testit
 class Authorization(Base):
     # Locators
     login_lk_button = "//span[@class='the-header__icons-item']"
-    login_client_phone_field = "//input[@type ='tel']"
+    login_client_phone_field = "//main//form//input"
     get_code_btn = "//span[@class='v-btn__content']"
     enter_code_field = "//input[@type ='number']"
     fin_login_btn = "//span[contains(text(),'Войти')]"
-    check_lk = "//h1[contains(text(),'Брони и договоры')]"
+    check_lk = "//div[contains(text(),'Брони и договоры')]"
 
-    first_login_broker_button = "/html[1]/body[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[2]/a[2]"
+    first_login_broker_button = "//header//a[2]"
     email_field_agent = "email"
     password_field_agent = "//label[text()='Пароль']/following-sibling::input"
     login_broker_btn = "//button[@type='submit']"
@@ -85,21 +85,6 @@ class Authorization(Base):
         print('Нажата кнопка входа для брокера на посадочной странице')
 
     # Methods
-    def login_lk(self, phone_for_user=+79198629250, code_for_user=1313):
-        time.sleep(1)
-        with testit.step("Нажимаем иконку входа"):
-            self.click_login_lk_button()
-            next_tab_index = (self.driver.window_handles.index(self.driver.current_window_handle) + 1) % len(self.driver.window_handles)
-        with testit.step("Переключаемся на соседнюю вкладку"):
-            self.driver.switch_to.window(self.driver.window_handles[next_tab_index])
-        with testit.step("Заполняем телефон"):
-            self.get_login_client_phone_field().send_keys(phone_for_user)
-        with testit.step("Кликаем Получить код"):
-            self.click_get_code_btn()
-        with testit.step("Вводим код"):
-            self.get_enter_code_field().send_keys(code_for_user)
-        with testit.step("Нажимаем Войти"):
-            self.click_fin_login_btn()
 
     def login_page_broker_from_header(self, url):
         head = Header(self.driver)
