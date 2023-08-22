@@ -288,8 +288,9 @@ def test_tenders_from_header_menu(driver, url):
         br.actions.move_to_element(br.get_menu_button()).perform()
     with testit.step("Кликаем на тендеры"):
         br.get_tenders().click()
+        time.sleep(1)
     with testit.step("Проверяем, что попали на страницу Тендеры"):
-        assert br.get_tenders_tittle() == "Заключить договор проще, чем ты думаешь"
+        assert driver.current_url == "https://tender.strana.com/"
         print("Проверяем заголовок")
 
 
