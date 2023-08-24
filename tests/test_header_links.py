@@ -107,6 +107,18 @@ def test_mo_header_about(driver):
         Base.open_page(driver, URLS_MAIN['url_mo'])
         head.check_about()
 
+
+@testit.displayName("Проверка кнопки вакансии мо")
+@testit.description("Проверка кнопки вакансии мо")
+def test_mo_header_vacancy(driver):
+    head = Header(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, URLS_MAIN['url_mo'])
+    with testit.step("Кликаем на вакансии"):
+        head.get_vacancy().click()
+    with testit.step("Проверяем, что попали на вакнсии"):
+        head.get_vacancy_check()
+
     # SPB
 
 
@@ -168,7 +180,6 @@ def test_spb_header_purchase_methods(driver):
 @testit.description("Проверка кнопки sale спб")
 def test_spb_header_sale(driver):
     head = Header(driver)
-    fl = Flats(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
         head.check_sale()

@@ -106,19 +106,19 @@ class Authorization(Base):
             self.click_login_broker_btn()
 
     def login_broker_from_main_page(self, url):
-        if url == 'https://mo.strana.com':
+        if url == 'https://strana.com/mo/':
             locator = Base.get_s_link_wrapper_locator(12)
 
-        elif url == 'https://nsk.strana.com':
+        elif url == 'https://strana.com/nsk/':
             locator = Base.get_s_link_wrapper_locator(8)
 
-        elif url == 'https://spb.strana.com':
+        elif url == 'https://strana.com/spb/':
             locator = Base.get_s_link_wrapper_locator(17)
 
-        elif url == 'https://msk.strana.com':
+        elif url == 'https://strana.com/msk/':
             locator = Base.get_s_link_wrapper_locator(15)
 
-        elif url == 'https://ekb.strana.com':
+        elif url == 'https://strana.com/ekb/':
             locator = Base.get_s_link_wrapper_locator(20)
 
         else:
