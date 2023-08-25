@@ -13,6 +13,8 @@ def test_projects_wow(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на Проекты"):
         head.click_projects()
         pp = ProjectsPage(driver)
@@ -39,6 +41,8 @@ def test_projects_ozerniy(driver):
     pp = ProjectsPage(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
         pp.get_accept_cookie().click()
@@ -62,6 +66,8 @@ def test_projects_dnv(driver):
     pp = ProjectsPage(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
         pp.get_accept_cookie().click()
@@ -84,6 +90,8 @@ def test_projects_sibsad(driver):
     pp = ProjectsPage(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
         pp.get_accept_cookie().click()
@@ -107,6 +115,8 @@ def test_projects_zvezdniy(driver):
     pp = ProjectsPage(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
         pp.get_accept_cookie().click()
@@ -130,6 +140,8 @@ def test_projects_union(driver):
     pp = ProjectsPage(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
         pp.get_accept_cookie().click()
@@ -153,6 +165,8 @@ def test_projects_avtorskiy(driver):
     pp = ProjectsPage(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
         pp.get_accept_cookie().click()
@@ -176,6 +190,8 @@ def test_projects_sersib(driver):
     pp = ProjectsPage(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
         pp.get_accept_cookie().click()
@@ -199,6 +215,8 @@ def test_projects_domashniy(driver):
     pp = ProjectsPage(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
         pp.get_accept_cookie().click()
@@ -222,6 +240,8 @@ def test_projects_eb(driver):
     pp = ProjectsPage(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
         pp.get_accept_cookie().click()

@@ -1,13 +1,21 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
+from selenium.webdriver.common.by import By
 
 
 class Base:
-    url_mo = None
 
     def __init__(self, driver):
         self.driver = driver
+
+    accept_city = "//span[contains(text(),'Да, верно')]"
+
+    def get_accept_city(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.accept_city))
+
+    def click_accept_city(self):
+        self.get_accept_city().click()
 
     # Открытие url с использованием переданного драйвера
     @classmethod

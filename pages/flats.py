@@ -1,6 +1,5 @@
 from base.base_class import Base
 from selenium.webdriver.common.by import By
-import pytest
 import testit
 
 

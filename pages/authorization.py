@@ -1,7 +1,5 @@
 from base.base_class import Base
 from selenium.webdriver.common.by import By
-from pages.url import URLS_MAIN
-import pytest
 import time
 from pages.header_links import Header
 import testit
@@ -86,7 +84,7 @@ class Authorization(Base):
 
     # Methods
 
-    def login_page_broker_from_header(self, url):
+    def login_page_broker_from_header(self):
         head = Header(self.driver)
         time.sleep(1)
         with testit.step("Открываем главную страницу"):

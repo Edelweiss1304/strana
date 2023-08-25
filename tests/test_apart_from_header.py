@@ -15,6 +15,8 @@ def test_msk_apart(driver, index):
     head = Header(driver)
     with testit.step("Открываем главную страницу МСК"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.move_to_apart()
         time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
@@ -35,6 +37,8 @@ def test_tmn_apart(driver, index):
     head = Header(driver)
     with testit.step("Открываем главную страницу ТМН"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.move_to_apart()
         time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
@@ -55,6 +59,8 @@ def test_ekb_apart(driver, index):
     head = Header(driver)
     with testit.step("Открываем главную страницу ЕКБ"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.move_to_apart()
         time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
@@ -101,6 +107,8 @@ def test_parking_from_header(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.move_to_apart()
     with testit.step("Открываем паркинг"):
         head.click_s_link_parking_from_header()

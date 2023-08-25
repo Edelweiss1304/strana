@@ -13,6 +13,8 @@ def test_authorization_client(driver, url):
     auth = Authorization(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         time.sleep(1)
     with testit.step("Нажимаем иконку входа"):
         auth.click_login_lk_button()

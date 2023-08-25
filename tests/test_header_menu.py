@@ -262,10 +262,11 @@ def test_investors_from_header_menu(driver, url):
 @testit.description("Проверка кнопки Партнерам в бургере")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 def test_partners_from_header_menu(driver, url):
-    head = Header(driver)
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -283,6 +284,8 @@ def test_tenders_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -301,6 +304,8 @@ def test_contacts_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -318,6 +323,8 @@ def test_actions_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -335,6 +342,8 @@ def test_progress_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()

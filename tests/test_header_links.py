@@ -1,9 +1,6 @@
 from pages.header_links import Header
-from pages.flats import Flats
 from base.base_class import Base
 from pages.url import URLS_MAIN
-import allure
-import pytest
 import testit
 
 
@@ -14,6 +11,8 @@ def test_msk_header_projects(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_projects()
 
 
@@ -23,6 +22,8 @@ def test_msk_header_apart(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_apart()
 
 
@@ -32,6 +33,8 @@ def test_msk_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_commercial()
 
 
@@ -41,6 +44,8 @@ def test_msk_header_actions(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_actions()
 
 
@@ -50,6 +55,8 @@ def test_msk_header_about(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_about()
 
 
@@ -59,6 +66,8 @@ def test_msk_header_purchase_methods(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_purchase_methods()
 
 
@@ -79,6 +88,8 @@ def test_mo_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_mo'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_commercial()
 
 
@@ -88,6 +99,8 @@ def test_mo_header_actions(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_mo'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_actions()
 
 
@@ -96,6 +109,8 @@ def test_mo_header_actions(driver):
 def test_mo_header_purchase_methods(driver):
     head = Header(driver)
     Base.open_page(driver, URLS_MAIN['url_mo'])
+    base_inst = Base(driver)
+    base_inst.click_accept_city()
     head.check_purchase_methods()
 
 
@@ -105,6 +120,8 @@ def test_mo_header_about(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_mo'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_about()
 
 
@@ -114,6 +131,8 @@ def test_mo_header_vacancy(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_mo'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на вакансии"):
         head.get_vacancy().click()
     with testit.step("Проверяем, что попали на вакнсии"):
@@ -128,6 +147,8 @@ def test_spb_header_projects(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_projects()
 
 
@@ -137,6 +158,8 @@ def test_spb_header_apart(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_apart()
 
 
@@ -146,6 +169,8 @@ def test_spb_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_commercial()
 
 
@@ -155,6 +180,8 @@ def test_spb_header_actions(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_actions()
 
 
@@ -164,6 +191,8 @@ def test_spb_header_about(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_about()
 
 
@@ -173,6 +202,8 @@ def test_spb_header_purchase_methods(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_purchase_methods()
 
 
@@ -182,6 +213,8 @@ def test_spb_header_sale(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_spb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_sale()
 
     # EKB
@@ -193,6 +226,8 @@ def test_ekb_header_projects(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_projects()
 
 
@@ -202,6 +237,8 @@ def test_ekb_header_apart(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_apart()
 
 
@@ -211,6 +248,8 @@ def test_ekb_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_commercial()
 
 
@@ -220,6 +259,8 @@ def test_ekb_header_actions(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_actions()
 
 
@@ -229,6 +270,8 @@ def test_ekb_header_about(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_about()
 
 
@@ -238,6 +281,8 @@ def test_ekb_header_purchase_methods(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_purchase_methods()
 
 
@@ -247,6 +292,8 @@ def test_ekb_header_sale(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_sale()
 
     # TMN
@@ -258,6 +305,8 @@ def test_tmn_header_projects(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_projects()
 
 
@@ -267,6 +316,8 @@ def test_tmn_header_apart(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_apart()
 
 
@@ -276,6 +327,8 @@ def test_tmn_header_commercial(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_commercial()
 
 
@@ -285,6 +338,8 @@ def test_tmn_header_actions(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_actions()
 
 
@@ -294,6 +349,8 @@ def test_tmn_header_about(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_about()
 
 
@@ -303,6 +360,8 @@ def test_tmn_header_purchase_methods(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_purchase_methods()
 
 
@@ -312,6 +371,8 @@ def test_tmn_header_sale(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_sale()
 
     # NSK
@@ -323,6 +384,8 @@ def test_nsk_header_about(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_nsk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
         head.check_about()
 
 
@@ -332,6 +395,8 @@ def test_nsk_vacancy(driver):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_nsk'])
+        base_inst = Base(driver)
+        base_inst.click_accept_city()
     with testit.step("Кликаем на вакансии"):
         head.get_vacancy().click()
     with testit.step("Проверяем, что попали на вакнсии"):

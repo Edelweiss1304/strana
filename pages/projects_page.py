@@ -1,7 +1,6 @@
 from base.base_class import Base
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-import testit
 
 
 class ProjectsPage(Base):
