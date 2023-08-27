@@ -21,6 +21,7 @@ class Authorization(Base):
     broker_agent_check = "//h1[contains(text(),'Сделки')]"
 
     broker_header_button = "//a[contains(., 'Агентам и агентствам')]"
+    broker_main_button = "//a[@href='https://broker.strana.com/']"
 
     # Getters
 
@@ -59,6 +60,9 @@ class Authorization(Base):
 
     def get_broker_header_button(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.broker_header_button))
+
+    def get_broker_main_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.broker_main_button))
 
     # Actions
 
@@ -103,25 +107,8 @@ class Authorization(Base):
         with testit.step("Нажимаем Войти"):
             self.click_login_broker_btn()
 
-    def login_broker_from_main_page(self, url):
-        if url == 'https://strana.com/mo/':
-            locator = Base.get_s_link_wrapper_locator(12)
-
-        elif url == 'https://strana.com/nsk/':
-            locator = Base.get_s_link_wrapper_locator(8)
-
-        elif url == 'https://strana.com/spb/':
-            locator = Base.get_s_link_wrapper_locator(17)
-
-        elif url == 'https://strana.com/msk/':
-            locator = Base.get_s_link_wrapper_locator(15)
-
-        elif url == 'https://strana.com/ekb/':
-            locator = Base.get_s_link_wrapper_locator(20)
-
-        else:
-            locator = Base.get_s_link_wrapper_locator(19)
+    def login_broker_from_main_page(self):
         with testit.step("Кликаем Агентам и агентствам на главном экране"):
-            Base.get_element_visibility(self.driver, (By.XPATH, locator)).click()
+            self.get_broker_main_button().click()
         with testit.step("Нажимаем Войти"):
             self.click_first_login_broker_button()

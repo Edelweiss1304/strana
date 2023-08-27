@@ -38,20 +38,20 @@ class Burger(Base):
     contacts = "//a[contains(text(),'Контакты')]"
 
     # Элементы страниц для assert
-    projects_tittle = "//h2[contains(text(),'Проекты')]"
-    flats_tittle = "//div[@class='s-select__label' and text()='Подобрать квартиру']"
-    news_tittle = "//h1//span[contains(text(),'Новости')]"
+    projects_tittle = "//h1[contains(text(),'Проекты')]"
+    flats_tittle = "//h1[contains(text(),'Подобрать квартиру')]"
+    news_tittle = "//h1[contains(text(),'Новости')]"
     company_tittle = "//h1[contains(text(),'О компании')]"
     purchase_tittle = "//h1[contains(text(),'Материнский')]"
     vacancy_tittle = "//span[contains(text(),'Смотреть вакансии')]"
-    vacancy_search = "//div[contains(text(),'Какую работу ищешь?')]"
+    vacancy_search = "//div[contains(text(),'Любое направление')]"
     bonus_tittle = "//span[contains(text(),'.Бонус')]"
     investors_tittle = "//h1[contains(text(),'Инвесторам')]"
     partners_tittle = "//h1[contains(text(),'Партнеры')]"
     tenders_tittle = "//h3[contains(text(),'Заключить договор проще, чем ты думаешь')]"
     contacts_tittle = "//h1[contains(text(),'Контакты')]"
-    offers_tittle = "//h1//span[contains(text(),'Акции')]"
-    progress_tittle = "//h1//span[contains(text(),'Ход строительства')]"
+    offers_tittle = "//h1[contains(text(),'Акции')]"
+    progress_tittle = "//h1[contains(text(),'Ход строительства')]"
     documents_tittle = "//h1[contains(text(),'Документы')]"
 
     # Getters

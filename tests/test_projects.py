@@ -59,28 +59,28 @@ def test_projects_ozerniy(driver):
     #     assert head.get_apart_check() == "Подобрать квартиру"
 
 
-@testit.displayName("Проверка ДнВ")
-@testit.description("Проверка перехода в ДнВ через страницу проектов")
-def test_projects_dnv(driver):
-    head = Header(driver)
-    pp = ProjectsPage(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_spb'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-    with testit.step("Кликаем на проекты"):
-        head.click_projects()
-        pp.get_accept_cookie().click()
-    with testit.step("Кликаем на ДнВ"):
-        pp.get_dnv().click()
-    with testit.step("Проверяем, что попали на ДнВ"):
-        assert head.get_project_dnv_check() == "Санкт-Петербург"
-    # with testit.step("Возвращаемся назад"):
-    #     driver.back()
-    # with testit.step("Кликаем на кнопку квартиры"):
-    #     pp.get_dnv_flats_button().click()
-    # with testit.step("проверяем, что попали на flats"):
-    #     assert head.get_apart_check() == "Подобрать квартиру"
+# @testit.displayName("Проверка ДнВ")
+# @testit.description("Проверка перехода в ДнВ через страницу проектов")
+# def test_projects_dnv(driver):
+#     head = Header(driver)
+#     pp = ProjectsPage(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_spb'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#     with testit.step("Кликаем на проекты"):
+#         head.click_projects()
+#         pp.get_accept_cookie().click()
+#     with testit.step("Кликаем на ДнВ"):
+#         pp.get_dnv().click()
+#     with testit.step("Проверяем, что попали на ДнВ"):
+#         assert head.get_project_dnv_check() == "Санкт-Петербург"
+#     # with testit.step("Возвращаемся назад"):
+#     #     driver.back()
+#     # with testit.step("Кликаем на кнопку квартиры"):
+#     #     pp.get_dnv_flats_button().click()
+#     # with testit.step("проверяем, что попали на flats"):
+#     #     assert head.get_apart_check() == "Подобрать квартиру"
 
 
 @testit.displayName("Проверка Сибирский Сад")

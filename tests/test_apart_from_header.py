@@ -1,7 +1,6 @@
 from pages.header_links import Header
 from base.base_class import Base
 from pages.url import URLS_MAIN
-import allure
 import pytest
 import time
 import testit
@@ -15,16 +14,16 @@ def test_msk_apart(driver, index):
     head = Header(driver)
     with testit.step("Открываем главную страницу МСК"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
         head.move_to_apart()
         time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
         link_index = 8 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
-        assert head.get_city_in_apart() == "Москва"
-        time.sleep(1)
+        assert head.get_city_in_apart() == "в Москве"
+        time.sleep(2)
     with testit.step("Смотрим, какая комнатность выбрана"):
         assert getattr(head, f"get_apart_{index}")().value_of_css_property("color") == head.text_color
 
@@ -46,7 +45,7 @@ def test_tmn_apart(driver, index):
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Тюмени"
-        time.sleep(1)
+        time.sleep(2)
     with testit.step("Смотрим, какая комнатность выбрана"):
         assert getattr(head, f"get_apart_{index}")().value_of_css_property("color") == head.text_color
 
@@ -68,7 +67,7 @@ def test_ekb_apart(driver, index):
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Екатеринбурге"
-        time.sleep(1)
+        time.sleep(2)
     with testit.step("Смотрим, какая комнатность выбрана"):
         assert getattr(head, f"get_apart_{index}")().value_of_css_property("color") == head.text_color
 

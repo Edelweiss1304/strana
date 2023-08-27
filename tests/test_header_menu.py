@@ -142,6 +142,8 @@ def test_news_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -159,6 +161,8 @@ def test_company_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -176,6 +180,8 @@ def test_pm_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -193,6 +199,8 @@ def test_docs_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -210,6 +218,8 @@ def test_vacancy_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -220,7 +230,7 @@ def test_vacancy_from_header_menu(driver, url):
     with testit.step("Нажимаем на кнопку Смотреть вакансии"):
         br.get_vacancy_tittle().click()
     with testit.step("Проверяем, что кнопка нажалась"):
-        assert br.get_vacancy_search() == "Какую работу ищешь?"
+        assert br.get_vacancy_search() == "Любое направление"
         print("Проверяем заголовок")
 
 
@@ -231,6 +241,8 @@ def test_bonus_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -248,6 +260,8 @@ def test_investors_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -265,8 +279,8 @@ def test_partners_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -284,8 +298,8 @@ def test_tenders_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -304,8 +318,8 @@ def test_contacts_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -323,8 +337,8 @@ def test_actions_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()
@@ -342,8 +356,8 @@ def test_progress_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
         time.sleep(1.5)
     with testit.step("Наводимся на меню"):
         br.actions.move_to_element(br.get_menu_button()).perform()

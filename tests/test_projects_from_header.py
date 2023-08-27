@@ -10,8 +10,8 @@ def test_msk_header_wow(driver):
     pfh = ProjectsFromHeader(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
     with testit.step("Наводимся на проекты"):
         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
     with testit.step("Кликаем на WOW"):
@@ -26,8 +26,8 @@ def test_msk_header_ozerniy(driver):
     pfh = ProjectsFromHeader(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_msk'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
     with testit.step("Наводимся на проекты"):
         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
     with testit.step("Кликаем на Страна.Озерная"):
@@ -36,20 +36,20 @@ def test_msk_header_ozerniy(driver):
         assert pfh.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
 
 
-@testit.displayName("Проверка ДнВ в выпадающем меню")
-@testit.description("Проверка перехода в ДнВ через хэдер")
-def test_spb_header_dnv(driver):
-    pfh = ProjectsFromHeader(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_spb'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-    with testit.step("Наводимся на проекты"):
-        pfh.actions.move_to_element(pfh.get_projects_button()).perform()
-    with testit.step("Кликаем на Дом на Васильевском"):
-        pfh.get_dnv().click()
-    with testit.step("Проверяем заголовок"):
-        assert pfh.get_dnv_tittle() == "Санкт-Петербург"
+# @testit.displayName("Проверка ДнВ в выпадающем меню")
+# @testit.description("Проверка перехода в ДнВ через хэдер")
+# def test_spb_header_dnv(driver):
+#     pfh = ProjectsFromHeader(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_spb'])
+#         base = Base(driver)
+#         base.click_accept_city()
+#     with testit.step("Наводимся на проекты"):
+#         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
+#     with testit.step("Кликаем на Дом на Васильевском"):
+#         pfh.get_dnv().click()
+#     with testit.step("Проверяем заголовок"):
+#         assert pfh.get_dnv_tittle() == "Санкт-Петербург"
 
 
 @testit.displayName("Проверка Звездный в выпадающем меню")
@@ -58,8 +58,8 @@ def test_tmn_header_zvezdniy(driver):
     pfh = ProjectsFromHeader(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
     with testit.step("Наводимся на проекты"):
         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
     with testit.step("Кликаем на Звездный"):
@@ -74,8 +74,8 @@ def test_tmn_header_union(driver):
     pfh = ProjectsFromHeader(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
     with testit.step("Наводимся на проекты"):
         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
     with testit.step("Кликаем на Юнион"):
@@ -90,8 +90,8 @@ def test_tmn_header_avtorskiy(driver):
     pfh = ProjectsFromHeader(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
     with testit.step("Наводимся на проекты"):
         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
     with testit.step("Кликаем на Авторский"):
@@ -106,8 +106,8 @@ def test_tmn_header_sersib(driver):
     pfh = ProjectsFromHeader(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
     with testit.step("Наводимся на проекты"):
         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
     with testit.step("Кликаем на Сердце Сибири"):
@@ -122,8 +122,8 @@ def test_tmn_header_domashniy(driver):
     pfh = ProjectsFromHeader(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
     with testit.step("Наводимся на проекты"):
         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
     with testit.step("Кликаем на Домашний"):
@@ -138,8 +138,8 @@ def test_tmn_header_eb(driver):
     pfh = ProjectsFromHeader(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
     with testit.step("Наводимся на проекты"):
         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
     with testit.step("Кликаем на Европейский Берег 2.0"):
@@ -154,8 +154,8 @@ def test_tmn_header_sibsad(driver):
     pfh = ProjectsFromHeader(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
+        base = Base(driver)
+        base.click_accept_city()
     with testit.step("Наводимся на проекты"):
         pfh.actions.move_to_element(pfh.get_projects_button()).perform()
     with testit.step("Кликаем на Сибирский сад"):

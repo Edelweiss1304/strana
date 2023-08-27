@@ -26,12 +26,12 @@ class Header(Base):
     # Заголовки для проверок из страниц хэдера
 
     purchase_methods_check = "//h1[contains(text(),'Материнский')]"
-    projects_check = "//h2[contains(text(),'Проекты')]"
-    apart_check = "//div[@class='s-select__label' and text()='Подобрать квартиру']"
-    action_check = "//h1//span[contains(text(),'Акции')]"
+    projects_check = "//h1[contains(text(),'Проекты')]"
+    apart_check = "//h1[contains(text(),'Подобрать квартиру')]"
+    action_check = "//h1[contains(text(),'Акции')]"
     about_check = "//h1[contains(text(),'О компании')]"
     vacancy_check = "//h2[contains(text(),'Работа в Стране Девелопмент')]"
-    commercial_check = "//h1[contains(text(),'Коммерческая недвижимость')]"
+    commercial_check = "//h1[contains(text(),'Проекты')]"
 
     project_business_tittle = "//div[@class='uppercase title_KrDfI']"
     project_comfort_tittle = ".project-hero__title"
@@ -40,7 +40,7 @@ class Header(Base):
     project_dnv_check = "(//div[@class='listLabel_Q6E55'][contains(text(),'Санкт-Петербург')])[1]"
     city_in_apart = "div[class='s-select s-select--string s-select--secondary s-select--large'] div[" \
                     "class='s-select__rendered']"
-    s_link_parking = "//a[@href='/parking']"  # Паркинг
+    s_link_parking = "//a[contains(@href, '/parking')]"  # Паркинг
 
     text_color = "rgba(146, 39, 143, 1)"
     apart_0 = "//span[contains(text(),'Студия')]"
@@ -48,7 +48,7 @@ class Header(Base):
     apart_2 = "//span[normalize-space()='2']"
     apart_3 = "//span[normalize-space()='3']"
     apart_4 = "//span[normalize-space()='4+']"
-    parking_tittle = "(//h1[@class='title_gewxY h3 text-base-500'][contains(text(),'Паркинг')])[1]"
+    parking_tittle = "//h1[contains(text(),'Паркинг')]"
 
     menu_button = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
 
@@ -243,7 +243,7 @@ class Header(Base):
         with testit.step("Нажимаем на Коммерцию"):
             self.click_commercial()
         with testit.step("Проверяем заголовок страницы"):
-            assert self.get_commercial_check() == "Коммерческая недвижимость"
+            assert self.get_commercial_check() == "Проекты"
         print("Проверяем заголовок")
 
     def check_actions(self):

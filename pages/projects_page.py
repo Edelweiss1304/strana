@@ -10,8 +10,8 @@ class ProjectsPage(Base):
         self.actions = ActionChains(driver)
 
     # Локаторы
-    wow = "//a[@href='/projects/business/wow/']"
-    ozerniy = "//a[@href='/projects/business/stranaozernaya/']"
+    wow = "//h3[contains(text(),'ЖК WOW')]"
+    ozerniy = "//h3[contains(text(),'Страна.Озерная')]"
     dnv = "//h3[contains(text(),'Дом на Васильевском')]"
     princip = "//h3[contains(text(),'ПРИНЦИП')]"
     sibsad = "//h3[contains(text(),'Сибирский сад')]"

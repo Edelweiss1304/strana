@@ -14,7 +14,7 @@ def test_authorization_agent_from_header(driver, url):
         Base.open_page(driver, url)
         base_inst = Base(driver)
         base_inst.click_accept_city()
-        auth.login_page_broker_from_header(url)
+        auth.login_page_broker_from_header()
         auth.login_lk_broker()
     with testit.step("Проверяем, что вошли в ЛК брокера"):
         assert auth.get_broker_agent_check().text == "Сделки"
@@ -30,7 +30,7 @@ def test_authorization_agent_from_main_page(driver, url):
         Base.open_page(driver, url)
         base_inst = Base(driver)
         base_inst.click_accept_city()
-        auth.login_broker_from_main_page(url)
+        auth.login_broker_from_main_page()
         auth.login_lk_broker()
     with testit.step("Проверяем, что вошли в ЛК брокера"):
         assert auth.get_broker_agent_check().text == "Сделки"
