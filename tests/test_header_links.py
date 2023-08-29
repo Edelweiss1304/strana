@@ -62,15 +62,15 @@ def test_msk_header_about(driver):
         head.check_about()
 
 
-@testit.displayName("Проверка кнопки способы покупки мск")
-@testit.description("Проверка кнопки способы покупки мск")
-def test_msk_header_purchase_methods(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_msk'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-        head.check_purchase_methods()
+# @testit.displayName("Проверка кнопки способы покупки мск")
+# @testit.description("Проверка кнопки способы покупки мск")
+# def test_msk_header_purchase_methods(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_msk'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#         head.check_purchase_methods()
 
 
 # @allure.title("Проверка кнопки sale мск")
@@ -106,14 +106,14 @@ def test_mo_header_actions(driver):
         head.check_actions()
 
 
-@testit.displayName("Проверка кнопки методы покупки мо")
-@testit.description("Проверка кнопки методы покупки мо")
-def test_mo_header_purchase_methods(driver):
-    head = Header(driver)
-    Base.open_page(driver, URLS_MAIN['url_mo'])
-    base_inst = Base(driver)
-    base_inst.click_accept_city()
-    head.check_purchase_methods()
+# @testit.displayName("Проверка кнопки методы покупки мо")
+# @testit.description("Проверка кнопки методы покупки мо")
+# def test_mo_header_purchase_methods(driver):
+#     head = Header(driver)
+#     Base.open_page(driver, URLS_MAIN['url_mo'])
+#     base_inst = Base(driver)
+#     base_inst.click_accept_city()
+#     head.check_purchase_methods()
 
 
 @testit.displayName("Проверка кнопки о нас мо")
@@ -200,26 +200,26 @@ def test_spb_header_about(driver):
         head.check_about()
 
 
-@testit.displayName("Проверка кнопки методы покупки спб")
-@testit.description("Проверка кнопки методы покупки спб")
-def test_spb_header_purchase_methods(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_spb'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-        head.check_purchase_methods()
+# @testit.displayName("Проверка кнопки методы покупки спб")
+# @testit.description("Проверка кнопки методы покупки спб")
+# def test_spb_header_purchase_methods(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_spb'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#         head.check_purchase_methods()
 
 
-@testit.displayName("Проверка кнопки sale спб")
-@testit.description("Проверка кнопки sale спб")
-def test_spb_header_sale(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_spb'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-        head.check_sale()
+# @testit.displayName("Проверка кнопки sale спб")
+# @testit.description("Проверка кнопки sale спб")
+# def test_spb_header_sale(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_spb'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#         head.check_sale()
 
     # EKB
 
@@ -281,26 +281,26 @@ def test_ekb_header_about(driver):
         head.check_about()
 
 
-@testit.displayName("Проверка кнопки методы покупки екб")
-@testit.description("Проверка кнопки методы покупки екб")
-def test_ekb_header_purchase_methods(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_ekb'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-        head.check_purchase_methods()
+# @testit.displayName("Проверка кнопки методы покупки екб")
+# @testit.description("Проверка кнопки методы покупки екб")
+# def test_ekb_header_purchase_methods(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_ekb'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#         head.check_purchase_methods()
 
 
-@testit.displayName("Проверка кнопки sale екб")
-@testit.description("Проверка кнопки sale екб")
-def test_ekb_header_sale(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_ekb'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-        head.check_sale()
+# @testit.displayName("Проверка кнопки sale екб")
+# @testit.description("Проверка кнопки sale екб")
+# def test_ekb_header_sale(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_ekb'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#         head.check_sale()
 
     # TMN
 
@@ -362,26 +362,26 @@ def test_tmn_header_about(driver):
         head.check_about()
 
 
-@testit.displayName("Проверка кнопки методы покупки тмн")
-@testit.description("Проверка кнопки методы покупки тмн")
-def test_tmn_header_purchase_methods(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_tmn'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-        head.check_purchase_methods()
+# @testit.displayName("Проверка кнопки методы покупки тмн")
+# @testit.description("Проверка кнопки методы покупки тмн")
+# def test_tmn_header_purchase_methods(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_tmn'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#         head.check_purchase_methods()
 
 
-@testit.displayName("Проверка кнопки sale тмн")
-@testit.description("Проверка кнопки sale тмн")
-def test_tmn_header_sale(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_tmn'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-        head.check_sale()
+# @testit.displayName("Проверка кнопки sale тмн")
+# @testit.description("Проверка кнопки sale тмн")
+# def test_tmn_header_sale(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_tmn'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#         head.check_sale()
 
     # NSK
 

@@ -175,7 +175,8 @@ def test_company_from_header_menu(driver, url):
 
 @testit.displayName("Проверка кнопки Способы покупки в бургере {url}")
 @testit.description("Проверка кнопки Способы покупки в бургере")
-@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_spb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
+@pytest.mark.parametrize("url",
+                         [URLS_MAIN['url_ekb'], URLS_MAIN['url_spb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
 def test_pm_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
@@ -365,4 +366,24 @@ def test_progress_from_header_menu(driver, url):
         br.get_progress().click()
     with testit.step("Проверяем заголовок"):
         assert br.get_progress_tittle() == "Ход строительства"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка кнопки SALE % в бургере {url}")
+@testit.description("Проверка кнопки SALE % в бургере")
+@pytest.mark.parametrize("url",
+                         [URLS_MAIN['url_ekb'], URLS_MAIN['url_spb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
+def test_sale_from_header_menu(driver, url):
+    br = Burger(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
+        time.sleep(1.5)
+    with testit.step("Наводимся на меню"):
+        br.actions.move_to_element(br.get_menu_button()).perform()
+    with testit.step("Кликаем на Способы покупки"):
+        br.get_sale().click()
+    with testit.step("Проверяем, что попали на страницу Способы покупки"):
+        assert br.get_flats_tittle() == "Подобрать квартиру"
         print("Проверяем заголовок")

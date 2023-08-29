@@ -36,6 +36,7 @@ class Burger(Base):
     partners = "//a[contains(text(),'Партнерам')]"
     tenders = "//a[contains(text(),'Тендеры')]"
     contacts = "//a[contains(text(),'Контакты')]"
+    sale = "//a[contains(text(),'SALE %')]"
 
     # Элементы страниц для assert
     projects_tittle = "//h1[contains(text(),'Проекты')]"
@@ -118,6 +119,9 @@ class Burger(Base):
 
     def get_contacts(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.contacts))
+
+    def get_sale(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.sale))
     # Getters tittle
 
     def get_projects_tittle(self):
