@@ -179,45 +179,41 @@ class Header(Base):
 
     # Проверка подменю в ХЭДЕРЕ Actions
 
+    def click_s_link_wrapper_7_from_header(self):
+        locator = Base.get_s_link_wrapper_locator(7)
+        Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
+
     def click_s_link_wrapper_8_from_header(self):
         locator = Base.get_s_link_wrapper_locator(8)
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
-        print("Кликаем на 9 пункт подменю")
 
     def click_s_link_wrapper_9_from_header(self):
         locator = Base.get_s_link_wrapper_locator(9)
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
-        print("Кликаем на 9 пункт подменю")
 
     def click_s_link_wrapper_10_from_header(self):
         locator = Base.get_s_link_wrapper_locator(10)
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
-        print("Кликаем на 10 пункт подменю")
 
     def click_s_link_wrapper_11_from_header(self):
         locator = Base.get_s_link_wrapper_locator(11)
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
-        print("Кликаем на 11 пункт подменю")
 
     def click_s_link_wrapper_12_from_header(self):
         locator = Base.get_s_link_wrapper_locator(12)
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
-        print("Кликаем на 12 пункт подменю")
 
     def click_s_link_wrapper_13_from_header(self):
         locator = Base.get_s_link_wrapper_locator(13)
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
-        print("Кликаем на 13 пункт подменю")
 
     def click_s_link_wrapper_14_from_header(self):
         locator = Base.get_s_link_wrapper_locator(14)
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
-        print("Кликаем на 14 пункт подменю")
 
     def click_s_link_wrapper_15_from_header(self):
         locator = Base.get_s_link_wrapper_locator(15)
         Base.get_element_clickable(self.driver, (By.XPATH, locator)).click()
-        print("Кликаем на 15 пункт подменю")
 
     def click_s_link_parking_from_header(self):
         self.get_s_link_parking().click()

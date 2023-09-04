@@ -53,7 +53,7 @@ class Burger(Base):
     contacts_tittle = "//h1[contains(text(),'Контакты')]"
     offers_tittle = "//h1[contains(text(),'Акции')]"
     progress_tittle = "//h1[contains(text(),'Ход строительства')]"
-    documents_tittle = "//h1[contains(text(),'Документы')]"
+    documents_tittle = "//div[contains(text(),'Документы')]"
 
     # Getters
 

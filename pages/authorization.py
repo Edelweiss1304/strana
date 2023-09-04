@@ -21,7 +21,7 @@ class Authorization(Base):
     broker_agent_check = "//h1[contains(text(),'Сделки')]"
 
     broker_header_button = "//a[contains(., 'Агентам и агентствам')]"
-    broker_main_button = "//a[@href='https://broker.strana.com/']"
+    broker_main_button = "//a[@href='https://broker.strana.com/']//div[@class='s-link__wrapper']"
 
     # Getters
 

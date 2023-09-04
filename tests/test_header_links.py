@@ -337,7 +337,7 @@ def test_tmn_header_commercial(driver):
         base_inst.click_accept_city()
         head.check_commercial()
     with testit.step("Проверяем url страницы"):
-        assert driver.current_url.endswith('/projects?kind=commercial')
+        assert driver.current_url.endswith('/projects/?kind=commercial')
 
 
 @testit.displayName("Проверка кнопки акции тмн")
