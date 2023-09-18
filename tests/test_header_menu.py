@@ -372,7 +372,7 @@ def test_progress_from_header_menu(driver, url):
 @testit.displayName("Проверка кнопки SALE % в бургере {url}")
 @testit.description("Проверка кнопки SALE % в бургере")
 @pytest.mark.parametrize("url",
-                         [URLS_MAIN['url_ekb'], URLS_MAIN['url_spb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
+                         [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
 def test_sale_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):

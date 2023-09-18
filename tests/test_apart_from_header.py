@@ -19,7 +19,7 @@ def test_msk_apart(driver, index):
         head.move_to_apart()
         time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
-        link_index = 8 + index
+        link_index = 7 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Москве"
@@ -41,7 +41,7 @@ def test_tmn_apart(driver, index):
         head.move_to_apart()
         time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
-        link_index = 9 + index
+        link_index = 7 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Тюмени"
@@ -63,7 +63,7 @@ def test_ekb_apart(driver, index):
         head.move_to_apart()
         time.sleep(1.5)
     with testit.step("Выбираем комнатность {index}"):
-        link_index = 9 + index
+        link_index = 7 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Екатеринбурге"
