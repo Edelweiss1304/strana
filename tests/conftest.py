@@ -2,7 +2,8 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from flaky import flaky
-import allure
+import testit
+import os
 
 
 @pytest.fixture(scope="function")
@@ -35,9 +36,11 @@ def pytest_collection_modifyitems(config, items):
 def pytest_exception_interact(node, call, report):
     if call.when == "call" and report.failed:
         driver = node.funcargs["driver"]
-        screenshot_path = f"screenshot_{report.nodeid.replace('/', '_')}.png"
+        screenshot_folder = "screens"
+        os.makedirs(screenshot_folder, exist_ok=True)  # Создаем папку screens, если она не существует
+        screenshot_path = os.path.join(screenshot_folder, f"screenshot_{report.nodeid.replace('/', '_')}.png")
         driver.save_screenshot(screenshot_path)
-        allure.attach(driver.get_screenshot_as_png(), name=screenshot_path,
-                      attachment_type=allure.attachment_type.PNG)
+        testit.addAttachments(screenshot_path)
         # Выводим путь к скриншоту в консоль для наглядности
         print(f"Скриншот сохранен: {screenshot_path}")
+
