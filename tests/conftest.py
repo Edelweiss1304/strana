@@ -27,9 +27,9 @@ def driver():
     driver.quit()
 
 
-def pytest_collection_modifyitems(config, items):
-    for item in items:
-        item.add_marker(pytest.mark.flaky(reruns=4, min_passes=1))
+# def pytest_collection_modifyitems(config, items):
+#     for item in items:
+#         item.add_marker(pytest.mark.flaky(reruns=4, min_passes=1))
 
 
 @pytest.hookimpl(tryfirst=True)
