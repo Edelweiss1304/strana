@@ -22,7 +22,7 @@ def test_projects_wow(driver):
     with testit.step("Кликаем на WOW"):
         pp.get_wow().click()
     with testit.step("Проверяем, что попали на WOW"):
-        assert head.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
+        assert head.get_project_business_tittle() == "АМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
     # with testit.step("Возвращаемся назад"):
     #     driver.back()
     # with testit.step("Кликаем на кнопку квартиры"):

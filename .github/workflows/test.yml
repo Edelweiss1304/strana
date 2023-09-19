@@ -30,16 +30,5 @@ jobs:
       - name: Test run for testit
         id: run_tests
         run: |
-          pytest_output=$(pytest tests/test_login_broker.py --testit | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
+          pytest_output=$(pytest tests/test_projects.py --testit | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
           echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
-      - name: Notify on Telegram
-        if: always()
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          pytest_output="${{ env.pytest_output }}"
-          
-          TEXT="Результаты тестирования: ${pytest_output}"
-
-          curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID}"'", "text": "'"${TEXT}"'"}'
