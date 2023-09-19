@@ -154,23 +154,23 @@ def test_news_from_header_menu(driver, url):
         print("Проверяем заголовок")
 
 
-@testit.displayName("Проверка кнопки Компания в бургере {url}")
-@testit.description("Проверка кнопки Компания в бургере")
-@pytest.mark.parametrize("url", URLS_MAIN.values())
-def test_company_from_header_menu(driver, url):
-    br = Burger(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, url)
-        base = Base(driver)
-        base.click_accept_city()
-        time.sleep(1.5)
-    with testit.step("Наводимся на меню"):
-        br.actions.move_to_element(br.get_menu_button()).perform()
-    with testit.step("Кликаем О компании"):
-        br.get_company().click()
-    with testit.step("Проверяем, что попали на страницу О компании"):
-        assert br.get_company_tittle() == "О компании"
-        print("Проверяем заголовок")
+# @testit.displayName("Проверка кнопки Компания в бургере {url}")      ### Убрано из бургер-меню
+# @testit.description("Проверка кнопки Компания в бургере")
+# @pytest.mark.parametrize("url", URLS_MAIN.values())
+# def test_company_from_header_menu(driver, url):
+#     br = Burger(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, url)
+#         base = Base(driver)
+#         base.click_accept_city()
+#         time.sleep(1.5)
+#     with testit.step("Наводимся на меню"):
+#         br.actions.move_to_element(br.get_menu_button()).perform()
+#     with testit.step("Кликаем О компании"):
+#         br.get_company().click()
+#     with testit.step("Проверяем, что попали на страницу О компании"):
+#         assert br.get_company_tittle() == "О компании"
+#         print("Проверяем заголовок")
 
 
 @testit.displayName("Проверка кнопки Способы покупки в бургере {url}")
