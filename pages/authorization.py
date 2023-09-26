@@ -12,7 +12,7 @@ class Authorization(Base):
     get_code_btn = "//span[@class='v-btn__content']"
     enter_code_field = "//input[@type ='number']"
     fin_login_btn = "//span[contains(text(),'Войти')]"
-    check_lk = "//div[contains(text(),'Брони и договоры')]"
+    check_lk = "//div[contains(text(),'Выбрать квартиру')]"
 
     first_login_broker_button = "//header//a[2]"
     email_field_agent = "email"
@@ -22,6 +22,13 @@ class Authorization(Base):
 
     broker_header_button = "//a[contains(., 'Агентам и агентствам')]"
     broker_main_button = "//a[@href='https://broker.strana.com/']//div[@class='s-link__wrapper']"
+
+    favorite_button = "//a[@id='header-favorite-icon']"
+    login_from_favorite_button = "//span[contains(text(),'Войти в аккаунт')]"
+    phone_field_favorite = "//label[@class='s-input s-input--default s-input--primary']//input[@type='tel']"
+    get_code_favorite = "//span[contains(text(),'Получить код')]"
+    enter_code_favorite = "//label[@class='s-input s-input--default s-input--primary']//input[@type='text']"
+    final_login_favorite = "//button[.//span[@class='s-button__content' and normalize-space()='Войти']]"
 
     # Getters
 
@@ -64,6 +71,23 @@ class Authorization(Base):
     def get_broker_main_button(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.broker_main_button))
 
+    def get_favorite_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.favorite_button))
+
+    def get_login_from_favorite_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.login_from_favorite_button))
+
+    def get_phone_field_favorite(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.phone_field_favorite))
+
+    def get_get_code_favorite(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.get_code_favorite))
+
+    def get_enter_code_favorite(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.enter_code_favorite))
+
+    def get_final_login_favorite(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.final_login_favorite))
     # Actions
 
     def click_login_lk_button(self):
