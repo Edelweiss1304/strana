@@ -43,7 +43,8 @@ def test_flats_from_header_menu(driver, url):
 
 @testit.displayName("Проверка кнопки Коммерция в бургере {url}")
 @testit.description("Проверка кнопки Коммерция в бургере")
-@pytest.mark.parametrize("url", URLS_MAIN.values())
+@pytest.mark.parametrize("url",
+                         [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn'], URLS_MAIN['url_spb']])
 def test_commercial_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):
@@ -54,7 +55,7 @@ def test_commercial_from_header_menu(driver, url):
     with testit.step("Кликаем на Коммерцию"):
         br.get_commercial().click()
     with testit.step("Проверяем, что попали на Коммерцию"):
-        assert br.get_projects_tittle() == "Проекты"
+        assert br.get_commercial_tittle() == "Коммерческая недвижимость"
         print("Проверяем заголовок")
 
 
@@ -208,7 +209,7 @@ def test_docs_from_header_menu(driver, url):
     with testit.step("Кликаем на Документы"):
         br.get_documents().click()
     with testit.step("Проверяем, что попали на страницу Документы"):
-        assert br.get_documents_tittle() == "Документы"
+        assert br.get_documents_tittle() == "Проектные документы"
         print("Проверяем заголовок")
 
 
@@ -269,7 +270,7 @@ def test_investors_from_header_menu(driver, url):
     with testit.step("Кликаем на Инвесторам"):
         br.get_investors().click()
     with testit.step("Проверяем, что попали на страницу Инвесторам"):
-        assert br.get_investors_tittle() == "Инвесторам"
+        assert br.get_investors_tittle() == "Инвесторам в области недвижимости"
         print("Проверяем заголовок")
 
 

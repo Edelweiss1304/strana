@@ -30,8 +30,8 @@ class Header(Base):
     apart_check = "//h1[contains(text(),'Подобрать квартиру')]"
     action_check = "//h1[contains(text(),'Акции')]"
     about_check = "//h1[contains(text(),'О компании')]"
-    vacancy_check = "//h2[contains(text(),'Работа в Стране Девелопмент')]"
-    commercial_check = "//h1[contains(text(),'Проекты')]"
+    vacancy_check = "//h1[contains(text(),'Работа в Стране Девелопмент')]"
+    commercial_check = "//h1[contains(text(),'Коммерческая недвижимость')]"
 
     project_business_tittle = "//div[@class='uppercase title_KrDfI']"
     project_comfort_tittle = ".project-hero__title"
@@ -239,7 +239,7 @@ class Header(Base):
         with testit.step("Нажимаем на Коммерцию"):
             self.click_commercial()
         with testit.step("Проверяем заголовок страницы"):
-            assert self.get_commercial_check() == "Проекты"
+            assert self.get_commercial_check() == "Коммерческая недвижимость"
         print("Проверяем заголовок")
 
     def check_actions(self):

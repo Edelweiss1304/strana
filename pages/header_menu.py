@@ -53,7 +53,8 @@ class Burger(Base):
     contacts_tittle = "//h1[contains(text(),'Контакты')]"
     offers_tittle = "//h1[contains(text(),'Акции')]"
     progress_tittle = "//h1[contains(text(),'Ход строительства')]"
-    documents_tittle = "//div[contains(text(),'Документы')]"
+    documents_tittle = "//h1[contains(text(),'Проектные документы')]"
+    commercial_tittle = "//h1[contains(text(),'Коммерческая недвижимость')]"
 
     # Getters
 
@@ -168,3 +169,6 @@ class Burger(Base):
 
     def get_documents_tittle(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.documents_tittle)).text
+
+    def get_commercial_tittle(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.commercial_tittle)).text
