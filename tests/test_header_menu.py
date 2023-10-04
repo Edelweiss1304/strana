@@ -112,8 +112,7 @@ def test_yt_from_header_menu(driver, url):
         next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)
         driver.switch_to.window(driver.window_handles[next_tab_index])
     with testit.step("Проверяем, что попали на канал Страна Девелопмент"):
-        assert driver.current_url == "https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0" \
-                                     "%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82"
+        assert driver.current_url == "https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82/"
         print("Проверяем что попали на Ютуб")
 
 
@@ -387,4 +386,24 @@ def test_sale_from_header_menu(driver, url):
         br.get_sale().click()
     with testit.step("Проверяем, что попали на страницу Способы покупки"):
         assert br.get_flats_tittle() == "Подобрать квартиру"
+        print("Проверяем заголовок")
+
+
+@testit.displayName("Проверка паркинга в бургере {url}")
+@testit.description("Проверка паркинга в бургере")
+@pytest.mark.parametrize("url",
+                         [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
+def test_parking_from_header_menu(driver, url):
+    br = Burger(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
+        time.sleep(1.5)
+    with testit.step("Наводимся на меню"):
+        br.actions.move_to_element(br.get_menu_button()).perform()
+    with testit.step("Кликаем на паркинг"):
+        br.get_parking().click()
+    with testit.step("Проверяем, что попали на страницу Паркинга и кладовых"):
+        assert br.get_parking_tittle() == "Паркинг"
         print("Проверяем заголовок")

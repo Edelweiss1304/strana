@@ -18,8 +18,7 @@ class Burger(Base):
 
     VK = "//a[@href='https://vk.com/strana_com']"
     OK = "//a[@href='https://ok.ru/stranacom']"
-    YT = ("//a[@href='https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0"
-          "%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82']")
+    YT = ("//a[@href='https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82/']")
     TG = "//a[@href='https://t.me/stranadevelopment']"
 
     company = "//a[contains(text(),'Компания')]"
@@ -37,6 +36,7 @@ class Burger(Base):
     tenders = "//a[contains(text(),'Тендеры')]"
     contacts = "//a[contains(text(),'Контакты')]"
     sale = "//a[contains(text(),'SALE %')]"
+    parking = "//a[contains(text(),'Паркинги и кладовые')]"
 
     # Элементы страниц для assert
     projects_tittle = "//h1[contains(text(),'Проекты')]"
@@ -55,6 +55,7 @@ class Burger(Base):
     progress_tittle = "//h1[contains(text(),'Ход строительства')]"
     documents_tittle = "//h1[contains(text(),'Проектные документы')]"
     commercial_tittle = "//h1[contains(text(),'Коммерческая недвижимость')]"
+    parking_tittle = "//h1[contains(text(),'Паркинг')]"
 
     # Getters
 
@@ -123,6 +124,9 @@ class Burger(Base):
 
     def get_sale(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.sale))
+
+    def get_parking(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.parking))
     # Getters tittle
 
     def get_projects_tittle(self):
@@ -172,3 +176,6 @@ class Burger(Base):
 
     def get_commercial_tittle(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.commercial_tittle)).text
+
+    def get_parking_tittle(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.parking_tittle)).text

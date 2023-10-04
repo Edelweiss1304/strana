@@ -15,7 +15,7 @@ class Header(Base):
 
     projects = "//span[@class='s-shift-text__value'][contains(text(),'Проекты')]"
     apart = "//span[@class='s-shift-text__value'][contains(text(),'Квартиры')]"
-    commercial = "//span[@class='s-shift-text__value'][contains(text(),'Помещения')]"
+    commercial = "//span[@class='s-shift-text__value'][contains(text(),'Коммерция')]"
     action = "//span[@class='s-shift-text__value'][contains(text(),'Акции')]"
     about = "//span[@class='s-shift-text__value'][contains(text(),'О компании')]"
     purchase_methods = "//span[@class='s-shift-text__value'][contains(text(),'Способы покупки')]"
