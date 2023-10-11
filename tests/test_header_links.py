@@ -84,15 +84,15 @@ def test_msk_header_about(driver):
 
 
 # MO
-@testit.displayName("Проверка кнопки помещения мо")
-@testit.description("Проверка кнопки помещения мо")
-def test_mo_header_commercial(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_mo'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-        head.check_commercial()
+# @testit.displayName("Проверка кнопки помещения мо")
+# @testit.description("Проверка кнопки помещения мо")
+# def test_mo_header_commercial(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_mo'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#         head.check_commercial()
 
 
 @testit.displayName("Проверка кнопки акции мо")

@@ -1,4 +1,3 @@
-from pages.header_menu import Burger
 from base.base_class import Base
 from pages.footer import Footer
 from pages.url import URLS_MAIN
@@ -11,7 +10,6 @@ import time
 @testit.description("Проверка кнопки VK в футере")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 def test_vk_footer(driver, url):
-    br = Burger(driver)
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
@@ -28,7 +26,6 @@ def test_vk_footer(driver, url):
 @testit.description("Проверка кнопки YT в футере")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 def test_yt_footer(driver, url):
-    br = Burger(driver)
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
@@ -45,7 +42,6 @@ def test_yt_footer(driver, url):
 @testit.description("Проверка кнопки OK в футере")
 @pytest.mark.parametrize("url", URLS_MAIN.values())
 def test_ok_footer(driver, url):
-    br = Burger(driver)
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
@@ -56,3 +52,19 @@ def test_ok_footer(driver, url):
     with testit.step("Проверяем, что попали в Одноклассники Страна Девелопмент"):
         assert driver.current_url == "https://ok.ru/stranacom"
         print("Проверяем что попали в Одноклассники")
+
+
+@testit.displayName("Проверка кнопки tg в футере {url}")
+@testit.description("Проверка кнопки tg в футере")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_tg_footer(driver, url):
+    ft = Footer(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+    with testit.step("Нажимаем на иконку tg в футере"):
+        ft.get_tg().click()
+        next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)
+        driver.switch_to.window(driver.window_handles[next_tab_index])
+    with testit.step("Проверяем, что попали на Telegram Страна Девелопмент"):
+        assert driver.current_url == "https://t.me/strana_com"
+        print("Проверяем что попали в телеграм")
