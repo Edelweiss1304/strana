@@ -19,7 +19,7 @@ class Burger(Base):
     VK = "//a[@href='https://vk.com/strana_com']"
     OK = "//a[@href='https://ok.ru/stranacom']"
     YT = ("//a[@href='https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82/']")
-    TG = "//a[@href='https://t.me/stranadevelopment']"
+    TG = "//a[@href='https://t.me/strana_com']"
 
     company = "//a[contains(text(),'Компания')]"
     purchase = "//a[contains(text(),'Способы покупки')]"

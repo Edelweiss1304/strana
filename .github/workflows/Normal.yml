@@ -30,7 +30,7 @@ jobs:
           EOT
       - name: Test run for testit
         run: |
-          pytest_output=$(pytest tests/test_apart_from_header.py tests/test_header_menu.py --testit | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
+          pytest_output=$(pytest tests/test_apart_from_header.py tests/test_header_menu.py tests/test_footer.py --testit | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
           echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
       - name: Notify on Telegram
         if: always()
