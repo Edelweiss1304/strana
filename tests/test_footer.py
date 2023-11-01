@@ -68,3 +68,68 @@ def test_tg_footer(driver, url):
     with testit.step("Проверяем, что попали на Telegram Страна Девелопмент"):
         assert driver.current_url == "https://t.me/strana_com"
         print("Проверяем что попали в телеграм")
+
+
+@testit.displayName("Проверка кнопки компания в футере {url}")
+@testit.description("Проверка кнопки компания в футере")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_company_footer(driver, url):
+    ft = Footer(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+    with testit.step("Нажимаем на кнопку компания в футере"):
+        ft.get_company().click()
+    with testit.step("Проверяем, что попали на нужную страницу"):
+        assert ft.get_company_tittle().text == "О компании"
+
+
+@testit.displayName("Проверка кнопки акции в футере {url}")
+@testit.description("Проверка кнопки акции в футере")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_actions_footer(driver, url):
+    ft = Footer(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+    with testit.step("Нажимаем на кнопку акции в футере"):
+        ft.get_actions().click()
+    with testit.step("Проверяем, что попали на нужную страницу"):
+        assert ft.get_actions_tittle().text == "Новости"
+
+
+@testit.displayName("Проверка кнопки ипотека в футере {url}")
+@testit.description("Проверка кнопки ипотека в футере")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_purchase_footer(driver, url):
+    ft = Footer(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+    with testit.step("Нажимаем на кнопку ипотека в футере"):
+        ft.get_purchase().click()
+    with testit.step("Проверяем, что попали на нужную страницу"):
+        assert ft.get_purchase_tittle().text.split()[0] == "Ипотека"
+
+
+@testit.displayName("Проверка кнопки контакты в футере {url}")
+@testit.description("Проверка кнопки контакты в футере")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_contacts_footer(driver, url):
+    ft = Footer(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+    with testit.step("Нажимаем на кнопку контакты в футере"):
+        ft.get_contacts().click()
+    with testit.step("Проверяем, что попали на нужную страницу"):
+        assert ft.get_contacts_tittle().text == "Контакты"
+
+
+@testit.displayName("Проверка кнопки документы в футере {url}")
+@testit.description("Проверка кнопки документы в футере")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_documents_footer(driver, url):
+    ft = Footer(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+    with testit.step("Нажимаем на кнопку документы в футере"):
+        ft.get_documents().click()
+    with testit.step("Проверяем, что попали на нужную страницу"):
+        assert ft.get_documents_tittle().text == "Проектные документы"

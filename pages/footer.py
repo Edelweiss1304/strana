@@ -10,6 +10,7 @@ class Footer(Base):
     tg = "//footer//a[@href='https://t.me/strana_com']"
 
     corruption = "//footer//span[contains(text(),'Противодействие коррупции')]"
+    corruption_button = "//button[@type='submit']//span[@class='s-button__hover-shell']"
     confidentiality = "//footer//span[contains(text(),'Политика конфиденциальности')]"
 
     app = "//footer//a[@href = 'https://appgallery.huawei.com/#/app/C103444111']"
@@ -19,7 +20,13 @@ class Footer(Base):
     purchase = "//footer//span[contains(text(), 'ИПОТЕКА')]"
     contacts = "//footer//span[contains(text(), 'КОНТАКТЫ')]"
     commercial = "//footer//span[contains(text(), 'КОММЕРЦИЯ')]"
-    documents = "//footer//span[contains(text(), 'ДОКУМЕНТЫ')]"
+    documents = "//footer//span[contains(text(), 'Документы')][1]"
+
+    company_tittle = "//h1[contains(text(),'О компании')]"
+    actions_tittle = "//h1[contains(text(),'Новости')]"
+    purchase_tittle = "//h1[contains(text(),'Ипотека')]"
+    contacts_tittle = "//h1[contains(text(),'Контакты')]"
+    documents_tittle = "//h1[contains(text(),'Проектные документы')]"
 
     company_min = "//footer//span[contains(text(), 'КОМПАНИЯ')][2]"
     land_owners = "//footer//span[contains(text(), 'Застройщикам и владельцам земли')]"
@@ -42,6 +49,9 @@ class Footer(Base):
     def get_corruption(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.corruption))
 
+    def get_corruption_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.corruption_button))
+
     def get_confidentiality(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.confidentiality))
 
@@ -51,20 +61,35 @@ class Footer(Base):
     def get_company(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.company))
 
+    def get_company_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.company_tittle))
+
     def get_actions(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.actions))
+
+    def get_actions_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.actions_tittle))
 
     def get_purchase(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.purchase))
 
+    def get_purchase_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.purchase_tittle))
+
     def get_contacts(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.contacts))
+
+    def get_contacts_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.contacts_tittle))
 
     def get_commercial(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.commercial))
 
     def get_documents(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.documents))
+
+    def get_documents_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.documents_tittle))
 
     def get_company_min(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.company_min))
