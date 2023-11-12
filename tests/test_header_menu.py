@@ -131,7 +131,7 @@ def test_tg_from_header_menu(driver, url):
         next_tab_index = (driver.window_handles.index(driver.current_window_handle) + 1) % len(driver.window_handles)
         driver.switch_to.window(driver.window_handles[next_tab_index])
     with testit.step("Проверяем, что попали на Telegram Страна Девелопмент"):
-        assert driver.current_url == "https://t.me/stranadevelopment"
+        assert driver.current_url == "https://t.me/strana_com"
         print("Проверяем что попали в телеграм")
 
 
@@ -308,7 +308,7 @@ def test_tenders_from_header_menu(driver, url):
         br.get_tenders().click()
         time.sleep(1)
     with testit.step("Проверяем, что попали на страницу Тендеры"):
-        assert driver.current_url == "https://tender.strana.com/"
+        assert driver.current_url == "https://partner.strana.com/"
         print("Проверяем заголовок")
 
 
