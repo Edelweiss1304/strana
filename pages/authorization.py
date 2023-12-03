@@ -16,7 +16,7 @@ class Authorization(Base):
 
     first_login_broker_button = "//header//a[2]"
     email_field_agent = "email"
-    password_field_agent = "//label[text()='Пароль']/following-sibling::input"
+    password_field_agent = "//input[@type='password']"
     login_broker_btn = "//button[@type='submit']"
     broker_agent_check = "//h1[contains(text(),'Сделки')]"
 

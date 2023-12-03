@@ -93,7 +93,7 @@ def test_actions_footer(driver, url):
     with testit.step("Нажимаем на кнопку акции в футере"):
         ft.get_actions().click()
     with testit.step("Проверяем, что попали на нужную страницу"):
-        assert ft.get_actions_tittle().text == "Новости"
+        assert ft.get_actions_tittle().text == "Акции"
 
 
 @testit.displayName("Проверка кнопки ипотека в футере {url}")
