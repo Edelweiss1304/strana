@@ -20,7 +20,7 @@ jobs:
 
       - name: Prepare config
         run: |
-          cat <<EOT > connection_config.ini
+          cat > connection_config.ini <<EOT
           [testit]
           url = https://172.16.251.133
           privateToken = ${{ secrets.TMS_PRIVATE_TOKEN }}
@@ -36,5 +36,8 @@ jobs:
           PYTHONWARNINGS: "ignore:Unverified HTTPS request"
         run: |
           pytest_output=$(pytest tests/test_projects.py --testit 2>&1)
-          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
-
+          echo "pytest_output=$pytest_output" >> $GITHUB_ENV
+          if [[ "$pytest_output" == *"INTERNALERROR"* ]]; then
+            echo "An internal error occurred during test execution. Please check the output above for details."
+            exit 1
+          fi
