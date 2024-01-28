@@ -1,26 +1,29 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-import urllib3
-import requests
 from requests.adapters import HTTPAdapter
+from urllib3.poolmanager import PoolManager
 import os
 import testit
 
-# Отключение предупреждений о неverифицированных HTTPS запросах
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-
-# Создание адаптера для отключения SSL верификации
 class NoSSLVerificationAdapter(HTTPAdapter):
     def init_poolmanager(self, *args, **kwargs):
         kwargs['assert_hostname'] = False
         kwargs['cert_reqs'] = 'CERT_NONE'
-        super(NoSSLVerificationAdapter, self).init_poolmanager(*args, **kwargs)
+        self.poolmanager = PoolManager(*args, **kwargs)
 
 
-# Установка адаптера для сессий requests
-requests.Session().mount('https://', NoSSLVerificationAdapter())
+# Глобальная фикстура для отключения SSL верификации
+@pytest.fixture(autouse=True, scope='session')
+def no_ssl_verification():
+    from requests import Session
+
+    session = Session()
+    session.mount('https://', NoSSLVerificationAdapter())
+
+    Session.request = session.request  # Переопределение метода 'request'
+    yield  # После завершения тест сессии удалит себя
 
 
 @pytest.fixture(scope="function")
