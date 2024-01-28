@@ -7,37 +7,34 @@ from requests.adapters import HTTPAdapter
 import os
 import testit
 
-# Игнорирование предупреждений о неverифицированных HTTPS запросах
+# Отключение предупреждений о неverифицированных HTTPS запросах
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
+# Создание адаптера для отключения SSL верификации
 class NoSSLVerificationAdapter(HTTPAdapter):
-    def cert_verify(self, conn, url, verify, cert):
-        conn.cert_reqs = 'CERT_NONE'
-        conn.check_hostname = False
-        conn.verify = False
+    def init_poolmanager(self, *args, **kwargs):
+        kwargs['assert_hostname'] = False
+        kwargs['cert_reqs'] = 'CERT_NONE'
+        super(NoSSLVerificationAdapter, self).init_poolmanager(*args, **kwargs)
 
 
-@pytest.fixture(scope='session')
-def http_session():
-    session = requests.Session()
-    session.mount('https://', NoSSLVerificationAdapter())
-    return session
+# Установка адаптера для сессий requests
+requests.Session().mount('https://', NoSSLVerificationAdapter())
 
 
 @pytest.fixture(scope="function")
 def driver():
+    # Настройки для WebDriver
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
     options.add_argument('--ignore-certificate-errors')
-    # options.add_argument('--headless=new')
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--disable-extensions")
     options.add_argument("--proxy-server='direct://'")
     options.add_argument("--proxy-bypass-list=*")
     options.add_argument("--start-maximized")
     options.add_argument('--no-sandbox')
-    # options.set_capability("pageLoadStrategy", "eager")
     service = Service()
     driver = webdriver.Chrome(service=service, options=options)
     yield driver
@@ -47,10 +44,11 @@ def driver():
 @pytest.hookimpl(tryfirst=True)
 def pytest_exception_interact(node, call, report):
     if call.when == "call" and report.failed:
-        driver = node.funcargs["driver"]
-        screenshot_folder = "screens"
-        os.makedirs(screenshot_folder, exist_ok=True)
-        screenshot_path = os.path.join(screenshot_folder, f"screenshot_{report.nodeid.replace('/', '_')}.png")
-        driver.save_screenshot(screenshot_path)
-        testit.addAttachments(screenshot_path)
-        print(f"Скриншот сохранен: {screenshot_path}")
+        driver = node.funcargs.get("driver")
+        if driver:
+            screenshot_folder = "screens"
+            os.makedirs(screenshot_folder, exist_ok=True)
+            screenshot_path = os.path.join(screenshot_folder, f"screenshot_{report.nodeid.replace('/', '_')}.png")
+            driver.save_screenshot(screenshot_path)
+            testit.addAttachments(screenshot_path)
+            print(f"Скриншот сохранен: {screenshot_path}")
