@@ -34,11 +34,6 @@ jobs:
       - name: Test run for testit
         env:
           PYTHONWARNINGS: "ignore:Unverified HTTPS request"
+          TMS_PRIVATE_TOKEN: ${{ secrets.TMS_PRIVATE_TOKEN }}
         run: |
-          pytest tests/test_projects.py --testit 2>&1
-          result=$?
-          echo "pytest_result=$result" >> $GITHUB_ENV
-          if [ $result -ne 0 ]; then
-            echo "Pytest command failed with exit code $result"
-            exit $result
-          fi
+          pytest tests/test_projects.py --testit --disable-warnings
