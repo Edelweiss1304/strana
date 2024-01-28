@@ -35,13 +35,10 @@ jobs:
         env:
           PYTHONWARNINGS: "ignore:Unverified HTTPS request"
         run: |
-          pytest_output=$(pytest tests/test_projects.py --testit 2>&1)
-          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
-          if [[ "${pytest_output}" == *"INTERNALERROR"* ]]; then
-            echo "An internal error occurred during test execution. Check the output above for details."
-            exit 1
-          fi
-          if [[ ${PIPESTATUS[0]} != 0 ]]; then
-            echo "pytest command failed with exit code ${PIPESTATUS[0]}"
-            exit 1
+          pytest tests/test_projects.py --testit 2>&1
+          result=$?
+          echo "pytest_result=$result" >> $GITHUB_ENV
+          if [ $result -ne 0 ]; then
+            echo "Pytest command failed with exit code $result"
+            exit $result
           fi
