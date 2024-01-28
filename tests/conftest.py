@@ -3,11 +3,26 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import urllib3
 import requests
+from requests.adapters import HTTPAdapter
 import os
 import testit
 
 # Игнорирование предупреждений о неverифицированных HTTPS запросах
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+
+class NoSSLVerificationAdapter(HTTPAdapter):
+    def cert_verify(self, conn, url, verify, cert):
+        conn.cert_reqs = 'CERT_NONE'
+        conn.check_hostname = False
+        conn.verify = False
+
+
+@pytest.fixture(scope='session')
+def http_session():
+    session = requests.Session()
+    session.mount('https://', NoSSLVerificationAdapter())
+    return session
 
 
 @pytest.fixture(scope="function")
@@ -27,14 +42,6 @@ def driver():
     driver = webdriver.Chrome(service=service, options=options)
     yield driver
     driver.quit()
-
-
-@pytest.fixture(autouse=True)
-def disable_ssl_verification():
-    original_verify = requests.Session.verify
-    requests.Session.verify = False
-    yield
-    requests.Session.verify = original_verify
 
 
 @pytest.hookimpl(tryfirst=True)
