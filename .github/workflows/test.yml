@@ -28,6 +28,9 @@ jobs:
           adapterMode = 2
           EOT
       - name: Test run for testit
+        env:
+          PYTHONHTTPSVERIFY: 0
+          REQUESTS_CA_BUNDLE: ""
         id: run_tests
         run: |
           PYTHONHTTPSVERIFY=0 pytest_output=$(CURL_CA_BUNDLE= pytest tests/test_projects.py --testit | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
