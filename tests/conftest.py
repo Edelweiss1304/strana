@@ -55,3 +55,8 @@ def pytest_exception_interact(node, call, report):
             driver.save_screenshot(screenshot_path)
             testit.addAttachments(screenshot_path)
             print(f"Скриншот сохранен: {screenshot_path}")
+
+
+@pytest.fixture(autouse=True)
+def disable_ssl_verification(requests_mock):
+    requests_mock.get('https://172.16.251.133/api/v2/testRuns', text='mocked response', verify=False)
