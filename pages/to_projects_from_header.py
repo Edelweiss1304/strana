@@ -12,7 +12,7 @@ class ProjectsFromHeader(Base):
 
     # Локаторы для проектов в выпадающем меню
     wow = "//li[@class='header-projects-popup__project' and .//p[contains(text(),'ЖК WOW')]]"
-    ozernaya = "//li[@class='header-projects-popup__project' and .//p[contains(text(),'Страна.Озерная')]]"
+    ozernaya = "//li[@class='header-projects-popup__project' and .//p[contains(text(),'Страна.Озёрная')]]"
     dnv = "//li[@class='header-projects-popup__project' and .//p[contains(text(),'Дом на Васильевском')]]"
     sibsad = "//li[@class='header-projects-popup__project' and .//p[contains(text(),'Сибирский сад')]]"
     zvezdniy = "//li[@class='header-projects-popup__project' and .//p[contains(text(),'Звездный')]]"
@@ -22,8 +22,8 @@ class ProjectsFromHeader(Base):
     sersib = "//li[@class='header-projects-popup__project' and .//p[contains(text(),'Сердце Сибири')]]"
     domashniy = "//li[@class='header-projects-popup__project' and .//p[contains(text(),'Домашний')]]"
 
-    project_business_tittle = "//div[@class='uppercase title_KrDfI']"
-    project_comfort_tittle = ".project-hero__title"
+    project_business_tittle = "//div[@class='headline-common-4 title_KrDfI']"
+    project_comfort_tittle = "//h1"
     dnv_tittle = "(//div[@class='listLabel_Q6E55'][contains(text(),'Санкт-Петербург')])"
 
     projects = "//span[@class='s-shift-text__value'][contains(text(),'Проекты')]"
@@ -63,7 +63,7 @@ class ProjectsFromHeader(Base):
         return self.get_element_visibility(self.driver, (By.XPATH, self.project_business_tittle)).text
 
     def get_project_comfort_tittle(self):
-        return self.get_element_visibility(self.driver, (By.CSS_SELECTOR, self.project_comfort_tittle)).text
+        return self.get_element_visibility(self.driver, (By.XPATH, self.project_comfort_tittle)).text
 
     def get_projects_button(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.projects))

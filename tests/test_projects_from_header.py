@@ -33,7 +33,7 @@ def test_msk_header_ozerniy(driver):
     with testit.step("Кликаем на Страна.Озерная"):
         pfh.get_ozernaya().click()
     with testit.step("Проверяем заголовок"):
-        assert pfh.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
+        assert pfh.get_project_business_tittle() == "Оазис спокойствия в мегаполисе"
 
 
 # @testit.displayName("Проверка ДнВ в выпадающем меню")

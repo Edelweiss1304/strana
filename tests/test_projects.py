@@ -49,7 +49,7 @@ def test_projects_ozerniy(driver):
     with testit.step("Кликаем на Страна.Озерный"):
         pp.get_ozerniy().click()
     with testit.step("Проверяем, что попали на Озерный"):
-        assert head.get_project_business_tittle() == "ОАЗИС СПОКОЙСТВИЯ В МЕГАПОЛИСЕ"
+        assert head.get_project_business_tittle() == "Оазис спокойствия в мегаполисе"
     # with testit.step("Возвращаемся назад"):
     #     driver.back()
     # with testit.step("Кликаем на кнопку квартиры"):
@@ -98,7 +98,7 @@ def test_projects_sibsad(driver):
     with testit.step("Кликаем на Сибирский сад"):
         pp.get_sibsad().click()
     with testit.step("Проверяем, что попали на Сибирский Сад"):
-        assert head.get_project_comfort_tittle() == "Сибирский сад"
+        assert head.get_project_comfort_tittle() == "ЖК\nСибирский сад"
     # with testit.step("Возвращаемся назад"):
     #     driver.back()
     # with testit.step("Кликаем на кнопку квартиры"):
@@ -123,7 +123,7 @@ def test_projects_zvezdniy(driver):
     with testit.step("Кликаем на Звездный"):
         pp.get_zvezdniy().click()
     with testit.step("Проверяем, что попали на Звездный"):
-        assert head.get_project_comfort_tittle() == "Звездный"
+        assert head.get_project_comfort_tittle() == "ЖК\nЗвездный"
     # with testit.step("Возвращаемся назад"):
     #     driver.back()
     # with testit.step("Кликаем на кнопку квартиры"):
@@ -148,7 +148,7 @@ def test_projects_union(driver):
     with testit.step("Кликаем на Юнион"):
         pp.get_union().click()
     with testit.step("Проверяем, что попали на Юнион"):
-        assert head.get_project_comfort_tittle() == "Юнион"
+        assert head.get_project_comfort_tittle() == "ЖК\nЮнион"
     # with testit.step("Возвращаемся назад"):
     #     driver.back()
     # with testit.step("Кликаем на кнопку квартиры"):
@@ -173,7 +173,7 @@ def test_projects_avtorskiy(driver):
     with testit.step("Кликаем на Авторский"):
         pp.get_avtorskiy().click()
     with testit.step("Проверяем, что попали на Авторский"):
-        assert head.get_project_comfort_tittle() == "Авторский"
+        assert head.get_project_comfort_tittle() == "ЖК\nАвторский"
     # with testit.step("Возвращаемся назад"):
     #     driver.back()
     # with testit.step("Кликаем на кнопку квартиры"):
@@ -198,7 +198,7 @@ def test_projects_sersib(driver):
     with testit.step("Кликаем на Сердце Сибири"):
         pp.get_sersib().click()
     with testit.step("Проверяем, что попали на Сердце Сибири"):
-        assert head.get_project_comfort_tittle() == "Сердце Сибири"
+        assert head.get_project_comfort_tittle() == "ЖК\nСердце Сибири"
     # with testit.step("Возвращаемся назад"):
     #     driver.back()
     # with testit.step("Кликаем на кнопку квартиры"):
@@ -223,7 +223,7 @@ def test_projects_domashniy(driver):
     with testit.step("Кликаем на Домашний"):
         pp.get_domashniy().click()
     with testit.step("Проверяем, что попали на Домашний"):
-        assert head.get_project_comfort_tittle() == "Домашний"
+        assert head.get_project_comfort_tittle() == "ЖК\nДомашний"
     # with testit.step("Возвращаемся назад"):
     #     driver.back()
     # with testit.step("Кликаем на кнопку квартиры"):
@@ -248,7 +248,7 @@ def test_projects_eb(driver):
     with testit.step("Кликаем на ЕБ 2.0"):
         pp.get_eb().click()
     with testit.step("Проверяем, что попали на ЕБ 2.0"):
-        assert head.get_project_comfort_tittle() == "Европейский берег 2.0"
+        assert head.get_project_comfort_tittle() == "ЖК\nЕвропейский берег 2.0"
     # with testit.step("Возвращаемся назад"):
     #     driver.back()
     # with testit.step("Кликаем на кнопку квартиры"):

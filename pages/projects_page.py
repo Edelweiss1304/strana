@@ -11,7 +11,7 @@ class ProjectsPage(Base):
 
     # Локаторы
     wow = "//h2[contains(text(),'ЖК WOW')]"
-    ozerniy = "//h2[contains(text(),'Страна.Озерная')]"
+    ozerniy = "//h2[contains(text(),'Страна.Озёрная')]"
     dnv = "//h2[contains(text(),'Дом на Васильевском')]"
     princip = "//h2[contains(text(),'ПРИНЦИП')]"
     sibsad = "//h2[contains(text(),'Сибирский сад')]"

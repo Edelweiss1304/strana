@@ -17,13 +17,13 @@ def test_msk_apart(driver, index):
         base = Base(driver)
         base.click_accept_city()
         head.move_to_apart()
-        time.sleep(1.5)
+        time.sleep(2)
     with testit.step("Выбираем комнатность {index}"):
-        link_index = 7 + index
+        link_index = 8 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Москве"
-        time.sleep(2)
+        time.sleep(3)
     with testit.step("Смотрим, какая комнатность выбрана"):
         assert getattr(head, f"get_apart_{index}")().value_of_css_property("color") == head.text_color
 
@@ -39,9 +39,9 @@ def test_tmn_apart(driver, index):
         base_inst = Base(driver)
         base_inst.click_accept_city()
         head.move_to_apart()
-        time.sleep(1.5)
+        time.sleep(2)
     with testit.step("Выбираем комнатность {index}"):
-        link_index = 7 + index
+        link_index = 8 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Тюмени"
@@ -61,9 +61,9 @@ def test_ekb_apart(driver, index):
         base_inst = Base(driver)
         base_inst.click_accept_city()
         head.move_to_apart()
-        time.sleep(1.5)
+        time.sleep(2)
     with testit.step("Выбираем комнатность {index}"):
-        link_index = 7 + index
+        link_index = 8 + index
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Екатеринбурге"
@@ -101,7 +101,7 @@ def test_ekb_apart(driver, index):
 
 @testit.description('Проверяем, что при нажатии на паркинг, мы попадаем на паркинг.')
 @testit.displayName("Проверка паркинга {url}")
-@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_spb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
+@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
 def test_parking_from_header(driver, url):
     head = Header(driver)
     with testit.step("Открываем главную страницу"):
@@ -112,4 +112,4 @@ def test_parking_from_header(driver, url):
     with testit.step("Открываем паркинг"):
         head.click_s_link_parking_from_header()
     with testit.step("Проверяем, что открылся паркинг"):
-        assert head.get_prking_tittle() == "Паркинг"
+        assert head.get_prking_tittle() == "Паркинги"

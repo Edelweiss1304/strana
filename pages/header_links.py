@@ -18,23 +18,22 @@ class Header(Base):
     commercial = "//span[@class='s-shift-text__value'][contains(text(),'Коммерция')]"
     action = "//span[@class='s-shift-text__value'][contains(text(),'Акции')]"
     about = "//span[@class='s-shift-text__value'][contains(text(),'О компании')]"
-    purchase_methods = "//span[@class='s-shift-text__value'][contains(text(),'Способы покупки')]"
-    sale = "//span[@class='s-shift-text__value'][normalize-space()='SALE %']"
+    purchase_methods = "//span[@class='s-shift-text__value'][contains(text(),'Онлайн покупка')]"
     menu = "//span[@class='s-shift-text__value'][contains(text(),'Меню')]"
     vacancy = "//span[@class='s-shift-text__value'][contains(text(),'Вакансии')]"
 
     # Заголовки для проверок из страниц хэдера
 
-    purchase_methods_check = "//h1[contains(text(),'Материнский')]"
-    projects_check = "//h1[contains(text(),'Проекты')]"
-    apart_check = "//h1[contains(text(),'Подобрать квартиру')]"
+    purchase_methods_check = "//p[contains(text(),'Способы покупки')]"
+    projects_check = "//h1[contains(text(),'Новостройки')]"
+    apart_check = "//h1[contains(text(),'Квартиры')]"
     action_check = "//h1[contains(text(),'Акции')]"
     about_check = "//h1[contains(text(),'О компании')]"
-    vacancy_check = "//h1[contains(text(),'Работа в Стране Девелопмент')]"
+    vacancy_check = "//h1[contains(text(),'Вакансии')]"
     commercial_check = "//h1[contains(text(),'Коммерческая недвижимость')]"
 
-    project_business_tittle = "//div[@class='uppercase title_KrDfI']"
-    project_comfort_tittle = ".project-hero__title"
+    project_business_tittle = "//div[@class='headline-common-4 title_KrDfI']"
+    project_comfort_tittle = "//h1 [@class='project-hero__title headline-common-1']"
 
     # Локаторы для подменю в хэдере
     project_dnv_check = "(//div[@class='listLabel_Q6E55'][contains(text(),'Санкт-Петербург')])[1]"
@@ -71,9 +70,6 @@ class Header(Base):
     def get_purchase_methods(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.purchase_methods))
 
-    def get_sale(self):
-        return self.get_element_visibility(self.driver, (By.XPATH, self.sale))
-
     def get_vacancy(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.vacancy))
 
@@ -107,7 +103,7 @@ class Header(Base):
         return self.get_element_visibility(self.driver, (By.XPATH, self.project_business_tittle)).text
 
     def get_project_comfort_tittle(self):
-        return self.get_element_visibility(self.driver, (By.CSS_SELECTOR, self.project_comfort_tittle)).text
+        return self.get_element_visibility(self.driver, (By.XPATH, self.project_comfort_tittle)).text
 
     def get_project_dnv_check(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.project_dnv_check)).text
@@ -169,10 +165,6 @@ class Header(Base):
         self.get_purchase_methods().click()
         print("Кликаем на кнопку проекты")
 
-    def click_sale(self):
-        self.get_sale().click()
-        print("Кликаем на кнопку sale")
-
     def move_to_apart(self):
         self.actions.move_to_element(self.get_apart()).perform()
         print("Наводимся на квартиры")
@@ -225,14 +217,14 @@ class Header(Base):
         with testit.step("Нажимаем на проекты"):
             self.click_projects()
         with testit.step("Проверяем заголовок страницы"):
-            assert self.get_projects_check() == "Проекты"
+            assert self.get_projects_check() == "Новостройки"
             print("Проверяем заголовок")
 
     def check_apart(self):
         with testit.step("Нажимаем на квартиры"):
             self.click_apart()
         with testit.step("Проверяем заголовок страницы"):
-            assert self.get_apart_check() == "Подобрать квартиру"
+            assert self.get_apart_check() == "Квартиры"
         print("Проверяем заголовок")
 
     def check_commercial(self):
@@ -260,12 +252,5 @@ class Header(Base):
         with testit.step("Нажимаем методы покупки"):
             self.click_purchase_methods()
         with testit.step("Проверяем заголовок страницы"):
-            assert self.get_purchase_methods_check() == "Материнский капитал"
-        print("Проверяем заголовок")
-
-    def check_sale(self):
-        with testit.step("Нажимаем sale"):
-            self.click_sale()
-        with testit.step("Проверяем заголовок страницы"):
-            assert self.get_apart_check() == "Подобрать квартиру"
+            assert self.get_purchase_methods_check() == "Способы покупки"
         print("Проверяем заголовок")

@@ -25,8 +25,6 @@ def test_authorization_client(driver, url):
         auth.click_get_code_btn()
     with testit.step("Вводим код"):
         auth.get_enter_code_field().send_keys(1313)
-    with testit.step("Нажимаем Войти"):
-        auth.click_fin_login_btn()
     with testit.step("Проверяем, что вошли в ЛК"):
         assert auth.get_check_lk() == "Выбрать квартиру"
         print('Успешный вход в ЛК')

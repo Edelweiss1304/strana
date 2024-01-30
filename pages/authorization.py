@@ -8,9 +8,9 @@ import testit
 class Authorization(Base):
     # Locators
     login_lk_button = "//span[@class='the-header__icons-item']"
-    login_client_phone_field = "//main//form//input"
-    get_code_btn = "//span[@class='v-btn__content']"
-    enter_code_field = "//input[@type ='number']"
+    login_client_phone_field = "//input [@type='tel']"
+    get_code_btn = "//button[@type='button']"
+    enter_code_field = "//input[@inputmode='numeric']"
     fin_login_btn = "//span[contains(text(),'Войти')]"
     check_lk = "//div[contains(text(),'Выбрать квартиру')]"
 
@@ -122,7 +122,7 @@ class Authorization(Base):
         with testit.step("Нажимаем Войти/Зарегистрироваться"):
             self.click_first_login_broker_button()
 
-    def login_lk_broker(self, email='smiledmitriev@yandex.com', password='123456789'):
+    def login_lk_broker(self, email='smiledmitriev@yandex.com', password='1234567890'):
         with testit.step("Вводим почту"):
             time.sleep(2)
             self.get_email_field_agent().send_keys(email)

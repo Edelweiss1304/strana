@@ -19,7 +19,7 @@ def test_projects_from_header_menu(driver, url):
     with testit.step("Кликаем на проекты"):
         br.get_projects().click()
     with testit.step("Проверяем, что попали в проекты"):
-        assert br.get_projects_tittle() == "Проекты"
+        assert br.get_projects_tittle() == "Новостройки"
         print("Проверяем заголовок")
 
 
@@ -36,7 +36,7 @@ def test_flats_from_header_menu(driver, url):
     with testit.step("Кликаем на квартиры"):
         br.get_flats().click()
     with testit.step("Проверяем, что попали в подборщик"):
-        assert br.get_flats_tittle() == "Подобрать квартиру"
+        assert br.get_flats_tittle() == "Квартиры"
         print("Проверяем заголовок")
 
 
@@ -153,23 +153,23 @@ def test_news_from_header_menu(driver, url):
         print("Проверяем заголовок")
 
 
-# @testit.displayName("Проверка кнопки Компания в бургере {url}")      ### Убрано из бургер-меню
-# @testit.description("Проверка кнопки Компания в бургере")
-# @pytest.mark.parametrize("url", URLS_MAIN.values())
-# def test_company_from_header_menu(driver, url):
-#     br = Burger(driver)
-#     with testit.step("Открываем главную страницу"):
-#         Base.open_page(driver, url)
-#         base = Base(driver)
-#         base.click_accept_city()
-#         time.sleep(1.5)
-#     with testit.step("Наводимся на меню"):
-#         br.actions.move_to_element(br.get_menu_button()).perform()
-#     with testit.step("Кликаем О компании"):
-#         br.get_company().click()
-#     with testit.step("Проверяем, что попали на страницу О компании"):
-#         assert br.get_company_tittle() == "О компании"
-#         print("Проверяем заголовок")
+@testit.displayName("Проверка кнопки Компания в бургере {url}")
+@testit.description("Проверка кнопки Компания в бургере")
+@pytest.mark.parametrize("url", URLS_MAIN.values())
+def test_company_from_header_menu(driver, url):
+    br = Burger(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+        base = Base(driver)
+        base.click_accept_city()
+        time.sleep(1.5)
+    with testit.step("Наводимся на меню"):
+        br.actions.move_to_element(br.get_menu_button()).perform()
+    with testit.step("Кликаем О компании"):
+        br.get_company().click()
+    with testit.step("Проверяем, что попали на страницу О компании"):
+        assert br.get_company_tittle() == "О компании"
+        print("Проверяем заголовок")
 
 
 @testit.displayName("Проверка кнопки Способы покупки в бургере {url}")
@@ -188,7 +188,7 @@ def test_pm_from_header_menu(driver, url):
     with testit.step("Кликаем на Способы покупки"):
         br.get_purchase().click()
     with testit.step("Проверяем, что попали на страницу Способы покупки"):
-        assert br.get_purchase_tittle() == "Материнский капитал"
+        assert br.get_purchase_tittle() == "Способы покупки"
         print("Проверяем заголовок")
 
 
@@ -368,26 +368,6 @@ def test_progress_from_header_menu(driver, url):
         print("Проверяем заголовок")
 
 
-@testit.displayName("Проверка кнопки SALE % в бургере {url}")
-@testit.description("Проверка кнопки SALE % в бургере")
-@pytest.mark.parametrize("url",
-                         [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
-def test_sale_from_header_menu(driver, url):
-    br = Burger(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, url)
-        base = Base(driver)
-        base.click_accept_city()
-        time.sleep(1.5)
-    with testit.step("Наводимся на меню"):
-        br.actions.move_to_element(br.get_menu_button()).perform()
-    with testit.step("Кликаем на Способы покупки"):
-        br.get_sale().click()
-    with testit.step("Проверяем, что попали на страницу Способы покупки"):
-        assert br.get_flats_tittle() == "Подобрать квартиру"
-        print("Проверяем заголовок")
-
-
 @testit.displayName("Проверка паркинга в бургере {url}")
 @testit.description("Проверка паркинга в бургере")
 @pytest.mark.parametrize("url",
@@ -404,5 +384,5 @@ def test_parking_from_header_menu(driver, url):
     with testit.step("Кликаем на паркинг"):
         br.get_parking().click()
     with testit.step("Проверяем, что попали на страницу Паркинга и кладовых"):
-        assert br.get_parking_tittle() == "Паркинг"
+        assert br.get_parking_tittle() == "Паркинги"
         print("Проверяем заголовок")

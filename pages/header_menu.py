@@ -21,7 +21,7 @@ class Burger(Base):
     YT = ("//a[@href='https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82/']")
     TG = "//a[@href='https://t.me/strana_com']"
 
-    company = "//a[contains(text(),'Компания')]"
+    company = "//a[contains(text(),'О компании')]"
     purchase = "//a[contains(text(),'Способы покупки')]"
     documents = "//a[contains(text(),'Документы')]"
     vacancy = "//a[contains(text(),'Вакансии')]"
@@ -39,11 +39,11 @@ class Burger(Base):
     parking = "//a[contains(text(),'Паркинги и кладовые')]"
 
     # Элементы страниц для assert
-    projects_tittle = "//h1[contains(text(),'Проекты')]"
-    flats_tittle = "//h1[contains(text(),'Подобрать квартиру')]"
+    projects_tittle = "//h1[contains(text(),'Новостройки')]"
+    flats_tittle = "//h1[contains(text(),'Квартиры')]"
     news_tittle = "//h1[contains(text(),'Новости')]"
     company_tittle = "//h1[contains(text(),'О компании')]"
-    purchase_tittle = "//h1[contains(text(),'Материнский')]"
+    purchase_tittle = "//p[contains(text(),'Способы покупки')]"
     vacancy_tittle = "//span[contains(text(),'Смотреть вакансии')]"
     vacancy_search = "//div[contains(text(),'Любое направление')]"
     bonus_tittle = "//span[contains(text(),'.Бонус')]"
@@ -55,7 +55,7 @@ class Burger(Base):
     progress_tittle = "//h1[contains(text(),'Ход строительства')]"
     documents_tittle = "//h1[contains(text(),'Проектные документы')]"
     commercial_tittle = "//h1[contains(text(),'Коммерческая недвижимость')]"
-    parking_tittle = "//h1[contains(text(),'Паркинг')]"
+    parking_tittle = "//h1[contains(text(),'Паркинги')]"
 
     # Getters
 

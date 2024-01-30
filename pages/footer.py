@@ -20,7 +20,7 @@ class Footer(Base):
     purchase = "//footer//span[contains(text(), 'ИПОТЕКА')]"
     contacts = "//footer//span[contains(text(), 'КОНТАКТЫ')]"
     commercial = "//footer//span[contains(text(), 'КОММЕРЦИЯ')]"
-    documents = "//footer//span[contains(text(), 'Документы')][1]"
+    documents = "//footer//span[contains(text(), 'ДОКУМЕНТЫ')][1]"
 
     company_tittle = "//h1[contains(text(),'О компании')]"
     actions_tittle = "//h1[contains(text(),'Акции')]"
