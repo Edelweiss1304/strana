@@ -21,14 +21,21 @@ class Footer(Base):
     contacts = "//footer//span[contains(text(), 'КОНТАКТЫ')]"
     commercial = "//footer//span[contains(text(), 'КОММЕРЦИЯ')]"
     documents = "//footer//span[contains(text(), 'ДОКУМЕНТЫ')][1]"
+    projects = "//footer//span[contains(text(), 'ПРОЕКТЫ')]"
+    flats = "//footer//span[contains(text(), 'КВАРТИРЫ')]"
+    purchase_methods = "//footer//span[contains(text(), 'Способы покупки')]"
 
     company_tittle = "//h1[contains(text(),'О компании')]"
     actions_tittle = "//h1[contains(text(),'Акции')]"
     purchase_tittle = "//h1[contains(text(),'Ипотека')]"
     contacts_tittle = "//h1[contains(text(),'Контакты')]"
     documents_tittle = "//h1[contains(text(),'Проектные документы')]"
+    confidentiality_tittle = "//h1[contains(text(),'Политика конфиденциальности')]"
+    projects_tittle = "//h1[contains(text(),'Новостройки')]"
+    flats_tittle = "//h1[contains(text(),'Квартиры')]"
+    purchase_methods_tittle = "//p[contains(text(),'Способы покупки')]"
 
-    company_min = "//footer//span[contains(text(), 'КОМПАНИЯ')][2]"
+    company_min = "//span[@class='currentValue_J0-2A'][contains(text(),'КОМПАНИЯ')][1]"
     land_owners = "//footer//span[contains(text(), 'Застройщикам и владельцам земли')]"
     tenders = "//footer//span[contains(text(), 'Тендеры')]"
     bureau = "//footer//span[contains(text(), 'Архитектурное бюро')]"
@@ -102,5 +109,26 @@ class Footer(Base):
 
     def get_bureau(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.bureau))
+
+    def get_confidentiality_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.confidentiality))
+
+    def get_projects(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.projects))
+
+    def get_projects_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.projects_tittle))
+
+    def get_flats(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.flats))
+
+    def get_flats_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.flats_tittle))
+
+    def get_purchase_methods(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.purchase_methods))
+
+    def get_purchase_methods_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.purchase_methods_tittle))
 
 
