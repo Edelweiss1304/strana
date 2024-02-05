@@ -35,5 +35,6 @@ jobs:
         env:
           PYTHONWARNINGS: "ignore:Unverified HTTPS request"
           TMS_PRIVATE_TOKEN: ${{ secrets.TMS_PRIVATE_TOKEN }}
+          REQUESTS_CA_BUNDLE: ""
         run: |
-          pytest tests/test_projects.py --testit --disable-warnings --insecure
+          pytest tests/test_projects.py --testit --disable-warnings
