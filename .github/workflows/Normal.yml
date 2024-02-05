@@ -1,7 +1,7 @@
 name: Средний приоритет
 on:
   schedule:
-    - cron: '0 5 * * *'
+#    - cron: '0 5 * * *'
 jobs:
   test:
     runs-on: self-hosted
