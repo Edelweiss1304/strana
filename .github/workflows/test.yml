@@ -35,4 +35,4 @@ jobs:
         env:
           TMS_PRIVATE_TOKEN: ${{ secrets.TMS_PRIVATE_TOKEN }}
         run: |
-          pytest tests/test_projects.py
+          pytest tests/test_projects.py --testit
