@@ -8,7 +8,6 @@ import os
 @pytest.fixture(scope="function")
 def driver():
     options = webdriver.ChromeOptions()
-    options.binary_location = '/usr/bin/chromedriver'
     options.add_experimental_option("detach", True)
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--headless=new')
@@ -19,7 +18,7 @@ def driver():
     options.add_argument("--start-maximized")
     options.add_argument('--no-sandbox')
     options.set_capability("pageLoadStrategy", "eager")
-    service = Service()
+    service = Service('/usr/bin/chromedriver')
     driver = webdriver.Chrome(service=service, options=options)
     yield driver
     driver.quit()
