@@ -3,14 +3,13 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import testit
 import os
-import ssl
 
 
 @pytest.fixture(scope="function")
 def driver():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
-    options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--no-verify-ssl')
     options.add_argument('--headless=new')
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--disable-extensions")
