@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import testit
 import os
+import ssl
 
 
 @pytest.fixture(scope="function")
