@@ -39,11 +39,11 @@ jobs:
       - name: Notify on Telegram
         if: always()
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN_BROKER }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID_BROKER }}
+          TELEGRAM_BOT_TOKEN: 7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE
+          TELEGRAM_CHAT_ID: 1117906408
         run: |
           pytest_output="${{ env.pytest_output }}"
           TEXT="Результаты тестирования: ${pytest_output}"
           echo "Sending notification with text: ${TEXT}"  # Add this line to verify the notification text
-          curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN_BROKER}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID_BROKER}"'", "text": "'"${TEXT}"'"}'
+          curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"1117906408"'", "text": "'"${TEXT}"'"}'
 
