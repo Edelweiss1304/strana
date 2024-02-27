@@ -1,0 +1,48 @@
+name: Тестовый запуск брокер
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Prepare config
+        run: |
+          cat > connection_config.ini <<EOT
+          [testit]
+          url = https://testit.itstrana.site/
+          privateToken = ${{ secrets.TMS_PRIVATE_TOKEN }}
+          projectId = eefe44b2-3347-4e63-83e6-18614e869fe3
+          configurationId = 659d9644-c5dc-4542-8aef-3858f219f8b6
+          testRunId =
+          testRunName = Test
+          adapterMode = 2
+          EOT
+
+      - name: Test run for testit
+        run: |
+          pytest_output=$(pytest tests/test_broker.py | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
+          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
+      - name: Notify on Telegram
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN_BROKER }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID_BROKER }}
+        run: |
+          pytest_output="${{ env.pytest_output }}"
+          
+          TEXT="Результаты тестирования: ${pytest_output}"
+
+          curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN_BROKER}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID_BROKER}"'", "text": "'"${TEXT}"'"}'
