@@ -35,6 +35,7 @@ jobs:
         run: |
           pytest_output=$(pytest tests/test_broker.py | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
           echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
+          echo "Test results: ${pytest_output}"
       - name: Notify on Telegram
         if: always()
         env:
