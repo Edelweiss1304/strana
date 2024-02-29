@@ -31,33 +31,19 @@ jobs:
           adapterMode = 2
           EOT
 
-      - name: Run tests and save results
+      - name: Test run for testit
         run: |
-          pytest tests/test_broker.py
-          pytest_output=$(pytest tests/test_broker.py)
-          echo "$pytest_output" > test_results.txt
-          ls -l test_results.txt  # Check if the file is created
-        shell: bash
-
+          pytest_output=$(pytest tests/test_broker.py | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
+          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
+          echo "Test results: ${pytest_output}"
       - name: Notify on Telegram
         if: always()
         env:
           TELEGRAM_BOT_TOKEN: 7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE
           TELEGRAM_CHAT_ID: -4162914238
-          FAILED_TESTS: ${{ env.FAILED_TESTS }}
         run: |
-          TEXT="Результаты тестирования:"
-          echo "Sending notification with text: ${TEXT}"
-          if grep -q 'FAILED' test_results.txt; then
-            failed_tests=$(grep -E '^[^=F]+' test_results.txt | sed 's/^  \([a-zA-Z0-9_]\+\) \.\.\. FAILED/\1/')
-            TEXT="Тесты провалены: ${failed_tests}"
-            echo "Sending notification with text: ${TEXT}"
-            curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
-          else
-            TEXT="Все тесты пройдены успешно!"
-            echo "Sending notification with text: ${TEXT}"
-            curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
-          fi
-
-
+          pytest_output="${{ env.pytest_output }}"
+          TEXT="Результаты тестирования: ${pytest_output}"
+          echo "Sending notification with text: ${TEXT}"  # Add this line to verify the notification text
+          curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
 
