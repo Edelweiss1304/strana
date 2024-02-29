@@ -33,15 +33,16 @@ jobs:
 
       - name: Test run for testit
         run: |
-          pytest tests/test_broker.py > test_results.txt
-          passed_tests=$(grep -c '===.*===' test_results.txt)
-          failed_tests=$(grep -E 'FAILED' test_results.txt | sed -E 's/.*::(test_[^\s]+).*/\1/' | tr '\n' ', ')
+          pytest_output=$(pytest tests/test_broker.py)
+          echo "${pytest_output}" > test_results.txt
+          passed_tests=$(echo "${pytest_output}" | grep -c '===.*===')
+          failed_tests=$(echo "${pytest_output}" | grep -E 'FAILED' | sed -E 's/.*::(test_[^\s]+).*/\1/' | tr '\n' ', ')
+          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
           echo "Passed tests: ${passed_tests}"
           echo "Failed tests: ${failed_tests}"
           if [ -n "${failed_tests}" ]; then
-            echo "FAILED_TESTS: ${failed_tests}" >> $GITHUB_ENV
+            echo "Failed tests: ${failed_tests}" >> $GITHUB_ENV
           fi
-
 
       - name: Notify on Telegram
         if: always()
@@ -62,4 +63,5 @@ jobs:
             echo "Sending notification with text: ${TEXT}"
             curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
           fi
+
 
