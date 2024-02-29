@@ -31,18 +31,13 @@ jobs:
           adapterMode = 2
           EOT
 
-      - name: Test run for testit
+      - name: Run tests and save results
         run: |
+          pytest tests/test_broker.py
           pytest_output=$(pytest tests/test_broker.py)
-          echo "${pytest_output}" > test_results.txt
-          passed_tests=$(echo "${pytest_output}" | grep -c '===.*===')
-          failed_tests=$(echo "${pytest_output}" | grep -E 'FAILED' | sed -E 's/.*::(test_[^\s]+).*/\1/' | tr '\n' ', ')
-          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
-          echo "Passed tests: ${passed_tests}"
-          echo "Failed tests: ${failed_tests}"
-          if [ -n "${failed_tests}" ]; then
-            echo "Failed tests: ${failed_tests}" >> $GITHUB_ENV
-          fi
+          echo "$pytest_output" > test_results.txt
+          ls -l test_results.txt  # Check if the file is created
+        shell: bash
 
       - name: Notify on Telegram
         if: always()
