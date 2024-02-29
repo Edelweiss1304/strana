@@ -22,4 +22,4 @@ def test_uniqueness(driver):
         time.sleep(3)
         lk.get_uniqueness_button_popup().click()
         time.sleep(3)
-        assert lk.get_result_uniqueness().text == "Уникальны"
+        assert lk.get_result_uniqueness().text == "Уникальный"
