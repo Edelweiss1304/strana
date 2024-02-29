@@ -52,10 +52,14 @@ jobs:
         run: |
           TEXT="Результаты тестирования:"
           echo "Sending notification with text: ${TEXT}"
-          curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
           if [ -n "${FAILED_TESTS}" ]; then
             failed_tests=$(grep -E '^[^=F]+' test_results.txt | sed 's/^  \([a-zA-Z0-9_]\+\) \.\.\. FAILED/\1/')
             TEXT="Тесты провалены: ${failed_tests}"
             echo "Sending notification with text: ${TEXT}"
             curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
+          else
+            TEXT="Все тесты пройдены успешно!"
+            echo "Sending notification with text: ${TEXT}"
+            curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
           fi
+
