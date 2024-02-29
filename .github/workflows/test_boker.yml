@@ -33,29 +33,29 @@ jobs:
 
       - name: Test run for testit
         run: |
-          pytest_output=$(pytest tests/test_broker.py)
-          echo "$pytest_output" > test_results.txt
-          passed_tests=$(echo "${pytest_output}" | grep -c '===.*===')
-          failed_tests=$(echo "${pytest_output}" | grep -E 'FAILED' | sed -E 's/.*::(test_[^\s]+).*/\1/' | tr '\n' ', ')
-          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
+          pytest tests/test_broker.py > test_results.txt
+          passed_tests=$(grep -c '===.*===' test_results.txt)
+          failed_tests=$(grep -E 'FAILED' test_results.txt | sed -E 's/.*::(test_[^\s]+).*/\1/' | tr '\n' ', ')
           echo "Passed tests: ${passed_tests}"
           echo "Failed tests: ${failed_tests}"
           if [ -n "${failed_tests}" ]; then
             echo "FAILED_TESTS: ${failed_tests}" >> $GITHUB_ENV
           fi
 
+
       - name: Notify on Telegram
         if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: 7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE
+          TELEGRAM_CHAT_ID: -4162914238
+          FAILED_TESTS: ${{ env.FAILED_TESTS }}
         run: |
-          pytest_output="${{ env.pytest_output }}"
-          TEXT="Результаты тестирования: ${pytest_output}"
+          TEXT="Результаты тестирования:"
           echo "Sending notification with text: ${TEXT}"
           curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
-
-      - name: Notify on Telegram failed
-        if: always() && env.FAILED_TESTS != ''
-        run: |
-          failed_tests=$(grep -E '^[^=F]+' test_results.txt | sed 's/^  \([a-zA-Z0-9_]\+\) \.\.\. FAILED/\1/')
-          TEXT="Тесты провалены: ${failed_tests}"
-          echo "Sending notification with text: ${TEXT}"
-          curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
+          if [ -n "${FAILED_TESTS}" ]; then
+            failed_tests=$(grep -E '^[^=F]+' test_results.txt | sed 's/^  \([a-zA-Z0-9_]\+\) \.\.\. FAILED/\1/')
+            TEXT="Тесты провалены: ${failed_tests}"
+            echo "Sending notification with text: ${TEXT}"
+            curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
+          fi
