@@ -33,14 +33,17 @@ jobs:
 
       - name: Test run for testit
         run: |
-          pytest_output=$(pytest tests/test_broker.py | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
+          pytest_output=$(pytest tests/test_broker.py)
+          passed_tests=$(echo "${pytest_output}" | grep -c '===.*===')
+          failed_tests=$(echo "${pytest_output}" | grep -E 'FAILED' | sed -E 's/.*::(test_[^\s]+).*/\1/' | tr '\n' ', ')
           echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
-          echo "Test results: ${pytest_output}"
+          echo "Passed tests: ${passed_tests}"
+          echo "Failed tests: ${failed_tests}"
       - name: Notify on Telegram
         if: always()
         env:
           TELEGRAM_BOT_TOKEN: 7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE
-          TELEGRAM_CHAT_ID: -4162914238
+          TELEGRAM_CHAT_ID: -416291423
         run: |
           pytest_output="${{ env.pytest_output }}"
           TEXT="Результаты тестирования: ${pytest_output}"
