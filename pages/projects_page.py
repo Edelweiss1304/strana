@@ -10,18 +10,18 @@ class ProjectsPage(Base):
         self.actions = ActionChains(driver)
 
     # Локаторы
-    wow = "//h2[contains(text(),'ЖК WOW')]"
-    ozerniy = "//h2[contains(text(),'Страна.Озёрная')]"
-    dnv = "//h2[contains(text(),'Дом на Васильевском')]"
-    princip = "//h2[contains(text(),'ПРИНЦИП')]"
-    sibsad = "//h2[contains(text(),'Сибирский сад')]"
-    zvezdniy = "//h2[contains(text(),'Звездный')]"
-    union = "//h2[contains(text(),'Юнион')]"
-    avtorskiy = "//h2[contains(text(),'Авторский')]"
-    kolumb = "//h2[contains(text(),'Колумб')]"
-    sersib = "//h2[contains(text(),'Сердце Сибири')]"
-    domashniy = "//h2[contains(text(),'Домашний')]"
-    eb = "//h2[contains(text(),'Европейский берег 2.0')]"
+    wow = "//div[contains(text(),'ЖК WOW')]"
+    ozerniy = "//div[contains(text(),'Страна.Озёрная')]"
+    dnv = "//div[contains(text(),'Дом на Васильевском')]"
+    princip = "//div[contains(text(),'ПРИНЦИП')]"
+    sibsad = "//div[contains(text(),'Сибирский сад')]"
+    zvezdniy = "//div[contains(text(),'Звездный')]"
+    union = "//div[contains(text(),'Юнион')]"
+    avtorskiy = "//div[contains(text(),'Авторский')]"
+    kolumb = "//div[contains(text(),'Колумб')]"
+    sersib = "//div[contains(text(),'Сердце Сибири')]"
+    domashniy = "//div[contains(text(),'Домашний')]"
+    eb = "//div[contains(text(),'Европейский берег 2.0')]"
 
     accept_cookie = "//span[contains(text(),'Принять')]"
 

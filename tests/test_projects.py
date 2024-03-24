@@ -1,4 +1,4 @@
-import time
+
 
 from pages.header_links import Header
 from pages.projects_page import ProjectsPage
