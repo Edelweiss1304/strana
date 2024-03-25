@@ -27,6 +27,7 @@ class Header(Base):
     purchase_methods_check = "//p[contains(text(),'Способы покупки')]"
     projects_check = "//span[contains(text(),'Новостройки')]"
     apart_check = "//h1[contains(text(),'Квартиры')]"
+    apart_check_1 = "//h1[span[contains(text(), 'Квартиры')]]"
     action_check = "//h1[contains(text(),'Акции')]"
     about_check = "//h1[contains(text(),'О компании')]"
     vacancy_check = "//h1[contains(text(),'Вакансии')]"
@@ -81,6 +82,9 @@ class Header(Base):
 
     def get_apart_check(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.apart_check)).text
+
+    def get_apart_check_1(self):
+        return self.get_element_visibility(self.driver, (By.XPATH, self.apart_check_1)).text
 
     def get_projects_check(self):
         return self.get_element_visibility(self.driver, (By.XPATH, self.projects_check)).text
@@ -225,6 +229,13 @@ class Header(Base):
             self.click_apart()
         with testit.step("Проверяем заголовок страницы"):
             assert self.get_apart_check() == "Квартиры"
+        print("Проверяем заголовок")
+
+    def check_apart_1(self):
+        with testit.step("Нажимаем на квартиры"):
+            self.click_apart()
+        with testit.step("Проверяем заголовок страницы"):
+            assert self.get_apart_check_1() == "Квартиры"
         print("Проверяем заголовок")
 
     def check_commercial(self):

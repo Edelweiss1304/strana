@@ -1,7 +1,7 @@
 name: Самый высокий приоритет
 on:
   schedule:
-#    - cron: '0 3 * * *'
+    - cron: '0 3 * * *'
 jobs:
   test:
     runs-on: self-hosted
@@ -20,7 +20,7 @@ jobs:
         run: |
           cat <<EOT > connection_config.ini
           [testit]
-          url = http://172.16.251.133
+          url = https://testit.itstrana.site/
           privateToken = ${{ secrets.TMS_PRIVATE_TOKEN }}
           projectId = eefe44b2-3347-4e63-83e6-18614e869fe3
           configurationId = 659d9644-c5dc-4542-8aef-3858f219f8b6

@@ -31,7 +31,7 @@ class Footer(Base):
     contacts_tittle = "//h1[contains(text(),'Контакты')]"
     documents_tittle = "//h1[contains(text(),'Проектные документы')]"
     confidentiality_tittle = "//h1[contains(text(),'Политика конфиденциальности')]"
-    projects_tittle = "//h1[contains(text(),'Новостройки')]"
+    projects_tittle = "//span[contains(text(),'Новостройки')]"
     flats_tittle = "//h1[contains(text(),'Квартиры')]"
     purchase_methods_tittle = "//p[contains(text(),'Способы покупки')]"
 

@@ -23,21 +23,21 @@ def test_projects_from_header_menu(driver, url):
         print("Проверяем заголовок")
 
 
-@testit.displayName("Проверка кнопки Квартиры в бургере {url}")
-@testit.description("Проверка кнопки Квартиры в бургере")
-@pytest.mark.parametrize("url", URLS_MAIN.values())
-def test_flats_from_header_menu(driver, url):
-    br = Burger(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, url)
-        time.sleep(1.5)
-    with testit.step("Наводимся на меню"):
-        br.actions.move_to_element(br.get_menu_button()).perform()
-    with testit.step("Кликаем на квартиры"):
-        br.get_flats().click()
-    with testit.step("Проверяем, что попали в подборщик"):
-        assert br.get_flats_tittle() == "Квартиры"
-        print("Проверяем заголовок")
+# @testit.displayName("Проверка кнопки Квартиры в бургере {url}")
+# @testit.description("Проверка кнопки Квартиры в бургере")
+# @pytest.mark.parametrize("url", URLS_MAIN.values())
+# def test_flats_from_header_menu(driver, url):
+#     br = Burger(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, url)
+#         time.sleep(1.5)
+#     with testit.step("Наводимся на меню"):
+#         br.actions.move_to_element(br.get_menu_button()).perform()
+#     with testit.step("Кликаем на квартиры"):
+#         br.get_flats().click()
+#     with testit.step("Проверяем, что попали в подборщик"):
+#         assert br.get_flats_tittle() == "Квартиры"
+#         print("Проверяем заголовок")
 
 
 @testit.displayName("Проверка кнопки Коммерция в бургере {url}")

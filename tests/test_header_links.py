@@ -24,7 +24,7 @@ def test_msk_header_apart(driver):
         Base.open_page(driver, URLS_MAIN['url_msk'])
         base_inst = Base(driver)
         base_inst.click_accept_city()
-        head.check_apart()
+        head.check_apart_1()
 
 
 @testit.displayName("Проверка кнопки помещения мск")
@@ -203,7 +203,7 @@ def test_ekb_header_apart(driver):
         Base.open_page(driver, URLS_MAIN['url_ekb'])
         base_inst = Base(driver)
         base_inst.click_accept_city()
-        head.check_apart()
+        head.check_apart_1()
 
 
 @testit.displayName("Проверка кнопки помещения екб")
@@ -273,7 +273,7 @@ def test_tmn_header_apart(driver):
         Base.open_page(driver, URLS_MAIN['url_tmn'])
         base_inst = Base(driver)
         base_inst.click_accept_city()
-        head.check_apart()
+        head.check_apart_1()
 
 
 @testit.displayName("Проверка кнопки помещения тмн")

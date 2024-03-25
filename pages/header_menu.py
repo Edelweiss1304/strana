@@ -40,7 +40,7 @@ class Burger(Base):
 
     # Элементы страниц для assert
     projects_tittle = "//span[contains(text(),'Новостройки')]"
-    flats_tittle = "//h1[contains(text(),'Квартиры')]"
+    flats_tittle = "//h1[span[contains(text(), 'Квартиры')]]"
     news_tittle = "//h1[contains(text(),'Новости')]"
     company_tittle = "//h1[contains(text(),'О компании')]"
     purchase_tittle = "//p[contains(text(),'Способы покупки')]"
