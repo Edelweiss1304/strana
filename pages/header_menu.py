@@ -39,7 +39,7 @@ class Burger(Base):
     parking = "//a[contains(text(),'Паркинги и кладовые')]"
 
     # Элементы страниц для assert
-    projects_tittle = "//h1[contains(text(),'Новостройки')]"
+    projects_tittle = "//span[contains(text(),'Новостройки')]"
     flats_tittle = "//h1[contains(text(),'Квартиры')]"
     news_tittle = "//h1[contains(text(),'Новости')]"
     company_tittle = "//h1[contains(text(),'О компании')]"

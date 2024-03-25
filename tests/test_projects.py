@@ -5,6 +5,7 @@ from pages.projects_page import ProjectsPage
 from base.base_class import Base
 from pages.url import URLS_MAIN
 import testit
+import time
 
 
 @testit.displayName("Проверка WOW")
@@ -219,6 +220,7 @@ def test_projects_domashniy(driver):
         base_inst.click_accept_city()
     with testit.step("Кликаем на проекты"):
         head.click_projects()
+        time.sleep(1)
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на Домашний"):
         pp.get_domashniy().click()

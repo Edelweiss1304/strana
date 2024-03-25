@@ -8,7 +8,7 @@ import testit
 class Authorization(Base):
     # Locators
     login_lk_button = "//span[@class='the-header__icons-item']"
-    login_client_phone_field = "//input [@type='tel']"
+    login_client_phone_field = "//input [@type='text']"
     get_code_btn = "//button[@type='button']"
     enter_code_field = "//input[@inputmode='numeric']"
     fin_login_btn = "//span[contains(text(),'Войти')]"

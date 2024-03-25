@@ -35,7 +35,6 @@ class Footer(Base):
     flats_tittle = "//h1[contains(text(),'Квартиры')]"
     purchase_methods_tittle = "//p[contains(text(),'Способы покупки')]"
 
-    company_min = "//span[@class='currentValue_J0-2A'][contains(text(),'КОМПАНИЯ')][1]"
     land_owners = "//footer//span[contains(text(), 'Застройщикам и владельцам земли')]"
     tenders = "//footer//span[contains(text(), 'Тендеры')]"
     bureau = "//footer//span[contains(text(), 'Архитектурное бюро')]"
@@ -97,9 +96,6 @@ class Footer(Base):
 
     def get_documents_tittle(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.documents_tittle))
-
-    def get_company_min(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.company_min))
 
     def get_land_owners(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.land_owners))

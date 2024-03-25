@@ -25,7 +25,7 @@ class Header(Base):
     # Заголовки для проверок из страниц хэдера
 
     purchase_methods_check = "//p[contains(text(),'Способы покупки')]"
-    projects_check = "//h1[contains(text(),'Новостройки')]"
+    projects_check = "//span[contains(text(),'Новостройки')]"
     apart_check = "//h1[contains(text(),'Квартиры')]"
     action_check = "//h1[contains(text(),'Акции')]"
     about_check = "//h1[contains(text(),'О компании')]"

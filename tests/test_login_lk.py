@@ -20,7 +20,7 @@ def test_authorization_client(driver, url):
         auth.click_login_lk_button()
     with testit.step("Заполняем телефон"):
         time.sleep(2)
-        auth.get_login_client_phone_field().send_keys(+79198629250)
+        auth.get_login_client_phone_field().send_keys(9198629250)
     with testit.step("Кликаем Получить код"):
         auth.click_get_code_btn()
     with testit.step("Вводим код"):
@@ -55,5 +55,3 @@ def test_authorization_client_favorite(driver, url):
     with testit.step("Проверяем, что вошли в ЛК"):
         assert auth.get_check_lk() == "Выбрать квартиру"
         print('Успешный вход в ЛК')
-
-
