@@ -3,6 +3,7 @@ from pages.footer import Footer
 from pages.url import URLS_MAIN
 import pytest
 import testit
+import time
 
 
 @testit.displayName("Проверка кнопки VK в футере {url}")
@@ -160,9 +161,9 @@ def test_projects_footer(driver, url):
         assert ft.get_projects_tittle().text == "Новостройки"
 
 
-@testit.displayName("Проверка кнопки квартиры {url}")
-@testit.description("Проверка кнопки квартиры в футере")
-@pytest.mark.parametrize("url", URLS_MAIN.values())
+@testit.displayName("Проверка кнопки квартиры в городах без квартир {url}")
+@testit.description("Проверка кнопки квартиры в футере в городах без квартир")
+@pytest.mark.parametrize("url", [URLS_MAIN['url_mo'], URLS_MAIN['url_nsk'], URLS_MAIN['url_spb']])
 def test_flats_footer(driver, url):
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
@@ -171,6 +172,19 @@ def test_flats_footer(driver, url):
         ft.get_flats().click()
     with testit.step("Проверяем, что попали на нужную страницу"):
         assert ft.get_flats_tittle().text == "Квартиры"
+
+
+@testit.displayName("Проверка кнопки квартиры в городах с квартирами {url}")
+@testit.description("Проверка кнопки квартиры в футере в городах с квартирами")
+@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
+def test_flats_footer_1(driver, url):
+    ft = Footer(driver)
+    with testit.step("Открываем главную страницу"):
+        Base.open_page(driver, url)
+    with testit.step("Нажимаем на кнопку квартиры в футере"):
+        ft.get_flats().click()
+    with testit.step("Проверяем, что попали на нужную страницу"):
+        assert ft.get_flats_tittle_1().text == "Квартиры"
 
 
 @testit.displayName("Проверка кнопки способы покупки {url}")

@@ -33,6 +33,7 @@ class Footer(Base):
     confidentiality_tittle = "//h1[contains(text(),'Политика конфиденциальности')]"
     projects_tittle = "//span[contains(text(),'Новостройки')]"
     flats_tittle = "//h1[contains(text(),'Квартиры')]"
+    flats_tittle_1 = "(//span[normalize-space(.)='Квартиры'])[1]"
     purchase_methods_tittle = "//p[contains(text(),'Способы покупки')]"
 
     land_owners = "//footer//span[contains(text(), 'Застройщикам и владельцам земли')]"
@@ -120,6 +121,9 @@ class Footer(Base):
 
     def get_flats_tittle(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.flats_tittle))
+
+    def get_flats_tittle_1(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.flats_tittle_1))
 
     def get_purchase_methods(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.purchase_methods))

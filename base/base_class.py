@@ -23,7 +23,7 @@ class Base:
         driver.get(url)
 
     @classmethod
-    def get_element_visibility(cls, driver, locator, timeout=20, max_attempts=5):
+    def get_element_visibility(cls, driver, locator, timeout=15, max_attempts=5):
 
         attempts = 0
         while attempts < max_attempts:
@@ -41,7 +41,7 @@ class Base:
         )
 
     @classmethod
-    def get_element_clickable(cls, driver, locator, timeout=20, max_attempts=5):
+    def get_element_clickable(cls, driver, locator, timeout=15, max_attempts=5):
 
         attempts = 0
         while attempts < max_attempts:
