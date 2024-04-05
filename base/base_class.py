@@ -28,7 +28,7 @@ class Base:
         attempts = 0
         while attempts < max_attempts:
             try:
-                return WebDriverWait(driver, timeout).until(EC.visibility_of_element_located(locator))
+                return WebDriverWait(driver, timeout).until(EC.presence_of_element_located(locator))
             except StaleElementReferenceException:
                 attempts += 1
             except TimeoutException as e:
