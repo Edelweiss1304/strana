@@ -12,7 +12,7 @@ class Authorization(Base):
     get_code_btn = "//button[@type='button']"
     enter_code_field = "//input[@inputmode='numeric']"
     fin_login_btn = "//span[contains(text(),'Войти')]"
-    check_lk = "//div[contains(text(),'Выбрать квартиру')]"
+    check_lk = "//div[normalize-space()='Выбрать квартиру']"
 
     first_login_broker_button = "//header//a[2]"
     email_field_agent = "email"
