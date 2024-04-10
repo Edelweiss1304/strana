@@ -45,7 +45,7 @@ def test_tmn_apart(driver, index):
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Тюмени"
-        time.sleep(2)
+        time.sleep(3)
     with testit.step("Смотрим, какая комнатность выбрана"):
         assert getattr(head, f"get_apart_{index}")().value_of_css_property("color") == head.text_color
 
@@ -67,7 +67,7 @@ def test_ekb_apart(driver, index):
         getattr(head, f"click_s_link_wrapper_{link_index}_from_header")()
     with testit.step("Смотрим, что находимся в выборщике нужного города"):
         assert head.get_city_in_apart() == "в Екатеринбурге"
-        time.sleep(2)
+        time.sleep(3)
     with testit.step("Смотрим, какая комнатность выбрана"):
         assert getattr(head, f"get_apart_{index}")().value_of_css_property("color") == head.text_color
 

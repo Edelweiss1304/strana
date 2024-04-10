@@ -168,6 +168,7 @@ def test_company_from_header_menu(driver, url):
     with testit.step("Кликаем О компании"):
         br.get_company().click()
     with testit.step("Проверяем, что попали на страницу О компании"):
+        time.sleep(2)
         assert br.get_company_tittle() == "О компании"
         print("Проверяем заголовок")
 
@@ -207,6 +208,7 @@ def test_docs_from_header_menu(driver, url):
     with testit.step("Кликаем на Документы"):
         br.get_documents().click()
     with testit.step("Проверяем, что попали на страницу Документы"):
+        time.sleep(2)
         assert br.get_documents_tittle() == "Проектные документы"
         print("Проверяем заголовок")
 
@@ -249,6 +251,7 @@ def test_bonus_from_header_menu(driver, url):
     with testit.step("Кликаем на Страна.Бонус"):
         br.get_bonus().click()
     with testit.step("Проверяем, что попали на страницу Страна.Бонус"):
+        time.sleep(2)
         assert br.get_bonus_tittle() == ".БОНУС"
         print("Проверяем заголовок")
 
@@ -326,6 +329,7 @@ def test_contacts_from_header_menu(driver, url):
     with testit.step("Кликаем на Контакты"):
         br.get_contacts().click()
     with testit.step("Проверяем, что попали на страницу Контакты"):
+        time.sleep(2)
         assert br.get_contacts_tittle() == "Контакты"
         print("Проверяем заголовок")
 
@@ -384,5 +388,6 @@ def test_parking_from_header_menu(driver, url):
     with testit.step("Кликаем на паркинг"):
         br.get_parking().click()
     with testit.step("Проверяем, что попали на страницу Паркинга и кладовых"):
+        time.sleep(2)
         assert br.get_parking_tittle() == "Паркинги"
         print("Проверяем заголовок")

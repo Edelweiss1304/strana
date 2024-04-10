@@ -2,6 +2,7 @@ from base.base_class import Base
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 import testit
+import time
 
 
 class Header(Base):
@@ -221,6 +222,7 @@ class Header(Base):
         with testit.step("Нажимаем на проекты"):
             self.click_projects()
         with testit.step("Проверяем заголовок страницы"):
+            time.sleep(3)
             assert self.get_projects_check() == "Новостройки"
             print("Проверяем заголовок")
 

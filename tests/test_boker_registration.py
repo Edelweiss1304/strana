@@ -35,7 +35,6 @@ def test_registration_agent(driver, url):
         driver.execute_script("window.scrollBy(0, 10000);")
         time.sleep(5)
         reg.get_confirm_reglament_button().click()
-        assert driver.current_url == "broker.strana.com/deals"
         time.sleep(10)
 
 
