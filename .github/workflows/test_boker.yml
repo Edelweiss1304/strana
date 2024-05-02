@@ -34,20 +34,15 @@ jobs:
       - name: Run tests with pytest and generate JSON report
         continue-on-error: true
         run: |
-          pytest tests/test_broker.py --json-report -o json_report_file=.report.json
-
-      - name: Extract names of failed tests
-        run: |
-          FAILED_TESTS=$(jq -r '.tests[] | select(.outcome == "failed") | .nodeid' .report.json | paste -sd "," -)
-          echo "FAILED_TESTS=${FAILED_TESTS}" >> $GITHUB_ENV
+          pytest tests/test_broker.py --json-report
 
       - name: Notify on Telegram about test result
         if: always()
         run: |
-          if [ -z "$FAILED_TESTS" ]; then 
-            TEXT="Все тесты прошли успешно!" 
-          else 
-            TEXT="Упавшие тесты: $FAILED_TESTS" 
-          fi 
+          if [ -s failed_tests.txt ]; then
+            FAILED_CONTENT=$(<failed_tests.txt)
+            TEXT="Упавшие тесты: $FAILED_CONTENT"
+          else
+            TEXT="Все тесты прошли успешно!"
+          fi
           curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
-
