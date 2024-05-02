@@ -37,7 +37,7 @@ jobs:
           pytest tests/test_broker.py --json-report
 
       - name: Generate failed tests
-        run: fail_tests.py
+        run: python fail_tests.py
 
       - name: Notify on Telegram about test result
         run: |
