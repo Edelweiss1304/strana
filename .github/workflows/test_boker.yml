@@ -36,13 +36,15 @@ jobs:
         run: |
           pytest tests/test_broker.py --json-report
 
-      - name: Notify on Telegram about test result
-        if: always()
-        env:
-          TELEGRAM_BOT_TOKEN: 7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE
-          TELEGRAM_CHAT_ID: -4162914238
+      - name: Generate failed tests
         run: |
-          pytest_output="${{ env.pytest_output }}"
-          
-          TEXT="Результаты тестирования с средним приоритетом: ${pytest_output}"
+          pytest fail_tests.py
+
+      - name: Notify on Telegram about test result
+        run: |
+          FAILED_TESTS_CONTENT=""
+          if [ -s failed_tests.txt ]; then
+            FAILED_TESTS_CONTENT=$(<failed_tests.txt)
+          fi
+          TEXT="Результаты тестирования: ${pytest_output}. Упавшие тесты: ${FAILED_TESTS_CONTENT}"
           curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
