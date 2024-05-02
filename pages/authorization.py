@@ -122,7 +122,7 @@ class Authorization(Base):
         with testit.step("Нажимаем Войти/Зарегистрироваться"):
             self.click_first_login_broker_button()
 
-    def login_lk_broker(self, email='smiledmitriev@yandex.com', password='1234567890'):
+    def login_lk_broker(self, email='dmitrievaleks777@rambler.ru', password='1234567890'):
         with testit.step("Вводим почту"):
             time.sleep(2)
             self.get_email_field_agent().send_keys(email)

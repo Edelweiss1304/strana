@@ -20,30 +20,34 @@ jobs:
 
       - name: Prepare config
         run: |
-          cat > connection_config.ini <<EOT
-          [testit]
-          url = https://testit.itstrana.site/
-          privateToken = ${{ secrets.TMS_PRIVATE_TOKEN }}
-          projectId = eefe44b2-3347-4e63-83e6-18614e869fe3
-          configurationId = 659d9644-c5dc-4542-8aef-3858f219f8b6
-          testRunId =
-          testRunName = Test
-          adapterMode = 2
-          EOT
+          # Ваши действия по подготовке конфигурации
 
-      - name: Test run for testit
+      - name: Run tests with pytest and generate JSON report
         run: |
-          pytest_output=$(pytest tests/test_broker.py | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
-          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
-          echo "Test results: ${pytest_output}"
+          pytest tests/test_broker.py --json-report -o json_report_file=report.json
+
+      - name: Extract failed tests names
+        id: failed_tests
+        run: |
+          jq -r '.tests[] | select(.outcome == "failed") | .nodeid' report.json | paste -sd "," - > failed_tests.txt
+          if [[ -s failed_tests.txt ]]; then
+            echo "::set-output name=names::$(<failed_tests.txt)"
+          else
+            echo "::set-output name=names::No failed tests"
+          fi
+
       - name: Notify on Telegram
         if: always()
         env:
           TELEGRAM_BOT_TOKEN: 7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE
           TELEGRAM_CHAT_ID: -4162914238
         run: |
-          pytest_output="${{ env.pytest_output }}"
-          TEXT="Результаты тестирования: ${pytest_output}"
-          echo "Sending notification with text: ${TEXT}"  # Add this line to verify the notification text
+          FAILED_TESTS="${{ steps.failed_tests.outputs.names }}"
+          if [ "$FAILED_TESTS" != "No failed tests" ]; then
+            TEXT="Упавшие тесты: ${FAILED_TESTS}"
+          else
+            TEXT="Все тесты прошли успешно!"
+          fi
           curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
+
 

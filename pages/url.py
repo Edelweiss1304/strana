@@ -4,5 +4,5 @@ URLS_MAIN = {
     'url_spb': 'https://strana.com/spb/',
     'url_mo':  'https://strana.com/mo/',
     'url_ekb': 'https://strana.com/ekb/',
-    'url_nsk': 'https://strana.com/nsk/'
+    'url_nsk': 'https://strana.com/nsk/',
 }
