@@ -38,7 +38,7 @@ jobs:
 
       - name: Generate failed tests
         run: |
-          pytest fail_tests.py
+          fail_tests.py
 
       - name: Notify on Telegram about test result
         run: |
