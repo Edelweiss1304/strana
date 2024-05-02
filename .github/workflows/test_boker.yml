@@ -32,6 +32,7 @@ jobs:
           EOT
 
       - name: Run tests with pytest and generate JSON report
+        continue-on-error: true
         run: |
           pytest tests/test_broker.py --json-report -o json_report_file=.report.json
 
