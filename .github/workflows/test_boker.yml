@@ -33,22 +33,24 @@ jobs:
 
       - name: Run tests with pytest and generate JSON report
         run: |
-          pytest tests/test_broker.py --json-report -o json_report_file=report.json
+          pytest tests/test_broker.py --json-report -o json_report_file=.report.json
 
       - name: Extract failed tests names
         id: failed_tests_extractor
         run: |
-          FAILED_TESTS=$(jq -r '.tests[] | select(.outcome == "failed") | .nodeid' report.json | paste -sd "," -)
-          echo "FAILED_TESTS=${FAILED_TESTS}" >> $GITHUB_ENV
+          FAILED_TESTS=$(jq -r '.tests[] | select(.outcome == "failed") | .nodeid' .report.json | paste -sd "," -)
+          if [[ -z "$FAILED_TESTS" ]]; then
+            echo "FAILED_TESTS=All tests passed" >> $GITHUB_ENV
+          else
+            echo "FAILED_TESTS=$FAILED_TESTS" >> $GITHUB_ENV
+          fi
 
-      - name: Notify on Telegram if any tests failed
-        if: env.FAILED_TESTS
+      - name: Notify on Telegram about test results
         run: |
-          TEXT="Упавшие тесты: $FAILED_TESTS"
+          if [[ "${{ env.FAILED_TESTS }}" == "All tests passed" ]]; then
+            TEXT="Все тесты прошли успешно!"
+          else
+            TEXT="Упавшие тесты: ${{ env.FAILED_TESTS }}"
+          fi
           curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
 
-      - name: Notify on Telegram if all tests passed
-        if: ${{ env.FAILED_TESTS == '' }}
-        run: |
-          TEXT="Все тесты прошли успешно!"
-          curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
