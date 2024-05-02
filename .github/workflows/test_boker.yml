@@ -37,13 +37,13 @@ jobs:
 
       - name: Extract names of failed tests
         run: |
-          FAILED_TESTS=$(jq -j '.tests[] | select(.outcome == "failed") | .nodeid, ", "' .report.json)
-          FAILED_TESTS=${FAILED_TESTS%, } # Remove the trailing comma and space
-          echo "FAILED_TESTS=$FAILED_TESTS" >> $GITHUB_ENV
+          FAILED_TESTS=$(jq -r '.tests[] | select(.outcome == "failed") | .nodeid' .report.json | paste -sd "," -)
+          echo "FAILED_TESTS=${FAILED_TESTS}" >> $GITHUB_ENV
 
-      - name: Notify on Telegram about result
+      - name: Notify on Telegram about test result
+        if: always()
         run: |
-          if [ -z "$FAILED_TESTS" ] || [ "$FAILED_TESTS" == "All tests passed" ]; then 
+          if [ -z "$FAILED_TESTS" ]; then 
             TEXT="Все тесты прошли успешно!" 
           else 
             TEXT="Упавшие тесты: $FAILED_TESTS" 
