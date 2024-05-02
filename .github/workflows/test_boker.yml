@@ -39,6 +39,9 @@ jobs:
       - name: Generate failed tests
         run: python fail_tests.py
 
+      - name: Display contents of failed_tests.txt
+        run: cat failed_tests.txt
+
       - name: Notify on Telegram about test result
         run: |
           FAILED_TESTS_CONTENT=""
