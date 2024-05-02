@@ -45,5 +45,5 @@ jobs:
           if [ -s failed_tests.txt ]; then
             FAILED_TESTS_CONTENT=$(<failed_tests.txt)
           fi
-          TEXT="Результаты тестирования: ${pytest_output}. Упавшие тесты: ${FAILED_TESTS_CONTENT}"
+          TEXT="Упавшие тесты: ${FAILED_TESTS_CONTENT}"
           curl -X POST "https://api.telegram.org/bot7034452771:AAGAEMKO3shKsPOu1FlSJxmJkQ2SUIbLYHE/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"-4162914238"'", "text": "'"${TEXT}"'"}'
