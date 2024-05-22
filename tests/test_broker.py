@@ -63,7 +63,7 @@ def test_fix_create_deal(driver):
         Base.open_page(driver, url)
         auth.click_first_login_broker_button()
         auth.login_lk_broker()
-        lk.uniqueness_button_deal().click()
+        lk.get_uniqueness_button_deal().click()
         lk.get_uniqueness_input().send_keys("9960293757")
         time.sleep(3)
         lk.get_uniqueness_button_popup().click()
@@ -95,25 +95,33 @@ def test_head_menu(driver):
         auth.login_lk_broker()
     with testit.step("Проверяем страницу Клиенты"):
         lk.get_clients().click()
+        time.sleep(1)
         assert lk.get_clients_h().text == "Клиенты"
     with testit.step("Проверяем страницу Агенты"):
         lk.get_agents().click()
+        time.sleep(1)
         assert lk.get_agents_h().text == "Агенты"
     with testit.step("Проверяем страницу Документы"):
         lk.get_documents().click()
+        time.sleep(1)
         assert lk.get_documents_h().text == "Документы"
     with testit.step("Проверяем страницу выбор квартиры"):
         lk.get_apart().click()
+        time.sleep(1)
         assert lk.get_apart_h().text == "Выберите ЖК"
     with testit.step("Проверям страницу Календарь"):
         lk.get_calendar().click()
+        time.sleep(1)
         assert lk.get_calendar_h().text == "Календарь"
     with testit.step("Проверяем страницу Программа лояльности"):
         lk.get_loyalty().click()
+        time.sleep(1)
         assert lk.get_loyalty_h().text == "Программа лояльности"
     with testit.step("Проверяем страницу Взаимодействие"):
         lk.get_interaction().click()
+        time.sleep(1)
         assert lk.get_interaction_h().text == "Взаимодействие"
     with testit.step("Проверяем страницу Новости и акции"):
         lk.get_news().click()
+        time.sleep(1)
         assert lk.get_news_h().text == "Новости"
