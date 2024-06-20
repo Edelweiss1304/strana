@@ -4,26 +4,26 @@ from selenium.webdriver.common.by import By
 
 class Footer(Base):
     # Locators
-    vk = "//footer//a[@href='https://vk.com/strana_com']"
-    yt = ("//footer//a[@href='https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82/']")
-    ok = "//footer//a[@href='https://ok.ru/stranacom']"
-    tg = "//footer//a[@href='https://t.me/strana_com']"
+    vk = "//a[@href='https://vk.com/strana_com' and @target='_blank' and contains(@class, 'footer__social-link')]"
+    yt = "//a[@href='https://www.youtube.com/c/%D0%A1%D0%A2%D0%A0%D0%90%D0%9D%D0%90%D0%94%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82/' and @target='_blank' and contains(@class, 'footer__social-link')]"
+    ok = "//a[@href='https://ok.ru/stranacom' and @target='_blank' and contains(@class, 'footer__social-link')]"
+    tg = "//a[@href='https://t.me/strana_com' and @target='_blank' and contains(@class, 'footer__social-link')]"
 
     corruption = "//footer//span[contains(text(),'Противодействие коррупции')]"
     corruption_button = "//button[@type='submit']//span[@class='s-button__hover-shell']"
-    confidentiality = "//footer//span[contains(text(),'Политика конфиденциальности')]"
+    confidentiality = "//span[@class='s-shift-link__value'][contains(text(),'Политика конфиденциальности')]"
 
     app = "//footer//a[@href = 'https://appgallery.huawei.com/#/app/C103444111']"
 
-    company = "//footer//span[contains(text(), 'КОМПАНИЯ')][1]"
-    actions = "//footer//span[contains(text(), 'АКЦИИ')]"
-    purchase = "//footer//span[contains(text(), 'ИПОТЕКА')]"
-    contacts = "//footer//span[contains(text(), 'КОНТАКТЫ')]"
+    company = "//span[@class='s-shift-link__value'][contains(text(),'О компании')]"
+    actions = "//span[@class='s-shift-link__value'][contains(text(),'Акции')]"
+    purchase = "//span[@class='s-shift-link__value'][contains(text(),'Ипотека')]"
+    contacts = "//span[@class='s-shift-link__value'][contains(text(),'Контакты')]"
     commercial = "//footer//span[contains(text(), 'КОММЕРЦИЯ')]"
-    documents = "//footer//span[contains(text(), 'ДОКУМЕНТЫ')][1]"
-    projects = "//footer//span[contains(text(), 'ПРОЕКТЫ')]"
-    flats = "//footer//span[contains(text(), 'КВАРТИРЫ')]"
-    purchase_methods = "//footer//span[contains(text(), 'Способы покупки')]"
+    documents = "//span[@class='s-shift-link__value'][contains(text(),'Документы')]"
+    projects = "//span[@class='s-shift-link__value'][contains(text(),'Проекты')]"
+    flats = "//span[@class='s-shift-link__value'][contains(text(),'Квартиры')]"
+    purchase_methods = "//span[@class='s-shift-link__value'][contains(text(),'Способы покупки')]"
 
     company_tittle = "//h1[contains(text(),'О компании')]"
     actions_tittle = "//h1[contains(text(),'Акции')]"

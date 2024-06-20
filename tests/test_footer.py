@@ -1,6 +1,7 @@
 from base.base_class import Base
 from pages.footer import Footer
 from pages.url import URLS_MAIN
+from pages.url import URLS_MAIN1
 import pytest
 import testit
 import time
@@ -98,7 +99,7 @@ def test_actions_footer(driver, url):
 
 @testit.displayName("Проверка кнопки ипотека в футере {url}")
 @testit.description("Проверка кнопки ипотека в футере")
-@pytest.mark.parametrize("url", URLS_MAIN.values())
+@pytest.mark.parametrize("url", URLS_MAIN1.values())
 def test_purchase_footer(driver, url):
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
@@ -163,7 +164,7 @@ def test_projects_footer(driver, url):
 
 @testit.displayName("Проверка кнопки квартиры в городах без квартир {url}")
 @testit.description("Проверка кнопки квартиры в футере в городах без квартир")
-@pytest.mark.parametrize("url", [URLS_MAIN['url_mo'], URLS_MAIN['url_nsk'], URLS_MAIN['url_spb']])
+@pytest.mark.parametrize("url", [URLS_MAIN['url_nsk'], URLS_MAIN['url_spb']])
 def test_flats_footer(driver, url):
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
@@ -176,7 +177,7 @@ def test_flats_footer(driver, url):
 
 @testit.displayName("Проверка кнопки квартиры в городах с квартирами {url}")
 @testit.description("Проверка кнопки квартиры в футере в городах с квартирами")
-@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn']])
+@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn'], URLS_MAIN['url_mo']])
 def test_flats_footer_1(driver, url):
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
@@ -189,8 +190,8 @@ def test_flats_footer_1(driver, url):
 
 @testit.displayName("Проверка кнопки способы покупки {url}")
 @testit.description("Проверка кнопки способы покукпки в футере")
-@pytest.mark.parametrize("url", URLS_MAIN.values())
-def test_purchase_footer(driver, url):
+@pytest.mark.parametrize("url", URLS_MAIN1.values())
+def test_purchase_methods_footer(driver, url):
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
         Base.open_page(driver, url)
