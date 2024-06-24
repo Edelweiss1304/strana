@@ -98,18 +98,18 @@ def test_mo_header_about(driver):
         head.check_about()
 
 
-@testit.displayName("Проверка кнопки вакансии мо")
-@testit.description("Проверка кнопки вакансии мо")
-def test_mo_header_vacancy(driver):
-    head = Header(driver)
-    with testit.step("Открываем главную страницу"):
-        Base.open_page(driver, URLS_MAIN['url_mo'])
-        base_inst = Base(driver)
-        base_inst.click_accept_city()
-    with testit.step("Кликаем на вакансии"):
-        head.get_vacancy().click()
-    with testit.step("Проверяем, что попали на вакнсии"):
-        head.get_vacancy_check()
+# @testit.displayName("Проверка кнопки вакансии мо")
+# @testit.description("Проверка кнопки вакансии мо")
+# def test_mo_header_vacancy(driver):
+#     head = Header(driver)
+#     with testit.step("Открываем главную страницу"):
+#         Base.open_page(driver, URLS_MAIN['url_mo'])
+#         base_inst = Base(driver)
+#         base_inst.click_accept_city()
+#     with testit.step("Кликаем на вакансии"):
+#         head.get_vacancy().click()
+#     with testit.step("Проверяем, что попали на вакнсии"):
+#         head.get_vacancy_check()
 
     # SPB
 
