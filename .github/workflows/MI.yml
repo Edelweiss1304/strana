@@ -1,8 +1,10 @@
 name: Самый высокий приоритет
+
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Позволяет запускать workflow вручную из интерфейса GitHub
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 3 * * *' # Запускает workflow по расписанию каждый день в 3:00 утра
+
 jobs:
   test:
     runs-on: self-hosted
@@ -33,27 +35,27 @@ jobs:
           adapterMode = 2
           EOT
 
-      - name: Run tests and collect output
-        id: run_tests
+      - name: Run tests with pytest and generate JSON report
+        continue-on-error: true
         run: |
-          pytest tests/test_header_links.py tests/test_login_broker.py --testit --tb=short > pytest_output.txt
-          pytest_output=$(grep -E '===.*===' pytest_output.txt | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
-          exceptions=$(grep -E '^E +([a-zA-Z0-9_.]+: )' pytest_output.txt | sed -E 's/^E +//')
-          echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
-          echo "exceptions=${exceptions}" >> $GITHUB_ENV
+          pytest tests/test_header_links.py tests/test_login_broker.py --testit --tb=short --json-report --json-report-file=report.json
 
-      - name: Notify on Telegram
-        if: always()
+      - name: Generate failed tests
+        run: python fail_tests.py
+
+      - name: Display contents of failed_tests.txt
+        run: cat failed_tests.txt
+
+      - name: Notify on Telegram about test result
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          pytest_output: ${{ env.pytest_output }}
-          exceptions: ${{ env.exceptions }}
         run: |
-          TEXT="Результаты тестирования с самым высоким приоритетом: ${pytest_output}"
-          if [ -n "${exceptions}" ]; then
-            TEXT="${TEXT}\nИсключения:\n${exceptions}"
+          FAILED_TESTS_CONTENT=""
+          if [ -s failed_tests.txt ]; then
+            FAILED_TESTS_CONTENT=$(<failed_tests.txt)
           fi
-
+          TEXT="Результаты тестирования с самым высоким приоритетом:\n${FAILED_TESTS_CONTENT}"
           curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID}"'", "text": "'"${TEXT}"'"}'
+
 
