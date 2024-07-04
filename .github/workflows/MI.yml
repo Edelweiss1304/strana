@@ -1,5 +1,6 @@
 name: Самый высокий приоритет
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 3 * * *'
 jobs:
@@ -8,14 +9,17 @@ jobs:
     continue-on-error: true
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Prepare config
         run: |
           cat <<EOT > connection_config.ini
@@ -28,18 +32,28 @@ jobs:
           testRunName = Тестирование с самым высоким приоритетом
           adapterMode = 2
           EOT
-      - name: Test run for testit
+
+      - name: Run tests and collect output
+        id: run_tests
         run: |
-          pytest_output=$(pytest tests/test_header_links.py tests/test_login_broker.py --testit | grep -E '===.*===' | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
+          pytest tests/test_header_links.py tests/test_login_broker.py --testit --tb=short > pytest_output.txt
+          pytest_output=$(grep -E '===.*===' pytest_output.txt | tail -n 1 | sed -E 's/^.*=== (.*) ===.*$/\1/')
+          exceptions=$(grep -E '^E +([a-zA-Z0-9_.]+: )' pytest_output.txt | sed -E 's/^E +//')
           echo "pytest_output=${pytest_output}" >> $GITHUB_ENV
+          echo "exceptions=${exceptions}" >> $GITHUB_ENV
+
       - name: Notify on Telegram
         if: always()
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          pytest_output: ${{ env.pytest_output }}
+          exceptions: ${{ env.exceptions }}
         run: |
-          pytest_output="${{ env.pytest_output }}"
-          
           TEXT="Результаты тестирования с самым высоким приоритетом: ${pytest_output}"
+          if [ -n "${exceptions}" ]; then
+            TEXT="${TEXT}\nИсключения:\n${exceptions}"
+          fi
 
           curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -H "Content-Type: application/json" --data '{"chat_id":"'"${TELEGRAM_CHAT_ID}"'", "text": "'"${TEXT}"'"}'
+
