@@ -131,6 +131,15 @@ class Authorization(Base):
         with testit.step("Нажимаем Войти"):
             self.click_login_broker_btn()
 
+    def login_lk_broker_agent(self, email='smiledmitriev@yandex.com', password='1234567890'):
+        with testit.step("Вводим почту"):
+            time.sleep(2)
+            self.get_email_field_agent().send_keys(email)
+        with testit.step("Вводим пароль"):
+            self.get_password_field_agent().send_keys(password)
+        with testit.step("Нажимаем Войти"):
+            self.click_login_broker_btn()
+
     def login_broker_from_main_page(self):
         with testit.step("Кликаем Агентам и агентствам на главном экране"):
             self.get_broker_main_button().click()

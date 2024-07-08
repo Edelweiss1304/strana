@@ -17,10 +17,10 @@ class ProjectsPage(Base):
     sibsad = "//div[contains(text(),'Сибирский сад')]"
     zvezdniy = "//div[contains(text(),'Звездный')]"
     union = "//div[contains(text(),'Юнион')]"
-    avtorskiy = "//div[contains(text(),'Авторский')]"
+    avtorskiy = "//div[contains(@class, 'project-card__title') and contains(text(), 'Авторский')]"
     kolumb = "//div[contains(text(),'Колумб')]"
-    sersib = "//div[contains(text(),'Сердце Сибири')]"
-    domashniy = "//div[contains(text(),'Домашний')]"
+    sersib = "//div[contains(@class, 'project-card__title') and contains(text(), 'Сердце Сибири')]"
+    domashniy = "//div[contains(@class, 'project-card__title') and contains(text(), 'Домашний')]"
     eb = "//div[contains(text(),'Европейский берег 2.0')]"
 
     accept_cookie = "//span[contains(text(),'Принять')]"

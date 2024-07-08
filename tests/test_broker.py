@@ -93,11 +93,10 @@ def test_head_menu(driver):
         auth.click_first_login_broker_button()
     with testit.step("Авторизуемся и проверяем страницу сделки"):
         auth.login_lk_broker()
-    with testit.step("Проверяем страницу Клиенты"):
-        lk.get_clients().click()
-        time.sleep(1)
-        assert lk.get_clients_h().text == "Клиенты"
+        time.sleep(2)
+        driver.refresh()
     with testit.step("Проверяем страницу Агенты"):
+        lk.get_more().click()
         lk.get_agents().click()
         time.sleep(1)
         assert lk.get_agents_h().text == "Агенты"
@@ -125,3 +124,287 @@ def test_head_menu(driver):
         lk.get_news().click()
         time.sleep(1)
         assert lk.get_news_h().text == "Новости"
+
+
+@testit.displayName("Проверка меню для агента в ЛК брокера")
+@testit.description("Проверка меню для агента в ЛК брокера")
+def test_menu_agent(driver):
+    url = "https://broker.strana.com/"
+    auth = Authorization(driver)
+    lk = Lk(driver)
+    with testit.step("Открываем страницу авторизации"):
+        Base.open_page(driver, url)
+        auth.click_first_login_broker_button()
+    with testit.step("Авторизуемся как агент"):
+        auth.login_lk_broker_agent()
+    with testit.step("Проверяем профиль агента"):
+        lk.get_menu_button().click()
+        lk.get_menu_profile_agent().click()
+        assert lk.get_agent_profile_poup_up().text == "Профиль агента"
+        lk.get_close_poup_up().click()
+        time.sleep(3)
+    with testit.step("Проверяем профиль агентства"):
+        lk.get_menu_button().click()
+        lk.get_menu_profile_agency().click()
+        assert lk.get_agency_profile_poup_up().text == "Профиль агентства"
+        lk.get_close_poup_up().click()
+        time.sleep(3)
+    with testit.step("Проверяем программу лояльности"):
+        lk.get_menu_button().click()
+        lk.get_menu_loyalty_program().click()
+        assert lk.get_loyalty_h().text == "Программа лояльности"
+        time.sleep(3)
+    with testit.step("Проверяем кнопку выхода"):
+        lk.get_menu_button().click()
+        lk.get_menu_exit().click()
+        assert lk.get_menu_exit_check().text == "Вход в кабинет"
+
+
+@testit.displayName("Проверка меню для агентства в ЛК брокера")
+@testit.description("Проверка меню для агентства в ЛК брокера")
+def test_menu_agency(driver):
+    url = "https://broker.strana.com/"
+    auth = Authorization(driver)
+    lk = Lk(driver)
+    with testit.step("Открываем страницу авторизации"):
+        Base.open_page(driver, url)
+        auth.click_first_login_broker_button()
+    with testit.step("Авторизуемся как агентство"):
+        auth.login_lk_broker()
+    with testit.step("Проверяем профиль представителя"):
+        lk.get_menu_button().click()
+        lk.get_menu_profile_representative().click()
+        assert lk.get_representative_profile_poup_up().text == "Профиль представителя агентства"
+        lk.get_close_poup_up().click()
+        time.sleep(3)
+    with testit.step("Проверяем профиль агентства"):
+        lk.get_menu_button().click()
+        lk.get_menu_profile_agency().click()
+        assert lk.get_agency_profile_poup_up().text == "Профиль агентства"
+        lk.get_close_poup_up().click()
+        time.sleep(3)
+    with testit.step("Проверяем программу лояльности"):
+        lk.get_menu_button().click()
+        lk.get_menu_loyalty_program().click()
+        assert lk.get_loyalty_h().text == "Программа лояльности"
+        time.sleep(3)
+    with testit.step("Проверяем кнопку выхода"):
+        lk.get_menu_button().click()
+        lk.get_menu_exit().click()
+        assert lk.get_menu_exit_check().text == "Вход в кабинет"
+
+
+@testit.displayName("Проверка бургер-меню для агентства в ЛК брокера")
+@testit.description("Проверка бургер-меню для агентства в ЛК брокера")
+def test_burger_menu_agency(driver):
+    url = "https://broker.strana.com/"
+    auth = Authorization(driver)
+    lk = Lk(driver)
+    with testit.step("Открываем страницу авторизации"):
+        Base.open_page(driver, url)
+        auth.click_first_login_broker_button()
+    with testit.step("Авторизуемся как агентство"):
+        auth.login_lk_broker()
+    with testit.step("Проверяем ЧаВО"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_faq().click()
+        assert lk.get_burger_faq_tittle().text == "Часто задаваемые вопросы"
+        time.sleep(2)
+    with testit.step("Проверяем сделки"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_deals().click()
+        assert auth.get_broker_agent_check().text == "Сделки"
+        time.sleep(2)
+    with testit.step("Проверяем выбор квартиры"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_flats().click()
+        assert lk.get_apart_h().text == "Выберите ЖК"
+        time.sleep(2)
+    with testit.step("Проверяем новости"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_news().click()
+        assert lk.get_news_h().text == "Новости"
+        time.sleep(2)
+    with testit.step("Проверяем программу лояльности"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_loyalty().click()
+        assert lk.get_loyalty_h().text == "Программа лояльности"
+        time.sleep(2)
+    with testit.step("Проверяем календарь"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_calendar().click()
+        assert lk.get_calendar_h().text == "Календарь"
+        time.sleep(2)
+    with testit.step("Проверяем документы"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_documents().click()
+        assert lk.get_documents_h().text == "Документы"
+        time.sleep(2)
+    with testit.step("Проверяем взаимодействие"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_interaction().click()
+        assert lk.get_interaction_h().text == "Взаимодействие"
+        time.sleep(2)
+    with testit.step("Проверяем агенты"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_agents().click()
+        assert lk.get_agents_h().text == "Агенты"
+        time.sleep(2)
+    with testit.step("Проверяем проекты на сайте"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_projects().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_projects_tittle().text == "Новостройки"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+    with testit.step("Проверяем квартиры на сайте"):
+        lk.get_burger_flats_site().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_flats_site_tittle().text == "Квартиры"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+    with testit.step("Проверяем коммерцию на сайте"):
+        lk.get_burger_commercial().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_commercial_tittle().text == "Коммерческие помещения в других городах"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+    with testit.step("Проверяем проектные документы"):
+        lk.get_burger_project_documents().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_project_documents_tittle().text == "Проектные документы"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+    with testit.step("Проверяем контакты"):
+        lk.get_burger_contacts().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_contacts_tittle().text == "Контакты"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+
+
+@testit.displayName("Проверка бургер-меню для агента в ЛК брокера")
+@testit.description("Проверка бургер-меню для агента в ЛК брокера")
+def test_burger_menu_agent(driver):
+    url = "https://broker.strana.com/"
+    auth = Authorization(driver)
+    lk = Lk(driver)
+    with testit.step("Открываем страницу авторизации"):
+        Base.open_page(driver, url)
+        auth.click_first_login_broker_button()
+    with testit.step("Авторизуемся как агент"):
+        auth.login_lk_broker_agent()
+    with testit.step("Проверяем ЧаВО"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_faq().click()
+        assert lk.get_burger_faq_tittle().text == "Часто задаваемые вопросы"
+        time.sleep(2)
+    with testit.step("Проверяем сделки"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_deals().click()
+        assert auth.get_broker_agent_check().text == "Сделки"
+        time.sleep(2)
+    with testit.step("Проверяем выбор квартиры"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_flats().click()
+        assert lk.get_apart_h().text == "Выберите ЖК"
+        time.sleep(2)
+    with testit.step("Проверяем новости"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_news().click()
+        assert lk.get_news_h().text == "Новости"
+        time.sleep(2)
+    with testit.step("Проверяем программу лояльности"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_loyalty().click()
+        assert lk.get_loyalty_h().text == "Программа лояльности"
+        time.sleep(2)
+    with testit.step("Проверяем календарь"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_calendar().click()
+        assert lk.get_calendar_h().text == "Календарь"
+        time.sleep(2)
+    with testit.step("Проверяем документы"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_documents().click()
+        assert lk.get_documents_h().text == "Документы"
+        time.sleep(2)
+    with testit.step("Проверяем взаимодействие"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_interaction().click()
+        assert lk.get_interaction_h().text == "Взаимодействие"
+        time.sleep(2)
+    with testit.step("Проверяем проекты на сайте"):
+        lk.get_burger_menu_button().click()
+        lk.get_burger_projects().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_projects_tittle().text == "Новостройки"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+    with testit.step("Проверяем квартиры на сайте"):
+        lk.get_burger_flats_site().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_flats_site_tittle().text == "Квартиры"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+    with testit.step("Проверяем коммерцию на сайте"):
+        lk.get_burger_commercial().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_commercial_tittle().text == "Коммерческие помещения в других городах"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+    with testit.step("Проверяем проектные документы"):
+        lk.get_burger_project_documents().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_project_documents_tittle().text == "Проектные документы"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+    with testit.step("Проверяем контакты"):
+        lk.get_burger_contacts().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        assert lk.get_burger_contacts_tittle().text == "Контакты"
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(2)
+
+
+

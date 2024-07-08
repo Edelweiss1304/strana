@@ -1,5 +1,6 @@
 from base.base_class import Base
 from pages.url import URLS_MAIN
+from pages.url import URLS_MAIN1
 import pytest
 import time
 import testit
@@ -8,7 +9,7 @@ from pages.header_menu import Burger
 
 @testit.displayName("Проверка кнопки Проекты в бургере {url}")
 @testit.description("Проверка кнопки Проекты в бургере")
-@pytest.mark.parametrize("url", URLS_MAIN.values())
+@pytest.mark.parametrize("url", URLS_MAIN1.values())
 def test_projects_from_header_menu(driver, url):
     br = Burger(driver)
     with testit.step("Открываем главную страницу"):

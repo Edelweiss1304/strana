@@ -12,6 +12,7 @@ class Lk(Base):
 
     # Top_menu
     # Locators
+    more = "//button[contains(text(),'Еще')]"
     clients = "//a[.//span[contains(text(), 'Клиенты')]]"
     agents = "//a[.//span[contains(text(), 'Агенты')]]"
     documents = "//a[.//span[contains(text(), 'Документы')]]"
@@ -43,7 +44,45 @@ class Lk(Base):
     uniqueness_comment = "//label[normalize-space()='Комментарий']/preceding-sibling::input"
     uniqueness_fin_button = "//button[.//span[normalize-space()='Закрепить']]"
 
+    menu_button = "//button[@id='account']"
+    menu_profile_agent = "//div[@class='v-list-item__title']//div[contains(text(), 'Профиль агента')]"
+    agent_profile_poup_up = "//h2[contains(text(),'Профиль агента')]"
+    menu_profile_representative = "//div[@class='v-list-item__title']//div[contains(text(), 'Профиль представителя')]"
+    representative_profile_poup_up = "//h2[contains(text(),'Профиль представителя агентства')]"
+    menu_profile_agency = "//div[@class='v-list-item__title']//div[contains(text(), 'Профиль агентства')]"
+    agency_profile_poup_up = "//h2[contains(text(),'Профиль агентства')]"
+    menu_loyalty_program = "//div[@class='v-list-item__title']//div[contains(text(), 'Программа лояльности')]"
+    menu_exit = "//div[@class='v-list-item__title']//div[contains(text(), 'Выход')]"
+    menu_exit_check = "//h1[contains(text(),'Вход в кабинет')]"
+    close_poup_up = "//button[@id='drawer-close']"
+
+    burger_menu_button = "//button[contains(@class, 'btn-reset') and contains(@class, 'TheHeaderBurger_Vxpqv') and contains(@class, 'menuBtn_oY2LB')]"
+    burger_faq = "//a[.//span[contains(text(), 'Часто задаваемые вопросы')]]"
+    burger_faq_tittle = "//div[contains(text(), 'Часто задаваемые вопросы')]"
+    burger_deals = "//a[.//span[contains(text(), 'Сделки')]]"
+    burger_flats = "//a[.//span[contains(text(), 'Выбор квартиры')]]"
+    burger_news = "//a[.//span[contains(text(), 'Новости и акции')]]"
+    burger_loyalty = "//a[.//span[contains(text(), 'Программа лояльности')]]"
+    burger_calendar = "//a[.//span[contains(text(), 'Календарь')]]"
+    burger_documents = "//a[.//span[contains(text(), 'Документы')]]"
+    burger_interaction = "//a[.//span[contains(text(), 'Взаимодействие')]]"
+    burger_agents = "//a[.//span[contains(text(), 'Агенты')]]"
+    burger_agents_tittle = "//h1[contains(text(),'Агенты')]"
+    burger_projects = "//a[.//span[contains(text(), 'Проекты')]]"
+    burger_projects_tittle = "//span[contains(text(),'Новостройки')]"
+    burger_flats_site = "//a[.//span[contains(text(), 'Квартиры')]]"
+    burger_flats_site_tittle = "//h1[.//span[contains(text(),'Квартиры')]]"
+    burger_commercial = "//a[.//span[contains(text(), 'Коммерция')]]"
+    burger_commercial_tittle = "//h2[contains(text(),'Коммерческие помещения в других городах')]"
+    burger_project_documents = "//a[.//span[contains(text(), 'Проектные документы')]]"
+    burger_project_documents_tittle = "//h1[.//span[contains(text(),'Проектные документы')]]"
+    burger_contacts = "//a[.//span[contains(text(), 'Контакты')]]"
+    burger_contacts_tittle = "//h1[contains(text(),'Контакты')]"
+
     # Getter's
+    def get_more(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.more))
+
     def get_uniqueness_button(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.uniqueness_button))
 
@@ -139,3 +178,102 @@ class Lk(Base):
 
     def get_news_h(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.news_h))
+
+    def get_menu_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.menu_button))
+
+    def get_menu_profile_agent(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.menu_profile_agent))
+
+    def get_agent_profile_poup_up(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.agent_profile_poup_up))
+
+    def get_menu_profile_representative(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.menu_profile_representative))
+
+    def get_representative_profile_poup_up(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.representative_profile_poup_up))
+
+    def get_menu_profile_agency(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.menu_profile_agency))
+
+    def get_menu_loyalty_program(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.menu_loyalty_program))
+
+    def get_menu_exit(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.menu_exit))
+
+    def get_menu_exit_check(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.menu_exit_check))
+
+    def get_close_poup_up(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.close_poup_up))
+
+    def get_agency_profile_poup_up(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.agency_profile_poup_up))
+
+    def get_burger_menu_button(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_menu_button))
+
+    def get_burger_faq(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_faq))
+
+    def get_burger_faq_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_faq_tittle))
+
+    def get_burger_deals(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_deals))
+
+    def get_burger_flats(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_flats))
+
+    def get_burger_news(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_news))
+
+    def get_burger_loyalty(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_loyalty))
+
+    def get_burger_calendar(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_calendar))
+
+    def get_burger_documents(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_documents))
+
+    def get_burger_interaction(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_interaction))
+
+    def get_burger_agents(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_agents))
+
+    def get_burger_agents_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_agents_tittle))
+
+    def get_burger_projects(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_projects))
+
+    def get_burger_projects_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_projects_tittle))
+
+    def get_burger_flats_site(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_flats_site))
+
+    def get_burger_flats_site_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_flats_site_tittle))
+
+    def get_burger_commercial(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_commercial))
+
+    def get_burger_commercial_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_commercial_tittle))
+
+    def get_burger_project_documents(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_project_documents))
+
+    def get_burger_project_documents_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_project_documents_tittle))
+
+    def get_burger_contacts(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_contacts))
+
+    def get_burger_contacts_tittle(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.burger_contacts_tittle))
