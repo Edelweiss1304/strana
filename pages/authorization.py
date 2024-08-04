@@ -7,8 +7,8 @@ import testit
 
 class Authorization(Base):
     # Locators
-    login_lk_button = "//span[@class='the-header__icons-item']"
-    login_client_phone_field = "//input [@type='text']"
+    login_lk_button = "//a[@href='https://lk.strana.com']"
+    login_client_phone_field = "//span[contains(@class, 's-input__shell')]//input[@class='s-input__input']"
     get_code_btn = "//button[@type='button']"
     enter_code_field = "//input[@inputmode='numeric']"
     fin_login_btn = "//span[contains(text(),'Войти')]"
@@ -25,10 +25,6 @@ class Authorization(Base):
 
     favorite_button = "//a[@id='header-favorite-icon']"
     login_from_favorite_button = "//span[contains(text(),'Войти в аккаунт')]"
-    phone_field_favorite = "//label[@class='s-input s-input--default s-input--primary']//input[@type='tel']"
-    get_code_favorite = "//span[contains(text(),'Получить код')]"
-    enter_code_favorite = "//label[@class='s-input s-input--default s-input--primary']//input[@type='text']"
-    final_login_favorite = "//button[.//span[@class='s-button__content' and normalize-space()='Войти']]"
 
     # Getters
 
@@ -76,18 +72,6 @@ class Authorization(Base):
 
     def get_login_from_favorite_button(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.login_from_favorite_button))
-
-    def get_phone_field_favorite(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.phone_field_favorite))
-
-    def get_get_code_favorite(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.get_code_favorite))
-
-    def get_enter_code_favorite(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.enter_code_favorite))
-
-    def get_final_login_favorite(self):
-        return self.get_element_clickable(self.driver, (By.XPATH, self.final_login_favorite))
     # Actions
 
     def click_login_lk_button(self):

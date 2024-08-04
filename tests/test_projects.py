@@ -21,7 +21,7 @@ def test_projects_wow(driver):
         pp = ProjectsPage(driver)
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на WOW"):
-        pp.get_wow().click()
+        driver.execute_script("arguments[0].click();", pp.get_wow())
     with testit.step("Проверяем, что попали на WOW"):
         assert head.get_project_business_tittle() == "КАМЕРНЫЙ ДОМ НА БЕРЕГУ МОСКВЫ-РЕКИ"
     # with testit.step("Возвращаемся назад"):
@@ -48,7 +48,7 @@ def test_projects_ozerniy(driver):
         head.click_projects()
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на Страна.Озерный"):
-        pp.get_ozerniy().click()
+        driver.execute_script("arguments[0].click();", pp.get_ozerniy())
     with testit.step("Проверяем, что попали на Озерный"):
         assert head.get_project_business_tittle() == "Оазис спокойствия в мегаполисе"
     # with testit.step("Возвращаемся назад"):
@@ -97,7 +97,7 @@ def test_projects_sibsad(driver):
         head.click_projects()
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на Сибирский сад"):
-        pp.get_sibsad().click()
+        driver.execute_script("arguments[0].click();", pp.get_sibsad())
     with testit.step("Проверяем, что попали на Сибирский Сад"):
         assert head.get_project_comfort_tittle() == "ЖК\nСибирский сад"
     # with testit.step("Возвращаемся назад"):
@@ -122,7 +122,7 @@ def test_projects_zvezdniy(driver):
         head.click_projects()
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на Звездный"):
-        pp.get_zvezdniy().click()
+        driver.execute_script("arguments[0].click();", pp.get_zvezdniy())
     with testit.step("Проверяем, что попали на Звездный"):
         assert head.get_project_comfort_tittle() == "ЖК\nЗвездный"
     # with testit.step("Возвращаемся назад"):
@@ -147,7 +147,7 @@ def test_projects_union(driver):
         head.click_projects()
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на Юнион"):
-        pp.get_union().click()
+        driver.execute_script("arguments[0].click();", pp.get_union())
     with testit.step("Проверяем, что попали на Юнион"):
         assert head.get_project_comfort_tittle() == "ЖК\nЮнион"
     # with testit.step("Возвращаемся назад"):
@@ -172,7 +172,7 @@ def test_projects_avtorskiy(driver):
         head.click_projects()
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на Авторский"):
-        pp.get_avtorskiy().click()
+        driver.execute_script("arguments[0].click();", pp.get_avtorskiy())
     with testit.step("Проверяем, что попали на Авторский"):
         assert head.get_project_comfort_tittle() == "ЖК\nАвторский"
     # with testit.step("Возвращаемся назад"):
@@ -197,7 +197,7 @@ def test_projects_sersib(driver):
         head.click_projects()
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на Сердце Сибири"):
-        pp.get_sersib().click()
+        driver.execute_script("arguments[0].click();", pp.get_sersib())
     with testit.step("Проверяем, что попали на Сердце Сибири"):
         assert head.get_project_comfort_tittle() == "ЖК\nСердце Сибири"
     # with testit.step("Возвращаемся назад"):
@@ -223,7 +223,7 @@ def test_projects_domashniy(driver):
         time.sleep(1)
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на Домашний"):
-        pp.get_domashniy().click()
+        driver.execute_script("arguments[0].click();", pp.get_domashniy())
     with testit.step("Проверяем, что попали на Домашний"):
         assert head.get_project_comfort_tittle() == "ЖК\nДомашний"
     # with testit.step("Возвращаемся назад"):
@@ -248,7 +248,7 @@ def test_projects_eb(driver):
         head.click_projects()
         pp.get_accept_cookie().click()
     with testit.step("Кликаем на ЕБ 2.0"):
-        pp.get_eb().click()
+        driver.execute_script("arguments[0].click();", pp.get_eb())
     with testit.step("Проверяем, что попали на ЕБ 2.0"):
         assert head.get_project_comfort_tittle() == "ЖК\nЕвропейский берег 2.0"
     # with testit.step("Возвращаемся назад"):

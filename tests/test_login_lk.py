@@ -19,7 +19,12 @@ def test_authorization_client(driver, url):
     with testit.step("Нажимаем иконку входа"):
         auth.click_login_lk_button()
     with testit.step("Заполняем телефон"):
-        time.sleep(2)
+        time.sleep(5)
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        time.sleep(10)
         auth.get_login_client_phone_field().send_keys(9198629250)
     with testit.step("Кликаем Получить код"):
         auth.click_get_code_btn()
@@ -45,13 +50,16 @@ def test_authorization_client_favorite(driver, url):
     with testit.step("Нажимаем на  вход в ЛК"):
         auth.get_login_from_favorite_button().click()
     with testit.step("Заполняем телефон"):
-        auth.get_phone_field_favorite().send_keys(9198629250)
-    with testit.step("Нажимаем на кнопку получить код"):
-        auth.get_get_code_favorite().click()
-    with testit.step("Вставляем код в поле"):
-        auth.get_enter_code_favorite().send_keys(1313)
-    with testit.step("Нажимаем на кнопку входа"):
-        auth.get_final_login_favorite().click()
+        tabs = driver.window_handles
+        current_index = tabs.index(driver.current_window_handle)
+        next_index = (current_index + 1) % len(tabs)
+        driver.switch_to.window(tabs[next_index])
+        time.sleep(10)
+        auth.get_login_client_phone_field().send_keys(9198629250)
+    with testit.step("Кликаем Получить код"):
+        auth.click_get_code_btn()
+    with testit.step("Вводим код"):
+        auth.get_enter_code_field().send_keys(1313)
     with testit.step("Проверяем, что вошли в ЛК"):
         assert auth.get_check_lk() == "Выбрать квартиру"
         print('Успешный вход в ЛК')
