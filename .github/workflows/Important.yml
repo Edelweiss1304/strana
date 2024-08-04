@@ -1,5 +1,6 @@
 name: Высокий приоритет
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 4 * * *'
 jobs:
