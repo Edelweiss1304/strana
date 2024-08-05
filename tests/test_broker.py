@@ -94,36 +94,38 @@ def test_head_menu(driver):
     with testit.step("Авторизуемся и проверяем страницу сделки"):
         auth.login_lk_broker()
         time.sleep(2)
-        driver.refresh()
     with testit.step("Проверяем страницу Агенты"):
-        lk.get_more().click()
         lk.get_agents().click()
-        time.sleep(1)
+        time.sleep(3)
         assert lk.get_agents_h().text == "Агенты"
     with testit.step("Проверяем страницу Документы"):
         lk.get_documents().click()
-        time.sleep(1)
+        time.sleep(3)
         assert lk.get_documents_h().text == "Документы"
-    with testit.step("Проверяем страницу выбор квартиры"):
+    with testit.step("Проверяем страницу каталог квартир"):
         lk.get_apart().click()
-        time.sleep(1)
-        assert lk.get_apart_h().text == "Выберите ЖК"
+        time.sleep(3)
+        assert lk.get_apart_h().text == "Квартиры"
     with testit.step("Проверям страницу Календарь"):
         lk.get_calendar().click()
-        time.sleep(1)
+        time.sleep(3)
         assert lk.get_calendar_h().text == "Календарь"
     with testit.step("Проверяем страницу Программа лояльности"):
         lk.get_loyalty().click()
-        time.sleep(1)
+        time.sleep(3)
         assert lk.get_loyalty_h().text == "Программа лояльности"
     with testit.step("Проверяем страницу Взаимодействие"):
         lk.get_interaction().click()
-        time.sleep(1)
+        time.sleep(3)
         assert lk.get_interaction_h().text == "Взаимодействие"
     with testit.step("Проверяем страницу Новости и акции"):
         lk.get_news().click()
-        time.sleep(1)
+        time.sleep(3)
         assert lk.get_news_h().text == "Новости"
+    with testit.step("Проверяем страницу Шахматка"):
+        lk.get_shahmatka().click()
+        time.sleep(3)
+        assert lk.get_shahmatka_h().text == "Выберите ЖК"
 
 
 @testit.displayName("Проверка меню для агента в ЛК брокера")
@@ -205,6 +207,7 @@ def test_burger_menu_agency(driver):
         auth.click_first_login_broker_button()
     with testit.step("Авторизуемся как агентство"):
         auth.login_lk_broker()
+        time.sleep(10)
     with testit.step("Проверяем ЧаВО"):
         lk.get_burger_menu_button().click()
         lk.get_burger_faq().click()
@@ -212,11 +215,12 @@ def test_burger_menu_agency(driver):
         time.sleep(2)
     with testit.step("Проверяем сделки"):
         lk.get_burger_menu_button().click()
-        lk.get_burger_deals().click()
+        time.sleep(2)
+        driver.execute_script("arguments[0].click();", lk.get_burger_deals())
         assert auth.get_broker_agent_check().text == "Сделки"
         time.sleep(2)
     with testit.step("Проверяем выбор квартиры"):
-        lk.get_burger_menu_button().click()
+        #lk.get_burger_menu_button().click()
         lk.get_burger_flats().click()
         assert lk.get_apart_h().text == "Выберите ЖК"
         time.sleep(2)

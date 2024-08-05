@@ -16,31 +16,33 @@ class Lk(Base):
     clients = "//a[.//span[contains(text(), 'Клиенты')]]"
     agents = "//a[.//span[contains(text(), 'Агенты')]]"
     documents = "//a[.//span[contains(text(), 'Документы')]]"
-    apart = "//a[.//span[contains(text(), 'Выбор квартиры')]]"
+    apart = "//a[.//span[contains(text(), 'Каталог квартир')]]"
     calendar = "//a[.//span[contains(text(), 'Календарь')]]"
     loyalty = "//a[.//span[contains(text(), 'Программа лояльности')]]"
     interaction = "//a[.//span[contains(text(), 'Взаимодействие')]]"
     news = "//a[.//span[contains(text(), 'Новости и акции')]]"
+    shahmatka = "//a[.//span[contains(text(), 'Шахматка')]]"
 
     # Headers
     clients_h = "//h1[contains(text(),'Клиенты')]"
     agents_h = "//h1[contains(text(),'Агенты')]"
     documents_h = "//h1[contains(text(),'Документы')]"
-    apart_h = "//div[contains(text(),'Выберите ЖК')]"
+    apart_h = "//h1/span[text()='Квартиры']"
     calendar_h = "//h1[contains(text(),'Календарь')]"
     loyalty_h = "//h4[contains(text(),'Программа лояльности')]"
     interaction_h = "//h1[contains(text(),'Взаимодействие')]"
     news_h = "//h1[contains(text(),'Новости')]"
+    shahmatka_h = "//div[contains(text(),'Выберите ЖК')]"
 
-    uniqueness_city = "//label[normalize-space()='Город']/following-sibling::div[@class='v-select__selections']/input"
-    uniqueness_city_tmn = "//div[contains(@class, 'v-list-item__title') and normalize-space()='Тюмень']"
-    uniqueness_zk = "//label[normalize-space()='Интересующие ЖК']/following-sibling::div[@class='v-select__selections']/input"
-    uniqueness_zk_domashniy = "//div[contains(@class, 'v-list-item__title') and normalize-space()='Домашний']"
+    uniqueness_city = "//div[@class='s-select__label' and text()='Город']/following-sibling::div[@class='s-select__shell']"
+    uniqueness_city_tmn = "//button[contains(text(), 'Тюмень')]"
+    uniqueness_zk = "//div[@class='s-select__label' and text()='Интересующие ЖК']/following-sibling::div[@class='s-select__shell']"
+    uniqueness_zk_domashniy = "//button[contains(text(), 'Домашний')]"
     uniqueness_surname = "//label[normalize-space()='Фамилия']/preceding-sibling::input"
     uniqueness_name = "//label[normalize-space()='Имя']/preceding-sibling::input"
     uniqueness_second_name = "//label[normalize-space()='Отчество']/preceding-sibling::input"
-    uniqueness_consultation = "//label[normalize-space()='Тип консультации']/following-sibling::div[@class='v-select__selections']/input"
-    uniqueness_consultation_office = "//div[contains(@class, 'v-list-item__title') and normalize-space()='Встреча с клиентом в офисе']"
+    uniqueness_consultation = "//div[@class='s-select__label' and text()='Тип консультации']/following-sibling::div[@class='s-select__shell']"
+    uniqueness_consultation_office = "//button[contains(text(), 'Встреча с клиентом в офисе')]"
     uniqueness_comment = "//label[normalize-space()='Комментарий']/preceding-sibling::input"
     uniqueness_fin_button = "//button[.//span[normalize-space()='Закрепить']]"
 
@@ -56,7 +58,7 @@ class Lk(Base):
     menu_exit_check = "//h1[contains(text(),'Вход в кабинет')]"
     close_poup_up = "//button[@id='drawer-close']"
 
-    burger_menu_button = "//button[contains(@class, 'btn-reset') and contains(@class, 'TheHeaderBurger_Vxpqv') and contains(@class, 'menuBtn_oY2LB')]"
+    burger_menu_button = "//button[contains(@class, 'TheHeaderBurger')]"
     burger_faq = "//a[.//span[contains(text(), 'Часто задаваемые вопросы')]]"
     burger_faq_tittle = "//div[contains(text(), 'Часто задаваемые вопросы')]"
     burger_deals = "//a[.//span[contains(text(), 'Сделки')]]"
@@ -155,6 +157,9 @@ class Lk(Base):
     def get_news(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.news))
 
+    def get_shahmatka(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.shahmatka))
+
     def get_clients_h(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.clients_h))
 
@@ -178,6 +183,9 @@ class Lk(Base):
 
     def get_news_h(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.news_h))
+
+    def get_shahmatka_h(self):
+        return self.get_element_clickable(self.driver, (By.XPATH, self.shahmatka_h))
 
     def get_menu_button(self):
         return self.get_element_clickable(self.driver, (By.XPATH, self.menu_button))

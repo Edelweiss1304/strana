@@ -210,7 +210,7 @@ def test_docs_from_header_menu(driver, url):
         br.get_documents().click()
     with testit.step("Проверяем, что попали на страницу Документы"):
         time.sleep(2)
-        assert br.get_documents_tittle() == "Проектные документы"
+        assert br.get_documents_tittle() == "Проектные документы и реквизиты"
         print("Проверяем заголовок")
 
 

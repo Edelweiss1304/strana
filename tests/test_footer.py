@@ -133,7 +133,7 @@ def test_documents_footer(driver, url):
     with testit.step("Нажимаем на кнопку документы в футере"):
         ft.get_documents().click()
     with testit.step("Проверяем, что попали на нужную страницу"):
-        assert ft.get_documents_tittle().text == "Проектные документы"
+        assert ft.get_documents_tittle().text == "Проектные документы и реквизиты"
 
 
 @testit.displayName("Проверка кнопки политика конфиденциальности {url}")
@@ -164,7 +164,7 @@ def test_projects_footer(driver, url):
 
 @testit.displayName("Проверка кнопки квартиры в городах без квартир {url}")
 @testit.description("Проверка кнопки квартиры в футере в городах без квартир")
-@pytest.mark.parametrize("url", [URLS_MAIN['url_nsk'], URLS_MAIN['url_spb']])
+@pytest.mark.parametrize("url", URLS_MAIN['url_spb'])
 def test_flats_footer(driver, url):
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
@@ -177,7 +177,7 @@ def test_flats_footer(driver, url):
 
 @testit.displayName("Проверка кнопки квартиры в городах с квартирами {url}")
 @testit.description("Проверка кнопки квартиры в футере в городах с квартирами")
-@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn'], URLS_MAIN['url_mo']])
+@pytest.mark.parametrize("url", [URLS_MAIN['url_ekb'], URLS_MAIN['url_msk'], URLS_MAIN['url_tmn'], URLS_MAIN['url_mo'], URLS_MAIN['url_nsk']])
 def test_flats_footer_1(driver, url):
     ft = Footer(driver)
     with testit.step("Открываем главную страницу"):
